@@ -1,0 +1,669 @@
+<div class="product-desc page-component">
+  <div class="wrap">
+    <div class="long component">
+      <div class="banner JS-banner">
+        <img src="/img/product_long.jpg" alt="">
+      </div>
+      <ul class="tab-list" id="descTab">
+        <li class="item selected" data-content="detail">项目详情</li>
+        <li class="item" data-content="risk">风控保障</li>
+        <li class="item" data-content="log">投资记录</li>
+        <li class="item" data-content="qa">常见问题</li>
+      </ul>
+      <ul class="content-list detail" id="contentTab">
+        <li class="item JS-common" id="itemDetail">
+          <!-- <article class="detail">
+            <div class="row">
+              <span class="caption">项目描述：</span>
+            </div>
+            <div class="row">
+              <span class="caption sub">项目说明：</span>
+              <span class="field"></span>
+            </div>
+            <div class="row">
+              <span class="caption sub">投标范围：</span>
+              <span class="field">投向赎楼散标</span>
+            </div>
+            <div class="row">
+              <span class="caption sub">还款来源：</span>
+              <span class="field"></span>
+            </div>
+            <hr class="dash">
+            <div class="row">
+              <span class="caption">项目协议：</span>
+              <span class="field"><a class="link" href="./contract" target="_blank">《智投产品协议》</a></span>
+            </div>
+            <div class="row">
+              <span class="caption">保障方式：</span>
+              <span class="field"><a href="../../safe" class="link">《平台安全保障详解》</a></span>
+            </div>
+            <div class="row">
+              <span class="caption">投资期限：</span>
+              <span class="field"></span>
+            </div>
+            <div class="row">
+              <span class="caption">到账时间：</span>
+              <span class="field"></span>
+            </div>
+            <hr class="dash">
+            <div class="row">
+              <span class="caption solo">项目投向：</span>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>标的名称</th>
+                    <th>用款金额</th>
+                    <th>市场价值</th>
+                    <th>产权性质</th>
+                    <th>建筑面积</th>
+                    <th>所处位置</th>
+                    <th>借款用途</th>
+                    <th>还款来源</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>智投产品2016-xxxxxx</td>
+                    <td>60万</td>
+                    <td>380万</td>
+                    <td>住宅</td>
+                    <td>120平米</td>
+                    <td>上海xxxx</td>
+                    <td>首付垫</td>
+                    <td>按揭</td>
+                  </tr>
+                  <tr>
+                    <td>智投产品2016-xxxxxx</td>
+                    <td>60万</td>
+                    <td>380万</td>
+                    <td>住宅</td>
+                    <td>120平米</td>
+                    <td>上海xxxx</td>
+                    <td>首付垫</td>
+                    <td>按揭</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <span class="caption solo">资产使用情况：</span>
+              <div class="bar">
+                <div class="outer">
+                  <div class="inner"></div>
+                </div>
+                <span class="label">占比：</span><span class="percent"></span>
+              </div>
+            </div>
+            <div class="row">
+              <span class="caption solo">风控审核项目：</span>
+              <ul class="risk">
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">身份认证</span>
+                </li>
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">户口本</span>
+                </li>
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">婚姻证明</span>
+                </li>
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">收入证明</span>
+                </li>
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">银行流水</span>
+                </li>
+              </ul>
+            </div>
+          </article> -->
+        </li>
+        <li class="item JS-supply">
+          <article class="detail">
+            <div class="lable-list">
+              <div class="lable-item">
+                <p class="lable-type">产品描述：</p>
+                <p class="lable-desc">
+                  供应链融资是在领投鸟风控保障体系下，经过严格的论证和实践运作，
+                  精心设计推出的产品。资金主要用于央企、国企、上市公司等大型生产贸易企业与下游服务供应商的应收账款提前结算，
+                  借款方资金需求合理，上游还款企业经营利润率较高，还款来源稳定可靠，
+                  且平台对借款方严格背调审核，极大地降低了项目风险。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">项目描述：</p>
+                <p class="lable-desc">
+                  该供应链的上游核心企业是浙江物产集团（A股上市系大型国有流通企业），对服务方（实际借款方）的应收账款结算时间固定。本次合作采用应收账款贴现方式，若未能按照借款合同约定按时还款，
+                  则全额代偿，且其法定代表人（实际控制人）提供共同担保。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">资金用途：</p>
+                <p class="lable-desc">
+                  借款人借款主要用于供应链下游企业的资金结算。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">还款来源：</p>
+                <p class="lable-desc">
+                  供应链上游核心企业的应收账款。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">到账时间：</p>
+                <p class="lable-desc">
+                  结息日期之后1-3个工作日内到账。<br/>
+                  注:结息之后还款如遇法定节假日、公休日，因银行业务开展原因，则顺延至下一个工作日开始还款。
+                </p>
+              </div>
+            </div>
+            <div class="fk-ensure">
+              <p class="fk">风控保障项目</p>
+              <div class="img-list">
+                <div class="img-item">
+                  <img src="/img/prodes/11.png" alt="">
+                  <p>开户许可证</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/22.png" alt="">
+                  <p>营业执照</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/33.png" alt="">
+                  <p>增值税专用发票</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/44.png" alt="">
+                  <p>供应链服务协议</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/55.png" alt="">
+                  <p>客户尽调信息表</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/66.png" alt="">
+                  <p>担保函</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="item JS-shopStages">
+          <article class="detail">
+            <div class="lable-list">
+              <div class="lable-item">
+                <p class="lable-type">产品描述：</p>
+                <p class="lable-desc">
+                  消费分期资产融资是在领投鸟风控保障体系下，经过严格的论证和实践运作，精心设计推出的产品。资金主要用于分期消费者的个人消费、房产装修、车位购买、教育培训、生育服务、医美整形、家具家居等消费需求，借款方资金需求合理，
+                  还款来源稳定可靠，且平台对借款方及担保方进行严格的背调审核，极大地降低了项目风险。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">项目描述：</p>
+                <p class="lable-desc">
+                  本项目的消费分期资产来源于经领投鸟严格审核的资产端战略合作伙伴，
+                  合作伙伴对分期消费者进行甄选并承担逾期垫付责任。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">资金用途：</p>
+                <p class="lable-desc">
+                  借款人借款主要用于分期消费。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">还款来源：</p>
+                <p class="lable-desc">
+                  借款人工资收入或经营收入。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">到账时间：</p>
+                <p class="lable-desc">
+                  结息日期之后1-3个工作日内到账。</br>
+                  注:结息之后还款如遇法定节假日、公休日，因银行业务开展原因，则顺延至下一个工作日开始还款。
+                </p>
+              </div>
+            </div>
+            <div class="fk-ensure">
+              <p class="fk">风控保障项目</p>
+              <div class="img-list">
+                <div class="img-item">
+                  <img src="/img/prodes/card.png" alt="">
+                  <p>借款人身份证</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/ht.png" alt="">
+                  <p>分期消费合同</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/sell.png" alt="">
+                  <p>销售员合影</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/photo.png" alt="">
+                  <p>门店合影</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="item JS-cashStages">
+          <article class="detail">
+            <div class="lable-list">
+              <div class="lable-item">
+                <p class="lable-type">产品描述：</p>
+                <p class="lable-desc">
+                  信用宝是在领投鸟平台风控保障体系下，经过严格的论证实践和全方位背景调查推出的创新产品。
+                  该产品是领投鸟作为信息服务提供方，将经过战略合作伙伴蓝领贷严格审核的借款人及借款标的信息发布在领投鸟平台上，协助借贷双方完成投资和借贷。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">项目描述：</p>
+                <p class="lable-desc">
+                  本项目的资产合作伙伴对借贷者进行严格甄选并承担逾期垫付责任。单笔借款金额人均2000元以内，分散出借给数百名小额借款用户，风险极低，符合合规性要求。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">资金用途：</p>
+                <p class="lable-desc">
+                  主要用于个人用户超短期临时资金周转。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">还款来源：</p>
+                <p class="lable-desc">
+                  借款人工薪收入或经营收入。
+                </p>
+              </div>
+              <div class="lable-item">
+                <p class="lable-type">到账时间：</p>
+                <p class="lable-desc">
+                  结息日用户还款（当日24：00点钟）之后的1个工作日内到账。<br/>
+                  注:结息之后还款如遇法定节假日、公休日，因银行业务开展原因，则顺延至下一个工作日开始还款。
+                </p>
+              </div>
+            </div>
+            <div class="fk-ensure">
+              <p class="fk">风控保障项目</p>
+              <div class="img-list">
+                <div class="img-item">
+                  <img src="/img/prodes/card.png" alt="">
+                  <p>借款人身份证 </p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/ht.png" alt="">
+                  <p>借款合同</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/bg.png" alt="">
+                  <p>借款人征信报告</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/phone.png" alt="">
+                  <p>手机号验证</p>
+                </div>
+                <div class="img-item">
+                  <img src="/img/prodes/bank.png" alt="">
+                  <p>银行卡验证</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="item">
+          <article class="risk">
+            <div class="JS-common">
+              <div class="row">
+                <span class="caption solo">产品保障：</span>
+                <div class="assurance">
+                  <img src="/img/safe-banner.jpg" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <span class="caption solo">流程保障：</span>
+                <span class="field">
+                  资金来源是如何产生的？<br/>
+                  通过与大型金融机构合作，将能够产生稳定现金流的基础资产，兑换成优质消费金融资产。<br/>
+                  场景获客，注重用户体验：<br/>
+                  以家庭消费生活场景为核心，打造连接租住，装修，美容整形，生育等消费场景，为用户多线端的需求提供一站式的消费信贷体验。<br/>
+                  业务创新，贷前风控：<br/>
+                  通过自动化与高集成度的信用分数系统集中处理贷款申请，对客户进行贷款审批。<br/>
+                  贷后催收与不良资产处置：<br/>
+                  对贷后管理推出一站式互联网+不良资产处置方案，共同在不良资产全产业链资源的处置模式上进行全流程的服务。
+                </span>
+              </div>
+              <div class="row">
+                <span class="caption solo">业务风控：</span>
+                <div class="business"></div>
+              </div>
+            </div>
+            <div class="JS-supply">
+              <div class="row">
+                <span class="caption solo">业务流程：</span>
+                <div class="assurance">
+                  <img src="/img/prodes/7.jpg" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <span class="caption solo">风险控制：</span>
+                <span class="field">
+                  1：对供应链上中下游合作模式进行调查及确认<br/>
+                  2：深入了解供应链上下游企业业务往来，并要求借款方提供业务往来证明<br/>
+                  3：对借款方进行严格的个人身份及信用信息调查审核<br/>
+                  4：对借款方企业进行企业信息审核<br/>
+                  5：资产端公司成立专职团队承担贷后跟踪管理、监督检查。<br/>
+                  6：借款方承诺按期足额还款， 担保方承担连带责任保证。
+                </span>
+              </div>
+              <div class="row">
+                <span class="caption solo">保障措施：</span>
+                <span class="field">借款方无条件归还借款本息，担保方承担连带责任保证。</span>
+              </div>
+            </div>
+            <div class="JS-shopStages">
+              <div class="row">
+                <span class="caption solo">业务流程：</span>
+                <div class="assurance">
+                  <img src="/img/prodes/shopStages.jpg" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <span class="caption solo">风险控制：</span>
+                <span class="field">
+                  1，对资产端战略合作伙伴进行企业信息审核与业务风控审核；</br>
+                  2，对分期消费情况进行核查；</br>
+                  3，对分期消费者进行核实；</br>
+                  4，资产端合作伙伴对分期消费者进行甄选并承担逾期垫付责任；
+                </span>
+              </div>
+              <div class="row">
+                <span class="caption solo">保障措施：</span>
+                <span class="field">资产端战略合作伙伴承担逾期垫付责任。</span>
+              </div>
+            </div>
+            <div class="JS-cashStages">
+              <div class="row">
+                <span class="caption solo">业务流程：</span>
+                <div class="assurance">
+                  <img src="/img/prodes/cashStages.jpg" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <span class="caption solo">风险控制：</span>
+                <span class="field">
+                  1，对资产端战略合作伙伴进行企业信息审核与业务风控审核；</br>
+                  2，对现金分期情况进行核查；</br>
+                  3，对现金分期借贷者进行核实；</br>
+                  4，资产端合作伙伴对现金分期借贷者进行甄选并承担逾期垫付责任；
+                </span>
+              </div>
+              <div class="row">
+                <span class="caption solo">保障措施：</span>
+                <span class="field">资产端合作伙伴承担逾期垫付责任。</span>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="item" id="desc">
+          <article class="log">
+            <div class="row">
+             <!--  <span class="caption solo">投资记录：</span> -->
+              <!-- <table class="log-list">
+                <thead>
+                  <tr>
+                    <th>序列号</th>
+                    <th>成交时间</th>
+                    <th>投资人</th>
+                    <th>投资金额</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                </tbody>
+              </table> -->
+            </div>
+            <div class="nolist">
+                <div class="logoIcon">
+                  暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+                </div>
+            </div>
+          </article>
+
+        </li>
+        <li class="item">
+          <article class="qa">
+            <div class="JS-common">
+              <div class="row">
+                <h3 class="caption"><span class="icon">1</span>问：什么是智投产品？</h3>
+                <div class="section">
+                <span class="answer">答：</span>
+                <p class="field">智投产品是领投鸟理财为投资者提供的本金自动循环出借及到期自动转让退出的理财工具，充分提高资金利用效率，利息收益在理财期结束后一次性返还。智投产品对应的借款均适用于100%本息保障。投向资产端严格筛选出的消费分期、赎楼等项目。智投产品安全稳健，收益稳定，最高可享12%年化收益。适用追求稳定高收益但理财时间少的人群。</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">2</span>问：我把钱借给了谁？</h3>
+                <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">可在项目详情中查看借款人信息和房产信息，这里的借款人不只一个</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">3</span>问：智投产品收益如何？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">我第一次充值后获得了58元的返现券，投资额达到10000元可使用。假如我投10000到90天期的智投产品产品，那么到期后所获得的收益为10000*0.096/365*90+58=295,根据计算，到期可获得295元收益。</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">4</span>问：智投产品可以使用返现券、加息券或者鸟币吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">在您的账户中如果有返现券、加息券和鸟币的前提下，智投产品产品是可以使用返现券、加息券和鸟币的，但是返现券和加息券是不可以叠加使用的。鸟币和返现券和加息券中的一种叠加使用。</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">5</span>问：投资智投产品有金额限制吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">智投产品1000元起投，无上限</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">6</span>问：投资智投产品后，到期了会自动返还吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">在领投鸟理财平台上的投资，到期后本息会自动返还至投资人的“账户中心-可用余额”里，可提现或再投资。</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">7</span>问：投资智投产品后，没到期的时候可以提出来吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">智投产品属于固定期限类理财产品，未到期时不可赎回。</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">8</span>问：领投鸟可用余额提现多久到账？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">您在工作日17点之前发起的提现申请当日到账，17点以后发起的提现第二个工作日到账。若遇节假日顺延。每周一因要审核周五、周六、周日三天的付款申请，因此略有延时。</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">9</span>问：领投鸟提现要不要手续费？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">每月有3次免费提现的机会，超出3次的话每次提现扣除2鸟币，没有鸟币的情况下扣除2元人民币</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">10</span>问：提现有金额限制吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">领投鸟理财账户提现单日限额100万 。</p>
+                </div>
+              </div>
+            </div>
+            <div class="JS-supply">
+              <div class="row">
+                <h3 class="caption"><span class="icon">1</span>问：什么是供应链融资产品？</h3>
+                <div class="section">
+                <span class="answer">答：</span>
+                <p class="field">
+                  供应链融资是在领投鸟风控保障体系下，经过严格的论证和实践运作， 精心设计推出的产品。
+                  资金主要用于央企、国企、上市公司等大型生产贸易企业与下游服务供应商的应收账款提前结算，
+                  借款方资金需求合理，上游还款企业经营利润率较高，还款来源稳定可靠，
+                  且平台对借款方严格背调审核，极大地降低了项目风险。
+                </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">2</span>问：供应链融资产品可以使用返现券、加息券或者鸟币吗？</h3>
+                <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">通常情况下可以使用，具体以每个标的为准。</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">3</span>问：供应链融资产品投资有金额限制吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">
+                      供应链融资产品1000元起投，无上限。
+                    </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">4</span>问：投资供应链融资产品后，没到期的时候可以提出来吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">
+                      供应链融资产品属于固定期限类理财产品，未到期时不可赎回。
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="JS-shopStages">
+              <div class="row">
+                <h3 class="caption"><span class="icon">1</span>问：什么是消费分期产品？</h3>
+                <div class="section">
+                <span class="answer">答：</span>
+                <p class="field">
+                  消费分期资产融资是在领投鸟风控保障体系下，经过严格的论证和实践运作，精心设计推出的产品。资金主要用于分期消费者的个人消费、房产装修、车位购买、教育培训、生育服务、医美整   形、家具家居等消费需求，
+                  借款方资金需求合理，还款来源稳定可靠，且平台对借款方及担保方进行严格的背调审核，极大地降低了项目风险。
+                </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">2</span>问：消费分期产品可以使用返现券、加息券或者鸟币吗？</h3>
+                <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">通常情况下可以使用，具体以每个标的为准。</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">3</span>问：消费分期产品投资有金额限制吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">
+                      消费分期产品1000元起投，无上限
+                    </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">4</span>问：投资消费分期产品后，没到期的时候可以提出来吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">
+                      消费分期产品属于固定期限类理财产品，未到期时不可赎回。
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="JS-cashStages">
+              <div class="row">
+                <h3 class="caption"><span class="icon">1</span>问：什么是信用宝？</h3>
+                <div class="section">
+                <span class="answer">答：</span>
+                <p class="field">
+                  信用宝是在领投鸟平台风控保障体系下，经过严格的论证实践和全方位背景调查推出的创新产品。领投鸟将经过战略合作伙伴审核通过的借款信息发布在平台上，
+                  平台作为交易撮合方协助投资人完成投资放款，同时通过合作伙伴承担逾期垫付责任确保借款人按时足额还款。
+                </p>
+                </div>
+              </div>
+              <div class="row">
+                <h3 class="caption"><span class="icon">2</span>问：信用宝可以使用返现券、加息券或者鸟币吗？</h3>
+                <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">此项目为超短期借款产品，不可以使用，具体以每个标的为准。</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">3</span>问：信用宝产品投资有金额限制吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">
+                      信用宝产品100元起投，投资暂无上限。
+                    </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <h3 class="caption"><span class="icon">4</span>问：投资信用宝产品后，没到期的时候可以提出来吗？</h3>
+                <div class="section">
+                    <span class="answer">答：</span>
+                    <p class="field">
+                      信用宝产品属于超短期固定期限类产品，且分散到数百位借款人，未到期时无法赎回。
+                    </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

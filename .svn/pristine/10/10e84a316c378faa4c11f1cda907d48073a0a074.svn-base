@@ -1,0 +1,27 @@
+<div class="common-header page-component">
+  <div class="wrap">
+    <div class="left">
+      <div class="service">客服电话：400-999-9980</div>
+      <div class="time">(工作日9:30-18:00)</div>
+      <div class="weixin2">
+        <div class="code"></div>
+      </div>
+      <div class="weibo">
+        <a href="http://weibo.com/u/5935757405" target="_blank" class="weibo1"></a>
+      </div>
+      <div class="mobile">
+        <a href="/html/appnew" target="_blank" class="shouji"></a>
+      </div>
+      <a href="/html/activity_banner" target="_blank"><div class="liwu"></div></a>
+    </div>
+    <div class="right">
+      <a href="/html/user/login/?url=/" class="item login" onclick="user().clickEvent();">登录</a>
+      <a href="/html/user/register" class="item register" onclick="user().clickEvent();">注册</a>
+      <a class="item welcome"></a>
+      <a href="javascript:void(0);" class="item logoff" onclick="user().clickEvent();">安全退出</a>
+      <a href="/html/mypartner/" class="item hehuo" onclick="user().clickEvent();">我是合伙人</a>
+      <a href="/other/newerguide " class="item" onclick="user().clickEvent();">新手指引</a>
+      <a href="/help/aboutltn" class="item" onclick="user().clickEvent();">帮助中心</a>
+    </div>
+  </div>
+</div>

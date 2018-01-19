@@ -1,0 +1,21 @@
+<script type="text/template" id="tempDetailList">
+  <table>
+    <thead>
+      <tr>
+        <!-- <th class="messageType">消息类型</th> -->
+        <th class="productname">消息内容</td>
+        <th>发送时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~it:value}}
+      <tr>
+        <!-- <td>{{=value.messageType}}</td> -->
+        <td class="tableinfo">{{=value.messageContent}}</td>
+        <td class="sendTime">{{=value.publishDate}}</td>
+      </tr>
+      {{~}}
+    </tbody>
+  </table>
+  <div class="nolist"></div>
+</script>

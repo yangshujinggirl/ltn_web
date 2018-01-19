@@ -1,0 +1,24 @@
+<div class="loan-pay page-component">
+  <div class="wrap">
+    <div class="login-content">
+      <div class="title">
+        <div class="item">乐巢贷流程</div>
+      </div>
+      <div class="pay-process">
+        <div class="banner">
+          <img src="/img/finalLoan_banner.jpg" alt="">
+          <div class="infoText">
+            <h1 class="name">乐巢贷</h1>
+            <p>
+              赎楼垫资，短期周转首选;<br/>
+              首续齐全，最快1天放款;<br/>
+              超高额度，最高可贷3000万;
+            </p>
+          </div>
+        </div>
+      	<div class="form" id="htmLoanProcess">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

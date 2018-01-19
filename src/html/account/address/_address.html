@@ -1,0 +1,133 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<!-- @extend ../_paging.html -->
+
+<div class="address_account">
+  <div class="viewall_top">
+    <div class="viewall_left">收货地址</div>
+    <div class="viewall_right">
+      <div class="liandong">
+      <span class="liandong_icon"></span>
+      本平台所有资金都是通过联动优势第三方资金托管  </div>
+    </div>
+  </div>
+  <div class="none_address">
+    <span>您还未添加收货地址，请</span>
+    <button class="add">添加地址</button>
+  </div>
+  <div class="form" id="form">
+      <div class="row">
+        <span class="caption">收货人姓名</span>
+        <div class="field">
+          <input class="input" type="text" placeholder="请输入真实姓名" id='txtName' data-required='true' data-type='username' data-emptyTip='姓名不能为空' data-errorTip="姓名不符合规则" onfocus="this.placeholder=''" onblur="this.placeholder='请输入真实姓名'">
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row">
+        <span class="caption">手机号码</span>
+        <div class="field">
+          <input class="input" id='txtTel' placeholder="请输入真实的手机号码" type="text" data-required='true' data-type='telephone' data-emptyTip='账号不能为空' data-errorTip="请输入正确的手机号码"  onfocus="this.placeholder=''" onblur="this.placeholder='请输入手机号码'">
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row">
+        <span class="caption">所在地区</span>
+        <div class="docs-methods">
+          <form class="form-inline">
+            <div id="distpicker">
+              <div class="form-group">
+                <div style="position: relative;">
+                  <input id="city-picker3" class="form-control" readonly type="text">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <span class="caption">详细地址</span>
+        <div class="field">
+          <textarea class="address_details" id="detailAddress"></textarea>
+        </div>
+        <button class="address_but">保存</button>
+      </div>
+  </div>
+  <div class="big_box3">
+    <div class="form" id="form2">
+        <div class="row">
+          <span class="caption">收货人姓名</span>
+          <div class="field">
+            <input class="input" type="text" placeholder="请输入真实姓名" id='txtName2' data-required='true' data-type='username' data-emptyTip='姓名不能为空' data-errorTip="姓名不符合规则" onfocus="this.placeholder=''" onblur="this.placeholder='请输入真实姓名'">
+          </div>
+          <div class="validation"></div>
+        </div>
+        <div class="row">
+          <span class="caption">手机号码</span>
+          <div class="field">
+            <input class="input" id='txtTel2' placeholder="请输入真实的手机号码" type="text" data-required='true' data-type='telephone' data-emptyTip='账号不能为空' data-errorTip="请输入正确的手机号码"  onfocus="this.placeholder=''" onblur="this.placeholder='请输入手机号码'">
+          </div>
+          <div class="validation"></div>
+        </div>
+        <div class="row">
+          <span class="caption">所在地区</span>
+          <div class="docs-methods">
+            <form class="form-inline">
+              <div id="distpicker">
+                <div class="form-group">
+                  <div style="position: relative;">
+                    <input id="city_two" class="form-control" readonly type="text">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <span class="caption">详细地址</span>
+            <textarea class="address_details" id="detailAddress2"></textarea>
+          </div>
+          <button class="address_but2">保存</button>
+        </div>
+    </div>
+  </div>
+  <div class="editors" id="propeditors">
+    <div class="big_box">
+      <ul class="editors_list">
+        <li class="recipient">收货人</li>
+        <li class="locality">所在地区</li>
+        <li class="dizhi">详细地址</li>
+        <li class="tel">手机号码</li>
+        <li class="handle">操作</li>
+      </ul>
+    </div>
+    <ul class="editors_list">
+      <li class="recipient">王麻子</li>
+      <li class="locality">湖南省邵阳市大祥区中心路街道</li>
+      <li class="dizhi" id="dizhi">湖南省邵阳市大祥区中心路街道绿庭尚城66号801室</li>
+      <li class="tel">18274315527</li>
+      <li class="handle">
+        <span class="bianji" id="bianji">编辑</span>
+        |
+        <span class="del">删除</span>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="LCTtankuang" id="tankuangLCT">
+  <div class="tkTitle">
+     <span class="tishi2">提示</span>
+  </div>
+  <div class="tkCont">确定删除收货地址！</div>
+  <div class="tips">删除的收货地址无法恢复</div>
+  <button class="tkbut1">取消</button>
+  <button class="tkbut">确定</button>
+  <div class="close2" id="close2"><img src="/html/img/product-start-chahao.png"></div>
+</div>
+<!-- @endextend -->
+<!-- @endextend -->
+<!-- @endextend -->
+<div class="mask"></div>

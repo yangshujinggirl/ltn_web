@@ -1,0 +1,80 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<div class="account-cardtwo">
+  <div class="title" id="account-card" data-content="/html/account/card1/">
+   <div class="item">我的银行卡</div>
+  </div>
+  <div class="content">
+    <div class="cont-top">
+      <div class="prompt"><i><img src="../../../img/card-img1.png"></i>温馨提示</div>
+      <p class="paragraph">快捷银行卡：该银行卡可用于网站及手机APP充值与提现，目前可支持中国银行、中国工商银行、中国建设银行、中国农业银行、光大银行、兴业银行、中国民生银行、浦发银行、交通银行、广发银行、中信银行、招商银行、平安银行，以上银行在快捷充值时均有上限。为保障您的账户安全，如
+      需要更换快捷银行卡账户，需通过线下人工审核流程。<a style="color: red;"href="javascript:void(0)" id="speed" onclick="user().clickEvent();">查看快捷充值限额表</a></p>
+    </div>
+    <div class="cont-bottom"  id="bankInfo">
+      <div class="form">
+        <div class="row">
+          <p class="nongye"></p>
+        <!-- <div class="row">
+          <div class="caption">卡号</div>
+          <div class="field">
+            <div class="field">
+            <input class="input current" type="text" value="{{=it.bankCardId}}" disabled="disabled">
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">用户名</div>
+          <div class="field">
+            <input class="input" type="text" id='txtName' disabled="disabled">
+          </div>
+          <div class="validation">
+            <span class="icon">!</span>请更换本人名下的银行卡
+          </div>
+        </div> -->
+        <!-- <div class="on-state" id="onState">
+              <span class="em">免密充值</span>
+              <div class="switch">
+                <div class="status" id="switch"></div>
+              </div>
+              <span class="em" id="switchStatus">（关闭状态）</span>
+              <span class="em1">*开通投资免密充值后下次无需再次输入支付密码</span>
+        </div> -->
+        <!-- <button class="button">绑定银行卡</button> -->
+      </div>
+      <div class="friend"><a style="color: red;"href="/html/account/cardchange" onclick="user().clickEvent();">我要换卡>></a></div>
+    </div>
+    </div>
+    <div class="account-floating" id="float">
+      <span class="jiantou"><img src="../../../img/jiantou2.png"></span>
+      <div class="cont-floating" id="propFloat">
+        <p>充值是否有上限？<br/>
+               目前您可通过快捷支付进行充值。若您通过快捷支付方式进行充值，快捷的限额见下表（具体额度请以实际情况为准）：
+        </p>
+        <table>
+          <thead>
+            <tr class="one">
+              <th>银行</th>
+              <th>单笔限额</th>
+              <th>单日限额</th>
+            </tr>
+          </thead>
+          <tbody class="list">
+           <!-- {{~it./bank/list/bk:value:index}}
+            <tr>
+              <td class="item">{{=value.orderDate}}</td>
+              <td class="item">{{=value.userName}}</td>
+              <td class="item">{{=value.orderAmount}}</td>
+            </tr>
+            {{~}} -->
+          </tbody>
+        </table>
+      </div>
+       <div class="closeButton" id="close"></div>
+    </div>
+</div>
+
+<!-- @endextend -->
+<!-- @endextend -->

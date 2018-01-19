@@ -1,0 +1,10 @@
+<div class="dialog-footer page-component">
+	<div class="wrap">
+		<p class="copy-right">
+			©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有 沪ICP备15056137号－1 &nbsp;&nbsp;&nbsp;&nbsp;
+		</p>
+
+	</div>
+</div>
+<script src="/html/js/lib/jquery.min.js"></script>
+<script src="/html/js/lib/doT.min.js" type="text/javascript" charset="utf-8"></script>

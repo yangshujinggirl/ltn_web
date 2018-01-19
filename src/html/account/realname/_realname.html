@@ -1,0 +1,68 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<!-- @extend _message.html -->
+<!-- @endextend -->
+
+<div class="account-realname">
+  <div class="title" id="realnametitle" data-content="/html/account/realname/">
+   <div class="item">实名认证</div>
+  </div>
+  <div class="form" id="form">
+      <div class="row">
+        <div class="caption">真实姓名</div>
+        <div class="field">
+          <input class="input" type="text" placeholder="请输入您的姓名"id='txtName' data-required='true' data-type='username' data-emptyTip='姓名不能为空' data-errorTip="姓名不符合规则">
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row">
+        <div class="caption">身份证号</div>
+        <div class="field">
+          <input class="input ID" id="txtIdentity" type="text" placeholder="请输入身份证号"data-required='true' data-type='identity' data-emptyTip='身份证不能为空' data-errorTip="身份证不符合规则">
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row" id="wrapImg">
+        <div class="caption">图片验证码</div>
+        <div class="field" id="imageCon">
+          <input class="input validate left" id="txtCode" type="text" placeholder="请输入图片验证码" data-required='true' data-emptyTip='图片验证码不能为空' data-type='imgCode'  data-errorTip="图片验证码不符合规则">
+          <img class="validate-image right" src="/html/img/forget_03.png" alt="图片验证码" id="imageCode">
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row">
+        <div class="accept">
+          <input id="isRead" class="check" type="checkbox" checked="checked">
+          <label for="isRead" class="label">我已阅读并同意</label>
+          <a class="link" href="/html/product/capital/" target="_blank">《资金托管协议》</a>
+          <a class="link" href="/html/user/contract/" target="_blank">《个人用户授权协议》</a>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="tips">
+          <p class="content">
+            友情提示：<br>
+          我们使用法定接口验证您的身份证信息，如有疑问，请拨打电话：400-999-9980
+          </p>
+        </div>
+      </div>
+      <div class="login-tip" id="loginTip">
+        	<span class="icon-wran"></span>
+        	<span class="wran-tip" id="wranTip"></span>
+        </div>
+      <div class="row">
+        <div class="action">
+          <button class="button" id="submit" onclick="user().clickEvent();">立即认证</button>
+        </div>
+        <div class="tips1">友情提示：强烈建议使用IE9以上浏览器，需注意处理浏览器右上角地址栏的拦截信息。</div>
+      </div>
+  </div>
+</div>
+
+<!-- @endextend -->
+
+<!-- @endextend -->

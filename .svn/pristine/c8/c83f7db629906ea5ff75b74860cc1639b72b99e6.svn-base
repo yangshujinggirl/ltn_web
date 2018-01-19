@@ -1,0 +1,352 @@
+.product-buy {
+  width: 700px;
+  height: 532px;
+
+  border: 8px solid rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  background: #fff;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -300px;
+  margin-left: -350px;
+  z-index: 999999;
+
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  .wrap {
+    padding: 0;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    bottom: 20px;
+    left: 35px;
+    box-sizing: border-box;
+    // overflow: hidden;
+  }
+
+  .header {
+    border-bottom: 1px solid $border-color;
+    padding: 0 10px;
+
+    .title {
+      font-size: 18px;
+      color: $font-color-title;
+      line-height: 2;
+      display: inline-block;
+    }
+
+    .close {
+      background: url(/img/icon-dialog-close.png) center center no-repeat;
+      float: right;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+
+  .form {
+    font-size: 14px;
+    // overflow: hidden;
+    margin: 20px 0 0 0;
+    .dash {
+      height: 0;
+      border: none;
+      border-top: 1px dashed $border-color;
+    }
+    .row {
+      position:relative;
+      line-height: 2;
+      margin: 8px 0;
+
+      &.submit {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      .caption {
+        color: #8a8a8a;
+        text-align: right;
+        font-weight: bold;
+        width: 33%;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0 20px 0 0;
+        vertical-align: top;
+      }
+
+      &.validate-failed {
+        .field {
+          .input {
+            outline: 5px auto #f78e8b;
+            outline-offset: -2px;
+          }
+        }
+        .validation {
+          color: #f78e8b;
+          display: inline-block;
+          background: url(/img/icon-mark-warning.png) left center no-repeat;
+        }
+      }
+      &.validate-success {
+        .validation {
+          color: $font-color;
+          display: inline-block;
+          background: url(/img/icon-mark-ok.png) left center no-repeat;
+        }
+      }
+      .field {
+        display: inline-block;
+        vertical-align: middle;
+        #recharge{
+           color: #f78e8b;
+           cursor: pointer;
+           display: none;
+        }
+        .input, .select,.convertCode {
+          width: 190px;
+          height: 35px;
+          font-size: 12px;
+          color:#ccc;
+          box-sizing: border-box;
+          padding: 0 15px;
+          border: 1px solid $border-color;
+          background: none;
+          &.short {
+            width: 60%;
+          }
+        }
+        .changeInput {
+          position:relative;
+          .code {
+            position:relative;
+            .couponName {
+              line-height: 35px;
+              display: none;
+            }
+            .sure {
+              padding:0 5px;
+              color: #f78e8b;
+              text-decoration: underline;
+            }
+            &.valid-fail {
+              .valid {
+                display: block;
+                .tipsIcon {
+                  background:url(/img/coinCertificate/icon1.png) left center no-repeat;
+                }
+                .validTips {
+                  font-size: 14px;
+                  display: inline-block;
+                  height: 32px;
+                  padding:0 10px;
+                  line-height:32px;
+                  background-color: #ff0000;
+                  vertical-align: middle;
+                }
+                // background: url(/img/coinCertificate/icon2.png) left center no-repeat;
+                // display: block;
+              }
+            }
+            &.vaid-success {
+              .valid {
+                display: block;
+                .tipsIcon {
+                  background: url(/img/icon-mark-ok.png) left center no-repeat;
+                }
+              }
+              .couponName {
+                display: inline;
+              }
+              // .convertCode,.sure {
+              //   display: none;
+              // }
+            }
+          }
+          .select,.code {
+            display: none;
+            &.pitch {
+              display: block;
+            }
+          }
+          .valid {
+            font-size: 0;
+            -webkit-text-size-adjust:none;
+            display: none;
+            color: #fff;
+            position:absolute;
+            top:50%;
+            right: 0;
+            transform: translate(100%,-50%);
+            -webkit-transform: translate(100%,-50%);
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            .tipsIcon {
+              display: inline-block;
+              width: 14px;
+              height: 17px;
+              vertical-align: middle;
+            }
+          }
+        }
+        .validate-image, .validate-sms {
+          width: 35%;
+          height: 35px;
+          float: right;
+        }
+        .validate-sms {
+          border: 1px solid #38a2ff;
+          border-radius: 4px;
+          box-sizing: border-box;
+          background: none;
+          font-size:14px;
+          color:#38a2ff;
+        }
+        .check, .label {
+          cursor: pointer;
+          vertical-align: middle;
+        }
+        .info {
+          font-size: 12px;
+          padding: 0 6px;
+          cursor: pointer;
+        }
+        .action {
+          color: #fff;
+          background: #ff6f20;
+          border: none;
+          box-sizing: border-box;
+          font-size: 18px;
+          height: 40px;
+          width: 180px;
+          border-radius: 4px;
+
+          &:hover {
+            background: #ff5a00;
+          }
+          &.disabled {
+            background: #ccc;
+          }
+        }
+        .tickits,.convertTickits {
+          display: inline-block;
+        }
+        .tickits {
+          margin-right: 30px;
+        }
+      }
+      
+
+      .validation {
+        height: 14px;
+        line-height: 14px;
+        display: none;
+        padding: 0 0 0 20px;
+        box-sizing: border-box;
+        vertical-align: middle;
+      }
+
+      .info {
+        width: 66%;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0 20px 0 0;
+        vertical-align: middle;
+      }
+
+      .tips, .accept, .action {
+        padding: 0 120px;
+      }
+
+      .tips {
+        margin: 50px 0 0 0;
+        border-top: 1px dashed #e2e2e2;
+        .content {
+          font-size: 12px;
+          line-height: 24px;
+          text-align: justify;
+          color: #8a8a8a;
+          .mark {
+            background: none;
+            color: $font-height-light-color;
+          }
+        }
+      }
+
+      .actual {
+        margin: 10px 0;
+        text-align: center;
+        font-weight: bold;
+        .text {
+          font-size: 12px;
+          color: $font-color-title;
+        }
+        .amount {
+          font-size: 18px;
+          color: $font-color-mark;
+        }
+      }
+
+      .accept {
+        margin: 5px 0;
+        color: $font-color-sub;
+        font-size: 12px;
+        text-align: center;
+        .check, .label {
+          cursor: pointer;
+        }
+        .label {
+          padding: 0 5px;
+        }
+        .link {
+          color: $link-color;
+          &:hover {
+            color: $link-color-hover;
+          }
+        }
+      }
+
+      .action {
+        margin: 5px 0;
+        text-align: center;
+        .button {
+          width: 230px;
+          height: 35px;
+          line-height: 35px;
+          border: none;
+          border-radius: 4px;
+
+          background: $bg-btn;
+          color: #fff;
+          font-size: 18px;
+
+          &:hover {
+            background: $bg-btn-hover;
+          }
+
+          &[disabled], &.disabled {
+            // background: $bg-btn-disabled;
+          }
+        }
+        .link {
+          color: $link-color;
+          &:hover {
+            color: $link-color-hover;
+          }
+        }
+        .text {
+          margin: 0 0 0 30px;
+        }
+      }
+    }
+  }
+}

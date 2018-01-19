@@ -1,0 +1,82 @@
+<div class="safe-offline page-component">
+  <div class="wrap">
+    <div class="content">
+      <h2>线下业务是否真实可靠</h2>
+      <div class="main">
+        <div class="cont-top">
+              <h3>截止2016年12月31日集团房产金融业务线下数据概览：</h3>
+              <div class="section">
+                  <div class="item">
+                      <div class="icon1"><img src="../../img/offline-icon1.png"></div>
+                      <div class="title">累计金额:<font style="color: #fd8d4b;">11.54</font>亿元</div>
+                  </div>
+
+                  <div class="item">
+                      <div class="icon1"><img src="../../img/offline-icon2.png"></div>
+                      <div class="title">筑力梦想家:<font style="color: #fd8d4b;">1111</font>套</div>
+                  </div>
+
+                  <div class="item">
+                      <div class="icon1"><img src="../../img/offline-icon3.png"></div>
+                      <div class="title">实现梦想单: <font style="color: #fd8d4b;">1200</font>单</div>
+                  </div>
+
+                  <div class="item">
+                      <div class="icon1"><img src="../../img/offline-icon4.png"></div>
+                      <div class="title">坏帐单量: <font style="color: #fd8d4b;">0</font>单</div>
+                  </div>
+              </div>
+        </div>
+        <div class="cont-tow">
+          <div class="text">
+            <h2>宁波</h2>
+            <p>业务累积交易:438笔<br/>交易累积金额：7.26亿元</p>
+          </div>
+
+          <div class="text">
+            <h2>杭州</h2>
+            <p>业务累积交易：286笔<br/>交易累积金额：2.15亿元</p>
+          </div>
+
+          <div class="text">
+            <h2>上海</h2>
+            <p>业务累积交易：146笔<br/>交易累积金额：2.13亿元</p>
+          </div>
+        </div>
+        <div class="cont-three">
+          <div class="limit">
+            <div class="icon1"><img src="../../img/offline-icon5.png"></div>
+            <div class="font">
+              <div class="title">之前业务资金来源:</div>
+              <div class="samll">基金＋集团投入</div>
+            </div>
+          </div>
+
+          <div class="limit">
+            <div class="icon1"><img src="../../img/offline-icon6.png"></div>
+            <div class="font">
+              <div class="title">发行的基金名称:</div>
+              <div class="samll">安心投一号，二号</div>
+            </div>
+          </div>
+
+          <div class="limit">
+            <div class="icon1"><img src="../../img/offline-icon7.png"></div>
+            <div class="font">
+              <div class="title">发行的基金金额:</div>
+              <div class="samll">均为1亿元</div>
+            </div>
+          </div>
+
+          <div class="limit">
+            <div class="icon1"><img src="../../img/offline-icon8.png"></div>
+            <div class="font">
+              <div class="title">集团累计投入资金:</div>
+              <div class="samll">2400万元</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

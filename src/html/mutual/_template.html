@@ -1,0 +1,25 @@
+<script type="text/template" id="tempMutualList">
+	{{for (var i=0; i<it.helpList.length; i++) { }}
+
+	    <div class="mutual_list">
+	      <div class="plan" data-url='mutual_details/#!/{{=it.helpList[i].productId}}'>
+	        <div class="plan_left">
+	          <img src="{{=it.helpList[i].productPic}}">
+	        </div>
+	        <div class="plan_right">
+	          <div class="plan_title">{{=it.helpList[i].productFirstTitle}}</div>
+	          <div class="plan_item">{{=it.helpList[i].productSubTitle}}</div>
+	          <div class="plan_info">{{=it.helpList[i].productDesc}}</div>
+	          <a href="mutual_details/#!/{{=it.helpList[i].productId}}"><button class="plan_but">立即加入</button></a>
+	        </div>
+	      </div>
+    	</div>
+
+	{{ } }}
+</script>
+
+<script type="text/template" id="tempMutualBanner">
+
+    <img src="{{=it.bannerList[0].bannerPicture}}">
+
+</script>

@@ -1,0 +1,34 @@
+<div class="about-content page-component">
+  <div class="wrap">
+    <div class="message">
+      <div class="lefttop">
+        <div class="leftContent">
+          <div class="aboutus" id="leftnav">
+            <div class="list">
+              <div class="list1">
+                <div class="titleicon"></div>
+                <div class="title">关于我们</div>
+              </div>
+              <div>
+                <a href="/html/about/introduce/" class="item ">平台介绍</a>
+                <a href="/html/about/team/" class="item"> 团队介绍</a>
+                <a href="/html/about/honor/" class="item"> 平台荣誉</a>
+                <a href="/html/about/partner/" class="item">合作伙伴</a>
+                <a href="/html/about/advantage/" class="item">品牌优势</a>
+                <a href="/html/about/notice/" class="item"> 平台公告</a>
+                <a href="/html/about/news/" class="item">媒体报道</a>
+                <a href="/html/about/report/" class="item">运营报告</a>
+                <a href="/html/about/agreement/" class="item">协议范本</a>
+                <a href="/html/about/join/" class="item">加入我们</a>
+                <a href="/html/about/contact/" class="item"> 联系我们</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- @extendable -->
+
+    </div>
+  </div>
+</div>
+

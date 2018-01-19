@@ -1,0 +1,45 @@
+.copy-success {
+  width:520px;
+  height: 350px;
+  background-color: #FFF;
+  color:#000;
+  border-radius:5px;
+  border: 8px solid rgba(0,0,0,.1);
+  position: fixed;
+  left:50%;
+  top:50%;
+  margin-left: -260px;
+  margin-top:-175px;
+  z-index:9999;
+  padding:100px 0 0 90px;
+  box-sizing:border-box;
+  display: none;
+  .copy-content {
+    font-size:16px;
+    line-height: 24px;
+    width:340px;
+    padding-left:50px;
+    box-sizing:border-box;
+    background: url(/html/img/loan_plan_01.png) no-repeat left top;
+    .tips {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 30px;
+      color:#ff6f20;
+      margin:0;
+    }
+    .friend {
+      margin:0;
+    }
+  }
+  .close {
+    width:180px;
+    height: 36px;
+    background-color: #ff6f20;
+    border-radius:5px;
+    border:none;
+    color:#fff;
+    font-size:18px;
+    margin:50px 0 0 78px;
+  }
+}

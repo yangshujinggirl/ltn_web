@@ -1,0 +1,28 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+
+<div class="about-newsdetail" id="propNews">
+  <div class="title" id="abouttitle" data-content="/html/about/news/">
+    <div class="item">
+    <span class="item-left">媒体报道</span>
+    <span class="item-right"><a href="/html/about/news">更多</a></span></div>
+  </div>
+  <div class="content" id="content">
+      <!-- <div class="top">
+        <h1>领投鸟收获B轮融资，10000000万</h1>
+        <div class="from">来源:XXX媒体       2016-02-29 星期一</div>
+        <div class="link">链接:<a href="#">www.baidu.com/XXXXXX/XXXXXXX/sf-123</a></div>
+        <div class="further">为了进一步XXXXXX</div>
+      </div> -->
+      
+
+      <div class="mian"></div>
+  </div>
+</div>
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->

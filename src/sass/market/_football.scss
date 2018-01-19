@@ -1,0 +1,185 @@
+.football{
+  position: relative;
+ .footbg{
+  width:100%;
+ }
+ .top{
+  width:900px;
+  height:508px;
+  background:url(/html/img/foot-bg2.png?v=20160531) no-repeat;
+  position: absolute;
+  left:220px;
+  top:796px;
+  .stretch{
+    font-size:35px;
+    color: #4a9800;
+    display:inline-block;
+    margin: 60px 0 0 370px;
+  }
+  .briefing{
+    width:620px;
+    line-height: 56px;
+    margin:82px auto 0;
+    font-size:20px;
+    color: #4a9800;
+    position: relative;
+    .jp{
+      color: #ff4a2c;
+      font-size: 29px;
+    }
+  }
+ }
+ .bottom{
+  width:900px;
+  height: 1500px;
+  background:url(/html/img/foot-bg3.png?v=20160531)  no-repeat;
+  position: absolute;
+  left:220px;
+  top:1380px;
+  .stretch{
+    font-size:35px;
+    color: #4a9800;
+    display:inline-block;
+    margin: 17px 0 0 345px;
+  }
+  .bottom-cont{
+    width:730px;
+    margin:30px auto 0;
+    .time{
+      font-size: 30px;
+      color: #4a9800;
+    }
+    .time2{
+      font-size: 20px;
+      margin-top: 17px;
+    }
+    .caption{
+      margin-top: 20px;
+      height:100px;
+      .jp{
+      color: #ff4a2c;
+      font-size: 20px;
+    }
+
+      .wenzi{
+        font-size:20px;
+      }
+      .icon1{
+        width:120px;
+        height:70px;
+        display: inline-block;
+        margin-left: 240px;
+        vertical-align: middle;
+      }
+      .icon2{
+        width:100px;
+        height:132px;
+        display:inline-block;
+        margin-left: 210px;
+        vertical-align: middle;
+      }
+      .icon3,.icon4{
+        display:inline-block;
+        margin-left:86px;
+        vertical-align: middle;
+      }
+      .icon5{
+        display:inline-block;
+        margin-left: 55px;
+         vertical-align: middle;
+      }
+      .icon6{
+        display:inline-block;
+        margin-left:178px;
+        vertical-align: middle;
+        position: absolute;
+        left:370px;
+        top:-53px;
+      }
+      .icon7{
+        display:inline-block;
+        margin-left:-10px;
+        vertical-align: middle;
+        position: absolute;
+        left: 496px;
+        top:-34px;
+      }
+      .icon8{
+        display:inline-block;
+        vertical-align: middle;
+        position: absolute;
+        left:535px;
+        top:-14px;
+      }
+    }
+    .one{
+      height: 61px;
+      margin-top: 49px;
+    }
+    .pijiu{
+      margin-top:22px;
+      position: relative;
+    }
+    .diannao{
+      margin-top:20px;
+      position: relative; 
+    }
+    .feiji{
+      margin-top:12px;
+      position: relative;
+    }
+    .footer1{
+      margin-top: -4px;
+      font-size:16px;
+      line-height: 40px;
+    }
+    .last{
+      font-size:16px;
+      color:#1a6e05;
+      text-align:center;
+      margin-top:30px;
+    }
+  }
+   .stretch{
+    font-size:35px;
+    color: #4a9800;
+    display:inline-block;
+    margin: 30px 0 0 370px;
+  }
+  .briefing{
+    width:805px;
+    line-height: 56px;
+    margin:40px auto 0;
+    font-size:20px;
+    position: relative;
+    color: #4f4f4f;
+    .jp{
+      color: #ff4a2c;
+      font-size: 29px;
+    }
+    .wintitle{
+      font-size: 24px;
+    }
+    .hongse{
+      color: #ff3535;
+      font-size: 24px;
+    }
+  }
+  .lastwin{
+    width: 805px;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 24px;
+  }
+ }
+ .bottom1{
+  top: 918px;
+  height: 1566px;
+  .last{
+      font-size:16px;
+      color:#1a6e05;
+      text-align:center;
+      margin-top:30px;
+    }
+ }
+}

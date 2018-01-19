@@ -1,0 +1,436 @@
+$account-myinvest-fontcolor: #ea5504;
+$acount-myinvest-bgcolor: #ececec;
+.account-quickcenter{
+  .charg-depost {
+    padding:35px;
+    .itemnav {
+      font-size: 14px;
+      font-weight: bold;
+      overflow: hidden;
+      border-bottom: 2px solid #e2e2e2;
+      margin-bottom:46px;
+      .itemnav-left{
+        float:left;
+        .item {
+          width: 100px;
+          height: 30px;
+          line-height: 30px;
+          float: left;
+          text-align: center;
+          margin: 0 10px;
+          &:hover,&.selected {
+            border-bottom: 3px solid $account-myinvest-fontcolor;
+            color: $account-myinvest-fontcolor;
+          }
+        }
+      }
+      .itemnav-right{
+       float: right;
+        .item{
+          line-height: 30px;
+          padding:0 5px;
+        }
+        .depostlist{
+          border-left: 1px solid #ea5504;
+        }
+      }
+    }
+    .icon {
+      display: none;
+      width:20px;
+      height:20px;
+      background: url(/html/img/bank_02.png);
+      position: absolute;
+      bottom:0;
+      right: 0;
+    }
+    .icon1{
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      background:url(/html/img/tuijian.png);
+      z-index: 99;
+    }
+    .row {
+      position: relative;
+      &:nth-child(2){
+        margin: 20px 0;
+      }
+      .capition {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      &.validate-failed {
+        .field {
+            .input {
+                outline: 5px auto #f78e8b;
+                outline-offset: -2px;
+            }
+        }
+        .validation {
+            display: inline-block;
+            background: url("/html/img/icon-mark-warning.png") 10px center no-repeat;
+        }
+      }
+     &.validate-success {
+        .validation {
+            display: inline-block;
+            height: 14px;
+            background: url("/html/img/icon-mark-ok.png") 10px center no-repeat;
+        }
+      }
+      .field {
+        display:inline-block;
+        font-size: 14px;
+        margin-left: 22px;
+        .input {
+          width:146px;
+          height: 40px;
+          padding-left:10px;
+          box-sizing:border-box;
+          border: 1px solid #d6d6d6;
+          background-color: #fbfbfb;
+        }
+        .recharge {
+          width:190px;
+          display: inline-block;
+          position: relative;
+          &.hide{
+                display: none;
+            }
+             .hot2{
+                width: 44px;
+                height: 30px;
+                display: inline-block;
+                background:url(/html/img/hot2.gif) no-repeat;
+                position: absolute;
+                left: 14px;
+                top: 4px;
+                z-index: 99999;
+              }
+          .input2 {
+            width: 100%;
+            height: 40px;
+            border-radius: 4px;
+            font-size: 16px;
+            color:#000;
+            border: 1px solid #d6d6d6;
+            background-color: #fbfbfb;
+            text-align: center;
+            position: relative;
+            &:hover {
+              border: 1px solid #ff6650;
+            }
+          }
+          &.selected {
+            .icon {display:block}
+            .input2{
+              border:1px solid #ff6650;
+            }
+          }
+        }
+        .recharge:nth-child(2){margin-left:18px;}
+      }
+      .validation {
+        font-size: 16px;
+        color: #f78e8b;
+        padding: 0 0 0 30px;
+        box-sizing: border-box
+      }
+      .bigCZ {
+        position: absolute;
+        right: 0;
+        top:0;
+        font-size: 16px;
+        color: #f78e8b;
+        margin-left:20px;
+      }
+    }
+    .cardModel {
+      width:285px;
+      height: 187px;
+      color:#fff;
+      display: inline-block;
+      text-align: center;
+      background:url(/html/img/bank_01.png);
+      .bankName {
+        font-size: 16px;
+        line-height:30px;
+        font-weight: bold;
+        margin-top:50px;
+      }
+      .owner {
+        font-size: 12px;
+        line-height: 22px;
+        text-align: left;
+        padding-left:85px;
+      }
+    }
+    .quickcenter-bank {
+      .chargeway {
+        .quick-tap {
+          padding:48px 0 0 75px;
+          .change {
+            font-size:16px;
+            color: #38a2ff;
+            margin:20px 0 0 15px;
+          }
+        }
+        .bank-info {
+          .limit {
+            font-size: 14px;
+            font-weight: bold;
+            .focus {
+              color:#ff6650;
+            }
+          }
+          .on-state {
+            height: 30px;
+            margin:17px 0 20px;
+            .em {
+              font-size: 16px;
+              line-height: 30px;
+            }
+            .em1{
+              margin-left: 10px;
+              font-size: 12px;
+              color:#ff6650;
+              line-height:30px;
+            }
+            .switch {
+              width:65px;
+              height: 32px;
+              display: inline-block;
+              vertical-align: middle;
+              margin:0 15px;
+              position:relative;
+              .status {
+                width:65px;
+                height: 32px;
+                cursor: pointer;
+                position:absolute;
+                top:0;
+                left:0;
+                background: url(/html/img/bank_03.png);
+                background-size: cover;
+                &.selected {
+                  background: url(/html/img/bank_04.png);
+                  background-size: cover;
+                }
+              }
+            }
+          }
+          .accept {
+            #isRead {
+              width: 16px;
+              height: 16px;
+              vertical-align: sub;
+            }
+            .label {
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+          .sure-charge {
+            width: 148px;
+            height: 48px;
+            background-color: #ff6650;
+            border-radius: 5px;
+            font-size:18px;
+            color:#fff;
+            border: none;
+            margin:12px 0 15px;
+          }
+        }
+        .tips{
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .bank-content {
+          padding-left:79px;
+          .banks {
+            margin:0 auto 30px;
+            overflow: hidden;
+            .list {
+              width:100%;
+              padding:0;
+              overflow: hidden;
+              zoom: 1;
+              .choose-bank {
+                padding:0;
+                width: 154px;
+                height: 44px;
+                border: 1px solid #d6d6d6;
+                float:left;
+                margin:0 16px 17px 0;
+                position:relative;
+                cursor: pointer;
+                &:hover {
+                  border:1px solid #ff6650;
+                }
+                &.selected {
+                  .icon {display:block}
+                  border:1px solid #ff6650;
+                }
+              }
+            }
+          }
+          .bank-info {
+            .sure-charge {
+              margin-top:50px;
+            }
+          }
+          .bank-tip{
+              display: none;
+              .cankao{
+                color:#000;
+                font-weight: bold;
+              }
+          }
+          tr {
+            font-size: 12px;
+            border: 1px solid #ccc;
+            td ,th{
+              padding: 10px 5px;
+              text-align: center;
+              border: 1px solid #ccc;
+              //width: 13%;
+              // &.productname {
+              //   width: 20%;
+              // }
+              // &.protocol a {
+              //   color: #38a2ff;
+              // }
+            }
+            th{
+              font-size:14px;
+              background-color: #ededed;
+            }
+          }
+          table {
+            width:100%;
+            border: 1px solid #ccc;
+            thead tr{
+              font-size:14px;
+              background-color: $acount-myinvest-bgcolor;
+            }
+          }
+        }
+      }
+      .chargeway.ebank {
+        .quick-tap {
+          display: none;
+        }
+        .bank-content {
+          display: block;
+          .bank-table{
+              display: none;
+          }
+        }
+      }
+      .chargeway.quickly {
+        .quick-tap {
+          display: block;
+        }
+        .bank-content {
+          display: none;
+        }
+      }
+    }
+    .use-info {
+      background-color:#fbfbfb;
+      font-size: 16px;
+      line-height: 24px;
+      padding:15px 78px;
+      .head {
+        font-size: 18px;
+        color:#ea5504;
+        height: 25px;
+        padding:0 5px 0 25px;
+        background:url(/html/img/card-img1.png) no-repeat left center;
+        font-weight: normal;
+        margin:0;
+      }
+      .cont {
+        margin:0;
+      }
+    }
+    .depost {
+      display: none;
+      font-size: 14px;
+      line-height: 32px;
+      .row {
+        margin:10px 0;
+      }
+      .title1 {
+        margin:0;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .capition { font-weight: normal;}
+      .depostInfo {
+        .focal {color:#ff6650;}
+        p {
+          margin:0;
+        }
+        .chance {
+          color:#ff6650;
+        }
+      }
+      .sure {
+        width: 158px;
+        height: 48px;
+        background-color: #ff6650;
+        border-radius: 5px;
+        font-size:18px;
+        font-weight: normal;
+        color:#fff;
+        border: none;
+        cursor: pointer;
+        margin:20px 0 0 76px;
+        &.disabled {
+          background:#ccc;
+        }
+      }
+      .use-info {
+        padding:15px 78px;
+        margin-top:45px;
+        .head {
+          font-size: 18px;
+          color:#ea5504;
+          height: 25px;
+          padding:0 5px 0 25px;
+          background:url(/html/img/card-img1.png) no-repeat left center;
+        }
+      }
+      .no-bound {
+        .depostInfo {
+          padding:0;
+        }
+        .card {
+          width: 75px;
+          height: 32px;
+          background-color: #ff6f20;
+          border: none;
+          border-radius:5px;
+          color:#fff;
+          margin-left: 10px;
+        }
+      }
+    }
+    .depost.bd {
+      .bound,.no-bound {display:none;}
+    }
+  }
+  .charg-depost.current1{
+      .quickcenter-bank {display:block;}
+      .depost {display:none;}
+  }
+  .charg-depost.current2{
+    .quickcenter-bank {display:none;}
+    .depost {display:block;}
+  }
+}

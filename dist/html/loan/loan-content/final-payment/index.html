@@ -1,0 +1,684 @@
+
+  <!DOCTYPE html>
+  <html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="/html/css/style.css?v=20171023">
+    <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name=”renderer” content=”webkit” />
+   <script src="/html/js/lib/jquery.min.js"></script>
+    <script src="/html/js/lib/jquery.easydropdown.min.js"></script>
+    <script src="/html/js/lib/jquery.paging.min.js"></script>
+    <script src="/html/js/lib/jquery.validation.min.js"></script>
+    <script src="/html/js/lib/doT.min.js"></script>
+    <script src="/html/js/app.min.js?v=20161017"></script>
+  
+
+  <title>借款、领投鸟官网平台_借款</title>
+  <meta name="keywords" content="领投鸟理财、领投鸟官网平台、筑巢贷、安翼贷、乐巢贷、领头鸟、互联网理财、不动产理财、P2P网贷、投资理财、短期理财">
+  <meta name="description" content="领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，平台提供网络贷款，投资理财，赎楼业务，小额贷款，短期贷款，互联网理财、P2P网贷">
+
+  </head>
+  <body>
+  
+
+  <div class="commonNavTop page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="service">客服电话：400-999-9980</div>
+          <div class="iconlist">
+            <div class="iconItem weixin">
+              <div class="code"></div>
+            </div>
+            <div class="iconItem weibo">
+              <a href="http://weibo.com/u/5935757405" target="_blank"></a>
+            </div>
+            <div class="iconItem shouji">
+              <a href="/other/downloadapp " target="_blank"></a>
+            </div>
+            <div class="iconItem lipin">
+              <a href="/html/activity_banner" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span class="navItem login" onclick="user().clickEvent();" id="loginLink">登录</span>
+          <a href="/html/user/register" class="navItem register">注册</a>
+          <a class="navItem welcome"></a>
+          <a href="javascript:void(0);" class="navItem logoff">安全退出</a>
+          <a href="/other/actlist" class="navItem" >最新活动</a>
+          <a href="/other/downloadapp" class="navItem">下载APP</a>
+          <a href="/help/aboutltn" class="navItem">帮助中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="commonNavTwo page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="logo" id="logo">
+            <img src="/html/img/imageTwo/home/logo.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <a href="/" class="navItem" onclick="user().clickEvent();">首页</a>
+          <a href="/finance/list/0/1/0/0" class="navItem" onclick="user().clickEvent();">投资</a>
+         <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+         <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+          <!-- <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a> -->
+          <a href="http://bbs.lingtouniao.com" class="navItem" onclick="user().clickEvent();" target="_blank">社区</a>
+          <a href="/other/downloadapp " class="navItem" onclick="user().clickEvent();">下载APP</a>
+          <a href="/other/safeguards " class="navItem" onclick="user().clickEvent();">安全保障</a>
+          <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+          <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="loan-pay page-component">
+    <div class="wrap">
+      <div class="login-content">
+        <div class="title">
+          <div class="item">乐巢贷流程</div>
+        </div>
+        <div class="pay-process">
+          <div class="banner">
+            <img src="/html/img/finalLoan_banner.jpg" alt="">
+            <div class="infoText">
+              <h1 class="name">乐巢贷</h1>
+              <p>
+                赎楼垫资，短期周转首选;<br/>
+                首续齐全，最快1天放款;<br/>
+                超高额度，最高可贷3000万;
+              </p>
+            </div>
+          </div>
+        	<div class="form" id="htmLoanProcess">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="loan-flow page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="flowTu">
+          <div class="one">
+            <div class="icon1"><img src="/html/img/loan_01.png"></div>
+            <div class="title"><span class="xuhao">1</span>贷款申请</div>
+          </div>
+          <div class="one">
+            <div class="icon1"><img src="/html/img/loan_02.png"></div>
+            <div class="title"><span class="xuhao">2</span>专员办理</div>
+          </div>
+          <div class="one">
+            <div class="icon1"><img src="/html/img/loan_03.png"></div>
+            <div class="title"><span class="xuhao">3</span>后台审批</div>
+          </div>
+          <div class="one">
+            <div class="icon1"><img src="/html/img/loan_04.png"></div>
+            <div class="title"><span class="xuhao">4</span>签约放款</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="loan-pay page-component">
+    <div class="wrap">
+      <div class="apply-intro">
+        <div class="left-text">
+          <h1 class="head1">申请资格</h1>
+          <ul class="list">
+            <li><span class="status">•&nbsp;年龄满22-60周岁的中国大陆公民</span></li>
+            <li><span class="status">•&nbsp;无不良个人征信记录</span></li>
+            <li><span class="status">•&nbsp;有稳定工作及收入来源</span></li>
+            <li><span class="status"></span></li>
+            <li><span class="status">•&nbsp;首批开放申请城市：上海、宁波、杭州</span></li>
+          </ul>
+        </div>
+        <div class="center-text">
+          <h1 class="head1">额度期限</h1>
+          <ul class="list">
+            <li><span class="status">•&nbsp;借款额度：最高可达3000万</span></li>
+            <li>
+            <span class="status">•&nbsp;借款期限：5、10、15、30、45、60、90天(各地区实际情况请联系您的借款专员)<br>
+            </span>
+            </li>
+            <li><span class="status">审批时间：材料齐全，最快1个工作日审核放款</span></li>
+            <li><span class="status">•&nbsp;还款方式：一次性还本付息</span></li>
+          </ul>
+        </div>
+        <div class="right-text">
+          <h1 class="head1">所需材料</h1>
+          <ul class="list">
+            <li><span class="status">•&nbsp;申请人二代身份证</span></li>
+            <li><span class="status">•&nbsp;申请人个人征信报告</span></li>
+            <li><span class="status">•&nbsp;婚姻状况证明</span></li>
+            <li><span class="status">•&nbsp;还款记录</span></li>
+            <li><span class="status">•&nbsp;房屋买卖合同</span></li>
+            <li><span class="status">•&nbsp;银行按揭贷款申请批复文</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="loan-pay page-component">
+    <div class="wrap">
+      <div class="counter">
+        <div class="charge-intro">
+          <h1 class="head1">费用说明</h1>
+          <p class="font">
+            •&nbsp;借款服务费
+            <span class="status">
+              基准费率2%每笔<br>
+              实际费率执行费率可视申请人资信条件进行调整，以合同约定为准，
+            </span>
+          </p>
+        <!--  <p class="font">·平台管理费<span class="status">借款金额的0.3%,按月收取</span></p>-->
+          <p class="font">•&nbsp;综合服务费<span class="status">根据实际提供服务内容收取</span></p>
+        </div>
+        <div class="loan-counter"  id="htmLoanCounter">
+         
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="common-footer page-component">
+    <div class="wrap">
+      <div class="left">
+        <div class="iphone">
+          <div class="left_icon"></div>
+          <div class="left_time">（工作日9:30-18:30）</div>
+          <div class="left_tel">400-999-9980</div>
+          <div class="left_QQ">领投鸟投资用户交流群：247441580</div>
+        </div>
+      </div>
+      <div class="center_cont">
+        <ul>
+          <li class="title">关于我们</li>
+          <li>
+            <a href="/about/pltinfo" target="_blank">平台介绍</a>
+          </li>
+          <li>
+            <a href="/about/team" target="_blank">团队介绍 </a>
+          </li>
+          <li>
+            <a href="/about/advantage" target="_blank">品牌优势</a>
+          </li>
+          <li>
+            <a href="/about/honor" target="_blank">平台荣誉</a>
+          </li>
+          <li>
+            <a href="/about/partner" target="_blank">合作伙伴</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="title">联系我们</li>
+          <li>
+            <a href="/about/notice" target="_blank">平台公告</a>
+          </li>
+          <li>
+            <a href="/about/news" target="_blank">媒体报道 </a>
+          </li>
+          <li>
+            <a href="/about/join" target="_blank">加入我们</a>
+          </li>
+          <li>
+            <a href="/about/contact" target="_blank">联系我们</a>
+          </li>
+        </ul>
+        <ul class="three">
+          <li class="title">帮助中心</li>
+          <li>
+            <a href="/other/newerguide " target="_blank">新手指引</a>
+          </li>
+          <li>
+            <a href="/help/aboutltn/" target="_blank">帮助中心 </a>
+          </li>
+          <li>
+            <a href="/other/actlist " target="_blank">热门活动</a>
+          </li>
+        </ul>
+        <ul class="four">
+          <li class="title">安全保障</li>
+          <li>
+            <a href="/about/report" target="_blank">运营报告</a>
+          </li>
+          <li>
+            <a href="/about/protocol" target="_blank">法律法规 </a>
+          </li>
+          <li>
+            <a href="/other/safeguards " target="_blank">安全保障</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="scan">
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-app.png" alt="APP下载二维码">
+            <span class="title">APP下载</span>
+            <div class="youxiang">
+              <span class="small_icon1">
+                <img src="/html/img/footer_icon2.png">
+              </span>客服邮箱
+              <div class="tips">客服邮箱：service@lingtouniao.com</div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-weixin.png" alt="微信公众号二维码">
+            <span class="title">微信公众号</span>
+            <a href="http://weibo.com/u/5935757405" target="_blank"><div class="youxiang">
+                <span class="small_icon1">
+                  <img src="/html/img/footer_icon3.png">
+                </span>新浪微博
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_last">
+        <div class="contact" style="z-index:1;">
+          <div class="service">
+            <span><script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1258037212'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258037212%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?2ce520d6a6a41eb85c78974ad14678c4";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+          </script>
+          <script type="text/javascript">
+            var _py = _py || [];
+            _py.push(['a', 'YQs..WOGqF1S7kb_VEl9N283aBX']);
+            _py.push(['domain','stats.ipinyou.com']);
+            _py.push(['e','']);
+            -function(d) {
+              var s = d.createElement('script'),
+              e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+              f = 'https:' == location.protocol;
+              s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
+            }(document);
+            </script>
+            <noscript><img src="//stats.ipinyou.com/adv.gif?a=YQs..WOGqF1S7kb_VEl9N283aBX&e=" style="display:none;"/></noscript>
+          </span>
+          </div>
+        </div>
+        <div class="icons">
+          <!--诺顿网站图片LOGO-->
+          <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lingtouniao.com&amp;lang=zh_cn" target="_bank" class="icons1"></a>
+  
+          <!--诚信网站图片LOGO，不用加版本号是新图片-->
+          <a href="http://credit.szfw.org/CX20160524015311350170.html" target='_blank' class="icons2"></a>
+  
+          <!--工商图片LOGO-->
+          <a href="http://www.sgs.gov.cn/lz/etpsInfo.do?method=index" target='_blank' class="icons3"></a>
+  
+          <!--ICP网站图片LOGO-->
+          <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target='_blank' class="icons4"></a>
+  
+          <!--行业协会网站图片LOGO-->
+          <a href="http://sfia.org.cn/h/n/user/toDetailMermbersMainInfo?uId=2016072400000000077" target='_blank' class="icons5"></a>
+  
+          <!--安全联盟网站图片LOGO-->
+          <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.lingtouniao.com&at=business" target='_blank' class="icons6"></a>
+  
+          <!--互联网金融网站图片LOGO-->
+          <a href="http://si.trustutn.org/info?sn=172170915000608884439&certType=4%22%3E%3Cimg" target='_blank' class="icons7"></a>
+  
+          <!--可信网站图片LOGO-->
+          <a href="https://ss.knet.cn/verifyseal.dll?sn=e160523310104635708sr5000000&pa=500267" tabindex="-1" id="urlknet" target="_blank" class="icons8"></a>
+        </div>
+        <div class="friend">
+          <div class="friend_top">友情链接：
+          <a href="http://www.wdzj.com/dangan/ltnlc/" target="_blank">网贷之家</a>
+             ｜   <a href="http://lingtouniao.p2peye.com/" target="_blank">网贷天眼</a>
+                ｜   <a href="http://baike.baidu.com/item/领投鸟理财" target="_blank">百度百科</a>
+                   ｜   <a href="http://tieba.baidu.com/f?kw=%E9%A2%86%E6%8A%95%E9%B8%9F&ie=utf-8" target="_blank">百度贴吧</a>
+                      ｜   <a href="http://mp.sohu.com/profile?xpt=cHBhZzI1NjRjY2RmOThmZkBzb2h1LmNvbQ==" target="_blank">搜狐媒体</a>
+                         ｜   <a href="http://weibo.com/u/5935757405?topnav=1&wvr=6&topsug=1" target="_blank">新浪微博</a>
+                            ｜   <a href="http://toutiao.com/m5784948163/" target="_blank">今日头条</a>
+                               ｜   <a href="http://www.lagou.com/gongsi/103258.html?m=1" target="_blank">拉勾</a>
+                                  ｜   <a href="http://www.itjuzi.com/company/32856" target="_blank">IT桔子</a></div>
+              <div class="friend_bottom">公司地址：上海市金沙江路2145号普罗娜商务广场A
+              栋7楼   ©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有<a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15056137号</a>  市场有风险 投资需谨慎</div>
+        </div>
+  </div>
+    <div class="kefu">
+      <script>
+      (function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","http://lingtouniao.udesk.cn/im_client/js/udeskApi.js?1480664200567","ud");
+      ud({
+          "code": "18bj2e9k",
+          "link": "http://lingtouniao.udesk.cn/im_client?web_plugin_id=23176"
+      });
+    </script>
+    </div>
+  
+
+  <div class="common-cover page-component">
+  </div>
+
+  
+  <!--	借款表单项     -->
+  <script type="text/template"  charset="UTF-8" id="tmpLoanProcess">	
+  
+  <div class="row">
+  	<span class="capition">真实姓名</span>
+  	<div class="field">
+  	  <input type="text" name="username" value="{{=it.userName}}" class="input"   data-required='true' data-type='username' data-emptyTip='用户名不能为空' data-errorTip="用户名不符合规则">
+  	</div>
+  	<div class="validation"></div>
+  </div>
+  <div class="row">
+  	<span class="capition">性别</span>
+  	<div class="field">
+  	  <input type="radio" value="0" name="sex" checked="checked" class="circle"><span class="sex1">男</span>
+  	  <input type="radio" value="1" name="sex" class="circle"><span class="sex1">女</span>
+  	</div>
+  </div>
+  <div class="row">
+  	<span class="capition">身份证号</span>
+  	<div class="field">
+  	  <input type="text" name="IDCard" value="{{=it.cardId}}" class="input"   data-required='true' data-type='identity' data-emptyTip='身份证号不能为空' data-errorTip="身份证号不符合规则">
+  	</div>
+  	 <div class="validation"></div>
+  </div>
+  <div class="row">
+  		<span class="capition">所在城市</span>
+  		<div class="field">
+  		  <select name="city"  class="input">
+  		  	{{for(var i=0;i<it.selects.city.length;i++){ }}
+  		    <option value="{{=it.selects.city[i]}}">{{=it.selects.city[i]}}</option>		    
+  		    {{ } }}
+  		  </select>
+  		</div>
+  		 <div class="validation"></div>
+  </div>
+  <div class="row">
+  	<span class="capition">手机号</span>
+  	<div class="field">
+  	  <input type="text" name="phone" value="{{=it.phone}}" class="input"  data-required='true' data-type='telephone' data-emptyTip='手机号不能为空' data-errorTip="手机号不符合规则">
+  	</div>
+  	 <div class="validation"></div>
+  </div>
+  <div class="row">
+  	<span class="capition">借款金额</span>
+  	<div class="field">
+  	   <select name="loanmoney" id="" class="input" >
+  	   	{{for(var i=0;i<it.selects.money.length;i++){ }}
+  		    <option {{=i==0?'selected':''}} value="{{=it.selects.money[i]}}">{{=it.selects.money[i]}}</option>		    
+  		{{ } }}
+  	  </select>
+  	</div>
+  	 <div class="validation"></div>
+  </div>
+  {{if(it.type=='zhuchao'){ }}
+  <div class="row">
+  		<span class="capition">房屋总价</span>
+  		<div class="field">
+  		  <input type="text" name="price" class="input"  data-required='true' data-type='money' data-emptyTip='房屋总价不能为空' data-errorTip="房屋总价必须为数值" placeholder="请输入房屋总价">
+  		</div>
+  		<span class="units">元</span>
+  		 <div class="validation"></div>
+  </div>
+  <div class="row">
+  		<span class="capition">房屋面积</span>
+  		<div class="field">
+  		  <input type="text" name="areas" class="input" data-required='true' data-type='money' data-emptyTip='房屋面积不能为空' data-errorTip="房屋面积必须为数值">
+  		</div>
+  		<span class="units">平</span>
+  		 <div class="validation"></div>
+  </div>
+  <div class="row">
+      <span class="capition">小区名称</span>
+      <div class="field">
+        <input type="text" name="areaname" class="input" data-required='true' data-emptyTip='小区名称不能为空'>
+      </div>
+      <div class="validation"></div>
+  </div>
+  <div class="row">
+      <span class="capition">装修公司</span>
+      <div class="field">
+        <input type="text" name="fitment" class="input" >
+      </div>
+      <div class="validation"></div>
+  </div>
+  <!-- <div class="row">
+  		<span class="capition">首付成数</span>
+  		<div class="field">
+  		  <select name="firstpay" class="input" >
+  		    <option value="二成" selected="selected">二成</option>
+  		    <option value="三成">三成</option>
+  		    <option value="四成">四成</option>
+  		    <option value="五成">五成</option>
+  		    <option value="六成">六成</option>
+  		    <option value="七成">七成</option>
+  		    <option value="八成">八成</option>
+  		    <option value="九成">九成</option>
+  		  </select>
+  		</div>
+  		 <div class="validation"></div>
+  </div> -->
+  {{ } }}
+  
+  {{if(it.type=='chewei'){ }}
+    <div class="row">
+      <span class="capition">车位总价</span>
+      <div class="field">
+        <input type="text" name="price" class="input"  data-required='true' data-type='money' data-emptyTip='车位总价不能为空' data-errorTip="车位总价必须为数值" placeholder="请输入车位总价">
+      </div>
+      <span class="units">元</span>
+      <div class="validation"></div>
+    </div>
+    <div class="row">
+      <span class="capition">房屋面积</span>
+      <div class="field">
+        <input type="text" name="areas" class="input" data-required='true' data-type='money' data-emptyTip='房屋面积不能为空' data-errorTip="房屋面积必须为数值">
+      </div>
+      <span class="units">平</span>
+      <div class="validation"></div>
+    </div>
+    <div class="row">
+      <span class="capition">小区名称</span>
+      <div class="field">
+        <input type="text" name="areaname" class="input" data-required='true' data-emptyTip='小区名称不能为空'>
+      </div>
+      <div class="validation"></div>
+    </div>
+    <div class="row">
+      <span class="capition">物业公司</span>
+      <div class="field">
+        <input type="text" name="tenement" class="input" >
+      </div>
+      <div class="validation"></div>
+    </div>
+  {{ } }}
+  {{if(it.type=='lechao'){ }}
+  <div class="row">
+      <span class="capition">房屋总价</span>
+      <div class="field">
+        <input type="text" name="price" class="input"  data-required='true' data-type='money' data-emptyTip='房屋总价不能为空' data-errorTip="房屋总价必须为数值" placeholder="请输入房屋总价">
+      </div>
+      <span class="units">元</span>
+       <div class="validation"></div>
+  </div>
+  <div class="row">
+      <span class="capition">房屋面积</span>
+      <div class="field">
+        <input type="text" name="areas" class="input" data-required='true' data-type='money' data-emptyTip='房屋面积不能为空' data-errorTip="房屋面积必须为数值">
+      </div>
+      <span class="units">平</span>
+       <div class="validation"></div>
+  </div>
+  <div class="row">
+      <span class="capition">小区名称</span>
+      <div class="field">
+        <input type="text" name="areaname" class="input" data-required='true' data-emptyTip='小区名称不能为空'>
+      </div>
+      <div class="validation"></div>
+  </div>
+  <div class="row">
+      <span class="capition">中介公司</span>
+      <div class="field">
+        <input type="text" name="agent" class="input" data-required='true' data-emptyTip='中介名称不能为空'>
+      </div>
+      <div class="validation"></div>
+  </div>
+  {{ } }}
+  <!-- <div class="row">
+  	<span class="capition">物业位置</span>
+  	<div class="field">
+  	   <select name="position" class="input">
+  	    <option value="1">内环以内</option>
+  	    <option value="2">内环外中环内</option>
+  	    <option value="3">中环外外环内</option>
+  	    <option value="4">外环以外</option>
+  	  </select>
+  	</div>
+  	  <div class="validation"></div>
+  </div> -->
+  <div class="row">
+  	<span class="capition">邮箱地址</span>
+  	<div class="field">
+  	  <input type="text" name="email" placeholder="xxxx@xxqq.com" class="input"  data-required='true' data-type='email' data-emptyTip='邮箱地址不能为空' data-errorTip="邮箱不符合规则">
+  	</div>
+  	 <div class="validation"></div>
+  </div>
+  <button class="apply">立即申请</button>
+  </script>	  
+  
+  
+  
+  <!-- 借款计算器     -->
+  <script type="text/template"  charset="UTF-8" id="tmpLoanCounter">	
+   <h1 class="head1">借款计算器</h1>
+  <div class="form">
+    <div class="row">
+      <span class="capition">申请金额</span>
+      <input type="text" name="applymoney" placeholder ="请输入借款金额" class="input" >
+      <span class="units">元</span>
+      <div class="validation"></div>
+    </div>
+    
+    {{if(it.type=='other'){ }}
+    	 <div class="row">
+  	    <span class="capition">借款期限</span>
+  	    <select name="limit" class="input">
+  	    	{{for(var i=0;i<it.limit.length;i++){ }}
+  	    		 <option value="{{=it.limit[i].value}}" {{=i==0?'selected="selected"':''}}>{{=it.limit[i].name}}</option>
+  	    	{{ } }}
+  	    </select>
+  	    <div class="validation"></div>
+  	  </div>
+  	  
+  	  <div class="row">
+  	    <span class="capition">借款利率</span>
+  	    <input type="text" name="loanrate" placeholder ="请输入借款利率" class="input">
+  	    <span class="units">%</span>
+  	    <div class="validation"></div>
+  	  </div>  
+    {{}else{ }}
+    <div class="row">
+      <span class="capition">服务利率</span>
+      <input type="text" name="serverrate" placeholder ="请输入借款利率" class="input">
+      <span class="units">%</span>
+      <div class="validation"></div>
+    </div>
+    {{ } }}
+    
+  
+    <div class="row">
+      <span class="capition">还款方式</span>
+      <select name="type" class="input">
+        {{for(var i=0;i<it.huan.length;i++){ }}
+  		 <option value="{{=it.huan[i].value}}" {{=i==0?'selected="selected"':''}}>{{=it.huan[i].name}}</option>
+  	  {{ } }}
+      </select>
+      <div class="validation"></div>
+    </div>
+  
+    <button class="apply">开始计算</button>
+  </div>
+  </script>
+  
+  
+  <!-- 借款计算器结果     -->
+  <script type="text/template" charset="UTF-8" id="tmpLoanResult">	
+  <div class="floating">  
+  	<div class="floating-one">
+  	    <h1 class="headline-1">计算结果</h1>
+  	    <div class="headline-2">
+  	      <p class="totle">
+  	        <span class="one">借款总金额：<font class="focus">{{=it.applyMoney.toFixed(2)}}</font>元</span>
+  	        <span class="one">到期还款总额：<font class="focus">{{=it.allMoney.toFixed(2)}}</font>元</span>
+  	      </p>
+  	      <span>计算结果</span>
+  	    </div>
+  	   {{if(it.type=='other'){ }}
+  	    	<table>
+  		      <thead>
+  		        <tr>
+  		          <th>期数</th>
+  		          <th>每期还款金额</th>
+  		          <th>每期还款本金</th>
+  		          <th>每期还款利息/服务费率</th>
+  		          <th>剩余还款额</th>
+  		        </tr>
+  		      </thead>
+  		      {{for(var i=0;i<it.limit;i++){ }}
+  		      	<tr>
+  			        <td>{{=(i+1)+'/'+it.limit}}</td>
+  			        <td>{{=(it.perMoney[i]*1+it.perRate[i]*1).toFixed(2)}}</td>
+  			        <td>{{=it.perMoney[i].toFixed(2)}}</td>
+  			        <td>{{=it.perRate[i].toFixed(2)}}</td>
+  			        <td>{{=it.surPlusMoney[i].toFixed(2)}}</td>
+  			     </tr>	
+  		      {{  } }}
+  
+  		    </table>
+  	   {{  }else{ }}
+  	    	<table>
+  		      <thead>
+  		        <tr>		         
+  		          <th>申请本金</th>		         
+  		          <th>还款金额</th>
+  		          <th>还款利息/服务费率</th>
+  		        </tr>
+  		      </thead>
+  		      <tr>		       
+  		        <td>{{=it.applyMoney}}</td>
+  		        <td>{{=it.allMoney}}</td>
+  		        <td>{{=it.rateMoney}}</td>
+  		      </tr>		     
+  		    </table>
+  	   {{ } }}
+  	    
+  	    <button class="close">关闭</button>
+  	  </div>
+  </div>
+  </script>
+  
+
+<script src="/html/js/app.min.js"></script>
+<script src="/html/js/loan/final-payment/script.min.js?v=20160727"></script>
+
+</body>
+</html>

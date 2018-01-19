@@ -1,0 +1,22 @@
+<script type="text/template" id="tempeditors">
+   <div class="big_box">
+      <ul class="editors_list">
+        <li class="recipient">收货人</li>
+        <li class="locality">所在地区</li>
+        <li class="dizhi">详细地址</li>
+        <li class="tel">手机号码</li>
+        <li class="handle">操作</li>
+      </ul>
+    </div>
+    <ul class="editors_list">
+      <li class="recipient">{{=it.consigneeName}}</li>
+      <li class="locality" id="locality">{{=it.location}}</li>
+      <li class="dizhi" id="dizhi">{{=it.detailAddress}}</li>
+      <li class="tel">{{=it.mobileNo}}</li>
+      <li class="handle">
+        <span class="bianji" id="bianji">编辑</span>
+        |
+        <span class="del">删除</span>
+      </li>
+    </ul>
+</script>

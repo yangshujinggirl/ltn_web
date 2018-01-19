@@ -1,0 +1,21 @@
+<!-- @include ../../common/_headtop.html-->
+
+<!-- @include _headmiddle.html -->
+
+<!-- @include ../../common/_headbottom.html -->
+
+<!-- @include ../../common/default/_navTop.html -->
+
+<!-- @include ../../common/default/_navTwo.html -->
+
+
+  <!-- @include _advantage.html -->
+
+
+  <!-- @include ../../common/_footer.html -->
+
+  <!-- @include ../../common/_cover.html -->
+
+  <script src="/js/about/about.min.js?v=20160616"></script>
+
+  <!-- @include ../../common/_bottom.html -->

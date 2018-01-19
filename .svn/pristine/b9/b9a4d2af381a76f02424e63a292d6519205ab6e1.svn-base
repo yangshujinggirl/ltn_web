@@ -1,0 +1,8 @@
+<div class="safe-flow page-component" id="pingtai">
+  <div class="wrap">
+    <div class="flow">
+      <h2>平台业务流程</h2>
+      <div class="flowTu"><img src="../../img/safe-banner.jpg"></div>
+    </div>
+  </div>
+</div>

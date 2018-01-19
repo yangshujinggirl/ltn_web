@@ -1,0 +1,124 @@
+$account-myinvest-fontcolor: #ea5504; 
+$acount-myinvest-bgcolor: #ececec;
+.account-invest {
+  .current {
+    overflow: hidden;
+    margin-top: 55px;
+
+    .item {
+      font-size: 18px;
+      height: 50px;
+      line-height: 50px;
+
+      &.number .value{
+        font-size: 28px;
+        color: #ea5504;
+      }
+    }
+    .month {
+      font-size: 14px;
+
+      .profitmonth {
+        height: 22px;
+        line-height: 22px;
+        text-align: left;
+        width: 300px;
+        margin: 0 auto;
+        margin-left: 165px;
+        .value {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .left {
+      width: 49%;
+      text-align: center;
+      border-right: 1px solid #d7d7d7;
+    }
+
+    .right {
+      width: 50%;
+      text-align: center;
+      .number .value {
+        color: #6a6a6a;
+      }
+    }
+  }
+  .investcontent {
+    margin-top: 45px;
+    .itemnav {
+      font-size: 20px;
+      overflow: hidden;
+      border-bottom: 2px solid #e2e2e2;
+      margin: 0 30px;
+      margin-bottom: 10px;
+      .item {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        float: left;
+        text-align: center;
+        margin: 0 10px;
+        &:hover,&.selected {
+          border-bottom: 3px solid $account-myinvest-fontcolor;
+          color: $account-myinvest-fontcolor;
+        }
+      }
+    }
+    tr {
+      font-size: 14px;
+      td,th {
+        padding: 10px 5px;
+        text-align: center;
+        width: 13%;
+        white-space: nowrap;
+        &.productname {
+          width: 20%;
+        }
+        &.protocol a {
+          color: #38a2ff;
+        }
+      }
+      &:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+    }
+    table {
+      margin: 0 30px;
+      width: 94%;
+      thead tr{
+        font-size: 16px;
+        background-color: $acount-myinvest-bgcolor;
+      }
+    }
+    ul,li {
+      padding:0;
+    }
+    .nolist {
+      display: none;
+      width:196px;
+      height: 179px;
+      margin:0 auto;
+      background: url(/html/img/jz.jpg);
+    }
+  }
+  #contenttable .item {
+    display: none;
+  }
+  .tender #tender {
+    display: block;
+  }
+  .hold #hold {
+    display: block;
+  }
+  .refunding #refunding {
+    display: block;
+  }
+  .refunded #refunded {
+    display: block;
+  }
+  .undone #undone {
+    display: block;
+  }
+}

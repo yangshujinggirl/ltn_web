@@ -1,0 +1,169 @@
+.account-mysecurity {
+  .security-content {
+    margin-top:30px;
+    padding:0 30px;
+    .itemnav {
+      font-size: 20px;
+      overflow: hidden;
+      border-bottom: 2px solid #e2e2e2;
+      margin-bottom: 10px;
+      .item {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        float: left;
+        text-align: center;
+        margin: 0 10px;
+        &:hover,&.selected {
+          border-bottom: 3px solid $account-myinvest-fontcolor;
+          color: $account-myinvest-fontcolor;
+        }
+      }
+    }
+    .tickets {
+      .common {
+        padding:22px 0 22px 60px;
+        border-bottom: 1px dashed #ccc;
+        .info {
+          font-size: 14px;
+          font-weight: bold;
+          .icon{
+            display: inline-block;
+            margin-right:12px;
+            width: 14px;
+            height: 14px;
+            background: #4ca9fb;
+            vertical-align: sub;
+          }
+        }
+        .imgs {
+          width: 396px;
+          height: 117px;
+          padding:20px 15px 0 20px;
+          box-sizing:border-box;
+          margin-top:16px;
+          .left-text {
+            width: 210px;
+            overflow: hidden;
+            margin-top: -5px;
+            float: left;
+            .esperience{
+              font-weight: bold;
+              font-size: 20px;
+              color:#3a3a3a;
+            }
+            .desc {
+              color: #6a6a6a;
+              line-height: 16px;
+              color:#6a6a6a;
+              margin-top: 15px;
+              display: -webkit-box;
+              overflow : hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient:vertical;
+            }
+            .time {
+              display: block;
+              margin: 2px 0;
+              line-height: 16px;
+              color:#6a6a6a;
+            }
+          }
+          .right-text {
+            color:#fff;
+            width: 144px;
+            float: right;
+            display: inline-block;
+            text-align: center;
+            .money{
+              font-size: 32px;
+              font-weight: normal;
+              margin:0;
+            }
+            .deduction{
+              font-size: 16px;
+              margin-top:15px;
+            }
+          }
+        }
+        .imgTips {
+          display: none;
+          text-align: center;
+          &.selected {
+            display: block;
+          }
+        }
+      }
+      .gold-tickets{
+        overflow: hidden;
+        .imgs {
+          float: left;
+          background:url(../../../img/security_01.png) center;
+        }
+      }
+      .return-tickets {
+        overflow: hidden;
+        .info .icon{
+          background:#ffc100;
+        }
+        .imgs{
+          background:url(../../../img/security_02.png) center;
+          float: left;
+        }
+      }
+      .add-tickets {
+        overflow: hidden;
+        border:none;
+        .info .icon{
+          background:#ea5504;
+        }
+        .imgs {
+          position: relative;
+          float: left;
+          background:url(../../../img/security_03.png) no-repeat center;
+        }
+      }
+      .more {
+        clear: both;
+        cursor: pointer;
+        font-size: 14px;
+        display: none;
+        float: right;
+        margin: 10px;
+        margin-right: 60px;
+      }
+    }
+    .used {
+      .gold-tickets,.return-tickets,.add-tickets {
+        .imgs {
+          background:url(../../../img/security_04.png) no-repeat center;
+        }
+      }
+    }
+    .usedover {
+      .gold-tickets,.return-tickets,.add-tickets {
+        .imgs {
+          position: relative;
+          background:url(../../../img/security_04.png) no-repeat center;
+        }
+        .overtime {
+          width: 210px;
+          height: 107px;
+          position: absolute;
+          background: url(/img/account-security.png) no-repeat center center;
+          z-index: 300;
+          top: 2px;
+          left: 73px;
+        }
+      }
+    }
+    .tickets.user2 .item {
+      display: none;
+     }
+     .tickets.play .unused,.tickets.played .used,.tickets.playover .usedover {
+      display: block;
+     }
+  }
+}
+

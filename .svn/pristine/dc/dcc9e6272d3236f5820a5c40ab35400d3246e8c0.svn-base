@@ -1,0 +1,6 @@
+<script type="text/template" id="tempFailMessage">
+  <p class="status" id="yuanyin">
+    {{=it.messages}}
+  </p>
+  <a href="/html/account/openAccount/"><button class="submitBtn">重新申请</button></a>
+</script>

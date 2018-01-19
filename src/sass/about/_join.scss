@@ -1,0 +1,73 @@
+.about-join {
+  .title {
+    font-size: 18px;
+    color: #585858;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #e2e2e2;
+    margin: 20px 35px;
+    .item {
+      border-bottom: 2px solid #ea5504;
+      width: 100px;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
+  .content{
+    padding: 0 40px;
+      p{
+      color: #505050;
+      line-height: 25px;
+      font-size: 14px;
+    }
+      a{
+        color: #0c81da;
+      }
+     .item-center{
+      h2{
+        font-size: 18px;
+        color: #434343;
+        font-weight: normal;
+      }
+      .more {
+       float: right;
+        font-size: 18px;
+        margin: 10px 35px 10px 0;
+        color: #F68818;
+      }
+      .item {
+        background: #F7F7F7;
+        border: 1px solid #E2E2E2;
+        padding: 5px 20px;
+        margin: 40px 0;
+        .header {
+          color: #F68818;
+          cursor: pointer;
+        }
+        .joinpro {
+          display: none;
+        }
+        .joinpro.selected {
+          display: block;
+        }
+        h3 {
+          display: inline-block;
+        }
+        a {
+          color: #F68818;
+          padding: 0 20px 0 0;
+          float: right;
+          margin: 15px 0;
+        }
+        hr {
+          background: #E7E7E7;
+          border: none;
+          height: 1px;
+          margin: 0;
+        }
+
+      }
+     }
+  }//content
+}//join

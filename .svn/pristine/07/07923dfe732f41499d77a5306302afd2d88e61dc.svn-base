@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，领头鸟，互联网理财、P2P，真正短期标</title>
+  <meta name="keywords" content="领投鸟理财、领投鸟官网平台、领头鸟、互联网理财、不动产理财、P2P网贷、投资理财、短期理财">
+  <meta name="description" content="领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，平台提供网络贷款，投资理财，赎楼业务，小额贷款，短期贷款，互联网理财、P2P网贷。">
+  <link rel="stylesheet" href="/css/style.css?v=2016051614">
+  <link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
+  <script src="/js/lib/jquery.min.js"></script>
+  <script src="/js/lib/jquery.easydropdown.min.js"></script>
+  <script src="/js/lib/jquery.paging.min.js"></script>
+  <script src="/js/lib/jquery.validation.min.js"></script>
+  <script src="/js/lib/doT.min.js"></script>
+  <script src="/js/app.min.js?v=2016051317"></script>
+</head>
+<body>
+
+<!-- @include ../_header.html -->
+
+<!-- @include ../_nav.html -->
+
+<!-- @extendable -->
+
+<!-- @include ../_footer.html -->
+
+<!-- @include ../_cover.html -->
+
+</body>
+</html>

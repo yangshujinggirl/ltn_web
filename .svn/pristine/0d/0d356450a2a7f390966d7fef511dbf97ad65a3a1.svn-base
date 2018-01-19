@@ -1,0 +1,26 @@
+<nav class="common-nav page-component">
+  <div class="wrap">
+    <div class="left">
+      <a href="/html" class="brand"></a>
+      <span class="slogan"></span>
+      <span class="xiexiejie">
+        <a href="/html/market/national/" target="_blank"><img src="/html/img/national_icon.png"></a>
+      </span>
+    </div>
+    <div class="right">
+      <a href="/html" class="item" onclick="user().clickEvent();">首页</a>
+      <a href="/finance/list/0/1/0/0" class="item" onclick="user().clickEvent();">理财</a>
+      <a href="/html/loan/loan-index" class="item" onclick="user().clickEvent();">借款</a>
+      <a href="/other/safeguards " class="item" onclick="user().clickEvent();">安全保障</a>
+      <a href="/html/about/team" class="item" onclick="user().clickEvent();">关于我们</a>
+      <span href="/html/account/viewall" class="item button" onclick="user().clickEvent();" id="viewall">账户中心</span>
+    </div>
+    <script type="text/javascript">
+        $('#viewall').on('click',function() {
+          session().set('index', '0');
+          window.location.href = '/html/account/viewall';
+        })
+    </script>
+
+  </div>
+</nav>

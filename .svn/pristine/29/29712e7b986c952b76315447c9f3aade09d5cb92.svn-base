@@ -1,0 +1,61 @@
+.prod-contract {
+  .wrap {
+    width: 1024px;
+    padding: 0 50px 50px 50px;
+    margin: 20px auto;
+    background: #fff;
+    border: 8px solid $border-color;
+    border-radius: 4px;
+  }
+
+  article {
+    .bianhao{
+      font-size: 18px;
+      display: block;
+      width: 100px;
+      margin: 40px 0 0 610px;
+    }
+    header {
+      text-align: center;
+    }
+    h1, h2 {
+      color: $font-color-title;
+      margin: 2em 0;
+    }
+    p {
+      text-align: justify;
+      line-height: 2;
+      font-size: 14px;
+      text-indent: 28px;
+
+      &.no-indent {
+        text-indent: 0;
+      }
+    }
+    .jianyu,.dingyi{
+      text-indent: 0;
+    }
+    table {
+      width: 90%;
+      border: 1px solid $border-color;
+      border-collapse: collapse;
+      margin: 0 auto;
+      line-height: 2;
+      text-align: center;
+          .jiekuan{
+          background:#ebebeb;
+
+        }
+        .section{
+
+        }
+    }
+
+    table th, table td {
+      border: 1px solid $border-color;
+      padding: 5px 20px;
+      width: 405px;
+    }
+
+  }
+}

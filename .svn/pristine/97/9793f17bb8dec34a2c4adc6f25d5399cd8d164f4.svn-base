@@ -1,0 +1,78 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+ <div class="crowd_control">
+  <div class="mutual_control_cont">
+    <div class="itemnav">
+      <div class="itemnav-left">
+        <a href="javascript:void(0)" class="ite selected" id="recharge" data-content="detailCharge">众筹管理</a>
+      </div>
+      <div class="itemnv-right">本平台所有资金都是通过联动优势第三方资金托管</div>
+    </div>
+    <div class="wrapOne">
+      <div class="form">
+        <div class="row">
+          <span class="deal">交易状态</span>
+          <div class="type" id="change">
+            <div class="item selected" data-content="all">全部</div>
+            <div class="item" data-content="crowding">众筹中</div>
+            <div class="item" data-content="over">已结束</div>
+          </div>
+        </div>
+      </div>
+      <table id="fundDetail">
+        <!--<thead>
+          <tr>
+            <th>交易时间</th>
+            <th>项目名称</th>
+            <th>支持金额</th>
+            <th>回报方式</th>
+            <th>交易状态</th>
+            <th>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2016-01-23 12:00</td>
+            <td><a href="#">乐巢投系列20160428_004</a></td>
+            <td>￥4800.00</td>
+            <td>
+              <span class="high">￥98,522.00</span>
+              <span class="speci">利息：￥2,023.76</span>
+              <span class="speci">奖励：投资返现100</span>
+            </td>
+            <td>投标中</td>
+            <td>
+              <span class="high1">订单编号：3567475891283</span>
+              <span class="speci1"><a href="#">查看详情>></a></span>
+            </td>
+          </tr>
+          <tr>
+            <td>2016-01-23 12:00</td>
+            <td><a href="#">乐巢投系列20160428_004</a></td>
+            <td>￥4800.00</td>
+            <td>
+              <span class="high">￥98,522.00</span>
+              <span class="speci">利息：￥2,023.76</span>
+              <span class="speci">奖励：投资返现100</span>
+            </td>
+            <td>投标中</td>
+            <td>
+              <span class="high1">订单编号：3567475891283</span>
+              <span class="speci1"><a href="#">查看详情>></a></span>
+            </td>
+          </tr>
+        </tbody>-->
+      </table>
+      <div class="nolist" id="nolist1"></div>
+      <div class="accountpage">
+        <div class="pages" id="pages1">
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+<!-- @endextend -->
+
+<!-- @endextend -->

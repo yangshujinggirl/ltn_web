@@ -1,0 +1,30 @@
+.faultpage {
+  .fault-content {
+    border:1px solid #ccc;
+    background-color: #FFF;
+    margin-top: 30px;
+    padding:50px 152px 50px 105px;
+    overflow: hidden;
+    zoom:1;
+    .leftImg {
+      float:left;
+      width: 251px;
+      height: 133px;
+      background: url(/img/fail-tips.png);
+      margin:80px 0 50px 0;
+    }
+    .rightText {
+      float:right;
+      font-size: 15px;
+      border-left:1px dashed #ccc;
+      padding:60px 0 60px 100px;
+      font-weight: bold;
+      .lost {
+        line-height: 24px;
+      }
+      .hightlight {
+        color: #288df0;
+      }
+    }
+  }
+}

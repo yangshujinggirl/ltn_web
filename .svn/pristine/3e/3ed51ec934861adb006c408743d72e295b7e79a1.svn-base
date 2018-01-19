@@ -1,0 +1,37 @@
+.accountpage {
+  background-color: #fff;
+  margin: 20px 0 20px 0;
+  .pages {
+    list-style: none;
+    display: inline-block;
+    color: #3a3a3a;
+    font-size: 14px;
+    float: right;
+    margin-right: 12%;
+
+    .item {
+      background: #fff;
+      display: inline-block;
+      border: 1px solid #fff;
+      box-sizing: border-box;
+      text-align: center;
+      margin: 0 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      font-size: 12px;
+      border: 1px solid #d7d7d7;
+
+      &.prev, &.next {
+        width: 45px;
+      }
+
+      &:hover, &.selected {
+        background-color: #ff6650;
+        color: #fff;
+        border: 1px solid #ff6650;
+      }
+    }
+  }
+}

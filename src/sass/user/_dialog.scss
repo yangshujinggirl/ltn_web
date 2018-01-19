@@ -1,0 +1,336 @@
+.user-dialog {
+    position: relative;
+    .wrap{
+        width: 1148px;
+        overflow:visible;
+        margin:30px auto;
+    }
+    .logincontent{
+        margin-top: 50px;
+        height: 506px;
+    }
+    .header {
+        color: #3a3a3a;
+        font-size: 18px;
+        padding: 0 0 20px 20px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .left{
+        display: inline-block;
+        float: left;
+    }
+    .form {
+        font-size: 14px;
+        display: inline-block;
+        float: right;
+        width: 372px;
+        height: 500px;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        .row {
+            line-height: 35px;
+            margin: 18px 0;
+            width: 373px;
+            position: relative;
+            .caption {
+                color: #8a8a8a;
+                text-align: right;
+                font-weight: bold;
+                width: 33.333%;
+                box-sizing: border-box;
+                display: inline-block;
+                padding: 0 20px 0 0;
+            }
+            &.wrap-identity{
+                display: none;
+            }
+            &.validate-failed {
+                .field {
+                    .input {
+                        outline: 5px auto #f78e8b;
+                        color: #cacaca;
+                        outline-offset: -2px;
+                    }
+                }
+                .validation {
+                    display: inline-block;
+                    position: absolute;
+                    right: -94px;
+                    width: 156px;
+                    height: 32px;
+                    font-size: 12px;
+                    line-height: 32px;
+                    color: #fff;
+                    padding-left:10px;
+                    margin-left: 13px;
+                    text-align: center;
+                    background: url(/html/img/login-tips2.png) center center no-repeat;
+                }
+            }
+            &.validate-success {
+                .validation {
+                    display: inline-block;
+                    position: absolute;
+                    height: 37px;
+                    background: url("/html/img/icon-mark-ok.png") 10px center no-repeat;
+                }
+            }
+            .field {
+                width: 72%;
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                .input {
+                    width: 100%;
+                    height: 40px;
+                    box-sizing: border-box;
+                    padding: 0 15px;
+                    float: left;
+                    border: 1px solid $border-color;
+                    border-radius: 5px;
+                    background: #fff;
+                    position: relative;
+                    padding-left: 35px;
+                    &.short {
+                        width: 53%;
+                        padding-left: 23px;
+                    }
+                }
+                input:-webkit-autofill {
+                    -webkit-box-shadow: 0 0 0px 1000px white inset;
+                   }
+                .shouji{
+                    position: absolute;
+                    left:11px;
+                    top:8px;
+                    z-index: 999;
+                }
+                .password{
+                    position: absolute;
+                    left:11px;
+                    top:8px;
+                    z-index: 999;
+                }
+                .validate-image,
+                .validate-sms {
+                    width: 32%;
+                    height: 35px;
+                    cursor: pointer;
+                    display: inline-block;
+                    border: 1px solid #e2e2e2;
+                    margin-left: -24px;
+                }
+                .validate-sms {
+                    border: 1px solid #38a2ff;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    background: none;
+                    font-size: 14px;
+                    color: #38a2ff;
+                }
+                .validate-sms.disabled{
+                     background: #d7d7d7;
+                     cursor: not-allowed;
+                     color: #fff;
+                     border-color: #fff;
+                }
+                .check {
+                    cursor: pointer;
+                }
+                .info {
+                    font-size: 12px;
+                    padding: 0 6px;
+                    cursor: pointer;
+                }
+                .action {
+                    color: #fff;
+                    background: #ff6f20;
+                    border: none;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    height: 40px;
+                    width: 180px;
+                    border-radius: 4px;
+                    &:hover {
+                        background: #ff5a00;
+                    }
+                    &.disabled {
+                        background: #ccc;
+                    }
+                }
+            }
+            .mima{
+                margin-left: 206px;
+                color: red;
+            }
+            .new{
+                    display: inline-block;
+                    width: 37px;
+                    position: absolute;
+                    right:49px;
+                    cursor: pointer;
+                }
+
+            .validation {
+                display: none;
+                color: #f78e8b;
+                padding: 0 0 0 30px;
+                box-sizing: border-box;
+            }
+            .tips,
+            .accept,
+            .action {
+                padding: 0 120px;
+            }
+            .tips {
+                margin: 50px 0 0;
+                border-top: 1px dashed #e2e2e2;
+                .img{
+                        margin: 22px 0 0 106px;
+                    }
+                .content {
+                    font-size: 12px;
+                    line-height: 24px;
+                    text-align: justify;
+                    color: #8a8a8a;
+                    .mark {
+                        background: none;
+                        color: $font-height-light-color;
+                    }
+                }
+            }
+            .accept {
+                margin: 20px 0;
+                text-align: center;
+                .check,
+                .label {
+                    cursor: pointer;
+                }
+                .label {
+                    padding: 0 5px;
+                }
+                .link {
+                    color: $link-color;
+                    &:hover {
+                        color: $link-color-hover;
+                    }
+                }
+            }
+            .action {
+                text-align: right;
+                // padding: -10px 0 0;
+                width: 200px;
+                .button {
+                    width: 280px;
+                    border: none;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    background: $bg-btn;
+                    color: #fff;
+                    font-size: 18px;
+                    margin: -7px 0 0 -59px;
+                    &:hover {
+                        background: $bg-btn-hover;
+                    }
+                }
+                .button.disabled{
+                      background: #d7d7d7;
+                     cursor: not-allowed;
+                     color: #fff;
+                }
+                }
+                .bear{
+                    display: inline-block;
+                    margin-right: 134px;
+                    .check{
+                    vertical-align: middle;
+                    box-sizing: border-box;
+                    margin-right: 7px;
+                  }
+                .link {
+                    color: $link-color;
+                    margin-left: 30px;
+                    &:hover {
+                    color: $link-color-hover;
+                    }
+                }
+                .text {
+                    margin: 0 0 0 30px;
+                }
+            }
+        }
+        .teshu{
+            margin-top: -19px;
+        }
+        .login-tip {
+            width: 156px;
+            height: 32px;
+            font-size: 12px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #f78e8b;
+            display: none;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            right:-94px;
+            top:50%;
+            margin-top: -22px;
+            z-index: 999;
+            background:url(/html/img/login-tip3.png);
+            .icon-wran {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                /* background: url("/html/img/icon-mark-warning.png") no-repeat; */
+                background-size: 14px 14px;
+                vertical-align: middle;
+            }
+        }
+        .login-top{
+            padding: 15px 20px;
+            height: 30px;
+            border-bottom: 1px solid #e2e2e2;
+            .loginleft{
+                display: inline-block;
+                font-size: 20px;
+                line-height: 30px;
+                float: left;
+            }
+            .loginright{
+                display: inline-block;
+                float: right;
+                line-height: 30px;
+                .registered{
+                    a{
+                        color:#ea5504;
+                    }
+                }
+            }
+        }
+    }
+    .login .form .action {
+        margin: 0;
+    }
+    .login,
+    .forget {
+        .banner {
+            // height: 150px;
+            // background: grey;
+            // margin: 10px 0 30px;
+        }
+    }
+    .realname .form {
+        // background: url("/html/img/realname_01.png") right bottom no-repeat;
+        .tips,
+        .action {
+            // padding-right: 270px;
+        }
+        .accept {
+            text-align: left;
+            margin-left:93px;
+        }
+    }
+}

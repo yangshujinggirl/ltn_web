@@ -1,0 +1,253 @@
+ @keyframes shake-rotate {
+            50% {transform: translate(0, 0) rotate(-10deg);}
+            0%, 100% {transform: translate(0, 0) rotate(10deg);}
+ }
+
+ @keyframes shake-center {
+            50% {transform: translate(2px, 0) rotate(-2deg);}
+            0%, 100% {transform: translate(-2px, 0) rotate(-2deg);}
+}
+
+
+.market-eggs {
+  position: relative;
+
+  .header {
+    background: url(/img/market/eggs1.jpg) no-repeat center center;
+    min-width: 1200px;
+    width: 100%;
+    height: 859px;
+    .drawaward {
+      position: relative;
+       width: 100%;
+      height: 100%;
+
+      .message {
+        position: absolute;
+        left: 70%;
+        top: 14%;
+        color: #fff;
+        font-size: 16px;
+        .item {
+          display: none;
+          background: url(/img/market/message.png) no-repeat center center;
+          background-size:100% 100%;
+
+          width: 180px;
+          height: 145px;
+          line-height: 27px;
+          padding-top: 1px;
+          text-align: center;
+        }
+        .itemfont {
+          color: #ffe33e;
+        }
+      }
+      .hammer {
+        background: url(/img/market/harmmer.png) no-repeat center center;
+        background-size: 100% 100%;
+
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        left: 61%;
+        top: 29%;
+
+        animation-duration: 3500ms;
+        animation-iteration-count: infinite;
+        animation-name: shake-rotate;
+        animation-timing-function: ease-in-out;
+        animation-play-state: running;
+      }
+      .single {
+        width: 250px;
+        height: 290px;
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        .egg {
+          background: url(/img/market/egg.png) no-repeat center center;
+          background-size: 100% 100%;
+
+          width: 130px;
+          height: 180px;
+          margin: 0 auto;
+          margin-top: 45px;
+          position: relative;
+          z-index: 5;
+
+          animation-duration: 100ms;
+          animation-iteration-count: infinite;
+          animation-name: shake-center;
+          animation-timing-function: ease-in-out;
+          animation-play-state: running;
+        }
+        .base {
+          background: url(/img/market/base.png) no-repeat center center;
+          background-size: 100% 100%;
+
+          height: 70px;
+          width: 70%;
+          margin: 0 auto;
+          margin-top: -30px;
+          position: relative;
+          z-index: 4;
+        }
+      }
+      .action {
+        position: absolute;
+        cursor: pointer;
+        top: 76%;
+        left: 39%;
+
+        width: 280px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 15px;
+        font-size: 28px;
+        color: #ffe33e;
+        background-color: #ee3e4b;
+        text-align: center;
+      }
+
+      &.bingo {
+        .icon {
+          width: 250px;
+          height: 290px;
+          position: absolute;
+          left: 43%;
+          top: 40%;
+          background: url(/img/market/bingo.png) no-repeat center center;
+        }
+        .bingo {
+          display: block;
+        }
+        .miss {
+          display: none;
+        }
+      }
+      &.miss {
+        .icon {
+          width: 250px;
+          height: 290px;
+          position: absolute;
+          left: 41%;
+          top: 45%;
+          background: url(/img/market/miss.png) no-repeat center center;
+        }
+        .bingo {
+          display: none;
+        }
+        .miss {
+          display: block;
+        }
+      }
+    }
+    .drawaward.bingo .single {
+      display: none;
+    }
+    .drawaward.miss .single {
+      display: none;
+    }
+    .drawaward .button .action {
+      display: none;
+    }
+    .drawaward .button.timesbegain #timesbegain,.drawaward .button.timesmore #timesmore,.drawaward .button.timesno #timesno {
+      display: block;
+    }
+    .drawaward .button #timesbegain {
+      display: block;
+    }
+    .drawaward .button.timesno #timesno {
+      background-color: #a29a8f;
+      color: #fff;
+      cursor: not-allowed;
+    }
+  }
+  .content {
+    background-color: #f3a127;
+    margin-top: -35px;
+    .wrap {
+      margin: 0 45px;
+    .slide {
+      width: 100%;
+      overflow: hidden;
+      .left,.right {
+        width: 49%;
+        position: relative;
+      }
+      .title {
+        line-height: 80px;
+        height: 80px;
+        font-size: 24px;
+        text-align: center;
+        background-color: #fa7119;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .left .top {
+        font-size: 36px;
+      }
+      .left .title {
+        color: #77d6fe;
+      }
+      .right .title {
+        color: #fed83f;
+      }
+
+      .list {
+        background-color: #fff;
+        padding: 20px 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 180px;
+        overflow: hidden;
+        position:relative;
+
+      }
+      .item {
+        text-align: center;
+        font-size: 14px;
+        height: 47px;
+        line-height: 47px;
+      }
+    }
+    .detail {
+      margin: 40px 0;
+      padding-bottom: 20px;
+    }
+    .rule,.problem {
+      clear: both;
+      margin: 20px 0;
+      background-color: #f1d7b4;
+      .title{
+        font-size: 22px;
+        padding: 40px 40px;
+        text-align: center;
+        color: #eb6100;
+        span {
+          padding: 0 40px;
+        }
+      }
+      .article {
+        font-size: 16px;
+        padding: 0 40px;
+        line-height: 40px;
+        span {
+          font-size: 22px;
+          color: #ee3e4b;
+        }
+      }
+      .ruleimg {
+        background: url(/img/market/eggs2.jpg) no-repeat center center;
+        background-size: 100% 100%;
+        height: 220px;
+      }
+    }
+    .problem {
+      padding-bottom: 70px;
+    }
+    }
+  }
+
+}

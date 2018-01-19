@@ -1,0 +1,98 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+ <div class="mutual_control">
+  <div class="mutual_control_cont">
+    <div class="itemnav">
+      <div class="itemnav-left">
+        <a href="javascript:void(0)" class="ite selected" id="recharge" data-content="detailCharge">互助管理</a>
+      </div>
+      <div class="itemnv-right">本平台所有资金都是通过联动优势第三方资金托管</div>
+    </div>
+    <div class="mutual_contne_bottom" >
+      <div class="mutual_control_caption" id="propMutual">
+        <div class="caption">
+          <div class="mutual_control_title">家庭防盗互助保障计划</div>
+          <div class="mutual_control_prop">
+            <div class="control_prop">
+              <div class="item">8.00<span class="renew">续存</span></div>
+              <div class="filed">保障金金额(元)</div>
+            </div>
+            <div class="control_prop control_prop2">
+              <div class="item">10</div>
+              <div class="filed">累计互助人数(人)</div>
+            </div>
+            <div class="control_prop control_prop2">
+              <div class="item">4.00</div>
+              <div class="filed">累计互助分摊(元)</div>
+            </div>
+          </div>
+          <div class="mutual_icon">观察期剩177天</div>
+        </div>
+        <div class="caption">
+          <div class="mutual_control_title">家庭防盗互助保障计划</div>
+          <div class="mutual_control_prop">
+            <div class="control_prop">
+              <div class="item">8.00<span class="renew">续存</span></div>
+              <div class="filed">保障金金额(元)</div>
+            </div>
+            <div class="control_prop control_prop2">
+              <div class="item">10</div>
+              <div class="filed">累计互助人数(人)</div>
+            </div>
+            <div class="control_prop control_prop2">
+              <div class="item">4.00</div>
+              <div class="filed">累计互助分摊(元)</div>
+            </div>
+          </div>
+          <div class="mutual_icon">观察期剩177天</div>
+        </div>
+        <div class="caption">
+          <div class="mutual_control_title">家庭防盗互助保障计划</div>
+          <div class="mutual_control_prop">
+            <div class="control_prop">
+              <div class="item">8.00<span class="renew">续存</span></div>
+              <div class="filed">保障金金额(元)</div>
+            </div>
+            <div class="control_prop control_prop2">
+              <div class="item">10</div>
+              <div class="filed">累计互助人数(人)</div>
+            </div>
+            <div class="control_prop control_prop2">
+              <div class="item">4.00</div>
+              <div class="filed">累计互助分摊(元)</div>
+            </div>
+          </div>
+          <div class="mutual_icon">观察期剩177天</div>
+        </div>
+        <div class="caption">
+          <div class="mutual_control_title">家庭防盗互助保障计划</div>
+          <div class="mutual_control_prop">
+            <div class="control_prop">
+              <div class="item">8.00<span class="renew">续存</span></div>
+              <div class="filed">保障金金额(元)</div>
+            </div>
+            <div class="control_prop control_prop2">
+              <div class="item">10</div>
+              <div class="filed">累计互助人数(人)</div>
+            </div>
+            <div class="control_prop control_prop2">
+              <div class="item">4.00</div>
+              <div class="filed">累计互助分摊(元)</div>
+            </div>
+          </div>
+          <div class="mutual_icon">观察期剩177天</div>
+        </div>
+      </div>
+      <div class="nolist" id="nolist1"></div>
+      <div class="accountpage">
+        <div class="pages" id="pages1">
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+<!-- @endextend -->
+
+<!-- @endextend -->

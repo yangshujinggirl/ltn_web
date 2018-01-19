@@ -1,0 +1,61 @@
+.account-infolist {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+
+    .header {
+      height: 70px;
+      line-height: 70px;
+      margin-top: 20px;
+      margin-right: 30px;
+      margin-left: 30px;
+      font-size: 18px;
+    }
+
+    .table {
+      padding: 0 30px;
+      table {
+        width: 100%;
+        th,td {
+          padding: 10px 25px;
+          text-align: center;
+        }
+        .messageType {
+          white-space: nowrap;
+          padding: 10px 5px;
+        }
+
+        thead tr {
+          font-size: 16px;
+          background-color: #ececec;
+        }
+        .sendTime {
+          white-space: nowrap;
+        }
+
+
+        tbody tr {
+          font-size: 14px;
+
+          .tableinfo {
+            //display: -webkit-box;
+            //overflow : hidden;
+            //text-overflow: ellipsis;
+            //-webkit-line-clamp: 1;
+            //-webkit-box-orient: vertical;
+            text-align:left;
+          }
+          &:nth-child(even) {
+          background-color: #f7f7f7;
+          }
+        }
+      }
+    }
+    .nolist {
+      display: none;
+      width:196px;
+      height: 179px;
+      margin:0 auto;
+      background: url(/img/jz.jpg);
+    }
+}

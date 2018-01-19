@@ -1,0 +1,220 @@
+.reportthree{
+  .banner{
+    width: 100%;
+    height: 390px;
+    background: url(/html/img/reportthree/report_banner.jpg) no-repeat center;
+  }
+  .icon{
+    background:url(/html/img/reportthree/report_icon.png) no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+  }
+  .view-wrap{
+    background-color:#003d81;
+    text-align: center;
+    .inner-wrap{
+      width: 1000px;
+      margin: 0 auto;
+      padding:40px 0;
+      h2{
+        font-weight: normal;
+        span{
+          padding:5px 15px;
+          border:1px solid #fff;
+          border-radius:40px;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+      .sanjidu{
+        margin-top: 70px;
+      }
+      .big_box{
+        width: 680px;
+        margin: 40px auto 0;
+        overflow: hidden;
+        zoom:1;
+      }
+      .img_cap1,.img_cap2{
+        width: 329px;
+        text-align: left;
+        p{
+          font-size: 12px;
+          color: #333;
+        }
+      }
+      .img_cap1{
+        float: left;
+      }
+      .img_cap2{
+        float: right;
+      }
+      .three_cap{
+        width: 460px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 50px;
+        .icon{
+          width: 40px;
+          height: 33px;
+          left: 45px;
+          background-position: 2px -36px;
+        }
+        .icon1{
+          width: 33px;
+          background-position: -37px -36px;
+        }
+        .icon2{
+          background-position: -70px -36px;
+        }
+        .muji{
+          width: 100px;
+          display: inline-block;
+          font-size: 14px;
+          color: #fff;
+          margin-left: 100px;
+        }
+        .lechao{
+          display: inline-block;
+          font-size: 12px;
+          color: #fff;
+          margin-left: 30px;
+          .juse2{
+            color: #ff6600;
+          }
+          .report_teshu{
+            font-size: 14px;
+            color: #ff6600;
+          }
+        }
+      }
+      .platform{
+        margin-top: 55px;
+      }
+      .img_bg{
+        position: relative;
+        margin-top: 40px;
+      }
+      .caption{
+        position: absolute;
+        left:273px;
+        top: 53px;
+        display: inline-block;
+        .icon{
+          left:30px;
+          top: -23px;
+          background-position: -2px -17px;
+        }
+        .cap_info{
+          font-size: 12px;
+          color: #fff;
+        }
+        .money{
+          font-size: 12px;
+          color: #ff6600;
+        }
+      }
+      .caption1{
+        left: 389px;
+        .icon1{
+          width: 16px;
+          height: 20px;
+          left: 40px;
+          background-position: -21px -17px;
+        }
+      }
+      .caption2{
+        right: 146px;
+        .icon2{
+          width: 20px;
+          height: 20px;
+          left: 280px;
+          background-position: -39px -17px;
+        }
+      }
+      .caption3{
+        right: -89px;
+        .icon3{
+          width: 25px;
+          height: 20px;
+          left: 397px;
+          background-position: -58px -17px;
+        }
+      }
+      h4{
+        font-size: 16px;
+        color: #fff;
+        font-weight: normal;
+        span{
+          position: relative;
+          .icon{
+            left:-29px;
+            top: -3px;
+            background-position: 0 4px;
+          }
+          .icon2{
+            background-position: -22px 5px;
+          }
+        }
+        .yuefen{
+          font-size: 20px;
+        }
+      }
+      .touzi{
+        margin-top: 40px;
+      }
+      .inner_info{
+        font-size: 16px;
+        color: #fff;
+        span{
+          font-size: 20px;
+          color: #ff6600;
+        }
+      }
+    }
+  }
+  .view-wrap2{
+    background: #ebebeb;
+    .inner-wrap{
+      h2{
+        span{
+          color: #333333;
+          border: 1px solid #333;
+        }
+      }
+      h4{
+        font-size: 14px;
+        color: #333;
+      }
+      .big_box{
+        width: 680px;
+        margin: 0 auto;
+        overflow: hidden;
+        zoom:1;
+      }
+      .img_cap1,.img_cap2{
+        width: 329px;
+        text-align: left;
+        p{
+          font-size: 12px;
+          color: #333;
+        }
+      }
+      .img_cap1{
+        float: left;
+      }
+      .img_cap2{
+        float: right;
+      }
+    }
+  }
+  footer{
+    height: 127px;
+    background: #ebebeb;
+    text-align: center;
+    padding-top: 80px;
+  }
+}

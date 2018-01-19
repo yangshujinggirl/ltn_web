@@ -1,0 +1,415 @@
+
+.money{
+  height: 100%;
+  .cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0,0.5);
+    display: none;
+    z-index: 999;
+  }
+ .top-content{
+  height: 1386px;
+  background:url(../../../img/money-1.png) no-repeat center center;
+  position: relative;
+  .beijing{
+    height: 175px;
+    width: 100%;
+    background:url(../../../img/money-2.png) no-repeat center center;
+    position: absolute;
+    left: -16px;
+    top: 820px;
+    z-index: 99;
+    .list{
+      height: 152px;
+      position: absolute;
+      top: -90px;
+      left: 130px;
+      width: 1086px;
+      display: inline-block;
+      z-index: 999;
+      background:url(../../../img/money-7.png?v=201605131403) no-repeat;
+    }
+  }
+  .top-cont{
+    position: absolute;
+    top: 998px;
+    left: 65px;
+    margin: 0 auto;
+    padding: 32px 0 0 228px;;
+    text-align: left;
+    .zhuce{
+      font-size: 40px;
+        color: #f0504a;
+      vertical-align: bottom;
+    }
+    .icon{
+      width: 120px;
+      height: 66px;
+      display: inline-block;
+      background:url(../../../img/money-qian.png) no-repeat;
+      margin: 0 10px;
+      position: relative;
+      left: 0;
+      top: 20px;
+    }
+    .icon2{
+      width: 130px;
+      height: 85px;
+      line-height: 85px;
+      display: inline-block;
+      background:url(../../../img/yellow-bg.png) no-repeat;
+      margin-left: 50px;
+      font-size: 60px;
+      color: #e93046;
+      text-align: center;
+    }
+   }
+   .button1{
+    width: 292px;
+    height: 93px;
+    border:0;
+    border-radius: 10px;
+    margin:34px 0 0 464px;
+    font-size:35px;
+    color: #fffdbb;
+    outline:none;
+    background: url(../../../img/anniu-bg.png) no-repeat;
+   }
+  }
+  .numtwo{
+    background-color:#fe9900;
+    margin-top: -2px;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+    .jiaxi-cont{
+      display: inline-block;
+      text-align: left;
+      margin-top: 45px;
+      font-size: 35px;
+      line-height: 53px;
+      color: #fff;
+      .jiantou2{
+        position: absolute;
+        right: 334px;
+        top:-1px;
+        }
+      .NO2{
+      display: inline-block;
+      margin: 0 0 0 634px;
+    }
+    .special{
+      color: #fff639;
+    }
+    .button{
+      width: 292px;
+      height: 93px;
+      background: url(../../../img/anniu-bg.png) no-repeat;
+      border:0;
+      border-radius: 10px;
+      margin-left:464px;
+      color: #fffdbb;
+      outline:none;
+    }
+    }
+  }
+  .numthree{
+    width: 100%;
+    background: url(../../../img/guize-bg.png) no-repeat center center;
+    margin-top: -10px;
+    .jiantou1{
+      width: 105px;
+      height: 43px;
+      background: url(../../../img/money-jiantou1.png) no-repeat;
+      margin-left: 285px;
+    }
+    .no3{
+      font-size: 40px;
+      color: #fff;
+      margin-left: 290px;
+    }
+    .three-cont{
+      width: 1022px;
+      height: 830px;
+      margin: 0 auto;
+      .left{
+        width: 363px;
+        height: 585px;
+        margin-top: 50px;
+        text-align: center;
+        .left-top{
+          font-size: 30px;
+          color: #ff5359;
+        }
+        .left-bottom{
+          width: 400px;
+          height: 400px;
+          font-size: 16px;
+          line-height: 31px;
+          padding: 40px 30px;
+          color: #fff;
+          text-align: left;
+          margin-top: 20px;
+          background: url(../../../img/guize-bg2.png?v=201505131307) no-repeat;
+          .cont{
+            width: 339px;
+            height: 320px;
+            margin-top: 20px;
+          }
+        }
+        .special{
+          color: #fe9900;
+        }
+      }
+      .right{
+        position: relative;
+        text-align: center;
+        .zhuanpan{
+          width: 601px;
+          height: 601px;
+          border-radius:50%;
+          background: url(../../../img/zhuanpan.png?v=2015051543) no-repeat;
+        }
+        .smallstart{
+          width: 230px;
+          height: 262px;
+          background: url(../../../img/start-cj.png?v=201605131429) no-repeat;
+          position: absolute;
+          left: 184px;
+          top: 184px;
+          cursor: pointer;
+          display: none;
+        }
+        .qidai{
+          width: 230px;
+          height: 262px;
+          background:url(../../../img/qidai.png?v=201605131359) no-repeat;
+          position: absolute;
+          left: 184px;
+          top: 184px;
+          display: none;
+          cursor: pointer;
+        }
+        .show{
+            display: block;
+        }
+        .cishu{
+          font-size: 40px;
+          color: #fe9900;
+          margin-top: 15px;
+          .zero{
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  .numfour{
+    .four-cont{
+      width: 856px;
+      margin: 0 auto;
+      text-align: right;
+      .no4{
+        font-size: 35px;
+        color: #ff5359;
+        margin-top: 20px;
+      }
+      .title{
+        font-size: 30px;
+        color: #ff5359;
+      }
+      .ruwei{
+        font-size: 20px;
+        color: #ff5359;
+      }
+      .list{
+        overflow: hidden;
+        zoom:1;
+        .item1,.item2,.item3{
+          width: 210px;
+          height: 400px;
+          float: left;
+          margin-right: 22px;
+          padding: 0 20px;
+          font-size: 14px;
+          color: #fff;
+          text-align: left;
+          .two2{
+            margin-top: 14px;
+            color: #000;
+            height: 58px;
+          }
+          .one{
+            position: relative;
+            top: 124px;
+          }
+        }
+        .item1{
+          background: url(../../../img/zongzichan.png) no-repeat;
+        }
+        .item2{
+          background: url(../../../img/yaoqing.png) no-repeat;
+        }
+        .item3{
+          background: url(../../../img/danbi.png) no-repeat;
+        }
+      }
+    }
+    .bottom{
+        width: 736px;
+        height: 82px;
+        background: #ff5359;
+        border-radius: 101px;
+        margin: 0 auto;
+        font-size: 25px;
+        color: #fff;
+        padding: 50px 60px;
+      }
+    .footer{
+      width: 876px;
+      margin: 0 auto;
+      text-align: right;
+      font-size: 25px;
+      color: #ff5359;
+      margin: 30px 220px;;
+    }
+  }
+  .prize,.login,.sure,.fail{
+    width: 500px;
+    height: 256px;
+    background: url(../../../img/float-bg.png) no-repeat;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top:-128px;
+    margin-left: -250px;
+    z-index: 9999;
+    text-align: center;
+    .gongxi{
+      font-size: 30px;
+      margin-top: 60px;
+      color: #fff;
+    }
+    .jiangpin{
+      font-size: 40px;
+      color: #f2ff1b;
+      margin-top: 10px;
+    }
+    .servies{
+      margin-top: 30px;
+      color: #000;
+      font-size: 14px;
+    }
+    .close{
+        width: 41px;
+        height: 41px;
+        background: url(../../../img/money-cha.png?v=201605131243) no-repeat;
+        position: absolute;
+        right: -10%;
+        top: -11%;
+    }
+  }
+  .prize{
+    display: none;
+  }
+  .login{
+    display: none;
+    .login-btn{
+      width: 223px;
+      height: 70px;
+      border:0;
+      color: #fffdbb;
+      font-size: 35px;
+      background:url(../../../img/anniu-bg2.png) no-repeat;
+      outline: none;
+      margin-top: 30px;
+    }
+  }
+  .sure{
+    display: none;
+    width: 734px;
+    height: 381px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -249px;
+    margin-left: -367px;
+    background:url(../../../img/tips-big.png) no-repeat;
+    .gongxi{
+      margin-top: 10px;
+    }
+    .icon{
+      width: 120px;
+      height: 120px;
+      display: inline-block;
+      margin: 43px 0 0 -13px;
+      background: url(../../../img/tanhao.png) no-repeat;
+    }
+    .caption{
+      font-size: 20px;
+      color: #fff;
+    }
+    .login-btn{
+      width: 223px;
+      height: 70px;
+      border:0;
+      outline: none;
+      color: #fffdbb;
+      font-size: 35px;
+      margin-top: 20px;
+      background:url(../../../img/anniu-bg2.png) no-repeat;
+    }
+    .close{
+      width: 41px;
+      height: 41px;
+      background: url(../../../img/money-cha.png?v=201605131243) no-repeat;
+      position: absolute;
+        right: -5%;
+        top: -11%;
+
+    }
+  }
+  .fail{
+    display: none;
+    width: 734px;
+    height: 381px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -249px;
+    margin-left: -367px;
+    background:url(../../../img/tips-big.png) no-repeat;
+    .gongxi{
+      margin-top: 10px;
+    }
+    .icon2{
+      width: 251px;
+      height:133px;
+      margin: 59px 0 0 236px;
+      background:url(../../../img/fail-tips.png) no-repeat;
+    }
+    .login-btn{
+      width: 223px;
+      height: 70px;
+      border:0;
+      outline: none;
+      color: #fffdbb;
+      font-size: 35px;
+      margin-top: 20px;
+      background:url(../../../img/anniu-bg2.png) no-repeat;
+    }
+    .close{
+      width: 41px;
+      height: 41px;
+      background: url(../../../img/money-cha.png?v=201605131243) no-repeat;
+      position: absolute;
+        right: -5%;
+        top: -11%;
+
+    }
+  }
+}//money

@@ -1,0 +1,30 @@
+<!--图形验证码模型-->
+<script type="text/template" charset="UTF-8" id="templateBank">
+	<select name="" id="txtBank" class="input">
+		{{  for(var i =0;i<it.length;i++){ }}
+	      <option value={{=it[i].bankName}} {{=it[i].bankName=='中国工商银行'?'selected=true':''}}>{{=it[i].bankName}}</option>
+	      {{ } }}
+	</select>
+</script>
+
+<script type="text/template" id="tempfuceng">
+<div class="resultsTop" id="floating">银行快捷充值限额表（单位：元）</div>
+  <table>
+      <thead>
+        <tr class="one">
+          <th>银行</th>
+          <th>单笔限额</th>
+          <th>单日限额</th>
+        </tr>
+      </thead>
+      <tbody class="list">
+       {{~it:value:index}}
+        <tr>
+          <td class="item">{{=value.bankName}}</td>
+          <td class="item">{{=value.chargeTimeLimit}}</td>
+          <td class="item">{{=value.chargeDateLimit}}</td>
+        </tr>
+        {{~}}
+      </tbody>
+    </table>
+</script>

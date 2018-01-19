@@ -1,0 +1,68 @@
+<div class="product-buy component" id="buy">
+  <!-- <div class="wrap">
+    <div class="current">
+      <div class="header">
+        <div class="title">投资购买</div>
+        <div class="close" id="buyClose"></div>
+      </div>
+      <div class="form">
+        <div class="row">
+          <div class="caption">投资金额：</div>
+          <div class="field">
+            <span class="text">10000.00元</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">可用余额：</div>
+          <div class="field">
+            <span class="text">300.00元</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">可投金额：</div>
+          <div class="field">
+            <span class="text">300.00元</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">使用鸟币：</div>
+          <div class="field">
+            <input id="isUse" type="checkbox" class="check" checked>
+            <label for="isUse" class="label">30鸟币抵扣30.00元</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">理财金券：</div>
+          <div class="field">
+            <select class="select">
+              <option value="58元返现券">58元返现券</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">起息日期：</div>
+          <div class="field">
+            <span class="text">2016-02-27</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">到期日期：</div>
+          <div class="field">
+            <span class="text">2016-02-28</span>
+          </div>
+        </div>
+        <div class="row submit">
+          <hr class="dash">
+          <div class="actual">
+            <span class="text">实际金额：</span>
+            <span class="amount">0.00元</span>
+          </div>
+          <div class="action">
+            <button class="button" id="invesLCT">确认投资</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- pv统计代码 -->
+</div>

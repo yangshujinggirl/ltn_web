@@ -1,0 +1,14 @@
+<div class="open-close" id="withDrawPopup">
+  <div class="open-content">
+    <h1 class="tips">提示</h1>
+    <p class="open-function">您是否提现成功</p>
+    <p class="txt1">
+      <span class="if">是)</span>去账号中心查看<br>
+      <span class="if">否)</span>建议您查看帮助中心
+    </p>
+    <div class="field">
+      <button class="yes goCenter" onclick="user().clickEvent();">是</button>
+      <button class="no goHelp" onclick="user().clickEvent();">否</button>
+    </div>
+  </div>
+</div>

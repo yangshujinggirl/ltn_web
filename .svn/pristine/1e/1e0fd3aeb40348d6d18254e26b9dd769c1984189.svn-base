@@ -1,0 +1,88 @@
+<script type="text/template" id="tempPartner">
+  <div class="cont_left">
+      <div class="filed">合伙人累计奖励(元) <a href="/html/account/awardDetail/">>></a></div>
+      <div class="num">{{=strUtil().formatKilo(it.totalReward)}}</div>
+  </div>
+  <div class="cont_right">
+    <div class="right_top">
+      <div class="grades">合伙人等级</div>
+      <div class="grades_shows">
+        <div class="link"></div>
+        <div class="node">LV1</div>
+        <div class="linkhuise"></div>
+        <div class="nodeHide">LV1</div>
+        <div class="nodeShow">LV1</div>
+        <div class="info1">普通合伙人</div>
+        <div class="link2"></div>
+        <div class="link2huise"></div>
+        <div class="node2">LV2</div>
+        <div class="nodeHide2">LV2</div>
+        <div class="info2">金牌合伙人</div>
+        <div class="link3"></div>
+        <div class="node3">LV3</div>
+        <div class="info3">未完待续...</div>
+        <div class="link4"></div>
+        <div class="link5"></div>
+        <div class="link6"></div>
+        <div class="link7"></div>
+        <div class="link8"></div>
+        <div class="link9"></div>
+        <div class="link10"></div>
+      </div>
+    </div>
+    <div class="right_bottom">
+      <div class="oneracing">
+        <span class="field">累计一级好友奖励(元) ：</span>
+        <span class="money">{{=it.fatherReward}}</span>
+      </div>
+      <div class="tworacing">
+        <span class="field">累计二级好友奖励(元) ：</span>
+        <span class="money">{{=it.grandfatherReward}}</span>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempPInfo">
+  <div class="reference">
+      <div class="recommend_icon">推荐有奖</div>
+      <div class="tuijianren">
+        <span class="who">推荐人：</span>
+        <span class="niaobi">推荐者完成一次投资后(无论活期/固收)，每次推荐一个好友完成固定收益类投资，那么推荐者即可获得10鸟币。</span>
+      </div>
+      <div class="your">
+        {{? it.isStaff == "1"}}
+        <div class="left">
+          <span>内部员工</span>
+          <span class="your_icon"></span>
+          <span class="wufabuc">您为内部员工无法补充推荐人，但是您可以推荐其他好友，成为他们的推荐人！</span>
+        </div>
+        {{?? it.isStaff == '2'}}
+        <div class="left">
+          <span>代理商</span>
+          <span class="your_icon"></span>
+          <span class="wufabuc">您为代理商无法补充推荐人，但是您可以推荐其他好友，成为他们的推荐人！</span>
+        </div>
+        {{?? it.isPartnerUp == '1'}}
+          <div class="left">
+              <span class="tuijian">您的推荐人：</span>
+              <span class="number" id="partNum">{{=it.sysUserName}}</span><span></span>
+          </div>
+        {{??it.isPartnerUp != '1'}}
+          <div class="right">
+            <div class="left">
+                <span class="tuijian">您的推荐人：</span>
+            </div>
+            <input type="tel" class="phone" placeholder="请输入您要补充的推荐人手机号" id="supplyReferIn">
+            <div class="button" id="supplyReferBtn">确认</div>
+            <div class="prompted"></div>
+            <div class="right_tips">补充推荐人，可获得一张10%的加息券！</div>
+        </div>
+         {{?}}
+      </div>
+      <div class="reference_last">
+        <div class="beitui">被推荐人：</div>
+        <div class="shouyi">被推荐人获得一张10%的加息券，可用于购买固定类产品（非活期），投资时使用该加息券，投资收益可增加10%。</div>
+      </div>
+    </div>
+</script>

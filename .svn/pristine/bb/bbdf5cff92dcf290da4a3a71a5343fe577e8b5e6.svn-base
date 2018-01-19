@@ -1,0 +1,188 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<div class="account-viewall">
+  <div class="rightContent">
+    <div class="itemnav">
+      <div class="itemnav-left">
+        <a href="javascript:void(0)" class="ite selected" >账户总览</a>
+      </div>
+      <div class="itemnv-right">本平台所有资金都是通过联动优势第三方资金托管</div>
+    </div>
+      <div class="banner" id="propBanner">
+        <div class="start" id="start">
+          <div class="start_top">
+            <div class="start_top_left">
+              <div class="filed"><span class="money"></span>我的体验金</div>
+              <div class="item">600,000.00</div>
+            </div>
+            <div class="start_top_right">
+              <div class="filed">
+                <span class="expired"></span>到期收益
+                <span class="little_icon"></span>
+                <span class="tips" id="start_tips">到期后自动计入余额中</span>
+              </div>
+              <div class="item"><span class="niaobi">鸟币</span>13.18</div>
+            </div>
+          </div>
+          <div class="start_bottom">
+            <div class="caption start_invest">体验标体验投资</div>
+            <div class="caption">
+              <div class="profit">8.0%</div>
+              <div class="unit">年化收益</div>
+            </div>
+            <div class="caption">
+              <div class="profit">1</div>
+              <div class="unit">项目期限(天)</div>
+            </div>
+            <div class="caption">
+              <div class="profit">100亿</div>
+              <div class="unit">募集总额(元)</div>
+            </div>
+            <div class="caption">
+              <a href="/html/product/start/#!/1"><button class="button">立即体验</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="realname" id="realnameBanner">
+          <div class="realname_left"></div>
+          <div class="realname_center">为保障您的资金安全，<br>
+          请先完成第三方资金托管账户开通及业务授权，<br>
+          完成实名并绑卡可额外获得<span class="special">20元</span>返现券哦。
+          <span class="realname_liandong"></span>
+          </div>
+          <div class="realname_right">
+            <button class="button">立即实名</button>
+          </div>
+        </div>
+        <div class="card" id="card">
+          <div class="card_left">
+            <div class="card_success">完成绑卡操作可额外获得<span class="special">58元</span>返现券，<br>
+            赶紧完成绑卡吧！</div>
+            <a href=""><button class="button">立即绑卡</button></a>
+          </div>
+          <div class="card_right"></div>
+        </div>
+        <div class="first" id="first">
+          <div class="first_left">
+            <div class="first_success">不可错过的新手福利，<br>
+             年化收益高达15%以上，让新手也能赚更多！</div>
+            <a href=""><button class="button">立即投资</button></a>
+          </div>
+          <div class="first_right"></div>
+        </div>
+        <div class="stretch" id="stretch">
+          <img src="/html/img/zhanghuhuodong_banner.jpg">
+        </div>
+      </div>
+      <div class="content">
+        <div class="laws" id="viewalldetail">
+          <div class="earnContent">
+           <div class="profitContent">
+             <div class="left" class="echartview" id="echartview">
+             </div>
+             <div class="right">
+               <div class="item tohave">
+                 <span> &nbsp; &nbsp; &nbsp;<span class="number"></span>
+                 <span class="unit"> &nbsp;<br/><span class="shouyi">待收收益(元) <a href="#">>></a></span></span>
+               </div>
+               <div class="item myInvest">
+                 <span> &nbsp; &nbsp; &nbsp;<span class="number"></span>
+                 <span class="unit"> &nbsp;<br/><span class="shouyi">待收本金(元) <a href="#">>></a></span></span>
+               </div>
+               <div class="item dieMoney">
+                 <span> &nbsp; &nbsp; &nbsp;<span class="number"></span>
+                 <span class="unit"> &nbsp;<br/><span class="shouyi">可用余额(元)  <a href="#">>></a></span></span>
+               </div>
+               <div class="item liveMoney">
+                 <span> &nbsp; &nbsp; &nbsp;<span class="number"></span>
+                 <span class="unit"> &nbsp;<br/><span class="shouyi">冻结余额(元)</span></span>
+               </div>
+             </div>
+           </div>
+          </div>
+        </div>
+        <div class="content_right" id="propContent">
+          <!-- <div class="surplus">
+            <div class="flied">65789.34</div>
+            <div class="unit">可用余额(元)</div>
+          </div>
+          <div class="push-button">
+            <a href="/html/account/bank/"><button class="button recharge_button">充值</button></a>
+            <a href="/html/account/bank/"><button class="button postal_button">提现</button></a>
+            <a href="/html/product/#!/short/0/0/1"><button class="button invest_button">投资</button></a>
+          </div>
+          <div class="prod">
+            <div class="item1">
+              <div class="item1_filed">46575</div>
+              <div class="item1_unit">累计收益(元) <!-- <a href="#">>></a> </div>
+            </div>
+            <div class="item1 item2">
+              <div class="item1_filed">1541</div>
+              <div class="item1_unit">待收收益(元) <a href="#">>></a></div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="ticket" id="propTicket">
+        <!-- <div class="caption">
+          <span class="ticket_icon1"></span>
+          <span class="parts">鸟币金额</span>
+          <span class="num">234.32 </span><a href="#"  class="jiantou">>></a>
+        </div>
+        <div class="caption">
+          <span class="ticket_icon2"></span>
+          <span class="parts">返现券</span>
+          <span class="num">28张  </span><a href="#" class="jiantou">>></a>
+        </div>
+        <div class="caption caption3">
+          <span class="ticket_icon3"></span>
+          <span class="parts">加息券</span>
+          <span class="num">1200 张 </span><a href="#" class="jiantou">>></a>
+        </div> -->
+      </div>
+      <div class="recommend" id="propProduct">
+        <!-- <div class="header">推荐理财</div>
+        <div class="recommend_cont">
+          <div class="caption cap1">
+            <div class="profit">
+              <div class="filed">18.0<span class="Bfh">%</span></div>
+              <div class="gains">预期年化收益</div>
+            </div>
+            <div class="recommend_start">
+              1,000元起投    |    30天
+            </div>
+            <div class="shengyu">剩余金额：984,768,343.12元</div>
+            <button class="recommend_but">立即投资</button>
+          </div>
+          <div class="caption">
+            <div class="profit">
+              <div class="filed filed2">18.0<span class="Bfh"></span></div>
+              <div class="gains">预期年化收益</div>
+            </div>
+            <div class="recommend_start">
+              1,000元起投    |    30天
+            </div>
+            <div class="shengyu">剩余金额：984,768,343.12元</div>
+            <button class="recommend_but">立即投资</button>
+          </div>
+          <div class="caption">
+            <div class="profit">
+              <div class="filed filed2">18.0<span class="Bfh">%</span></div>
+              <div class="gains">预期年化收益</div>
+            </div>
+            <div class="recommend_start">
+              1,000元起投    |    30天
+            </div>
+            <div class="shengyu">剩余金额：984,768,343.12元</div>
+            <button class="recommend_but">立即投资</button>
+          </div>
+        </div> -->
+      </div>
+  </div>
+</div>
+
+<!-- @endextend -->
+<!-- @endextend -->

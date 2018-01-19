@@ -1,0 +1,38 @@
+.charge-state {
+  // display: none;
+  width:520px;
+  height: 350px;
+  background-color: #FFF;
+  color:#000;
+  border-radius:5px;
+  border: 8px solid rgba(0,0,0,.1);
+  position: fixed;
+  left:50%;
+  top:50%;
+  margin-left: -260px;
+  margin-top:-175px;
+  text-align: center;
+  .tips {
+    font-size: 24px;
+    height:38px;
+    line-height: 38px;
+    text-align:left;
+    font-weight: bold;
+    background: url(../../../img/_bank_11.png) no-repeat ;
+    margin:89px 0 59px 140px;
+    padding-left:45px;
+  }
+  .desc{
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .sure {
+    width:180px;
+    height: 36px;
+    border: none;
+    color:#fff;
+    font-size: 18px;
+    border-radius:5px;
+    background-color: #ff6f20;
+  }
+}

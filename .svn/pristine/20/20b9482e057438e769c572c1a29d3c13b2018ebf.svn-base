@@ -1,0 +1,204 @@
+.account-cardchange {
+  .title {
+    font-size: 14px;
+    color: #ea5504;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #e2e2e2;
+    margin: 20px 35px;
+    .item {
+      border-bottom: 2px solid #ea5504;
+      width: 100px;
+      text-align: center;
+    }
+  }
+  .content{
+    width:900px;
+    margin: 0 auto;
+    .cont-top{
+      width:720px;
+      // height:155px;
+      padding:15px 90px;
+      border:1px solid #eeeeee;
+      background: #fbfbfb;
+      .prompt{
+        font-size: 18px;
+        color: #ea5504;
+        padding-left: 30px;
+        position: relative;
+        i{
+          width:25px;
+          height:25px;
+          position: absolute;
+          left: 0;
+          top:0;
+        }
+      }
+      .paragraph{
+        line-height:24px;
+        font-size: 16px;
+      }
+    }//cont-top
+    .cont-bottom{
+
+      .form{
+        font-size: 14px;
+        margin: 50px auto 0 auto;
+        .button{
+        width: 280px;
+        height: 45px;
+        background: #ff6f20;
+        color: #fff;
+        font-size:18px;
+        border:0;
+        border-radius:5px;
+        margin-left:33%;
+        margin-top:20px;
+        &:hover {
+          background: #ff5a00;
+          }
+         &.disabled {
+                  background: #ccc;
+          }
+         }
+        .row{
+          line-height:  35px;
+          margin: 15px 0;
+          .validation{
+              color: #f78e8b;
+              padding: 0 10px;
+              width: 33.333%;
+              box-sizing: border-box;
+              display: inline-block;
+              // display: none;
+              .icon {
+                color: #fff;
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+                background: #f78e8b;
+                width: 14px;
+                height: 14px;
+                line-height: 1;
+                border-radius: 7px;
+                margin: 0 5px;
+        }
+            }
+          .caption{
+            color: #8a8a8a;
+            text-align: right;
+            font-weight: bold;
+            width:33.333%;
+            box-sizing:border-box;
+            display: inline-block;
+            padding:0 20px 0 0;
+          }
+          &.wrap-identity{
+                display: none;
+            }
+            &.validate-failed {
+                .field {
+                    .input {
+                        outline: 5px auto #f78e8b;
+                        outline-offset: -2px;
+                    }
+                }
+                .validation {
+                    display: inline-block;
+                    background: url("/img/icon-mark-warning.png") 10px center no-repeat;
+
+                }
+            }
+            &.validate-success {
+                .validation {
+                    display: inline-block;
+                    height: 14px;
+                    background: url("/img/icon-mark-ok.png") 10px center no-repeat;
+
+                }
+            }
+            .validation{
+              padding: 0 0 0 34px;
+              .login-tip {
+            margin-top: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #f78e8b;
+            display: none;
+            .icon-wran {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background: url("/img/icon-mark-warning.png") no-repeat;
+                background-size: 14px 14px;
+                vertical-align: middle;
+            }
+            .wran-tip{
+                margin-left: 6px;
+            }
+        }
+            }
+          .field{
+            width:30%;
+            display: inline-block;
+            vertical-align: middle;
+            .input{
+              width:100%;
+              height:35px;
+              color: #cacaca;
+              box-sizing:border-box;
+              padding:0 15px;
+              float: left;
+              border:1px solid #e8e8e8;
+              background: none;
+              &.validate{
+                width:60%;
+              }
+            }//input
+
+          .current{
+            background:#fafafa;
+            border:0;
+            border:1px solid #e8e8e8;
+           }
+          }
+        
+        }
+      }
+      .tips2{
+        margin: 10px 0 0 171px;
+      }
+      .quickly{
+        width:800px;
+        padding:30px 60px;
+        background:#fbfbfb;
+        border:1px solid #e2e2e2;
+        margin-top: 20px;
+
+        h2{
+          font-weight: 24px;
+          text-align:center;
+        }
+        p{
+          font-size:14px;
+          line-height: 25px;
+        }
+      }
+       .caption1{
+        width: 500px;
+        height: 88px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 80px;
+        .left{
+          position: relative;
+          left: 0;
+          top: 0;
+        }
+        .right{
+          font-size: 24px;
+        }
+       }
+    }//cont-bottom
+  }//cntent
+}

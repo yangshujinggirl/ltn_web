@@ -1,0 +1,47 @@
+
+
+<script type="text/template" charset="UTF-8"  id="temptop">
+  <div class="wrap">
+    <div class="slide">
+      <div class="left">
+        <div class="title">昨天已获得鸟币<span class="top">TOP10</span></div>
+        <div class="list" id="marquee1">
+          <ul>
+            {{~it.topTenList:value:index}}
+            <li class="li">
+              <div class="item">{{=value.name}}昨日累计砸到了{{=value.winCoin}}个鸟币 </div>
+            </li>
+            {{~}}
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="title">今天已有<span>{{=it.total}}位</span>鸟粉获得鸟币</div>
+        <div class="list" id="marquee2">
+          <ul>
+           {{~it.nowGetCoinList:value:index}}
+            <li class="li">
+              <div class="item">{{=value.name}}刚刚砸到了{{=value.winCoin}}个鸟币 </div>
+            </li>
+            {{~}}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="detail">
+      <div class="rule">
+        <div class="title">————————————————————<span>活动规则</span>————————————————————</div>
+        <div class="article">
+          1、<span>砸</span>金蛋，得<span>鸟币</span>。中奖鸟币数量随机，立即发放到鸟币余额账户内。<br>2、活动期间内，用户每天登陆可获得一次砸蛋机会，中奖几率为<span>33.33%</span>。<br>3、活动期间内，用户还可以通过以下两种方式获得额外砸蛋机会，中奖率<span>100%</span>：每笔<span>2000元</span>及以上的有效定期投资，即可获得一次必中砸蛋机会；每人每天最多<span>3次</span>获取资格；用户推荐好友绑卡成功，即可获得一次必中砸蛋机会，次数不设上限。<br>4、登陆砸蛋机会仅限当天登陆领取使用，<span>隔日失效</span>；投资定期产品或推荐好友成功绑卡的砸蛋机会则可累加，活动结束前均可使用。
+        </div>
+        <div class="ruleimg"></div>
+      </div>
+      <div class="problem">
+         <div class="title">————————————————————<span>活动答疑</span>————————————————————</div>
+        <div class="article">
+          1）为什么我买了3000元“随心投”，没有获得砸蛋机会？<br>答：您好，根据我们的活动规则，只有购买定期理财产品（1000元及以上）才能获得砸蛋资格，随心投是活期理财产品，不在本次活动范围之列。<br>2）为什么我一次性买了5000元的乐巢投产品，却只获得一次砸蛋机会？<br>答：您好，根据我们的活动规则，在满足金额不低于2000的前提下，单笔投资只能获得一次资格。<br>3）为什么我当天投资了5次2000定期产品，推荐了2个好友实名绑卡，却只获得6次砸蛋机会？<br>答：您好，根据您的描述，当天您登陆获得一次砸蛋中奖机会，推荐好友获得2次砸蛋中奖机会，投资定期产品每人每日最多可获得3次机会，所以您今日累计获得的砸蛋中奖机会就是6次。<br>4）若我当天没有使用砸蛋机会，我的砸蛋机会还有吗？<br>答：每天首次登陆的砸蛋机会当天使用，过期作废。通过投资或者推荐好友绑卡换取的砸蛋机会则可以累加，您在活动结束之前都可自主使用这部分的砸蛋机会。
+        </div>
+      </div>
+    </div>
+  </div>
+</script>

@@ -1,0 +1,27 @@
+<!--确认充值页面-->
+<script type="text/template" charset="UTF-8" id="templateBankInfo">
+	<div class="row">
+		<div class="caption">银行卡号：</div>
+		<div class="field">
+			<span class="text">{{=it.bankCardId}}</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="caption">开户银行：</div>
+		<div class="field">
+			<span class="text">{{=it.belongBank}}</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="caption">充值金额：</div>
+		<div class="field">
+			<span class="text">{{=Util.padFloatMoney(it.money)}}元</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="caption">到账金额：</div>
+		<div class="field">
+			<span class="text">{{=Util.padFloatMoney(it.money)}}元</span>
+		</div>
+	</div>
+</script>

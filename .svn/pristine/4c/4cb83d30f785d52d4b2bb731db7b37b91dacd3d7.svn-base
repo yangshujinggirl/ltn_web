@@ -1,0 +1,35 @@
+.loan-problem{
+  margin: 0 0 80px 0;
+  h2{
+    font-size: 18px;
+  }
+  .content{
+    padding: 45px 152px;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    .one{
+      position: relative;
+      margin-top: 48px;
+      .title{
+        font-size: 18px;
+      }
+      .text{
+        font-size: 14px;
+        color: #858585;
+      }
+      .icon{
+        width: 45px;
+        height: 47px;
+        line-height: 40px;
+        font-size: 18px;
+        color: #fff;
+        position: absolute;
+        left: -56px;
+        top: -4px;
+        text-align: center;
+        display: inline-block;
+        background: url(/html/img/qipao.png);
+      }
+    }//one
+  }//content
+}

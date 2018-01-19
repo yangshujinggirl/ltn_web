@@ -1,0 +1,73 @@
+.help-content {
+  margin: 30px 0;
+  overflow: hidden;
+
+  .wrap {
+    padding: 0;
+    .message {
+      overflow: hidden;
+      border: 1px solid #d7d7d7;
+      background-color: #fcfcfc;
+      padding-bottom: 10%;
+    }
+  }
+
+  .lefttop {
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    width: 177px;
+    display: inline-block;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
+    background-color: #fcfcfc;
+
+    .leftContent {
+      padding-top: 20px;
+      color: #3a3a3a;
+      .listall {
+        .item {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          padding-left: 30px;
+          border-right: #d7d7d7;
+          border-top: 1px solid #fcfcfc;
+          border-bottom: 1px solid #fcfcfc;
+          &.selected {
+            background-color: #fff;
+            border-top: 1px solid #d7d7d7;
+            border-bottom: 1px solid #d7d7d7;
+            color: #ff5a00;
+            border-right: 1px solid #fff;
+            margin-right: -1px;
+          }
+          &:hover {
+            color: #ff5a00;
+          }
+        }
+        .list1 {
+          .titleicon {
+            width: 3px;
+            height: 18px;
+            background-color: #ff5a00;
+            float: left;
+            line-height: 20px;
+            margin-left: 15px;
+            margin-top: 12px;
+            margin-right: 10px;
+          }
+          .title {
+            height: 40px;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+}
+

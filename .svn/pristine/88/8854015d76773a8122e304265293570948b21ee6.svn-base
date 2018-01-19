@@ -1,0 +1,391 @@
+.product-desc {
+    .wrap {
+      padding: 0;
+      background: #fff;
+      border: 1px solid $border-color;
+      margin: 20px auto;
+    }
+    .floatproject {
+        padding:78px 48px;
+        color: #888c8e;
+        font-size: 14px;
+        display: none;
+        .timeAxis {
+            display: inline-block;
+            vertical-align: middle;
+            width: 804px;
+            .line {
+                width: 100%;
+                height: 4px;
+                background-color: #ffe8dc;
+                position:relative;
+                .sameSell {
+                    text-align: center;
+                    position:absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    .value,.key {
+                        display: block;
+                        font-size: 14px;
+                    }
+                    .value {
+                        color: #3a3a3a;
+                    }
+                    .circle {
+                        width: 15px;
+                        height: 15px;
+                        background-color: #FFF;
+                        border: 3px solid #ffe8dc;
+                        border-radius: 50%;
+                        margin: 12px auto;
+                    }
+                }
+                .beginSell {
+                    left: 40px;
+                }
+                .beginInit {
+                    left:178px;
+                }
+                .become {
+                    left: 532px;
+                }
+                .predictRepaymen {
+                    left: 672px;
+                }
+            }
+        }
+        .rightInfo {
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 48px;
+            .time {
+                line-height: 26px;
+                .timeValue {
+                    color: #3a3a3a;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    .short .banner {
+        background: url("/html/img/img-prod-banner-short.png") center center no-repeat;
+    }
+    .first .banner {
+        background: url("/html/img/img-prod-banner-first.png") center center no-repeat;
+    }
+    .tab-list {
+        padding:0 0 0 60px;
+        margin: 0;
+        border-bottom: 2px solid $border-color;
+        .item {
+            display: inline-block;
+            vertical-align: bottom;
+            font-size: 18px;
+            color: $font-color-title;
+            font-weight: bold;
+            border-bottom: 2px solid rgba(0,0,0,0);
+            cursor: pointer;
+            padding: 30px 0 14px;
+            &:hover,
+            &.selected {
+                border-bottom: 2px solid $border-color-hover;
+                color: $font-color-hover;
+            }
+            &:not(:last-child) {
+              margin-right: 40px;
+            }
+        }
+    }
+    .content-list {
+        padding: 30px;
+        margin: 0;
+        .nolist {
+          display: none;
+          width: 196px;
+          height: 179px;
+          margin: 0 auto;
+          text-align: center;
+          position: relative;
+          background: url("/html/img/wushuju.png?v=20160519") no-repeat;
+          .logoIcon {
+            position: absolute;
+            left: -22px;
+            top: 130px;
+            font-size: 16px;
+            .denglu {
+                color: #ff5a00;
+            }
+            .denglu:hover {
+                color: #6e56ff;
+            }
+          }
+        }
+        //项目详情
+        .detail {
+          .row {
+            padding: 25px 0 35px 30px;
+            &:nth-child(2n) {
+              background-color: #fafafa;
+            }
+          }
+          .caption,.field {
+            display: inline-block;
+            vertical-align: top;
+          }
+          .caption {
+            width: 12%;
+            font-size: 14px;
+            color: #999;
+            // padding-left: 30px;
+            box-sizing: border-box;
+          }
+          .field {
+            width: 80%;
+            font-size: 16px;
+            line-height: 150%;
+            display: inline-block;
+            color: #333;
+            box-sizing: border-box;
+          }
+          .value {
+            display: block;
+            padding: 6px 0;
+          }
+          .detail-info-list,.detail-risk-list {
+            margin: 0;
+            padding:10px 0 10px 0;
+            .item-info,.item-risk {
+              font-size: 14px;
+              display: inline-block;
+              margin-right: 55px;
+              vertical-align: top;
+            }
+          }
+          #lechaodai{
+              display: none;
+          }
+          #chaozhidai{
+              display: none;
+          }
+          #yichaodai{
+              display: none;
+          }
+          #anyidai{
+            display: none;
+          }
+          #liangchaodai{
+            display: none;
+          }
+          #zhanyidai{
+            display: none;
+          }
+        }
+        //投资记录
+        .log {
+          padding:0 30px;
+          table {
+            width: 100%;
+            margin-top: 30px;
+            th,
+            td {
+              line-height: 40px;
+              text-align: center;
+            }
+            td {
+                width: 25%;
+            }
+            thead {
+              background: #ececec;
+              th {
+                  text-align: center;
+              }
+            }
+            tbody {
+              tr:nth-of-type(even) {
+                  background: #f7f7f7;
+              }
+              td {
+                  text-align: center;
+              }
+            }
+          }
+        }
+        //风控保障
+        .risk {
+          padding-left: 30px;
+          .img-wrap {
+            text-align: center;
+          }
+          .row-r {
+            font-size: 16px;
+            color: #999;
+            .lable {
+              font-size: 18px;
+              color: #333;
+            }
+            .insure-content {
+              margin-bottom: 20px;
+              line-height: 150%;
+              .title {
+                color: #333;
+              }
+            }
+          }
+        }
+        //常见问题
+        .qa {
+          .row-qa {
+            padding-left: 30px;
+            margin-bottom: 50px;
+          }
+          .ques-name {
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 12px;
+          }
+          .answer {
+            font-size: 14px;
+            color: #999;
+            line-height: 150%;
+          }
+        }
+        .item {
+          >.detail,>.risk,>.log,>.qa {
+              display: none;
+          }
+        }
+        &.detail .detail {
+            display: block;
+        }
+        &.risk .risk {
+            display: block;
+        }
+        &.log .log {
+            display: block;
+        }
+        &.qa .qa {
+          display: block;
+        }
+    }
+    .cover{
+            width:100%;
+            height:100%;
+            position: fixed;
+            left:0;
+            top:0;
+            z-index: 99;
+            display:none;
+            background-color:rgba(0, 0, 0,0.5);
+        }
+    .lunbo{
+        position: fixed;
+        left:0;
+        top:0;
+        z-index: 99999;
+        text-align:center;
+        display:none;
+        width: 100%;
+        .swiper-container{
+            height:1000px;
+            overflow: hidden;
+            width:100%;
+            z-index: 9999;
+            .swiper-wrapper{
+                height:1000px;
+                img{
+                    max-width:100%;
+                    _width:expression(this.width > 100% ? "100%" : this.width);
+                    max-height:620px;
+                    _width:expression(this.width > 620 ? "620px" : this.width);
+                }
+            }
+        }
+    }
+    .close{
+        width:41px;
+        height:41px;
+        position: fixed;
+        right:10px;
+        top:10px;
+        z-index: 1111111;
+        display:none;
+        cursor: pointer;
+    }
+    .LCTtankuang{
+        width: 470px;
+        height: 260px;
+        background: #fff;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin-left: -235px;
+        margin-top: -130px;
+        display: none;
+        z-index: 999;
+        .tkTitle{
+            font-size: 14px;
+            color: #ff5900;
+            border-bottom: 2px solid #e2e2e2;
+            .tishi2{
+                width: 120px;
+                height: 55px;
+                line-height: 55px;
+                text-align: center;
+                font-weight: bold;
+                display: inline-block;
+                border-bottom: 3px solid #ff5900;
+            }
+        }
+        .tkCont{
+            width: 310px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 22px;
+            color: #ff0000;
+            margin-top: 45px;
+        }
+        .tkCont2{
+            margin-top: 10px;
+        }
+        .anniu{
+            margin: 0 auto;
+        }
+        .tkbut{
+            width: 140px;
+            height: 40px;
+            display: block;
+            margin: 25px auto;
+            font-size: 18px;
+            outline: none;
+            border: 0;
+            background: #ff0000;
+            color: #fff;
+        }
+        .but4{
+            margin: 10px auto;
+        }
+        .close2{
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            right: 20px;
+            top: 25px;
+            cursor: pointer;
+        }
+    }
+    .long .content-list .detail .risk {
+        .iconUrl {
+            background: gray center center no-repeat;
+        }
+    }
+    .process-invest {
+      text-align: center;
+      padding: 40px 0;
+      border: 1px solid $border-color;
+      margin: 20px auto 0;
+      width: 1190px;
+      background-color: #fff;
+    }
+}

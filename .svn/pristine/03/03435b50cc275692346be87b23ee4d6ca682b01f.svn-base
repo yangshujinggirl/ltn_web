@@ -1,0 +1,193 @@
+
+<div class="olympics page-component">
+  <div class="olympics_banner">
+    <img src="/img/olympics_banner.jpg?v=20160812">
+  </div>
+  <div class="content">
+    <div class="cont_top">
+      <div class="top_info">
+        <img src="/img/olympics_bg1.png">
+        <span class="big">燃情里约，看中国军团争金夺银，这个夏天，我们心怀同一个冠军梦想！<br/>领投鸟理财为奥运健儿喝彩，特推金牌加息标，投资排行榜、合伙<br/>人排行榜、新手投资排行榜，让你的每份付出，获得更好回报。</span>
+      </div>
+      <div class="top_one"></div>
+      <div class="medal_info"></div>
+    </div>
+    <div class="numOne">
+      <div class="top_two"></div>
+      <div class="list">
+        <div class="caption">
+          <div class="best_seller">
+            <img src="/img/olympics_leiji.png">
+          </div>
+          <div class="time">8.01—8.22期间<br/>
+          累计投资固定收益类产品排名前六的用户<br/>将获得如下奖励
+          <br/></div>
+          <ul class="list_info" id="medalTable1">
+            <!-- <li>
+              <span class="icon1"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon2"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon2"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li> -->
+          </ul>
+          <div class="prizes1 item"></div>
+          <div class="prizes2 item"></div>
+          <div class="prizes3 item"></div>
+        </div>
+        <div class="caption">
+          <div class="best_seller2">
+            <img src="/img/olympics_yaoqing.png">
+          </div>
+          <div class="time">8.01-8.22期间，一级好友投资人数排名前六<br/>
+              （好友首次投资在8.01-8.22期间，且累投固收类产品超过1000元）
+              的用户将获得如下奖励</div>
+          <ul class="list_info list_info3" id="medalTable2">
+            <!-- <li>
+              <span class="icon1"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">200人</span>
+            </li>
+            <li>
+              <span class="icon2"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">200人</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">200人</span>
+            </li>
+            <li>
+              <span class="icon2"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">200人</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">200人</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">200人</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">200人</span>
+            </li> -->
+          </ul>
+          <div class="prizes4 item"></div>
+          <div class="prizes5 item"></div>
+          <div class="prizes6 item"></div>
+        </div>
+        <div class="caption">
+          <div class="best_seller">
+            <img src="/img/olympics_first.png">
+          </div>
+          <div class="time">首次投资在8.01—8.22期间<br/>
+         的新用户，累计投资固定收益类产品排名<br/>前六将获得如下奖励<br/><br/></div>
+          <ul class="list_info list_info2" id="medalTable3">
+            <!-- <li>
+              <span class="icon1"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon2"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon2"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li>
+            <li>
+              <span class="icon3"></span>
+              <span class="tel">138××××1234</span>
+              <span class="money">￥200</span>
+            </li> -->
+          </ul>
+          <div class="prizes7 item"></div>
+          <div class="prizes8 item"></div>
+          <div class="prizes9 item"></div>
+        </div>
+      </div>
+      <div class="caption_last">若重复入围榜单，仅获得最高价值礼品；若金额并列，按投资时间先后排名</div>
+    </div>
+    <div class="numTwo">
+      <div class="top_three"></div>
+      <div class="bottom_three"></div>
+    </div>
+    <div class="numfour">
+     <div class="top_four"></div>
+      <div class="info">
+        <div class="four_cont">
+          1、8.01—8.22期间，领投鸟微信公众号、领投鸟官方微博等将不定期发布奥运口令，凭奥运口令去领投鸟app即可兑换奥运理财金券。
+        </div>
+        <div class="four_list">
+          <div class="caption2 item1"></div>
+          <div class="caption2 item2"></div>
+          <div class="caption2 item3">
+            <div class="item3_logo">
+              <img src="/img/olympics_weibo.png">
+            </div>
+            <a href="http://weibo.com/u/5935757405" target="_blank"><button class="button">前往微博</button></a>
+          </div>
+        </div>
+        <div class="four_cont">
+          2、8.01—8.22期间，分享本活动页到朋友圈，为自己支持的选手加油（例如：我支持宁泽涛），将2小时以上截图发给“领投鸟”微信公众号客服，即可获得15元返现券（每人仅限一次）。  
+        </div>
+        <div class="footer">
+          <a href="/html/product/#!/short/0/0/1"><button class="button2">立即投资</button></a>
+        </div>
+        <div class="last">
+        获实物奖品的用户请保持联系方式畅通，领投鸟工作人员将在活动结束后三个工作日内与用户联系确认。<br/>
+        <br/>
+
+        本活动最终解释权归领投鸟所有，如有任何问题请详询400-999-9980或“领投鸟”微信公众号</div>
+      </div>
+    </div>
+  </div>
+</div>

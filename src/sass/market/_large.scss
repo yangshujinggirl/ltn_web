@@ -1,0 +1,148 @@
+.large{
+  position: relative;
+  background: #fff1d4;
+  .banner{
+    z-index: -2;
+    background-size:100%;
+    img{
+      width: 100%;
+    }
+  }
+  .large-bg{
+    margin-top: -40%;
+    z-index: 1;
+    background-size:100%;
+    img{
+      width: 100%;
+    }
+  }
+  .yuan1{
+    width: 206px;
+    height: 216px;
+    position: absolute;
+    margin-top:-83%;
+    left: 73px;
+    z-index: 10;
+  }
+  .content{
+    width: 1000px;
+    margin: -80% auto 0;
+    position: relative;
+    text-align: center;
+    z-index: 99;
+    h1{
+      font-size: 60px;
+      color: #7d543c;
+    }
+    .huodong{
+      margin-top: -24px;
+      font-size: 16px;
+      a{
+        color: #ff6f20;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+    .text{
+      padding: 20px 40px;
+      line-height: 37px;
+      border-top: 2px dashed #7d543c;
+      z-index: 99;
+      text-align: left;
+      font-size: 24px;
+      color: #7d543c;
+      .title{
+        color: #ff6f20;
+        margin-left: 30px;
+      }
+    }
+    .cont2{
+      padding: 80px 75px;
+     .one{
+      height: 253px;
+       .left{
+        width: 156px;
+        height: 253px;
+        display: inline-block;
+      }
+      .right{
+        width: 608px;
+        .top{
+          .num{
+            width: 103px;
+            height: 105px;
+            display: inline-block;
+            text-align: center;
+            line-height: 105px;
+            font-size: 74px;
+            color: #e85a2d;
+            background: url(/html/img/jt.png) no-repeat;
+          }
+          .caption{
+            font-size: 36px;
+            color: #e85a2d;
+          }
+        }
+        .bottom{
+            font-size: 20px;
+            color: #7d543c;
+            margin-left: 73px;
+            .tuchu{
+              font-size: 24px;
+              color: red;
+              font-weight: bold;
+            }
+          }
+      }
+      .right1{
+        width: 200px;
+        height: 253px;
+        display: inline-block;
+      }
+      .left1{
+        width: 645px;
+        display: inline-block;
+        .top{
+          .num{
+            width: 103px;
+            height: 105px;
+            display: inline-block;
+            text-align: center;
+            line-height: 105px;
+            font-size: 74px;
+            color: #e85a2d;
+            background: url(/html/img/jt.png) no-repeat;
+          }
+          .caption{
+            font-size: 36px;
+            color: #e85a2d;
+          }
+        }
+        .bottom{
+            font-size: 20px;
+            color: #7d543c;
+            margin-left: 73px;
+            .tuchu{
+              font-size: 24px;
+              color: red;
+              font-weight: bold;
+            }
+          }
+      }
+     }
+    }
+    .button{
+        width: 362px;
+        height: 72px;
+        background: #ff6f20;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        line-height: 72px;
+        border: 0;
+        border-radius: 36px;
+        margin-bottom: 110px;
+      }
+  }
+}

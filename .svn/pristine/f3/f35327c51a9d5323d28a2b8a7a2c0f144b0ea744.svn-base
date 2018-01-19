@@ -1,0 +1,242 @@
+.corporate{
+  .corporate_cont{
+    background: #fff;
+    padding: 40px 35px;
+    margin-top: 20px;
+  }
+  .header_top{
+    font-size: 12px;
+    overflow: hidden;
+    zoom:1;
+    .header_left{
+      float: left;
+      .corporate_icon1{
+        width: 32px;
+        height: 32px;
+        background: url(/html/img/corporate_icon1.png) no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+      .top_juse{
+        color: #ff6f20;
+      }
+    }
+    .header_right{
+      float: right;
+      position: relative;
+      top: 7px;
+      a{
+        color: #2a7ffe;
+        text-decoration:underline;
+      }
+    }
+  }
+  .corporate_step{
+    width: 1078px;
+    margin: 35px auto 0;
+    .corporate_caption{
+      width: 318px;
+      display: inline-block;
+      text-align: center;
+      .cap_info{
+        font-size: 18px;
+        margin-top: 15px;
+      }
+    }
+    .corporate_jiantou{
+      display: inline-block;
+    }
+  }
+  .corporate_down{
+    padding: 18px 15px;
+    border: 1px solid #e2e2e2;
+    margin-top: 50px;
+    .down_top{
+      padding: 0 10px;
+      overflow: hidden;
+      zoom:1;
+      position: relative;
+      .down_title{
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+      }
+      .down_jiantou{
+        width: 19px;
+        height: 10px;
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        right: 22px;
+      }
+      .jiantou2{
+        width: 19px;
+        height: 10px;
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        right: 22px;
+        display: none;
+      }
+    }
+    hr{
+      border: 1px dashed #fff;
+      border-bottom: 1px dashed #e2e2e2;
+      margin-top: 20px;
+      display: block;
+    }
+    .submite_success{
+      width: 345px;
+      height: 360px;
+      margin: 35px auto;
+      text-align: center;
+      .submite_title{
+        font-size: 26px;
+        color: #ff0000;
+        .submite_icon{
+          width: 33px;
+          height: 33px;
+          display: inline-block;
+          background: url(/html/img/corporate_icon5.png) no-repeat;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+        .submite_icon_fail{
+          width: 33px;
+          height: 33px;
+          display: inline-block;
+          background: url(/html/img/corporate_icon6.png) no-repeat;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+      .submite_code{
+        margin-top: 20px;
+      }
+      .submite_cause{
+        font-size: 18px;
+        color: #919597;
+        margin-top: 15px;
+      }
+      .again_but{
+        width: 135px;
+        height: 40px;
+        border: 1px solid #e2e2e2;
+        background: #fff;
+        margin-top: 20px;
+        border-radius: 5px;
+        outline: none;
+        font-size: 18px;
+        color: #919597;
+        font-weight: bold;
+      }
+      .submite_item1{
+        font-size: 14px;
+        color: #919597;
+        margin-top: 10px;
+      }
+      .submite_item2{
+        font-size: 16px;
+        color: #394043;
+        margin-top: 8px;
+      }
+    }
+    .submite_fail{
+      height: 190px;
+    }
+    .down_bottom{
+      padding: 30px 50px;
+      margin-top: 15px;
+      display: block;
+      .down_left{
+        display: inline-block;
+        vertical-align: top;
+        .down_caption{
+          text-align: center;
+          display: inline-block;
+          margin-right: 40px;
+        }
+        .wendang{
+          width: 148px;
+          height: 200px;
+          line-height: 200px;
+          color: #4f5658;
+          font-size: 16px;
+          text-align: center;
+          border: 1px solid #e2e2e2;
+        }
+        .jigou{
+          height: 116px;
+          padding-top: 84px;
+          line-height: 23px;
+        }
+        .down_click{
+          margin-top: 10px;
+          a{
+            color: #2a7ffe;
+            font-size: 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .down_right{
+        width: 442px;
+        height: 144px;
+        margin-left: 20px;
+        display: inline-block;
+        padding: 40px 50px;
+        vertical-align: top;
+        -moz-box-shadow:5px 5px;
+        -webkit-box-shadow:5px 5px;
+        box-shadow: 0 0 8px 5px #f3f3f3;
+        .down_info{
+          font-size: 14px;
+          line-height: 25px;
+          color: #888c8e;
+          .down_juse{
+            color: #ff6f20;
+          }
+        }
+      }
+      .down_tijiao{
+        width: 895px;
+        .down_info2{
+          font-size: 16px;
+          color: #394043;
+          .submit_icon1{
+            width: 24px;
+            height: 21px;
+            display: inline-block;
+            background: url(/html/img/corporate_duihuakuang.png) no-repeat;
+            vertical-align: middle;
+            margin-right: 9px;
+          }
+        }
+        .reminded{
+          font-size: 14px;
+          line-height: 26px;
+          color: #919597;
+          margin-top: 15px;
+          position: relative;
+          left: 32px;
+          .juse3{
+            color: #ff6f20;
+          }
+        }
+      }
+    }
+    .submit_bottom{
+      padding: 30px 5px;
+    }
+    .submit2{
+      padding: 30px 5px;
+      margin-top: -73px;
+    }
+  }
+}

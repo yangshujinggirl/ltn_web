@@ -1,0 +1,710 @@
+.account-partner {
+  padding: 35px 35px 0;
+  .partner_top{
+      width: 926px;
+      position: relative;
+      left: -13px;
+      font-size: 14px;
+      height: 42px;
+      border-bottom: 1px solid #e2e2e2;
+      .partner_left{
+        width: 100px;
+        color: #ff5900;
+        font-weight: bold;
+        border-bottom: 3px solid #ff5900;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        line-height: 42px;
+      }
+      .partner_right{
+        display: inline-block;
+        float: right;
+        color: #999999;
+      }
+      .liandong_icon{
+        width: 124px;
+        height: 42px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        left: -5px;
+        top: 0;
+        background: url(/html/img/viewall_liandong.png) no-repeat;
+      }
+  }
+  .partner_cont{
+    width: 835px;
+    padding: 15px 30px;
+    background: #f7f7f7;
+    margin-top: 30px;
+    position: relative;
+    .cont_left{
+      width: 240px;
+      height: 120px;
+      border-right: 1px dashed #e2e2e2;
+      text-align: center;
+      display: inline-block;
+      padding-top: 40px;
+      .filed{
+        font-size: 16px;
+      }
+      .num{
+        font-size: 36px;
+        margin-top: 20px;
+      }
+    }
+    .cont_right{
+      width: 522px;
+      height: 120px;
+      display: inline-block;
+      padding-top: 40px;
+      position: absolute;
+      right: 75px;
+      top: 0;
+      .right_top{
+        width: 598px;
+        height: 72px;
+        .grades{
+          font-size: 14px;
+          font-weight: bold;
+          color: #333;
+          position: relative;
+          top: 9px;
+          display: inline-block;
+        }
+        .grades_shows{
+          width: 420px;
+          display: inline-block;
+          margin-left: 27px;
+          position: relative;
+          .link{
+            width: 52px;
+            height: 6px;
+            background: #ffdda0;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+          .linkhuise{
+            width: 52px;
+            height: 6px;
+            background: #d2d2d2;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+          }
+          .node{
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            background: #ffb531;
+            border-radius: 50%;
+            position: absolute;
+            left: 46px;
+            top: -13px;
+            z-index: 9;
+          }
+          .nodeShow{
+            width: 53px;
+            height: 53px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            line-height: 53px;
+            border-radius: 50%;
+            background: #ffb531;
+            position: absolute;
+            left: 38px;
+            top: -20px;
+            z-index: 9;
+            display: none;
+          }
+          .nodeHide{
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
+            color: #666666;
+            font-size: 14px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #e2e2e2;
+            border-radius: 50%;
+            position: absolute;
+            left: 45px;
+            top: -14px;
+            z-index: 9;
+            display: none;
+          }
+          .nodeHide2{
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
+            color: #666666;
+            font-size: 14px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #e2e2e2;
+            border-radius: 50%;
+            position: absolute;
+            left: 179px;
+            top: -13px;
+            z-index: 999;
+          }
+          .link2{
+            width: 120px;
+            height: 6px;
+            background: #ffb531;
+            position: absolute;
+            left: 79px;
+            top: 0;
+          }
+          .link2huise{
+            width: 120px;
+            height: 6px;
+            background: #d2d2d2;
+            position: absolute;
+            left: 79px;
+            top: 0;
+            display: none;
+          }
+          .node2{
+            width: 53px;
+            height: 53px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            line-height: 53px;
+            border-radius: 50%;
+            background: #ffb531;
+            position: absolute;
+            left: 170px;
+            top: -20px;
+            z-index: 999;
+            display: none;
+          }
+          .link3{
+            width: 100px;
+            height: 6px;
+            background: #d2d2d2;
+            position: absolute;
+            left: 212px;
+            top: 0;
+          }
+          .node3{
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
+            color: #666666;
+            font-size: 14px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #e2e2e2;
+            border-radius: 50%;
+            position: absolute;
+            right: 75px;
+            top: -13px;
+            z-index: 9;
+          }
+          .info1,.info2,.info3{
+            font-size: 14px;
+          }
+          .info1{
+            position: absolute;
+            left: 29px;
+            top: 40px;
+          }
+          .info2{
+            position: absolute;
+            left: 166px;
+            top: 40px;
+          }
+          .info3{
+            position: absolute;
+            right: 52px;
+            top: 40px;
+          }
+          .link4{
+            width: 40px;
+            height: 6px;
+            background: #d2d2d2;
+            position: absolute;
+            right: 36px;
+            top: 0;
+          }
+          .link5,.link6,.link7,.link8,.link9,.link10{
+            width: 6px;
+            height: 6px;
+            background: #d2d2d2;
+            position: absolute;
+            right: 19px;
+            top: 0;
+          }
+          .link6{
+            right: 4px;
+          }
+          .link7{
+            right: -11px;
+          }
+          .link8{
+            right: -25px;
+          }
+          .link9{
+            right: -39px;
+          }
+          .link10{
+            right: -53px;
+          }
+        }
+      }
+      .right_bottom{
+        width: 560px;
+        height: 40px;
+        text-align: center;
+        margin-top: 30px;
+        .oneracing{
+          width:260px;
+          display: inline-block;
+        }
+        .tworacing{
+          width: 260px;
+          display: inline-block;
+        }
+        .field{
+          font-size: 14px;
+          color: #666;
+        }
+        .money{
+          font-size: 18px;
+          color: #3a3a3a;
+        }
+      }
+    }
+  }
+  .grades{
+    .juse{
+      color: #ff5a00;
+    }
+    .ordinary{
+      width: 440px;
+      height:190px;
+      border: 1px solid #e2e2e2;
+      margin-top: 30px;
+      display: inline-block;
+      cursor: pointer;
+      &.bg{
+        border: 1px solid #ff5a00;
+        box-shadow: 0 0 8px 5px #eaeaea;
+      }
+      .ordinary_left{
+        width: 110px;
+        margin: 30px 40px;
+        font-size: 18px;
+        display: inline-block;
+      }
+      .parnet_icon1{
+        margin-left: 17px;
+        vertical-align: top;
+      }
+      .item{
+        text-align: center;
+      }
+      .ordinary_right{
+        width: 225px;
+        font-size: 12px;
+        line-height: 21px;
+        display: inline-block;
+        margin-top: 20px;
+        color: #666;
+        vertical-align: top;
+        .yiji{
+          display: block;
+          margin-top: 5px;
+        }
+        .erji{
+          display: block;
+          margin-top: -15px;
+        }
+      }
+    }
+    .goldmedal{
+      margin-left: 10px;
+      position: relative;
+      top: -1px;
+    }
+  }
+  .restful{
+    margin-top: 25px;
+    .restful_title{
+      font-size: 14px;
+    }
+    .restful_cont{
+      width: 825px;
+      height: 183px;
+      border: 1px solid #e2e2e2;
+      margin-top: 15px;
+      padding: 14px 35px;
+      .restful_icon{
+        height: 45px;
+        position: relative;
+        .code1{
+          width: 474px;
+          height: 229px;
+          background: url(/html/img/hehuoren_bg.png) no-repeat;
+          position: absolute;
+          left: 86px;
+          top: -204px;
+          padding: 45px 40px;
+          display: none;
+          .parner_code{
+            width: 110px;
+            height: 110px;
+            background: #000;
+            display: inline-block;
+          }
+          .code_right{
+            width: 240px;
+            display: inline-block;
+            margin-left: 30px;
+            vertical-align: top;
+            .saomiao{
+              font-size: 14px;
+              color: #000;
+              font-weight: bold;
+            }
+            .fenxiang{
+              font-size: 12px;
+              color: #666;
+              margin-top: 15px;
+              line-height: 20px;
+            }
+            .chengse{
+              color: #ff7a39;
+            }
+          }
+        }
+        .restful_list{
+          height: 120px;
+          overflow: hidden;
+          zoom: 1;
+          position: relative;
+          margin-top: -15px;
+          li{
+            width: 64px;
+            height: 65px;
+            float: left;
+            margin-left: 55px;
+            margin-top: 30px;
+            cursor: pointer;
+            position: relative;
+            z-index: 999;
+            .button{
+              width: 64px;
+              height: 65px;
+              position: absolute;
+              left: 0 ;
+              top: 0;
+              border:0;
+              background: #fff;
+              outline: none;
+            }
+            img{
+              position: relative;
+              z-index: 99;
+            }
+          }
+          .link_login{
+            width: 705px;
+            height: 206px;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+            .cont{
+              font-size: 20px;
+              text-align: left;
+              line-height: 40px;
+              .quan{
+                color: #ff373a;
+              }
+              .lianjie{
+                color: #999999;
+              }
+            }
+            .button{
+                width: 270px;
+                height: 55px;
+                background: #ff373a;
+                color: #fff;
+                border:0;
+                font-size: 24px;
+                border-radius: 10px;
+                margin-top: 10px;
+                outline: none;
+              }
+          }
+        }
+      }
+      .explain{
+          margin-top: 80px;
+      }
+    }
+  }
+  .recommend{
+    .reference{
+      width: 825px;
+      height: 165px;
+      border: 1px solid #e2e2e2;
+      margin-top: 44px;
+      padding: 30px 35px;
+      position: relative;
+      .recommend_icon{
+      width: 142px;
+      height: 36px;
+      position: absolute;
+      left: 5px;
+      top: -11px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 36px;
+      text-align: center;
+      background: url(/html/img/recommend_xuanfu.png);
+     }
+     .tuijianren{
+        margin-top: 40px;
+        .who{
+          font-size: 14px;
+          margin-top: 30px;
+         }
+         .niaobi{
+          font-size: 12px;
+         }
+     }
+     .your{
+        margin-top: 20px;
+        .your_reference{
+          font-size: 14px;
+          color: #666;
+          display: inline-block;
+        }
+        .tel{
+          font-size: 20px;
+          color: #ff5900;
+          display: inline-block;
+        }
+        .left{
+          font-size: 22px;
+          color: #ff5900;
+          .your_icon{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background: url(/html/img/your_icon.png) no-repeat;
+            vertical-align: middle;
+          }
+          .wufabuc{
+            width: 486px;
+            height: 31px;
+            display: inline-block;
+            background: url(/html/img/your_icon2.png) no-repeat;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            font-size: 12px;
+            color: #ff5900;
+            text-align: center;
+            line-height: 31px;
+          }
+          .tuijian{
+            font-size: 14px;
+            color: #666;
+            font-weight: bold;
+          }
+        }
+        .right {
+          float: left;
+          position: relative;
+          .phone {
+            width: 210px;
+            height: 34px;
+            padding-left: 10px;
+            background: #f5f6f7;
+            border: 1px solid #d7d7d7;
+            &:focus {
+              outline: none;
+            }
+          }
+          .button {
+            display: inline;
+            padding: 8px 20px;
+            color: #fff;
+            background-color: #ff5900;
+            font-size: 18px;
+            border: none;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            &:focus {
+              outline: none;
+            }
+          }
+          .prompted{
+            width: 234px;
+            height: 30px;
+            background: url(/html/img/partner_tips.png) no-repeat;
+            position: absolute;
+            left: 240px;
+            top: 36px;
+            z-index: 99;
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            line-height: 38px;
+            display: none;
+          }
+          .right_tips{
+            font-size: 12px;
+            color: #ff5900;
+            display: inline-block;
+            margin-left: 20px;
+          }
+        }
+     }
+     .reference_last{
+      width: 825px;
+      height: 20px;
+      padding: 20px 35px;
+      position: absolute;
+      left: 0;
+      bottom:0;
+      background: #f7f7f7;
+      margin-top: 30px;
+      .beitui{
+        font-size: 14px;
+        display: inline-block;
+      }
+      .shouyi{
+        font-size: 12px;
+        display: inline-block;
+      }
+     }
+    }
+  }
+  .keypoint{
+    width: 825px;
+    border: 1px solid #e2e2e2;
+    margin-top: 50px;
+    padding: 30px 35px;
+    position: relative;
+    .keypoint_icon{
+      width: 212px;
+      height: 36px;
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+      line-height: 36px;
+      background: url(/html/img/keypoint_icon1.png) no-repeat;
+      position: absolute;
+      left: 5px;
+      top: -12px;
+    }
+    .keypoint_title{
+      font-size: 14px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .keypoint_bottom{
+      margin-top: 20px;
+      .keypoint_left{
+        width: 373px;
+        height: 209px;
+        display: inline-block;
+        background: url(/html/img/keypoint_niao.png) no-repeat;
+      }
+      .keypoint_right{
+        width: 319px;
+        height: 250px;
+        display: inline-block;
+        background: url(/html/img/keypoint_zhuce.png) no-repeat;
+        margin-left: 50px;
+      }
+    }
+  }
+}
+.copy_success{
+  width: 470px;
+  height: 260px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -235px;
+  margin-top: -130px;
+  box-sizing:border-box;
+  z-index: 99999999999999999;
+  display: block;
+  .title{
+    text-align: center;
+    border-bottom: 2px solid #e2e2e2;
+    .title_cont{
+      width: 120px;
+      height: 45px;
+      line-height: 45px;
+      border-bottom: 2px solid #ff5900;
+      font-size: 14px;
+      color: #ff5900;
+    }
+  }
+  .success{
+    width: 300px;
+    height: 140px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 45px;
+    .success_icon{
+      width: 24px;
+      height: 24px;
+      background: url(/html/img/icon-stat-success.png) no-repeat;
+      display: inline-block;
+      position: relative;
+      top: 3px;
+    }
+    .success_info{
+      font-size: 26px;
+      color: #ff0000;
+    }
+    .zuihou{
+      font-size: 14px;
+      display: block;
+      color: #666;
+      margin-top: 20px;
+    }
+  }
+  .colse2{
+    width: 17px;
+    height: 17px;
+    background: url(/html/img/icon-dialog-close.png) no-repeat;
+    position: absolute;
+    right: 13px;
+    top: 14px;
+    cursor: pointer;
+  }
+}
+.cover2{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 8889;
+  display: none;
+  background: rgba(0,0,0,0.8);
+}
+.picsImg{
+  display: none;
+}

@@ -1,0 +1,38 @@
+.loan-flow{
+  .content{
+    h2{
+      font-size: 18px;
+    }
+    .flowTu{
+      height: 180px;
+      border: 1px solid #e2e2e2;
+      background: #fff;
+      .one{
+        margin: 40px 0 0 145px;
+        display: inline-block;
+        text-align: center;
+        .icon{
+          width: 114px;
+          height: 88px;
+        }
+        .title{
+          font-size: 20px;
+          color: #666666;
+          position: relative;
+          .xuhao{
+            display: inline-block;
+            font-size: 20px;
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            background: #ff7e00;
+            border-radius: 5px;
+            margin-right:10px;
+
+          }
+        }
+      }
+    }
+  }//content
+}

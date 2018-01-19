@@ -1,0 +1,64 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<div class="account-awardDetail">
+  <div class="raiseTickits-content">
+    <div class="itemnav">
+      <div class="itemnav-left">
+        <a href="javascript:void(0)" class="ite selected" id="recharge" data-content="detailCharge">奖励明细</a>
+      </div>
+      <div class="itemnv-right">本平台所有资金都是通过联动优势第三方资金托管</div>
+    </div>
+    <div class="wrapOne">
+      <div class="top">
+        <img src="/img/awardDetail_banner.jpg" alt="">
+        <!-- <div class="txt">
+          <p>
+            完成绑卡操作可额外获得<span class="high">58</span>元返现券，<br/>赶紧完成绑卡吧！
+          </p>
+          <button class="bindCard">立即绑卡</button>
+        </div> -->
+      </div>
+      <div class="tab">
+        <div class="status">邀请状态</div>
+        <ul class="statusList" id="statusList">
+          <div class="item selected" data-type="all">全部</div>
+          <div class="item" data-type="one">一级好友</div>
+          <div class="item" data-type="two">二级好友</div>
+        </ul>
+      </div>
+      <table class="form" id="award">
+        <!-- <thead>
+          <tr>
+            <th>好友账号</th>
+            <th>投资时间</th>
+            <th>好友姓名</th>
+            <th>投资收益</th>
+            <th>奖励收益</th>
+            <th>好友级别</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>182****5517</td>
+            <td>2016-04-21 12:34</td>
+            <td>赵*军</td>
+            <td>￥876,345.45</td>
+            <td>￥876,345.45</td>
+            <td>一级好友</td>
+          </tr>
+        </tbody>-->
+      </table>
+      <div class="nolist" id="nolist1"></div>
+      <div class="accountpage">
+        <div class="pages" id="pages1">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- @endextend -->
+
+<!-- @endextend -->

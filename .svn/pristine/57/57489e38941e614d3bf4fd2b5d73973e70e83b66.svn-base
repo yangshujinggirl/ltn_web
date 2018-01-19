@@ -1,0 +1,27 @@
+<div class="cover" id="cover"></div>
+
+<div class="user-message" id="message">
+  <div class="card messages">
+    <h1 class="header">资金托管账户开户结果</h1>
+    <div class="content">
+      <p class="desc">请你在第三方页面完成前不要关闭此窗口，<br/>完成实名认证后更具情况点击下面按钮</p>
+      </div>
+      <div class="action">
+        <div class="success">
+          <i class="gou"><img src="../../../img/realname-gou.png"></i>开通成功 | 你可以选择
+          <button class="ok" id="realnameSuccess" onclick="user().clickEvent();">开通成功</button>
+        </div>
+        <div class="fail">
+          <i class="cha"><img src="../../../img/realname-cha.png"></i>开户失败 | 你可以选择
+          <button class="bangzhu" id="goHelp" onclick="user().clickEvent();">查看帮助</button>
+        </div>
+      </div>
+      <div class="close" id="close">
+        <img src="../../../img/icon-dialog-close.png">
+      </div>
+  </div>
+</div>
+ <!-- pv统计代码 -->
+<script type="text/javascript">
+  _czc.push(["_trackPageview","/弹层弹出"]);
+</script>

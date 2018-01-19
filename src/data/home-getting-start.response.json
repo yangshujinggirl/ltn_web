@@ -1,0 +1,57 @@
+/************************************************
+ * @URL                      /index/newProduct
+ *
+ * @Request
+ *    clientType             客户端类型 M:手机端；PC：PC端
+ *    sessionKey             optional
+ *
+ * @Response
+ *    tybList                体验标对象
+ *    xsList                 新手标对象
+ *    productId              产品ID
+ *    productNo              产品编号
+ *    productName            产品名称
+ *    productType            产品类型 TYB:体验标 XSB：新手标
+ *    productTitle           产品标题
+ *    productTag             标签
+ *    convertDay             折算天
+ *    annualIncomeText       产品年化
+ *    productRemainAmount    产品剩余金额
+ *    staInvestAmount        起投金额
+ *    buyCount               购买次数
+ ************************************************/
+
+{
+  "resultCode": "",
+  "resultMessage": "",
+  "data": {
+    "tyb": {
+      "productId": "1",
+      "productNo": "2",
+      "productName": "体验标",
+      "productType": "TYB",
+      "productTitle": "121",
+      "productTag": "11",
+      "convertDay": "1",
+      "annualIncomeText": "5.5%",
+      "productRemainAmount": "12",
+      "staInvestAmount": "123",
+      "productRemainAmount": "11111",
+      "buyCount": "11111"
+    },
+    "xsb": {
+      "productId": "1",
+      "productNo": "2",
+      "productName": "新手标",
+      "productType": "XSB",
+      "productTitle": "121",
+      "productTag": "11",
+      "convertDay": "1",
+      "annualIncomeText": "5.5%",
+      "productRemainAmount": "12",
+      "staInvestAmount": "123",
+      "productRemainAmount": "11111",
+      "buyCount": "11111"
+    }
+  }
+}

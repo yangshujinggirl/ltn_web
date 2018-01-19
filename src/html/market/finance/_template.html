@@ -1,0 +1,85 @@
+<!-- 前二百名数据 -->
+<script type="text/template" id="tempListerbai">
+  <ul class="info_title">
+          <li>排名</li>
+          <li>用户</li>
+          <li>投资金额</li>
+        </ul>
+        <div id="scrollDiv2">
+          <div class="scrollText">
+            <ul class="info_list">
+              {{~it:value:index}}
+              <li class="list_cont">
+                <span class="ordinary">{{=index+1}}</span>
+                <span class="tel">{{=strUtil().formatPhone(value.phone)}}</span>
+                <span class="money">￥{{=Util.padFloatMoney(value.amount)}}</span>
+              </li>
+              {{~}}
+            </ul>
+          </div>
+        </div>
+        <div class="prolistnone"><span class="prolistnonetxt">暂无纪录！</span></div>
+        <div class="info_last">
+          <span class="ordinary"><span class="tactful"></span>200</span>
+          <span class="tel">{{=strUtil().formatPhone(value.phone)}}</span>
+          <span class="money"> ￥{{=Util.padFloatMoney(value.amount)}}</span>
+        </div>
+</script>
+<!-- 个人中奖纪录 -->
+<script type="text/template" id="tempOnlyone">
+  <ul class="onlyone_list">
+      <li class="gerentitle">
+        <span class="title1">序号</span>
+        <span class="title2">抽奖时间</span>
+        <span class="title">抽中奖品</span>
+      </li>
+      {{~it:value:index}}
+      <li>
+       <span class="sequence">{{=index+1}}</span>
+       <span class="time">{{=value.winningTime.toString().substr(0,10)}}</span>
+       <span class="gift">{{=value.prizeName}}</span>
+      </li>
+      {{~}}
+  </ul>
+  <div class="prolistnone2" id="xiaoniao"><span class="prolistnonetxt">暂无纪录！</span></div>
+  <div class="nolist">
+    <div class="logoIcon">
+      暂无记录，<a href="#" class="denglu" id="loginonly">登录</a>后可见
+      </div>
+  </div>
+</script>
+<!-- 平台中奖纪录 -->
+<script type="text/template" id="tempPlatform">
+    <ul class="PlatformList">
+      <li>
+        <span class="title1">抽奖时间</span>
+        <span class="title2">用户</span>
+        <span class="title">抽中奖品</span>
+      </li>
+    </ul>
+    <div id="scrollDiv3">
+      <div class="scrollText2">
+        <ul class="onlyone_list">
+        {{~it:value:index}}
+        <li>
+         <span class="sequence">{{=value.winningTime.toString().substr(0,10)}}</span>
+         <span class="time">{{=strUtil().formatPhone(value.mobileNo)}}</span>
+         <span class="gift">{{=value.prizeName}}</span>
+        </li>
+        {{~}}
+      </ul>
+      </div>
+    </div>
+    <div class="prolistnone3" id="xiaoniao2"><span class="prolistnonetxt">暂无纪录！</span></div>
+</script>
+<!-- 最高投资额 -->
+<script type="text/template" id="tempTallhigh">
+  <div class="high_top">您历史单笔最高投资额（元）
+</div>
+  <div class="high_bottom">￥{{=Util.padFloatMoney(it.maximumOrderAmount)}}</div>
+</script>
+
+<!-- 抽奖剩余次数 -->
+<script type="text/template" id="tempSurplus">
+  您当前还可抽奖<span class="huangse">{{=it.chanceNum}}</span>次
+</script>

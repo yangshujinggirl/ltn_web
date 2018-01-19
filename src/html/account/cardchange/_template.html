@@ -1,0 +1,8 @@
+<!--图形验证码模型-->
+<script type="text/template" charset="UTF-8" id="templateBank">
+  <select name="" id="txtBank" class="input">
+    {{  for(var i =0;i<it.length;i++){ }}
+        <option value={{=it[i].bankName}} {{=it[i].bankName=='中国工商银行'?'selected=true':''}}>{{=it[i].bankName}}</option>
+        {{ } }}
+  </select>
+</script>

@@ -1,0 +1,78 @@
+.newguide{
+  // height: 1566px;
+  background: #ea2437;
+  text-align: center;
+  .content{
+    .main{
+      margin-top: 1px;
+      width: 100%;
+      img{
+        position: relative;
+        width: 100%;
+        margin-top: -5px;
+      }
+    }
+    .coupon{
+      margin-top: -480px;
+      .content{
+          width: 948px;
+          height: 238px;
+          margin: 50px auto;
+          background: url(../../img/new-quan.png);
+      }
+      .title{
+        width: 243px;
+        height: 182px;
+        padding-top: 56px;
+        float: left;
+        display: inline-block;
+        position: relative;
+        .icon{
+          width: 25px;
+          height: 25px;
+          display: block;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          right: 77px;;
+          top: 60px;
+          font-size: 17px;
+          color: #ed2438;
+          text-align: center;
+        }
+        .title-top{
+          display: block;
+          font-size: 68px;
+          color: #ed2438;
+        }
+        .title-bottom{
+          font-size: 30px;
+          color: #ed2438;
+        }
+      }
+      .list{
+        width: 626px;
+        display: inline-block;
+        float: right;
+        font-size: 14px;
+        line-height: 30px;
+        color: #fff5de;
+        text-align: left;
+        margin: 70px 30px 0 30px;
+      }
+    }
+    .button{
+      width: 240px;
+      height: 60px;
+      border: 0;
+      font-size: 28px;
+      color: #fff;
+      border-radius: 30px;
+      background: #fd8016;
+      margin-bottom: 80px;
+      box-shadow: 4px 3px 3px 1px #bf2030;
+
+    }
+  }//content
+
+}//newguide

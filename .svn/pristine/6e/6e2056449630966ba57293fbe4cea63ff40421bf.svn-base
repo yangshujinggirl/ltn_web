@@ -1,0 +1,237 @@
+.mutual_details{
+  .details_title{
+    height: 68px;
+    line-height: 68px;
+    font-size: 14px;
+    color: #b0b3b4;
+    a:hover{
+      color: #ff6600;
+    }
+  }
+  .details_prop{
+    height: 405px;
+    background: #fff;
+  }
+  .details{
+    position: relative;
+    .details_left{
+      display: inline-block;
+      vertical-align: top;
+    }
+    .details_right{
+      width: 395px;
+      position: absolute;
+      right: 45px;
+      top:50px;
+      .details_title2{
+        font-size: 44px;
+        color: #394043;
+      }
+      .details_item{
+        font-size: 24px;
+        color: #394043;
+      }
+      .details_info{
+        font-size: 14px;
+        color: #888c8e;
+        margin-top: 20px;
+      }
+      .finished{
+        margin-top: 15px;
+        .finished_item{
+          width: 155px;
+          text-align: center;
+          display: inline-block;
+          .finished_money{
+            font-size: 32px;
+            color: #ff6f20;
+          }
+          .field{
+            font-size: 14px;
+            color: #888c8e;
+          }
+        }
+      }
+      .details_but{
+        width: 135px;
+        height: 40px;
+        border: 0;
+        outline: none;
+        background: #fff;
+        border: 1px solid #ff6f20;
+        font-size: 18px;
+        color: #ff6f20;
+        border-radius: 3px;
+        margin-top: 15px;
+        &:hover{
+          background: #ff6f20;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .details_tab{
+    .tab_title{
+      overflow: hidden;
+      zoom:1;
+      padding:0;
+      margin: 0;
+      .item{
+        width: 160px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        float: left;
+        color: #b0b3b4;
+        font-size: 18px;
+        cursor: pointer;
+        &.selected{
+          border-bottom: 3px solid #ff6f20;
+          color: #ff6f20;
+        }
+      }
+    }
+    .tab_content{
+      width: 1150px;
+      background: #fff;
+      border-top: 1px solid #e2e2e2;
+      margin: 0;
+      padding:0;
+      .item{
+        .tab_detail{
+          padding: 10px 40px;
+          .row{
+            font-size: 16px;
+            color: #394043;
+            margin-top: 40px;
+            .row_item2{
+              margin-top: 10px;
+            }
+            .details_icon{
+              width: 17px;
+              height: 17px;
+              vertical-align: middle;
+              position: relative;
+              top: 2px;
+            }
+            .details_icon2{
+              width: 17px;
+              height: 17px;
+              vertical-align: middle;
+              position: relative;
+              top: 2px;
+              left: -6px;
+            }
+            .explain{
+              margin-top: 20px;
+              .one{
+                font-size: 14px;
+                color: #394043;
+              }
+              .two{
+                font-size: 14px;
+                color: #b0b3b4;
+                line-height: 25px;
+              }
+            }
+            .explain2{
+              margin-top: 10px;
+            }
+            .jiekuan{
+              a{
+                font-size: 14px;
+                color: #378aff
+              }
+            }
+            .risk{
+              padding:0;
+              margin: 0;
+              overflow: hidden;
+              zoom:1;
+            }
+            .risk_item{
+              margin-top: 30px;
+              display: inline-block;
+              float: left;
+              .icon{
+                display: block;
+                margin: 0 auto;
+              }
+              .risk_info{
+                font-size: 14px;
+                color: #b0b3b4;
+                text-align: center;
+              }
+            }
+            .item1{
+              margin-left: 90px;
+            }
+            .ensure,.process{
+              text-align: center;
+              margin-top: 10px;
+            }
+            .problem{
+              font-size: 18px;
+              color: #394043;
+            }
+            .problem2{
+              width: 1055px;
+              display: inline-block;
+              position: relative;
+              left: 24px;
+              top: -23px;
+              font-size: 14px;
+              color: #b0b3b4;
+            }
+          }
+          .row1{
+            margin-top: 20px;
+          }
+        }
+        .log-list {
+            width: 1100px;
+            margin: 0 auto;
+            thead {
+                background: #ececec;
+                th {
+                    height: 45px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #394043;
+                }
+            }
+            tbody {
+                tr {
+                    height: 45px;
+                    border-bottom: 1px dashed #e2e2e2;
+                    font-size: 12px;
+                    color: #b0b3b4;
+                }
+                td {
+                    text-align: center;
+                }
+            }
+        }
+      }
+      .itemrisk3{
+        padding: 30px 0;
+        display: none;
+      }
+      .pagination{
+        margin-top: 55px;
+      }
+      .riskOne{
+        display: none;
+      }
+      .riskTwo{
+        display: none;
+      }
+    }
+  }
+}
+.touzimoney{
+  display: inline-block;
+  position: absolute;
+  right: 90px;
+  top: 10px;
+}

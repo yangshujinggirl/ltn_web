@@ -1,0 +1,570 @@
+
+  <!DOCTYPE html>
+  <html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="/html/css/style.css?v=20171023">
+    <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name=”renderer” content=”webkit” />
+   <script src="/html/js/lib/jquery.min.js"></script>
+    <script src="/html/js/lib/jquery.easydropdown.min.js"></script>
+    <script src="/html/js/lib/jquery.paging.min.js"></script>
+    <script src="/html/js/lib/jquery.validation.min.js"></script>
+    <script src="/html/js/lib/doT.min.js"></script>
+    <script src="/html/js/app.min.js?v=20161017"></script>
+  
+
+  <title>我的银行卡、领投鸟官网我的银行卡</title>
+  <meta name="keywords" content="领投鸟理财、领投鸟官网平台、我的银行卡、互联网理财、不动产理财、P2P网贷、投资理财、短期理财">
+  <meta name="description" content="领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，平台提供网络贷款，投资理财，赎楼业务，小额贷款，短期贷款，互联网理财、P2P，真正短期标">
+
+  </head>
+  <body>
+  
+
+  <div class="commonNavTop page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="service">客服电话：400-999-9980</div>
+          <div class="iconlist">
+            <div class="iconItem weixin">
+              <div class="code"></div>
+            </div>
+            <div class="iconItem weibo">
+              <a href="http://weibo.com/u/5935757405" target="_blank"></a>
+            </div>
+            <div class="iconItem shouji">
+              <a href="/other/downloadapp " target="_blank"></a>
+            </div>
+            <div class="iconItem lipin">
+              <a href="/html/activity_banner" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span class="navItem login" onclick="user().clickEvent();" id="loginLink">登录</span>
+          <a href="/html/user/register" class="navItem register">注册</a>
+          <a class="navItem welcome"></a>
+          <a href="javascript:void(0);" class="navItem logoff">安全退出</a>
+          <a href="/other/actlist" class="navItem" >最新活动</a>
+          <a href="/other/downloadapp" class="navItem">下载APP</a>
+          <a href="/help/aboutltn" class="navItem">帮助中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="commonNavTwo page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="logo" id="logo">
+            <img src="/html/img/imageTwo/home/logo.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <a href="/" class="navItem" onclick="user().clickEvent();">首页</a>
+          <a href="/finance/list/0/1/0/0" class="navItem" onclick="user().clickEvent();">投资</a>
+         <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+         <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+          <!-- <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a> -->
+          <a href="http://bbs.lingtouniao.com" class="navItem" onclick="user().clickEvent();" target="_blank">社区</a>
+          <a href="/other/downloadapp " class="navItem" onclick="user().clickEvent();">下载APP</a>
+          <a href="/other/safeguards " class="navItem" onclick="user().clickEvent();">安全保障</a>
+          <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+          <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="account-content page-component">
+    <div class="wrap wrapTop">
+      <div class="message">
+        <div class="lefttop">
+          <div class="leftContent">
+            <div class="peopleinfor" id="leftInfo">
+              <!-- <div class="left_nav_logo"></div>
+              <div class="item phone">
+                你好，<span></span>
+              </div>
+              <div class="item partner">
+                <span class="type"></span>
+                <span class="partnertips"></span>
+              </div>
+              <div class="item icon">
+                <div class="telIco">
+                  <span id="tips"></span>
+                </div>
+                <div class="realnameIcon">
+                  <span id="tips"></span>
+                </div>
+                <div class="cardIcon">
+                  <span id="tips"></span>
+                </div>
+              </div> -->
+            </div>
+            <div class="myaccount" id="leftnav">
+              <div class="list">
+                <div class="list2">
+                  <div class="list1">
+                    <div class="titleicon"></div>
+                    <div class="title">
+                    <a href="javascript:void(0)" data-link="/html/account/viewall/" id='item0' class="item" >账户总览</a>
+                    </div>
+                  </div>
+                 <!--  <a href="/html/account/detailprofit/" class="item">收益明细</a> -->
+                  <div class="list1">
+                    <div class="titleicon"></div>
+                    <div class="title">资金管理</div>
+                  </div>
+                    <a href="javascript:void(0)" data-link="/html/account/detailmoney/" id='item1' class="item">资金明细</a>
+                    <a href="javascript:void(0)" data-link="/html/account/bank/" id='item2' class="item" id="chargeDepost">充值提现<i class="hot"></i></a>
+                    <a href="javascript:void(0)" data-link="/html/account/card1/" id='item3' class="item">我的银行卡</a>
+                    <div class="list1">
+                      <div class="titleicon"></div>
+                      <div class="title">我的投资</div>
+                    </div>
+                    <!-- <a href="javascript:void(0)" data-link="/html/account/freedom/" id='item4' class="item">随心投</a> -->
+                    <a href="javascript:void(0)" data-link="/html/account/trackReacord/" id='item5' class="item">投资记录</a>
+                    <a href="javascript:void(0)" data-link="/html/account/returnedMoney/" id='item6' class="item">回款记录</a>
+                    <!-- <div class="list1">
+                      <div class="titleicon"></div>
+                      <div class="title">
+                        <a href="javascript:void(0)" data-link="/html/account/crowd_control/" id='item18' class="item" >我的众筹</a>
+                      </div>
+                    </div> -->
+                    <!-- <div class="list1">
+                      <div class="titleicon"></div>
+                      <div class="title">
+                      <a href="javascript:void(0)" data-link="/html/account/mutual_control/" id='item19'  class="item">我的互助</a>
+                      </div>
+                    </div> -->
+                    <div class="list1">
+                      <div class="titleicon"></div>
+                      <div class="title">个人设置</div>
+                    </div>
+                    <a href="javascript:void(0)" data-link="/html/account/openAccount/" id='item7' class="item">企业用户</a>
+                    <a href="javascript:void(0)" data-link="/html/account/realname/" id='item8' class="item">实名认证</a>
+                    <a href="javascript:void(0)" data-link="/html/account/password-login/" id='item9' class="item">修改登录密码</a>
+                    <a href="javascript:void(0)" data-link="/html/account/password-trading/" id='item10' class="item">修改交易密码</a>
+                    <a href="javascript:void(0)" data-link="/html/account/infolist/" id='item11' class="item" id="inFos">
+                    我的消息
+                    <span class="redCircle"></span>
+                    </a>
+                    <a href="javascript:void(0)" data-link='/html/account/address' id="item20" class="item">收货地址</a>
+                    <div class="list1">
+                      <div class="titleicon"></div>
+                      <div class="title">我的福利</div>
+                    </div>
+                    <a href="javascript:void(0)" data-link="/html/account/bird/" id='item12' class="item">我的鸟币</a>
+                    <a href="javascript:void(0)" data-link="/html/account/returnTickits/" id='item13' class="item">返现券</a>
+                    <a href="javascript:void(0)" data-link="/html/account/raiseTickits/" id='item14' class="item">加息券</a>
+                    <a href="javascript:void(0)" data-link="/html/account/point/" id='item21' class="item">我的积分</a>
+  
+                    <div class="list1">
+                      <div class="titleicon"></div>
+                      <div class="title">推广赚钱</div>
+                    </div>
+                    <a href="javascript:void(0)" data-link="/html/account/partner/" id='item15' class="item">我是合伙人</a>
+                    <a href="javascript:void(0)" data-link="/html/account/inviteRecord/" id='item16' class="item">邀请记录</a>
+                    <a href="javascript:void(0)" data-link="/html/account/awardDetail/" id='item17' class="item">奖励明细</a>
+                    <!-- <a href="/html/account/invest/" class="item">我的理财</a>
+                    <a href="/html/account/bird/" class="item">我的鸟币</a>
+                    <a href="/html/account/security/" class="item">我的理财金券</a>
+                     -->
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  <div class="righttop">
+   <div class="account-cardtwo">
+    <div class="title" id="account-card" data-content="/html/account/card1/">
+     <div class="item">我的银行卡</div>
+    </div>
+    <div class="content">
+      <div class="cont-top">
+        <div class="prompt"><i><img src="/html/img/card-img1.png"></i>温馨提示</div>
+        <p class="paragraph">快捷银行卡：该银行卡可用于网站及手机APP充值与提现，目前可支持中国银行、中国工商银行、中国建设银行、中国农业银行、光大银行、兴业银行、中国民生银行、浦发银行、交通银行、广发银行、中信银行、招商银行、平安银行，以上银行在快捷充值时均有上限。为保障您的账户安全，如
+        需要更换快捷银行卡账户，需通过线下人工审核流程。<a style="color: red;"href="javascript:void(0)" id="speed" onclick="user().clickEvent();">查看快捷充值限额表</a></p>
+      </div>
+      <div class="cont-bottom"  id="bankInfo">
+        <div class="form">
+          <div class="row">
+            <p class="nongye"></p>
+          <!-- <div class="row">
+            <div class="caption">卡号</div>
+            <div class="field">
+              <div class="field">
+              <input class="input current" type="text" value="{{=it.bankCardId}}" disabled="disabled">
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="caption">用户名</div>
+            <div class="field">
+              <input class="input" type="text" id='txtName' disabled="disabled">
+            </div>
+            <div class="validation">
+              <span class="icon">!</span>请更换本人名下的银行卡
+            </div>
+          </div> -->
+          <!-- <div class="on-state" id="onState">
+                <span class="em">免密充值</span>
+                <div class="switch">
+                  <div class="status" id="switch"></div>
+                </div>
+                <span class="em" id="switchStatus">（关闭状态）</span>
+                <span class="em1">*开通投资免密充值后下次无需再次输入支付密码</span>
+          </div> -->
+          <!-- <button class="button">绑定银行卡</button> -->
+        </div>
+        <div class="friend"><a style="color: red;"href="/html/account/cardchange" onclick="user().clickEvent();">我要换卡>></a></div>
+      </div>
+      </div>
+      <div class="account-floating" id="float">
+        <span class="jiantou"><img src="/html/img/jiantou2.png"></span>
+        <div class="cont-floating" id="propFloat">
+          <p>充值是否有上限？<br/>
+                 目前您可通过快捷支付进行充值。若您通过快捷支付方式进行充值，快捷的限额见下表（具体额度请以实际情况为准）：
+          </p>
+          <table>
+            <thead>
+              <tr class="one">
+                <th>银行</th>
+                <th>单笔限额</th>
+                <th>单日限额</th>
+              </tr>
+            </thead>
+            <tbody class="list">
+             <!-- {{~it./bank/list/bk:value:index}}
+              <tr>
+                <td class="item">{{=value.orderDate}}</td>
+                <td class="item">{{=value.userName}}</td>
+                <td class="item">{{=value.orderAmount}}</td>
+              </tr>
+              {{~}} -->
+            </tbody>
+          </table>
+        </div>
+         <div class="closeButton" id="close"></div>
+      </div>
+  </div>
+  
+   </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <div class="open-close" id="noguanbi">
+    <div class="close-content">
+      <h1 class="tips">提示</h1>
+      <p class="open-function">您是否成功关闭免密充值功能</p>
+      <p class="txt1">
+        <span class="if">是)</span>关闭弹框，页面刷新<br>
+        <span class="if">否)</span>建议您查看帮助中心
+      </p>
+      <div class="field">
+        <button class="yes" id="goCard" onclick="user().clickEvent();">是</button>
+        <button class="no" id="goHelp" onclick="user().clickEvent();">否</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="open-close" id="noPsdPopup">
+    <div class="open-content">
+      <h1 class="tips">提示</h1>
+      <p class="open-function">您是否成功开启免密充值功能</p>
+      <p class="txt1">
+        <span class="if">是)</span>关闭弹框，页面刷新<br>
+        <span class="if">否)</span>建议您查看帮助中心
+      </p>
+      <div class="field">
+        <button class="yes" id="goConfirm" onclick="user().clickEvent();">是</button>
+        <button class="no goHelp" onclick="user().clickEvent();">否</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="common-footer page-component">
+    <div class="wrap">
+      <div class="left">
+        <div class="iphone">
+          <div class="left_icon"></div>
+          <div class="left_time">（工作日9:30-18:30）</div>
+          <div class="left_tel">400-999-9980</div>
+          <div class="left_QQ">领投鸟投资用户交流群：247441580</div>
+        </div>
+      </div>
+      <div class="center_cont">
+        <ul>
+          <li class="title">关于我们</li>
+          <li>
+            <a href="/about/pltinfo" target="_blank">平台介绍</a>
+          </li>
+          <li>
+            <a href="/about/team" target="_blank">团队介绍 </a>
+          </li>
+          <li>
+            <a href="/about/advantage" target="_blank">品牌优势</a>
+          </li>
+          <li>
+            <a href="/about/honor" target="_blank">平台荣誉</a>
+          </li>
+          <li>
+            <a href="/about/partner" target="_blank">合作伙伴</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="title">联系我们</li>
+          <li>
+            <a href="/about/notice" target="_blank">平台公告</a>
+          </li>
+          <li>
+            <a href="/about/news" target="_blank">媒体报道 </a>
+          </li>
+          <li>
+            <a href="/about/join" target="_blank">加入我们</a>
+          </li>
+          <li>
+            <a href="/about/contact" target="_blank">联系我们</a>
+          </li>
+        </ul>
+        <ul class="three">
+          <li class="title">帮助中心</li>
+          <li>
+            <a href="/other/newerguide " target="_blank">新手指引</a>
+          </li>
+          <li>
+            <a href="/help/aboutltn/" target="_blank">帮助中心 </a>
+          </li>
+          <li>
+            <a href="/other/actlist " target="_blank">热门活动</a>
+          </li>
+        </ul>
+        <ul class="four">
+          <li class="title">安全保障</li>
+          <li>
+            <a href="/about/report" target="_blank">运营报告</a>
+          </li>
+          <li>
+            <a href="/about/protocol" target="_blank">法律法规 </a>
+          </li>
+          <li>
+            <a href="/other/safeguards " target="_blank">安全保障</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="scan">
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-app.png" alt="APP下载二维码">
+            <span class="title">APP下载</span>
+            <div class="youxiang">
+              <span class="small_icon1">
+                <img src="/html/img/footer_icon2.png">
+              </span>客服邮箱
+              <div class="tips">客服邮箱：service@lingtouniao.com</div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-weixin.png" alt="微信公众号二维码">
+            <span class="title">微信公众号</span>
+            <a href="http://weibo.com/u/5935757405" target="_blank"><div class="youxiang">
+                <span class="small_icon1">
+                  <img src="/html/img/footer_icon3.png">
+                </span>新浪微博
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_last">
+        <div class="contact" style="z-index:1;">
+          <div class="service">
+            <span><script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1258037212'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258037212%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?2ce520d6a6a41eb85c78974ad14678c4";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+          </script>
+          <script type="text/javascript">
+            var _py = _py || [];
+            _py.push(['a', 'YQs..WOGqF1S7kb_VEl9N283aBX']);
+            _py.push(['domain','stats.ipinyou.com']);
+            _py.push(['e','']);
+            -function(d) {
+              var s = d.createElement('script'),
+              e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+              f = 'https:' == location.protocol;
+              s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
+            }(document);
+            </script>
+            <noscript><img src="//stats.ipinyou.com/adv.gif?a=YQs..WOGqF1S7kb_VEl9N283aBX&e=" style="display:none;"/></noscript>
+          </span>
+          </div>
+        </div>
+        <div class="icons">
+          <!--诺顿网站图片LOGO-->
+          <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lingtouniao.com&amp;lang=zh_cn" target="_bank" class="icons1"></a>
+  
+          <!--诚信网站图片LOGO，不用加版本号是新图片-->
+          <a href="http://credit.szfw.org/CX20160524015311350170.html" target='_blank' class="icons2"></a>
+  
+          <!--工商图片LOGO-->
+          <a href="http://www.sgs.gov.cn/lz/etpsInfo.do?method=index" target='_blank' class="icons3"></a>
+  
+          <!--ICP网站图片LOGO-->
+          <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target='_blank' class="icons4"></a>
+  
+          <!--行业协会网站图片LOGO-->
+          <a href="http://sfia.org.cn/h/n/user/toDetailMermbersMainInfo?uId=2016072400000000077" target='_blank' class="icons5"></a>
+  
+          <!--安全联盟网站图片LOGO-->
+          <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.lingtouniao.com&at=business" target='_blank' class="icons6"></a>
+  
+          <!--互联网金融网站图片LOGO-->
+          <a href="http://si.trustutn.org/info?sn=172170915000608884439&certType=4%22%3E%3Cimg" target='_blank' class="icons7"></a>
+  
+          <!--可信网站图片LOGO-->
+          <a href="https://ss.knet.cn/verifyseal.dll?sn=e160523310104635708sr5000000&pa=500267" tabindex="-1" id="urlknet" target="_blank" class="icons8"></a>
+        </div>
+        <div class="friend">
+          <div class="friend_top">友情链接：
+          <a href="http://www.wdzj.com/dangan/ltnlc/" target="_blank">网贷之家</a>
+             ｜   <a href="http://lingtouniao.p2peye.com/" target="_blank">网贷天眼</a>
+                ｜   <a href="http://baike.baidu.com/item/领投鸟理财" target="_blank">百度百科</a>
+                   ｜   <a href="http://tieba.baidu.com/f?kw=%E9%A2%86%E6%8A%95%E9%B8%9F&ie=utf-8" target="_blank">百度贴吧</a>
+                      ｜   <a href="http://mp.sohu.com/profile?xpt=cHBhZzI1NjRjY2RmOThmZkBzb2h1LmNvbQ==" target="_blank">搜狐媒体</a>
+                         ｜   <a href="http://weibo.com/u/5935757405?topnav=1&wvr=6&topsug=1" target="_blank">新浪微博</a>
+                            ｜   <a href="http://toutiao.com/m5784948163/" target="_blank">今日头条</a>
+                               ｜   <a href="http://www.lagou.com/gongsi/103258.html?m=1" target="_blank">拉勾</a>
+                                  ｜   <a href="http://www.itjuzi.com/company/32856" target="_blank">IT桔子</a></div>
+              <div class="friend_bottom">公司地址：上海市金沙江路2145号普罗娜商务广场A
+              栋7楼   ©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有<a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15056137号</a>  市场有风险 投资需谨慎</div>
+        </div>
+  </div>
+    <div class="kefu">
+      <script>
+      (function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","http://lingtouniao.udesk.cn/im_client/js/udeskApi.js?1480664200567","ud");
+      ud({
+          "code": "18bj2e9k",
+          "link": "http://lingtouniao.udesk.cn/im_client?web_plugin_id=23176"
+      });
+    </script>
+    </div>
+  
+
+  <div class="common-cover page-component">
+  </div>
+
+
+  <script type="text/template" id="templateBankinfo">
+    <div class="form">
+          <div class="row">
+            <p class="nongye">{{=it.belongBank}}</p>
+          <div class="row">
+            <div class="caption">银行卡号</div>
+            <div class="field">
+              <input class="input current" type="text" value="{{=it.bankCardId}}" disabled="disabled">
+            </div>
+          </div>
+          <div class="row">
+            <div class="caption">用户名</div>
+            <div class="field">
+              <input class="input" type="text" id='txtName' value="{{=it.userName}}"disabled="disabled">
+            </div>
+  <!--           <div class="validation">
+    <span class="icon"></span>请更换本人名下的银行卡
+  </div> -->
+          </div>
+          <div class="on-state" id="onState">
+                <span class="em">免密充值</span>
+                <div class="switch">
+                  <div class="status" id="switch"></div>
+                </div>
+                <span class="em" id="switchStatus">(关闭状态)</span>
+                <span class="em1">开通投资免密充值后下次无需再次输入支付密码</span>
+          </div>
+            <div class="friend"><a style="color: red;"href="/html/account/cardchange">我要换卡>></a></div>
+        </div>
+  </script>
+  <script type="text/template" id="templateFolating">
+    <p>充值是否有上限？<br/>
+      目前您可通过快捷支付进行充值。若您通过快捷支付方式进行充值，快捷的限额见下表（具体额度请以实际情况为准）：</p>
+      <table>
+            <thead>
+              <tr class="one">
+                <th>银行</th>
+                <th>单笔限额</th>
+                <th>单日限额</th>
+              </tr>
+            </thead>
+            <tbody class="list">
+             {{~it:value:index}}
+              <tr>
+                <td class="item">{{=value.bankName}}</td>
+                <td class="item">{{=value.chargeTimeLimit}}</td>
+                <td class="item">{{=value.chargeDateLimit}}</td>
+              </tr>
+              {{~}}
+            </tbody>
+          </table>
+  </script>
+
+  <script type="text/template" id="tempLeftinfo">
+    <div class="topLogo">
+      <div class="left_nav_logo"></div>
+      {{if(user().isNameAuth()){ }}
+      <div class="item2">
+        你好，<span class="left_name">{{=it.name}}</span>
+      </div>
+      {{ }else{ }}
+      <div class="item2">
+        你好，<span>{{=strUtil().formatPhone(it.tel)}}</span>
+      </div>
+      {{ } }}
+      <div class="partner">
+        <span class="type"></span>
+        <span class="partnertips"></span>
+      </div>
+    </div>
+    <div class="icon">
+      <div class="telIco">
+        <span  class="tipsIcon"></span>
+      </div>
+      <div class="realnameIcon">
+        <span  class="tipsIcon"></span>
+      </div>
+      <div class="cardIcon" id="bindCard">
+        <span  class="tipsIcon"></span>
+      </div>
+    </div>
+  </script>
+  
+  
+  
+
+ <script src="/html/js/account/script.min.js?v=20160519"></script>
+
+ <script src="/html/js/account/card2/script.min.js?v=20160524"></script>
+
+ </body>
+ </html>

@@ -1,0 +1,173 @@
+<script type="text/template" id="mutual_detail_position">
+	<a href="/">首页</a> &nbsp;> &nbsp;<a href="../">互助列表</a> &nbsp;> &nbsp;<a href="#!/{{=it}}">互助详情</a>
+</script>
+
+<script type="text/template" id="mutual_detail_content">
+
+    <div class="details_left">
+      <img src="{{=it.productPic}}">
+    </div>
+    <div class="details_right">
+      <div class="details_title2">{{=it.productFirstTitle}}</div>
+      <div class="details_item">{{=it.productSubTitle}}</div>
+      <div class="details_info">
+      {{=it.productDesc}}</div>
+      <div class="finished">
+        <div class="finished_item">
+          <div class="finished_money">{{=it.productSoldedAmount}}</div>
+          <div class="field">已筹互助金</div>
+        </div>
+        <div class="finished_item">
+          <div class="finished_money">{{=it.totalPeople}}</div>
+          <div class="field">已加入会员</div>
+        </div>
+      </div>
+      <button class="details_but" id="mutual_join_btn">立即加入</button>
+    </div>
+
+</script>
+
+<script type="text/template" id="mutual_detail_risk_1">
+
+  <article class="tab_detail">
+  {{=it}}
+  </article>
+
+</script>
+
+<script type="text/template" id="mutual_detail_risk_2">
+
+  <article class="tab_detail">
+  {{=it}}
+  </article>
+
+</script>
+
+<script type="text/template" id="mutual_detail_risk_3">
+
+<table class="log-list">
+  <thead>
+    <tr>
+      <th>序列号</th>
+      <th>加入时间</th>
+      <th>加入人</th>
+      <th>加入金额</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{for (var i=0; i<it.memberList.length; i++) { }}
+
+        <tr>
+          <td>{{=it.memberList[i].id}}</td>
+          <td>{{=it.memberList[i].orderDate}}</td>
+          <td>{{=it.memberList[i].mobileNo}}</td>
+          <td>{{=it.memberList[i].orderAmount}}</td>
+        </tr>
+
+    {{ } }}
+  </tbody>
+</table>
+<div class="accountpage">
+  <div class="pages">
+    <div id="light-pagination" class="pagination light-theme simple-pagination">
+      <ul>
+
+        {{ if(it.now == 0){ }}
+          <li class="disabled"><span class="current prev"><<</span></li>
+        {{ }else{ }}
+          <li><a href="#!/{{=it.productId}}/0" class="page-link prev"><<</a></li>
+        {{ } }}
+
+        {{ for (var i=0; i<it.total; i++) { }}
+          {{var j = i;}}
+          {{j++;}}
+
+          {{ if(i == it.now){ }}
+            <li class="active"><span class="current">{{=j}}</span></li>
+          {{ }else{ }}
+            <li><a href="#!/{{=it.productId}}/{{=i}}" data-btn="{{=i}}" class="page-link">{{=j}}</a></li>
+          {{ } }}
+
+        {{ } }}
+
+        {{ var total = it.total - 1; }}
+        {{ if(it.now == it.total){ }}
+          <li class="disabled"><span class="current next">>></span></li>
+        {{ }else{ }}
+          <li><a href="#!/{{=it.productId}}/{{=total}}" class="page-link next">>></a></li>
+        {{ } }}
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+</script>
+
+<script type="text/template" id="mutual_detail_risk_4">
+
+  <article class="tab_detail">
+  {{=it}}
+  </article>
+</script>
+
+<script type="text/template" id="tempBuy">
+  <div class="wrap">
+    <div class="current">
+      <div class="header">
+        <div class="title">投资购买</div>
+        <div class="close" id="buyClose"></div>
+      </div>
+      <div class="form" id="form">
+        <div class="row">
+          <div class="caption">投资金额：</div>
+          <div class="field">
+            <input type="text" class="input" id='txtMoney' placeholder="{{=Util.padFloatMoney(it.prodInfo.data.singleLimitAmount)}}" readonly>
+          </div>
+          <div class="validation touzimoney" id="amount-validate">您的余额不足<a href="/html/account/bank/" class="link">请充值</a></div>
+        </div>
+        <div class="row">
+          <div class="caption">可用余额：</div>
+          <div class="field">
+            <span class="text">{{=Util.padFloatMoney(it.userInfo.usableBalance)}}元</span>
+          </div>
+        </div>
+        {{ if(it.prodInfo.data.useBridcoinTag == 1){ }}
+        <div class="row">
+          <div class="caption">使用鸟币：</div>
+          <div class="field">
+            <input id="isUse" type="checkbox" class="check" checked>
+            <label for="isCoin" class="label">{{=it.coin}}鸟币抵扣{{=it.coin}}元</label>
+          </div>
+        </div>
+        {{ } }}
+        <div class="row submit">
+          <hr class="dash">
+          <div class="actual">
+            <span class="text">实际金额：</span>
+            <span class="amount" id="actual">{{=it.actual}}元</span>
+          </div>
+          <div class="action">
+            <button class="button" id="btnBuy" onclick="user().clickEvent();">确认投资</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .product-buy .form .row.validate-failed .validation {
+        color: #f78e8b;
+        display: inline-block;
+        background: url(/img/icon-mark-warning.png) left center no-repeat;
+    }
+    .product-buy .form .row .validation {
+        height: 14px;
+        line-height: 14px;
+        /* display: none; */
+        padding: 0 0 0 20px;
+        margin: 0 0 0 10px;
+        box-sizing: border-box;
+        vertical-align: middle;
+    }
+  </style>
+</script>

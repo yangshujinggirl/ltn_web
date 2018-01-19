@@ -1,0 +1,101 @@
+.sense{
+  width: 504px;
+  margin: 35px auto;
+  .sense_font{
+    font-size: 18px;
+    color: #8a8a8a;
+  }
+  .sense_money{
+    font-size: 22px;
+    color: #666;
+    margin-left: 30px;
+    .sense_juse{
+      color: #ff6f20;
+    }
+  }
+}
+.postal_but{
+  width: 230px;
+  height: 37px;
+  margin: 0 auto;
+  .button{
+    width: 230px;
+    height: 37px;
+    background: #ff6f20;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.down_bottom2{
+      padding: 30px 0;
+      margin-top: 15px;
+      // display: none;
+      .down_left{
+        display: inline-block;
+        vertical-align: top;
+        .down_caption{
+          text-align: center;
+          display: inline-block;
+          margin-right: 40px;
+        }
+        .wendang{
+          width: 148px;
+          height: 200px;
+          line-height: 200px;
+          color: #4f5658;
+          font-size: 16px;
+          text-align: center;
+          border: 1px solid #e2e2e2;
+        }
+        .jigou{
+          height: 116px;
+          padding-top: 84px;
+          line-height: 23px;
+        }
+        .down_click{
+          margin-top: 10px;
+          a{
+            color: #2a7ffe;
+            font-size: 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .down_right{
+        width: 775px;
+        height: 110px;
+        margin-left: 20px;
+        display: inline-block;
+        padding: 40px 50px;
+        vertical-align: top;
+        -moz-box-shadow:5px 5px;
+        -webkit-box-shadow:5px 5px;
+        box-shadow: 0 0 8px 5px #f3f3f3;
+        .down_info2{
+          font-size: 16px;
+          color: #394043;
+          .submit_icon1{
+            width: 24px;
+            height: 21px;
+            display: inline-block;
+            background: url(/html/img/corporate_duihuakuang.png) no-repeat;
+            vertical-align: middle;
+            margin-right: 9px;
+          }
+        }
+        .reminded{
+          font-size: 14px;
+          line-height: 26px;
+          color: #919597;
+          margin-top: 15px;
+          position: relative;
+          left: 32px;
+          .juse3{
+            color: #ff6f20;
+          }
+        }
+      }
+    }

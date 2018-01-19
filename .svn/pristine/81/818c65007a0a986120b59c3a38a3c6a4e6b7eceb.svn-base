@@ -1,0 +1,210 @@
+$(function(){
+  var page = new Page();
+  page.set('type','ZC');
+  page.set("friendstype","friends1");
+  //累计合伙人奖励
+  page.getpartnet = function(){
+    return page.getData(
+      '/user/partner',
+      {clientType:'PC'},[initPartnerInfo,addEvent,addBtnEvent]);
+    function initPartnerInfo(data){
+      if (page.isSuccess(data)) {
+        data = data.data;
+        // var temp={"data":{"fatherReward":0,"grandfatherReward":0,"isPartnerDown":0,"isPartnerUp":2,"isStaff":0,"totalReward":0,"userLerver":"普通用户","username":"赵然"},"resultCode":"0","resultMessage":"Success"} 
+        // data=temp.data;
+        page.initTemplate(data,'propPartner','tempPartner');
+        page.initTemplate(data,'partnerInfo','tempPInfo');
+      }
+    }
+    function addEvent(data){
+      data = data.data;
+      if (data.userLerver == '普通合伙人') {
+        $('.node').hide();
+        $('.nodeShow').show();
+        $('.link2').hide();
+        $('.link2huise').show();
+      }else if(data.userLerver == '普通用户'){
+        $('.linkhuise').show();
+        $('.nodeHide').show();
+        $('.link2huise').show();
+        $('.nodeShow').hide();
+      }else if (data.userLerver == "金牌合伙人") {
+        $('.nodeShow').hide();
+        $('.node').show();
+        $('.node2').show();
+        $('.link2').show();
+        $('.link2huise').hide();
+        $('.nodeHide2').hide();
+      }else{
+        $('.node').hide();
+        $('.nodeShow').hide();
+        $('.nodeHide').show();
+        $('.link2').hide();
+        $('.linkhuise').show();
+        $('.link2huise').show();
+        $('.node2').hide();
+        $('.nodeHide2').show();
+      }
+    }
+    /**
+    *补充推荐人按钮事件
+    */
+    function addBtnEvent(data){
+      if (page.isSuccess(data)){
+        data = data.data;
+        if(data.isPartnerUp !== '1' ){
+          var $btn = $('#supplyReferBtn');
+          $btn.on('click',function(event) {
+        supplyReferPost();
+          });
+        }
+      }
+    }
+
+    function supplyReferPost() {
+      var $refer = $('#supplyReferIn').val();
+      var patt=/^1[3|4|5|7|8][0-9]{9}$/;
+      var result=patt.test($refer);
+
+      if(!(result)){
+        $('.prompted').show();
+        $('.prompted').html('对不起，您输入的手机号码不正确！')
+        return false;
+      }
+      //TODO 校验后期加
+      return page.getData(
+          '/pc/supplement/partner',
+          {clientType: 'PC',mobileNo:$refer},
+          [referPostHandler]);
+    }
+
+    function referPostHandler(data){
+      if (page.isSuccess(data,false)){
+        page.getpartnet();
+      }else{
+        if (data.resultCode == '10000025') {
+          $('.prompted').show();
+          $('.prompted').html('对不起，您补充的推荐人不存在！');
+        }
+        if (data.resultCode == '10000034') {
+          $('.prompted').show();
+          $('.prompted').html('推荐人未进行实名认证！');
+        }
+      }
+      $('#supplyReferIn').on('focus',function(){
+        $('.prompted').hide();
+      });
+    }
+  }
+  //复制的时候添加手机号和URL
+  page.getUserInfo = function(){
+    //获取登录的手机号
+    var value = session().get('login');
+    //创建a连接
+    var txt3 = document.createElement("a");
+    txt3.href = 'http://www.lingtouniao.com/html/user/register/?mobile=' + value;
+    txt3.target = '_blank';
+    txt3.innerHTML = 'http://www.lingtouniao.com/html/user/register/?mobile=' +value;
+    $('#content2').append(txt3);
+  };
+  page.copy = function(){
+    $('#copy_contentpart').zclip({
+      path:'/img/ZeroClipboard.swf',
+      copy:$('#content2').text(),
+      beforeCopy:function(){
+
+      },
+      afterCopy:function(){
+        document.getElementById('copysuccess2').style.display = 'block';
+        document.getElementById('cover2').style.display = 'block';
+        document.getElementById('closebut').onclick = function(){
+          document.getElementById('copysuccess2').style.display='none';
+          document.getElementById('cover2').style.display = 'none';
+        }
+      }
+    });
+  };
+  //生成二维码
+  page.qrcode = function(){
+    var numphone = session().get('login');
+    url = "https://www.lingtouniao.com/h5/share.html?mobile="+numphone;
+    var qrcode = new QRCode("qrcode",{
+      text:url,
+      width:110,
+      height:110,
+      colorDark:'#000',
+      colorLight:'#fff',
+      correctLevel:QRCode.CorrectLevel.H
+    });
+  };
+  page.leftnav = function () {
+    var pn = location.pathname;
+    var as = $('#leftnav .item');
+    for (var i = 0, j = as.length; i < j; i++)
+      if (as[i].href.indexOf(pn) != -1) {
+        as[i].className = 'selected item';
+    }
+  };
+  page.getShare = function(){
+   $("#socialShare").socialShare({ 
+     url:'http://www.lingtouniao.com/html/user/register/',
+     content: '我在领投鸟玩理财，年化收益率最高18%，期限灵活，现在注册就送10000元体验金，你也玩一下吧！',
+     title:'领投鸟(lingtouniao.com)，中国不动产理财领导者，时间短，收益高，期限5天-6个月，任选，现在注册就送518元红包。',
+     /*pic:Config.get('baseUrl')+'/img/xiaoniao-2.png',*/
+    });
+  };
+  page.getQQ= function(){
+    (function(){
+    var p = {
+    url: "http://www.lingtouniao.com/html/user/register/",
+    showcount: '0',/*是否显示分享总数,显示：'1'，不显示：'0' */
+    desc: '领投鸟(lingtouniao.com)，中国不动产理财领导者，时间短，收益高，期限5天-6个月，任选，现在注册就送518元红包哟。',/*默认分享理由(可选)*/
+    summary: '领投鸟(lingtouniao.com)，中国不动产理财领导者，时间短，收益高，期限5天-6个月，任选，现在注册就送518元红包。',/*分享摘要(可选)*/
+    title: '领投鸟，筑家，助赢',/*分享标题(可选)*/
+    site: '领投鸟理财',/*分享来源 如：腾讯网(可选)*/
+    /*pics: Config.get('baseUrl')+'/img/xiaoniao-2.png'*/ /*分享图片的路径(可选)*/
+
+    };
+    var s = [];
+    for(var i in p){
+    s.push(i + '=' + encodeURIComponent(p[i]||''));
+    }
+    $('.weixin').on('click',function(){
+      window.open('http://connect.qq.com/widget/shareqq/index.html?'+s.join('&')+'');
+    });
+    })();
+  }
+
+  $('.ordinary').mouseenter(function(){
+    $(this).addClass('bg');
+  });
+  $('.ordinary').mouseleave(function(){
+    $(this).removeClass('bg');
+  });
+  $('#weixin').mouseenter(function(){
+    $('#tankuang').show();
+    $(this).find('img').css('margin-top','-10px');
+    event.stopPropagation();
+  });
+  $('#weixin').mouseleave(function(){
+    $('#tankuang').hide();
+    $(this).find('img').css('margin-top','0');
+    event.stopPropagation();
+  });
+  $('#icon1').mouseenter(function(){
+    $(this).find('img').css('margin-top','-10px');
+  });
+  $('#icon1').mouseleave(function(){
+    $(this).find('img').css('margin-top','0');
+  });
+  page.init = function(){
+    page.getpartnet();
+    page.getUserInfo();
+    page.copy();
+    page.qrcode();
+    // page.leftnav();
+    page.getShare();
+    page.getQQ();
+  }
+  page.init();
+});

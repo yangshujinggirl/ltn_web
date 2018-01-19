@@ -1,0 +1,52 @@
+.product-crumb {
+
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  color: #6a6a6a;
+
+  .crumb-list {
+    padding-left: 20px;
+    margin: 0;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+
+    .item {
+      display: inline-block;
+
+      &:after {
+        content: ">";
+        padding: 0 10px;
+      }
+      &:last-of-type:after {
+        content: "";
+        padding: 0;
+      }
+    }
+  }
+
+  .notice {
+    padding: 0 20px 0 25px;
+    margin: 15px 0;
+    float: right;
+    font-size: 12px;
+    background: url(/html/img/icon-prod-notice.png) left center no-repeat;
+    height: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width: 480px;
+    cursor: pointer;
+
+    .item {
+      letter-spacing: 1px;
+      line-height: 20px;
+      padding-left: 25px;
+      width: 480px - 20px - 25px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

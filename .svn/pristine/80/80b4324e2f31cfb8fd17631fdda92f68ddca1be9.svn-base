@@ -1,0 +1,30 @@
+.account-recharge{
+   width: 930px;
+   margin: 60px auto;
+   p{
+    font-size: 16px;
+   }
+   .one{
+    width: 306px;
+    height: 40px;
+    font-size: 16px;
+    background: #ececec;
+   }
+   .list {
+      td{
+      width: 306px;
+      height: 40px;
+      font-size: 14px;
+      text-align: center;
+      }
+      .top{
+        background: #ececec;
+      }
+      .tow{
+        background: #f7f7f7;
+      }
+      tr:nth-child(even){
+        background: #f7f7f7;
+      }
+   }
+}

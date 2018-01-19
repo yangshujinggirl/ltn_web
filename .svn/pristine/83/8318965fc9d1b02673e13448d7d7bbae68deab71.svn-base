@@ -1,0 +1,82 @@
+.account-trading {
+  padding:50px 100px;
+  .text1 {
+      font-size: 18px;
+      line-height: 40px;
+      font-weight: bold;
+  }
+  .change-password {
+    .process {
+      margin-top: 60px;
+      .step {
+        width: 230px;
+        box-sizing:border-box;
+        text-align: center;
+        display: inline-block;
+        .icon-text {
+          padding-left:55px;
+          margin-top:45px;
+          position:relative;
+          .icon {
+            display: inline-block;
+            text-align: center;
+            font-style:normal;
+            font-size: 22px;
+            color: #ff6f20;
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #ff6f20;
+            border-radius: 50%;
+            vertical-align: sub;
+            position: absolute;
+            left:0;
+            top:0;
+          }
+          .font1 {
+            font-size: 16px;
+            display:inline-block;
+            text-align: left;
+            line-height: 24px;
+          }
+        }
+      }
+      .step2 {
+        margin:0 40px;
+      }
+    }
+  }
+  .forget-password {
+    margin-top: 100px;
+    .reset {
+      font-size: 14px;
+      font-weight: bold;
+      .reset-btn {
+        width: 117px;
+        height: 36px;
+        background-color: #ff6f20;
+        border: none;
+        border-radius:5px;
+        color:#fff;
+        margin-right: 5px;
+      }
+      .validation {
+        color: #f78e8b;
+        display:block;
+        margin-top: 16px;
+        .icon {
+          color: #fff;
+          display: inline-block;
+          text-align: center;
+          vertical-align: middle;
+          background: #f78e8b;
+          width: 14px;
+          height: 14px;
+          line-height: 1;
+          border-radius: 7px;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}

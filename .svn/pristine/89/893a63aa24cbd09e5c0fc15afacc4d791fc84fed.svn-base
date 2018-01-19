@@ -1,0 +1,171 @@
+.product-list {
+  $high:#ff6f20;
+    .wrap {
+        padding: 0;
+        overflow: visible;
+    }
+    .item{
+        cursor: pointer;
+        background-color:#fff;
+        margin-bottom: 20px;
+        color: #b0b3b4;
+        .ww {
+          padding:34px 0 32px 48px;
+        }
+        .title{
+          font-size: 14px;
+          line-height: 21px;
+          .newUser {
+            display: inline-block;
+            height: 21px;
+            line-height: 21px;
+            padding-left: 30px;
+            vertical-align: middle;
+          }
+          .titlename {
+            display: inline-block;
+            width: 200px;
+            vertical-align: middle;
+          }
+          .newOne {
+            background:url("/img/imageTwo/product/icon1.png") left center no-repeat;
+          }
+          .newTwo {
+            background:url("/img/imageTwo/product/icon2.png") left center no-repeat;
+            margin-left: 30px;
+          }
+          .subTitle {
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            padding:0 10px;
+            border: 1px solid #c9c9c9;
+            border-radius: 12.5px;
+            -webkit-border-radius: 12.5px;
+            vertical-align: middle;
+            margin-left: 50px;
+          }
+        }
+        .detail{
+          display: inline-block;
+          .prop{
+            padding-top: 22px;
+            .itam {
+              font-size: 14px;
+              .field{
+                font-size:24px;
+                color: #394043;
+              }
+              .unit{
+                font-size: 18px;
+              }
+              .caption{
+                color:#888c8e;
+              }
+            }
+            .profit, .period,.threshold, .progress {
+              display: inline-block;
+              vertical-align: bottom;
+            }
+            .profit{
+                width:250px;
+              .field{
+                color:$high;
+                font-size: 36px;
+              }
+            }
+            .period{
+              width: 80px;
+            }
+            .threshold{
+              margin-left: 142px;
+            }
+            .progress{
+              margin-left: 142px;
+              .black {
+                color: #394043;
+              }
+              .caption {
+                padding-top :8px;
+              }
+              .container{
+                width:140px;
+                height: 4px;
+                border-radius: 2px;
+                background: #e8e8e8;
+                .completed{
+                  height: 4px;
+                  background:linear-gradient( left,#ffcc00,#fc7800);
+                  background:-o-linear-gradient( left,#ffcc00,#fc7800);
+                  background:-webkit-linear-gradient( left,#ffcc00,#fc7800);
+                  background:-moz-linear-gradient( left,#ffcc00,#fc7800);
+                }
+              }
+            }
+          }
+        }
+        .action{
+            display: inline-block;
+            font-size: 12px;
+            text-align: center;
+            margin-left: 56px;
+            .invest{
+              padding: 0;
+              color: $high;
+              font-size: 14px;
+              width: 108px;
+              height: 30px;
+              line-height: 30px;
+              border: 1px solid $high;
+              border-radius: 2px;
+              background: #fff;
+              &:hover {
+                background-color: $high;
+                color: #fff;
+              }
+              &.disabled {
+                background: $bg-btn-disabled;
+                cursor: not-allowed;
+              }
+              &.fulled {
+                color: #b0b3b4;
+                background-color: #FFF;
+                border: 1px solid #b0b3b4;
+              }
+              &.repayment {
+                color: #fff;
+                background-color: #b0b3b4;
+                border: 1px solid #b0b3b4;
+              }
+            }
+        }
+        &:hover {
+          box-shadow:0 0 10px rgba(0,0,0,.2);
+          .title {
+            color: #394043;
+            .newUser {
+              color: #ffc952;
+            }
+            .newOne {
+              background:url("/img/imageTwo/product/icon11.png") left center no-repeat;
+            }
+            .newTwo {
+              background:url("/img/imageTwo/product/icon22.png") left center no-repeat;
+            }
+          }
+        }
+    }
+    .prolistnone {
+      position: relative;
+      width: 196px;
+      height: 179px;
+      margin: 20px auto;
+      background: url(/img/wushuju.png) no-repeat center center;
+      .prolistnonetxt {
+        position: absolute;
+        bottom: 0%;
+        left: 30%;
+        font-size: 14px;
+      }
+    }
+}

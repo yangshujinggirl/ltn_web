@@ -1,0 +1,227 @@
+ .account-content {
+  .wrap {
+    .lefttop {
+      float: left;
+      height: 1560px;
+      width: 200px;
+      display: inline-block;
+      border: 1px solid #d7d7d7;
+      background-color: #fcfcfc;
+
+      .leftContent {
+          width: 100%;
+          color: #3a3a3a;
+          .peopleinfor {
+            height: 135px;
+            line-height: 135px;
+            padding-top: 20px;
+            position: relative;
+            .topLogo {
+              height: 54px;
+              padding-left:10px;
+              position:relative;
+            }
+            .item2{
+              line-height: 30px;
+              margin: 0 auto;
+              font-size: 14px;
+              display: inline-block;
+              vertical-align: top;
+              .left_name{
+                font-weight:bold;
+              }
+            }
+            .left_nav_logo{
+              width: 54px;
+              height: 54px;
+              vertical-align: top;
+              // position: absolute;
+              // left: 6px;
+              // top: 12px;
+              background: url(/html/img/left_nav.logo.png) no-repeat;
+              display: inline-block;
+            }
+            .partner {
+              position: absolute;
+              right:78px;
+              bottom:10px;
+              .type{
+                display: block;
+                cursor: pointer;
+              }
+              .partnertips{
+                width: 94px;
+                height: 27px;
+                background: url(/html/img/hehuodengjitips.png) no-repeat;
+                position: absolute;
+                left: 50%;
+                top: 16px;
+                margin-left: -47px;
+                text-align: center;
+                line-height: 34px;
+                color: #ff6f20;
+                display: none;
+              }
+              .putong{
+                width: 50px;
+                height: 16px;
+                background: url(/html/img/putongjuse.png) no-repeat;
+              }
+              .putonghuise{
+                width: 50px;
+                height: 16px;
+                background: url(/html/img/putonghuise.png) no-repeat;
+              }
+              .hezuo{
+                width: 50px;
+                height: 16px;
+                background: url(/html/img/hezuojuse.png) no-repeat;
+              }
+              .zuanshi{
+                width: 50px;
+                height: 16px;
+                background: url(/html/img/zuanshijuse.png) no-repeat;
+              }
+              .jinpai{
+                width: 50px;
+                height: 16px;
+                background: url(/html/img/jinpaijuse.png) no-repeat;
+              }
+            }
+            .icon {
+              height: 20px;
+              line-height: 30px;
+              font-size: 14px;
+              position: relative;
+              border-bottom: 1px  dashed #e2e2e2;
+              padding:18px 0 14px;
+              .tipsIcon {
+                width: 54px;
+                height: 27px;
+                line-height: 34px;
+                display: inline-block;
+                display: none;
+                white-space: nowrap;
+                font-size:12px;
+                position: absolute;
+                bottom:-30px;
+                left:-16px;
+                text-align: center;
+                text-indent: 0;
+                background: url(/html/img/leftnav_icon1.png) no-repeat;
+              }
+              .telIco,.realnameIcon,.cardIcon{
+                width: 20px;
+                height: 20px;
+                float: left;
+                margin-left:28px;
+                position:relative;
+                &:hover{
+                  cursor: pointer;
+                  .tipsIcon {display: block;}
+                }
+              }
+              .telIco {
+                background:url(/html/img/icon-is-mobile_huise.png) no-repeat center;
+                &.selected {
+                  background:url(/html/img/icon-is-mobile2.png) no-repeat center;
+                }
+              }
+              .realnameIcon {
+                background:url(/html/img/icon-is-name_huise.png) no-repeat center;
+                &.selected {
+                  background:url(/html/img/icon-is-name2.png) no-repeat center;
+                }
+              }
+              .cardIcon {
+                width: 23px;
+                height: 20px;
+                background:url(/html/img/icon-not-card_huise.png) no-repeat center;
+                &.selected {
+                  background:url(/html/img/icon-not-card2.png) no-repeat center;
+                }
+              }
+            }
+          }
+          .myaccount {
+            .item {
+              display: block;
+              height: 40px;
+              line-height: 40px;
+              font-size: 14px;
+              padding-left: 30px;
+              border-right: #d7d7d7;
+              border-top: 1px solid #fcfcfc;
+              border-bottom: 1px solid #fcfcfc;
+              .hot{
+                width: 44px;
+                height: 25px;
+                display: inline-block;
+                background:url(/html/img/hot.gif) no-repeat;
+                position: relative;
+                left:0;
+                top: 5px;
+              }
+             
+              &.selected {
+                background-color: #fff;
+                border-top: 1px solid #d7d7d7;
+                border-bottom: 1px solid #d7d7d7;
+                color: #ff5a00;
+                border-right: 1px solid #fff;
+                margin-right: -1px;
+              }
+              &:hover {
+                color: #ff5a00;
+              }
+            }
+            #inFos {
+              position: relative;
+              .redCircle{
+                display: block;
+                width: 10px;
+                height: 10px;
+                background:url(/html/img/detail_circle.png);
+                position: absolute;
+                top:14px;
+                right:36px;
+                display: none;
+                &.selected {
+                  display: block;
+                }
+              }
+            }
+            .list1 {
+              .titleicon {
+                width: 3px;
+                height: 20px;
+                background-color: #ff5a00;
+                float: left;
+                line-height: 20px;
+                margin-left: 15px;
+                margin-top: 10px;
+                margin-right: 10px;
+              }
+              .title {
+                height: 40px;
+                line-height: 40px;
+                font-weight: bold;
+                font-size: 18px;
+                a{
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+      }
+    }
+    .righttop {
+      float: left;
+      height: 1560px;
+      width: 985px;
+      border: 1px solid #d7d7d7;
+      border-left: 0 solid #d7d7d7;
+      background-color: #fff;
+    }
+  }
+}

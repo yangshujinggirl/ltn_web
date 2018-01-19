@@ -1,0 +1,110 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+
+<div class="account-detailmoney">
+  <div class="detailmoney-content">
+    <div class="itemnav">
+    <div class="itemnav-left">
+      <a href="javascript:void(0)" class="ite selected" id="recharge" data-content="detailCharge">资金明细</a>
+    </div>
+    <div class="itemnv-right">本平台所有资金都是通过联动优势第三方资金托管</div>
+  </div>
+    <div class="wrapOne">
+      <div class="headeramcount" id="detailHead">
+
+      </div>
+
+      <div class="tips">
+        <div class="tipsinfo">资金明细记录了你各种交易产生的支出和收益明细，请选择时间和交易类型查看。</div>
+      </div>
+
+      <div class="form">
+        <div class="row">
+          <span>起止时间：</span>
+          <!--<input type="date" id="startTime">至
+          <input type="date" id="endTime">-->
+          <div class="dateWrap">
+            <div id="detail_startTime" class="inline laydate-icon"></div>
+          </div>
+          至
+          <div class="dateWrap">
+            <div id="detail_endTime" class="inline laydate-icon"></div>
+          </div>
+          <div class="type" id="time">
+            <div class="item selected" data-time="allDate">全部</div>
+            <div class="item" data-time="today">今天</div>
+            <div class="item" data-time="one">一个月</div>
+            <div class="item" data-time="three">三个月</div>
+            <div class="item" data-time="six">六个月</div>
+          </div>
+        </div>
+        <div class="row">
+          <span>交易类型：</span>
+          <div class="type" id="change">
+            <div class="item selected" data-content="all">全部</div>
+            <div class="item" data-content="charge">充值</div>
+            <div class="item" data-content="depost">提现</div>
+            <div class="item" data-content="invest">投资</div>
+            <div class="item" data-content="returned">回款</div>
+            <div class="item" data-content="back">返现</div>
+            <div class="item" data-content="other">其他</div>
+          </div>
+          <!-- <div class="submit all" id="look">查看</div> -->
+        </div>
+      </div>
+      <table id="fundDetail">
+        <!-- <thead>
+          <tr>
+            <th>交易时间</th>
+            <th>交易类型</th>
+            <th>交易金额</th>
+            <th>状态 / 详情</th>
+            <th>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2016-01-23 12:00</td>
+            <td>充值</td>
+            <td>+￥4800.00</td>
+            <td>成功</td>
+            <td>订单编号50000 充值</td>
+          </tr>
+          <tr>
+            <td>2016-01-23 12:00</td>
+            <td>充值</td>
+            <td>+￥4800.00</td>
+            <td>成功</td>
+            <td>订单编号50000 充值</td>
+          </tr>
+          <tr>
+            <td>2016-01-23 12:00</td>
+            <td>充值</td>
+            <td>+￥4800.00</td>
+            <td>成功</td>
+            <td>订单编号50000 充值</td>
+          </tr>
+          <tr>
+            <td>2016-01-23 12:00</td>
+            <td>充值</td>
+            <td>+￥4800.00</td>
+            <td>成功</td>
+            <td>订单编号50000 充值</td>
+          </tr>
+        </tbody> -->
+      </table>
+      <div class="nolist" id="nolist1"></div>
+      <div class="accountpage">
+        <div class="pages" id="pages1">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->

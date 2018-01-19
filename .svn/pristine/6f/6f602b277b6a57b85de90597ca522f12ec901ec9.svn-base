@@ -1,0 +1,203 @@
+.home-start {
+  ul,li{
+    margin:0;
+    padding:0;
+  }
+  .wrap {
+    padding: 0;
+    overflow: visible;
+    height: 300px;
+  }
+  .item1{
+    position: relative;
+  }
+  .item {
+    cursor:pointer;
+    height: 140px;
+    margin: 10px 0;
+
+    .prod, .adv {
+      box-sizing: border-box;
+      height: 100%;
+
+    }
+
+    &.start {
+      .prod {
+        .icon {
+          background: url(/html/img/icon-home-start.png) left top no-repeat;
+        }
+      }
+      .adv {
+        background: url(/html/img/img-home-start-adv.png) center center no-repeat;
+      }
+    }
+    &.first {
+      .prod {
+        .icon {
+          background: url(/html/img/icon-home-first.png) left top no-repeat;
+        }
+      }
+      .adv {
+        background: url(/html/img/img-home-first-adv.png) center center no-repeat;
+      }
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+    }
+
+    .adv {
+      width: 390px;
+      float: right;
+    }
+
+    .prod {
+      background: #fff;
+      width: $page-width - 390px - 10px;
+      box-sizing: border-box;
+      border: 1px solid #e5e5e5;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      .xsbList {
+        width: ($page-width - 390px - 10px)*2;
+        height: 100%;
+        overflow: hidden;
+        zoom:1;
+        position: absolute;
+        left:0;
+        top:0;
+      }
+      .item1 {
+        width: 790px;
+        overflow: hidden;
+        zoom:1;
+        float: left;
+      }
+      .leftBtn,.rightBtn {
+        width:17px;
+        height: 33px;
+        position: absolute;
+        top:50%;
+        margin-top:-8.5px;
+      }
+      .leftBtn {
+        background:url(/html/img/guide_left.png) center center no-repeat;
+        left: 5px;
+      }
+      .rightBtn {
+        background:url(/html/img/guide_right.png) center center no-repeat;
+        right: 5px;
+      }
+      .detail {
+        float: left;
+        padding: 20px 0 0 50px;
+        .title {
+          color: #3a3a3a;
+          font-size: 14px;
+          span{
+                    display: inline-block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 400px;
+           }
+          .sub {
+            margin-left: 15px;
+            color: #8a8a8a;
+            font-size: 12px;
+          }
+        }
+
+        .prop {
+          padding: 25px 0 0 0;
+          vertical-align: bottom;
+
+          .caption {
+            color: #8a8a8a;
+            font-size: 12px;
+          }
+
+          .profit, .period, .threshold {
+            display: inline-block;
+            width: 130px;
+          }
+
+          .profit {
+            .field {
+              color: #ea5504;
+              font-size: 36px;
+            }
+            .unit {
+              color: #ea5504;
+              font-size: 18px;
+            }
+          }
+
+          .period {
+            .field {
+              font-size: 24px;
+            }
+            .unit {
+              font-size: 18px;
+            }
+          }
+
+          .threshold {
+            .field {
+              font-size: 18px;
+            }
+            .unit {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .action {
+        float: right;
+        border-left: 1px dashed #e2e2e2;
+        margin: 20px 0;
+        padding: 35px 0 0 0;
+        width: 238px;
+        height: 140px - 40px;
+        box-sizing: border-box;
+        font-size: 12px;
+        text-align: center;
+
+        .caption {
+          color: #8a8a8a;
+          margin-right: 6px;
+        }
+        .sold, .unit {
+          color: #3a3a3a;
+        }
+        .invest {
+          display: block;
+          margin: 13px auto 0 auto;
+          color: #fff;
+          font-size: 18px;
+          width: 140px;
+          height: 36px;
+          line-height: 36px;
+          box-sizing: border-box;
+          border: none;
+          border-radius: 4px;
+          background: $act-btn-color;
+
+          &:hover {
+            background: $act-btn-hover-color;
+          }
+          &.disabled {
+            background: $bg-btn-disabled;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

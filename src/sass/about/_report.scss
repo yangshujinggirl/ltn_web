@@ -1,0 +1,74 @@
+.about-report{
+  .title {
+    font-size: 18px;
+    color: #585858;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #e2e2e2;
+    margin: 20px 35px;
+    .item {
+      width: 100px;
+      text-align: center;
+      margin-left: 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .current{
+      border-bottom: 2px solid #fe6f20;
+      color: #fe6f20;
+    }
+  }
+  .agreement_list{
+    width: 970px;
+    overflow: hidden;
+    zoom:1;
+    padding-bottom: 20px;
+    li{
+      float: left;
+      width: 200px;
+      margin: 42px 0 0 35px;
+      .report_img{
+        display: inline-block;
+        width: 200px;
+        height: 290px;
+        border: 1px solid #e5e5e5;
+        background: #fefcf7;
+        overflow: hidden;
+        &:hover{
+            border:1px solid #e2e2e2;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+         }
+        .last{
+          margin: 150px 45px 0;
+          text-align: center;
+          .xiuding{
+            font-size: 14px;
+            color: #666;
+          }
+          .lianjie{
+            font-size: 12px;
+            color: #999999;
+          }
+        }
+        .last2{
+          margin-top: 160px;
+        }
+      }
+    }
+    .first{
+      margin-left: 26px;
+      text-align: center;
+      .list_title{
+          font-size: 16px;
+          margin-top: 10px;
+        }
+    }
+  }
+  .one,.two,.three{
+    display: none;
+    &.selected{
+      display: block;
+    }
+  }
+}

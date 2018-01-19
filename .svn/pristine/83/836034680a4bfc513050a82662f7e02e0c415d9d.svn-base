@@ -1,0 +1,63 @@
+<div class="user-dialog  page-component">
+    <div class="wrap">
+      <div class="forget component">
+        <h1 class="header">忘记密码</h1>
+        <div class="banner"><img src="../../../img/wangjimima.png"></div>
+        <div class="form" id="form">
+          <div class="row" id="wrapTel">
+            <div class="caption">手机号</div>
+            <div class="field">
+              <input class="input" type="text" placeholder="请输入手机号"  id='txtTel' data-required='true' data-type='telephone' data-emptyTip='手机号不能为空' data-errorTip="手机号不符合规则">
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="row" id="wrapImg">
+            <div class="caption">图片验证码</div>
+            <div class="field" id="imageCon">
+              <input class="input short" type="text" placeholder="请输入图片验证码" id="txtImageCode" data-required='true' data-emptyTip='图片验证码不能为空' data-type='imgCode'  data-errorTip="图片验证码不符合规则">
+              <img class="validate-image" src="" alt="图片验证码" id="imageCode">
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="row">
+            <div class="caption">短信验证码</div>
+            <div class="field">
+              <input class="input short" type="text" placeholder="请输入短信验证码" id="txtPhoneCode" data-required='true' data-emptyTip='短信验证码不能为空' data-type='phoneCode'  data-errorTip="短信验证码不符合规则">
+              <button class="validate-sms disabled" disabled="disabled" id="sendPhoneCode" >发送验证码</button>
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="row wrap-identity" id="wrapIdentity">
+            <div class="caption">身份证号</div>
+            <div class="field">
+              <input class="input ID" type="text"  placeholder="请输入身份证号" id="txtIdentity" data-required='true' data-emptyTip='身份证不能为空' data-type='identity'  data-errorTip="身份证不符合规则">
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="row">
+            <div class="caption">新密码</div>
+            <div class="field">
+              <input class="input" type="password" placeholder="请输入密码" id="txtPsd" data-required='true' data-emptyTip='新密码不能为空' data-type='password'  data-errorTip="密码不符合规则">
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="row">
+            <div class="caption">重复密码</div>
+            <div class="field">
+              <input class="input" type="password" placeholder="请再次输入密码" id="txtPsd2" data-required='true' data-emptyTip='重置密码不能为空' data-type='password'  data-errorTip="密码不符合规则">
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="login-tip" id="loginTip">
+            <span class="icon-wran"></span>
+            <span class="wran-tip" id="wranTip"></span>
+          </div>
+          <div class="row">
+            <div class="action">
+              <button class="button" id="submit">确认修改</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>

@@ -1,0 +1,83 @@
+.home-latest {
+
+  .wrap {
+    padding: 0;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+    border-left: none;
+  }
+
+  .notice, .media {
+    width: 50%;
+    display: inline-block;
+    float:left;
+  }
+  .detail {
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+
+    .theme {
+      width: 80px;
+      border: 1px solid #e2e2e2;
+      border-top: none;
+      border-bottom: none;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .content {
+      width: 508px;
+      height: 40px;
+      display: inline-block;
+      vertical-align: top;
+      .noticeList {
+        width: 430px;
+        height: 40px;
+        line-height: 40px;
+        padding:0;
+        margin:0;
+        float: left;
+      }
+      .item {
+        width: 430px;
+        height: 40px;
+        padding:0;
+        margin:0;
+      }
+      .title {
+        display: inline-block;
+        width: 210px;
+        line-height: 40px;
+        margin-right: 50px;
+        padding-left:20px;
+        color: #3a3a3a;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        p{
+          margin:0;
+        }
+
+        &:hover {
+          color: $font-hover-color;
+        }
+      }
+      .time {
+        padding: 0 20px;
+        text-align: center;
+        color: #8a8a8a;
+        vertical-align: top;
+      }
+      .more {
+        float: right;
+        margin-right: 32px;
+        color: #6a6a6a;
+
+        &:hover {
+          color: $font-hover-color;
+        }
+      }
+    }
+  }
+}

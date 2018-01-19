@@ -1,0 +1,9 @@
+<!-- @include ../../common/_top.html -->
+
+<!-- @include _private.html -->
+<script >
+  (function () {
+    document.getElementsByTagName("title")[0].innerHTML = "领投鸟网隐私条款";
+  })()
+</script>
+<!-- @include ../../common/_bottom.html -->

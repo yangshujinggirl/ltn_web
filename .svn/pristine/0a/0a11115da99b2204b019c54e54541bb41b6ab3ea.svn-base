@@ -1,0 +1,217 @@
+.crowd{
+  .big_box{
+    height: 320px;
+    overflow: hidden;
+  }
+  .mutual_banner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    img{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+    }
+  }
+  .mutual_caption{
+    width: 100%;
+    height: 125px;
+    background: #fff;
+    position: relative;
+    top: -2px;
+    .caption{
+      width: 1190px;
+      margin: 0 auto;
+      .beefsteaks{
+        width: 223px;
+        height: 125px;
+        padding-left: 30px;
+        display: inline-block;
+        margin-left: 55px;
+        &:hover{
+          -moz-box-shadow:0 0 14px 0 #dadada;
+           -webkit-box-shadow:0 0 14px 0 #dadada;
+           box-shadow: 0 0 14px 0 #dadada;
+        }
+        .caption1{
+          height: 55px;
+          padding: 35px 0;
+        }
+        .beefsteaks_icon{
+          display: inline-block;
+          vertical-align: top;
+        }
+        .beefsteaks_right{
+          display: inline-block;
+          margin-left: 20px;
+          .item{
+            font-size: 18px;
+            color: #394043;
+          }
+          .samll_info{
+            font-size: 12px;
+            color: #888c8e;
+            margin-top: 10px;
+          }
+        }
+      }
+      .teshu{
+        margin-left:0;
+      }
+    }
+  }
+  .nolistshow{ 
+      display: none;
+      margin-top: 30px;
+    }
+  .mutual_wrap{
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    zoom:1;
+    .mutual_list{
+      width: 1190px;
+      height: 300px;
+      background:#fff;
+      margin-top: 40px;
+      .plan{
+        cursor: pointer;
+        .plan_left{
+          width: 570px;
+          height: 300px;
+          display: inline-block;
+          vertical-align: top;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .plan_right{
+          width: 520px;
+          display: inline-block;
+          vertical-align: top;
+          padding: 40px 0;
+          margin-left: 30px;
+          .plan_title{
+            font-size: 22px;
+            color: #394043;
+            font-weight: bold;
+            word-wrap:break-word; 
+            word-break:break-all; 
+            overflow: hidden;
+          }
+          .plan_item{
+            font-size: 12px;
+            color: #b0b3b4;
+            margin-top: 15px;
+            word-wrap:break-word; 
+            word-break:break-all; 
+            overflow: hidden;
+          }
+          .bar {
+            padding: 8px 0;
+            margin-top: 40px;
+            .container {
+              height: 4px;
+              border-radius: 2px;
+              background: #e8e8e8;
+
+              .completed {
+                width: 0;
+                height: 4px;
+                max-width: 100%;
+                border-radius: 2px;
+                background: -webkit-linear-gradient(left, #ffce00,#fc7b00);
+                background: -o-linear-gradient(left, #ffce00,#fc7b00);
+                background: -moz-linear-gradient(left, #ffce00,#fc7b00);
+                background: linear-gradient(left,#ffce00,#fc7b00);
+              }
+            }
+          }
+          .target{
+            margin-top: 15px;
+            .target_money,.target_time{
+              display: inline-block;
+              font-size: 14px;
+              color: #888c8e;
+              .heise{
+                font-size: 20px;
+                color: #394043;
+              }
+            }
+            .target_time{
+              margin-left: 80px;
+            }
+          }
+          .plan_info{
+            font-size: 14px;
+            color: #888c8e;
+            margin-top: 30px;
+          }
+          .plan_but{
+            width: 108px;
+            height: 30px;
+            border: 0;
+            outline: none;
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #ff6f20;
+            font-size: 18px;
+            color: #ff6f20;
+            border-radius: 2px;
+            float: right;
+            cursor: pointer;
+            &:hover{
+              background:#ff6f20;
+              color: #fff;
+            }
+            &.disabled{
+              background: #ccc;
+              color: #fff;
+              border: 1px solid #ccc;
+              cursor: not-allowed;
+            }
+
+          }
+        }
+      }
+    }
+    .await{
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 14px;
+      color: #b0b3b4;
+      border: 1px solid #e2e2e2;
+      margin-top: 30px;
+    }
+    .pagination{
+      float: right;
+      margin: 50px auto 0;
+      text-align: center;
+    }
+  }
+  .nolist {
+    display: none;
+    width: 196px;
+    height: 179px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 515px;
+    background: url("/img/wushuju.png") no-repeat;
+    margin-top: 40px;
+    line-height: 270px;
+    color: #333;
+    font-size: 18px;
+    .none_shuju{
+      position: relative;
+      left:-47px;
+    }
+  }
+}

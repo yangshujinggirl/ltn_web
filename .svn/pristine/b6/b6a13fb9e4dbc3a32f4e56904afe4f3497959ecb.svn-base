@@ -1,0 +1,59 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+
+<div class="about-advantage">
+  <div class="advantage-content">
+    <div class="itemnav" id="abouttitle" data-content="/about/advantage">
+      <h1 class="head-1">品牌优势</h1>
+    </div>
+    <div class="terrace-business">
+      <div class="terrace-show">
+        <h2 class="head-2">平台优势</h2>
+        <p class="text">
+          领投鸟作为中国互联网家庭消费金融的先行者，一直致力于运用科技金融、智慧金融，以家庭生活消费场景为核心，打造连接租住、装修、出行、婚庆等资金需求的一站式家庭消费金融服务平台：<br>
+          资产优质 多维度甄选优质资产 <br>
+          多重风控 贷前贷后全程安全保障<br>
+          分散投资 避免系统性风险<br>
+          公开透明 第三方资金托管 资金流转透明
+        </p>
+      </div>
+      <div class="business-show">
+        <h2 class="head-2">业务模式</h2>
+        <p class="text">
+          领投鸟采用O2O（Online to Offline）方式，与线下非银行金融机构及实力企业合作，由合作机构对借款人进行信用与资质审查，并提供本息保障。领投鸟执行周密风控复审、引入严格监管，将通过审核的借款项目推荐给投资人。
+        </p>
+        <img src="/html/img/advantage_01.png" alt="">
+      </div>
+    </div>
+    <div class="user-buy">
+      <div class="login">
+        <div class="login-imgs"></div>
+        <span class="step">注册认证</span>
+      </div>
+      <div class="charge">
+        <div class="charge-imgs"></div>
+        <span class="step">充值到我的账户</span>
+      </div>
+      <div class="choose">
+        <div class="choose-imgs"></div>
+        <span class="step">选择项目进行购买</span>
+      </div>
+      <div class="buy-time">
+        <div class="buy-imgs"></div>
+        <span class="step">项目到期返还本息</span>
+      </div>
+      <p class="buy-text">用户购买流程</p>
+    </div>
+    <div class="account-collocation">
+      <img src="/html/img/advantage_07.png" alt="">
+      <p class="center">账户托管中心</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->

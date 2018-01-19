@@ -1,0 +1,70 @@
+<div class="product-confirm page-component" id="confirm">
+  <div class="wrap">
+    <div class="short component">
+      <div class="header">
+        <div class="title">确定投资</div>
+      </div>
+      <div class="form">
+        <!-- <div class="row">
+          <span class="caption">项目名称：</span>
+          <span class="field">乐巢投2016xxx-xxx</span>
+        </div>
+        <div class="row">
+        <span class="caption">投资期限：</span>
+          <span class="field">30天</span>
+          <span class="caption">年化收益：</span>
+          <span class="field">8%</span>
+        </div>
+        <div class="row">
+          <span class="caption">还款方式：</span>
+          <span class="field">一次性还款</span>
+          <span class="caption">投资金额：</span>
+          <span class="field"><mark class="mark">1000.00</mark>元</span>
+          <span class="caption">可用余额：</span>
+          <span class="field"><mark class="mark">1000.00</mark>元</span>
+          <span class="caption">到期收益：</span>
+          <span class="field"><mark class="mark">30.00</mark>元</span>
+          <span class="caption">起息日期：</span>
+          <span class="field">2016-03-05</span>
+           <span class="caption">到期日期：</span>
+          <span class="field">2016-03-20</span>
+        </div>
+        <div class="row">
+         
+        </div>
+        <hr class="dash">
+        <div class="row">
+          <span class="caption">已用鸟币：</span>
+          <span class="field">30鸟币</span>
+          <span class="caption">已用金券：</span>
+          <span class="field">30元返现券</span>
+        </div>
+        <div class="row">
+          <span class="caption">应付金额：</span>
+          <span class="field">1000.00元</span>
+          <span class="caption">实付金额：</span>
+          <span class="field"><mark class="mark">970.00</mark>元</span>
+        </div> -->
+        <div class="row">
+          <div class="accept">
+            <input id="isRead" class="check" type="checkbox" checked>
+            <label for="isRead" class="label">我已阅读并同意</label>
+            <a class="link" href="/html/product/capital" target="_blank">《资金托管协议》</a>
+            <a class="link" href="/html/product/financed" target="_blank">、《支付服务协议》</a>
+          </div>
+          <div class="action">
+            <button class="button" id="submit">确认投资</button>
+          </div>
+          <div class="tips">友情提示：强烈建议使用IE9以上浏览器，需注意处理浏览器右上角地址栏的拦截信息。</div>
+          <!--<div class="tips">
+            <span class="info" id="mianmi">开通投资免密支付后下次无需再次输入支付密码</span>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- pv统计代码 -->
+<script type="text/javascript">
+  _czc.push(["_trackPageview","/弹层弹出"]);
+</script>
+</div>

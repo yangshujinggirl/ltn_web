@@ -1,0 +1,10 @@
+<div class="account-linkage page-component">
+    <div class="wrap">
+        <div class="content">
+          <h1 class="caption">
+          <img  class="icon" src="../../../img/_bank_11.png">
+          恭喜您！实名认证成功</h1>
+          <div class="time">该页面将在<font style="color: red;">5s</font>  后自动关闭</div>
+        </div>
+    </div>
+</div>

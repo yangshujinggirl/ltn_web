@@ -1,0 +1,71 @@
+<div class="user-dialog page-component">
+  <div class="wrap">
+    <div class="realname component">
+      <div class="realnameLeft">
+        <div class="bank">
+          <div class="bankLeft">
+            <img src="/html/img/realname-san.png">
+          </div>
+          <div class="bankRight">为保障您的资金安全，<br/>
+            请先完成第三方资金托管账户开通及业务授权<br/>
+            </div>
+        </div>
+      <div class="ltn">领投鸟平台上所有资金交易均由<font class="liandong">联动优势科技有限公司(中国银联与中国移动联合成立)</font>提供第三方资金托管服务；您的资金只存在于联动优势账户中，用户资金与平台进行有效隔离。平台无法触碰用户资金，杜绝资金池。</div>
+      <div class="row">
+          <div class="tips">
+          <div class="img">
+            <img src="/html/img/up-box_01.png" alt="联动优势 = 中国移动 + 中国银联" class="bank">
+            </div>
+            <p class="content">
+              友情提示：<br>
+              (为了您的资金安全，您的账户需要存联动优势进行托管，领投鸟平台无法触及您的资金)<br>
+              我们使用法定接口验证您的身份证信息，如有疑问，请拨打电话：400-999-9980 开通成功后，您的注册手机将会收到资金托管账户开通成功支付密码的短信，请注意查收并妥善保管，在业务授权、以及投资后的提现环节中将会使用到该支付密码，请点击“立即认证”按钮，跳转联动优势页面完成实名认证。强烈建议使用IE9以上浏览器，需注意处理浏览器右上角地址栏的拦截信息。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="form" id="form">
+        <div class="login-top">
+            <div class="loginleft">开通联动优势资金托管账户</div>
+          </div>
+        <div class="row">
+          <div class="field">
+            <input class="input" type="text" placeholder="请输入您的姓名" id='txtName' data-required='true' data-type='username' data-emptyTip='请输入真实姓名' data-errorTip="姓名不符合规则" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的姓名'">
+          </div>
+          <div class="validation"></div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <input class="input" type="text" placeholder="请输入身份证号" id='txtIdentity' data-required='true' data-type='identity' data-emptyTip='请输入身份证号' data-errorTip="您输入的身份证号不合规" onfocus="this.placeholder=''" onblur="this.placeholder='请输入身份证号'">
+          </div>
+          <div class="validation"></div>
+        </div>
+        <div class="row" id="wrapImg">
+          <div class="field" id="imageCon">
+            <input class="input short" type="text" placeholder="请输入图片验证码" id="txtCode" data-required='true' data-emptyTip='请输入图片验证码' data-type='imgCode'  data-errorTip="图片验证码不符合规则">
+            <img class="validate-image" src="" alt="图片验证码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入图片验证码'">
+          </div>
+          <span class="new" id="imageCode"><img src="/html/img/login-shuaxin.png" height="37"></span>
+          <div class="validation"></div>
+        </div>
+        <div class="row">
+            <div class="accept">
+              <input id="isRead" class="check" type="checkbox" checked="checked">
+              <label for="isRead" class="label">同意领投鸟</label>
+              <a class="link" href="/html/product/capital/" target="_blank">《资金托管协议》</a>
+              <a class="link" href="/html/user/contract/" target="_blank">《个人用户授权协议》</a>
+            </div>
+        </div>
+        <div class="login-tip" id="loginTip">
+          <span class="icon-wran"></span>
+          <span class="wran-tip" id="wranTip"></span>
+        </div>
+        <div class="row">
+          <div class="action">
+            <button class="button"  id="submit">申请开通</button><a class="link" href="/html/account/viewall">暂不认证</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

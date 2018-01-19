@@ -1,0 +1,129 @@
+<div class="julyreport">
+  <div class="banner">
+    <img src="../../img/july_banner.png">
+  </div>
+  <div class="caption">
+    <div class="content">
+      <div class="title">定期投资数据</div>
+      <div class="cont">
+        <div class="cont_left">
+          <div class="header">4-7月单月投资金额(单位:万元)</div>
+          <div class="image"></div>
+        </div>
+        <div class="cont_right">
+          <div class="filed">7月份投资金额:</div>
+          <div class="unit"><span class="samll">125,516,704</span>元</div>
+          <div class="filed filed2">7月份投资金额环比6月份 </div>
+          <div class="unit">增长<span class="samll">36%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="content">
+      <div class="title">7月份收益数据</div>
+      <div class="cont">
+       <div class="gains"></div>
+       <div class="money">
+         <div class="money_left">
+           <div class="unit"><span class="juse">892,293.56</span>元</div>
+           <div class="item">7月份为投资者带来利润</div>
+         </div>
+         <div class="money_right">
+           <div class="unit"><span class="juse">9,616</span>次</div>
+           <div class="item">7月份按时还款</div>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="content">
+      <div class="title">7月份成就</div>
+      <div class="cont">
+       <div class="gains1"></div>
+       <div class="bear">
+         在您的见证下,我们稳步走过一个个里程碑
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="content">
+      <div class="title">7月份投资用户性别占比</div>
+      <div class="cont">
+       <div class="gains2"></div>
+       <div class="bear">
+         
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="content">
+      <div class="title">7月份投资用户星座人数占比</div>
+      <div class="cont">
+       <div class="gains3"></div>
+       <div class="bear">
+         
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="content">
+      <div class="title">7月份TOP投资人数据</div>
+      <div class="cont">
+       <div class="gains4"></div>
+       <div class="bear">
+         
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="content">
+      <div class="title">7月份TOP标的数据</div>
+      <div class="cont">
+       <div class="gains5"></div>
+       <div class="bear">
+         
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="content">
+      <div class="title">7月份平台活动</div>
+      <div class="cont">
+       <div class="gains6">
+         <div class="cap one"></div>
+         <div class="cap two">
+           <div class="title1">庆祝累投破4亿,全场加息</div>
+           <div class="info">7.20-7.31 领投鸟夏日狂欢，全场加息不<br/>停。活动期间共计发出加息标57个。</div>
+         </div>
+       </div>
+       <div class="gains6">
+         <div class="cap one1"></div>
+         <div class="cap two">
+           <div class="title1">“定制爱”这个七夕要有<br/>    
+           点不一样</div>
+           <div class="info2"> 7.26-8.10 领投鸟为爱筑家，为用户<br/>
+           定制私人专属玫瑰二维码，还有白色<br/>    恋人巧克力，电影票，迪士尼门票等 <br/>     浪漫好礼。</div>
+         </div>
+       </div>
+       <div class="bear">
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="content">
+      <div class="title3"></div>
+      <div class="cont">
+       <div class="bear1">
+       </div>
+      </div>
+    </div>
+  </div>
+</div>

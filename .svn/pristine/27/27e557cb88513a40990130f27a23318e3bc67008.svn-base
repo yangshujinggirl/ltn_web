@@ -1,0 +1,83 @@
+<!-- 获取头部可用余额 -->
+<script type="text/template" id="tempDetailhead">
+    <div class="remain">
+      <div class="first-level">
+        <span class="field">累计投资(元)</span>
+        <span class="unit"> {{=strUtil().formatKilo(it.totalOrderAmount)}}</span>
+      </div>
+      <div class="second-level">
+        <div class="leve">
+          <span class="field">当月投资(元)</span>
+          <span class="unit"> {{=strUtil().formatKilo(it.last30DayInvest)}}</span>
+        </div>
+        <div class="leve">
+          <span class="field">当月到期(元)</span>
+          <span class="unit"> {{=strUtil().formatKilo(it.last30DayExpiration)}}</span>
+        </div>
+      </div>
+      <div class="project">{{=it.last30DayExpirationNum}}个项目</div>
+    </div>
+    <div class="sum">
+      <div class="first-level">
+        <span class="field">待收收益(元)</span>
+        <span class="unit"> {{=strUtil().formatKilo(it.orderWaitedIncome)}}</span>
+      </div>
+      <div class="second-level">
+        <div class="leve">
+          <span class="field">累计收益(元)</span>
+          <span class="unit"> {{=strUtil().formatKilo(it.orderReceivedIncome)}}</span>
+        </div>
+        <div class="leve difference">
+          <div>
+            <span class="field">账户余额(元)</span>
+            <span class="unit"> {{=strUtil().formatKilo(it.usableBalance)}}</span>
+          </div>
+          <div class="btblist">
+            <button class="btn invest" id="investBtn">投资</button>
+            <button class="btn" id="chargeBtn">充值</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</script>
+<!-- 资金明细 -->
+<script type="text/template" id="tempDetail">
+  <thead>
+    <tr>
+      <th>交易时间</th>
+      <th>项目名称</th>
+      <th>投资金额</th>
+      <th>到期收益</th>
+      <th>交易状态</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{~it.fixedProductOrderInfoList:value:index}}
+    <tr>
+      <td><div class="dealtime">{{=value.orderDate}}</div></td>
+      {{ if(value.productType=='LCT'){ }}
+      <td><a href="/html/product/short/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ } else if(value.productType=='LCTXL') { }}
+      <td><a href="/html/product/long/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ }else if(value.productType=='XSB'){ }}
+      <td><a href="/html/product/first/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ }else if(value.productType=='ZRB'){ }}
+      <td><a href="javascript:void(0)">{{=value.productName}}</a></td>
+      {{ }else{ }}
+      <td><a href="/html/product/start/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ } }}
+      <td>￥{{=strUtil().formatKilo(value.orderAmount)}}</td>
+      <td>
+        <span class="high">￥{{=strUtil().formatKilo(value.expectedRevenue)}}</span>
+        <span class="speci">利息：￥{{=strUtil().formatKilo(value.interest)}}</span>
+        <span class="speci">奖励：{{=value.expectedRevenueTxt}}</span>
+        <span class="speci">预计还款时间：{{=value.auctionDate}}</span>
+      </td>
+      <td>{{=value.status=="1"?'投标中':(value.status=="2"?'持有中':
+      (value.status=="4"?'已还款':'还款中'))}}</td>
+      <td>{{=value.orderNo}}<br/><a href="javascript:void(0)" data-id='{{=value.orderNo}}' class="inAgree {{=value.status=="1"?'none':''}}">查看协议&gt;&gt;</a></td>
+    </tr>
+  {{~}}
+  </tbody>
+</script>

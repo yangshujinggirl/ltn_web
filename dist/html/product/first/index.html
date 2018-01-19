@@ -1,0 +1,993 @@
+
+  <!DOCTYPE html>
+  <html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="/html/css/style.css?v=20171023">
+    <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name=”renderer” content=”webkit” />
+   <script src="/html/js/lib/jquery.min.js"></script>
+    <script src="/html/js/lib/jquery.easydropdown.min.js"></script>
+    <script src="/html/js/lib/jquery.paging.min.js"></script>
+    <script src="/html/js/lib/jquery.validation.min.js"></script>
+    <script src="/html/js/lib/doT.min.js"></script>
+    <script src="/html/js/app.min.js?v=20161017"></script>
+  
+
+  <title>领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，领头鸟，互联网理财、P2P，真正短期标</title>
+  <meta name="keywords" content="领投鸟理财、领投鸟官网平台、领头鸟、互联网理财、不动产理财、P2P网贷、投资理财、短期理财">
+  <meta name="description" content="领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，平台提供网络贷款，投资理财，赎楼业务，小额贷款，短期贷款，互联网理财、P2P网贷。">
+
+  </head>
+  <body>
+  
+
+  <div class="commonNavTop page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="service">客服电话：400-999-9980</div>
+          <div class="iconlist">
+            <div class="iconItem weixin">
+              <div class="code"></div>
+            </div>
+            <div class="iconItem weibo">
+              <a href="http://weibo.com/u/5935757405" target="_blank"></a>
+            </div>
+            <div class="iconItem shouji">
+              <a href="/other/downloadapp " target="_blank"></a>
+            </div>
+            <div class="iconItem lipin">
+              <a href="/html/activity_banner" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span class="navItem login" onclick="user().clickEvent();" id="loginLink">登录</span>
+          <a href="/html/user/register" class="navItem register">注册</a>
+          <a class="navItem welcome"></a>
+          <a href="javascript:void(0);" class="navItem logoff">安全退出</a>
+          <a href="/other/actlist" class="navItem" >最新活动</a>
+          <a href="/other/downloadapp" class="navItem">下载APP</a>
+          <a href="/help/aboutltn" class="navItem">帮助中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="commonNavTwo page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="logo" id="logo">
+            <img src="/html/img/imageTwo/home/logo.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <a href="/" class="navItem" onclick="user().clickEvent();">首页</a>
+          <a href="/finance/list/0/1/0/0" class="navItem" onclick="user().clickEvent();">投资</a>
+         <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+         <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+          <!-- <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a> -->
+          <a href="http://bbs.lingtouniao.com" class="navItem" onclick="user().clickEvent();" target="_blank">社区</a>
+          <a href="/other/downloadapp " class="navItem" onclick="user().clickEvent();">下载APP</a>
+          <a href="/other/safeguards " class="navItem" onclick="user().clickEvent();">安全保障</a>
+          <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+          <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="product-crumb page-component" id="crumb">
+    <div class="wrap">
+      <div class="first component">
+        <ul class="crumb-list">
+          <li class="item">
+            <a href="../../">首页</a>
+          </li>
+          <li class="item">
+            <a href="../">理财</a>
+          </li>
+          <li class="item">
+            <a href="#">新手标详情</a>
+          </li>
+        </ul>
+        <ul class="notice marquee" id="marquee">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-prop page-component" id="prop">
+    <div class="wrap">
+      <div class="first component">
+        <div class="header">
+          <h1 class="title">新手标</h1>
+          <ul class="coupon-list">
+          </ul>
+          <div class="contract">
+            查看<a class="link" href="./contract" target="_blank">《新手标协议》</a>范本
+          </div>
+        </div>
+        <div class="content">
+          <div class="prop">
+            <div class="main">
+              <div class="chart">
+                <div class="container" id="chartProcess"></div>
+                <div class="legend">
+                  <div class="field">80%</div>
+                  <div class="caption">项目进度</div>
+                </div>
+              </div>
+              <div class="profit">
+                <span class="field">5.5</span><span class="unit">%</span>
+                <span class="caption">年化收益率</span>
+              </div>
+              <div class="period">
+                <span class="field">5</span><span class="unit">天</span>
+                <span class="caption">投资期限</span>
+              </div>
+              <div class="surplus">
+                <span class="field">19,000.00</span><span class="unit">元</span>
+                <span class="caption">剩余可投金额</span>
+              </div>
+            </div>
+            <div class="sub">
+              <div class="amount">
+                <span class="caption">项目总金额</span>
+                <span class="field">500,000.00</span><span class="unit">元</span>
+              </div>
+              <div class="list">
+                <div class="item">
+                  <span class="caption">投资方式：</span>
+                  <span class="field">现金投资</span>
+                </div>
+                <div class="item">
+                  <span class="caption">计息方式：</span>
+                  <span class="field">T+0</span>
+                </div>
+                <div class="item">
+                  <span class="caption">收益方式：</span>
+                  <span class="field">固定收益</span>
+                </div>
+                <div class="item">
+                  <span class="caption">还款方式：</span>
+                  <span class="field">随时转出</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="title">
+              <span class="main">投资金额</span>
+              <span class="sub"></span>
+            </div>
+            <div class="list">
+              <div class="item">
+                <span class="caption">起投金额：</span>
+                <span class="field">1000元</span>
+              </div>
+              <div class="item">
+                <span class="caption">可投金额：</span>
+                <span class="field">xxx,xxx.xx元</span>
+              </div>
+              <div class="item">
+                <span class="caption">计息日期：</span>
+                <span class="field">xxxx－xx－xx</span>
+              </div>
+              <div class="item">
+                <span class="caption">还款日期：</span>
+                <span class="field">xxxx－xx－xx</span>
+              </div>
+            </div>
+            <button class="button">立即投资</button>
+            <span class="tips">领投鸟提醒您：理财非存款，投资需谨慎！</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-desc page-component">
+    <div class="wrap">
+      <div class="first component">
+        <div class="banner">
+  
+        </div>
+        <ul class="tab-list" id="tescXSBtab">
+          <li class="item selected" data-content="detail">项目详情</li>
+          <li class="item" data-content="risk">风控保障</li>
+          <li class="item" data-content="log">投资记录</li>
+          <li class="item" data-content="qa">常见问题</li>
+        </ul>
+        <ul class="content-list detail" id="contentXsbTab">
+          <li class="item" id="XSBdetail">
+            <article class="detail">
+              <div class="row">
+                <span class="caption">项目描述：</span>
+              </div>
+              <!-- <div class="row">
+                <span class="caption sub">项目说明：</span>
+                <span class="field">领投鸟体验标是为了使新注册的投资用户更快的了解平台投资流程，而打造的虚拟理财产品。投资当日计息，到期后收回本金，利息归您，利息以鸟币的形式返回。投资时间为6天，年化收益高达8%，既满足了小白用户对平台的了解，还可以获得相应利息。</span>
+              </div> -->
+              <!-- <div class="row">
+                <span class="caption sub">借款用途：</span>
+                <span class="field">赎楼</span>
+              </div>
+              <div class="row">
+                <span class="caption sub">还款来源：</span>
+                <span class="field">房屋买卖中的卖房款</span>
+              </div> -->
+              <hr class="dash">
+              <div class="row">
+                <span class="caption">项目协议：</span>
+                <span class="field"><a class="link" href="/html/product/long/contract" target="_blank">《新手标协议》</a></span>
+              </div>
+              <div class="row">
+                <span class="caption">保障方式：</span>
+                <span class="field"><a href="/other/safeguards /" class="link">《平台安全保障详解》</a></span>
+              </div>
+             <!--  <div class="row">
+                <span class="caption">投资期限：</span>
+                <span class="field">15天（2016-02-12至2016-05-27）</span>
+              </div>
+              <div class="row">
+                <span class="caption">到账时间：</span>
+                <span class="field">一次性还本付息，到期后1-3个工作日到账，资金直接转入理财账户。</span>
+              </div>
+              <hr class="dash">
+              <div class="row">
+                <span class="caption">房屋信息：</span>
+                <ul class="list">
+                  <li class="item">
+                    <span class="key">市场价值</span>
+                    <span class="value">380万</span>
+                  </li>
+                  <li class="item">
+                    <span class="key">产权性质</span>
+                    <span class="value">住宅</span>
+                  </li>
+                  <li class="item">
+                    <span class="key">建筑面积</span>
+                    <span class="value">120平米</span>
+                  </li>
+                  <li class="item">
+                    <span class="key">所处位置</span>
+                    <span class="value">浙江杭州梦琴湾佳苑</span>
+                  </li>
+                </ul>
+              </div>
+              <hr class="dash">
+              <div class="row">
+                <span class="caption solo">借款人信息：</span>
+                <ul class="list">
+                  <li class="item">
+                    <span class="key">姓名</span>
+                    <span class="value">冯XX</span>
+                  </li>
+                  <li class="item">
+                    <span class="key">性别</span>
+                    <span class="value">女</span>
+                  </li>
+                  <li class="item">
+                    <span class="key">婚姻</span>
+                    <span class="value">已婚</span>
+                  </li>
+                </ul>
+              </div>
+              <hr class="dash">
+              <div class="row">
+                <span class="caption solo">其他相关信息：</span>
+                <ul class="list">
+                  <li class="item">
+                    <span class="key">交易中介</span>
+                    <span class="value">中原地产田林路分店</span>
+                  </li>
+                  <li class="item">
+                    <span class="key">按揭银行</span>
+                    <span class="value">招商银行田林路支行</span>
+                  </li>
+                </ul>
+              </div> -->
+              <hr class="dash">
+              <div class="row">
+                <span class="caption solo">风控审核项目：</span>
+                <ul class="risk">
+                  <li class="item">
+                    <div class="icon1"></div>
+                    <span class="key">房屋买卖合同</span>
+                  </li>
+                  <li class="item">
+                    <div class="icon2"></div>
+                    <span class="key">房产证</span>
+                  </li>
+                  <li class="item">
+                    <div class="icon3"></div>
+                    <span class="key">银行批贷函</span>
+                  </li>
+                  <li class="item">
+                    <div class="icon4"></div>
+                    <span class="key">赎楼服务合同</span>
+                  </li>
+                  <li class="item">
+                    <div class="icon5"></div>
+                    <span class="key">个人征信报告</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+          <li class="item">
+            <article class="risk">
+              <div class="JS-common">
+                <div class="row-r">
+                  <p class="lable">流程保障：</p>
+                  <div class="img-wrap">
+                    <img src="/html/img/fincal-plan/process.jpg" alt="">
+                  </div>
+                </div>
+                <div class="row-r">
+                  <p class="lable">风险控制：</p>
+                  <div class="insure-content">
+                    <p class="title">1.平台严格甄选资产端合作机构，对资产端合作机构进行全面的尽职调查。</p>
+                    <p class="content">
+                      对资产端合作机构进行现场调研，以了解其实际经营情况，包括办公场所的现场核验，在岗人员访谈，业务系统演示等，以确信该机构经营正常，具备持续经营能力且发展良好；<br/>
+                      了解平台股权结构，高级管理人员履历，以确认其具有相应的成熟管理结构及相关经验，同时不存在管理层欺诈风险等；<br/>
+                      了解企业财务情况，关注在手货币资金、资产负债率、净利率等重要财务指标，关注其自身借款及或有负债，以确保其具备较强的财务实力。
+                    </p>
+                    <p class="title">2.资产端战略合作伙伴每笔业务严格风控，贷前、贷中、贷后全方位、多手段把控风险。</p>
+                  </div>
+                  <div class="insure-content">
+                    <p class="title">贷前：</p>
+                    <p class="content">
+                      1.场景消费合作商户优质客户推荐，真实场景消费合同及相关证明验证，确保消费真实。<br/>
+                      2.申请人身份认证及活体识别认证，排除欺诈风险。<br/>
+                      3.申请人学历信息、工作信息、常住地、紧急联系人信息验证及电话确认，确保申请人信息真实。<br/>
+                      4.对接第三方征信及风险识别机构，对申请人进行信用评分、黑名单过滤、多头借贷查询、排除高风险人群 。<br/>
+                      5.申请人个人信息授权查询，包括但不限于手机运营商信息、芝麻信用分、社保、公积金、学历、央行征信等，筛选出低风险优质客户。<br/>
+                      6.专业风控人员风控审核及复核，利用专业力量降低风险事件发生率。
+                    </p>
+                  </div>
+                  <div class="insure-content">
+                    <p class="title">贷中：</p>
+                    <p class="content">
+                      1.分期申请合同电子保全及法律公证，防止合同丢失及篡改。<br/>
+                      2.消费分期款项放款至合作商户，确保资金流向。<br/>
+                      3.大额分期款项分批次放款，把控放款风险。
+                    </p>
+                  </div>
+                  <div class="insure-content">
+                    <p class="title">贷后：</p>
+                    <p class="content">
+                      1.到期还款提醒及系统自动代扣，确保及时回款。<br/>
+                      2.贷后跟踪检查及逾期还款短信、电话提醒，及时处理风险。<br/>
+                      3.专业法务团队、催收团队，优质第三方外包催收合作伙伴，风险事件发生时使用合法手段降低整体逾期率及坏账率，提高催收成功率。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="item" id="desc">
+            <article class="log">
+              <div class="row">
+                <!-- <span class="caption solo">投资记录：</span> -->
+               <!--  <table class="log-list">
+                  <thead>
+                    <tr>
+                      <th>序列号</th>
+                      <th>成交时间</th>
+                      <th>投资人</th>
+                      <th>投资金额</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>09887777788</td>
+                      <td>2016-01-25 12:09:08</td>
+                      <td>赵泽君</td>
+                      <td>8888.88元</td>
+                    </tr>
+                    <tr>
+                      <td>09887777788</td>
+                      <td>2016-01-25 12:09:08</td>
+                      <td>赵泽君</td>
+                      <td>8888.88元</td>
+                    </tr>
+                    <tr>
+                      <td>09887777788</td>
+                      <td>2016-01-25 12:09:08</td>
+                      <td>赵泽君</td>
+                      <td>8888.88元</td>
+                    </tr>
+                    <tr>
+                      <td>09887777788</td>
+                      <td>2016-01-25 12:09:08</td>
+                      <td>赵泽君</td>
+                      <td>8888.88元</td>
+                    </tr>
+                  </tbody>
+                </table> -->
+              </div>
+              <div class="nolist">
+                <div class="logoIcon">
+                  暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="item">
+            <article class="qa">
+              <div class="row-qa">
+                <h3 class="ques-name">Q1：什么是新手标？</h3>
+                <p class="answer">
+                  新手标是领投鸟理财专为新手设计的投资标的，仅限在领投鸟理财平台上没有进行过任何投资的投资者。
+                  目前平台新手标有两种，用户只能在两种新手标中二选一，并且只能投资一次。
+                  第一种：投资期限为3天，预计年化收益率为18%，最低100元起投，最高10000元上限；
+                  第二种：投资期限为30天，预计年化收益率为15%，最低500元起投，最高20万上限。
+                </p>
+              </div>
+  
+              <div class="row-qa">
+                <h3 class="ques-name">Q2：我把钱借给了谁？</h3>
+                <p class="answer">可在项目详情中查看借款人信息和房产信息</p>
+              </div>
+  
+              <div class="row-qa">
+                <h3 class="ques-name">Q3：新手标到期后收益如何？</h3>
+                  <p class="answer">投资10000元新手标，那么到期后的收益为10000*18%/365*5=24，通过计算，10000元购买新手标，5天可获得24元的收益，每日收益高达得4.8元。</p>
+              </div>
+  
+              <div class="row-qa">
+                <h3 class="ques-name">Q4：新手标是否可以使用返现券、加息券或者鸟币？</h3>
+                <p class="answer">领投鸟理财新手标不可使用任何券或者鸟币。</p>
+              </div>
+  
+              <div class="row-qa">
+                <h3 class="ques-name">Q5：新手标投资金额有限制吗？</h3>
+                <p class="answer">新手标100元起投，上限为10000元</p>
+              </div>
+  
+              <div class="row-qa">
+                <h3 class="ques-name">Q6：投资新手标后，到期了会自动返还吗？</h3>
+                <p class="answer">在领投鸟理财平台上的投资，到期后本息会自动返还至投资人的“账户中心-可用余额”里，可提现或再投资。</p>
+              </div>
+  
+              <div class="row-qa">
+                <h3 class="ques-name">Q7：投资新手标后，没到期的时候可以提出来吗？</h3>
+                <p class="answer">新手标属于固定期限类理财产品，未到期时不可赎回。</p>
+              </div>
+  
+              <div class="row-qa">
+                <h3 class="ques-name">Q8：提现有金额限制吗？</h3>
+                <p class="answer">领投鸟理财账户提现单日限额100万 。</p>
+              </div>
+  
+              <div class="row-qa">
+                <h3 class="ques-name">Q9：领投鸟提现要不要手续费？</h3>
+                <p class="answer">每月有3次免费提现的机会，超出3次的话每次提现扣除2鸟币，没有鸟币的情况下扣除2元人民币</p>
+              </div>
+  
+              <div class="row-qa">
+                <h3 class="ques-name">Q10：领投鸟可用余额提现多久到账？</h3>
+                <p class="answer">您在工作日17点之前发起的提现申请当日到账，17点以后发起的提现第二个工作日到账。若遇节假日顺延。每周一因要审核周五、周六、周日三天的付款申请，因此略有延时。</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="product-buy component" id="buy">
+    <div class="wrap">
+      <div class="current">
+        <div class="header">
+          <div class="title">投资购买</div>
+          <div class="close" id="buyClose"></div>
+        </div>
+        <div class="form" id="form">
+          <!-- <div class="row">
+            <div class="caption">投资金额：</div>
+            <div class="field">
+              <input class="input" type="text" placeholder="起投金额100" id='txtMoney' data-required='true' data-type='number' data-emptyTip='金额不能为空' data-errorTip="金额不符合规则">
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="row">
+            <div class="caption">可用余额：</div>
+            <div class="field">
+              <span class="text">300.00元</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="caption">可投金额：</div>
+            <div class="field">
+              <span class="text">300.00元</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="caption">起息日期：</div>
+            <div class="field">
+              <span class="text">2016-02-27</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="caption">到期日期：</div>
+            <div class="field">
+              <span class="text">2016-02-28</span>
+            </div>
+          </div> -->
+          <div class="row submit">
+            <hr class="dash">
+            <div class="actual">
+              <span class="text">实际金额：</span>
+              <span class="amount" id="amountMoney">0.00元</span>
+            </div>
+            <div class="action">
+              <button class="button" id="submit">确认投资</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="common-footer page-component">
+    <div class="wrap">
+      <div class="left">
+        <div class="iphone">
+          <div class="left_icon"></div>
+          <div class="left_time">（工作日9:30-18:30）</div>
+          <div class="left_tel">400-999-9980</div>
+          <div class="left_QQ">领投鸟投资用户交流群：247441580</div>
+        </div>
+      </div>
+      <div class="center_cont">
+        <ul>
+          <li class="title">关于我们</li>
+          <li>
+            <a href="/about/pltinfo" target="_blank">平台介绍</a>
+          </li>
+          <li>
+            <a href="/about/team" target="_blank">团队介绍 </a>
+          </li>
+          <li>
+            <a href="/about/advantage" target="_blank">品牌优势</a>
+          </li>
+          <li>
+            <a href="/about/honor" target="_blank">平台荣誉</a>
+          </li>
+          <li>
+            <a href="/about/partner" target="_blank">合作伙伴</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="title">联系我们</li>
+          <li>
+            <a href="/about/notice" target="_blank">平台公告</a>
+          </li>
+          <li>
+            <a href="/about/news" target="_blank">媒体报道 </a>
+          </li>
+          <li>
+            <a href="/about/join" target="_blank">加入我们</a>
+          </li>
+          <li>
+            <a href="/about/contact" target="_blank">联系我们</a>
+          </li>
+        </ul>
+        <ul class="three">
+          <li class="title">帮助中心</li>
+          <li>
+            <a href="/other/newerguide " target="_blank">新手指引</a>
+          </li>
+          <li>
+            <a href="/help/aboutltn/" target="_blank">帮助中心 </a>
+          </li>
+          <li>
+            <a href="/other/actlist " target="_blank">热门活动</a>
+          </li>
+        </ul>
+        <ul class="four">
+          <li class="title">安全保障</li>
+          <li>
+            <a href="/about/report" target="_blank">运营报告</a>
+          </li>
+          <li>
+            <a href="/about/protocol" target="_blank">法律法规 </a>
+          </li>
+          <li>
+            <a href="/other/safeguards " target="_blank">安全保障</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="scan">
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-app.png" alt="APP下载二维码">
+            <span class="title">APP下载</span>
+            <div class="youxiang">
+              <span class="small_icon1">
+                <img src="/html/img/footer_icon2.png">
+              </span>客服邮箱
+              <div class="tips">客服邮箱：service@lingtouniao.com</div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-weixin.png" alt="微信公众号二维码">
+            <span class="title">微信公众号</span>
+            <a href="http://weibo.com/u/5935757405" target="_blank"><div class="youxiang">
+                <span class="small_icon1">
+                  <img src="/html/img/footer_icon3.png">
+                </span>新浪微博
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_last">
+        <div class="contact" style="z-index:1;">
+          <div class="service">
+            <span><script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1258037212'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258037212%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?2ce520d6a6a41eb85c78974ad14678c4";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+          </script>
+          <script type="text/javascript">
+            var _py = _py || [];
+            _py.push(['a', 'YQs..WOGqF1S7kb_VEl9N283aBX']);
+            _py.push(['domain','stats.ipinyou.com']);
+            _py.push(['e','']);
+            -function(d) {
+              var s = d.createElement('script'),
+              e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+              f = 'https:' == location.protocol;
+              s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
+            }(document);
+            </script>
+            <noscript><img src="//stats.ipinyou.com/adv.gif?a=YQs..WOGqF1S7kb_VEl9N283aBX&e=" style="display:none;"/></noscript>
+          </span>
+          </div>
+        </div>
+        <div class="icons">
+          <!--诺顿网站图片LOGO-->
+          <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lingtouniao.com&amp;lang=zh_cn" target="_bank" class="icons1"></a>
+  
+          <!--诚信网站图片LOGO，不用加版本号是新图片-->
+          <a href="http://credit.szfw.org/CX20160524015311350170.html" target='_blank' class="icons2"></a>
+  
+          <!--工商图片LOGO-->
+          <a href="http://www.sgs.gov.cn/lz/etpsInfo.do?method=index" target='_blank' class="icons3"></a>
+  
+          <!--ICP网站图片LOGO-->
+          <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target='_blank' class="icons4"></a>
+  
+          <!--行业协会网站图片LOGO-->
+          <a href="http://sfia.org.cn/h/n/user/toDetailMermbersMainInfo?uId=2016072400000000077" target='_blank' class="icons5"></a>
+  
+          <!--安全联盟网站图片LOGO-->
+          <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.lingtouniao.com&at=business" target='_blank' class="icons6"></a>
+  
+          <!--互联网金融网站图片LOGO-->
+          <a href="http://si.trustutn.org/info?sn=172170915000608884439&certType=4%22%3E%3Cimg" target='_blank' class="icons7"></a>
+  
+          <!--可信网站图片LOGO-->
+          <a href="https://ss.knet.cn/verifyseal.dll?sn=e160523310104635708sr5000000&pa=500267" tabindex="-1" id="urlknet" target="_blank" class="icons8"></a>
+        </div>
+        <div class="friend">
+          <div class="friend_top">友情链接：
+          <a href="http://www.wdzj.com/dangan/ltnlc/" target="_blank">网贷之家</a>
+             ｜   <a href="http://lingtouniao.p2peye.com/" target="_blank">网贷天眼</a>
+                ｜   <a href="http://baike.baidu.com/item/领投鸟理财" target="_blank">百度百科</a>
+                   ｜   <a href="http://tieba.baidu.com/f?kw=%E9%A2%86%E6%8A%95%E9%B8%9F&ie=utf-8" target="_blank">百度贴吧</a>
+                      ｜   <a href="http://mp.sohu.com/profile?xpt=cHBhZzI1NjRjY2RmOThmZkBzb2h1LmNvbQ==" target="_blank">搜狐媒体</a>
+                         ｜   <a href="http://weibo.com/u/5935757405?topnav=1&wvr=6&topsug=1" target="_blank">新浪微博</a>
+                            ｜   <a href="http://toutiao.com/m5784948163/" target="_blank">今日头条</a>
+                               ｜   <a href="http://www.lagou.com/gongsi/103258.html?m=1" target="_blank">拉勾</a>
+                                  ｜   <a href="http://www.itjuzi.com/company/32856" target="_blank">IT桔子</a></div>
+              <div class="friend_bottom">公司地址：上海市金沙江路2145号普罗娜商务广场A
+              栋7楼   ©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有<a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15056137号</a>  市场有风险 投资需谨慎</div>
+        </div>
+  </div>
+    <div class="kefu">
+      <script>
+      (function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","http://lingtouniao.udesk.cn/im_client/js/udeskApi.js?1480664200567","ud");
+      ud({
+          "code": "18bj2e9k",
+          "link": "http://lingtouniao.udesk.cn/im_client?web_plugin_id=23176"
+      });
+    </script>
+    </div>
+  
+
+  <div class="common-cover page-component">
+  </div>
+
+  <!-- 公告消息轮播模板渲染 -->
+  <script type="text/template" id="temprumb">
+    <div class="wrap">
+      <div class="first component">
+        <ul class="crumb-list">
+          <li class="item">
+            <a href="/">首页</a>
+          </li>
+          <li class="item">
+            <a href="/finance/list/1/1/0/0">理财</a>
+          </li>
+          <li class="item">
+            <a href="#">新手标详情</a>
+          </li>
+        </ul>
+        <ul class="notice marquee" id="marquee">
+          {{~it.messageList:value}}
+          <li class="item">{{=value}}</li>
+          {{~}}
+        </ul>
+      </div>
+    </div>
+  </script>
+  
+  <!-- 标地头模板渲染 -->
+  <script type="text/template" id="tempProp">
+    <div class="wrap">
+      <div class="first component">
+        <div class="header">
+          <h1 class="title">{{=it.productName}}</h1>
+          <!-- <ul class="coupon-list">
+          </ul> -->
+          <div class="contract">
+            {{ if(it.secondCategoryId=='1004005'){ }}
+              查看<a class="link" href="http://www.lingtouniao.com/ltn-static/protocol/ztproduct" target="_blank">《智投产品协议》</a>范本
+            {{ }else{ }}
+              查看<a class="link" href="http://www.lingtouniao.com/ltn-static/protocol/lcjhproduct" target="_blank">《理财计划协议》</a>范本
+            {{ } }}
+          </div>
+        </div>
+        <div class="content">
+          <div class="prop">
+            <div class="main">
+              <div class="chart">
+                <div class="container" id="chartProcess"></div>
+                <div class="legend">
+                  <div class="field">{{=it.progress}}%</div>
+                  <div class="caption">项目进度</div>
+                </div>
+              </div>
+              <div class="profit">
+                <span class="field">{{=it.annualIncomeText}}</span></span>
+                <span class="caption">历史年化收益</span>
+              </div>
+              <div class="period">
+                <span class="field">{{=parseFloat(it.convertDay)}}</span><span class="unit">天</span>
+                <span class="caption">投资期限</span>
+              </div>
+              <div class="surplus">
+                <span class="field">{{=Util.padFloatMoney(it.productRemainAmount)}}</span><span class="unit">元</span>
+                <span class="caption">剩余可投金额</span>
+              </div>
+            </div>
+            <div class="sub">
+              <div class="amount">
+                <span class="caption">项目总金额</span>
+                <span class="field">{{=parseFloat(it.productTotalAmount)}}</span><span class="unit">元</span>
+              </div>
+              <div class="list">
+                <div class="item">
+                  <span class="caption">投资方式：</span>
+                  <span class="field">现金投资</span>
+                </div>
+                <!-- <div class="item">
+                  <span class="caption">计息方式：</span>
+                  <span class="field">{{=it.rateCalculateType}}</span>
+                </div> -->
+                <div class="item">
+                  <span class="caption">收益方式：</span>
+                  <span class="field">固定收益</span>
+                </div>
+                <div class="item">
+                  <span class="caption">还款方式：</span>
+                  <span class="field">{{=it.repaymentType}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="title">
+              <span class="main">投资金额</span>
+              <span class="sub"></span>
+            </div>
+            <div class="list">
+              <div class="item">
+                <span class="caption">起投金额：</span>
+                <span class="field">{{=it.staInvestAmount}}元</span>
+              </div>
+              <div class="item">
+                <span class="caption">最高可投金额：</span>
+                <span class="field">{{=it.singleLimitAmount}}</span>
+              </div>
+              <div class="item">
+                <span class="caption">起息日期：</span>
+                <span class="field">{{=it.staRateDate}}</span>
+              </div>
+              <div class="item">
+                <span class="caption">结息日期：</span>
+                <span class="field">{{=it.endDate}}</span>
+              </div>
+            </div>
+            {{ if(it.productStatus=='4'||it.productStatus=='2'){ }}
+              <button id='invest' class="button invest {{=it.productType=='TYB'?'':(it.productRemainAmount>0?'':'disabled')}}" disabled>
+                <!-- {{=it.productType=='TYB'?'立即投资':(it.productRemainAmount>0?'立即投资':'已售罄')}} -->
+                已售罄
+              </button>
+            {{ }else{ }}
+              <button id='invest' class="button invest {{=it.productType=='TYB'?'':(it.productRemainAmount>0?'':'disabled')}}">
+                <!-- {{=it.productType=='TYB'?'立即投资':(it.productRemainAmount>0?'立即投资':'已售罄')}} -->
+                立即投资
+              </button>
+            {{ } }}
+            <span class="tips">领投鸟提醒您：理财非存款，投资需谨慎！</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+  <!-- 项目详情模板渲染 -->
+  <script type="text/template" id="tempDetail">
+    <article class="detail">
+      <div class="row">
+        <span class="caption sub">项目说明：</span>
+        <span class="field">{{=it.productDesc}}</span>
+      </div>
+      <div class="row">
+        <span class="caption">项目协议：</span>
+        {{ if(it.secondCategoryId=='1004005'){ }}
+        <span class="field"><a href="http://www.lingtouniao.com/ltn-static/protocol/ztproduct" class="link" target="_blank">《智投产品协议》</a></span>
+        {{ }else{ }}
+        <span class="field"><a href="http://www.lingtouniao.com/ltn-static/protocol/lcjhproduct" class="link" target="_blank">《理财计划协议》</a></span>
+        {{ } }}
+      </div>
+      <div class="row">
+        <span class="caption">保障方式：</span>
+        <span class="field"><a href="/other/safeguards " class="link">《平台安全保障详解》</a></span>
+      </div>
+      <!-- {{ if(it.secondCategoryId=='1004005'){ }}
+      <div class="row">
+        <span class="caption">风控审核项目：</span>
+        <ul class="detail-risk-list">
+          <li class="item-risk">
+            <img src="/html/img/icon-prod-first-risk-01.png"></img>
+            <p class="key">房屋买卖合同</p>
+          </li>
+          <li class="item-risk">
+            <img src="/html/img/icon-prod-first-risk-02.png"></img>
+            <p class="key">房产证</p>
+          </li>
+          <li class="item-risk">
+            <img src="/html/img/icon-prod-first-risk-03.png"></img>
+            <p class="key">银行批贷函</p>
+          </li>
+          <li class="item-risk">
+            <img src="/html/img/icon-prod-first-risk-04.png"></img>
+            <p class="key">赎楼服务合同</p>
+          </li>
+          <li class="item-risk">
+            <img src="/html/img/icon-prod-first-risk-05.png"></img>
+            <p class="key">个人征信报告</p>
+          </li>
+        </ul>
+      </div>
+      {{ } }} -->
+    </article>
+  </script>
+  
+  <!-- 投资记录模板渲染 -->
+  <script type="text/template" id="tempDescXSB">
+    <article class="log">
+      <div class="row" id="logCont">
+        <span class="caption solo">投资记录：</span>
+        <table class="log-list">
+          <thead>
+            <tr>
+              <th>序列号</th>
+              <th>成交时间</th>
+              <th>投资人</th>
+              <th>投资金额</th>
+            </tr>
+          </thead>
+           <tbody>
+            {{~it.purchaseHistoryList:value:index}}
+            <tr>
+              <td class="item">{{=index + 1}}</td>
+              <td class="item">{{=value.orderDate}}</td>
+              <td class="item">{{=value.userName}}</td>
+              <td class="item">{{=value.orderAmount}}</td>
+            </tr>
+            {{~}}
+          </tbody>
+        </table>
+      </div>
+      <div class="nolist">
+          <div class="logoIcon">
+            暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+          </div>
+      </div>
+      <div class="accountpage">
+        <div class="pages"></div>
+      </div>
+    </article>
+  </script>
+  
+  <!--投资购买弹窗模板-->
+  <script type="text/template" id="tempBuy">
+  	<div class="form" id="form">
+      <div class="row">
+        <div class="caption">投资金额：</div>
+        <div class="field">
+          <input class="input" type="text" placeholder="起投金额{{=it.prodInfo.staInvestAmount}}元" id='txtMoney' data-required='true' data-type='number' data-emptyTip='金额不能为空' data-errorTip="金额不符合规则" data-ceiling="新手标单次投资上限为10000元">
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row">
+        <div class="caption">可用余额：</div>
+        <div class="field">
+          <span class="text">{{=it.userInfo.usableBalance}}元</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="caption">最高可投金额：</div>
+        <div class="field">
+          <span class="text">{{=it.prodInfo.singleLimitAmount}}元</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="caption">起息日期：</div>
+        <div class="field">
+          <span class="text">{{=it.prodInfo.staRateDate}}</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="caption">到期日期：</div>
+        <div class="field">
+          <span class="text">{{=it.prodInfo.endDate}}</span>
+        </div>
+      </div>
+      <div class="row submit">
+        <hr class="dash">
+        <div class="actual">
+          <span class="text">实际金额：</span>
+          <span class="amount" id="amountMoney">0.00元</span>
+        </div>
+        <div class="action">
+          <button class="button" id="submit">确认投资</button>
+        </div>
+      </div>
+       </div>
+  </script>
+  
+
+  <script src="/html/js/lib/echarts.min.js"></script>
+
+  <script src="/html/js/lib/jquery.marquee.min.js"></script>
+
+  <script src="/html/js/product/first/script.min.js?v=20160825"></script>
+
+  </body>
+  </html>

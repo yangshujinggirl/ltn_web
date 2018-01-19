@@ -1,0 +1,479 @@
+<div class="product-desc page-component" id="desc">
+	<div class="wrap">
+			<div class="floatproject" id="floatproject">
+        <div class="timeAxis">
+          <div class="line">
+            <div class="sameSell beginSell">
+              <span class="key">开售时间</span>
+              <div class="circle"></div>
+              <span class="value" id="valueOne">2016-10-21</span>
+            </div>
+            <div class="sameSell beginInit">
+              <span class="key">开始计息</span>
+              <div class="circle"></div>
+              <span class="value" id="valueTwo">2016-10-21</span>
+            </div>
+            <div class="sameSell become">
+              <span class="key">到期时间</span>
+              <div class="circle"></div>
+              <span class="value" id="valueThr">2016-10-21</span>
+            </div>
+            <div class="sameSell predictRepaymen">
+              <span class="key">预计还款</span>
+              <div class="circle"></div>
+              <span class="value" id="valueFour">2016-10-21</span>
+            </div>
+          </div>
+        </div>
+        <div class="rightInfo">
+          <div class="time">起息时间<span class="timeValue" id="timeValueOne">2016-10-22</span></div>
+          <div class="time">还款时间<span class="timeValue" id="timeValueTwo">2016-10-26</span></div>
+        </div>
+      </div>
+		<div class="short component">
+			<div class="banner">
+
+			</div>
+			<ul class="tab-list" id="descTab">
+				<li class="item selected" data-content="detail">项目详情</li>
+				<li class="item" data-content="risk">风控保障</li>
+				<li class="item" data-content="log">投资记录</li>
+				<li class="item" data-content="qa">常见问题</li>
+			</ul>
+			<ul class="content-list detail" id="contentTab">
+				<li class="item" id="detail">
+					<article class="detail">
+						<div class="row">
+							<span class="caption">项目描述：</span>
+						</div>
+						<div class="row">
+							<span class="caption sub">项目说明：</span>
+							<span class="field">该项目主要为业主付清所出售或抵押房屋的贷款本息并注销抵押登记，将房产证赎出，以便房屋进行出售过户或再次贷款。</span>
+						</div>
+						<div class="row">
+							<span class="caption sub">借款用途：</span>
+							<span class="field"></span>
+						</div>
+						<div class="row">
+							<span class="caption sub">还款来源：</span>
+							<span class="field"></span>
+						</div>
+						<hr class="dash">
+						<div class="row">
+							<span class="caption">项目协议：</span>
+							<span class="field"><a class="link" href="./contract" target="_blank">《借款协议》</a></span>
+						</div>
+						<div class="row">
+							<span class="caption">保障方式：</span>
+							<span class="field"><a href="../../safe" class="link">《平台安全保障详解》</a></span>
+						</div>
+						<div class="row">
+							<span class="caption">投资期限：</span>
+							<span class="field"></span>
+						</div>
+						<div class="row">
+							<span class="caption">到账时间：</span>
+							<span class="field"></span>
+						</div>
+						<hr class="dash">
+						<div class="row">
+							<span class="caption">房屋信息：</span>
+							<ul class="list">
+								<li class="item">
+									<span class="key">市场价值</span>
+									<span class="value">万</span>
+								</li>
+								<li class="item">
+									<span class="key">产权性质</span>
+									<span class="value"></span>
+								</li>
+								<li class="item">
+									<span class="key">建筑面积</span>
+									<span class="value"></span>
+								</li>
+								<li class="item">
+									<span class="key">所处位置</span>
+									<span class="value"></span>
+								</li>
+							</ul>
+						</div>
+						<hr class="dash">
+						<div class="row">
+							<span class="caption solo">借款人信息：</span>
+							<ul class="list">
+								<li class="item">
+									<span class="key">姓名</span>
+									<span class="value"></span>
+								</li>
+								<li class="item">
+									<span class="key">性别</span>
+									<span class="value"></span>
+								</li>
+								<li class="item">
+									<span class="key">婚姻</span>
+									<span class="value"></span>
+								</li>
+							</ul>
+						</div>
+						<hr class="dash">
+						<div class="row">
+							<span class="caption solo">其他相关信息：</span>
+							<ul class="list">
+								<li class="item">
+									<span class="key">交易中介</span>
+									<span class="value"></span>
+								</li>
+								<li class="item">
+									<span class="key">按揭银行</span>
+									<span class="value"></span>
+								</li>
+							</ul>
+						</div>
+						<hr class="dash">
+						<div class="row" id="PropFeng">
+							<span class="caption solo">风控审核项目：</span>
+								<ul class="risk risk1" id="lechaodai">
+					        <li class="item" id="item1">
+					          <div class="icon1"></div>
+					          <span class="key">房屋买卖合同</span>
+					        </li>
+					        <li class="item" id="item2">
+					          <div class="icon2"></div>
+					          <span class="key">房产证</span>
+					        </li>
+					        <li class="item" id="item3">
+					          <div class="icon3"></div>
+					          <span class="key">银行批贷函</span>
+					        </li>
+					        <li class="item" id="item4">
+					          <div class="icon4"></div>
+					          <span class="key">赎楼服务合同</span>
+					        </li>
+					        <li class="item" id="item5">
+					          <div class="icon5"></div>
+					          <span class="key">个人征信报告</span>
+					        </li>
+					      </ul>
+					      <ul class="risk risk2" id="chaozhidai">
+					        <li class="item" id="item1">
+					          <div class="icon1"></div>
+					          <span class="key">身份证</span>
+					        </li>
+					        <li class="item" id="item2">
+					          <div class="icon2"></div>
+					          <span class="key">户口本</span>
+					        </li>
+					        <li class="item" id="item3">
+					          <div class="icon3"></div>
+					          <span class="key">个人征信报告</span>
+					        </li>
+					        <li class="item" id="item4">
+					          <div class="icon4"></div>
+					          <span class="key">房产证</span>
+					        </li>
+					        <li class="item" id="item5">
+					          <div class="icon5"></div>
+					          <span class="key">产权调查</span>
+					        </li>
+					        <li class="item" id="item6">
+					          <div class="icon5"></div>
+					          <span class="key">抵押贷</span>
+					        </li>
+					      </ul>
+					      <ul class="risk" id="anyidai">
+		              <li class="item" id="riskAnyi1">
+		                <div class="icon6"></div>
+		                <span class="key">身份证</span>
+		              </li>
+		              <li class="item" id="riskAnyi2">
+		                <div class="icon7"></div>
+		                <span class="key">户口本</span>
+		              </li>
+		              <li class="item" id="riskAnyi3">
+		                <div class="icon5"></div>
+		                <span class="key">个人征信报告</span>
+		              </li>
+		              <li class="item" id="riskAnyi4">
+		                <div class="icon12"></div>
+		                <span class="key">车位买卖合同</span>
+		              </li>
+		              <li class="item" id="riskAnyi5">
+		                <div class="icon13"></div>
+		                <span class="key">工资收入证明</span>
+		              </li>
+		              <li class="item" id="riskAnyi6">
+		                <div class="icon14"></div>
+		                <span class="key">社保公积金证明</span>
+		              </li>
+		              <li class="item" id="riskAnyi7">
+		                <div class="icon15"></div>
+		                <span class="key">产权房屋证明</span>
+		              </li>
+		              <li class="item" id="riskAnyi8">
+		                <div class="icon16"></div>
+		                <span class="key">安翼贷服务合同</span>
+		              </li>
+					      </ul>
+					      <ul class="risk" id="liangchaodai">
+					              <li class="item" id="riskLC1">
+					                <div class="icon6"></div>
+					                <span class="key">身份证</span>
+					              </li>
+					              <li class="item" id="riskLC2">
+					                <div class="icon7"></div>
+					                <span class="key">户口本</span>
+					              </li>
+					              <li class="item" id="riskLC3">
+					                <div class="icon5"></div>
+					                <span class="key">个人征信报告</span>
+					              </li>
+					              <li class="item" id="riskLC4">
+					                <div class="icon17"></div>
+					                <span class="key">装修合同</span>
+					              </li>
+					              <li class="item" id="riskLC5">
+					                <div class="icon13"></div>
+					                <span class="key">工资收入证明</span>
+					              </li>
+					              <li class="item" id="riskLC6">
+					                <div class="icon14"></div>
+					                <span class="key">社保公积金证明</span>
+					              </li>
+					              <li class="item" id="riskLC7">
+					                <div class="icon16"></div>
+					                <span class="key">靓巢贷服务合同</span>
+					              </li>
+					      </ul>
+					      <ul class="risk" id="zhanyidai">
+					              <li class="item" id="zhanyidai1">
+					                <div class="icon6"></div>
+					                <span class="key">身份证</span>
+					              </li>
+					              <li class="item" id="zhanyidai2">
+					                <div class="icon7"></div>
+					                <span class="key">户口本</span>
+					              </li>
+					              <li class="item" id="zhanyidai3">
+					                <div class="icon5"></div>
+					                <span class="key">个人征信报告</span>
+					              </li>
+					              <li class="item" id="zhanyidai4">
+					                <div class="icon1"></div>
+					                <span class="key">房屋买卖合同</span>
+					              </li>
+					              <li class="item" id="zhanyidai5">
+					                <div class="icon13"></div>
+					                <span class="key">工资收入证明</span>
+					              </li>
+					              <li class="item" id="zhanyidai6">
+					                <div class="icon14"></div>
+					                <span class="key">社保公积金证明</span>
+					              </li>
+					              <li class="item" id="zhanyidai7">
+					                <div class="icon16"></div>
+					                <span class="key">展翼贷-001服务合同</span>
+					              </li>
+					      </ul>
+						</div>
+					</article>
+				</li>
+				<li class="item" id="risk">
+					<article class="risk">
+						<div class="row">
+							<span class="caption solo">产品保障：</span>
+							<div class="assurance">
+								<img src="/html/img/prodes/lctSafeEnsure.png" alt="">
+							</div>
+						</div>
+						<div class="row">
+							<span class="caption solo">流程保障：</span>
+							<span class="field">
+                资金来源是如何产生的？<br/>
+                通过与大型金融机构合作，将能够产生稳定现金流的基础资产，兑换成优质消费金融资产。<br/>
+                场景获客，注重用户体验：<br/>
+                以家庭消费生活场景为核心，打造连接租住，装修，美容整形，生育等消费场景，为用户多线端的需求提供一站式的消费信贷体验。<br/>
+                业务创新，贷前风控：<br/>
+                通过自动化与高集成度的信用分数系统集中处理贷款申请，对客户进行贷款审批。<br/>
+                贷后催收与不良资产处置：<br/>
+                对贷后管理推出一站式互联网+不良资产处置方案，共同在不良资产全产业链资源的处置模式上进行全流程的服务。
+              </span>
+						</div>
+						<div class="row">
+							<span class="caption solo">业务风控：</span>
+							<div class="business"></div>
+						</div>
+					</article>
+				</li>
+				<li class="item" id="log">
+					<article class="log">
+						<div class="row" id="logCont">
+							<span class="caption solo">投资记录：</span>
+							<table class="log-list">
+								<thead>
+									<tr>
+										<th>序列号</th>
+										<th>成交时间</th>
+										<th>投资人</th>
+										<th>投资金额</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- <tr>
+										<td>09887777788</td>
+										<td>2016-01-25 12:09:08</td>
+										<td>赵泽君</td>
+										<td>8888.88元</td>
+									</tr>
+									<tr>
+										<td>09887777788</td>
+										<td>2016-01-25 12:09:08</td>
+										<td>赵泽君</td>
+										<td>8888.88元</td>
+									</tr>
+									<tr>
+										<td>09887777788</td>
+										<td>2016-01-25 12:09:08</td>
+										<td>赵泽君</td>
+										<td>8888.88元</td>
+									</tr>
+									<tr>
+										<td>09887777788</td>
+										<td>2016-01-25 12:09:08</td>
+										<td>赵泽君</td>
+										<td>8888.88元</td>
+									</tr> -->
+								</tbody>
+							</table>
+						</div>
+						<div class="nolist">
+				        <div class="logoIcon">
+				          暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+				        </div>
+				    </div>
+					</article>
+				</li>
+				<li class="item" id="qa">
+					<article class="qa">
+						<div class="row">
+							<h3 class="caption"><span class="icon">1</span>问：什么是乐巢投？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">乐巢投是领投鸟理财精心推出的精品散标，以二手房赎楼业务为主，对接每一笔经过严格风控和银行审批的赎楼业务。实现真正短期标，理财0风险，安全透明，产品期限5-45天，最高可享12%年化收益。</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<h3 class="caption"><span class="icon">2</span>问：我把钱借给了谁？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">可在项目详情中查看借款人信息和房产信息</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<h3 class="caption"><span class="icon">3</span>问：乐巢投收益如何？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">首笔充值会获得58元返现券，那么投资30天的了乐巢投产品到期后收益为：10000*0.09/365*30+58=132.根据计算，到期可获得132元收益。</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<h3 class="caption"><span class="icon">4</span>问：乐巢投可以使用返现券、加息券或者鸟币吗？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">在您的账户中如果有返现券、加息券和鸟币的前提下，乐巢投产品是可以使用返现券、加息券和鸟币的，但是返现券和加息券是不可以叠加使用的。鸟币和返现券和加息券中的一种叠加使用。</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<h3 class="caption"><span class="icon">5</span>问：投资乐巢投有金额限制吗？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">乐巢投1000元起投，无上限</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<h3 class="caption"><span class="icon">6</span>问：投资乐巢投后，到期了会自动返还吗？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">在领投鸟理财平台上的投资，到期后本息会自动返还至投资人的“我的账户-可用余额”里，可提现或再投资。</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<h3 class="caption"><span class="icon">7</span>问：投资乐巢投后，没到期的时候可以提出来吗？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">乐巢投属于固定期限类理财产品，未到期时不可赎回。</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<h3 class="caption"><span class="icon">8</span>问：提现有金额限制吗？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">领投鸟理财账户提现单日限额100万 。</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<h3 class="caption"><span class="icon">9</span>问：领投鸟提现要不要手续费？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">每月有3次免费提现的机会，超出3次的话每次提现扣除2鸟币，没有鸟币的情况下扣除2元人民币</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<h3 class="caption"><span class="icon">10</span>问：领投鸟可用余额提现多久到账？</h3>
+							<div class="section">
+								<span class="answer">答：</span>
+								<p class="field">您在工作日17点之前发起的提现申请当日到账，17点以后发起的提现第二个工作日到账。若遇节假日顺延。每周一因要审核周五、周六、周日三天的付款申请，因此略有延时。</p>
+							</div>
+						</div>
+					</article>
+				</li>
+			</ul>
+			<div class="cover" id="fuceng"></div>
+			<div class="lunbo" id="propLunbo">
+					<!-- <div class="swiper-container">
+							        <div class="swiper-wrapper">
+							            <div class="swiper-slide"><img src="/html/img/about-leader-avatar-1.png"></div>
+							            <div class="swiper-slide"><img src="/html/img/about-leader-avatar-2.png"></div>
+							            <div class="swiper-slide"><img src="/html/img/about-leader-avatar-3.png"></div>
+							            <div class="swiper-slide"><img src="/html/img/about-leader-avatar-4.png"></div>
+							            <div class="swiper-slide"><img src="/html/img/about-leader-avatar-5.png"></div>
+							            <div class="swiper-slide"><img src="/html/img/about-team-style-1.png"></div>
+							        </div>
+							        Add Pagination
+							        <div class="swiper-pagination"></div>
+							        Add Pagination
+							        <div class="swiper-button-next"></div>
+							        <div class="swiper-button-prev"></div>
+					</div> -->
+			</div>
+			<div class="LCTtankuang" id="tankuangLCT">
+				<div class="tkTitle">
+				   <span class="tishi2">提示</span>
+				</div>
+				<div class="tkCont">该风险审核项目正在补充当中，
+        请耐心等待！</div>
+        	<button class="tkbut">确定</button>
+        <div class="close2" id="close2"><img src="/html/img/product-start-chahao.png"></div>
+			</div>
+			<div class="LCTtankuang" id="tankuangLCT2">
+				<div class="tkTitle">
+				   <span class="tishi2">提示</span>
+				</div>
+				<div class="tkCont tkCont2">由于地区差别，杭州和宁波的银行提供口头
+				批贷函，不提高书面的批贷函。
+				上海地区提供书面批贷函。</div>
+        	<button class="tkbut but4">确定</button>
+        <div class="close2" id="close3"><img src="/html/img/product-start-chahao.png"></div>
+			</div>
+			<div class="close" id="close"><img src="/html/img/money-cha.png"></div>
+		</div>
+	</div>
+</div>

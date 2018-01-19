@@ -1,0 +1,106 @@
+ .about-content {
+  .wrap {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #d7d7d7;
+    .lefttop {
+      float: left;
+      margin-bottom:-9999px;
+      padding-bottom:9999px;
+
+      width: 177px;
+      display: inline-block;
+      border: 1px solid #d7d7d7;
+      background-color: #fcfcfc;
+
+      .leftContent {
+          padding-top: 20px;
+          width: 100%;
+
+          .peopleinfor {
+            height: 135px;
+            line-height: 135px;
+            padding-top: 20px;
+
+            .item {
+              width: 140px;
+              height: 30px;
+              line-height: 30px;
+              margin: 0 auto;
+              text-align: center;
+              font-size: 14px;
+            }
+            .partner .name{
+              color: #3a3a3a;
+              font-size: 18px;
+            }
+            .icon {
+              border-bottom: 1px  dashed #e2e2e2;
+              padding-bottom: 30px;
+              .circle {
+                width: 22px;
+                height: 22px;
+                border-radius: 15px;
+                border: 1px solid #ff5a00;
+                float: left;
+                margin: 15px 0 15px 15px;
+
+              }
+            }
+          }
+          .aboutus {
+            .item {
+              display: block;
+              height: 40px;
+              line-height: 40px;
+              font-size: 14px;
+              padding-left: 30px;
+              border-right: #d7d7d7;
+              border-top: 1px solid #fcfcfc;
+              border-bottom: 1px solid #fcfcfc;
+              &.selected {
+                background-color: #fff;
+                border-top: 1px solid #d7d7d7;
+                border-bottom: 1px solid #d7d7d7;
+                color: #ff5a00;
+                border-right: 1px solid #fff;
+                margin-right: -1px;
+              }
+              &:hover {
+                color: #ff5a00;
+              }
+            }
+            .list1 {
+              .titleicon {
+                width: 3px;
+                height: 18px;
+                background-color: #ff5a00;
+                float: left;
+                line-height: 20px;
+                margin-left: 15px;
+                margin-top: 12px;
+                margin-right: 10px;
+              }
+              .title {
+                height: 40px;
+                line-height: 40px;
+                font-weight: bold;
+                font-size: 14px;
+              }
+            }
+          }
+      }
+    }
+    .righttop {
+      float: left;
+      margin-bottom:-9999px;
+      padding-bottom:9999px;
+
+
+      width: 1010px;
+      height: 100%;
+      border: 1px solid #d7d7d7;
+      border-left: 0 solid #d7d7d7;
+      background-color: #fff;
+    }
+  }
+}

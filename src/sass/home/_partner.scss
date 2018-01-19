@@ -1,0 +1,23 @@
+.home-partner {
+  .wrap {
+    padding: 0;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #e2e2e2;
+
+    height: 70px;
+    padding: 30px 0 0 20px;
+    box-sizing: border-box;
+  }
+  .icons {
+    text-align: center;
+    padding: 30px 0;
+    .item {
+      width: 190px;
+      height: 60px;
+      margin: 0 20px;
+    }
+  }
+}

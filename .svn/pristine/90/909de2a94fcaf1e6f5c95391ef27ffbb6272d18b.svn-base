@@ -1,0 +1,24 @@
+<!-- @include ../common/_headtop.html-->
+
+<!-- @include _headmiddle.html -->
+
+<!-- @include ../common/_headbottom.html -->
+
+<!-- @include ../common/default/_navTop.html -->
+
+<!-- @include ../common/default/_navTwo.html -->
+
+  <!-- @include _mypartner.html -->
+
+
+<!-- @include ../common/_footer.html -->
+
+<!-- @include ../common/_cover.html -->
+
+<!-- @include ../common/_bottom.html -->
+
+<script src="/js/mypartner/script.min.js"></script>
+
+<script src="/js/lib/jquery.zclip.min.js"></script>
+
+<script src="/js/lib/qrcode.min.js"></script>

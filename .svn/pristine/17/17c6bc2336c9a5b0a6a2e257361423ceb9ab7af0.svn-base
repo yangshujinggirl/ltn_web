@@ -1,0 +1,33 @@
+<!-- @include ../../common/_headtop.html-->
+
+  <!-- @include _headmiddle.html -->
+
+  <!-- @include ../../common/_headbottom.html -->
+
+  <!-- @include ../../common/default/_navTop.html -->
+
+  <!-- @include ../../common/default/_navTwo.html -->
+
+  <!-- @include _redpacket.html -->
+
+  <!-- @include _template.html -->
+
+  <!-- @include ../../common/_footer.html -->
+
+  <!-- @include ../../common/_cover.html -->
+
+  <!-- @include ../../common/_bottom.html -->
+
+  <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script src="/html/js/lib/distpicker.data.min.js"></script>
+
+  <script src="/html/js/lib/distpicker.min.js"></script>
+
+  <script src="/html/js/lib/main.min.js"></script>
+
+  <script src="/html/js/market/redpacket/script.min.js" charset="utf-8"></script>
+
+  <script src="/html/js/lib/jquery.kxbdmarquee.min.js" charset="utf-8"></script>

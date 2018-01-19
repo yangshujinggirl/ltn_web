@@ -1,0 +1,21 @@
+<script type="text/template" id="tempActivity">
+{{~it:value:index}}
+  <a href="{{=value.activityUrl}}" target="_blank">
+  <div class="caption_banner">
+  {{if(value.activityStatus == '1'){}}
+    <div class="xuanting">进行中</div>
+  {{ }else if(value.activityStatus == '2'){ }}
+  <div class="xuanting xuanting2">长期有效</div>
+  {{ }else if(value.activityStatus == '3'){ }}
+  <div class="xuanting over">已结束</div>
+  {{ } }}
+      <img src="{{=value.activityBanner}}">
+      <div class="info">
+        <span class="licai">{{=value.avtivityTitle}}</span>
+        <span class="expiryDate">｜  {{=value.endTime}}</span>
+        <span class="banner_cont">{{=value.activityContent}}</span>
+      </div>
+    </div>
+  </a>
+  {{~}}
+</script>

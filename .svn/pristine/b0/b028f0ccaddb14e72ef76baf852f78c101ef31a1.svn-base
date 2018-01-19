@@ -1,0 +1,22 @@
+
+<!-- @extendable -->
+<div class="accountpage" id="detalist">
+    <ul class="pages" id="page-one">
+      <!-- <li class="item prev left">首页</li>
+      <li class="item prev left">上一页</li>
+      <li class="item next right">尾页</li>
+      <li class="item next right">下一页</li>
+      <li class="item selected">1</li>
+      <li class="item">2</li>
+      <li class="item">3</li>
+      <li class="item">4</li>
+      <li class="item">5</li>
+      <li class="item">6</li>
+      <li class="item">7</li>
+      <li class="item">8</li>
+      <li class="item">9</li>
+      <li class="item">10</li> -->
+    </ul>
+</div>
+
+

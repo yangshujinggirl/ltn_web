@@ -1,0 +1,30 @@
+.loan-pay {
+  .apply-intro {
+    padding:30px;
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    margin:10px 0;
+    .head1 {
+      font-size: 18px;
+      margin:0;
+    }
+    .list {
+        padding:0;
+        .status {
+          font-size: 14px;
+          line-height:25px;
+        }
+      }
+    .left-text,.center-text,.right-text{
+      height: 224px;
+      width: 305px;
+      padding:0 27px;
+      border-right: 1px solid #ccc;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .right-text {
+      border: none;
+    }
+  }
+}

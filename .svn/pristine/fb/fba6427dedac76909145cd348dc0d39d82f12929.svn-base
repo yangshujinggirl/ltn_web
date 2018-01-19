@@ -1,0 +1,38 @@
+<div class="loan-pay page-component">
+  <div class="wrap">
+    <div class="apply-intro">
+      <div class="left-text">
+        <h1 class="head1">申请资格</h1>
+        <ul class="list">
+          <li><span class="status">·年龄18周岁-60周岁的中国大陆公民(港、澳、台除外)</span></li>
+          <li><span class="status">·无不良个人征信记录</span></li>
+          <li><span class="status">·有稳定工作及收入来源</span></li>
+          <li><span class="status">·目前已开通上海、杭州、宁波地区</span></li>
+        </ul>
+      </div>
+      <div class="center-text">
+        <h1 class="head1">额度期限</h1>
+        <ul class="list">
+          <li><span class="status">·借款额度：最高可达500 万</span></li>
+          <li>
+          <span class="status">·借款期限：5、10、15、30、45、60、90天<br>（各地区实际情况请联系您的借款专员）
+          </span>
+          </li>
+          <li><span class="status">·借款服务费：1.5%起</span></li>
+          <li><span class="status">·审批时间：材料齐全，最快1个工作日审核放款</span></li>
+          <li><span class="status">·还款方式：到期一次性还本付息</span></li>
+        </ul>
+      </div>
+      <div class="right-text">
+        <h1 class="head1">所需材料</h1>
+        <ul class="list">
+          <li><span class="status">·申请人二代身份证</span></li>
+          <li><span class="status">·申请人30天内的个人信用报告</span></li>
+          <li><span class="status">·婚姻状况证明</span></li>
+          <li><span class="status">·房屋买卖合同</span></li>
+          <li><span class="status">·银行按揭贷款申请批复文件</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

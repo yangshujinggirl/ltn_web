@@ -1,0 +1,372 @@
+<div class="redpacket">
+  <div class="banner">
+    <img src="/html/img/redpacket/redpacket_banner.jpg">
+  </div>
+  <div class="redpacket_content">
+    <div class="redpacket_center">
+      <div class="action_info">领投鸟喜获荣安集团亿元融资，再迎发展利好，百万好礼大派送，参与活动，赢取终极红包奖励及
+      iPhone7大奖、推荐好友拿逆天分红，每天都有小目标，立马领他一百万！</div>
+      <!-- 活动一 -->
+      <div class="activity_one">
+        <div class="activity_one_left">
+          <div class="title">活动一：天降红包</div>
+          <div class="info">抢红包咯！比比谁的手气好，<br>投资变现收益更多！</div>
+          <div class="info_cont">
+            活动规则：<br>
+            1.每局10秒钟，用户持续点击掉落的红包，点中
+            次数越多红包越大;<br>
+            2.游戏结束后，点击‘领取’可获得对应奖励<br>
+            3.活动期间，红包仅限领取一次。
+          </div>
+        </div>
+        <div class="activity_one_right">
+          <div class="qiang"></div>
+          <img class="pics" src="/html/img/redpacket/redpacket_icon.png">
+        </div>
+      </div>
+      <!-- 活动二 -->
+      <div class="activity_two">
+        <div class="title">活动二：寻宝奇缘</div>
+        <div class="info">两款宝箱装满了诱人的奖品，就等有缘人把它带走了！</div>
+        <div class="prize_img">
+          <img class="cha1" src="/html/img/redpacket/red_close.png">
+          <img src="/html/img/redpacket/red_jingpin.png" style="width: 360px;height: 291px;">
+        </div>
+        <div class="prize_img2">
+         <img  class="cha2" src="/html/img/redpacket/red_close.png">
+          <img src="/html/img/redpacket/red_jiangpin2.png">
+        </div>
+        <div class="prize">
+          <div class="prize_center">
+            <img class="daren_bg1" src="/html/img/redpacket/darenbaoxiang1.png">
+            <img  class="daren_bg3" src="">
+            <img  class="daren_bg4" src="">
+            <img class="daren_bg2" src="/html/img/redpacket/zhizunbaoxiang2.png">
+            <div class="look1">看看奖品
+                <span>
+                  <img src="/html/img/redpacket/redpacket_chakan1.png">
+                </span>
+            </div>
+            <div class="look2">
+              <span>
+                <img src="/html/img/redpacket/redpacket_chakan2.png">
+              </span>
+            看看奖品</div>
+          </div>
+          <div class="big_box">
+            <button class="dresser">开达人宝箱</button>
+            <button class="cachet">开至尊宝箱</button>
+          </div>
+          <div class="investment">
+            每投资2000元可以获得1点活力值。 <a href="/finance/list/0/1/0/0/" class="forthwith">立即投资></a>
+            <button class="investment_but"><span id="hasVitality">您还没有登录，请登录</span></button>
+          </div>
+          <div class="notes">
+            <div class="onepeople">
+              <div class="notes_title">
+                个人中奖纪录
+                <span class="setaddress" style="cursor:pointer;">填写收货地址></span>
+              </div>
+              <div class="notes_cont" id="personList">
+                <ul class="notes_list_cont">
+                  <li class="notes_list_title">
+                      <span class="one balck">序号</span>
+                      <span class="oneTwo balck">时间</span>
+                      <span class="oneThree balck">抽中奖品</span>
+                  </li>
+                  <script type="text/template" id="tempPersonList">
+                    <ul class="notes_list_cont">
+                      <li class="notes_list_title">
+                          <span class="one balck">序号</span>
+                          <span class="oneTwo balck">时间</span>
+                          <span class="oneThree balck">抽中奖品</span>
+                      </li>
+                    {{ if(it.length>0){ }}
+                          <div id="A_PlatformPrizeRecord">
+                            <div class="platform-record-data">
+                              <ul>
+                                {{ for(var i=0;i<it.length;i++){ }}
+                                  <li>
+                                    <span class="one">{{=i+1}}</span>
+                                    <span class="oneTwo">{{=it[i].createDate.substr(0,10)}}</span>
+                                    <span class="oneThree">{{=it[i].gift}}</span>
+                                  </li>
+                                {{ } }}
+                              </ul>
+                            </div>
+                          </div>
+                        </ul>
+                    {{ }else{ }}
+                      </ul>
+                      <div class="nolist">
+                          <div class="logoIcon">
+                            暂无记录，<a href="/html/user/login/?url=/html/market/redpacket/" class="denglu" id="login2">登录</a>后可见
+                          </div>
+                      </div>
+                    {{ } }}
+                  </script>
+              </div>
+            </div>
+            <div class="platform">
+              <div class="notes_title">
+                平台中奖纪录
+              </div>
+              <div class="notes_cont">
+                <ul class="notes_list_cont" id="platformList">
+
+                  <script type="text/template" id="tempPlatformList">
+
+                    <li class="notes_list_title">
+                        <span class="one balck one1">序号</span>
+                        <span class="oneTwo balck oneTwo2">用户</span>
+                        <span class="oneThree balck oneThree1">抽中奖品</span>
+                        <span class="oneTwo balck one3">宝箱</span>
+                    </li>
+                    {{ if(it.length>0){ }}
+
+                    <div id="B_PlatformPrizeRecord">
+                      <div class="platform-record-data">
+                        <ul>
+                        {{ for(var i=0;i<it.length;i++){ }}
+                          <li>
+                            <span class="one one1">{{=i+1}}</span>
+                            <span class="oneTwo oneTwo2">{{=it[i].mobile}}</span>
+                            <span class="oneThree oneThree1">{{=it[i].gift}}</span>
+
+                            {{ if(it[i].box=='silver'){ }}
+                               <span class="one">达人</span>
+                            {{ }else{ }}
+                               <span class="one">至尊</span>
+                            {{ } }}
+                          </li>
+                        {{ } }}
+                        </ul>
+                      </div>
+                    </div>
+                    {{ }else{ }}
+                      <div class="nolistpingtai">
+                          <div class="logoIcon">
+                            暂无记录~
+                          </div>
+                      </div>
+                    {{ } }}
+                  </script>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="rule">
+            活动规则：<br>
+            1.活动期间用户每投资2000元即获得1点活力值，1点活力值可以开1次达人宝箱，10点活力值可以开1次至尊宝箱；<br>
+            2.抽到实物奖励，客服人员将会在3个工作日内与用户联系确认地址，请保持注册手机号畅通。
+          </div>
+        </div>
+      </div>
+      <!-- 活动三 -->
+      <div class="activity_three">
+        <div class="title">活动三：推荐有礼</div>
+        <div class="info">两款宝箱装满了诱人的奖品，就等有缘人把它带走了！</div>
+        <div class="three_info">
+          <img src="/html/img/redpacket/redpacket_icon2.png">
+        </div>
+        <button class="investment_but"><span id="hasStatus">您还没有登录，请登录</span>
+          <div class="tips" id="userInfo">
+            您在10月之前完成累积投资金额<span id="userInfoMoney"></span>元， 投资<span id="userInfoNum"></span>次，不符合参与本次活动的条件
+            <img class="cha3" src="/html/img/redpacket/red_close.png">
+          </div>
+        </button>
+        <table summary="This table shows the yearly income for years 2004 through 2007" border="1" class="form">
+            <tr class="form_one">
+                <th scope="row">被推荐人首次投资<br>‘融资特权标‘的金额</th>
+                <td>5000~12999</td>
+                <td>13000~49999</td>
+                <td>50000~119999</td>
+                <td>120000~499999</td>
+                <td>500000以上</td>
+            </tr>
+            <tr class="form_one form_two">
+                <th scope="row">推荐人获得奖励</th>
+                <td>50</td>
+                <td>150</td>
+                <td>500</td>
+                <td>1200</td>
+                <td>5000</td>
+            </tr>
+
+            <tr class="form_one form_two" id="paltformNum">
+
+            </tr>
+            <script type="text/template" id="tempPaltformNum">
+              <th scope="row">平台目前领取人数</th>
+              <td class="red">{{=it["50.0"]}}</td>
+              <td class="red">{{=it["150.0"]}}</td>
+              <td class="red">{{=it["500.0"]}}</td>
+              <td class="red">{{=it["1200.0"]}}</td>
+              <td class="red">{{=it["5000.0"]}}</td>
+            </script>
+            <tr class="form_one form_two" id="personNum">
+
+            </tr>
+            <script type="text/template" id="tempPersonNum">
+              <th scope="row">您目前已获得<br>的奖励</th>
+              <td class="red">{{=it["50.0"]}}</td>
+              <td class="red">{{=it["150.0"]}}</td>
+              <td class="red">{{=it["500.0"]}}</td>
+              <td class="red">{{=it["1200.0"]}}</td>
+              <td class="red">{{=it["5000.0"]}}</td>
+            </script>
+
+        </table>
+        <div class="activity_rule">
+          活动规则：<br>
+          1.  被推荐用户首次投资（含新手标）需先绑定推荐人手机号码，否则双方将无法正常获得奖励；<br>
+          2.  奖励将以鸟币形式发放，在达成活动要求后领投鸟官方将尽快将奖励发放到用户账户<br>
+          3.  十月之前用户累投超过15000或者十月之前投资满4次（不含新手标）即能参与本活动；<br>
+          4.  被推荐人（注册时间需在活动期间）首次投资“融资特权标”，推荐人获得的奖励如上表：
+        </div>
+      </div>
+      <!-- 尾部 -->
+      <div class="redpacket_last">
+        <div class="code">
+          <img src="/html/img/redpacket/redpacket_code.png">
+        </div>
+        <div class="last_info">
+          <div class="tips">Tips:</div>
+          <div class="name">识别二维码添加你的VIP专属客服<br>（备注您的名字和注册手机号码）</div>
+          <div class="info_cont">
+            •&nbsp;获取标的预告信息<br>
+            •&nbsp;第一时间参与活动<br>
+            •&nbsp;粉丝专属福利<br>
+            •&nbsp;关注送10000返38的返现券
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 红包雨浮层 -->
+<div class="redpacket_rain">
+  <div class="close_rain">
+  </div>
+  <div class="lingtouniao">
+    <div class="header">
+      <img src="/html/img/redpacket/lintouniao_red.png">
+      <img src="/html/img/redpacket/hongbaoyu.png">
+      <div class="down">
+        “快看，一大波红包准备降落”
+      </div>
+      <div class="schedule">
+        <div class="stick_box">
+          <div class="stick"></div>
+        </div>
+        <div class="stick_box" id="stick_black">
+          <div class="stick"></div>
+        </div>
+        <p><span class="second">10</span>S</p>
+      </div>
+    </div>
+  </div>
+  <div class="count_down_numbers">
+    <img src="/html/img/redpacket/red_one.png" alt="">
+    <img src="/html/img/redpacket/red_two.png" alt="">
+    <img src="/html/img/redpacket/red_three.png" alt="">
+  </div>
+</div>
+<!-- 灰色浮层 -->
+<div class="red_cover"></div>
+<!-- 活力值不足弹框 -->
+<div class="life" id="noVigor">
+  <div class="life_title">啊哦！</div>
+  <div class="life_title">活力值不足</div>
+  <div class="life_win">马上投资赢取活力值</div>
+  <div class="life_but">
+    <button class="life_left" id="closeNoVigor">关闭</button>
+    <button class="life_right" onclick="window.location.href='/finance/list/0/1/0/0';">马上投资</button>
+  </div>
+</div>
+<!-- 没中奖 -->
+<div class="life Notwinning">
+  <div class="life_title">很遗憾</div>
+  <div class="life_win">您没有中奖~</div>
+  <div class="life_but life_but2">
+    <button class="life_left">关闭</button>
+    <button class="life_right againGo">再来一个</button>
+  </div>
+</div>
+<!-- 中奖地址 -->
+<div class="address">
+  <img class="cha2" src="/html/img/redpacket/red_close.png">
+  <div class="life_title">收货地址</div>
+  <form class="form-inline">
+    <div data-toggle="distpicker">
+      <div class="form-group">
+        <label class="sr-only" for="province1">省</label>
+        <select class="form-control" id="province1"></select>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="city1">市：</label>
+        <select class="form-control" id="city1"></select>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="district1">县：</label>
+        <select class="form-control" id="district1"></select>
+      </div>
+    </div>
+  </form>
+  <div class="dizhi">
+    详细地址：<input type="text" class="input" id="txtAddress" >
+  </div>
+  <div class="dizhi">
+    姓名：<input type="text" class="input" id="txtName" >
+  </div>
+  <div class="dizhi">
+    手机号码：<input type="text" class="input" id="txtTel" >
+  </div>
+  <div class="life_but life_but2">
+    <button class="sure" id="sure">确定</button>
+  </div>
+</div>
+<!-- 宝箱中奖 -->
+<div class="box_prize">
+  <div class="life_title">手气爆棚</div>
+  <div class="life_win">恭喜您中奖啦~</div>
+  <div class="prize_img2">
+
+  </div>
+  <div class="life_but life_but2">
+    <button class="life_left">关闭</button>
+    <button class="life_right againGo">再来一个</button>
+  </div>
+</div>
+<!-- 红包雨未中奖 -->
+<div class="red_rian_one">
+  <div class="no_prize">您没有中奖哦~</div>
+  <button class="agin">再来一次</button>
+</div>
+<!-- 获奖榜单 -->
+<div class="prize_two">
+  <ul class="teo_list">
+    <li id="a2000031">3000返10</li>
+    <li id="a2000032">2000返8</li>
+    <li id="a2000033">10000返32</li>
+    <li id="a2000034">9999返32</li>
+    <li id="a2000035">20000返65</li>
+    <li id="a2000036">19999返64</li>
+    <li id="a2000037">50000返160</li>
+    <li id="a2000038">49999返160</li>
+    <li id="a2000039">100000返320</li>
+  </ul>
+  <div class="life_but" id="RP_limit">
+    <div class="but_info">哇哦，你已抢到<span id="RP_num"></span>个红包，<br>最多可以抢到5个红包哦，再来一次吧</div>
+    <button class="life_left accept">领奖</button>
+    <button class="life_right red_rian_agin">再来一次</button>
+  </div>
+  <div class="bak_but" id="complete">
+    <div class="but_info">马上去投资，用券收益增加50%</div>
+    <button class="back" id="goback">返回</button>
+  </div>
+  <div class="life_but life_but2" id="RP_max">
+    <div class="but_info">厉害，你已抢到最大红包，<br>马上领取使用吧！</div>
+    <button class="life_left life_but_2 accept">领奖</button>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+
+<div class="account-login">
+  <div class="component-wrap password-login">
+    <div class="title">
+      <div class="item">修改登录密码</div>
+    </div>
+    <div class="form" id="form">
+      <div class="row" id="wrapTel">
+        <div class="caption">手机号</div>
+        <div class="field">
+          <input class="input" type="text" readonly="readonly" placeholder="请输入手机号" id="txtTel" onfocus="if(this.placeholder=='请输入手机号'){this.placeholder = ''}" onblur="if(this.placeholder == ''){this.placeholder = '请输入手机号'}" data-required="true" data-type="telephone" data-emptytip="手机号不能为空" data-errortip="手机号不符合规则">
+
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row" id="wrapImg">
+        <div class="caption">请输入图片验证码</div>
+        <div class="field" id="imageCon">
+          <input class="input validate" type="text" placeholder="请输入验证码" id="txtCode" onblur="if(this.placeholder == ''){this.placeholder = '请输入验证码'}" onfocus="if(this.placeholder=='请输入验证码'){this.placeholder = ''}">
+          <img class="validate-image" src="/img/forget_03.png" alt="图片验证码">
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row">
+        <div class="caption">验证码</div>
+        <div class="field">
+          <input class="input validate" type="text" id="txtPhoneCode" placeholder="请输入短信验证码" onfocus="if(this.placeholder=='请输入短信验证码'){this.placeholder = ''}" onblur="if(this.placeholder == ''){this.placeholder = '请输入短信验证码'}" data-required="true" data-emptytip="短信验证码不能为空" data-type="phoneCode" data-errortip="短信验证码不符合规则" >
+          <button class="validate-sms disabled" id="sendPhoneCode">发送验证码</button>
+        </div>
+        <div class="validation"><span class="icon">!</span>请输入验证码</div>
+      </div>
+      <div class="row wrap-identity" id="wrapIdentity">
+        <div class="caption">身份证号</div>
+        <div class="field">
+          <input class="input ID" type="text" placeholder="请输入身份证号" id="txtIdentity" onfocus="if(this.placeholder=='请输入身份证号'){this.placeholder = ''}" onblur="if(this.placeholder == ''){this.placeholder = '请输入身份证号'}" data-required='true' data-emptyTip='身份证不能为空' data-type='identity'  data-errorTip="身份证号不符合规则" >
+        </div>
+        <div class="validation"><span class="icon">!</span>请输入身份证号</div>
+      </div>
+      <div class="row">
+        <div class="caption">新密码</div>
+        <div class="field">
+          <input class="input" id="txtPsd" type="password" placeholder="请输入密码" onfocus="if(this.placeholder=='请输入密码'){this.placeholder = ''}" onblur="if(this.placeholder == ''){this.placeholder = '请输入密码'}" data-required="true" data-emptytip="新密码不能为空" data-type="password" data-errortip="密码不符合规则">
+        </div>
+        <div class="validation"><span class="icon">!</span>请输入密码</div>
+      </div>
+      <div class="row">
+        <div class="caption">重复密码</div>
+        <div class="field">
+          <input class="input" type="password" id="txtPsd2" placeholder="请再次输入密码" onfocus="if(this.placeholder=='请再次输入密码'){this.placeholder = ''}" onblur="if(this.placeholder == ''){this.placeholder = '请再次输入密码'}" data-required="true" data-emptytip="重置密码不能为空" data-type="password" data-errortip="密码不符合规则">
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="login-tip" id="loginTip">
+          <span class="icon-wran"></span>
+          <span class="wran-tip" id="wranTip"></span>
+      </div>
+      <div class="row">
+        <div class="action">
+          <button class="button" id="password-login">确认修改</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- @endextend -->
+<!-- @endextend -->

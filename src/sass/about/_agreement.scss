@@ -1,0 +1,67 @@
+.about-agreement{
+  .title {
+    font-size: 18px;
+    color: #585858;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #e2e2e2;
+    margin: 20px 35px;
+    .item {
+      border-bottom: 2px solid #ea5504;
+      width: 100px;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
+  .agreement_list{
+    width: 970px;
+    overflow: hidden;
+    zoom:1;
+    li{
+      float: left;
+      width: 200px;
+      height: 290px;
+      background: #fefcf7;
+      border: 1px solid #e5e5e5;
+      margin: 35px 0 0 35px;
+      a{
+        display: inline-block;
+        width: 200px;
+        height: 290px;
+        .list_title{
+          font-size: 20px;
+          color: #333;
+          font-weight: bold;
+          text-align: center;
+          margin: 35px 26px 0;
+        }
+        .title2{
+          text-align: center;
+          font-size: 14px;
+          color: #666;
+          margin-top: 15px;
+          font-weight:bold;
+        }
+        .last{
+          margin: 150px 45px 0;
+          text-align: center;
+          .xiuding{
+            font-size: 14px;
+            color: #666;
+          }
+          .lianjie{
+            font-size: 12px;
+            color: #999999;
+          }
+        }
+        .last2{
+          margin-top: 160px;
+        }
+      }
+    }
+    .first{
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<!-- 列表渲染 -->
+<script type="text/template" charset="UTF-8"  id="tempInvist">
+  <thead>
+    <tr>
+      <th>好友账号</th>
+      <th>注册时间</th>
+      <th>好友姓名</th>
+      <th class="boolan">注册</th>
+      <th class="boolan">实名</th>
+      <th class="boolan">绑卡</th>
+      <th class="boolan">投资</th>
+      <th>好友级别</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{~it.invitationList:value}}
+    <tr>
+      <td>{{=strUtil().formatPhone(value.friendAccount)}}</td>
+      <td>2016-04-21 12:34</td>
+      <td>{{=strUtil().formatName(value.friendName)}}</td>
+      <td class="boolan"><span class="icon {{=value.isRegister=="1"?'':'disabled'}}"></span></td>
+      <td class="boolan"><span class="icon {{=value.isRealName=="1"?'':'disabled'}}"></span></td>
+      <td class="boolan"><span class="icon {{=value.isTiedCard=="1"?'':'disabled'}}"></span></td>
+      <td class="boolan"><span class="icon {{=value.isInvestment=="1"?'':'disabled'}}"></span></td>
+      <td class="{{=value.friendLevel=="1"?'leve':''}}">{{=value.friendLevel=="1"?'一':'二'}}级好友</td>
+    </tr>
+    {{~}}
+  </tbody>
+</script>
+

@@ -1,0 +1,102 @@
+<div class="download-app-content">
+  <div class="g-banner">
+    <div class="g-banner-wrap">
+      <div class="g-slogan" id="banL">
+        <p class="slogan-text">生活不易<br/>让赚钱更安心</p>
+        <div class="g-btn-list">
+          <a href="https://itunes.apple.com/cn/app/ling-tou-niao-li-cai/id1073508943?mt=8" class="g-terminal">
+            <img src="/html/img/download/phone0.png" alt="" class="icon-terminal">
+            iphone
+          </a>
+          <a href="https://www.lingtouniao.com/app/lingtouniao.apk" class="g-terminal" id="banR">
+            <img src="/html/img/download/phone1.png" alt="" class="icon-terminal">
+            Android
+          </a>
+        </div>
+      </div>
+      <div class="new-user-welfare">
+        <div class="l-text">
+          <span class="big-num duiqi">60000</span>
+          <span class="duiqi">元体验金</span>
+          <br/>
+          <span class="big-num duiqi">618</span>
+          <span class="duiqi">元体验券</span>
+        </div>
+        <div class="r-code">
+          <img src="/html/img/download/img-footer-code-app.png" alt="" class="icon-code">
+          <p>首次下载领投鸟APP即享</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="part-same part-one" id="partOne">
+    <div class="part-wrap">
+      <div class="g-left"  id="jsOneL">
+        <div class="same-type-content">
+          <p class="title">优质资产</p>
+          <div class="info">
+            <p class="ite">高保值不动产</p>
+            <p class="ite">银行批贷项目</p>
+          </div>
+        </div>
+      </div>
+      <div class="g-right" id="jsOneR">
+        <img src="/html/img/download/partOne0.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="part-same part-two" id="partTwo">
+    <div class="left-content"></div>
+    <div class="right-content"></div>
+    <div class="center-content">
+      <div class="same-type-content" id="jsTwo">
+        <p class="title">灵活存取</p>
+        <div class="info">
+          <p class="ite">3-180天产品多元化</p>
+          <p class="ite">资金零闲置</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="part-same part-thr" id="partThr">
+    <div class="left-content"></div>
+    <div class="right-content"></div>
+    <div class="center-content">
+      <div class="same-type-content" id="jsThr">
+        <p class="title">多重保障</p>
+        <div class="info">
+          <p class="ite">资金三方托管</p>
+          <p class="ite">百人风控团队全面审核</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="part-same part-four" id="partfour">
+    <div class="part-wrap">
+      <div class="g-right" id="jsFourL">
+        <img src="/html/img/download/partFour0.jpg" alt="">
+      </div>
+      <div class="g-left" id="jsFourR">
+        <div class="same-type-content" >
+          <p class="title">合伙赚钱</p>
+          <div class="info">
+            <p class="ite">邀请好友一起投</p>
+            <p class="ite">平台奖励天天有</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fooer-content">
+    <div class="footer-wrap">
+      <div class="texts">
+        <p class="title">领投鸟理财 手机扫一扫</p>
+        <p class="send">加入就送60000元体验金</p>
+      </div>
+      <img src="/html/img/download/logo.png" alt="">
+      <p class="app-scan">APP专享<br/>扫描下载</p>
+      <img src="/html/img/download/img-footer-code-app.png" alt="">
+    </div>
+    <span class="close-btn"></span>
+  </div>
+</div>

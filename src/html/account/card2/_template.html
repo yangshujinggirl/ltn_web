@@ -1,0 +1,52 @@
+<script type="text/template" id="templateBankinfo">
+  <div class="form">
+        <div class="row">
+          <p class="nongye">{{=it.belongBank}}</p>
+        <div class="row">
+          <div class="caption">银行卡号</div>
+          <div class="field">
+            <input class="input current" type="text" value="{{=it.bankCardId}}" disabled="disabled">
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">用户名</div>
+          <div class="field">
+            <input class="input" type="text" id='txtName' value="{{=it.userName}}"disabled="disabled">
+          </div>
+<!--           <div class="validation">
+  <span class="icon"></span>请更换本人名下的银行卡
+</div> -->
+        </div>
+        <div class="on-state" id="onState">
+              <span class="em">免密充值</span>
+              <div class="switch">
+                <div class="status" id="switch"></div>
+              </div>
+              <span class="em" id="switchStatus">(关闭状态)</span>
+              <span class="em1">开通投资免密充值后下次无需再次输入支付密码</span>
+        </div>
+          <div class="friend"><a style="color: red;"href="/html/account/cardchange">我要换卡>></a></div>
+      </div>
+</script>
+<script type="text/template" id="templateFolating">
+  <p>充值是否有上限？<br/>
+    目前您可通过快捷支付进行充值。若您通过快捷支付方式进行充值，快捷的限额见下表（具体额度请以实际情况为准）：</p>
+    <table>
+          <thead>
+            <tr class="one">
+              <th>银行</th>
+              <th>单笔限额</th>
+              <th>单日限额</th>
+            </tr>
+          </thead>
+          <tbody class="list">
+           {{~it:value:index}}
+            <tr>
+              <td class="item">{{=value.bankName}}</td>
+              <td class="item">{{=value.chargeTimeLimit}}</td>
+              <td class="item">{{=value.chargeDateLimit}}</td>
+            </tr>
+            {{~}}
+          </tbody>
+        </table>
+</script>

@@ -1,0 +1,343 @@
+.account-partneris {
+  .partneris-content {
+    padding:35px;
+    .itemnav {
+      border-bottom: 2px solid #e2e2e2;
+      .head-1 {
+        font-size:14px;
+        font-weight: bold;
+        width: 100px;
+        height: 30px;
+        margin:0;
+        border-bottom: 2px solid #ea5504;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+    .peripheral {
+      font-size: 14px;
+      color: #555555;
+      line-height: 24px;
+      margin-bottom:30px;
+      padding-left:70px;
+      position: relative;
+      .people{
+        width: 166px;
+        height: 165px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        position: relative;
+      }
+      .title{
+        // width: 180px;
+        // height: 180px;
+        // padding-top:185px;
+        box-sizing:border-box;
+        text-align: center;
+        font-size: 26px;
+        margin-top: 20px;
+      }
+      .detail {
+        display: none;
+        width:730px;
+        height: 140px;
+        border-radius:6px;
+        padding:20px;
+        box-sizing:border-box;
+        background:#dfdfdf;
+        position:absolute;
+        left:-103px;
+        top:161px;
+        z-index: 10;
+      }
+      .detail:before {
+        content:'';
+        display: block;
+        width:21px;
+        height: 15px;
+        background: url(../../../img/partneris_09.png);
+        position:absolute;
+        left:177px;
+        top:-15px;
+      }
+      .common,.gold,.continued{
+        display: inline-block;
+        position:relative;
+        margin-top: 30px;
+      }
+      .gold {
+        margin:0 120px;
+        .people {
+          background:  url(../img/partneris_03.png) center no-repeat;
+        }
+        .detail {
+          left:auto;
+          right:-170px;
+        }
+        .detail:before {
+          left:auto;
+          right: 233px;
+        }
+      }
+      .common .people{
+        background:  url(../img/partneris_02.png) center no-repeat;
+      }
+      .continued {
+        .people{
+        background:  url(../img/partneris_04.png) center no-repeat;
+        }
+      }
+    }
+    .head-2 {
+        color: #4b4b4b;
+        padding-left: 14px;
+        font-size: 18px;
+        line-height: 35px;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        margin:0;
+      }
+    .easy-partner {
+      margin-bottom: 30px;
+      .three-steps {
+        padding-left:59px;
+        position:relative;
+        margin-top:35px;
+        .line {
+          width: 680px;
+          height: 4px;
+          background: #ea5504 ;
+          position:absolute;
+          left:100px;
+          top:27px;
+          z-index:2;
+        }
+        .step {
+          display: inline-block;
+          text-align: center;
+          position:relative;
+          z-index:3;
+          font-size: 16px;
+        }
+        .step1 {
+          width: 133px;
+        }
+        .step2 {
+          width: 158px;
+          margin:0 148px 0 169px;
+        }
+        .step3 {
+          width: 197px;
+        }
+        .circle{
+          display: inline-block;
+          width: 58px;
+          height: 58px;
+          border-radius: 50%;
+          background: #ea5504;
+          color: #fff;
+          text-align: center;
+          line-height: 58px;
+          font-size: 28px;
+        }
+      }
+    }
+    .tuiguang-way {
+      margin-bottom:30px;
+      .head-text{
+          color: #8b8b8b;
+          font-size: 14px;
+          padding-left: 33px;
+          line-height: 36px;
+          margin:0;
+        }
+      .copylist{
+        padding:20px 0;
+        overflow: hidden;
+        .content{
+          width: 636px;
+          padding:20px 13px;
+          border:1px solid #e2e2e2;
+          color: #808080;
+          float: left;
+          font-size: 14px;
+          line-height: 26px;
+          background: #fff;
+        }
+        .licai{
+          word-wrap: break-word;
+          height: 60px;
+          resize:none;
+        }
+        .copy-url{
+          width: 67px;
+          height: 64px;
+          float:left;
+          text-align: center;
+          padding-top:69px;
+          box-sizing:border-box;
+          font-size: 14px;
+          color: #959595;
+          margin:15px 20px 0 0;
+          position: relative;
+          img{
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+        .copy-content{
+          width: 146px;
+          height: 44px;
+          background:#ea5504;
+          color: #fff;
+          border: none;
+          text-align: center;
+          line-height: 44px;
+          border-radius: 5px;
+          font-size: 14px;
+          float:right;
+          margin-top: 50px;
+        }
+      }
+      .weixin{
+        border-top: 1px solid #e4e4e4;
+        .share{
+          width: 70px;
+          height: 70px;
+          float:left;
+          text-align: center;
+          padding-top:75px;
+          box-sizing:border-box;
+          font-size: 14px;
+          color: #82ae40;
+          margin:3px 20px 0 0;
+          position: relative;
+          img{
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+        .scan {
+          width: 118px;
+          height: 118px;
+          float:right;
+          text-align: center;
+          position: relative;
+          right: 10px;
+          line-height: 202px;
+          color: #6f6f6f;
+          font-size: 14px;
+
+          .sao{
+            position: absolute;
+            left: 40px;
+            bottom: -13px;
+            line-height: 0;
+          }
+        }
+
+      }
+      .Invitation_code {
+        border-top: 1px solid #e4e4e4;
+        overflow: hidden;
+        .share-code {
+          width: 73px;
+          height:73px;
+          color: #ef8b69;
+          float:left;
+          margin:0 20px 0 0;
+          padding-top:78px;
+          box-sizing:border-box;
+          text-align: center;
+        }
+        .phone {
+          float:right;
+          overflow: hidden;
+          text-align: center;
+          .text {
+            width: 158px;
+            height: 78px;
+            display: block;
+            background: url(../img/partneris_07.png) no-repeat center center;
+            border: 0;
+            line-height: 35px;
+            padding-top: 10px;
+            color: #808080;
+            .num {
+              color: #ee7f57;
+            }
+          }
+        }
+      }
+    }
+    .tuijian-partner {
+      .referee {
+       padding-left:108px;
+       position:relative;
+       font-size: 16px;
+        .tuijian {
+          position:absolute;
+          left:30px;
+          top:40%;
+        }
+        .text {
+          background:#fff7f3 ;
+          padding:20px 12px;
+        }
+      }
+      .kindly_reminder {
+        padding-left:108px;
+        color: #878685;
+        font-size: 18px;
+        .friend {
+           line-height: 30px;
+           padding-left:35px;
+           background:url(../img/partneris_08.jpg) no-repeat left center;
+        }
+        .text {
+          padding-left:35px;
+        }
+      }
+    }
+    .demo {
+      padding-left:107px;
+    }
+  }
+}
+.copypartis {
+    width: 520px;
+    height: 350px;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 5px;
+    border: 8px solid rgba(0,0,0,.1);
+    margin-left: -260px;
+    margin-top: -175px;
+    z-index: 9999;
+    padding: 70px 0 0 80px;
+    box-sizing: border-box;
+  .copycontent {
+        font-size: 16px;
+        line-height: 24px;
+        width: 340px;
+        padding-left: 50px;
+        box-sizing: border-box;
+        .tips {
+          background: url(../../../img/loan_plan_01.png) left top no-repeat;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 30px;
+          color: #ff6f20;
+          margin: 0;
+          padding-left: 50px;
+          margin-top: -35px;
+          margin-bottom: 20px;
+          margin-left: 40px;
+        }
+        .friend {
+          margin: 0;
+        }
+  }
+}

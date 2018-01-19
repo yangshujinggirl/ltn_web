@@ -1,0 +1,281 @@
+<div class="product-desc page-component fincal-plan-pages">
+  <div class="process-invest">
+    <img src="/html/img/fincal-plan/p.jpg" alt="">
+  </div>
+  <div class="wrap">
+    <div class="long component">
+      <ul class="tab-list" id="descTab">
+        <li class="item selected" data-content="detail">项目详情</li>
+        <li class="item" data-content="risk">风控保障</li>
+        <li class="item" data-content="log">投资记录</li>
+        <li class="item" data-content="qa">常见问题</li>
+      </ul>
+      <ul class="content-list detail" id="contentTab">
+        <li class="item JS-common" id="itemDetail">
+          <!-- <article class="detail">
+            <div class="row">
+              <span class="caption">项目描述：</span>
+            </div>
+            <div class="row">
+              <span class="caption sub">项目说明：</span>
+              <span class="field"></span>
+            </div>
+            <div class="row">
+              <span class="caption sub">投标范围：</span>
+              <span class="field">投向赎楼散标</span>
+            </div>
+            <div class="row">
+              <span class="caption sub">还款来源：</span>
+              <span class="field"></span>
+            </div>
+            <hr class="dash">
+            <div class="row">
+              <span class="caption">项目协议：</span>
+              <span class="field"><a class="link" href="./contract" target="_blank">《智投产品协议》</a></span>
+            </div>
+            <div class="row">
+              <span class="caption">保障方式：</span>
+              <span class="field"><a href="../../safe" class="link">《平台安全保障详解》</a></span>
+            </div>
+            <div class="row">
+              <span class="caption">投资期限：</span>
+              <span class="field"></span>
+            </div>
+            <div class="row">
+              <span class="caption">到账时间：</span>
+              <span class="field"></span>
+            </div>
+            <hr class="dash">
+            <div class="row">
+              <span class="caption solo">项目投向：</span>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>标的名称</th>
+                    <th>用款金额</th>
+                    <th>市场价值</th>
+                    <th>产权性质</th>
+                    <th>建筑面积</th>
+                    <th>所处位置</th>
+                    <th>借款用途</th>
+                    <th>还款来源</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>智投产品2016-xxxxxx</td>
+                    <td>60万</td>
+                    <td>380万</td>
+                    <td>住宅</td>
+                    <td>120平米</td>
+                    <td>上海xxxx</td>
+                    <td>首付垫</td>
+                    <td>按揭</td>
+                  </tr>
+                  <tr>
+                    <td>智投产品2016-xxxxxx</td>
+                    <td>60万</td>
+                    <td>380万</td>
+                    <td>住宅</td>
+                    <td>120平米</td>
+                    <td>上海xxxx</td>
+                    <td>首付垫</td>
+                    <td>按揭</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <span class="caption solo">资产使用情况：</span>
+              <div class="bar">
+                <div class="outer">
+                  <div class="inner"></div>
+                </div>
+                <span class="label">占比：</span><span class="percent"></span>
+              </div>
+            </div>
+            <div class="row">
+              <span class="caption solo">风控审核项目：</span>
+              <ul class="risk">
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">身份认证</span>
+                </li>
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">户口本</span>
+                </li>
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">婚姻证明</span>
+                </li>
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">收入证明</span>
+                </li>
+                <li class="items">
+                  <div class="iconUrl"></div>
+                  <span class="key">银行流水</span>
+                </li>
+              </ul>
+            </div>
+          </article> -->
+        </li>
+        <li class="item">
+          <article class="risk">
+            <div class="JS-common">
+              <div class="row-r">
+                <p class="lable">流程保障：</p>
+                <div class="img-wrap">
+                  <img src="/html/img/fincal-plan/process.jpg" alt="">
+                </div>
+              </div>
+              <div class="row-r">
+                <p class="lable">风险控制：</p>
+                <div class="insure-content">
+                  <p class="title">1.平台严格甄选资产端合作机构，对资产端合作机构进行全面的尽职调查。</p>
+                  <p class="content">
+                    对资产端合作机构进行现场调研，以了解其实际经营情况，包括办公场所的现场核验，在岗人员访谈，业务系统演示等，以确信该机构经营正常，具备持续经营能力且发展良好；<br/>
+                    了解平台股权结构，高级管理人员履历，以确认其具有相应的成熟管理结构及相关经验，同时不存在管理层欺诈风险等；<br/>
+                    了解企业财务情况，关注在手货币资金、资产负债率、净利率等重要财务指标，关注其自身借款及或有负债，以确保其具备较强的财务实力。
+                  </p>
+                  <p class="title">2.资产端战略合作伙伴每笔业务严格风控，贷前、贷中、贷后全方位、多手段把控风险。</p>
+                </div>
+                <div class="insure-content">
+                  <p class="title">贷前：</p>
+                  <p class="content">
+                    1.场景消费合作商户优质客户推荐，真实场景消费合同及相关证明验证，确保消费真实。<br/>
+                    2.申请人身份认证及活体识别认证，排除欺诈风险。<br/>
+                    3.申请人学历信息、工作信息、常住地、紧急联系人信息验证及电话确认，确保申请人信息真实。<br/>
+                    4.对接第三方征信及风险识别机构，对申请人进行信用评分、黑名单过滤、多头借贷查询、排除高风险人群 。<br/>
+                    5.申请人个人信息授权查询，包括但不限于手机运营商信息、芝麻信用分、社保、公积金、学历、央行征信等，筛选出低风险优质客户。<br/>
+                    6.专业风控人员风控审核及复核，利用专业力量降低风险事件发生率。
+                  </p>
+                </div>
+                <div class="insure-content">
+                  <p class="title">贷中：</p>
+                  <p class="content">
+                    1.分期申请合同电子保全及法律公证，防止合同丢失及篡改。<br/>
+                    2.消费分期款项放款至合作商户，确保资金流向。<br/>
+                    3.大额分期款项分批次放款，把控放款风险。
+                  </p>
+                </div>
+                <div class="insure-content">
+                  <p class="title">贷后：</p>
+                  <p class="content">
+                    1.到期还款提醒及系统自动代扣，确保及时回款。<br/>
+                    2.贷后跟踪检查及逾期还款短信、电话提醒，及时处理风险。<br/>
+                    3.专业法务团队、催收团队，优质第三方外包催收合作伙伴，风险事件发生时使用合法手段降低整体逾期率及坏账率，提高催收成功率。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="item" id="desc">
+          <article class="log">
+            <div class="row">
+             <!--  <span class="caption solo">投资记录：</span> -->
+              <!-- <table class="log-list">
+                <thead>
+                  <tr>
+                    <th>序列号</th>
+                    <th>成交时间</th>
+                    <th>投资人</th>
+                    <th>投资金额</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                </tbody>
+              </table> -->
+            </div>
+            <div class="nolist">
+              <div class="logoIcon">
+                暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="item">
+          <article class="qa">
+            <div class="JS-common">
+              <div class="row-qa">
+                <h3 class="ques-name">Q1：什么是智投产品？</h3>
+                <p class="answer">智投产品是领投鸟理财为投资者提供的本金自动循环出借及到期自动转让退出的理财工具，充分提高资金利用效率，利息收益在理财期结束后一次性返还。智投产品对应的借款均适用于100%本息保障。投向资产端严格筛选出的消费分期、赎楼等项目。智投产品安全稳健，收益稳定，最高可享12%年化收益。适用追求稳定高收益但理财时间少的人群。</p>
+              </div>
+
+              <div class="row-qa">
+                <h3 class="ques-name">Q2：我把钱借给了谁？</h3>
+                <p class="answer">可在项目详情中查看借款人信息和房产信息，这里的借款人不只一个</p>
+              </div>
+
+              <div class="row-qa">
+                <h3 class="ques-name">Q3：智投产品收益如何？</h3>
+                  <p class="answer">我第一次充值后获得了58元的返现券，投资额达到10000元可使用。假如我投10000到90天期的智投产品产品，那么到期后所获得的收益为10000*0.096/365*90+58=295,根据计算，到期可获得295元收益。</p>
+              </div>
+
+              <div class="row-qa">
+                <h3 class="ques-name">Q4：智投产品可以使用返现券、加息券或者鸟币吗？</h3>
+                  <p class="answer">在您的账户中如果有返现券、加息券和鸟币的前提下，智投产品产品是可以使用返现券、加息券和鸟币的，但是返现券和加息券是不可以叠加使用的。鸟币和返现券和加息券中的一种叠加使用。</p>
+              </div>
+
+              <div class="row-qa">
+                <h3 class="ques-name">Q5：投资智投产品有金额限制吗？</h3>
+                  <p class="answer">智投产品1000元起投，无上限</p>
+              </div>
+
+              <div class="row-qa">
+                <h3 class="ques-name">Q6：投资智投产品后，到期了会自动返还吗？</h3>
+                  <p class="answer">在领投鸟理财平台上的投资，到期后本息会自动返还至投资人的“账户中心-可用余额”里，可提现或再投资。</p>
+              </div>
+
+              <div class="row-qa">
+                <h3 class="ques-name">Q7：投资智投产品后，没到期的时候可以提出来吗？</h3>
+                <p class="answer">智投产品属于固定期限类理财产品，未到期时不可赎回。</p>
+              </div>
+
+              <div class="row-qa">
+                <h3 class="ques-name">Q8：领投鸟可用余额提现多久到账？</h3>
+                <p class="answer">您在工作日17点之前发起的提现申请当日到账，17点以后发起的提现第二个工作日到账。若遇节假日顺延。每周一因要审核周五、周六、周日三天的付款申请，因此略有延时。</p>
+              </div>
+
+              <div class="row-qa">
+                <h3 class="ques-name">Q9：领投鸟提现要不要手续费？</h3>
+                <p class="answer">每月有3次免费提现的机会，超出3次的话每次提现扣除2鸟币，没有鸟币的情况下扣除2元人民币</p>
+              </div>
+
+              <div class="row-qa">
+                <h3 class="ques-name">Q10：提现有金额限制吗？</h3>
+                <p class="answer">领投鸟理财账户提现单日限额100万 。</p>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

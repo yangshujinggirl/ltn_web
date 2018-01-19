@@ -1,0 +1,152 @@
+$header-bgColor: #f8f8f8;
+$header-height: 39px;
+$header-border-bottom-width: 1px;
+
+.common-header {
+  background: $header-bgColor;
+  height: $header-height;
+  line-height: $header-height;
+  border-bottom: $header-border-bottom-width solid #e1e2e3;
+
+  font-weight: bold;
+
+  .wrap {
+    overflow: visible;
+  }
+
+  .left {
+    .service {
+      display: inline-block;
+      height: $header-height;
+      vertical-align: top;
+      color: #3a3a3a;
+    }
+    .time{
+      display: inline-block;
+      height: $header-height;
+      vertical-align: top;
+      margin-left: 10px;
+      color: #3a3a3a;
+    }
+    .weixin2 {
+      margin: 0 0 0 20px;
+      display: inline-block;
+      background: url(/img/index_top_icon1.png) center center no-repeat;
+      width: 24px;
+      height: $header-height;
+      position: relative;
+      left:0;
+      cursor: pointer;
+
+      .code {
+        background: url(/img/icon-header-weixin-code.png?v=20160830) center bottom no-repeat;
+        width: 90px;
+        height: 100px;
+        z-index: $z-index-header;
+        position: absolute;
+        top: 27px;
+        left: -33px;
+        display: none;
+      }
+
+      &:hover {
+        background: url(/img/index_top_juse2.png) center center no-repeat;
+        .code {
+          display: block;
+        }
+      }
+    }
+    .weibo{
+      display: inline-block;
+      width: 24px;
+      height: 39px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      right: 0;
+    }
+    .weibo1{
+      width: 24px;
+      height: $header-height;
+      display: inline-block;
+      background: url(/img/index_top_icon2.png) center center no-repeat;
+      margin-left: 15px;
+      cursor: pointer;
+      &:hover{
+        background: url(/img/index_top_juse3.png) center center no-repeat;
+      }
+    }
+    .mobile {
+      display: inline-block;
+      width: 24px;
+      height: 39px;
+      text-align: center;
+      margin: -5px 0 0 30px;
+      cursor: pointer;
+      position: relative;
+      right: 0;
+      .shouji{
+        display:inline-block;
+        background:url(/img/index_top_icon3.png) center center no-repeat;
+        width: 100%;
+        height: 39px;
+        position: absolute;
+        top:-4px;
+        left: -7px;
+        margin-top: 4px;
+        &:hover{
+          background:url(/img/index_top_juse4.png) center center no-repeat;
+        }
+      }
+    }
+    .liwu{
+      width: 24px;
+      height: $header-height;
+      display: inline-block;
+      background: url(/img/index_top_icon4.png) center center no-repeat;
+      margin-left: 5px;
+      cursor: pointer;
+      &:hover{
+        background: url(/img/index_top_juse1.png) center center no-repeat;
+      }
+    }
+  }
+
+  .right {
+    .item {
+      color: $font-color-title;
+      border-left: 1px solid $font-color-title;
+      padding: 0 13px;
+
+      &:first-of-type {
+        border: none;
+      }
+
+      &:hover {
+        color: $font-color-hover;
+      }
+    }
+    .welcome, .logoff {
+      display: none;
+    }
+    .hehuo{
+      color: #ff6f20;
+    }
+    .welcome {
+      border: none;
+      color: $font-color-hover;
+      &:hover {
+        // color: $font-color-title;
+        cursor: default;
+      }
+    }
+    &.logon {
+      .welcome, .logoff {
+        display: inline;
+      }
+      .login, .register {
+        display: none;
+      }
+    }
+  }
+}

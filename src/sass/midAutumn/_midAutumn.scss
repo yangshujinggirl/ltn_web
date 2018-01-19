@@ -1,0 +1,485 @@
+.midAutumn{
+  background:#03033d;
+  .midAutumn_banner{
+    img{
+      width:100%;
+    }
+  }
+  .midAutumn_form {
+      font-size: 14px;
+      display: inline-block;
+      float: right;
+      width: 293px;
+      height: 340px;
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      right:145px;
+      top:115px;
+      padding: 20px 0 0 30px;
+      z-index: 999999;
+      margin-right: 65px;
+      .row {
+          line-height: 35px;
+          width: 284px;
+          position: relative;
+          .caption {
+              color: #8a8a8a;
+              text-align: right;
+              font-weight: bold;
+              width: 33.333%;
+              box-sizing: border-box;
+              display: inline-block;
+              padding: 0 20px 0 0;
+          }
+          &.wrap-identity{
+              display: none;
+          }
+          &.validate-failed {
+              .field {
+                  .input {
+                      outline: 5px auto #f78e8b;
+                      color: #cacaca;
+                      outline-offset: -2px;
+                  }
+              }
+              .validation {
+                  display: inline-block;
+                  position: absolute;
+                  left: 255px;
+                  width: 170px;
+                  height: 46px;
+                  font-size: 14px;
+                  color: #fff;
+                  line-height: 44px;
+                  padding-left:10px;
+                  margin-left: 13px;
+                  text-align: center;
+                  background: url(/html/img/fully-tips.png) center center no-repeat;
+              }
+          }
+          &.validate-success {
+              .validation {
+                  display: inline-block;
+                  position: absolute;
+                  top: 13px;
+                  right: -92px;
+                  height: 14px;
+                  background: url("/html/img/icon-mark-ok.png") 10px center no-repeat;
+              }
+          }
+          .field {
+              width: 65%;
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              .input {
+                width: 263px;
+                  height: 30px;
+                  border:0;
+                  display: inline-block;
+                  font-size: 14px;
+                  color: #606060;
+                  margin-top: 9px;
+                  padding-left: 10px;
+                  &.short{
+                      width: 87%;
+                  }
+                  &.info{
+                    width: 87%;
+                  }
+              }
+              input:-webkit-autofill {
+                  -webkit-box-shadow: 0 0 0px 1000px white inset;
+                 }
+              .shouji{
+                  position: absolute;
+                  left:11px;
+                  top:8px;
+                  z-index: 999;
+              }
+              .password{
+                  position: absolute;
+                  left:11px;
+                  top:8px;
+                  z-index: 999;
+              }
+              .validate-image,
+              .validate-sms {
+                  width: 42%;
+                  height: 35px;
+                  display: inline-block;
+                  border: 1px solid #e2e2e2;
+                  box-sizing: border-box;
+                  position: absolute;
+                  right:-87px;
+                  top:6px;
+              }
+              .validate-sms {
+                  border: 1px solid #38a2ff;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                  background: none;
+                  font-size: 14px;
+                  color: #38a2ff;
+              }
+              .validate-sms.disabled{
+                   background: #d7d7d7;
+                   cursor: not-allowed;
+                   color: #fff;
+                   border-color: #fff;
+              }
+              .check {
+                  cursor: pointer;
+              }
+              .action {
+                  color: #fff;
+                  background: #ff6f20;
+                  border: none;
+                  box-sizing: border-box;
+                  font-size: 18px;
+                  height: 40px;
+                  width: 180px;
+                  border-radius: 4px;
+                  &:hover {
+                      background: #ff5a00;
+                  }
+                  &.disabled {
+                      background: #ccc;
+                  }
+              }
+          }
+          .new{
+                  display: inline-block;
+                  width: 40px;
+                  position: absolute;
+                  right:48px;
+                  top:0;
+                  cursor: pointer;
+              }
+
+          .validation {
+              display: none;
+              color: #f78e8b;
+              padding: 0 0 0 30px;
+              width: 33.333%;
+              box-sizing: border-box;
+          }
+          .tips {
+              padding: 0 120px;
+          }
+          .accept{
+            width: 262px;
+            color: #fff;
+          }
+          .action{
+            color: #fff;
+          }
+          .tips {
+              margin: 50px 0 0;
+              border-top: 1px dashed #e2e2e2;
+              .img{
+                      margin: 22px 0 0 106px;
+                  }
+              .content {
+                  font-size: 12px;
+                  line-height: 24px;
+                  text-align: justify;
+                  color: #8a8a8a;
+                  .mark {
+                      background: none;
+                      color: $font-height-light-color;
+                  }
+              }
+          }
+          .accept {
+              margin: 10px 0;
+              text-align: center;
+              .check,
+              .label {
+                  cursor: pointer;
+              }
+              .label {
+                  padding: 0 5px;
+              }
+              .link {
+                  color: $link-color;
+                  &:hover {
+                      color: $link-color-hover;
+                  }
+              }
+          }
+          .action {
+              text-align: center;
+              padding: -10px 0 0;
+              width: 200px;
+              .zhanghao{
+                width: 138px;
+                margin-left: 143px;
+              }
+              .button1 {
+                  width: 280px;
+                  border: none;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                  background: $bg-btn;
+                  color: #fff;
+                  font-size: 18px;
+                  &:hover {
+                      background: $bg-btn-hover;
+                  }
+               }
+               .button1.disabled{
+                   background: #d7d7d7;
+                   cursor: not-allowed;
+                   color: #fff;
+              }
+              }
+              .bear{
+                  display: inline-block;
+                  margin-right: 134px;
+                  .check{
+                  vertical-align: middle;
+                  box-sizing: border-box;
+                  margin-right: 7px;
+                }
+              .link {
+                  color: $link-color;
+                  margin-left: 30px;
+                  &:hover {
+                  color: $link-color-hover;
+                  }
+              }
+              .text {
+                  margin: 0 0 0 30px;
+              }
+          }
+      }
+      .teshu{
+          margin-top: -19px;
+      }
+      .login-tip {
+          margin-top: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          color: #f78e8b;
+          display: none;
+          .icon-wran {
+              display: inline-block;
+              width: 14px;
+              height: 14px;
+              background: url("/html/img/icon-mark-warning.png") no-repeat;
+              background-size: 14px 14px;
+              vertical-align: middle;
+          }
+          .wran-tip{
+              margin-left: 6px;
+          }
+      }
+      .login-top{
+          padding: 15px 20px;
+          height: 30px;
+          border-bottom: 1px solid #e2e2e2;
+          .loginleft{
+              display: inline-block;
+              font-size: 20px;
+              line-height: 30px;
+              float: left;
+          }
+          .loginright{
+              display: inline-block;
+              float: right;
+              line-height: 30px;
+              .registered{
+                  a{
+                      color:#ea5504;
+                  }
+              }
+          }
+      }
+  }
+  .midAutumn_cont{
+    width: 1192px;
+    margin: 0 auto;
+  }
+  .midAutumn_self{
+    width: 1113px;
+    height: 252px;
+    margin: 40px auto 0;
+    background: url(/html/img/midAutumn_bg1.png?v=2016103) no-repeat;
+    padding: 35px 40px;
+    .midAutumn_caption{
+      width: 240px;
+      display: inline-block;
+      text-align: center;
+      margin-left: 15px;
+      .icon_one{
+        img{
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .title{
+        font-size: 28px;
+        color: #673500;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .caption_info{
+        font-size: 20px;
+        color: #673500;
+      }
+    }
+  }
+  .midAutumn_who{
+    width: 971px;
+    height: 464px;
+    background: url(/html/img/midAutumn_bg2.jpg?v=20161031) no-repeat;
+    margin-top: 45px;
+    padding: 120px 110px;
+    .who_title2,.who_info2{
+      font-size: 22px;
+      color: #333;
+    }
+    .who_title2{
+      font-weight: bold;
+    }
+    .who_info2{
+      margin-top: 65px;
+    }
+    .who_caption{
+      width: 303px;
+      margin-top: 65px;
+      text-align: center;
+      display: inline-block;
+      margin-left: 15px;
+      .who_img_info{
+        font-size: 18px;
+        color: #e60012;
+      }
+    }
+    .who_caption2{
+      position: relative;
+      top: -3px;
+    }
+  }
+  .midAutumn_merits{
+    width: 973px;
+    height: 274px;
+    background: url(/html/img/midAutumn_bg3.jpg?v=2016103) no-repeat;
+    margin-top: 45px;
+    padding: 135px 110px;
+    .merits_left{
+      width: 345px;
+      height: 220px;
+      text-align: center;
+      padding-top: 50px;
+      display: inline-block;
+      .quickly{
+        font-size: 20px;
+        color: #333;
+      }
+      .cunqian{
+        display: inline-block;
+        margin-top: 10px;
+      }
+      .midAutumn_but1{
+        width: 315px;
+        height: 60px;
+        background: url(/html/img/midAutumn_but_bg1.png) no-repeat;
+        border:0;
+        outline: none;
+        font-size: 27px;
+        color: #8722a1;
+        margin-top: 30px;
+      }
+    }
+    .merits_right{
+      width: 564px;
+      height: 178px;
+      background: url(/html/img/midAutumn_bg4.png?v=2016103) no-repeat;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 35px;
+      padding: 88px 12px 40px;
+      .merits_list{
+        width: 565px;
+        display: block;
+        overflow: hidden;
+        zoom:1;
+        padding:0;
+        text-align: center;
+        li{
+          width: 111px;
+          float: left;
+          font-size: 18px;
+          color: #333;
+        }
+      }
+    }
+  }
+  .midAutumn_capital{
+    width: 933px;
+    height: 1242px;
+    margin-top: 45px;
+    padding: 120px 130px;
+    text-align: center;
+    font-weight: bold;
+    background: url(/html/img/midAutumn_bg5.png?v=2016103) no-repeat;
+    .capital_title{
+      font-size: 22px;
+      color: #f55c4e;
+      margin-top: 20px;
+    }
+    .capital_caption{
+      .item1{
+        display: inline-block;
+        margin: 35px 0 0 20px;
+      }
+    }
+    .capital_zhanshi{
+      margin-top: 35px;
+    }
+    .capital_but{
+      width: 226px;
+      height: 65px;
+      line-height: 60px;
+      text-indent: -20px;
+      background: url(/html/img/finance_but_bg.png) no-repeat;
+      font-size: 28px;
+      color: #8722a1;
+      border:0;
+      outline: none;
+    }
+  }
+  .midAutumn_credentials{
+    width: 972px;
+    height: 340px;
+    background: url(/html/img/midAutumn_bg6.png?v=2016103) no-repeat;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 130px 110px;
+    .credentials_caption{
+      margin-top: 30px;
+      .item{
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+    .credentials_but{
+      width: 349px;
+      height: 60px;
+      line-height: 54px;
+      text-indent: -20px;
+      background: url(/html/img/midAutumn_but_bg2.png) no-repeat;
+      font-size: 28px;
+      color: #8722a1;
+      border:0;
+      outline: none;
+      display: block;
+      margin: 40px auto 0;
+    }
+  }
+}
+.nationalluodiye{
+  background: #fff;
+}

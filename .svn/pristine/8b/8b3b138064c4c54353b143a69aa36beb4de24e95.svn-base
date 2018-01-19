@@ -1,0 +1,30 @@
+  <!-- @include ../common/_headtop.html-->
+
+  <!-- @include _headmiddle.html -->
+
+  <!-- @include ../common/_headbottom.html -->
+
+  <!-- @include ../common/default/_navTop.html -->
+
+  <!-- @include ../common/default/_nav.html -->
+
+
+  <!-- @include _banner.html -->
+
+  <!-- @include _section.html -->
+
+  <!-- @include _flow.html -->
+
+  <!-- @include _offline.html -->
+
+  <!-- @include _guarantee.html -->
+
+  <!-- @include _why.html -->
+
+  <!-- @include ../common/_footer.html -->
+
+  <!-- @include ../common/_cover.html -->
+
+  <script src="/js/safe/script.min.js"></script>
+
+  <!-- @include ../common/_bottom.html -->

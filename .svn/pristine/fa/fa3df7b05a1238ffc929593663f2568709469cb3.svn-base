@@ -1,0 +1,237 @@
+<div class="homeIndex ">
+  <div class="banner" id="banner">
+    <div class="swiper-container" id="wrapSwiper1">
+      <div class="swiper-wrapper" id="swiper1">
+      </div>
+      <!-- 点 -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="wrapOne">
+      <div class="entrance">
+        <div class="register" id="entranceRegister">
+          <h1 class="head">最高预期年化</h1>
+          <div class="percent">
+          <span class="big">
+            10.2</span>%
+          </div>
+          <button class="btn" id="goRegister">注册领取万元体验金</button>
+          <p class="tt">平台不触碰资金 第三方联动优势联合银行存管</p>
+        </div>
+        <div class="goAccount" id="entranceAccount">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dateList page-component">
+    <div class="wrap" id="Platform">
+    </div>
+  </div>
+  <div class="partOne page-component">
+    <div class="wrap">
+      <div class="list">
+        <div class="partItem short">
+          <span class="icon"></span>
+          <p>资产优质</p>
+          <p class="little">多维度甄选优质资产</p>
+        </div>
+        <div class="partItem safe">
+          <span class="icon"></span>
+          <p>多重风控</p>
+          <p class="little">贷前贷后全程安全保障</p>
+        </div>
+        <div class="partItem moreLine">
+          <span class="icon"></span>
+          <p>分散投资</p>
+          <p class="little">避免系统性风险</p>
+        </div>
+        <div class="partItem deal">
+          <span class="icon"></span>
+          <p>公开透明</p>
+          <p class="little">第三方托管，资金流转透明</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partTwo page-component">
+    <div class="wrap">
+      <div class="topNav">
+        <div class="left"><span class="tall">新手&nbsp;</span>高性价比</div>
+        <div class="right"><a href="/html/user/register">注册>></a></div>
+      </div>
+      <ul class="list" id='XSBAndTYB'>
+      </ul>
+    </div>
+  </div>
+  <!-- <div class="partThr page-component">
+    <div class="wrap">
+      <div class="topNav">
+        <div class="left"><span class="tall">互助&nbsp;</span>与你同行</div>
+        <div class="right"><a href="/html/mutual">更多>></a></div>
+      </div>
+      <div class="tapWrap">
+        <div class="swiper-container" id="wrapSwiper2">
+          <div class="swiper-wrapper" id="swiper2">
+          </div>
+        </div>
+        <div class="leftBtn" id="swiperPrev"></div>
+        <div class="rightBtn" id="swiperNext"></div>
+      </div>
+    </div>
+  </div>
+ <div class="partFour page-component">
+    <div class="wrap">
+      <div class="topNav">
+        <div class="left"><span class="tall">众筹&nbsp;</span>精挑细选</div>
+        <div class="right"><a href="/html/crowd">更多>></a></div>
+      </div>
+      <div class="list" id="crowdList">
+      </div>
+    </div>
+  </div>-->
+  <div class="partFive page-component">
+    <div class="wrap">
+      <div class="topNav">
+        <div class="left">
+          <span class="tall">投资&nbsp;</span>全流程把控
+        </div>
+        <div class="right"><a href="/html/product/">更多>></a></div>
+      </div>
+      <div class="productContent">
+        <div class="leftContent">
+          <div class="text">
+            <div class="top">
+              <span class="big">定期投资</span><br/>
+              兼顾灵活和收益，薪满益足
+            </div>
+            <div class="bottom">
+              期限5天起<br/>预期年化10.2%
+            </div>
+          </div>
+        </div>
+        <div class="productList" id="productList">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partSix page-component" id="goLoan">
+    <div class="wrap">
+      <div class="stepList">
+        <div class="step step1">
+          <span class="icon"></span>
+          <p class="txt"><i>01</i>借款申请</p>
+        </div>
+        <div class="step step2">
+          <span class="icon"></span>
+          <p class="txt"><i>02</i>专员办理</p>
+        </div>
+        <div class="step step3">
+          <span class="icon"></span>
+          <p class="txt"><i>03</i>后台审批</p>
+        </div>
+        <div class="step step4">
+          <span class="icon"></span>
+          <p class="txt"><i>04</i>签约放款</p>
+        </div>
+      </div>
+      <div class="apply">
+        <button class="btn">立即申请</button>
+      </div>
+    </div>
+  </div>
+  <div class="partSeven page-component">
+    <div class="wrap">
+      <div class="credential one"><a href="http://sfia.org.cn/h/n/about/unit " target="_blank"></a></div>
+      <div class="credential two"><a href="http://www.umpay.com/umpayPublic/index.html " target="_blank"></a></div>
+      <div class="credential three"><a href="/html/about/introduce/#zhengzhao" target="_blank"></a></div>
+    </div>
+  </div>
+  <div class="partEight page-component">
+    <div class="wrap">
+      <div class="leftNews">
+        <div class="topNav">
+          <div class="typeName">媒体报道</div>
+          <a href="/html/about/news/"><div class="more">更多>></div></a>
+        </div>
+        <div class="newsContent"  id="newsContent">
+        </div>
+      </div>
+      <div class="rightNotice">
+        <div class="topNav">
+          <div class="typeName">平台公告</div>
+          <a href="/html/about/notice/"><div class="more">更多>></div></a>
+        </div>
+        <div class="noticeContent" id="noticeContent">
+          <div class="noticeListRoll">
+            <ul class="noticeList" id="noticeList">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partNine page-component">
+    <div class="wrap">
+      <div class="topNav">
+        <div class="left">
+          合作机构
+        </div>
+        <div class="right"><a href="/html/about/partner/">更多>></a></div>
+      </div>
+      <div class="listWrap">
+        <div class="swiper-container" id="wrapSwiper3">
+          <div class="swiper-wrapper" id="swiper3">
+            <div class="swiper-slide">
+              <ol class="listTwo">
+                <li class="itemTwo index0"><a href="http://www.95590.cn/" target="_blank"></a></li>
+                <li class="itemTwo index1"><a href="http://www.cmbchina.com/" target="_blank"></a></li>
+                <li class="itemTwo index2"><a href="http://www.cgbchina.com.cn/" target="_blank"></a></li>
+                <li class="itemTwo index3"><a href="http://www.umfintech.com/" target="_blank"></a></li>
+                <li class="itemTwo index4"><a href="http://www.51fund.com/" target="_blank"></a></li>
+                <li class="itemTwo index5"><a href="http://www.ebscn.com/" target="_blank"></a></li>
+                <li class="itemTwo index6"><a href="http://www.nanhua.net/" target="_blank"></a></li>
+                <li class="itemTwo index7"><a href="http://www.lordabbettchina.com/" target="_blank"></a></li>
+                <li class="itemTwo index8"><a href="http://www.wdzj.com" target="_blank"></a></li>
+                <li class="itemTwo index9"><a href="http://www.p2peye.com/" target="_blank"></a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!--<div class="leftBtn"></div>
+        <div class="rightBtn"></div> -->
+      </div>
+    </div>
+  </div>
+  <div class="leftNav">
+    <ul class="navList" id="leftNavList">
+      <li class="navItem money">
+        <!-- <div class="top"></div>
+        <div class="hover">
+          <span class="text">
+            <script src="//wp.qiye.qq.com/qidian/2852062852/0554c06e2169e536d55d2008fe70e8c1" charset="utf-8"></script>
+          </span>
+        </div> -->
+      </li>
+      <li class="navItem phone" id="phone">
+          <div class="top"></div>
+          <div class="hover">
+            <span class="text">APP下载</span>
+          </div>
+      </li>
+      <li class="navItem weixin">
+        <div class="top"></div>
+        <div class="hover">
+          <span class="text">关注微信</span>
+          <div class="codeImg">
+            <img src="/img/imageTwo/home/icon_homeCode.png" alt="">
+          </div>
+        </div>
+      </li>
+      <li class="navItem returnTop" id="returnTop">
+        <div class="top"></div>
+        <div class="hover">
+          <span class="text">回到顶部</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

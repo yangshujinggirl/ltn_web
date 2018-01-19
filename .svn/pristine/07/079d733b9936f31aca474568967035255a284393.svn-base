@@ -1,0 +1,88 @@
+<div class="corporate page-component">
+  <div class="wrap">
+    <div class="corporate_cont">
+      <div class="header_top">
+        <span class="header_left"><span class="corporate_icon1"></span>为保障你的资金安全，请先完成第三方资金托管账户开通及业务授权，<span class="top_juse">完成可额外获得78元返现券哦！</span></span>
+      </div>
+      <div class="corporate_step">
+        <div class="corporate_caption">
+          <div class="cap_icon1">
+            <img src="/html/img/corporate_icon2.png">
+          </div>
+          <div class="cap_info">01 下载材料，填写并盖章</div>
+        </div>
+        <div class="corporate_jiantou">
+          <img src="/html/img/corporate_jiantou.png">
+        </div>
+        <div class="corporate_caption">
+          <div class="cap_icon1">
+            <img src="/html/img/corporate_icon3.png">
+          </div>
+          <div class="cap_info">02 上传扫描文档，确定并提交</div>
+        </div>
+        <div class="corporate_jiantou">
+          <img src="/html/img/corporate_jiantou.png">
+        </div>
+        <div class="corporate_caption">
+          <div class="cap_icon1">
+            <img src="/html/img/corporate_icon4.png">
+          </div>
+          <div class="cap_info">03 等待审核通知</div>
+        </div>
+      </div>
+      <div class="corporate_down">
+        <div class="down_top">
+          <span class="down_title">第一步：下载材料，填写并盖章</span>
+          <span class="down_jiantou" id="down1">
+            <img src="/html/img/corporate_jiantou2.png">
+          </span>
+          <span class="jiantou2" id="jiantou2">
+            <img src="/html/img/corporate_icon7.png">
+          </span>
+        </div>
+        <hr id="line1">
+        <div class="down_bottom" id="down_bottom1">
+          <div class="down_left">
+            <div class="down_caption">
+              <div class="wendang">资金托管协议</div>
+              <div class="down_click"><a href="/html/user/corporate_contact/qiyetuoguan.docx" download='/html/user/corporate_contact/qiyetuoguan.docx'>点击下载</a></div>
+            </div>
+            <div class="down_caption">
+              <div class="wendang jigou">机构投资人<br/>开户承若函</div>
+              <div class="down_click"><a href="/html/user/promise/chennuo.docx" download="html/user/promise/chennuo.doc">点击下载</a></div>
+            </div>
+          </div>
+          <div class="down_right">
+            <div class="down_info">领投鸟平台上所有资金交易均由<span class="down_juse">(联动优势科技有限公司(中国银联与中国移动联合成立)</span>提供第三方资金托管服务；您的资金只存在于联动优势账户中，用户资金与平台进行有效隔离。平台无法触碰用户资金，杜绝资金池。</div>
+            <div class="down_liandong">
+              <img src="/html/img/corporate_liandong.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="corporate_down">
+        <div class="down_top">
+          <span class="down_title">第二步：上传扫描文档，确定并提交</span>
+          <span class="down_jiantou" id="down2">
+            <img src="/html/img/corporate_jiantou2.png">
+          </span>
+          <span class="jiantou2" id="jiantou3">
+            <img src="/html/img/corporate_icon7.png">
+          </span>
+        </div>
+        <hr id="line2">
+        <div class="down_bottom submit_bottom" id="down_bottom2">
+          <div class="down_right down_tijiao">
+            <div class="down_info2"><span class="submit_icon1"></span>友情提醒：</div>
+            <div class="reminded">
+              1、请将《资金托管协议》、《开户承诺函》下载下来填写完整并盖章；<br>
+              2、将企业开户的相关材料(包括《银行开户许可证》、《税务登记证》、《法人身份证》、《营业执照》、《组织机构代码证》)扫描；<br>
+              3、将以上材料电子档通过邮箱发送至<span class="juse3">service@lingtouniao.com</span>，然后点击“确认提交”按钮。<br>
+              4、如有其他相关问题，请联系联系领投鸟客服400-999-9980；
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

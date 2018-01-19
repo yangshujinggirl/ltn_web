@@ -1,0 +1,100 @@
+.tokens{
+  background: #fff;
+  .banner{
+    img{
+      width: 100%;
+    }
+  }
+  .content{
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 30px;
+    .top{
+      .title{
+        font-size: 46px;
+        color: #ff416a;
+        font-weight: bold;
+        margin-top: 25px;
+      }
+      .top-cont{
+        margin-top: 25px;
+        .code{
+          width: 513px;
+          height: 376px;
+          display: inline-block;
+          background: url(/html/img/tokens-code.png) no-repeat;
+        }
+        .flied{
+           display:inline-block; 
+           zoom: 1;
+           *display: inline;
+          width: 422px;
+          font-size: 20px;
+          vertical-align: top;
+          margin: 37px 0 0 25px;
+          line-height: 43px;
+
+        }
+        .disney{
+          font-size: 20px;
+          margin-top: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+    .bottom{
+      .title{
+        font-size: 46px;
+        color: #ff416a;
+        font-weight: bold;
+        margin-top: 25px;
+      }
+      .field{
+          font-size: 20px;
+          margin-top: 30px;
+          line-height: 40px;
+      }
+      .caption{
+        margin-top: 30px;
+      }
+      .stretch{
+        font-size: 20px;
+        display: inline-block;
+        width: 487px;
+        vertical-align: middle;
+      }
+      .icon1{
+        width: 413px;
+        height: 135px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 75px;
+      }
+    }
+    .last{
+      text-align: center;
+      font-size: 20px;
+      color: #ff416a;
+      margin-top: 20px;
+    }
+    .button{
+      width: 350px;
+      height: 60px;
+      border: 1px solid #ff416a;
+      background: #fff;
+      border-radius: 10px;
+      font-size: 36px;
+      color: #ff416a;
+      margin: 40px 0 0 315px;
+    }
+  }
+  .pink{
+      color: #ff416a;
+      font-size: 32px;
+    }
+    .pink1{
+      font-size: 20px;
+      color: #ff416a;
+    }
+}

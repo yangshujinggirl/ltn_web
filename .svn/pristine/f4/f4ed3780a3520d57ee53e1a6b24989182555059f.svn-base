@@ -1,0 +1,38 @@
+.mather {
+  width:100%;
+  .content {
+    width: 100%;
+    position: relative;
+    .topBg {
+      width:100%;
+      padding-bottom:190%;
+      background:url(/img/mather_01.jpg) no-repeat top center;
+    }
+    .timeTree {
+      width:62%;
+      position: absolute;
+      top:36%;
+      left:19%;
+
+    }
+    @media only screen and (min-width: 1500px) {
+      .topBg {
+        padding-bottom:143%;
+      }
+      .timeTree {
+        top:25%;
+        left:21%;
+      }
+    }
+    .bottomBg {
+      height: auto;
+      padding-bottom: 32%;
+      background:#fff url(/img/mather_04.jpg) no-repeat left bottom;
+      .info {
+        display: block;
+        width: 70%;
+        margin:0 auto;
+      }
+    }
+  }
+}

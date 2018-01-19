@@ -1,0 +1,7 @@
+<div class="charge-state" id="rechargeFailed">
+  <div class="charge-false">
+    <p class="tips">很遗憾！充值失败！</p>
+    <div class="desc" id="descTip"></div>
+    <button class="sure" id="goHelp">确定</button>
+  </div>
+</div>

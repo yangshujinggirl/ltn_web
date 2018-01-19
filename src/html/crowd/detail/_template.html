@@ -1,0 +1,397 @@
+<!-- 产品详情 B-->
+<script type="text/template" id="TemplateProdetailSum">
+  <div class="details">
+
+    <div class="details_left">
+      <img src="{{=it.productPic}}">
+    </div>
+
+    <div class="plan_right">
+      <div class="plan_title">{{=it.productFirstTitle}}</div>
+      <div class="plan_item">{{=it.productDesc}}</div>
+      <div class="target">
+        <div class="target_money">目标金额：<span class="heise">{{=it.productTotalAmount/10000}}</span>万</div>
+        <div class="target_time overTime">结束时间：<span class="over">{{=it.endTime}}</span></div>
+      </div>
+      <div class="target">
+        <div class="target_money target_money2">￥<span class="heise heise2">{{=it.productSoldedAmount/10000}}</span>万</div>
+        <div class="target_time overTime">
+          {{if(it.productStatus == '1'){ }}
+            <span class="over over2">募集中</span>
+            {{ }else{ }}
+            <span class="over over2">已结束</span>
+            {{ } }}
+        </div>
+      </div>
+      <div class="bar">
+        <div class="container">
+          <div class="completed"></div>
+        </div>
+      </div>
+      <div class="prop">
+        <div class="prop_caption prop_caption2">
+          <div class="filed">投资周期：<span class="small">{{=it.staRateDate}}</span>--<span class="small">{{=it.endRateDate}}</span></div>
+        </div>
+        <div class="prop_caption prop_caption3">
+          <div class="item over over2">{{=it.staInvestAmount}}元起投</div>
+        </div>
+        <div class="prop_caption prop_caption4">
+          <div class="filed">投资收益：<span class="small">{{=it.annualIncomeText}}</span></div>
+        </div>
+      </div>
+      {{if(it.productStatus == '1'){ }}
+      <button class="plan_but JS-buy-btn">立即加入</button>
+      {{ }else if(it.productStatus == '2' && it.productSoldedAmount < it.productTotalAmount){ }}
+      <button class="plan_but JS-buy-btn huise" disabled="disabled">募集结束</button>
+      {{ }else if(it.productStatus == '2' && it.productSoldedAmount >= it.productTotalAmount){ }}
+      <button class="plan_but JS-buy-btn huise" disabled="disabled">已满标</button>
+      {{ }else if(it.productStatus == 3){ }}
+      <button class="plan_but JS-buy-btn huise" disabled="disabled">已还款</button>
+      {{ }else if(it.productStatus =='4'){ }}
+      <button class="plan_but JS-buy-btn huise" disabled="disabled">已结束</button>
+      {{ } }}
+    </div>
+  </div>
+</script>
+
+<!-- 产品详情 A-->
+<script type="text/template" id="TemplateAProdetailSum">
+
+  <div class="details_prop">
+    <div class="details detailsA">
+      <div class="details_left">
+        <img src="{{=it.productPic}}">
+      </div>
+      <div class="plan_right">
+        <div class="plan_title">{{=it.productFirstTitle}}</div>
+        <div class="plan_item plan_item2">{{=it.productDesc}}</div>
+        <div class="raise">
+          <div class="raise_left">已筹到</div>
+          <div class="raise_right"><span class="raise_teshu">{{=strUtil().formatKilo(it.productSoldedAmount)}}</span>元</div>
+        </div>
+        <div class="bar">
+          <div class="container">
+            <div class="completed"></div>
+          </div>
+        </div>
+        <div class="prop">
+            <div class="prop_caption prop_caption2">
+            {{ if((it.productSoldedAmount/it.productTotalAmount*100).toString().substr(0,5) == '0.00'){ }}
+              <div class="filed muji">募集进度&nbsp;<span class="small muji">0</span></span></div>
+            {{ }else{ }}
+              <div class="filed muji">募集进度&nbsp;<span class="small muji">{{=(it.productSoldedAmount/it.productTotalAmount*100).toString().substr(0,5)}}%</span></span></div>
+            {{ } }}
+            </div>
+            <div class="prop_caption prop_caption3">
+              <div class="item over over2">{{=it.productSoldedPerson}}位支持者</div>
+            </div>
+          </div>
+        <div class="target">
+          <div class="target_money">目标金额：<span class="heise">{{=it.productTotalAmount/10000}}</span>万</div>
+          <div class="target_time overTime">结束时间：<span class="over">{{=it.endTime}}</span></div>
+        </div>
+        <div class="suport">此项目必须在{{=it.endTime}}前得到{{=it.productTotalAmount/10000}}万的支持才算成功！</div>
+      </div>
+    </div>
+  </div>
+
+</script>
+
+<!-- 产品记录模版 -->
+<script type="text/template" id="TemplateProRecordList">
+  <table class="log-list">
+    <thead>
+      <tr>
+        <th>序列号</th>
+        <th>支持时间</th>
+        <th>支持人</th>
+        <th>支持金额</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~ it:value:index}}
+      <tr>
+        <td>{{=index+1}}</td>
+        <td>{{=value.orderDate}}</td>
+        <td>{{=value.mobileNo}}</td>
+        <td>{{=strUtil().formatKilo(value.orderAmount)}}元</td>
+      </tr>
+      {{~}}
+    </tbody>
+  </table>
+</script>
+
+<!-- 产品阶梯 -->
+<script type="text/template" id="TemplateSetpList">
+  {{~ it:value:index}}
+  <div class="tab_right_caption">
+    <div class="right_top">
+      <div class="right_title">
+        <div class="title_left">￥{{=value.stepValue}}</div>
+        <div class="title_right"><span>{{=value.orderNum}}</span>位支持者</div>
+      </div>
+    </div>
+    <div class="right_content">
+      <div class="quota">
+        <div>限额
+          <span class="quota_teshu">{{=value.totalLimitNum}}</span>位 &nbsp; | &nbsp; 剩余
+          <span class="quota_teshu">{{=value.totalLimitNum-value.orderNum}}</span>位</div>
+      </div>
+      <div class="quota_info">{{=value.stepDesc}}</div>
+      {{? (value.totalLimitNum-value.orderNum) == 0}}
+        <button class="quota_but JS-buy-btn disabled" data-value="{{=value.stepValue}}">支付{{=value.stepValue}}</button>
+        {{??}}
+        <button class="quota_but JS-buy-btn" data-amount="{{=value.stepValue}}" data-stepId="{{=value.stepId}}">支付{{=value.stepValue}}</button>
+      {{?}}
+    </div>
+  </div>
+  {{~}}
+</script>
+
+
+<!-- 购买弹出层 -->
+<script type="text/template" id="TemplateBuyDialog">
+  <div class="product-buy component">
+    <div class="wrap">
+      <div class="current">
+        <div class="header">
+          <div class="title">投资购买</div>
+          <div class="close" id="buyClose"></div>
+        </div>
+        <div class="form" id="form">
+          <div class="row">
+            <div class="caption">投资金额：</div>
+            <div class="field">
+              <input type="text" class="input input-amount" placeholder="起投金额{{=it.page.minAmount}}元">
+            </div>
+            <div class="validation" id="amount-validate"></div>
+          </div>
+          <div class="row">
+            <div class="caption">可用余额：</div>
+            <div class="field">
+              <span class="text">{{=strUtil().formatKilo(it.userInfo.usableBalance)}}元</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="caption">可投金额：</div>
+            <div class="field">
+              <span class="text">{{=strUtil().formatKilo(it.prodetail.productTotalAmount-it.prodetail.productSoldedAmount)}}元</span>
+            </div>
+          </div>
+          {{? it.prodetail.useBridcoinTag == '1'}}
+          <div class="row">
+            <div class="caption">使用鸟币：</div>
+            <div class="field">
+              <input id="isCoin" type="checkbox" class="check" checked>
+              <label for="isCoin" class="label">0鸟币抵扣0.00元</label>
+            </div>
+          </div>
+          {{?}}
+          {{? it.prodetail.useCouponTag == '1'}}
+          <div class="row">
+            <div class="caption">理财金券：</div>
+            <div class="field">
+              <div class="tickits selected" id="tickits">
+                <input type="radio" name="Sex" value="Male" checked="checked" class="check radio">
+                <span>选择券</span>
+              </div>
+              <div class="convertTickits" id="convertTickits">
+                <input type="radio" name="Sex" value="Male" class="check radio">
+                <span>兑换券</span>
+              </div>
+              <div class="changeInput" id="changeInput">
+                <select class="select pitch"  id="coupons">
+                  <option value="0">请选择...</option>
+                </select>
+                <div class="code" id="code">
+                  <input type="text" class="convertCode" placeholder="请输入兑换券码" id="presentCode">
+                  <span class="couponName"></span>
+                  <a href="javascript:void(0)" class="sure" id="sureBtn">确认兑换</a>
+                  <div class="valid">
+                    <span class="tipsIcon"></span>
+                    <span class="validTips"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="field">
+              <select class="select" id="coupons">
+                <option value="0">请选择...</option>
+              </select>
+            </div> -->
+          </div>
+          {{?}}
+          <div class="row">
+            <div class="caption">起息日期：</div>
+            <div class="field">
+              <span class="text">{{=(new Date(it.prodetail.staRateDate)).Format('yyyy-MM-dd')}}</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="caption">到期日期：</div>
+            <div class="field">
+              <span class="text">{{=(new Date(it.prodetail.endRateDate)).Format('yyyy-MM-dd')}}</span>
+            </div>
+          </div>
+          <div class="row submit">
+            <hr class="dash">
+            <div class="actual">
+              <span class="text">实际金额：</span>
+              <span class="amount" id="actual">0.00元</span>
+            </div>
+            <div class="action">
+              <button class="button" id="btnBuy">确认投资</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</script>
+<script type="text/template" id="TemplateBuyDialogA">
+  <div class="product-buy component">
+    <div class="wrap">
+      <div class="current">
+        <div class="header">
+          <div class="title">投资购买</div>
+          <div class="close" id="buyClose"></div>
+        </div>
+        <div class="form" id="form">
+          <div class="row">
+            <div class="caption">投资金额：</div>
+            <div class="field">
+              <input type="text" class="input input-amount" placeholder="起投金额{{=it.page.minAmount}}元">
+            </div>
+            <div class="validation" id="amount-validate"></div>
+          </div>
+          <div class="row">
+            <div class="caption">可用余额：</div>
+            <div class="field">
+              <span class="text">{{=strUtil().formatKilo(it.userInfo.usableBalance)}}元</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="caption">可投金额：</div>
+            <div class="field">
+              <span class="text">{{=strUtil().formatKilo(it.prodetail.productTotalAmount-it.prodetail.productSoldedAmount)}}元</span>
+            </div>
+          </div>
+          {{? it.prodetail.useBridcoinTag == '1'}}
+          <div class="row">
+            <div class="caption">使用鸟币：</div>
+            <div class="field">
+              <input id="isCoin" type="checkbox" class="check" checked>
+              <label for="isCoin" class="label">0鸟币抵扣0.00元</label>
+            </div>
+          </div>
+          {{?}}
+          {{? it.prodetail.useCouponTag == '1'}}
+          <div class="row">
+            <div class="caption">理财金券：</div>
+            <div class="field">
+              <div class="tickits selected" id="tickits">
+                <input type="radio" name="Sex" value="Male" checked="checked" class="check radio">
+                <span>选择券</span>
+              </div>
+              <div class="convertTickits" id="convertTickits">
+                <input type="radio" name="Sex" value="Male" class="check radio">
+                <span>兑换券</span>
+              </div>
+              <div class="changeInput" id="changeInput">
+                <select class="select pitch"  id="coupons">
+                  <option value="0">请选择...</option>
+                </select>
+                <div class="code" id="code">
+                  <input type="text" class="convertCode" placeholder="请输入兑换券码" id="presentCode">
+                  <span class="couponName"></span>
+                  <a href="javascript:void(0)" class="sure" id="sureBtn">确认兑换</a>
+                  <div class="valid">
+                    <span class="tipsIcon"></span>
+                    <span class="validTips"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="field">
+              <select class="select" id="coupons">
+                <option value="0">请选择...</option>
+              </select>
+            </div> -->
+          </div>
+          {{?}}
+          <div class="row submit">
+            <hr class="dash">
+            <div class="actual">
+              <span class="text">实际金额：</span>
+              <span class="amount" id="actual">0.00元</span>
+            </div>
+            <div class="action">
+              <button class="button" id="btnBuy">确认投资</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</script>
+
+<!-- 卡券列表 -->
+<script type="text/template" id="TemplateCouponsList">
+  <option value="0">请选择...</option>
+  {{~it:value:index}}
+    <option value="{{=value.userCouponId}}">{{=value.couponName}}</option>
+  {{~}}
+</script>
+
+<script type="text/template" id="TemplatePropB">
+  <div class=" left-content ">
+    <li class="item riskOne pro-item1">
+      <article class="tab_detail">
+        {{=it.productContent}}
+      </article>
+    </li>
+    <li class="item riskTwo pro-item2">
+      <article class="tab_detail">
+      {{=it.productRuleText}}
+      </article>
+    </li>
+    <li class="item itemrisk3 pro-item3 record-list">
+      <div class="record-list-wrap" id="proRecordList">
+      </div>
+      <!-- 支持记录分页控件 -->
+      <div id="light-pagination" class="pagination light-theme simple-pagination"></div>
+    </li>
+    <li class="item itemrisk4 pro-item4">
+      <article class="tab_detail">
+        {{=it.productWiki}}
+      </article>
+    </li>
+  </div>
+</script>
+<script type="text/template" id="TemplatePropA">
+  <div class=" left-content ">
+    <li class="item riskOne pro-item1">
+      <article class="tab_detail">
+        {{=it.productContent}}
+      </article>
+    </li>
+    <li class="item riskTwo pro-item2">
+      <article class="tab_detail">
+      {{=it.productRuleText}}
+      </article>
+    </li>
+    <li class="item itemrisk3 pro-item3 record-list">
+      <div class="record-list-wrap" id="proRecordList">
+      </div>
+      <!-- 支持记录分页控件 -->
+      <div id="light-pagination" class="pagination light-theme simple-pagination"></div>
+    </li>
+    <li class="item itemrisk4 pro-item4">
+      <article class="tab_detail">
+        {{=it.productWiki}}
+      </article>
+    </li>
+  </div>
+</script>

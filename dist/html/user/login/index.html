@@ -1,0 +1,194 @@
+
+ <!DOCTYPE html>
+ <html lang="zh">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+   <link rel="stylesheet" href="/html/css/style.css?v=20171023">
+   <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+   <meta name=”renderer” content=”webkit” />
+  <script src="/html/js/lib/jquery.min.js"></script>
+   <script src="/html/js/lib/jquery.easydropdown.min.js"></script>
+   <script src="/html/js/lib/jquery.paging.min.js"></script>
+   <script src="/html/js/lib/jquery.validation.min.js"></script>
+   <script src="/html/js/lib/doT.min.js"></script>
+   <script src="/html/js/app.min.js?v=20161017"></script>
+ 
+
+  <title>登录_领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，领头鸟，涉及互联网理财、P2P，真正短期标</title>
+  <meta name="keywords" content="领投鸟理财、领投鸟官网平台、领头鸟、互联网理财、不动产理财、P2P网贷、投资理财、短期理财">
+  <meta name="description" content="领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，平台提供网络贷款，投资理财，赎楼业务，小额贷款，短期贷款，互联网理财、P2P，真正短期标">
+  
+  </head>
+  <body>
+  
+
+  <div class="commonNavTop page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="service">客服电话：400-999-9980</div>
+          <div class="iconlist">
+            <div class="iconItem weixin">
+              <div class="code"></div>
+            </div>
+            <div class="iconItem weibo">
+              <a href="http://weibo.com/u/5935757405" target="_blank"></a>
+            </div>
+            <div class="iconItem shouji">
+              <a href="/other/downloadapp " target="_blank"></a>
+            </div>
+            <div class="iconItem lipin">
+              <a href="/html/activity_banner" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span class="navItem login" onclick="user().clickEvent();" id="loginLink">登录</span>
+          <a href="/html/user/register" class="navItem register">注册</a>
+          <a class="navItem welcome"></a>
+          <a href="javascript:void(0);" class="navItem logoff">安全退出</a>
+          <a href="/other/actlist" class="navItem" >最新活动</a>
+          <a href="/other/downloadapp" class="navItem">下载APP</a>
+          <a href="/help/aboutltn" class="navItem">帮助中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="commonNavTwo page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="logo" id="logo">
+            <img src="/html/img/imageTwo/home/logo.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <a href="/" class="navItem" onclick="user().clickEvent();">首页</a>
+          <a href="/finance/list/0/1/0/0" class="navItem" onclick="user().clickEvent();">投资</a>
+         <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+         <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+          <!-- <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a> -->
+          <a href="http://bbs.lingtouniao.com" class="navItem" onclick="user().clickEvent();" target="_blank">社区</a>
+          <a href="/other/downloadapp " class="navItem" onclick="user().clickEvent();">下载APP</a>
+          <a href="/other/safeguards " class="navItem" onclick="user().clickEvent();">安全保障</a>
+          <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+          <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="user-dialog page-component">
+    <div class="wrap">
+      <div class="logincontent">
+        <div class="login component">
+          <div class="left">
+            <img src="/html/img/login-left.jpg?v=20161202">
+          </div>
+          <div class="form" id="form">
+            <div class="login-top">
+              <div class="loginleft">登录领投鸟</div>
+              <div class="loginright">
+                <span class="none">没有账号？</span>
+                <span class="registered"><a href="/html/user/register/">立即注册</a></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <i class="shouji"><img src="/html/img/login-shouji.jpg"></i>
+                <input class="input" id='txtTel' placeholder="请输入手机号码" type="text" data-required='true' data-type='telephone' data-emptyTip='账号不能为空' data-errorTip="请输入正确的手机号码"  onfocus="this.placeholder=''" onblur="this.placeholder='请输入手机号码'">
+              </div>
+              <div class="login-tip" id="loginTip1">
+                  <span class="icon-wran"></span>
+                  <span class="wran-tip" id="wranTip"></span>
+              </div>
+              <div class="validation" id="password"></div>
+            </div>
+            <div class="row">
+              <!-- <div class="caption">密码</div> -->
+              <div class="field">
+                <i class="password"><img src="/html/img/login-suo.jpg"></i>
+                <input class="input" id="txtPsd" placeholder="请输入账户密码" type="password" data-required='true' data-type='password' data-emptyTip='密码不能为空' data-errorTip="请输入6-16数字字母组合" onfocus="this.placeholder=''" onblur="this.placeholder='请输入账户密码'">
+              </div>
+               <div class="login-tip" id="loginTip">
+                  <span class="icon-wran"></span>
+                  <span class="wran-tip" id="wranpassword"></span>
+              </div>
+              <div class="validation"></div>
+            </div>
+            <div class="row">
+              <!-- <div class="caption">验证码</div> -->
+              <div class="field" id="imageCon">
+                <input class="input short" type="text" placeholder="请输入验证码" id="txtCode" data-required='true' data-emptyTip='请输入图片验证码！' data-type='imgCode'  data-errorTip="验证码不符合规则">
+                <img class="validate-image" id="imgCode" src="#" alt="图片验证码">
+              </div>
+              <span class="new" id="imageCode"><img src="/html/img/login-shuaxin.png" height="37"></span>
+               <div class="login-tip" id="loginTip2">
+                  <span class="icon-wran"></span>
+                  <span class="wran-tip" id="wranpassword"></span>
+              </div>
+              <div class="validation"></div>
+            </div>
+            <div class="row">
+                    <a class="mima" href="/html/user/forget" onclick="user().clickEvent();">忘记密码？</a>
+            </div>
+            <div class="row">
+              <div class="action">
+                <button class="button" id="submit">登录</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  !function(w,d,e){
+  var iphone = session().get('lingtouniaoguanwangluodiyeshoujihao');
+  
+  if(iphone==''||typeof(iphone) == "object"){
+    // alert('123');
+    return;
+  }
+  var _orderno=iphone;  //替换此处!;
+  var b=location.href,c=d.referrer,f,s,g=d.cookie,h=g.match(/(^|;)\s*ipycookie=([^;]*)/),i=g.match(/(^|;)\s*ipysession=([^;]*)/);if (w.parent!=w){f=b;b=c;c=f;};u='//stats.ipinyou.com/cvt?a='+e('YQs.axs.fAGkXyuDs3NleE9dUr5EoX')+'&c='+e(h?h[2]:'')+'&s='+e(i?i[2].match(/jump\%3D(\d+)/)[1]:'')+'&u='+e(b)+'&r='+e(c)+'&rd='+(new Date()).getTime()+'&OrderNo='+e(_orderno)+'&e=';
+  function _(){if(!d.body){setTimeout(_(),100);}else{s= d.createElement('script');s.src = u;d.body.insertBefore(s,d.body.firstChild);}}_();
+  }(window,document,encodeURIComponent);
+  </script>
+  
+
+  <div class="dialog-footer page-component">
+  	<div class="wrap">
+  		<p class="copy-right">
+  			©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有 沪ICP备15056137号－1 &nbsp;&nbsp;&nbsp;&nbsp;
+  		</p>
+  
+  	</div>
+  </div>
+  <script src="/html/js/lib/jquery.min.js"></script>
+  <script src="/html/js/lib/doT.min.js" type="text/javascript" charset="utf-8"></script>
+  
+
+  <div class="common-cover page-component">
+  </div>
+
+  <!--图形验证码模型-->
+  <script type="text/template" charset="UTF-8" id="templateImageCode">
+  	<input class="input short" type="text" placeholder="请输入验证码" id="txtCode" data-required='true' data-type='imgCode' data-emptyTip='请输入验证码' data-errorTip="验证码不符合规则">
+  	<img class="validate-image"  id="imgCode" src="{{=it}}" alt="图片验证码">
+  </script>
+  
+  
+  
+
+<script src="/html/js/user/login/script.min.js?v=20160824" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+  </html>

@@ -1,0 +1,246 @@
+.common-footer {
+  background: #3c3c3c;
+  border-top: 1px solid #e2e2e2;
+  margin-top: 50px;
+  .wrap{
+    padding:0;
+  }
+  .left{
+    width: 300px;
+    height: 220px;
+    text-align: center;
+    border-right: 1px dashed #303030;
+    .left_icon{
+      width: 49px;
+      height: 42px;
+      margin: 0 auto;
+      background: url(/html/img/footer_icon1.png) center center no-repeat;
+      margin-top: 35px;
+    }
+    .left_time{
+      font-size: 18px;
+      color: #888;
+      margin-top: 5px;
+    }
+    .left_tel{
+      font-size: 38px;
+      color: #888;
+      margin-top: 10px;
+    }
+    .left_QQ{
+      font-size: 14px;
+      color: #888;
+    }
+  }
+  .center_cont{
+    width: 520px;
+    height: 199px;
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 6px;
+    border-right: 1px dashed #303030;
+    ul{
+      display: inline-block;
+      vertical-align: top;
+    }
+    .title{
+      font-size: 16px;
+      color: #888;
+    }
+    li{
+      font-size: 14px;
+      color: #888;
+      margin-top: 10px;
+      text-align: center;
+      a{
+        width: 76px;
+        height: 18px;
+        display: inline-block;
+        border-left: 3px solid #3c3c3c;
+      }
+      &:hover a{
+        color: #fff;
+        border-left: 3px solid #fff;
+      }
+    }
+  }
+  .footer_last{
+    height: 142px;
+    background: #464646;
+    text-align: center;
+  }
+   .contact {
+      color: #6a6a6a;
+      padding: 40px 0 0 0;
+      position: relative;
+      display: inline-block;
+      position: relative;
+      right: -370px;
+      top: -5px;
+      z-index: 1;
+      .service {
+        display: inline-block;
+        .call {
+          font-size: 36px;
+          margin: 10px 0;
+        }
+        .time {
+          font-size: 14px;
+        }
+      }
+      .certificate {
+        display: inline-block;
+        padding: 0 0 0 20px;
+        position: absolute;
+        left: 201px;
+        top: 22px;
+
+        .item {
+          margin: 0 0 0 10px;
+        }
+      }
+      .addr {
+        margin: 7px 0;
+      }
+      .copy-right {
+        margin: 7px 0;
+      }
+    }
+    .icons{
+      text-align: center;
+      position: relative;
+      top: -31px;
+      a{
+        display: inline-block;
+        width: 69px;
+        height: 24px;
+        margin-left: 10px;
+      }
+      .icons1{
+        background: url(/html/img/foot_lianjie_03.png?v=20160824) no-repeat;
+        &:hover{
+          background: url(/html/img/footer_caise1.png) no-repeat;
+        }
+      }
+      .icons2{
+        background: url(/html/img/footer_huise.png?v=20160824) no-repeat;
+        &:hover{
+          background: url(/html/img/footer_caise2.png) no-repeat;
+        }
+      }
+      .icons3{
+        background: url(/html/img/foot_lianjie_07.png?v=20160824) no-repeat;
+        &:hover{
+          background: url(/html/img/footer_caise3.png) no-repeat;
+        }
+      }
+      .icons4{
+        background: url(/html/img/foot_lianjie_09.png?v=20160824) no-repeat;
+        &:hover{
+          background: url(/html/img/footer_caise4.png) no-repeat;
+        }
+      }
+      .icons5{
+        background: url(/html/img/foot_lianjie_11.png?v=20160824) no-repeat;
+        &:hover{
+          background: url(/html/img/footer_caise5.png) no-repeat;
+        }
+      }
+      .icons6{
+        background: url(/html/img/foot_lianjie_13.png?v=20160824) no-repeat;
+        &:hover{
+          background: url(/html/img/footer_caise6.png) no-repeat;
+        }
+      }
+      .icons7{
+        background: url(/html/img/foot_lianjie_15.png?v=20160824) no-repeat;
+        &:hover{
+          background: url(/html/img/footer_caise7.png) no-repeat;
+        }
+      }
+      .icons8{
+        background: url(/html/img/foot_lianjie_19.png?v=20160824) no-repeat;
+        &:hover{
+          background: url(/html/img/footer_caise8.png) no-repeat;
+        }
+      }
+    }
+    .friend{
+      font-size: 12px;
+      color: #888;
+      position: relative;
+      top: -18px;
+      .friend_top,.friend_bottom{
+        margin-top: 10px;
+      }
+      .jiantou{
+        width: 12px;
+        height: 7px;
+        display: inline-block;
+        background: url(/html/img/footer_xiajiantou.png) center center no-repeat;
+        margin-left: 10px;
+        cursor: pointer;
+        display: none;
+      }
+    }
+  .right {
+    position: relative;
+    left: -80px;
+    top: -50px;
+    .scan {
+
+      padding: 75px 0 0 0;
+
+      .item {
+
+        display: inline-block;
+        margin: 0 0 0 20px;
+
+        .title {
+          display: block;
+          margin: 0 0 10px 0;
+          color: #888888;
+          font-size: 14px;
+          text-align: center;
+          margin-top: 10px;
+        }
+        .code {
+          width: 100px;
+          height: 100px;
+        }
+        .youxiang{
+          width: 96px;
+          height: 26px;
+          border-radius: 3px;
+          background:#fff;
+          border: 1px solid #e1e2e3;
+          text-align: center;
+          line-height: 26px;
+          color: #333;
+          cursor: pointer;
+          position: relative;
+          img{
+            vertical-align: middle;
+          }
+          .tips{
+            width: 170px;
+            height: 44px;
+            background: url(/html/img/footer_tips.png) no-repeat;
+            position: absolute;
+            left: -44px;
+            top: -52px;
+            text-align: left;
+            line-height: 15px;
+            padding:8px 0 0 20px;
+            display: none;
+          }
+          &:hover{
+              .tips{
+                display: block;
+              }
+          }
+        }
+      }
+    }
+  }
+}

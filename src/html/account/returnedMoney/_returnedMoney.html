@@ -1,0 +1,183 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+
+<div class="account-returnedMoney">
+  <div class="returnedMoney-content">
+    <div class="itemnav">
+      <div class="itemnav-left" id="navTab">
+        <a href="javascript:void(0)" class="ite selected" data-type="wait">待回款</a>
+         <a href="javascript:void(0)" class="ite" data-type="alread">已回款</a>
+      </div>
+      <div class="itemnv-right">本平台所有资金都是通过联动优势第三方资金托管</div>
+    </div>
+    <div class="wrapOne">
+      <div class="waitWrap selected" id="waitWrap">
+        <div class="headeramcount" id="waitHead">
+            <!--<div class="interest">
+              <div class="wr">
+                <span class="field">全部待收本息(元)</span>
+                <span class="unit">42,921</span>
+              </div>
+            </div>
+            <div class="interest">
+              <div class="wr">
+                <span class="field">下一个月待收本息(元)</span>
+                <span class="unit">42,921</span>
+              </div>
+            </div>
+            <div class="interest">
+              <div class="wr">
+                <span class="field">包含奖励收益(元)</span>
+                <span class="unit">42,921</span>
+              </div>
+            </div>-->
+        </div>
+        <div class="tipsinfo">
+          待回款记录了您未收回的本金、利息和奖励(包括返现券、加息券折算的奖励)。请选择相应的起止时间查看。
+        </div>
+        <div class="form">
+          <div class="row">
+            <span>起止时间：</span>
+            <!--<input type="date" id="startTimeOne">至
+            <input type="date" id="endTimeOne">-->
+            <div class="dateWrap">
+              <div id="startTimeOne" class="inline laydate-icon"></div>
+            </div>
+            至
+            <div class="dateWrap">
+              <div id="endTimeOne" class="inline laydate-icon"></div>
+            </div>
+            <button class="submit" id="look">查看</button>
+          </div>
+        </div>
+        <table id="waitDetail">
+          <!--<thead>
+            <tr>
+              <th>到期日期</th>
+              <th>项目名称</th>
+              <th>预计回款总额</th>
+              <th>投资金额</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2016-01-23 12:00</td>
+              <td><a href="#">乐巢投系列20160428_004</a></td>
+              <td>￥4800.00</td>
+              <td>
+                <span class="high">￥98,522.00</span>
+                <span class="speci">利息：￥2,023.76</span>
+                <span class="speci">奖励：投资返现100</span>
+              </td>
+              <td>订单编号50000 充值</td>
+            </tr>
+            <tr>
+              <td>2016-01-23 12:00</td>
+              <td><a href="#">乐巢投系列20160428_004</a></td>
+              <td>￥4800.00</td>
+              <td>
+                <span class="high">￥98,522.00</span>
+                <span class="speci">利息：￥2,023.76</span>
+                <span class="speci">奖励：投资返现100</span>
+              </td>
+              <td>订单编号50000 充值</td>
+            </tr>
+          </tbody>-->
+        </table>
+        <div class="nolist" id="nolistOne"></div>
+        <div class="accountpage" id="pagesOne">
+          <div class="pages">
+          </div>
+        </div>
+      </div>
+      <div class="alreadWrap" id="alreadWrap">
+        <div class="headeramcount selected" id="alreadyHead">
+            <!--<div class="interest">
+              <div class="wr">
+                <span class="field">全部待收本息(元)</span>
+                <span class="unit">42,921</span>
+              </div>
+            </div>
+            <div class="interest">
+              <div class="wr">
+                <span class="field">下一个月待收本息(元)</span>
+                <span class="unit">42,921</span>
+              </div>
+            </div>
+            <div class="interest">
+              <div class="wr">
+                <span class="field">包含奖励收益(元)</span>
+                <span class="unit">42,921</span>
+              </div>
+            </div>-->
+        </div>
+        <div class="tipsinfo">
+          已回款记录了您已经收回的本金、利息和奖励(包括返现券、加息券折算的奖励)。请选择相应的起止时间查看。
+        </div>
+        <div class="form">
+          <div class="row">
+            <span>起止时间：</span>
+            <!--<input type="date" id="startTimeTwo">至
+            <input type="date" id="endTimeTwo">-->
+            <div class="dateWrap">
+              <div id="startTimeTwo" class="inline laydate-icon"></div>
+            </div>
+            至
+            <div class="dateWrap">
+              <div id="endTimeTwo" class="inline laydate-icon"></div>
+            </div>
+            <button class="submit" id="look1">查看</button>
+          </div>
+        </div>
+        <table id="alreadDetail">
+          <!--<thead>
+            <tr>
+              <th>到期日期</th>
+              <th>项目名称</th>
+              <th>预计回款总额</th>
+              <th>投资金额</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2016-01-23 12:00</td>
+              <td><a href="#">乐巢投系列20160428_004</a></td>
+              <td>￥4800.00</td>
+              <td>
+                <span class="high">￥98,522.00</span>
+                <span class="speci">利息：￥2,023.76</span>
+                <span class="speci">奖励：投资返现100</span>
+              </td>
+              <td>订单编号50000 充值</td>
+            </tr>
+            <tr>
+              <td>2016-01-23 12:00</td>
+              <td><a href="#">乐巢投系列20160428_004</a></td>
+              <td>￥4800.00</td>
+              <td>
+                <span class="high">￥98,522.00</span>
+                <span class="speci">利息：￥2,023.76</span>
+                <span class="speci">奖励：投资返现100</span>
+              </td>
+              <td>订单编号50000 充值</td>
+            </tr>
+          </tbody>-->
+        </table>
+        <div class="nolist" id="nolistTwo"></div>
+        <div class="accountpage" id="pagesTwo">
+          <div class="pages">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->

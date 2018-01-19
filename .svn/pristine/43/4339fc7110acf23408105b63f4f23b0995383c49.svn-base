@@ -1,0 +1,973 @@
+.redpacket{
+  .banner{
+    img{
+      width: 100%;
+    }
+  }
+  .redpacket_content{
+    background-color: #ffe63e;
+    padding: 70px 0;
+    margin-top: -3px;
+    .redpacket_center{
+      width: 1020px;
+      margin: 0 auto;
+      .action_info{
+        font-size: 24px;
+        color: #000;
+      }
+      .activity_one{
+        overflow: hidden;
+        zoom:1;
+        margin-top: 60px;
+        .activity_one_left{
+          width: 450px;
+          float: left;
+          .title{
+            font-size: 36px;
+            color: #000;
+            width: 306px;
+            height: 53px;
+            font-weight: bold;
+            line-height: 53px;
+            border-radius: 8px;
+            background-color: #fff;
+            text-align: center;
+          }
+          .info{
+            font-size: 24px;
+            color: #000;
+            font-weight: bold;
+            margin-top: 15px;
+          }
+          .info_cont{
+            font-size: 21px;
+            color: #000;
+            margin-top: 35px;
+          }
+        }
+        .activity_one_right{
+          float: right;
+          position: relative;
+          .qiang{
+            width: 145px;
+            height: 145px;
+            cursor: pointer;
+            background:url(/img/redpacket/redpacket_qiang.png) no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+            position: absolute;
+            bottom:9px;
+            left:-128px;
+            animation: 2s enlarge infinite;
+            -ms-animation:2s enlarge infinite;
+            -webkit-animation:2s enlarge infinite;
+            -o-animation:2s enlarge infinite;
+            @keyframes enlarge {
+            0% {
+                width:145px;
+                height: 145px;
+            }
+            50% {
+                width: 160px;
+                height:160px;
+            }
+            100% {
+              width:145px;
+              height: 145px;
+            }
+          }
+        }
+          .pics{
+            position: relative;
+          }
+        }
+      }
+      .activity_two{
+        margin-top: 50px;
+        position: relative;
+        .title{
+          font-size: 36px;
+          color: #000;
+          width: 306px;
+          height: 53px;
+          font-weight: bold;
+          line-height: 53px;
+          border-radius: 8px;
+          background-color: #fff;
+          text-align: center;
+        }
+        .info{
+          font-size: 24px;
+          color: #000;
+          font-weight: bold;
+          margin-top: 15px;
+        }
+        .prize_img{
+          position: absolute;
+          left:-145px;
+          top:145px;
+          z-index: 3;
+          display: none;
+          .cha1{
+            position: absolute;
+            right: 11px;
+            top: 33px;
+            cursor: pointer;
+          }
+        }
+        .prize_img2{
+          position: absolute;
+          right:-121px;
+          top:142px;
+          z-index: 1;
+          display: none;
+          .cha2{
+            position: absolute;
+            right: 11px;
+            top: 33px;
+            cursor: pointer;
+          }
+        }
+        .prize{
+          margin-top: 55px;
+          .prize_center{
+            height: 300px;
+            text-align: center;
+            margin-top: 110px;
+            position: relative;
+            .daren_bg1{
+              position: absolute;
+              left:230px;
+              top: 0;
+            }
+            .daren_bg2{
+              position: absolute;
+              right: 269px;
+              top: -50px;
+              z-index: 1;
+            }
+            .daren_bg3{
+              position: absolute;
+              right: 556px;
+              top: 53px;
+              z-index: 2;
+            }
+            .daren_bg4{
+              position: absolute;
+              right: 318px;
+              top: 8px;
+              z-index: 2;
+            }
+            .look1,.look2{
+              font-size: 36px;
+              font-weight: bold;
+              cursor: pointer;
+              z-index: 2;
+              img{
+                vertical-align: middle;
+              }
+            }
+            .look1{
+              color: #91a3af;
+              position: absolute;
+              left:25px;
+              bottom:-25px;
+            }
+            .look2{
+              color: #de6a00;
+              position: absolute;
+              right:32px;
+              bottom:-25px;
+            }
+          }
+          .big_box{
+            width: 420px;
+            margin: 35px auto;
+            text-align: center;
+            overflow: hidden;
+            zoom:1;
+            .dresser,.cachet{
+              width: 172px;
+              height: 52px;
+              line-height: 52px;
+              font-size: 24px;
+              color: #fff;
+              outline: none;
+              border:0;
+              background: url(/img/redpacket/redpacket_bg1.png);
+            }
+            .dresser{
+              float: left;
+            }
+            .cachet{
+              float: right;
+            }
+          }
+          .investment{
+            text-align: center;
+            font-size: 20px;
+            color: #000;
+            .forthwith{
+              color: #1421c6;
+            }
+            .investment_but{
+              width: 381px;
+              height: 53px;
+              margin: 20px auto 0;
+              line-height: 53px;
+              background: url(/img/redpacket/redpacket_bg2.png);
+              font-size: 24px;
+              color: #fff;
+              font-weight: bold;
+              display: block;
+              outline: none;
+              border:0;
+            }
+          }
+          .notes{
+            margin-top: 60px;
+            overflow: hidden;
+            zoom:1;
+            .onepeople,.platform{
+              vertical-align: top;
+              .notes_title{
+                font-size: 24px;
+                color: #000;
+                text-align: center;
+                font-weight:bold;
+                .setaddress{
+                  font-size: 18px;
+                  color: #051b7b;
+                }
+              }
+              .notes_cont{
+                width: 410px;
+                height: 269px;
+                padding: 10px 40px;
+                background: #fff;
+                border-radius: 10px;
+                background: url(/img/redpacket/redpacket_bg3.png) no-repeat;
+                margin-top: 20px;
+                overflow: hidden;
+                zoom:1;
+                .notes_list_cont{
+                  height: 240px;
+                  overflow: hidden;
+                  text-align: center;
+                  padding:0;
+                  li{
+                    span{
+                      width: 30%;
+                      display: inline-block;
+                      font-size: 20px;
+                      color: #bc9139;
+                    }
+                    .balck{
+                      color: #000;
+                    }
+                    .one{
+                      width: 17%;
+                    }
+                    .one1{
+                      width: 10%;
+                    }
+                    .oneTwo{
+                      width: 36%;
+                    }
+                    .oneTwo2{
+                      width: 29%;
+                    }
+                    .oneThree{
+                      width: 43%;
+                    }
+                    .oneThree1{
+                      width: 40%;
+                    }
+                    .one3{
+                      width: 17%;
+                    }
+                  }
+                  .platform-record-data{
+                    height: 200px;
+                    overflow: hidden;
+                    ul{
+                      overflow: hidden;
+                      padding:0;
+                      li{
+                        height: 30px;
+                        line-height: 30px;
+                      }
+                    }
+                  }
+                  .notes_list_title{
+                    height: 40px;
+                    line-height: 40px;
+                    font-weight: bold;
+                    border-bottom: 1px solid #bc9139;
+                  }
+                }
+                .nolist {
+                    display: none;
+                    width: 196px;
+                    height: 179px;
+                    margin: 0 auto;
+                    text-align: center;
+                    position: relative;
+                    left: 40px;
+                    top: -75px;
+                    background: url(/img/redpacket/nolistshuju.jpg) no-repeat;
+                    .logoIcon {
+                        position: absolute;
+                        left: -22px;
+                        top: 130px;
+                        font-size: 16px;
+                        .denglu {
+                            color: #ff5a00;
+                        }
+                        .denglu:hover {
+                            color: #6e56ff;
+                        }
+                    }
+                }
+                .nolistpingtai {
+                    display: none;
+                    width: 196px;
+                    height: 179px;
+                    margin: 0 auto;
+                    text-align: center;
+                    position: relative;
+                    left: 40px;
+                    top: -177px;
+                    background: url(/img/redpacket/nolistshuju.jpg) no-repeat;
+                    text-indent: 40px;
+                    .logoIcon {
+                        position: absolute;
+                        left: -22px;
+                        top: 130px;
+                        font-size: 16px;
+                        .denglu {
+                            color: #ff5a00;
+                        }
+                        .denglu:hover {
+                            color: #6e56ff;
+                        }
+                    }
+                }
+              }
+            }
+            .onepeople{
+              float: left;
+            }
+            .platform{
+              float: right;
+            }
+          }
+          .rule{
+            font-size: 20px;
+            color: #000;
+            margin-top: 32px;
+          }
+        }
+      }
+      .activity_three{
+        margin-top: 50px;
+        .title{
+          font-size: 36px;
+          color: #000;
+          width: 306px;
+          height: 53px;
+          font-weight: bold;
+          line-height: 53px;
+          border-radius: 8px;
+          background-color: #fff;
+          text-align: center;
+        }
+        .info{
+          font-size: 24px;
+          color: #000;
+          font-weight: bold;
+          margin-top: 15px;
+        }
+        .three_info{
+          margin-top: 50px;
+        }
+        .investment_but{
+          width: 381px;
+          height: 53px;
+          margin: 20px  0;
+          line-height: 53px;
+          background: url(/img/redpacket/redpacket_bg2.png);
+          font-size: 24px;
+          color: #fff;
+          font-weight: bold;
+          outline: none;
+          border:0;
+          position: relative;
+            .tips{
+            width: 506px;
+            height: 58px;
+            line-height: 32px;
+            text-align: left;
+            background: #ffc93d;
+            font-size: 20px;
+            color: #000;
+            padding: 20px 30px;
+            position: absolute;
+            left:388px;
+            top: 0;
+            display: none;
+            .cha3{
+              position: absolute;
+              right: 9px;
+              top: 6px;
+            }
+          }
+        }
+        .form{
+          margin-top: 50px;
+          text-align: center;
+          border-collapse:collapse;
+          border:0px solid #999;
+          background: #fff;
+          border: 10px solid #ffc93d;
+          box-shadow: 10px 5px 4px #edcd37;
+          tr{
+            height: 70px;
+          }
+          .form_one{
+            border-top: none;
+            td{
+              font-size: 16px;
+              color: #ed1a1b;
+              border-right: none;
+              font-weight: bold;
+            }
+          }
+          .form_two{
+            td{
+              font-size: 24px;
+            }
+          }
+          td{
+            padding: 20px;
+            border-top: none;
+          }
+          th{
+            font-size: 21px;
+            color: #000;
+            border-top: none;
+            border-left: none;
+            padding: 20px 15px;
+          }
+        }
+        .activity_rule{
+          font-size: 20px;
+          color: #000;
+          margin-top: 30px;
+        }
+      }
+      .redpacket_last{
+        width: 535px;
+        margin: 80px auto;
+        overflow: hidden;
+        zoom:1;
+        .code{
+          float: left;
+        }
+        .last_info{
+          float: right;
+          font-size: 21px;
+          color: #000;
+          .tips{
+            font-weight: bold;
+          }
+          .name{
+            margin-top: 8px;
+          }
+          .info_cont{
+            margin-top: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+.redpacket_rain{
+  width: 100%;
+  height: 950px;
+  background: url(/img/redpacket/redpacket_rain.jpg) no-repeat;
+  background-size:cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // top: 50%;
+  // left:50%;
+  // margin-left:-50%;
+  // margin-top:-475px;
+  z-index: 2;
+  padding-top:180px;
+  display: none;
+  .close_rain{
+    width: 33px;
+    height: 33px;
+    background: url(/img/corporate_icon6.png) no-repeat;
+    position: absolute;
+    right: 182px;
+    top: 200px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .count_down_numbers{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -150px 0 0 -150px;
+    width: 300px;
+    height: 300px;
+    img{
+      margin: 0 auto;
+      width: auto;
+      height: 100%;
+      display: none;
+      // &:nth-child(3){
+      //   display: block;
+      // }
+    }
+  }
+  .lingtouniao{
+    width: 490px;
+    margin: 0 auto;
+    text-align: center;
+    .down{
+      font-size: 26px;
+      color: #999;
+    }
+    .schedule{
+      width: 100%;
+      line-height: 18px;
+      margin-top: 10px;
+      overflow: hidden;
+      position: relative;
+      p{
+        float: left;
+        font-size: 16px;
+        color: #fff;
+        margin: 0 0 0 10px;
+      }
+    }
+    .stick_box{
+      border-radius: 9px;
+      overflow: hidden;
+      float: left;
+      width: 87%;
+      .stick{
+        content: " ";
+        height: 18px;
+        width: 100%;
+        background: #f2971a;
+        &:before{
+          content: " ";
+          height: 6px;
+          float: left;
+          width: 100%;
+          background: #f9d328;
+        }
+        &:after{
+          content: " ";
+          height: 6px;
+          width: 100%;
+          float: left;
+          margin-top: 6px;
+          background: #ea5514;
+        }
+      }
+    }
+    #stick_black{
+      height: 18px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      .stick{
+        width: 0%;
+        position: absolute;
+        right: 0;
+        background: #1e2d2c;
+        &:before{
+          background: #27393d;
+        }
+        &:after{
+          background: #17211e;
+        }
+      }
+    }
+    .stick_run{
+      animation: schedule 10s linear forwards;
+    }
+    @keyframes schedule{
+      0%{
+        width: 0%;
+      }
+      100%{
+        width: 100%;
+      }
+    }
+  }
+}
+.red_cover{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+.life{
+  width: 430px;
+  height: 255px;
+  background: url(/img/redpacket/red_bg1.png) no-repeat;
+  position: fixed;
+  left:50%;
+  top: 50%;
+  margin-left:-288px;
+  margin-top:-238px;
+  z-index: 4;
+  padding: 97px 75px;
+  text-align: center;
+  display: none;
+  .life_title{
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+  }
+  .life_win{
+    font-size: 42px;
+    color: #000;
+    font-weight: bold;
+  }
+  .life_but{
+    margin-top: 50px;
+    button{
+      width: 193px;
+      height: 55px;
+      background: url(/img/redpacket/red_bg2.png) no-repeat;
+      outline: none;
+      border: 0;
+      line-height: 55px;
+      text-align: center;
+      color: #000;
+      font-size: 24px;
+      &.noClick{
+        background: url(/img/redpacket/red_huise.png) no-repeat;
+        color: #fff;
+        cursor: not-allowed;
+      }
+    }
+    .life_left{
+      float: left;
+    }
+    .life_right{
+      float: right;
+    }
+  }
+  .life_but2{
+    margin-top: 115px;
+  }
+}
+.Notwinning{
+  display: none;
+}
+.address{
+  width: 515px;
+  height: 308px;
+  background: url(/img/redpacket/red_bg1.png) no-repeat;
+  position: fixed;
+  left:50%;
+  top: 50%;
+  margin-left:-288px;
+  margin-top:-238px;
+  z-index: 4;
+  padding: 70px 35px;
+  display: none;
+  .cha2{
+    position: absolute;
+    right: 34px;
+    top: 28px;
+    cursor: pointer;
+  }
+  .life_title{
+    font-size: 30px;
+    color: #000;
+  }
+  .form-inline{
+    margin-top: 20px;
+    .form-group{
+      display: inline-block;
+      font-size: 24px;
+      color: #000;
+      .form-control{
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+        background: #cecacf;
+      }
+    }
+  }
+  .dizhi{
+    width: 507px;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #000;
+    background: #cecacf;
+    text-indent: 10px;
+    .input{
+      background-color: #cecacf;
+      outline: none;
+      box-sizing: border-box;
+      outline-offset: -2px;
+      border: 1px solid #cecacf;
+    }
+  }
+  .life_but2{
+    text-align: center;
+    .sure{
+      width: 193px;
+      height: 55px;
+      background: url(/img/redpacket/red_bg2.png) no-repeat;
+      outline: none;
+      border: 0;
+      line-height: 55px;
+      text-align: center;
+      color: #000;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  }
+}
+.box_prize{
+  width: 430px;
+  height: 335px;
+  background: url(/img/redpacket/red_bg1.png) no-repeat;
+  position: fixed;
+  left:50%;
+  top: 50%;
+  margin-left:-288px;
+  margin-top:-238px;
+  z-index: 4;
+  padding: 65px 75px;
+  text-align: center;
+  display: none;
+  .life_title{
+    font-size: 30px;
+    color: #f81003;
+    font-weight: bold;
+  }
+  .life_win{
+    font-size: 42px;
+    color: #f81003;
+    font-weight: bold;
+  }
+  .prize_img2{
+    width: 160px;
+    height: 135px;
+    margin: 0 auto;
+
+    &.tup1{
+      background: url(/img/redpacket/red_huolizhi.png) no-repeat;
+    }
+    &.tup2{
+      background: url(/img/redpacket/red_huolizhi.png) no-repeat;
+    }
+    &.tup3{
+      background: url(/img/redpacket/red_fanxianquan.png) no-repeat;
+    }
+    &.tup4{
+      background: url(/img/redpacket/red_huafei.png) no-repeat;
+    }
+    &.tup5{
+      background: url(/img/redpacket/red_guo.png) no-repeat;
+    }
+    &.tup6{
+      background: url(/img/redpacket/red_kaoxiang.png) no-repeat;
+    }
+
+    &.tup7{
+      background: url(/img/redpacket/red_fanxianquan2.png) no-repeat;
+    }
+    &.tup8{
+      background: url(/img/redpacket/red_huafei.png) no-repeat;
+    }
+    &.tup9{
+      background: url(/img/redpacket/red_jingdongka.png) no-repeat;
+    }
+    &.tup10{
+      background: url(/img/redpacket/red_guo.png) no-repeat;
+    }
+    &.tup11{
+      background: url(/img/redpacket/red_kaoxiang.png) no-repeat;
+    }
+    &.tup12{
+      background: url(/img/redpacket/red_iphone.png) no-repeat;
+    }
+
+  }
+  .life_but{
+    margin-top: 50px;
+    button{
+      width: 193px;
+      height: 55px;
+      background: url(/img/redpacket/red_bg2.png) no-repeat;
+      outline: none;
+      border: 0;
+      line-height: 55px;
+      text-align: center;
+      color: #000;
+      font-size: 24px;
+      &.noClick{
+        background: url(/img/redpacket/red_huise.png) no-repeat;
+        color: #fff;
+        cursor: not-allowed;
+      }
+    }
+    .life_left{
+      float: left;
+    }
+    .life_right{
+      float: right;
+    }
+  }
+  .life_but2{
+    margin-top: 45px;
+  }
+}
+.red_rian_one{
+  display: none;
+  width: 355px;
+  height: 122px;
+  background: url(/img/redpacket/red_bg3.png) no-repeat;
+  position: fixed;
+  padding: 208px 50px;
+  left:50%;
+  top: 50%;
+  z-index: 4;
+  margin-left: -227px;
+  margin-top: -187px;
+  .no_prize{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+  }
+  .agin{
+    width: 172px;
+    height: 52px;
+    line-height: 52px;
+    display: block;
+    margin: 50px auto 0;
+    background: url(/img/redpacket/redpacket_bg1.png) no-repeat;
+    outline: none;
+    border:0;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+  }
+}
+.prize_two{
+  display: none;
+  width: 375px;
+  height: 283px;
+  background: url(/img/redpacket/red_bg4.png) no-repeat;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -229px;
+  margin-top: -275px;
+  z-index: 4;
+  padding: 185px 40px;
+  .teo_list{
+    overflow: hidden;
+    zoom:1;
+    li{
+      width: 149px;
+      height: 51px;
+      line-height: 51px;
+      text-align: center;
+      float: left;
+      display: none;
+      background: url(/img/redpacket/red_bg5.png) no-repeat;
+      color: #dd4f2d;
+      font-size: 22px;
+      margin: 20px 10px 0 0 ;
+    }
+  }
+  .life_but{
+    margin-top: 17px;
+    display: none;
+    .but_info{
+      font-size: 20px;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+    }
+    button{
+      width: 174px;
+      height: 55px;
+      background: url(/img/redpacket/redpacket_bg1.png) no-repeat;
+      outline: none;
+      border: 0;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+      font-size: 30px;
+      &.noClick{
+        background: url(/img/redpacket/redpacket_bg1.png) no-repeat;
+        color: #fff;
+        cursor: not-allowed;
+      }
+    }
+    .life_left{
+      float: left;
+      margin-top:10px;
+    }
+    .life_right{
+      float: right;
+      margin-top:10px;
+    }
+    .life_but_2{
+      display: block;
+      text-align: center;
+      margin-left: 27px;
+    }
+  }
+  .life_but2{
+    position: absolute;
+    bottom: 115px;
+    text-align: center;
+    margin-left:90px;
+  }
+  .bak_but{
+    text-align: center;
+    position: relative;
+    position: absolute;
+    bottom:142px;
+    left:100px;
+    display: none;
+    .but_info{
+      font-size: 20px;
+      color: #000;
+      font-weight: bold;
+    }
+    .back{
+      width: 174px;
+      height: 55px;
+      background: url(/img/redpacket/redpacket_bg1.png) no-repeat;
+      outline: none;
+      border: 0;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+}

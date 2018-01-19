@@ -1,0 +1,38 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<!-- @extend ../_paging.html -->
+
+<div class="about-notice">
+  <div class="title" id="abouttitle" data-content="/html/about/notice/">
+    <div class="item">平台公告</div>
+  </div>
+<div class="cont3" id="noticeProp">
+    <!-- <ul class="list">
+        <li>
+        <span class="list-left">【项目公告】<a href="#">XXXX提前还款公告</a></span>
+        <span class="list-right">2016-2-29 16:16:20 星期一</span>
+        </li>
+        <li>
+        <span class="list-left">【系统公告】<a href="#">平台维护中，暂不能提现 </a></span>
+        <span class="list-right">2016-2-29 16:16:20 星期一</span>
+        </li>
+        <li>
+        <span class="list-left">【项目公告】<a href="#">XXXX提前还款公告</a></span>
+        <span class="list-right">2016-2-29 16:16:20 星期一</span>
+        </li>
+        <li>
+        <span class="list-left">【项目公告】<a href="#">XXXX提前还款公告</a></span>
+        <span class="list-right">2016-2-29 16:16:20 星期一</span>
+        </li>
+    </ul> -->
+    </div>
+</div>
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->
+
+<!-- @endextend -->

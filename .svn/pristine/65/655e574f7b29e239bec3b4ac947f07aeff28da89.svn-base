@@ -1,0 +1,112 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+
+<div class="about-team">
+  <div class="title" id="abouttitle" data-content="/html/about/team/">
+    <div class="item">团队介绍</div>
+  </div>
+
+  <div class="team">
+    <div class="row">
+      <div class="avatar level1"></div>
+
+      <div class="item">
+        <div class="header">
+        <span class="name">章瑞瑞</span>
+        <span class="position">&nbsp;|&nbsp;董事长</span>
+        </div>
+        <div class="info">
+           <p class="desc">曾就职于兴业全球基金，担任产品经理和深圳市场副总监，<br>后在小牛资本担任资本地产项目总监，销售副总经理。<br>2014年创立宁波坤九投资管理有限公司并担任董事长，累计参与管理资本规模超过200亿人民币，累计服务客户超过500家，遍布长江三角及珠三角地区，从业经验深厚。</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="avatar level4"></div>
+
+      <div class="item">
+        <div class="header">
+        <span class="name">徐晋</span>
+        <span class="position">&nbsp;|&nbsp;金融产品部负责人</span>
+        </div>
+        <div class="info">
+           <p class="desc">具有银行、证券等8年金融行业从业经历，具备丰富的宏观经济与行业研究分析经验、专业的金融理论知识，<br>取得注册分析师专业证书、注册国际投资分析师、金融理财师、银行业从业资格证书、证券从业资格证书。</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="avatar level5"></div>
+
+      <div class="item">
+        <div class="header">
+        <span class="name">王剑锋</span>
+        <span class="position">&nbsp;|&nbsp;营销事业部总经理</span>
+        </div>
+        <div class="info">
+           <p class="desc">具有7年市场营销管理经验，曾任嘉兴索德医疗器械有限公司总经理。<br>2014年2月至今担任宁波坤九投资管理有限公司营销事业部总经理，目前就读于上海交大安泰经管学院第16期中国CEO私募股权研修班。</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="avatar level6"></div>
+
+      <div class="item">
+        <div class="header">
+        <span class="name">邹亦奇</span>
+        <span class="position">&nbsp;|&nbsp;宁波坤鹏副总经理、大客户渠道推广部负责人</span>
+        </div>
+        <div class="info">
+           <p class="desc">毕业于墨尔本大学金融会计系和悉尼麦考利大学，会计学学士，应用金融学硕士。<br>曾就职于澳洲国立银行NAB投资部、麦格理银行投资部和招商银行业务部，
+后担任江西滕王阁食品有限公司副总经理。<br>现担任宁波坤鹏信息科技有限公司副总经理，兼任大客户渠道推广部负责人。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="title">
+    <div class="item">团队风采</div>
+  </div>
+
+  <div class="banner">
+    <div class="section">
+      <div class="top-img"><img src="../../../img/lvshi.png"></div>
+      <div class="bottom">
+        <div class="title2">风控团队</div>
+        <div class="article">团队成员包括了地产基金风控领域专家，股权投资领域专家，证券投资风险评估师等等。</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="top-img"><img src="../../../img/fawu.png"></div>
+      <div class="bottom">
+        <div class="title2">法务团队</div>
+        <div class="article">与国内知名法律金融机构合作，专业律师团队覆盖全国主要城市，为您的财富运作保驾护航。</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="top-img"><img src="../../../img/hulianwang.png"></div>
+      <div class="bottom">
+        <div class="title2">互联网团队</div>
+        <div class="article">产品、技术核心管理人员来自腾讯、阿里巴巴等知名互联网公司，平均拥有8年以上相关行业经验。<br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="top-img"><img src="../../../img/budongchan.png"></div>
+      <div class="bottom">
+        <div class="title2">不动产业务团队</div>
+        <div class="article">覆盖上海、杭州、宁波、南京等多个城市，未来将覆盖北上广深等全国重点城市，为用户提供更多优质资产。
+        <br><br></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->

@@ -1,0 +1,67 @@
+.loan-pay {
+  .counter {
+    padding:30px;
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    margin:10px 0;
+    .head1 {
+      font-size: 18px;
+      margin:0 0 15px 0;
+    }
+    .charge-intro {
+      display: inline-block;
+      .font {
+        width: 445px;
+        font-size: 14px;
+        line-height: 25px;
+        margin:0;
+        .status {
+          display: block;
+          padding-left:20px;
+        }
+      }
+    }
+    .loan-counter {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 150px;
+      .form {
+        padding-left:35px;
+        .row {
+          font-size: 14px;
+          position: relative;
+          margin-bottom:15px;
+          .capition {
+            width:65px;
+            text-align:right;
+          }
+          .input {
+            width:280px;
+            height: 36px;
+            color:#cfcfcf;
+            padding:0 30px 0 14px;
+            box-sizing:border-box;
+            border: 1px solid #e8e8e8;
+            margin-left: 20px;
+          }
+          .units {
+            position:absolute;
+            color:#cfcfcf;
+            top:9px;
+            right:14px;
+          }
+        }
+        .apply {
+          width:280px;
+          height: 44px;
+          font-size: 18px;
+          color:#fff;
+          background-color: #ff6f20;
+          border:none;
+          border-radius:5px;
+          margin:20px 0 0 76px;
+        }
+      }
+    }
+  }
+}

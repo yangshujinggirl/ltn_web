@@ -1,0 +1,130 @@
+.commonNavTop.page-component {
+  background-color: #333333;
+  $high:#ff6f20;
+  >.wrap {
+    overflow: visible;
+    padding:0;
+  }
+  .content {
+    height: 36px;
+    font-size: 14px;
+    color: #999;
+    .left {
+      .service {
+        display: inline-block;
+        line-height: 36px;
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+      .iconlist {
+        height: 20px;
+        padding: 8px 0;
+        display: inline-block;
+        vertical-align: middle;
+        .iconItem {
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          margin-right: 10px;
+          cursor: pointer;
+          a {
+            display: block;
+            width:100%;
+            height: 100%;
+          }
+        }
+        .weixin {
+          background: url('/img/imageTwo/home/icon_home1.png') no-repeat;
+          position:relative;
+          .code {
+            width:88px;
+            height: 93px;
+            background: url('/img/imageTwo/home/icon_homeCode.png') no-repeat;
+            position:absolute;
+            bottom:-96px;
+            left:50%;
+            margin-left: -44px;
+            display: none;
+            z-index: 999999999;
+          }
+          &:hover {
+            background: url('/img/imageTwo/home/icon_home_11.png') no-repeat;
+            .code {
+              display: block;
+            }
+          }
+        }
+        .weibo {
+          background: url('/img/imageTwo/home/icon_home2.png') no-repeat;
+          &:hover {
+            background: url('/img/imageTwo/home/icon_home_22.png') no-repeat;
+          }
+        }
+        .shouji {
+          background: url('/img/imageTwo/home/icon_home3.png') no-repeat;
+          &:hover {
+            background: url('/img/imageTwo/home/icon_home_33.png') no-repeat;
+          }
+        }
+        .lipin {
+          background: url('/img/imageTwo/home/icon_home4.png') no-repeat;
+          &:hover {
+            background: url('/img/imageTwo/home/icon_home_44.png') no-repeat;
+          }
+        }
+      }
+    }
+    .right {
+      &.logon{
+        .navItem{
+          &.logoff{
+            display: inline-block;
+          }
+          &.welcome{
+            display:  inline-block;
+          }
+          &.login{
+            display: none;
+          }
+          &.register{
+            display: none;
+          }
+        }
+      }
+      .navItem {
+        height: 36px;
+        line-height: 36px;
+        padding:0 12px;
+        color: #999;
+        display: inline-block;
+        position:relative;
+        cursor: pointer;
+        vertical-align: top;
+        &:hover {
+          color: $high;
+        }
+        &.select{
+          color:$high;
+          border-bottom: 3px solid $high;
+        }
+        &.logoff{
+          display: none;
+        }
+        &.welcome{
+          display: none;
+        }
+      }
+      .navItem:not(:last-child):after {
+        content: '';
+        width: 1px;
+        height: 10px;
+        background-color: #3f3e3e;
+        position: absolute;
+        right: 0;
+        top:50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+      }
+    }
+  }
+}

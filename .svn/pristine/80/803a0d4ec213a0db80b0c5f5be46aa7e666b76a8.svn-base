@@ -1,0 +1,126 @@
+.appBody,.appHtml {
+  height:100%;
+  overflow: hidden;
+  margin:0;
+  padding: 0;
+  .wrapScreen {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  .page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .text{
+    display: none;
+    position:absolute;
+    left:320px;
+    top:130px;
+    color: #000;
+    font-size: 26px;
+    .newUser {
+      font-size: 58px;
+    }
+    .info {
+      &:before {
+        content:'';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius:100%;
+        background-color: #000;
+        vertical-align: middle;
+        margin-right:20px;
+      }
+    }
+    .android ,.ios {
+      display: inline-block;
+      width: 186px;
+      height: 45px;
+    }
+    .android {
+      background: url(/html/img/appnew_btn1.png);
+    }
+    .ios {
+      background: url(/html/img/appnew_btn2.png);
+    }
+    &.selected {
+      display: block;
+    }
+  }
+  .page1 {
+    background: url(/html/img/appnew_1.jpg) no-repeat center;
+    background-size:cover;
+    -webkit-background-size:cover;
+    .text {
+      color: #fff;
+    }
+  }
+  .page2 {
+    background: url(/html/img/appnew_2.jpg) no-repeat center;
+    background-size:cover;
+    -webkit-background-size:cover;
+  }
+  .page3 {
+    background: url(/html/img/appnew_3.jpg) no-repeat center;
+    background-size:cover;
+    -webkit-background-size:cover;
+  }
+  .page4 {
+    background: url(/html/img/appnew_4.jpg) no-repeat center;
+    background-size:cover;
+    -webkit-background-size:cover;
+  }
+  .page5 {
+    background: url(/html/img/appnew_5.jpg) no-repeat center;
+    background-size:cover;
+    -webkit-background-size:cover;
+  }
+  .nav {
+    position: fixed;
+    top:50%;
+    right:10px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    .item {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      margin-top:10px;
+      background-color: #ccc;
+      cursor: pointer;
+      &.current {
+       background-color: #ff3f51;
+      }
+    }
+  }
+  .coverbg {
+    width: 100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    display: none;
+    .close {
+      width:32px;
+      height:32px;
+      background: url(/html/img/close.png);
+      position:absolute;
+      top:10px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .code {
+      position:absolute;
+      top:13px;
+      left:50%;
+      margin-left: 166px;
+    }
+  }
+  .bg {
+    width: 100%;
+  }
+}

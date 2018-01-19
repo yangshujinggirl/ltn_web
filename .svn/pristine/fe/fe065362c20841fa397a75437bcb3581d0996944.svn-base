@@ -1,0 +1,318 @@
+<!-- 公告消息轮播模板渲染 -->
+<script type="text/template" id="temprumb">
+  <div class="wrap">
+    <div class="first component">
+      <ul class="crumb-list">
+        <li class="item">
+          <a href="../../">首页</a>
+        </li>
+        <li class="item">
+          <a href="../">理财</a>
+        </li>
+        <li class="item">
+          <a href="#">新手标详情</a>
+        </li>
+      </ul>
+      <ul class="notice marquee" id="marquee">
+        {{~it.messageList:value}}
+        <li class="item">{{=value}}</li>
+        {{~}}
+      </ul>
+    </div>
+  </div>
+</script>
+
+<!-- 标地头模板渲染 -->
+<script type="text/template" id="tempProp">
+  <div class="wrap">
+    <div class="first component">
+      <div class="header">
+        <h1 class="title">{{=it.productName}}</h1>
+        <!-- <ul class="coupon-list">
+        </ul> -->
+        <div class="contract">
+          查看<a class="link" href="http://www.lingtouniao.com/ltn-static/protocol/ztproduct" target="_blank">《智投产品协议》</a>范本
+        </div>
+      </div>
+      <div class="content">
+        <div class="prop">
+          <div class="main">
+            <div class="chart">
+              <div class="container" id="chartProcess"></div>
+              <div class="legend">
+                <div class="field">{{=it.progress}}%</div>
+                <div class="caption">项目进度</div>
+              </div>
+            </div>
+            <div class="profit">
+              <span class="field">{{=it.annualIncomeText}}</span></span>
+              <span class="caption">预期年化</span>
+            </div>
+            <div class="period">
+              <span class="field">{{=parseFloat(it.convertDay)}}</span><span class="unit">天</span>
+              <span class="caption">投资期限</span>
+            </div>
+            <div class="surplus">
+              <span class="field">{{=Util.padFloatMoney(it.productRemainAmount)}}</span><span class="unit">元</span>
+              <span class="caption">剩余可投金额</span>
+            </div>
+          </div>
+          <div class="sub">
+            <div class="amount">
+              <span class="caption">项目总金额</span>
+              <span class="field">{{=parseFloat(it.productTotalAmount)}}</span><span class="unit">元</span>
+            </div>
+            <div class="list">
+              <div class="item">
+                <span class="caption">投资方式：</span>
+                <span class="field">现金投资</span>
+              </div>
+              <!-- <div class="item">
+                <span class="caption">计息方式：</span>
+                <span class="field">{{=it.rateCalculateType}}</span>
+              </div> -->
+              <div class="item">
+                <span class="caption">收益方式：</span>
+                <span class="field">固定收益</span>
+              </div>
+              <div class="item">
+                <span class="caption">还款方式：</span>
+                <span class="field">{{=it.repaymentType}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action">
+          <div class="title">
+            <span class="main">投资金额</span>
+            <span class="sub"></span>
+          </div>
+          <div class="list">
+            <div class="item">
+              <span class="caption">起投金额：</span>
+              <span class="field">{{=it.staInvestAmount}}元</span>
+            </div>
+            <div class="item">
+              <span class="caption">最高可投金额：</span>
+              <span class="field">{{=it.singleLimitAmount}}</span>
+            </div>
+            <div class="item">
+              <span class="caption">起息日期：</span>
+              <span class="field">{{=it.staRateDate}}</span>
+            </div>
+            <div class="item">
+              <span class="caption">结息日期：</span>
+              <span class="field">{{=it.endDate}}</span>
+            </div>
+          </div>
+          <button id='invest' class="button invest {{=it.productType=='TYB'?'':(it.productRemainAmount>0?'':'disabled')}}" {{=it.productRemainAmount<0?disabled:''}}>
+            {{=it.productType=='TYB'?'立即投资':(it.productRemainAmount>0?'立即投资':'已售罄')}}
+          </button>
+          <span class="tips">领投鸟提醒您：理财非存款，投资需谨慎！</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<!-- 项目详情模板渲染 -->
+<script type="text/template" id="tempDetail">
+  <article class="detail">
+    <div class="row">
+      <span class="caption">项目描述：</span>
+    </div>
+    <div class="row">
+      <span class="caption sub">项目说明：</span>
+      <span class="field">{{=it.productDesc}}</span>
+    </div>
+    <!-- <div class="row">
+      <span class="caption sub">借款用途：</span>
+      <span class="field">{{=it.borrowUse}}</span>
+    </div>
+    <div class="row">
+      <span class="caption sub">还款来源：</span>
+      <span class="field">{{=it.repaymentFactor}}</span>
+    </div> -->
+    <hr class="dash">
+    <div class="row">
+      <span class="caption">项目协议：</span>
+      <span class="field"><a href="http://www.lingtouniao.com/ltn-static/protocol/loan" class="link" target="_blank">《借款协议》</a></span>
+    </div>
+    <div class="row">
+      <span class="caption">保障方式：</span>
+      <span class="field"><a href="/other/safeguards " class="link">《平台安全保障详解》</a></span>
+    </div>
+    <!-- <div class="row">
+      <span class="caption">投资期限：</span>
+      <span class="field">{{=it.investDeadline}}天（2016-02-12至2016-05-27）</span>
+    </div>
+    <div class="row">
+      <span class="caption">到账时间：</span>
+      <span class="field">{{=it.accountDate}}</span>
+    </div>
+    <hr class="dash">
+    <div class="row">
+      <span class="caption">房屋信息：</span>
+      <ul class="list">
+        <li class="item">
+          <span class="key">市场价值</span>
+          <span class="value">{{=it.marketValue}}万</span>
+        </li>
+        <li class="item">
+          <span class="key">产权性质</span>
+          <span class="value">{{=it.rightProperty}}</span>
+        </li>
+        <li class="item">
+          <span class="key">建筑面积</span>
+          <span class="value">{{=it.coveredArea}}平米</span>
+        </li>
+        <li class="item">
+          <span class="key">所处位置</span>
+          <span class="value">{{=it.position}}</span>
+        </li>
+      </ul>
+    </div>
+    <hr class="dash">
+    <div class="row">
+      <span class="caption solo">借款人信息：</span>
+      <ul class="list">
+        <li class="item">
+          <span class="key">姓名</span>
+          <span class="value">{{=it.borrowerName}}</span>
+        </li>
+        <li class="item">
+          <span class="key">性别</span>
+          <span class="value">{{=it.borrowerSex}}</span>
+        </li>
+        <li class="item">
+          <span class="key">婚姻</span>
+          <span class="value">{{=it.birrowerMarriage}}</span>
+        </li>
+      </ul>
+    </div>
+    <hr class="dash">
+    <div class="row">
+      <span class="caption solo">其他相关信息：</span>
+      <ul class="list">
+        <li class="item">
+          <span class="key">交易中介</span>
+          <span class="value">{{=it.dealIntermediary}}</span>
+        </li>
+        <li class="item">
+          <span class="key">按揭银行</span>
+          <span class="value">{{=it.mortgageBank}}</span>
+        </li>
+      </ul>
+    </div>
+    <hr class="dash"> -->
+   <div class="row">
+    <span class="caption solo">风控审核项目：</span>
+    <ul class="risk">
+      <li class="item">
+        <div class="icon1"></div>
+        <span class="key">房屋买卖合同</span>
+      </li>
+      <li class="item">
+        <div class="icon2"></div>
+        <span class="key">房产证</span>
+      </li>
+      <li class="item">
+        <div class="icon3"></div>
+        <span class="key">银行批贷函</span>
+      </li>
+      <li class="item">
+        <div class="icon4"></div>
+        <span class="key">赎楼服务合同</span>
+      </li>
+      <li class="item">
+        <div class="icon5"></div>
+        <span class="key">个人征信报告</span>
+      </li>
+    </ul>
+  </div>
+  </article>
+</script>
+
+<!-- 投资记录模板渲染 -->
+<script type="text/template" id="tempDescXSB">
+  <article class="log">
+    <div class="row" id="logCont">
+      <span class="caption solo">投资记录：</span>
+      <table class="log-list">
+        <thead>
+          <tr>
+            <th>序列号</th>
+            <th>成交时间</th>
+            <th>投资人</th>
+            <th>投资金额</th>
+          </tr>
+        </thead>
+         <tbody>
+          {{~it.purchaseHistoryList:value:index}}
+          <tr>
+            <td class="item">{{=index + 1}}</td>
+            <td class="item">{{=value.orderDate}}</td>
+            <td class="item">{{=value.userName}}</td>
+            <td class="item">{{=value.orderAmount}}</td>
+          </tr>
+          {{~}}
+        </tbody>
+      </table>
+    </div>
+    <div class="nolist">
+        <div class="logoIcon">
+          暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+        </div>
+    </div>
+    <div class="accountpage">
+      <div class="pages"></div>
+    </div>
+  </article>
+</script>
+
+<!--投资购买弹窗模板-->
+<script type="text/template" id="tempBuy">
+	<div class="form" id="form">
+    <div class="row">
+      <div class="caption">投资金额：</div>
+      <div class="field">
+        <input class="input" type="text" placeholder="起投金额{{=it.prodInfo.staInvestAmount}}元" id='txtMoney' data-required='true' data-type='number' data-emptyTip='金额不能为空' data-errorTip="金额不符合规则" data-ceiling="新手标单次投资上限为10000元">
+      </div>
+      <div class="validation"></div>
+    </div>
+    <div class="row">
+      <div class="caption">可用余额：</div>
+      <div class="field">
+        <span class="text">{{=it.userInfo.usableBalance}}元</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="caption">最高可投金额：</div>
+      <div class="field">
+        <span class="text">{{=it.prodInfo.singleLimitAmount}}元</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="caption">起息日期：</div>
+      <div class="field">
+        <span class="text">{{=it.prodInfo.staRateDate}}</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="caption">到期日期：</div>
+      <div class="field">
+        <span class="text">{{=it.prodInfo.endDate}}</span>
+      </div>
+    </div>
+    <div class="row submit">
+      <hr class="dash">
+      <div class="actual">
+        <span class="text">实际金额：</span>
+        <span class="amount" id="amountMoney">0.00元</span>
+      </div>
+      <div class="action">
+        <button class="button" id="submit">确认投资</button>
+      </div>
+    </div>
+     </div>
+</script>

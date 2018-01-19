@@ -1,0 +1,56 @@
+$(function() {
+
+	var page = new Page();
+	page.rechargeMoney;//充值金额
+	//获取银行信息
+	page.getBankInfo = function() {
+		var bank=page.getPostData();
+		if(bank!=null){
+			page.rechargeMoney=bank.money;
+			page.initTemplate(bank, 'bankInfo', 'templateBankInfo');
+		}
+	};
+	//快捷充值免密
+	page.quicklyRecharge=function(){
+		$('#submit').text('充值中...').prop('disabled','disabled');
+		var param={'orderAmount':page.rechargeMoney}
+		return page.getData(
+			'/user/recharge', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				 var url=data.data.url;
+				 var is_jump=data.data.is_jump;//1：未开通免密，跳转联动页面 0：开通免密，无需跳转
+				 if(is_jump==0){
+				 	$('#rechargeSuccess').show();
+				 }
+			} else {
+				var str = user().testResultCode(data.resultCode);
+				$('#rechargeFailed').show();
+				$('#descTip').html(user().testResultCode(data.resultCode));
+			}
+		};
+	};
+	//初始化
+	page.init = function() {
+		page.setTitle('确认充值');
+		page.getBankInfo();
+	};
+	page.init();
+
+	//确认充值
+	$('#submit').on("click",function(){
+		page.quicklyRecharge();
+	});
+	//网银充值弹窗去账户中心
+	$('#goCenter').on('click',function(){
+		window.location.href='/html/account/viewall/'
+	});
+	//网银充值弹窗去帮助中心
+	$('#goHelp').on('click',function(){
+		window.location.href='/help/trade'
+	});
+});

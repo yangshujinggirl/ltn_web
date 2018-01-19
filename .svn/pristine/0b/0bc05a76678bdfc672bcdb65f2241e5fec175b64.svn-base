@@ -1,0 +1,47 @@
+<script type="text/template" id="tempDetailCharge">
+    <table>
+      <thead>
+        <tr>
+          <th>充值流水编号</th>
+          <th>充值金额</th>
+          <th>充值时间</th>
+          <th>状态</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{~it:value}}
+      <tr>
+        <td>{{=value.orderNo}}</td>
+        <td>{{=value.amount}}</td>
+        <td>{{=value.operateDate}}</td>
+        <td>{{=value.status}}</td>
+      </tr>
+     {{~}}
+     </tbody>
+    </table>
+    <div class="nolist"></div>
+</script>
+
+<script type="text/template" id="tempDetailDepost">
+  <table>
+    <thead>
+      <tr>
+        <th>提现流水编号</th>
+        <th>提现金额</th>
+        <th>提现时间</th>
+        <th>状态</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~it:value}}
+      <tr>
+        <td>{{=value.orderNo}}</td>
+        <td>{{=value.amount}}</td>
+        <td>{{=value.operateDate}}</td>
+        <td>{{=value.status}}</td>
+      </tr>
+     {{~}}
+   </tbody>
+  </table>
+  <div class="nolist"></div>
+</script>

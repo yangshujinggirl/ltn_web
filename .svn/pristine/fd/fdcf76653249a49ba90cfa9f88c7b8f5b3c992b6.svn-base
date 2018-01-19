@@ -1,0 +1,108 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<!-- @extend ../_paging.html -->
+
+
+<div class="account-infolist">
+  <div class="header">我的消息列表</div>
+ <!--  <div class="list">
+    <div class="listtitle ">
+      <div class="item">
+        <div class="type">信息类型</div>
+        <div class="infor">消息内容</div>
+        <div class="time">发送时间</div>
+      </div>
+    </div>
+    <div class="listcontent">
+      <div class="item ">
+        <div class="type">N09877777888</div>
+        <div class="infor">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</div>
+        <div class="time">2016-1-12 12:09:09</div>
+      </div>
+  </div> -->
+  <div class="table" id="detailList">
+    <table>
+      <thead>
+        <tr>
+          <th class="messageType">消息类型</th>
+          <th class="productname">消息内容</td>
+          <th>发送时间</th>
+        </tr>
+      </thead>
+      <!-- <tbody>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+        <tr>
+          <td>098877777788</td>
+          <td class="tableinfo">领头鸟理财新春特惠，新手理财产品限时加息6%，最高可达10%, 还有..</td>
+          <td>2016-1-12 12:09:09</td>
+        </tr>
+      </tbody> -->
+    </table>
+  </div>
+</div>
+
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->
+
+<!-- @endextend -->
+

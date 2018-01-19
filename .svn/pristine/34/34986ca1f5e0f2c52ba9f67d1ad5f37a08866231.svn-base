@@ -1,0 +1,150 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<!-- @extend ../_paging.html -->
+
+<div class="account-detail">
+  <div class="detail-content">
+    <div class="itemnav">
+      <div class="itemnav-left">
+        <a href="/html/account/bank2?control=recharge" class="item" id="recharge" data-content="detailCharge">充值</a>
+        <a  href="/html/account/bank2?control=withDraw" class="item" id="withDraw" data-content="detailDepost">提现</a>
+      </div>
+      <div class="itemnav-right" id="itemtap">
+        <span class="item" data-content="detailCharge">充值明细</span>
+        <span class="item" data-content="detailDepost">提现明细</span>
+      </div>
+    </div>
+    <div class="detailCharge" id="contenttable">
+      <div class="charge item" id="detailCharge">
+        <!-- <table>
+          <thead>
+            <tr>
+              <th>充值流水编号</th>
+              <th>充值金额</th>
+              <th>充值时间</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+             <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+            <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+             <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+            <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+             <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+            <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+             <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+         </tbody>
+        </table> -->
+      </div>
+      <div class="depost item" id="detailDepost">
+        <!-- <table>
+          <thead>
+            <tr>
+              <th>提现流水编号</th>
+              <th>提现金额</th>
+              <th>提现时间</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+             <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+            <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+             <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+            <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+             <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+            <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+             <tr>
+              <td>098877777788</td>
+              <td>800.00元</td>
+              <td>2016-01-25</td>
+              <td>成功</td>
+            </tr>
+         </tbody>
+        </table> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- @endextend -->
+<!-- @endextend -->
+<!-- @endextend -->

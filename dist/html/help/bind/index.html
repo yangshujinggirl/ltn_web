@@ -1,0 +1,525 @@
+
+  <!DOCTYPE html>
+  <html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="/html/css/style.css?v=20171023">
+    <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name=”renderer” content=”webkit” />
+   <script src="/html/js/lib/jquery.min.js"></script>
+    <script src="/html/js/lib/jquery.easydropdown.min.js"></script>
+    <script src="/html/js/lib/jquery.paging.min.js"></script>
+    <script src="/html/js/lib/jquery.validation.min.js"></script>
+    <script src="/html/js/lib/doT.min.js"></script>
+    <script src="/html/js/app.min.js?v=20161017"></script>
+  
+
+  <title>认证绑卡、领投鸟官网平台_实名认证、绑定银行卡</title>
+  <meta name="keywords" content="领投鸟理财、领投鸟官网平台、领头鸟、实名认证、绑定银行卡、更换银行卡、互联网理财、不动产理财、P2P网贷、投资理财、短期理财">
+  <meta name="description" content="领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，平台提供网络贷款，投资理财，赎楼业务，小额贷款，短期贷款，互联网理财、P2P网贷">
+
+  </head>
+  <body>
+  
+
+  <div class="commonNavTop page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="service">客服电话：400-999-9980</div>
+          <div class="iconlist">
+            <div class="iconItem weixin">
+              <div class="code"></div>
+            </div>
+            <div class="iconItem weibo">
+              <a href="http://weibo.com/u/5935757405" target="_blank"></a>
+            </div>
+            <div class="iconItem shouji">
+              <a href="/other/downloadapp " target="_blank"></a>
+            </div>
+            <div class="iconItem lipin">
+              <a href="/html/activity_banner" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span class="navItem login" onclick="user().clickEvent();" id="loginLink">登录</span>
+          <a href="/html/user/register" class="navItem register">注册</a>
+          <a class="navItem welcome"></a>
+          <a href="javascript:void(0);" class="navItem logoff">安全退出</a>
+          <a href="/other/actlist" class="navItem" >最新活动</a>
+          <a href="/other/downloadapp" class="navItem">下载APP</a>
+          <a href="/help/aboutltn" class="navItem">帮助中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="commonNavTwo page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="logo" id="logo">
+            <img src="/html/img/imageTwo/home/logo.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <a href="/" class="navItem" onclick="user().clickEvent();">首页</a>
+          <a href="/finance/list/0/1/0/0" class="navItem" onclick="user().clickEvent();">投资</a>
+         <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+         <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+          <!-- <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a> -->
+          <a href="http://bbs.lingtouniao.com" class="navItem" onclick="user().clickEvent();" target="_blank">社区</a>
+          <a href="/other/downloadapp " class="navItem" onclick="user().clickEvent();">下载APP</a>
+          <a href="/other/safeguards " class="navItem" onclick="user().clickEvent();">安全保障</a>
+          <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+          <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  <div class="help-content page-component">
+    <div class="wrap">
+      <div class="message">
+        <div class="lefttop">
+    <div class="leftContent" id='leftnav'>
+      <div class="listall">
+        <div class="list1">
+          <div class="titleicon"></div>
+          <div class="title">常见问题</div>
+        </div>
+        <div>
+          <a href="/help/aboutltn/" class="item">关于领投鸟</a>
+          <a href="/html/help/login/" class="item">注册登录</a>
+          <a href="/html/help/bind/" class="item"> 认证绑卡</a>
+          <a href="/html/help/moneyin/" class="item">充值提现</a>
+          <a href="/html/help/moneyout/" class="item">投资还款</a>
+          <a href="/html/help/safe/" class="item"> 账户安全</a>
+          <a href="/html/help/gold/" class="item">理财金券</a>
+        </div>
+      </div>
+      <div class="listall">
+        <div class="list1">
+          <div class="titleicon"></div>
+          <div class="title">更多问题</div>
+        </div>
+        <div>
+          <a href="/html/help/explain-word/" class="item">名词解释</a>
+          <a href="/html/help/product/" class="item">产品介绍</a>
+          <a href="/html/help/explain-activity/" class="item">活动介绍</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="righttop">
+    <div class="rightContent">
+      <div class="middle">
+  
+      <div class="middle-content">
+    <div class="help-bind">
+      <div class="title">
+        <div class="item">认证绑卡</div>
+      </div>
+  
+      <ul class="list">
+          <li>
+            <div class="item">01、使用护照号、军官证号等是否可以认证？</div>
+            <div class="content">目前系统只支持第二代中华人民共和国居民身份证进行认证。除此之外，在领投鸟进行认证的用户年龄应满18岁。</div>
+          </li>
+          <li>
+            <div class="item">02、为什么要进行实名认证？</div>
+            <div class="content">
+              实名认证的目的是为了确认投资人的身份以及保证投资借款合同的有效性与合法性。
+              同时我们也会通过实名认证验证您设置的提现银行账户是否属于您本人。
+              为了确保您的资金安全，您需要在首次投资前进行实名认证。
+              实名认证仅需您输入您的身份证号及姓名，全过程仅需10秒钟，非常简单。
+              领投鸟对于所有用户资料将严格保密。
+            </div>
+          </li>
+          <li>
+            <div class="item">03、我认证成功后，是否可以更改证件号码？</div>
+            <div class="content">不可以，证件号码和平台用户名是唯一绑定的，会记录在系统及合同中，所以无法更改。</div>
+          </li>
+          <li>
+            <div class="item">04、我的姓名中有符号或是英文是否可以认证？</div>
+            <div class="content">目前对于身份信息的要求是在公安系统登记且可查询到的。对于姓名中出现的符号，请使用英文半角格式输入。</div>
+          </li>
+          <li>
+            <div class="item">05、如何进行实名认证？</div>
+            <div class="content">
+              方法一：<br>
+              您在注册完成后，跳转至实名认证页面，填入真实姓名、身份证号和图片验证码。然后点击“立即认证”按钮，页面跳转至联动优势页面，填写相关表单。完成认证。
+              <br>
+              方法二：<br>在“账户中心”-“实名认证”。填入真实姓名、身份证号和图片验证码。然后点击“实名认证”按钮，页面跳转至联动优势页面，填写相关表单。完成认证。
+            </div>
+          </li>
+          <li>
+           <div class="item">06、为什么实名认证不成功？应该如何解决？</div>
+            <div class="content">
+              根据联动优势的规定，验证不成功，通常有三种情况：<br>
+              1、更改过姓名。<br>
+              2、更改过户籍所在地。<br>
+              3、现役军人。<br><br>
+              解决办法：<br>
+              如果是前两种情况，建议用户可以到派出所进行“网络身份信息”查询、更改；或者联系客服热线：400-9999-980咨询处理。
+            </div>
+          </li>
+          <li>
+           <div class="item">07、什么是绑定银行卡？我什么时候需要绑定银行卡？</div>
+            <div class="content">
+              绑定银行卡指的是在领投鸟上储存您的银行卡信息，方便您之后提现操作的同时保障您的账户安全。
+              在第一次提现之前需要绑定一张银行卡，绑定银行卡的操作非常简单，
+              您只需提供您的银行卡号、开户银行及开户支行（可根据支行地址的关键字模糊查询）。
+              请注意，您绑定的银行卡的持卡人需与您之前认证的姓名、身份证和您办卡时预留的手机号信息一致，否则将不能进行银行卡绑定。
+            </div>
+          </li>
+          <li>
+            <div class="item">08、我如何绑定银行卡？</div>
+            <div class="content">
+              方法一：<br>在注册实名之后，点击“已完成”按钮，页面跳转至“绑定银行卡”页面，在该页面填写相关信息，点击“立即绑卡”，页面跳转至“联动优势”页面，填写相关表单，完成绑卡。<br>
+              方法二：<br>在“账户中心”-“我的银行卡”，填写相关信息，点击“绑定银行卡”，页面跳转至“联动优势”页面，填写相关表单，完成绑卡。</div>
+          </li>
+          <li>
+            <div class="item">09、如何更换银行卡？</div>
+            <div class="content">
+              在“账户中心”-“我的银行卡”，
+              点击“跟换银行卡”页面切换成“银行卡”表单，填写相关信息，然后点击“确定更换银行卡”。联系客服，提供相关材料便可申请换卡。<br/><br/>
+              情形一：账户无在途资金<br/>
+              当您的账户满足如下条件时：<br/>
+              无投资、无还款中的项目，随心投账户余额为0<br/>
+              可用余额为0（可将余额提现，并确保资金到账后再发起换卡申请）<br/>
+              您的换卡申请系统会自动审核通过<br/><br/>
+              情形二：不满足情形一的情况<br/>
+              为了保证您的资金，若您的账户不满足上述条件并发起换卡申请时，需要额外提供如下资料，发送至邮箱service@lingtouniao.com，以便人工审核;<br/>
+              1.用户手持身份证照片正反面，显示本人脸和手臂，图片应能看清身份证号、用户手持身份证照片正反面，显示本人脸和手臂，图片应能看清身份证号、人像；<br/>
+              2.用户手持原卡、新卡正反面照片，显示本人脸和手臂，图片应能看清银行卡卡号；<br/>
+              3.若原卡已丢失的，出示原卡挂失证明，无法出具原卡挂失证明的，提供原卡的开户证明或银行开具的一个月内交易流水并加盖银行公章；<br/>
+              4.若用户丢失原卡开户证明或原卡已销毁等相关资料，请用户提供换卡证明，且证明上需印有银行柜台鲜章以便审核；<br/>
+              5.无新卡图片的，提供新卡开户单子或新卡与身份证关联关系证明（银行出具）；<br/>
+              6.新卡不能换成邮储银行卡及华夏银行卡。<br/>
+            </div>
+          </li>
+          <li>
+            <div class="item">10、为什么在联动优势绑定银行卡时长时间显示验证中或绑定失败？</div>
+            <div class="content">出现此现象的原因可能有以下几种：<br>1、领投鸟账号未通过实名认证<br>2、银行开户行信息错误<br>3、银行账号/户名错误，或是账号和户名不符<br>4、银行卡账户冻结或正在办理挂失<br>5、您的姓名中有生僻字，需要联系领投鸟客服，提供相关信息后交给联动优势手动绑定银行卡。</div>
+          </li>
+          <li>
+           <div class="item">11、领投鸟理财官网支持哪些借记卡？</div>
+            <div class="content">借记卡快捷银行列表：
+              <table border="1">
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>银行</th>
+                    <th>银行简码</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>中国工商银行</td>
+                    <td>ICBC</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>中国农业银行</td>
+                    <td>ABC</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>中国建设银行</td>
+                    <td>CCB</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>中国银行</td>
+                    <td>BOC</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>光大银行</td>
+                    <td>CEB</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>兴业银行</td>
+                    <td>CIB</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>中国民生银行</td>
+                    <td>CMBC</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>华夏银行</td>
+                    <td>HXB</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>邮储银行（暂停支持）</td>
+                    <td>PSBC</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>浦东发展银行</td>
+                    <td>SPDB</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>交通银行</td>
+                    <td>COMM</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>广发银行</td>
+                    <td>GDB</td>
+                  </tr>
+                   <tr>
+                    <td>13</td>
+                    <td>中信银行</td>
+                    <td>CITIC</td>
+                  </tr>
+                   <tr>
+                    <td>14</td>
+                    <td>招商银行</td>
+                    <td>CMB</td>
+                  </tr>
+                   <tr>
+                    <td>15</td>
+                    <td>平安银行</td>
+                    <td>SPAB</td>
+                  </tr>
+  
+  
+                </tbody>
+              </table></div>
+          </li>
+  
+      </ul>
+  
+    </div>
+  </div>
+  
+  
+  
+  </div>
+  
+  <div class="help-contact">
+    <div class="title">客服电话</div>
+    <div class="phone">
+      <div class="number">400-999-9980</div>
+      <div class="date">(工作时间：周一至周日 9:30-18:30)</div>
+      <button class="button">客服热线</button>
+      <div class="follow">关注我们</div>
+    </div>
+    <div class="code">
+      <img src="/html/img/code.png" alt="">
+    </div>
+    <a href="http://weibo.com/u/5818072930" target="_blank">
+        <button class="button2">
+            <span class="icon"></span>
+            <span class="cont">关注我们</span>
+        </button>
+    </a>
+  </div>
+  
+    </div>
+  </div>
+       </div>
+    </div>
+  
+  </div>
+
+  <div class="common-footer page-component">
+    <div class="wrap">
+      <div class="left">
+        <div class="iphone">
+          <div class="left_icon"></div>
+          <div class="left_time">（工作日9:30-18:30）</div>
+          <div class="left_tel">400-999-9980</div>
+          <div class="left_QQ">领投鸟投资用户交流群：247441580</div>
+        </div>
+      </div>
+      <div class="center_cont">
+        <ul>
+          <li class="title">关于我们</li>
+          <li>
+            <a href="/about/pltinfo" target="_blank">平台介绍</a>
+          </li>
+          <li>
+            <a href="/about/team" target="_blank">团队介绍 </a>
+          </li>
+          <li>
+            <a href="/about/advantage" target="_blank">品牌优势</a>
+          </li>
+          <li>
+            <a href="/about/honor" target="_blank">平台荣誉</a>
+          </li>
+          <li>
+            <a href="/about/partner" target="_blank">合作伙伴</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="title">联系我们</li>
+          <li>
+            <a href="/about/notice" target="_blank">平台公告</a>
+          </li>
+          <li>
+            <a href="/about/news" target="_blank">媒体报道 </a>
+          </li>
+          <li>
+            <a href="/about/join" target="_blank">加入我们</a>
+          </li>
+          <li>
+            <a href="/about/contact" target="_blank">联系我们</a>
+          </li>
+        </ul>
+        <ul class="three">
+          <li class="title">帮助中心</li>
+          <li>
+            <a href="/other/newerguide " target="_blank">新手指引</a>
+          </li>
+          <li>
+            <a href="/help/aboutltn/" target="_blank">帮助中心 </a>
+          </li>
+          <li>
+            <a href="/other/actlist " target="_blank">热门活动</a>
+          </li>
+        </ul>
+        <ul class="four">
+          <li class="title">安全保障</li>
+          <li>
+            <a href="/about/report" target="_blank">运营报告</a>
+          </li>
+          <li>
+            <a href="/about/protocol" target="_blank">法律法规 </a>
+          </li>
+          <li>
+            <a href="/other/safeguards " target="_blank">安全保障</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="scan">
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-app.png" alt="APP下载二维码">
+            <span class="title">APP下载</span>
+            <div class="youxiang">
+              <span class="small_icon1">
+                <img src="/html/img/footer_icon2.png">
+              </span>客服邮箱
+              <div class="tips">客服邮箱：service@lingtouniao.com</div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-weixin.png" alt="微信公众号二维码">
+            <span class="title">微信公众号</span>
+            <a href="http://weibo.com/u/5935757405" target="_blank"><div class="youxiang">
+                <span class="small_icon1">
+                  <img src="/html/img/footer_icon3.png">
+                </span>新浪微博
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_last">
+        <div class="contact" style="z-index:1;">
+          <div class="service">
+            <span><script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1258037212'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258037212%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?2ce520d6a6a41eb85c78974ad14678c4";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+          </script>
+          <script type="text/javascript">
+            var _py = _py || [];
+            _py.push(['a', 'YQs..WOGqF1S7kb_VEl9N283aBX']);
+            _py.push(['domain','stats.ipinyou.com']);
+            _py.push(['e','']);
+            -function(d) {
+              var s = d.createElement('script'),
+              e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+              f = 'https:' == location.protocol;
+              s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
+            }(document);
+            </script>
+            <noscript><img src="//stats.ipinyou.com/adv.gif?a=YQs..WOGqF1S7kb_VEl9N283aBX&e=" style="display:none;"/></noscript>
+          </span>
+          </div>
+        </div>
+        <div class="icons">
+          <!--诺顿网站图片LOGO-->
+          <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lingtouniao.com&amp;lang=zh_cn" target="_bank" class="icons1"></a>
+  
+          <!--诚信网站图片LOGO，不用加版本号是新图片-->
+          <a href="http://credit.szfw.org/CX20160524015311350170.html" target='_blank' class="icons2"></a>
+  
+          <!--工商图片LOGO-->
+          <a href="http://www.sgs.gov.cn/lz/etpsInfo.do?method=index" target='_blank' class="icons3"></a>
+  
+          <!--ICP网站图片LOGO-->
+          <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target='_blank' class="icons4"></a>
+  
+          <!--行业协会网站图片LOGO-->
+          <a href="http://sfia.org.cn/h/n/user/toDetailMermbersMainInfo?uId=2016072400000000077" target='_blank' class="icons5"></a>
+  
+          <!--安全联盟网站图片LOGO-->
+          <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.lingtouniao.com&at=business" target='_blank' class="icons6"></a>
+  
+          <!--互联网金融网站图片LOGO-->
+          <a href="http://si.trustutn.org/info?sn=172170915000608884439&certType=4%22%3E%3Cimg" target='_blank' class="icons7"></a>
+  
+          <!--可信网站图片LOGO-->
+          <a href="https://ss.knet.cn/verifyseal.dll?sn=e160523310104635708sr5000000&pa=500267" tabindex="-1" id="urlknet" target="_blank" class="icons8"></a>
+        </div>
+        <div class="friend">
+          <div class="friend_top">友情链接：
+          <a href="http://www.wdzj.com/dangan/ltnlc/" target="_blank">网贷之家</a>
+             ｜   <a href="http://lingtouniao.p2peye.com/" target="_blank">网贷天眼</a>
+                ｜   <a href="http://baike.baidu.com/item/领投鸟理财" target="_blank">百度百科</a>
+                   ｜   <a href="http://tieba.baidu.com/f?kw=%E9%A2%86%E6%8A%95%E9%B8%9F&ie=utf-8" target="_blank">百度贴吧</a>
+                      ｜   <a href="http://mp.sohu.com/profile?xpt=cHBhZzI1NjRjY2RmOThmZkBzb2h1LmNvbQ==" target="_blank">搜狐媒体</a>
+                         ｜   <a href="http://weibo.com/u/5935757405?topnav=1&wvr=6&topsug=1" target="_blank">新浪微博</a>
+                            ｜   <a href="http://toutiao.com/m5784948163/" target="_blank">今日头条</a>
+                               ｜   <a href="http://www.lagou.com/gongsi/103258.html?m=1" target="_blank">拉勾</a>
+                                  ｜   <a href="http://www.itjuzi.com/company/32856" target="_blank">IT桔子</a></div>
+              <div class="friend_bottom">公司地址：上海市金沙江路2145号普罗娜商务广场A
+              栋7楼   ©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有<a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15056137号</a>  市场有风险 投资需谨慎</div>
+        </div>
+  </div>
+    <div class="kefu">
+      <script>
+      (function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","http://lingtouniao.udesk.cn/im_client/js/udeskApi.js?1480664200567","ud");
+      ud({
+          "code": "18bj2e9k",
+          "link": "http://lingtouniao.udesk.cn/im_client?web_plugin_id=23176"
+      });
+    </script>
+    </div>
+  
+
+  <div class="common-cover page-component">
+  </div>
+
+  <script src="/html/js/help/help.min.js"></script>
+
+  </body>
+  </html>

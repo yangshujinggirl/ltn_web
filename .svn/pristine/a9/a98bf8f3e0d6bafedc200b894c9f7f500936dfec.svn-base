@@ -1,0 +1,82 @@
+.posatl_success{
+  width: 470px;
+  height: 285px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -235px;
+  margin-top: -130px;
+  box-sizing:border-box;
+  z-index: 99999999999999999;
+  display: none;
+  .title{
+    text-align: center;
+    border-bottom: 2px solid #e2e2e2;
+    .title_cont{
+      width: 120px;
+      height: 45px;
+      line-height: 45px;
+      border-bottom: 2px solid #ff5900;
+      font-size: 14px;
+      color: #ff5900;
+    }
+  }
+  .success2{
+    height: 140px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 45px;
+    .success_icon{
+      width: 33px;
+      height: 33px;
+      background: url(/img/corporate_icon5.png) no-repeat;
+      display: inline-block;
+      position: relative;
+      top: 7px;
+    }
+    .success_info{
+      font-size: 26px;
+      color: #ff0000;
+    }
+    .zuihou{
+      width: 383px;
+      text-align: left;
+      margin: 20px auto 0;
+      font-size: 14px;
+      display: block;
+      color: #666;
+    }
+  }
+  .posatl_button{
+    width: 90px;
+    height: 35px;
+    border: 0;
+    background: #ff5900;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .colse2{
+    width: 17px;
+    height: 17px;
+    background: url(/img/icon-dialog-close.png) no-repeat;
+    position: absolute;
+    right: 13px;
+    top: 14px;
+    cursor: pointer;
+  }
+}
+.cover9{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  display: none;
+  background: rgba(0,0,0,0.8);
+}

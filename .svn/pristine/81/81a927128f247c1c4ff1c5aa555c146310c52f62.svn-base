@@ -1,0 +1,32 @@
+
+  <!-- @include ../../common/_headtop.html-->
+
+  <!-- @include _headmiddle.html -->
+
+  <!-- @include ../../common/_headbottom.html -->
+
+  <!-- @include ../../common/default/_navTop.html -->
+
+  <!-- @include ../../common/default/_navTwo.html -->
+
+  <!-- @include _crumb.html -->
+
+  <!-- @include _prop.html -->
+
+  <!-- @include _desc.html -->
+
+  <!-- @include _buy.html -->
+
+  <!-- @include ../../common/_footer.html -->
+
+  <!-- @include ../../common/_cover.html -->
+
+  <!-- @include _template.html -->
+
+  <script src="/html/js/lib/echarts.min.js"></script>
+
+  <script src="/html/js/lib/jquery.marquee.min.js"></script>
+
+  <script src="/html/js/product/first/script.min.js?v=20160825"></script>
+
+  <!-- @include ../../common/_bottom.html -->

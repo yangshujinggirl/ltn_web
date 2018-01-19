@@ -1,0 +1,20 @@
+  <!-- @include ../common/_headtop.html-->
+
+  <!-- @include _headmiddle.html -->
+
+  <!-- @include ../common/_headbottom.html -->
+
+  <!-- @include ../common/_fullyone-nav.html -->
+
+  <!-- @include _midAutumn.html -->
+
+  <!-- @include ../common/_footer.html -->
+
+  <!-- @include ../common/_cover.html -->
+
+  <!-- @include _template.html -->
+
+  <script src="/html/js/midAutumn/script.min.js?v=20160622"></script>
+  
+
+  <!-- @include ../common/_bottom.html -->

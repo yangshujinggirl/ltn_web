@@ -1,0 +1,67 @@
+.about-contact {
+  .contact-content {
+    padding:35px;
+    .itemnav {
+      border-bottom: 2px solid #e2e2e2;
+       margin-bottom:10px;
+      .head-1 {
+        font-size:18px;
+        font-weight: bold;
+        width: 100px;
+        height: 30px;
+        margin:0;
+        border-bottom: 2px solid #ea5504;
+        line-height: 30px;
+        text-align: center;
+        margin-left: 10px;
+      }
+    }
+    .map{
+      height: 319px;
+      margin:60px 0 20px 108px;
+    }
+    .company-info {
+      text-align: center;
+      .name {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: bold;
+        margin:0;
+      }
+    }
+    .contact-us {
+      text-align: center;
+      margin-top:86px;
+      .contact-way {
+        .contact-num {
+          display: inline-block;
+          text-align: center;
+          padding-top:104px;
+          background: url(../../../img/contact_04.png) no-repeat center top;
+          .num {
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: bold;
+            margin:0;
+          }
+        }
+        .contact-email {
+           background: url(../../../img/contact_05.png) no-repeat center top;
+           margin:0 112px;
+        }
+        .contact-QQ {
+          width: 98px;
+          background: url(../../../img/QQ.png) no-repeat center top;
+        }
+      }
+      .us {
+          font-size:18px;
+          display: inline-block;
+          font-weight: bold;
+          border-bottom: 2px solid #ccc;
+          margin:0 0 58px 0;
+        }
+    }
+
+  }
+}

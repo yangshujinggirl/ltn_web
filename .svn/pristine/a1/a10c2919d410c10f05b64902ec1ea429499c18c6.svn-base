@@ -1,0 +1,84 @@
+<div class="companyRegister page-component">
+  <div class="register component">
+    <div class="banner">
+    </div>
+    <div class="form" id="form">
+      <div class="login-top">
+        <div class="loginleft">企业注册</div>
+        <div class="loginright">
+          <span class="none">已有账号？</span>
+          <span class="registered"><a href="/html/user/login/">立即登录</a></span>
+        </div>
+      </div>
+      <div class="row" id="wrapTel">
+        <div class="field">
+          <img src="../../../img/login-shouji.jpg" class="inputIcon">
+          <input class="input" type="text" placeholder="请输入手机号码"  id='txtTel' data-required='true' data-type='telephone' data-emptyTip='请输入手机号' data-errorTip="请输入正确的手机号码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入手机号码'">
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row" id="wrapImg">
+        <div class="field" id="imageCon">
+          <input class="input short" type="text" placeholder="请输入图片验证码" id="txtImageCode" data-required='true' data-emptyTip='请输入图片验证码' data-type='imgCode'  data-errorTip="图片验证码不符合规则" onfocus="this.placeholder=''" onblur="this.placeholder='请输入图片验证码'">
+          <img class="validate-image" id="imgCode" src="" alt="图片验证码">
+          <span class="new" id="imageCode">
+            <img src="../../../img/login-shuaxin.png" height="37">
+          </span>
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <img src="../../../img/register-info.png" class="inputIcon">
+          <input class="input info" type="text" placeholder="请输入短信验证码"  id="txtPhoneCode" data-required='true' data-emptyTip='请输入短信验证码' data-type='phoneCode'  data-errorTip="请输入正确的短信验证码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入短信验证码'">
+          <button class="validate-sms disabled" id="sendPhoneCode" disabled="disabled" >
+            发送验证码
+          </button>
+        </div>
+        <div class="validation"></div>
+      </div>
+      <div class="row">
+          <div class="field">
+            <img src="../../../img/login-suo.jpg" class="inputIcon">
+            <input class="input ID" type="password" placeholder="请设置密码，6-18位数字字母组合" id="txtPsd" data-required='true' data-emptyTip='请设置密码' data-type='password'  data-errorTip="您设置的密码不符合规范" onfocus="this.placeholder=''" onblur="this.placeholder='请设置密码，6-18位数字字母组合'">
+          </div>
+          <div class="validation"></div>
+      </div>
+      <div class="invitation">
+        <div class="tuijian" id="tuijian">
+          <i class="jiantou"></i>
+          <span class="tuijian">推荐人（选填）</span>
+        </div>
+        <div class="row yaoqing" id="invitationpeople">
+          <div class="field">
+             <input class="input input2" type="text" placeholder="邀请人手机号,可选填" id='txtTel2' data-required='true' data-type='telephone'  data-errorTip="请输入正确的邀请人手机号" data-emptyTip='请输入邀请人手机号' onfocus="this.placeholder=''" onblur="this.placeholder='邀请人手机号,可选填'">
+          </div>
+          <div class="validation"></div>
+        </div>
+      </div>
+      <div class="accept">
+        <input id="isRead" class="check" type="checkbox" checked="checked">
+        <label for="isRead" class="label">我已阅读并同意</label>
+        <a class="link" href="/html/user/line" target="_balnk">《用户服务协议》</a>
+        <a class="link" href="/html/user/private/" target="_balnk">《隐私条款》</a>
+      </div>
+      <div class="login-tip" id="loginTip">
+      	<span class="icon-wran"></span>
+      	<span class="wran-tip" id="wranTip"></span>
+      </div>
+      <div class="row">
+        <div class="action">
+          <button class="button" id="submit">立即注册</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function pyRegisterCvt(){
+	var w=window,d=document,e=encodeURIComponent;
+	var b=location.href,c=d.referrer,f,g=d.cookie,h=g.match(/(^|;)\s*ipycookie=([^;]*)/),i=g.match(/(^|;)\s*ipysession=([^;]*)/);
+	if (w.parent!=w){f=b;b=c;c=f;};u='//stats.ipinyou.com/cvt?a='+e('YQs.wls.o0AOGHukFwbG72gTG8RVzP')+'&c='+e(h?h[2]:'')+'&s='+e(i?i[2].match(/jump\%3D(\d+)/)[1]:'')+'&u='+e(b)+'&r='+e(c)+'&rd='+(new Date()).getTime()+'&e=';
+	(new Image()).src=u;
+}
+</script>

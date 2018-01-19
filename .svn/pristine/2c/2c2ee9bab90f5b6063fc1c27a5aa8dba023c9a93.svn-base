@@ -1,0 +1,50 @@
+<div class="newregister2">
+  <div class="new-content">
+    <div class="top-register">
+      <p class="top-cont">1.凡在领投鸟注册,即可获得 60000 元体验金。 <br/>
+      2.体验金可用于投资体验标,到期后将获得13.18 鸟币,鸟币参与投资后可提现。<br/>
+      3.体验金券有效期 90 天,可在“理财金券”中查看。</p>
+    </div>
+    <div class="new-realname">
+      <p class="shiming">返现券投资时使用(不含新手标),一次只能使用一张,投资到期后与收益一起返现。 <br/>
+      红包自领取之日起30天内有效，可在“理财金券”中查看。</p>
+    </div>
+    <div class="new-fisrt">
+      <div class="first">
+        <div class="first1">
+          <div class="prod">
+            <div class="filed one">
+              <div class="big">18<span class="teshu">%</span></div>
+              <div class="small">年化收益率</div>
+            </div>
+            <div class="item">
+              <div class="big">3<span class="teshu">天</span></div>
+              <div class="small">投资期限</div>
+            </div>
+          </div>
+          <div class="qitou">100元起投，已有17人购买</div>
+          <a href="/html/product/#!/short/0/0/1"><button class="button">立即投资</button></a>
+        </div>
+        <div class="first1 juli">
+          <div class="prod">
+            <div class="filed one">
+              <div class="big">15<span class="teshu">%</span></div>
+              <div class="small">年化收益率</div>
+            </div>
+            <div class="item">
+              <div class="big">30<span class="teshu">天</span></div>
+              <div class="small">投资期限</div>
+            </div>
+          </div>
+          <div class="qitou">500元起投，已有5人购买</div>
+          <a href="/html/product/#!/short/0/0/1"><button class="button">立即投资</button></a>
+        </div>
+        <div class="new2-pk"></div>
+        <div class="footer">新手专享标为首次投资专享,凡投资过其他非新手标类产品,不再享有此特权。 <br/>
+        平台设有两个新手标,投资者只可选择其中一个投资。</div>
+        <button class="button2" id="register-button">立即注册</button>
+      </div>
+    </div>
+    <div class="last">本活动最终解释权归领投鸟平台所有,如有疑问请致电 400-999-9980,或咨询“领投鸟”公众号。</div>
+  </div>
+</div>

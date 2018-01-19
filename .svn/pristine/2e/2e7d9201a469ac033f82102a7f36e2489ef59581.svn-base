@@ -1,0 +1,67 @@
+<div class="crowd">
+  <div class="big_box">
+    <div class="mutual_banner" id="bannerMutual">
+      <!-- <img src="/img/imageTwo/crowd/crowd_banner.jpg"> -->
+    </div>
+  </div>
+  <div class="mutual_caption">
+    <div class="caption">
+      <div class="beefsteaks teshu">
+        <div class="caption1">
+          <div class="beefsteaks_icon">
+            <img src="/img/imageTwo/mutual/crowd_icon1.png">
+          </div>
+          <div class="beefsteaks_right">
+            <div class="item">小额分散</div>
+            <div class="samll_info">百元筑就安家创业梦</div>
+          </div>
+        </div>
+      </div>
+      <div class="beefsteaks">
+        <div class="caption1">
+          <div class="beefsteaks_icon">
+            <img src="/img/imageTwo/mutual/crowd_icon2.png">
+          </div>
+          <div class="beefsteaks_right">
+            <div class="item">收益高稳</div>
+            <div class="samll_info">高于银行35倍利率</div>
+          </div>
+        </div>
+      </div>
+      <div class="beefsteaks">
+       <div class="caption1">
+          <div class="beefsteaks_icon">
+            <img src="/img/imageTwo/mutual/crowd_icon3.png">
+          </div>
+          <div class="beefsteaks_right">
+            <div class="item">项目优质</div>
+            <div class="samll_info">依托稳健地产创收</div>
+          </div>
+        </div>
+      </div>
+      <div class="beefsteaks">
+        <div class="caption1">
+          <div class="beefsteaks_icon">
+            <img src="/img/imageTwo/mutual/crowd_icon4.png">
+          </div>
+          <div class="beefsteaks_right">
+            <div class="item">资金安全</div>
+            <div class="samll_info">资金托管流向真实可查</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mutual_wrap" >
+    <div class="nolistshow" id="showpic">
+        <img src="/img/nolistshow.jpg">
+    </div>
+    <div class="" id="crowdListWrap">
+
+    </div>
+    <div class="nolist" id="nolist1">
+    <span class="none_shuju">暂无数据</span></div>
+    <!-- 支持记录分页控件 -->
+    <div id="light-pagination" class="pagination light-theme simple-pagination"></div>
+  </div>
+</div>

@@ -1,0 +1,115 @@
+.teshu{
+  color: #ff6600;
+  font-size: 36px;
+}
+.junereport{
+   background: #2a2d30;
+  .banner{
+    img{
+      width: 100%;
+    }
+  }
+  .caption{
+    width: 900px;
+    margin: 0 auto 80px;
+    .title{
+      text-align: center;
+      color: #ff6600;
+      font-size: 36px;
+      margin-top: 30px;
+      position: relative;
+      .icon{
+        width: 12px;
+        height: 51px;
+        display: inline-block;
+        position: absolute;
+        left: 248px;
+        top: -1px;
+        background: url(../../img/shutiao.png) no-repeat;
+      }
+      .icon1{
+        left: 211px;
+      }
+      .icon2{
+        left: 180px;
+      }
+      .icon3{
+        left: 280px;
+      }
+      .icon4{
+        left: 350px;
+      }
+      .icon5{
+        left: 568px;
+      }
+    }
+    .content{
+      margin-top: 50px;
+      position: relative;
+      img{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .item{
+        width: 376px;
+        // height: 300px;
+        display: inline-block;
+        .time{
+          font-size: 18px;
+          color: #fff;
+        }
+        .img2{
+          width: 500px;
+        }
+      }
+      .item1{
+        width: 505px;
+        position: absolute;
+        margin-left: 30px;
+      }
+    }
+    .field{
+      font-size: 24px;
+      color: #fff;
+      margin-top: 30px;
+    }
+    .field1{
+      text-align: center;
+    }
+  }
+  .caption2{
+    width: 1349px;
+    height: 700px;
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom:0;
+    padding-top: 30px;
+    .content1{
+      width: 900px;
+      margin: 0 auto;
+      position: relative;
+      .ltn{
+        position: absolute;
+        left:110px;
+        top:0;
+      }
+      .code{
+        width: 200px;
+        position: absolute;
+        left:485px;
+        top:57px;
+      }
+    }
+    .field1{
+      position: absolute;
+      left: 215px;
+      top: 350px;
+      font-size: 32px;
+      color: #636363;
+    }
+  }
+  hr{
+    border: 1px silid #e2e2e2;
+  }
+}

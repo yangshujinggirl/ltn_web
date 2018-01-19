@@ -1,0 +1,11 @@
+<div class="common-cover page-component"></div>
+
+<div class="viewall-modal-content">
+  <div class="viewall-modal-wrap">
+    <img src="/html/img/viewall-modal/bg.png" alt="">
+    <div class="btn-list">
+      <button type="button" name="button" class="go-btn" id="modal-cancel">取消</button>
+      <button type="button" name="button" class="go-btn" id="go-realname">去开通</button>
+    </div>
+  </div>
+</div>

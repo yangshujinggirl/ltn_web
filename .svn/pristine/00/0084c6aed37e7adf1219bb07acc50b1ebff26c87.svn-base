@@ -1,0 +1,15 @@
+<div class="product-fail component" id="fail">
+  <div class="short">
+    <div class="header">
+      <div class="title">支付确认</div>
+    </div>
+    <div class="content">
+      <img class="icon" src="/html/img/fail.png">
+      <div class="title">很遗憾您的账单支付失败！</div>
+      <div class="desc" id="descTip"></div>
+    </div>
+    <div class="action">
+      <button class="ok" id="ok">去帮助中心查看问题</button>
+    </div>
+  </div>
+</div>

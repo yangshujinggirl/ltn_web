@@ -1,0 +1,18 @@
+<div class="roll-out page-component">
+<div class="wrap">
+  <div class="content">
+    <div class="success" id="success">
+      <div class="title"><img src="../../../img/_bank_11.png">恭喜您！随心投转出提交成功!</div>
+      <div class="ziduan">转出的金额，将于明天下午15:00前转出到可用余额，可至“账户中心”下的“可用余额”中查看。</div>
+      <button class="button" id="goHome">回到首页</button>
+    </div>
+
+    <div class="fail" id="fail">
+      <div class="title"><img src="../../../img/icon-stat-failed.png">很遗憾！随心投转出提交失败!</div>
+      <div class="ziduan" id="failTip">显示错误</div>
+      <button class="button" id="goCenter">查看我的随心投</button>
+    </div>
+  </div>
+</div>
+  
+</div>

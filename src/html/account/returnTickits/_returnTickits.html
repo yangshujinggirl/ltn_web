@@ -1,0 +1,236 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<div class="account-Tickits">
+  <div class="returnTickits-content">
+    <div class="itemnav">
+      <div class="itemnav-left">
+        <a href="javascript:void(0)" class="ite selected" id="recharge" data-content="detailCharge">返现券</a>
+      </div>
+      <div class="itemnv-right">本平台所有资金都是通过联动优势第三方资金托管
+      </div>
+    </div>
+    <div class="wrapOne">
+      <div class="getTypes">
+        <p class="title">获取返现券方式：</p>
+        <div class="process">
+          <div class="step step1" id="step1">
+            <div class="icon"></div>
+            <span class="txt">兑换码兑换</span>
+          </div>
+          <!-- <div class="step step2" id="step2">
+            <div class="icon"></div>
+            <span class="txt">新手注册</span>
+          </div> -->
+          <div class="step more">
+            <div class="icon">
+              <span class="txt1">更多返现券获取方式</span>
+            </div>
+            <span class="txt">敬请期待...</span>
+          </div>
+        </div>
+        <div class="instryction">
+          <p class="one">
+            1.返现券含义：奖励给投资者的一种现金券，投资时使用、还款时折换成等额现金，用户可继续投资或提现。
+          </p>
+          <p class="one">2.返现券使用：</p>
+          <div class="secondLevel">
+            <p class="two">
+              (1) 仅限投资普通固定收益类产品(散标和理财计划)，不适用于新手标；
+            </p>
+            <p class="two">
+              (2) 需满足券面规定的投资金额时才可用，每笔投资仅限使用一张，且不能和其他券叠加使用。</p>
+          </div>
+        </div>
+      </div>
+      <div class="tabNav">
+        <div class="list" id="statusList">
+          <div class="item selected" data-type="unused">未使用</div>
+          <div class="item" data-type="used">已使用</div>
+          <div class="item" data-type="lostused">已失效</div>
+        </div>
+        <button class="btn" id="useBtn">立即使用</button>
+      </div>
+      <ol class="tickitList" id="tickitList">
+        <!--<li class="rm used">
+          <div class="left">
+            <div class="top">
+              <span class="name">投资返现券</span>
+              <span class="send">赠送好友>></span>
+            </div>
+            <div class="rule">
+              <p class="ru">使用规则：</p>
+              <p class="ru">
+                适用于全部项目；</br>
+                债券转让不可使用；</br>
+                投资100元以上；
+              </p>
+            </div>
+            <p class="rule">有效期限：2015年6月12日</p>
+            <p class="rule">活动来源：新手注册 </p>
+          </div>
+          <div class="right">
+            <span class="value">10</span>
+            <span class="taxon">投资返现券(元)</span>
+          </div>
+        </li>
+        <li class="rm">
+          <div class="left">
+            <div class="top">
+              <span class="name">投资返现券</span>
+              <span class="send">赠送好友>></span>
+            </div>
+            <div class="rule">
+              <p class="ru">使用规则：</p>
+              <p class="ru">
+                适用于全部项目；</br>
+                债券转让不可使用；</br>
+                投资100元以上；
+              </p>
+            </div>
+            <p class="rule">有效期限：2015年6月12日</p>
+            <p class="rule">活动来源：新手注册 </p>
+          </div>
+          <div class="right">
+            <span class="value">10</span>
+            <span class="taxon">投资返现券(元)</span>
+          </div>
+        </li>
+        <li class="rm losed">
+          <div class="left">
+            <div class="top">
+              <span class="name">投资返现券</span>
+              <span class="send">赠送好友>></span>
+            </div>
+            <div class="rule">
+              <p class="ru">使用规则：</p>
+              <p class="ru">
+                适用于全部项目；</br>
+                债券转让不可使用；</br>
+                投资100元以上；
+              </p>
+            </div>
+            <p class="rule">有效期限：2015年6月12日</p>
+            <p class="rule">活动来源：新手注册 </p>
+          </div>
+          <div class="right">
+            <span class="value">10</span>
+            <span class="taxon">投资返现券(元)</span>
+          </div>
+        </li>
+        <li class="rm">
+          <div class="left">
+            <div class="top">
+              <span class="name">投资返现券</span>
+              <span class="send">赠送好友>></span>
+            </div>
+            <div class="rule">
+              <p class="ru">使用规则：</p>
+              <p class="ru">
+                适用于全部项目；</br>
+                债券转让不可使用；</br>
+                投资100元以上；
+              </p>
+            </div>
+            <p class="rule">有效期限：2015年6月12日</p>
+            <p class="rule">活动来源：新手注册 </p>
+          </div>
+          <div class="right">
+            <span class="value">10</span>
+            <span class="taxon">投资返现券(元)</span>
+          </div>
+        </li>
+        <li class="rm">
+          <div class="left">
+            <div class="top">
+              <span class="name">投资返现券</span>
+              <span class="send">赠送好友>></span>
+            </div>
+            <div class="rule">
+              <p class="ru">使用规则：</p>
+              <p class="ru">
+                适用于全部项目；</br>
+                债券转让不可使用；</br>
+                投资100元以上；
+              </p>
+            </div>
+            <p class="rule">有效期限：2015年6月12日</p>
+            <p class="rule">活动来源：新手注册 </p>
+          </div>
+          <div class="right">
+            <span class="value">10</span>
+            <span class="taxon">投资返现券(元)</span>
+          </div>
+        </li>
+        <li class="rm">
+          <div class="left">
+            <div class="top">
+              <span class="name">投资返现券</span>
+              <span class="send">赠送好友>></span>
+            </div>
+            <div class="rule">
+              <p class="ru">使用规则：</p>
+              <p class="ru">
+                适用于全部项目；</br>
+                债券转让不可使用；</br>
+                投资100元以上；
+              </p>
+            </div>
+            <p class="rule">有效期限：2015年6月12日</p>
+            <p class="rule">活动来源：新手注册 </p>
+          </div>
+          <div class="right">
+            <span class="value">10</span>
+            <span class="taxon">投资返现券(元)</span>
+          </div>
+        </li>-->
+      </ol>
+      <div class="copy" id="copy">
+        <div class="tips">
+          <span class="line">提示</span>
+        </div>
+        <div class="content">
+          <p>券码：<span class="code"></span></p>
+          <p>不能再次兑换，只能投资下单时使用。<br/>
+          请点击复制赠送给好友</p>
+        </div>
+        <button class="copyBtn" id="copyBtn">复制</button>
+        <div class="close" id="closeBtn"></div>
+      </div>
+      <div class="copy" id="newUser">
+        <div class="tips">
+          <span class="line">提示</span>
+        </div>
+        <div class="content">
+          <p class="sorry" id="sorry"></p>
+        </div>
+        <div class="close" id="closeBtn"></div>
+      </div>
+      <div class="copy" id="success">
+        <div class="tips">
+          <span class="line">提示</span>
+        </div>
+        <div class="content1">
+          <p class="success">恭喜你，复制成功！</p>
+          <p>
+            您可以通过QQ、微信、短信等方式，<br/>将返现券分享给您的好友！
+          </p>
+        </div>
+        <div class="close"></div>
+      </div>
+      <div class="copyContent" id="copyContent" style="display: none;" disabled="disabled">
+        我赠送你一张<span class="amount">10</span>元的返现券(<span class="desc"></span>)，在投资下单确认页面填入代码<span class="copyCode"></span>即可使用，<span class="date"></span>日前有效，<span class="linkUrl"><span>登录领投鸟官网</span></span>赶紧使用吧！
+      </div>
+      <div class="nolist" id="nolist1"></div>
+      <div class="accountpage">
+        <div class="pages" id="pages1">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- @endextend -->
+
+<!-- @endextend -->

@@ -1,0 +1,29 @@
+<script type="text/template" id="tempsuccess">
+    <ul class="listpro">
+    {{~it.productList:value:index}}
+      <li>
+        <div class="gains">
+          {{=value.annualIncomeText}}
+          <div class="year">预计年化收益</div>
+        </div>
+        <div class="begun">
+           <div class="bg">
+             <img src="../../../img/card-bg.png">
+           </div>
+          <span class="money">{{=value.staInvestAmount}}起投</span>
+          <span class="date">{{=value.convertDay}}天</span>
+        </div>
+        <div class="surplus">
+          <span class="shengyu">剩余金额</span>
+          <span class="jine">{{=strUtil().formatKilo(value.productRemainAmount)}}元</span>
+        </div>
+       <button class="button" data-id={{=value.productId}}>立即投资</button>
+      </li>
+      {{~}}
+    </ul>
+    <div class="action">
+        <a href="/html/product/"><button class="ok">查看其它标的</button></a>
+        <a href="/html"><button class="bangzhu">返回首页</button></a>
+    </div>
+
+</script>

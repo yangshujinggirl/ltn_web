@@ -1,0 +1,643 @@
+<div class="mationalDay">
+  <div class="banner">
+    <img src="/img/mationalDay_banner.jpg">
+  </div>
+  <div class="mationalDay_wrap">
+    <div class="mationalDay_cont">
+      <div class="title_icon">
+        <img src="/img/mationalDay_icon1.png">
+      </div>
+      <div class="top_contnet">
+        <div class="top_title">是投资达人，也是生活家。领投鸟和您一样，时刻把家人的健康和快乐放在第一位。</div>
+        <div class="stretch_rule">
+          <div class="rule">活动规则</div>
+          <div class="rule_info">活动期间，累计投资前六名（体验标除外）可获得</div>
+        </div>
+        <div class="bottom_content">
+          <div class="left_second">
+            <div class="second_title">投资排行榜</div>
+            <ul class="second_list_title">
+              <li class="second_item">排名</li>
+              <li class="second_item">用户</li>
+              <li class="second_item">投资金额</li>
+            </ul>
+            <div class="second_list" id="Top50DataWrap">
+              <ul class="list_info list_info1">
+                <li class="info_item">
+                  <div class="list_icon">
+                    <img src="/img/mationalDay_icon2.png">
+                  </div>
+                  <div class="list_item xuhao">1</div>
+                  <div class="list_item tel">15950851657</div>
+                  <div class="list_item money">￥****</div>
+                </li>
+                <li class="info_item">
+                  <div class="list_icon">
+                    <img src="/img/mationalDay_icon3.png">
+                  </div>
+                  <div class="list_item xuhao">1</div>
+                  <div class="list_item tel">15950851657</div>
+                  <div class="list_item money">￥****</div>
+                </li>
+                <li class="info_item">
+                  <div class="list_icon">
+                    <img src="/img/mationalDay_icon4.png">
+                  </div>
+                  <div class="list_item xuhao">1</div>
+                  <div class="list_item tel">15950851657</div>
+                  <div class="list_item money">￥****</div>
+                </li>
+                <li class="info_item">
+                  <div class="list_icon">
+                    <img src="/img/mationalDay_icon5.png">
+                  </div>
+                  <div class="list_item xuhao">1</div>
+                  <div class="list_item tel">15950851657</div>
+                  <div class="list_item money">￥****</div>
+                </li>
+                <li class="info_item">
+                  <div class="list_icon">
+                    <img src="/img/mationalDay_icon5.png">
+                  </div>
+                  <div class="list_item xuhao">1</div>
+                  <div class="list_item tel">15950851657</div>
+                  <div class="list_item money">￥****</div>
+                </li>
+                <li class="info_item">
+                  <div class="list_icon">
+                    <img src="/img/mationalDay_icon5.png">
+                  </div>
+                  <div class="list_item xuhao">1</div>
+                  <div class="list_item tel">15950851657</div>
+                  <div class="list_item money">￥****</div>
+                </li>
+              </ul>
+              <ul class="list_info list_info2">
+                <li>
+                  <span class="list_icon"></span>
+                  <span class="list_icon"></span>
+                  <span class="list_icon"></span>
+                  <span class="list_icon"></span>
+                  <div class="list_icon">
+                  </div>
+                  <div class="list_item xuhao">1</div>
+                  <div class="list_item tel">15950851657</div>
+                  <div class="list_item money">￥****</div>
+                </li>
+                <li class="info_item">
+                  <div class="list_icon">
+                  </div>
+                  <div class="list_item xuhao">1</div>
+                  <div class="list_item tel">15950851657</div>
+                  <div class="list_item money">￥****</div>
+                </li>
+                <li class="info_item">
+                  <div class="list_icon">
+                  </div>
+                  <div class="list_item xuhao">1</div>
+                  <div class="list_item tel">15950851657</div>
+                  <div class="list_item money">￥****</div>
+                </li>
+              </ul>
+              <div class="nolist">
+                <div class="logoIcon">
+                  暂无数据！
+                </div>
+              </div>
+            </div>
+            <img src="/img/mationalDay_icon7.png" class="tupian">
+          </div>
+          <div class="right_prizes">
+            <img src="/img/mationalDay_icon8.png">
+          </div>
+        </div>
+        <div class="Service">
+          实物奖品送达时间以官方发货或电商到货时间为准，中奖者请拨打400-999-9980或等待客服与您联系。
+        </div>
+        <a href="/html/product/#!/short/0/0/1"><button class="yaoqing">投资冲榜</button></a>
+    </div>
+    <div class="mationalDay_cont">
+      <div class="title_icon">
+        <img src="/img/mationalDay_img2.png">
+      </div>
+      <div class="top_contnet">
+        <div class="top_title">朋友间分担忧虑，也共享喜悦。领投鸟送您iPhone7和华为P9，给您多一个不可不推荐给好友的理由。</div>
+        <div class="stretch_rule">
+          <div class="rule1">活动规则</div>
+          <div class="rule_info1">活动期间，在投金额满<span class="hongse">5万元</span>的用户推荐五位及以上好友投资“庆融资迎国庆”特权标 满
+            <span
+              class="hongse">3万元/每位</span>，推荐人可获得<span class="hongse">iPhone7 （128G）</span>一部；</div>
+        </div>
+        <div class="tupian1">
+          <img src="/img/mationalDay_img3.png">
+        </div>
+        <div class="rule_info2">在投金额满<span class="hongse">3万元</span>的用户推荐五位及以上好友投资“庆融资迎国庆”特权标满<span class="hongse">1.5万元/每位</span>，推荐人即可获得
+          <span
+            class="hongse">华为P9（64G）</span>一部。</div>
+        <div class="tupian1">
+          <img src="/img/mationalDay_img4.png">
+        </div>
+        <!-- 邀请好友活动 -->
+        <div class="mationalDay_win" id="InviteDataWrap">
+
+        </div>
+        <div class="invited">单人可邀请多位好友参加活动，邀请人在满足活动条件基础上可获多次奖励；例：邀请人在投金额满10万元，邀请了10位好友注册并投资特权标均达3万元，邀请人可获2部iPhone7。
+        </div>
+        <div class="Service1">
+          实物奖品送达时间以官方发货或电商到货时间为准；每邀请5位好友仅获一次奖励，条件满足者请拨打400-999-9980或等待客服联系。
+        </div>
+        <a href="/html/mypartner/"><button class="yaoqing">邀请好友</button></a>
+      </div>
+    </div>
+    <!-- 所有转盘 -->
+    <div class="mationalDay_cont">
+      <div class="title_icon">
+        <img src="/img/guoqing_img1.png">
+      </div>
+      <div class="youqing">友情提醒，下面4个按钮可依次点击查看更丰富大奖
+      </div>
+      <!-- 转盘tab -->
+      <div class="turningDisc_turning">
+        <div class="turning_title">
+          <ul class="truning_list">
+            <li class="turning_item item1" data-tab="huolizhi">活力值转盘</li>
+            <li class="turning_item item2" data-tab="gold">黄金转盘</li>
+            <li class="turning_item item3" data-tab="buckingham">白金转盘</li>
+            <li class="turning_item item4" data-tab="diamonds">钻石转盘</li>
+          </ul>
+        </div>
+      </div>
+      <!-- 转盘content -->
+      <div class="turning_cont1">
+        <!-- 活力值 -->
+        <div class="xanthine huolizhi" data-lottery="lottery"  id="EnergyValueRoll">
+          <div class="turning_title">
+            人生拼实力，也需要一点好运气。选择领投鸟，让您的投资在收益之余，还有更多快乐和惊喜。
+          </div>
+          <div class="notes_left tp4" id="choujiangZp">
+            <div id="lottery">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="lottery-unit lottery-unit-0"><img src="/img/guoqing_choujiang_icon1.png"></td>
+                  <td class="lottery-unit lottery-unit-1"><img src="/img/guoqing_choujiang_icon2.png"></td>
+                  <td class="lottery-unit lottery-unit-2"><img src="/img/guoqing_choujiang_icon3.png"></td>
+                </tr>
+                <tr>
+                  <td class="lottery-unit lottery-unit-4"><img src="/img/guoqing_choujiang_icon5.png"></td>
+
+                  <td colspan="1" rowspan="1" class="choujiang choujiang2 choujiang_btn" data-code="4">
+                    <img src="/img/finance_shoujiang.png">
+                  </td>
+
+                  <!-- 敬请期待 -->
+                  <td class="qidai_but choujiang_btn">
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_qidai.png">
+                    </a>
+                  </td>
+                  <!-- 登录 -->
+                  <td class="login_but choujiang_btn" data-code="2">
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_login.png">
+                    </a>
+                  </td>
+                  <!-- 活动截止 -->
+                  <td class="jiezhi_but choujiang_btn" data-code="1">
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_jiezhi.png">
+                    </a>
+                  </td>
+                  <!--投资激活 -->
+                  <td class="touzi_but choujiang_btn" data-code="3">
+                    <a href="javascript:void(0);">
+                      <img src="/img/choujiang_jihuo.png">
+                    </a>
+                  </td>
+                  <!-- 再来一次-->
+                  <td class="zaiyici_but choujiang_btn" data-code="6">
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_algin.png">
+                    </a>
+                  </td>
+
+                  <td class="lottery-unit lottery-unit-3"><img src="/img/guoqing_choujiang_icon4.png"></td>
+                </tr>
+              </table>
+            </div>
+            <div class="surplus" id="propSurplus">
+              您当前还可抽奖<span class="huangse chance">0</span>次<br> 您当前可用活力值
+              <span class="huangse activeValue">500</span>点
+            </div>
+          </div>
+          <div class="stretch_rule">
+            <div class="rule1">活动规则</div>
+            <div class="rule_info1">活动期间用户单笔投资额满5000元（非体验标），即可获得一次活力值转盘抽奖机会，活动结束后，可用累积活力值兑换相应奖品，每笔投资仅可获得一次抽奖机会，中奖率100%；</div>
+          </div>
+          <div class="cases">
+            示例：建林在活动期间投资2次，分别为10000元和5000元，可以抽奖2次，抽中了50点活力值，用活力值兑换了一台小米蓝牙音箱。
+          </div>
+          <div class="turning_line"></div>
+          <div class="turning_caption">
+            <div class="caption" data-prizeCode="30">
+              <div class="turning_img">
+                <img src="/img/duihuan_icon1.png">
+              </div>
+              <div class="turing_bottom">
+                <button class="turing_but disabled">立即兑换</button>
+                <div class="cashing">已兑换<span>0</span>个</div>
+              </div>
+            </div>
+            <div class="caption" data-prizeCode="31">
+              <div class="turning_img">
+                <img src="/img/duihuan_icon2.png">
+              </div>
+              <div class="turing_bottom">
+                <button class="turing_but disabled">立即兑换</button>
+                <div class="cashing">已兑换<span>0</span>个</div>
+              </div>
+            </div>
+            <div class="caption cap1" data-prizeCode="32">
+              <div class="turning_img">
+                <img src="/img/duihuan_icon3.png">
+              </div>
+              <div class="turing_bottom">
+                <button class="turing_but disabled">立即兑换</button>
+                <div class="cashing">已兑换<span>0</span>个</div>
+              </div>
+            </div>
+            <div class="caption cap1" data-prizeCode="33">
+              <div class="turning_img">
+                <img src="/img/duihuan_icon4.png">
+              </div>
+              <div class="turing_bottom">
+                <button class="turing_but disabled">立即兑换</button>
+                <div class="cashing">已兑换<span>0</span>个</div>
+              </div>
+            </div>
+            <div class="caption cap1" data-prizeCode="34">
+              <div class="turning_img">
+                <img src="/img/duihuan_icon5.png">
+              </div>
+              <div class="turing_bottom">
+                <button class="turing_but disabled">立即兑换</button>
+                <div class="cashing">已兑换<span>0</span>个</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- 黄金 -->
+        <div class="xanthine truning_gold gold" data-lottery="lottery2" data-type="B">
+          <div class="notes_left notes_left2 tp1" id="choujiangZp">
+            <div class="notes_title">
+              <img src="/img/huangjin_bg1.png">
+            </div>
+            <div id="lottery2">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="lottery-unit lottery-unit-0"><img src="/img/choujiang_jiangpin2.png"></td>
+                  <td class="lottery-unit lottery-unit-1"><img src="/img/choujiang_xiaomi.png"></td>
+                  <td class="lottery-unit lottery-unit-2"><img src="/img/choujiang_doujiangji.png"></td>
+                </tr>
+                <tr>
+                  <td class="lottery-unit lottery-unit-4"><img src="/img/choujiang_dao.png"></td>
+                   <!-- 立即抽奖 -->
+                  <td colspan="1" rowspan="1" class="choujiang choujiang_btn" data-code=1>
+                    <img src="/img/finance_shoujiang.png">
+                  </td>
+
+                  <!-- 登录 -->
+                  <td class="login_but choujiang_btn" data-code=2>
+                    <a href="javascript:void(0);" id="LoginBbut">
+                      <img src="/img/finance_login.png">
+                    </a>
+                  </td>
+                  <!-- 活动截止 -->
+                  <td class="jiezhi_but" data-code=3>
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_jiezhi.png">
+                    </a>
+                  </td>
+                  <!-- 已无机会 -->
+                  <td class="wujihui_but" data-code=4>
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_wujihui.png">
+                    </a>
+                  </td>
+                  <!--投资激活 -->
+                  <td class="touzi_but choujiang_btn" data-code="-1">
+                    <a href="javascript:void(0);">
+                      <img src="/img/choujiang_jihuo.png">
+                    </a>
+                  </td>
+                  <td class="lottery-unit lottery-unit-3">
+                    <img src="/img/choujiang_shouji.png">
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="surplus">
+              您当前还可抽奖<span class="huangse">0</span>次
+            </div>
+          </div>
+          <div class="stretch_rule stretch_rule_gold">
+            <div class="rule1 rule2">活动规则</div>
+            <div class="rule_info1">用户根据活动期间的在投金额获得对应转盘抽奖机会，转盘金额区间可向下叠加，但每个转盘仅可抽取一次，中奖率100%。</div>
+          </div>
+          <div class="cases cases2">
+            示例：佳欣活动期间在投金额达到7万元，可抽取黄金转盘一次；在投金额35万，可抽取黄金、白金转盘各一次；在投金额68万，可抽取黄金、白金、钻石转盘各一次；
+          </div>
+          <div class="present">
+            您当前在投金额 <span class="hongse">50000元</span>
+          </div>
+          <div class="turning_notes">
+            <!-- 个人中奖纪录 -->
+            <div class="notes2_caption">
+              <div class="notes2_title">个人中奖纪录</div>
+              <ul class="one_list">
+                <li>序号</li>
+                <li class="zhongjiang">中奖用户</li>
+                <li class="chouzhong">抽中奖品</li>
+              </ul>
+              <!-- 个人中奖纪录 -->
+              <div id="B_PrizeRecord">
+              </div>
+              <div class="nolist">
+                <div class="logoIcon">
+                  暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+                </div>
+              </div>
+              <div class="nolist2">
+                <div class="logoIcon">
+                  暂无数据！
+                </div>
+              </div>
+            </div>
+            <!-- 平台中奖纪录 -->
+            <div class="notes2_caption notes2_caption2">
+              <div class="notes2_title">平台中奖纪录</div>
+              <ul class="one_list">
+                <li>序号</li>
+                <li>中奖用户</li>
+                <li class="chouzhong">抽中奖品</li>
+              </ul>
+              <!-- 平台中奖纪录 -->
+              <div id="B_PlatformPrizeRecord">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 白金 -->
+        <div class="truning_gold truning_Buckingham buckingham" data-lottery="lottery3" data-type="C">
+          
+          <div class="notes_left notes_left3 tp2" id="choujiangZp">
+            <div class="notes_title">
+              <img src="/img/baijin_zhuanpan_bg1.png">
+            </div>
+            <div id="lottery3">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="lottery-unit lottery-unit-0"><img src="/img/choujiang_baobbei.png"></td>
+                  <td class="lottery-unit lottery-unit-1"><img src="/img/choujiang_doujiangji.png"></td>
+                  <td class="lottery-unit lottery-unit-2"><img src="/img/choujiang_dao.png"></td>
+                </tr>
+                <tr>
+                  <td class="lottery-unit lottery-unit-4"><img src="/img/choujiang_dianshi.png"></td>
+                  <!-- 立即抽奖 -->
+                  <td colspan="1" rowspan="1" data-code=1 class="choujiang_btn">
+                    <img src="/img/finance_shoujiang.png">
+                  </td>
+                  <!-- 登录 -->
+                  <td class="login_but choujiang_btn" data-code=2 >
+                    <a href="javascript:void(0);" id="LoginBbut">
+                      <img src="/img/finance_login.png">
+                    </a>
+                  </td>
+                  <!-- 活动截止 -->
+                  <td class="jiezhi_but" data-code=3 >
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_jiezhi.png">
+                    </a>
+                  </td>
+                  <!-- 已无机会 -->
+                  <td class="wujihui_but" data-code=4 >
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_wujihui.png">
+                    </a>
+                  </td>
+                  <!--投资激活 -->
+                  <td class="touzi_but choujiang_btn" data-code=-1>
+                    <a href="javascript:void(0);">
+                      <img src="/img/choujiang_jihuo.png">
+                    </a>
+                  </td>
+                  <td class="lottery-unit lottery-unit-3">
+                    <img src="/img/choujiang_shouji.png">
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="surplus">
+              您当前还可抽奖<span class="huangse">0</span>次
+            </div>
+          </div>
+          <div class="stretch_rule stretch_rule_gold">
+            <div class="rule1 rule2">活动规则</div>
+            <div class="rule_info1">用户根据活动期间的在投金额获得对应转盘抽奖机会，转盘金额区间可向下叠加，但每个转盘仅可抽取一次，中奖率100%。</div>
+          </div>
+          <div class="cases cases2">
+            示例：佳欣活动期间在投金额达到7万元，可抽取黄金转盘一次；在投金额35万，可抽取黄金、白金转盘各一次；在投金额68万，可抽取黄金、白金、钻石转盘各一次；
+          </div>
+          <div class="present">
+            您当前在投金额 <span class="hongse">50000元</span>
+          </div>
+          <div class="turning_notes">
+            <div class="notes2_caption">
+              <div class="notes2_title">个人中奖纪录</div>
+              <ul class="one_list">
+                <li>序号</li>
+                <li>中奖用户</li>
+                <li class="chouzhong">抽中奖品</li>
+              </ul>
+              <!-- 个人中奖纪录 -->
+              <div id="C_PrizeRecord">
+              </div>
+              <div class="nolist">
+                <div class="logoIcon">
+                  暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+                </div>
+              </div>
+              <div class="nolist2">
+                <div class="logoIcon">
+                  暂无数据！
+                </div>
+              </div>
+            </div>
+            <div class="notes2_caption notes2_caption2">
+              <div class="notes2_title">平台中奖纪录</div>
+              <ul class="one_list">
+                <li>序号</li>
+                <li>中奖用户</li>
+                <li class="chouzhong">抽中奖品</li>
+              </ul>
+              <!-- 平台中奖纪录 -->
+              <div id="C_PlatformPrizeRecord">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 钻石 -->
+        <div class="truning_gold truning_diamonds diamonds" data-lottery="lottery4" data-type="D">
+          
+          <div class="notes_left notes_left3 tp3" id="choujiangZp">
+            <div class="notes_title">
+              <img src="/img/zuanshi_bg1.png">
+            </div>
+            <div id="lottery4">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="lottery-unit lottery-unit-0"><img src="/img/choujiang_dao.png"></td>
+                  <td class="lottery-unit lottery-unit-1"><img src="/img/choujiang_dianshi.png"></td>
+                  <td class="lottery-unit lottery-unit-2"><img src="/img/choujiang_shouji.png"></td>
+                </tr>
+                <tr>
+                  <!-- 立即抽奖 -->
+                  <td colspan="3" rowspan="1" class="choujiang choujiang_btn" data-code=1>
+                    <img src="/img/zuanshi_lijichoujian.png">
+                  </td>
+                  <!-- 登录 -->
+                  <td class="login_but choujiang_btn" data-code=2>
+                    <a href="javascript:void(0);" id="LoginBbut">
+                      <img src="/img/zuanshi_denglu.png">
+                    </a>
+                  </td>
+                  <!-- 投资激活 -->
+                  <td class="jihuo_but choujiang_btn" data-code=-1>
+                    <a href="javascript:void(0);">
+                      <img src="/img/zuanshi_touzi.png">
+                    </a>
+                  </td>
+                  <!-- 活动截止 -->
+                  <td class="jiezhi_but" data-code=3>
+                    <a href="javascript:void(0);">
+                      <img src="/img/zuanshi_jiezhi.png">
+                    </a>
+                  </td>
+                  <!-- 无机会 -->
+                  <td class="wujihui_but" data-code=4>
+                    <a href="javascript:void(0);">
+                      <img src="/img/zuanshi_jihui.png">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="surplus">
+              您当前还可抽奖<span class="huangse">0</span>次
+            </div>
+          </div>
+          <div class="stretch_rule stretch_rule_gold">
+            <div class="rule1 rule2">活动规则</div>
+            <div class="rule_info1">用户根据活动期间的在投金额获得对应转盘抽奖机会，转盘金额区间可向下叠加，但每个转盘仅可抽取一次，中奖率100%。</div>
+          </div>
+          <div class="cases cases2">
+            示例：佳欣活动期间在投金额达到7万元，可抽取黄金转盘一次；在投金额35万，可抽取黄金、白金转盘各一次；在投金额68万，可抽取黄金、白金、钻石转盘各一次；
+          </div>
+          <div class="present">
+            您当前在投金额 <span class="hongse">50000元</span>
+          </div>
+          <div class="turning_notes">
+            <div class="notes2_caption">
+              <div class="notes2_title">个人中奖纪录</div>
+              <ul class="one_list">
+                <li>序号</li>
+                <li>中奖用户</li>
+                <li class="chouzhong">抽中奖品</li>
+              </ul>
+              <!-- 个人中奖纪录 -->
+              <div id="D_PrizeRecord">
+              </div>
+              <div class="nolist">
+                <div class="logoIcon">
+                  暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+                </div>
+              </div>
+              <div class="nolist2">
+                <div class="logoIcon">
+                  暂无数据！
+                </div>
+              </div>
+            </div>
+            <div class="notes2_caption notes2_caption2">
+              <div class="notes2_title">平台中奖纪录</div>
+              <ul class="one_list">
+                <li>序号</li>
+                <li>中奖用户</li>
+                <li class="chouzhong">抽中奖品</li>
+              </ul>
+              <!-- 平台中奖纪录 -->
+              <div id="D_PlatformPrizeRecord">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="last">本活动最终解释权归领投鸟所有</div>
+</div>
+
+<!-- 活力值中奖 -->
+<div class="drawn_prize huolizhi-tips">
+  <div class="close">
+    <img src="/img/tanchu_close.jpg">
+  </div>
+  <div class="drawn_title">中奖啦！恭喜您获得</div>
+  <div class="prize_info">30点活力值</div>
+  <button class="drawn_but">好哒</button>
+</div>
+<!-- 失败异常 -->
+<div class="drawn_prize exception-tips">
+  <div class="close">
+    <img src="/img/tanchu_close.jpg">
+  </div>
+  <div class="drawn_title">上帝打了一下盹，请重试！</div>
+  <button class="drawn_but">好哒</button>
+</div>
+<!-- 兑换提示 -->
+<div class="drawn_prize cashing_prize">
+  <div class="close">
+    <img src="/img/tanchu_close.jpg">
+  </div>
+  <div class="drawn_title">确认兑换吗？</div>
+  <button class="drawn_but2 away">取消</button>
+  <button class="drawn_but2 sure">确认</button>
+</div>
+<!-- 兑换，活力值不够 -->
+<div class="drawn_prize bird_reminded">
+  <div class="close">
+    <img src="/img/tanchu_close.jpg">
+  </div>
+  <div class="drawn_title">鸟哥提醒！</div>
+  <div class="prize_info2">您的活力值不足，投点钱再抽吧！</div>
+  <button class="drawn_but">好哒</button>
+</div>
+<!-- 实物中奖 -->
+<div class="drawn_prize congratulations">
+  <div class="close">
+    <img src="/img/tanchu_close.jpg">
+  </div>
+  <div class="drawn_title2">恭喜您，<i>抽中</i><span>iPad一台</span>！</div>
+  <div class="drawn_center">
+    <div class="prize_left"></div>
+    <div class="code_right">
+      <img src="/img/code2.png">
+    </div>
+  </div>
+  <div class="congratulations_info">
+    请关注领投鸟公众号，留下您的地址和联系方式，<br> 我们将统一安排为您寄出！
+  </div>
+  <button class="drawn_but drawn_but3">好哒</button>
+</div>
+<!-- layout -->
+<div class="mationalDay_cover"></div>

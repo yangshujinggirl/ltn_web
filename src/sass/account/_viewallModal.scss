@@ -1,0 +1,36 @@
+.viewall-modal-content {
+  display: none;
+  $high:#ff5900;
+  background-color: #cacaca;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  z-index: 99999;
+  border-radius: 6px;
+  .viewall-modal-wrap {
+    font-size: 0;
+  }
+  .btn-list {
+    height: 90px;
+    overflow: hidden;
+    zoom:1;
+    text-align: center;
+    .go-btn {
+      background-color: #fff;
+      border: none;
+      width: 49.9%;
+      height: 90px;
+      font-size: 24px;
+      float: left;
+      border-radius:0 0 0 6px;
+      &:last-child{
+        float: right;
+        color: $high;
+        border-radius:0 0 6px 0;
+      }
+    }
+  }
+
+}

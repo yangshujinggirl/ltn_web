@@ -1,0 +1,242 @@
+$(function() {
+
+  var page = new Page();
+  var userCouponId = '';
+  var couponDate = '';
+  var amount = '';
+  var desc = '';
+  //复制的时候添加URL
+  page.getUserInfo = function(){
+    //创建a连接
+    var txt3 = document.createElement("a");
+    txt3.href = 'www.lingtouniao.com';
+    txt3.target = '_blank';
+    txt3.innerHTML = 'www.lingtouniao.com';
+    $('#copyContent .linkUrl').append(txt3);
+  };
+  //复制
+  page.copy = function(){
+    $('#copyBtn').zclip({
+      path:'/img/ZeroClipboard.swf',
+      copy:$('#copyContent').text(),
+      beforeCopy:function(){
+
+      },
+      afterCopy:function(){
+        $('#copy .copyBtn').on('click',function() {
+          $('#copy').hide();
+          $('#success').show();
+          $('#success .close').on('click',function() {
+            $('.common-cover').hide();
+            $('#success').hide();
+          })
+        })
+      }
+    });
+  };
+  //侧边栏选中
+  page.leftnav = function(){
+    var pn = location.pathname;
+    var as = $('#leftnav .item');
+    for(var i = 0,j = as.length; i < j;i++) {
+      if(as[i].href.indexOf(pn) != -1) {
+        as[i].className = 'selected item';
+      }
+    }
+  };
+   //未使用分页
+  page.unusedPag = function (){
+    $('.pages').paging({
+      totalSize: page.get('totalCount'),
+      turnSize: 5,
+      pageSize:6,
+      callback:intPage
+    });
+    function intPage(pageNo){
+      page.unused (pageNo);
+    }
+  };
+  // 未使用
+  page.unused = function (currentPage){
+    return page.getData(
+      '/account/coupon/list/cashBack',
+      {
+        clientType:'PC',
+        currentPage:currentPage||0,
+        status:'YX',
+        pageSize:6,
+      },[initTemp,clickEvent]);
+      function initTemp (data){
+        if (page.isSuccess(data)) {
+          var data = data.data;
+          page.initTemplate(data,'tickitList','tickitTemp');
+          page.set('totalCount',data.totalCount);
+        }
+        if(data.totalCount=='0') {
+          $('#nolist1').show();
+        } else {
+          $('#nolist1').hide();
+        }
+      }
+
+      function clickEvent(data) {
+
+        $('#presentCode .send').on('click',function() {
+          userCouponId = $(this).data('id');
+          couponDate = $(this).data('time');
+          amount = $(this).data('amount');
+          desc =$(this).data('desc');
+          $('#copyContent .amount').html(amount);
+          $('#copyContent .desc').html(desc);
+
+          $('.copyContent .date').html(couponDate);
+
+          page.when(page.presentCode,[page.copy]);
+
+
+        });
+      }
+  };
+   //已使用分页
+  page.usedPag = function (){
+    $('.pages').paging({
+      totalSize: page.get('totalCount'),
+      turnSize: 5,
+      pageSize:6,
+      callback:intPage
+    });
+    function intPage(pageNo){
+      page.used (pageNo);
+    }
+  };
+  // 已使用
+  page.used = function (currentPage){
+    return page.getData(
+      '/account/coupon/list/cashBack',
+      {
+        clientType:'PC',
+        currentPage:currentPage||0,
+        pageSize:6,
+        status:'SYZ'
+      },[initTemp]);
+      function initTemp (data){
+        if (page.isSuccess(data)) {
+          var data = data.data;
+          page.initTemplate(data,'tickitList','tickitTemp');
+          page.set('totalCount',data.totalCount);
+        }
+        if(data.totalCount=='0') {
+          $('#nolist1').show();
+        } else {
+          $('#nolist1').hide();
+        }
+      }
+  };
+   //已失效分页
+  page.lostusedPag = function (){
+    $('.pages').paging({
+      totalSize: page.get('totalCount'),
+      turnSize: 5,
+      pageSize:6,
+      callback:intPage
+    });
+    function intPage(pageNo){
+      page.lostused (pageNo);
+    }
+  };
+  // 已失效
+  page.lostused = function (currentPage){
+    return page.getData(
+    '/account/coupon/list/cashBack',
+    {
+      clientType:'PC',
+      currentPage:currentPage||0,
+      pageSize:6,
+      status:'GQ'
+    },[initTemp]);
+    function initTemp (data){
+      if (page.isSuccess(data)) {
+        var data = data.data;
+        page.initTemplate(data,'tickitList','tickitTemp');
+        page.set('totalCount',data.totalCount);
+      }
+      if(data.totalCount=='0') {
+        $('#nolist1').show();
+      } else {
+        $('#nolist1').hide();
+      }
+    }
+  };
+
+  //获取赠券码
+  page.presentCode = function() {
+    return page.getData(
+    '/pc/account/fxq/presentCode/get',
+    {
+      userCouponId:userCouponId
+    },[initTemp]);
+    function initTemp (data){
+      if (data.resultCode=='0') {
+        var data = data.data;
+        $('.common-cover').show();
+        $('#copy').show();
+        $('#copy .close').on('click',function() {
+          $('.common-cover').hide();
+          $('#copy').hide();
+        })
+        $('#copy .code').html(data.presentCode);
+        $('.copyContent .copyCode').html(data.presentCode);
+      } else if(data.resultCode=='50000012') {
+          $('.common-cover').show();
+          $('#newUser').show();
+          $('#newUser #sorry').html('对不起，'+data.resultMessage);
+          $('#newUser .close').on('click',function() {
+            $('.common-cover').hide();
+            $('#newUser').hide();
+          })
+      } else {
+          $('.common-cover').show();
+          $('#newUser').show();
+          $('#newUser #sorry').html('对不起，'+data.resultMessage);
+          $('#newUser .close').on('click',function() {
+            $('.common-cover').hide();
+            $('#newUser').hide();
+          })
+      }
+    }
+  }
+
+  $('#statusList .item').on('click',function() {
+    $(this).addClass('selected').siblings().removeClass('selected');
+    if($(this).data('type')=='unused') {
+      $('#useBtn').show();
+      page.when(page.unused,[page.unusedPag]);
+    } else if($(this).data('type')=='used') {
+      $('#useBtn').hide();
+      page.when(page.used,[page.usedPag]);
+    } else if ($(this).data('type')=='lostused') {
+      $('#useBtn').hide();
+      page.when(page.lostused,[page.lostusedPag]);
+    }
+  })
+
+  $('#useBtn').on('click',function() {
+    window.location.href='/finance/list/0/1/0/0';
+  })
+
+  $('#step1').on('click',function() {
+    window.location.href = '/html/account/coinCertificate/?type=TZFX';
+  })
+
+  $('#step2').on('click',function() {
+    window.location.href = '/html/market/newregister/';
+  })
+
+
+  page.init = function(){
+    // page.leftnav();
+    page.getUserInfo();
+    page.when(page.unused,[page.unusedPag]);
+  };
+  page.init();
+})

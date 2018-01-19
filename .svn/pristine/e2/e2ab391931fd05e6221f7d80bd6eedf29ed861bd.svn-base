@@ -1,0 +1,32 @@
+<script type="text/template" id="confirm_content">
+
+  <div class="confirm_top">
+    <div class="detail">
+      <span class="shuxian"></span>
+      <span class="detail_font">订单详情</span>
+    </div>
+  </div>
+  <div class="confirm_center">
+    <div class="family">
+      <div class="family_top">{{=it.proDetail.data.productFirstTitle}}</div>
+      <div class="family_bottom">{{=it.proDetail.data.productSubTitle}}</div>
+    </div>
+    <div class="money">
+      <div class="money_top">应付金额: <span class="confirm_juse">￥{{=it.orderAmount}}元</span></div>
+      {{ if(it.proDetail.data.useBridcoinTag == 1 && it.is_Bridcoin == 1){ }}
+        <div class="money_bottom">鸟币抵扣: {{=it.birdCoin}}鸟币</div>
+      {{ } }}
+    </div>
+  </div>
+  <div class="confirm_bottom">
+    <div class="confirm_cont">
+      <div class="confirm_sense">实际支付: <span class="confirm_big">￥{{=it.payAmount}}</span></div>
+      <div class="mianmi"><input type="checkbox" name="" id="" checked disabled>开通免密支付</div>
+      <button class="financed" id="buy">立即支付</button>
+      <div class="back">
+        <a href="javascript:void(0);" onclick="window.history.go(-1);">返回修改订单>></a>
+      </div>
+    </div>
+  </div>
+
+</script>

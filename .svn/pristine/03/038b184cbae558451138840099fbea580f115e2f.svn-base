@@ -1,0 +1,54 @@
+<div class="dialog-footer page-component">
+	<div class="wrap">
+		<p class="copy-right">
+			©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有 沪ICP备15056137号－1 &nbsp;&nbsp;&nbsp;&nbsp;
+			<!-- <div class="icons" style="text-align: center;">
+				<a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&dn=www.lingtouniao.com&lang=zh_cn" target="_bank">
+					<img src="/img/footer_05.jpg" alt="诺顿">
+				</a>
+				<a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.lingtouniao.com&at=business" target="_bank">
+					<img src="/img/footer_02.jpg" alt="安全联盟" width="86px" height="32px">
+				</a>
+				<a href="http://sfia.org.cn/lsdw/index.jhtml" target="_bank">
+					<img src="/img/footer_03.jpg" alt="行业协会" width="86px" height="32px">
+				</a>
+				<a href="http://si.trustutn.org/info?sn=881160520000436261733" target="_bank">
+					<img src="/img/footer_04.jpg" alt="互联网金融" width="86px" height="32px">
+				</a>
+				<a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_bank">
+					<img src="/img/footer_01.jpg" alt="ICP" width="86px" height="32px">
+				</a>
+				<script type="text/javascript">
+					var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+					document.write(unescape("%3Cspan id='cnzz_stat_icon_1258037212'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258037212%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+				</script>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<script>
+					var _hmt = _hmt || [];
+					(function() {
+						var hm = document.createElement("script");
+						hm.src = "//hm.baidu.com/hm.js?2ce520d6a6a41eb85c78974ad14678c4";
+						var s = document.getElementsByTagName("script")[0];
+						s.parentNode.insertBefore(hm, s);
+					})();
+				</script>
+				<script type="text/javascript">
+					var _py = _py || [];
+					_py.push(['a', 'YQs..WOGqF1S7kb_VEl9N283aBX']);
+					_py.push(['domain', 'stats.ipinyou.com']);
+					_py.push(['e', '']); - function(d) {
+						var s = d.createElement('script'),
+							e = d.body.getElementsByTagName('script')[0];
+						e.parentNode.insertBefore(s, e),
+							f = 'https:' == location.protocol;
+						s.src = (f ? 'https' : 'http') + '://' + (f ? 'fm.ipinyou.com' : 'fm.p0y.cn') + '/j/adv.js';
+					}(document);
+				</script>
+				<noscript><img src="//stats.ipinyou.com/adv.gif?a=YQs..WOGqF1S7kb_VEl9N283aBX&e=" style="display:none;"/></noscript>
+			</div> -->
+		</p>
+
+	</div>
+</div>
+<script src="/js/lib/jquery.min.js"></script>
+<script src="/js/lib/doT.min.js" type="text/javascript" charset="utf-8"></script>

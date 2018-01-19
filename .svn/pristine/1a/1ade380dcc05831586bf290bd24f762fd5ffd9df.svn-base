@@ -1,0 +1,30 @@
+
+  <!-- @include ../../common/_headtop.html-->
+
+  <!-- @include _headmiddle.html -->
+
+  <!-- @include ../../common/_headbottom.html -->
+
+  <!-- @include ../../common/default/_navTop.html -->
+
+  <!-- @include ../../common/default/_navTwo.html -->
+
+  <!-- @include _detailprofit.html -->
+
+  <!-- @include ../../common/_footer.html -->
+
+  <!-- @include ../../common/_cover.html -->
+
+  <!-- @include _template.html -->
+
+  <!-- @include ../_template-left.html -->
+
+  <script src="/js/lib/echarts.min.js"></script>
+ 
+ <script src="/js/account/detailprofit/script.min.js?v=20160705"></script>
+ 
+ <script src="/js/account/script.min.js"></script>
+
+  <!-- @include ../../common/_bottom.html -->
+
+

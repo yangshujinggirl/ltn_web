@@ -1,0 +1,69 @@
+<!-- 待收收益模板 -->
+<script type="text/template" id="tempChartOne">
+  <div class="leftChart echartview" id="echartOne"></div>
+  <p class="earnings">{{=strUtil().formatKilo(it.regularAndRewardProfit)}}<br>待收收益(元)</p>
+  <div class="amount">
+     <div class="fixed">
+       固定收益(元)&nbsp;&nbsp;{{=strUtil().formatKilo(it.regularProfit)}}
+       <span class="icon"></span>
+       <p class="hint">固定收益：新手标、乐巢投和乐巢投收益</p>
+     </div>
+     <div class="award">
+       奖励收益(元)&nbsp;&nbsp;{{=strUtil().formatKilo(it.rewardProfit)}}元
+       <span class="icon"></span>
+       <p class="hint">奖励收益：理财金券折现后所获得收益(包括返现券和加息券)；</p>
+     </div>
+  </div>
+</script>
+<!-- 累计收益模板 -->
+<script type="text/template" id="tempChartTwo">
+  <div class="leftChart echartview" id="echartTwo"></div>
+  <p class="earnings">{{=strUtil().formatKilo(it.uncRevenueTotal)}}<br>累计收益(元)</p>
+  <div class="rightInfo">
+     <div class="item">
+       <span>固定收益 (元)&nbsp;&nbsp;<span class="number">{{=strUtil().formatKilo(it.financeTotal)}}</span></span>
+       <span class="icon"></span>
+       <p class="hint ">固定收益：已到新手标、帐乐巢投和乐巢投的收益</p>
+     </div>
+     <div class="item">
+       <span>奖励收益 (元)&nbsp;&nbsp;<span class="number">{{=strUtil().formatKilo(it.couponTotal)}}</span></span>
+       <span class="icon"></span>
+       <p class="hint">奖励收益：已到帐的理财金券的收益</p>
+     </div>
+     <div class="item">
+       <span>分润收益 (元)&nbsp;&nbsp;<span class="number">{{=strUtil().formatKilo(it.partnerTotal)}}</span></span>
+       <span class="icon"></span>
+       <p class="hint">分润收益：合伙人的一二级好友投资奖励收益</p>
+     </div>
+     <div class="item">
+       <span>鸟币收益 (元)&nbsp;&nbsp;<span class="number">{{=strUtil().formatKilo(it.birdTotal)}}</span></span>
+       <span class="icon"></span>
+       <p class="hint">鸟币收益：投资后已到账鸟币收益</p>
+     </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempEarningDeatil">
+  <thead>
+    <tr>
+      <th>项目名称</th>
+      <th>投资时间</th>
+      <th>投资金额</th>
+      <th>到期时间</th>
+      <th>收益金额</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{~it.uncRevenueList:value:index}}
+    <tr>
+      <td>{{=value.earningName}}</td>
+      <td>{{=(value.orderDate).substring(0,11)}}</td>
+      <td>￥{{=strUtil().formatKilo(value.orderAmount)}}</td>
+      <td>{{=(value.earningDate).substring(0,11)}}</td>
+      <td>￥{{=strUtil().formatKilo(value.earning)}}</td>
+      <td>订单编号{{=value.orderNo}}</td>
+    </tr>
+  {{~}}
+  </tbody>
+</script>

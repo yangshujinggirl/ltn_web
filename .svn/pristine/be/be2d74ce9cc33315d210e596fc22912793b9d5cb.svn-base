@@ -1,0 +1,72 @@
+  .product-filter {
+
+    .wrap {
+      padding:0;
+    }
+    .tabs {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-bottom: 2px solid #e2e2e2;
+      .item {
+        display: inline-block;
+        padding: 20px;
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: bold;
+        height: 100%;
+        position: relative;
+        top: 2px;
+        border-bottom: 2px solid #e2e2e2;
+        cursor: pointer;
+
+        &:hover {
+          color: #ff6f20;
+          border-bottom: 2px solid #ff6f20;
+        }
+      }
+
+      &.short > .short, &.long > .long,
+      &.zuixin > .zuixin,&.xinshou > .xinshou
+       {
+        color: #ff6f20;
+        border-bottom: 2px solid #ff6f20;
+      }
+    }
+
+    .options {
+
+      padding: 10px 0;
+
+      > .item {
+
+        padding: 0 20px;
+        margin: 10px 0;
+
+        .caption {
+          color: #3a3a3a;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .params {
+          display: inline-block;
+          margin: 0;
+
+          .item {
+            display: inline-block;
+            font-size: 14px;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+
+            &.selected, &:hover {
+              background: $act-btn-hover-color;
+              border-radius: 4px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }

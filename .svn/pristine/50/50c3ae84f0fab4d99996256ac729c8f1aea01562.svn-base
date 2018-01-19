@@ -1,0 +1,119 @@
+<script type="text/template" id="tempBird">
+  <div class="current">
+    <div class="itemnav">
+      <div class="itemnav-left">
+        <a href="javascript:void(0)" class="ite selected" >我的鸟币</a>
+      </div>
+      <div class="itemnv-right">本平台所有资金都是通过联动优势第三方资金托管</div>
+    </div>
+    <div class="bird_cont">
+      <div class="caption caption1">
+        <div class="filed">鸟币余额</div>
+        <div class="num">{{=strUtil().formatKilo(it.nowBird)}}<span class="samll">鸟币</span></div>
+      </div>
+      <div class="caption caption2">
+        <div class="filed">今日获得鸟币</div>
+        <div class="num">{{=strUtil().formatKilo(it.todayBird)}}<span class="samll">鸟币</span></div>
+      </div>
+      <hr>
+      <div class="caption caption3">
+        <div class="current">当月获得鸟币</div>
+        <div class="bird_num">{{=strUtil().formatKilo(it.mouthBirdI)}}鸟币</div>
+        <div class="current current2">当月使用鸟币</div>
+        <div class="bird_num">{{=strUtil().formatKilo(it.mouthBirdO)}}鸟币</div>
+      </div>
+      <div class="caption">
+        <div class="current">累计获得鸟币</div>
+        <div class="bird_num">{{=strUtil().formatKilo(it.totalBirdI)}}鸟币</div>
+        <div class="current current2">累计使用鸟币</div>
+        <div class="bird_num">{{=strUtil().formatKilo(it.totalBirdO)}}鸟币</div>
+      </div>
+    </div>
+    <div class="more">
+      <div class="header">更多获取鸟币的方式：</div>
+      <div class="mored_cont">
+        <a href="#">
+          <div class="more_box1 box1">
+            <div class="more_icon icon1"></div>
+            <div class="inexplicable">每日砸蛋</div>
+          </div>
+        </a>
+        <a href="/html/account/partner/">
+          <div class="more_box1 box2">
+            <div class="more_icon icon2"></div>
+            <div class="inexplicable">合伙人计划</div>
+          </div>
+        </a>
+        <a href="/html/market/newregister2/">
+          <div class="more_box1 box3">
+            <div class="more_icon icon3"></div>
+            <div class="inexplicable">新手活动</div>
+          </div>
+        </a>
+        <div class="more_box1 box4">
+          <div class="more_icon icon4"></div>
+          <div class="inexplicable">敬请期待</div>
+        </div>
+      </div>
+      <div class="hints">
+        <div class="hints_icon"></div>
+        <div class="significance">1.鸟币含义：领投鸟理财的虚拟货币，不能提现，投资时1：1抵扣现金使用<br>
+        2.使用要求：投资时和RMB的最大投资配比为1：49，如单笔投资1000元最多可用20鸟币折现；另可提现时抵扣手续费</div>
+      </div>
+    </div>
+  </div>
+</script>
+<!-- 获得鸟币渲染-->
+<script type="text/template" id="temptablehuode">
+  <table>
+    <thead>
+      <tr>
+        <th>流水编号</th>
+        <th class="productname">获取方式</th>
+        <th>获得数量</th>
+        <th>获得时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~it.birdList:value:index}}
+      <tr>
+        <td>{{=value.id}}</td>
+        <td>{{=value.typeName}}</td>
+        <td>{{=value.amount}}</td>
+        <td>{{=value.createDate}}</td>
+      </tr>
+     {{~}}
+   </tbody>
+  </table>
+  <div class="accountpage">
+    <div class="pages" id="pages1"></div>
+  </div>
+  <div class="nolist"></div>
+</script>
+
+<script type="text/template" id="temptableSY">
+  <table>
+    <thead>
+      <tr>
+        <th>流水编号</th>
+        <th class="productname">使用途径</th>
+        <th>使用数量</th>
+        <th>使用时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~it.birdList:value:index}}
+      <tr>
+        <td>{{=value.id}}</td>
+        <td>{{=value.typeName}}</td>
+        <td>{{=value.amount}}</td>
+        <td>{{=value.createDate}}</td>
+      </tr>
+     {{~}}
+   </tbody>
+  </table>
+  <div class="accountpage">
+    <div class="pages" id="pages2"></div>
+  </div>
+  <div class="nolist"></div>
+</script>

@@ -1,0 +1,690 @@
+$(function() {
+	// 判断对像是否为空
+  function isEmptyObject(e) {
+      var t;
+      for (t in e)
+          return !1;
+      return !0;
+  }
+
+	 // 计算收益
+  function mutilPreProfit(inAmount,profit,days){
+    inAmount = Number(inAmount);
+    profit = Number(profit);
+    days = Number(days);
+    return inAmount*profit*days/360;
+  }
+  // 选择券的时候重新计算
+  function moreProfit(preProfit,coupon){
+    if(coupon.type == 'JXQ'){
+      return preProfit+preProfit*coupon.amount/100;
+    }else if(coupon.type == 'TZFX'){
+      return preProfit+coupon.amount;
+    }else{
+      return preProfit;
+    }
+  }
+
+	var baseUrl = Config.baseUrl;
+
+	var page = new Page();
+	page.prodInfo = {}; //产品信息
+	page.buyInfo = {}; //投资信息
+	page.birdCoin=0; //抵扣鸟币
+	page.coupons = []; //理财券列表
+	var postData = {}; //传递数据
+	page.oldMoney = 0; //之前输入的金额
+	var userStatus = session().get('userStatus');
+	var userType = session().get('userType');
+  var secondCategoryId;
+	//消息滚动
+	page.getNotic = function() {
+			return page.getData(
+				'/message/getScrollMessage', {
+					clientType: 'PC'
+				}, [initCrumbTemp, initNotice]);
+
+			/**
+			 * init crumb template
+			 */
+			function initCrumbTemp(data) {
+				if (data.resultCode === '0') {
+					data = data.data;
+					page.initTemplate(data, 'crumb', 'tempCrumb');
+				}
+			}
+
+			function initNotice() {
+				// init notice marquee
+				$('#marquee').marquee({
+					yScroll: 'bottom'
+				});
+			}
+	},
+	// request prop data 标地渲染模板
+	page.getLCTXL = function(cb) {
+		var productId = page.get('productId');
+		postData.productId = productId;
+		return page.getData(
+			'/product/productDetail', {
+				clientType: 'PC',
+				id: productId
+			}, [getProductID, initTemp, initChart, addEvents]);
+
+		function getProductID(data) {
+			if (data.resultCode == '0') {
+				data = data.data;
+        secondCategoryId = secondCategoryId = data.pcProductDetail.secondCategoryId
+        page.set('productId', data.pcProductDetail.productId)
+
+        $('.JS-shopStages,.JS-supply,.JS-cashStages').hide();
+        $('.JS-common').show();
+			}
+		}
+
+		function initTemp(data) {
+			if (data.resultCode === '0') {
+				data = data.data;
+				//把产品信息传入
+				page.prodInfo = data;
+				//把产品信息传入postData
+				postData.productName = data.pcProductDetail.productName;
+					postData.convertDay = data.pcProductDetail.convertDay;
+					postData.annualIncomeText = data.pcProductDetail.annualIncomeText;
+					postData.annualIncome = data.pcProductDetail.annualIncome;
+					postData.repaymentType = data.pcProductDetail.repaymentType;
+					postData.staRateDate = data.pcProductDetail.staRateDate;
+					postData.endDate = data.pcProductDetail.endDate;
+					postData.useBirdCoinTag = data.pcProductDetail.useBirdCoinTag;
+					postData.useCouponTag = data.pcProductDetail.useCouponTag;
+				page.initTemplate(data.pcProductDetail, 'longProp', 'tempLongprop');
+			}
+		}
+
+		function initChart(data) {
+			if (data.resultCode === '0') {
+				data = data.data.pcProductDetail;
+				// load echarts.
+				var chartContainer = $('#chartProcess')[0],
+					chart = echarts.init(chartContainer);
+
+				chart.setOption({
+					series: {
+						name: '项目进度',
+						type: 'pie',
+						radius: ['80%', '100%'],
+						label: {
+							normal: {
+								show: false,
+							}
+						},
+						data: [{
+							value: parseInt(data.progress),
+							name: '已完成',
+							itemStyle: {
+								normal: {
+									color: '#ff6f20'
+								}
+							}
+						}, {
+							value: 100 - parseInt(data.progress),
+							name: '剩余',
+							itemStyle: {
+								normal: {
+									color: '#e2e2e2'
+								}
+							}
+						}]
+					}
+				});
+			}
+		}
+
+		function addEvents(data) {
+			$('#invest').on('click', investOperation);
+			if (data.resultCode === '10000006') {
+				session().clear();
+	  		user().loginOperate();
+	  		return;
+			}
+			//立即投资处理方法
+			function investOperation() {
+				user().loginOperate(nameAuthOperate2()); //登录实名处理
+			};
+			//投资弹窗的处理
+			function investPopup() {
+				// page.getBuyPopup(); //获取投资弹窗数据
+					page.when(page.getCoupons,[page.getBuyPopup]);
+					var cover = $('.common-cover'),
+							dialog = $('#buyDialog');
+							cover.addClass('show');
+							dialog.addClass('show');
+			};
+
+			//实名处理方法
+			function nameAuthOperate2() {
+				return function() {
+					if(userType=='1') {
+						if(userStatus=='-1')  {
+							window.location.href = '/html/user/corporate_fail/'
+						} else if(userStatus=='0') {
+							window.location.href = '/html/user/corporate_success/'
+						} else if(userStatus=='2') {
+							window.location.href = '/html/user/corporate_realname1/'
+						} else if(userStatus=='1') {
+							user().nameAuthOperate(investPopup);
+						}
+					} else {
+						user().nameAuthOperate(investPopup);
+					}
+				}
+			};
+		};
+	},
+	//乐巢投系列项目详情  渲染模板
+	page.getLCTXQ = function(cb) {
+			var productId = page.get('productId');
+			return page.getData(
+				'/product/productIntroduceD',
+				{clientType: 'PC',id: productId},
+				[initTemp,addEvent]);
+
+			function initTemp(data) {
+				if (data.resultCode === '0') {
+					data = data.data.pcProductIntroduceD;
+          data.secondCategoryId = secondCategoryId;
+					page.initTemplate(data, 'itemDetail', 'tempItemDetail');
+				}
+			}
+			function addEvent(data){
+				var data = data.data.pcProductIntroduceD.pcProjectUse;
+				if (data == '') {
+					$('#zichan').hide();
+					$('#fengkong').hide();
+				}else{
+					$('#infoXQ').hide();
+					$('#zichan').show();
+					$('#fengkong').show();
+				}
+			}
+	},
+	//投资记录分页
+	page.pagDesc = function (){
+    $('.pages').paging({
+      totalSize: page.get('totalCount'),
+      turnSize: 5,
+      pageSize:10,
+      currPage: page.get('currPage'),
+      callback:intPage
+    });
+    function intPage(pageNo){
+      page.getDesc (pageNo);
+    }
+  };
+	// request desc data 投资记录渲染模板
+	page.getDesc = function(currenPage) {
+		page.set('currPage', currenPage);
+		if (!user().isLogin()) {
+				$('#logCont').css('display','none');
+				$('.nolist').css('display','block');
+				$('.accountpage').css('display','none');
+				// bind tab events
+			var tab = $('#descTab'),
+				tabItems = $('#descTab .item'),
+				classType = [],
+				detail = $('#contentTab');
+
+			tabItems.each(function(index, item) {
+				classType.push($(item).data('content'));
+			});
+			classType = classType.join(' ');
+
+			tab.on('click', function(event) {
+				var item = $(event.target);
+				if (item.hasClass('item')) {
+					tabItems.removeClass('selected');
+					item.addClass('selected');
+					detail.removeClass(classType).addClass(item.data('content'));
+				}
+			});
+			$('.action').mouseover(function(){
+			  $(this).find('.blueIcon').show();
+			  $(this).find('.tankuang').show();
+		  });
+		  $('.action').mouseout(function(){
+			  $(this).find('.blueIcon').hide();
+			  $(this).find('.tankuang').hide();
+		  });
+			}else{
+				$('#logCont').css('display','block');
+				$('.nolist').css('display','none');
+				$('.accountpage').css('display','block');
+				return page.getData(
+			'/product/purchasehistory', {
+				clientType: 'PC',
+				currentPage: currenPage || 0,
+        pageSize:10,
+				productId: page.get('productId')
+			}, [initTemp,getTotalSize,addEvents]);
+
+		function initTemp(data) {
+			if (data.resultCode === '0') {
+				data = data.data;
+				page.initTemplate(data, 'desc', 'tempDesc');
+			}
+		};
+		function getTotalSize(data) {
+      if (data.resultCode === '0') {
+        data = data.data;
+        page.set('totalCount', data.totalCount)
+      }
+      page.pagDesc();
+    };
+
+		function addEvents() {
+
+			// bind tab events
+			var tab = $('#descTab'),
+				tabItems = $('#descTab .item'),
+				classType = [],
+				detail = $('#contentTab');
+
+			tabItems.each(function(index, item) {
+				classType.push($(item).data('content'));
+			});
+			classType = classType.join(' ');
+
+			tab.on('click', function(event) {
+				var item = $(event.target);
+				if (item.hasClass('item')) {
+					tabItems.removeClass('selected');
+					item.addClass('selected');
+					detail.removeClass(classType).addClass(item.data('content'));
+				}
+			});
+			$('.action').mouseover(function(){
+			  $(this).find('.blueIcon').show();
+			  $(this).find('.tankuang').show();
+		  });
+		  $('.action').mouseout(function(){
+			  $(this).find('.blueIcon').hide();
+			  $(this).find('.tankuang').hide();
+		  });
+		}
+			};
+			$('#login2').on('click',function(){
+						user().loginOperate();
+			});
+	},
+
+	//获取投资弹窗的数据
+	page.getBuyPopup = function() {
+    var productId = page.get('productId');
+		return page.getData(
+			'/user/userInfo', {
+        productId:productId
+      }, [initTemp, addEvent,radioEvent]);
+
+		function initTemp(data) {
+			if (data.resultCode === '0') {
+				data = data.data;
+				//重新创建一个购买数据
+				page.buyInfo.prodInfo = page.prodInfo;
+				page.buyInfo.userInfo = data;
+				postData.productRemainAmount = data.usableBalance;
+				postData.isNoPwdTZ = data.isNoPwdTZ;
+				postData.useBirdCoinTag = page.buyInfo.prodInfo.pcProductDetail.useBirdCoinTag;
+				postData.useCouponTag = page.buyInfo.prodInfo.pcProductDetail.useCouponTag;
+				postData.annualIncome = page.buyInfo.prodInfo.pcProductDetail.annualIncome;
+				postData.convertDay = page.buyInfo.prodInfo.pcProductDetail.convertDay;
+				page.getCoupons(data.coupons); //获取理财券
+				// console.log(page.coupons);
+				page.initTemplate(page.buyInfo, 'buyDialog', 'tempIateBuyPopup');
+				page.operateEndMoney(); //判断是否尾款
+			}
+		}
+		//绑定事件处理
+		function addEvent() {
+			//光标离开时验证
+			$("#txtMoney[readonly!='readonly']").on('blur', function() {
+				_this = $(this);
+				var vdRow = _this.parent().parent();
+				var vdTip = vdRow.find('.validation');
+				var vdSuccess = 'validate-success';
+				var vdFailed = 'validate-failed';
+				validate().vd(_this, vdRow, vdTip, vdSuccess, vdFailed, false);
+				page.operateMoney(_this, vdRow, vdTip);
+			});
+			//光标集中情况验证
+			$("#txtMoney[readonly!='readonly']").on('focus', function() {
+				var vdRow = $(this).parent().parent();
+				vdRow.removeClass(validate().vdFailed);
+				var vdTip = vdRow.find('.validation');
+				vdTip.html('');
+				$('#loginTip').hide();
+			});
+			//提交验证事件
+			$('#submit').on("click", function() {
+				//触发所有输入的验证
+				var element = $("#txtMoney[readonly!='readonly']");
+				user().testSubmit(page.operateMoney, element);
+				//是否有错误
+				if ($('#form').find('.validate-failed').length != 0) {
+					return false;
+				} else {
+					var money = strUtil().trim($('#txtMoney').val());
+					var birdCoin = 0;
+					var isUse = $('#isUse');
+					if (isUse.attr('checked') == 'checked' || isUse.attr('checked') == 'true') {
+						birdCoin = $('#birdCoin').html();
+					}
+					var couponId = $('#couponList').val()=='请选择...'?'0':$('#couponList').val();
+					var couponName = $('#couponList option:selected').text();
+					var amountMoney = $('#amountMoney').html().replace('元', '');
+					var tickitsCode = $('#yuqiAmount').data('code')||'';
+					var tickitName = $('#yuqiAmount').data('amount');
+					//跨页面传输数据
+					postData.buyAmount = money;
+					postData.usedCoin = birdCoin;
+					if($('#code').hasClass('pitch')) {
+						postData.presentCode = tickitsCode;
+						postData.usedCouponText = tickitName;
+						postData.couponId = '';
+					} else {
+						postData.couponId = couponId;
+						postData.presentCode = '';
+						postData.usedCouponText = couponName;
+					}
+					// postData.couponId = couponId;
+					// postData.usedCouponText = couponName;
+					postData.amountMoney = amountMoney;
+					page.post('./confirm', postData);
+				}
+			});
+			//关闭弹窗事件
+			$('#buyDialogClose').on('click', hideBuy);
+
+			function hideBuy() {
+				var cover = $('.common-cover'),
+					dialog = $('#buyDialog');
+				cover.removeClass('show');
+				dialog.removeClass('show');
+				page.oldMoney=0;//还原旧金额
+				page.birdCoin=0;
+			};
+			//选择是否鸟币抵用
+			$('#isUse').on('click', function() {
+				var money = isNaN(parseFloat(strUtil().trim($('#txtMoney').val()))) ? '0' : parseFloat(strUtil().trim($('#txtMoney').val())); //获取金额
+				var isUse = $(this);
+				if (isUse.attr('checked') == 'checked' || isUse.attr('checked') == 'true') {
+					isUse.removeAttr('checked');
+				} else {
+					isUse.attr('checked', 'checked');
+				}
+				page.countPayMoney(money);
+			});
+			//充值事件
+			// $('#recharge').on('click', function() {
+			// 	user().goNewPage('/html/account/bank');
+			// });
+		};
+		//选择券，兑换码
+		function radioEvent() {
+			$('.radio').on('click',function() {
+					var boolan = $(this).parent().attr('class');
+					// 选框初始化//////
+	        $('#couponList').find('option:first').attr('selected',true).siblings().attr('selected',false);
+	        $('#presentCode').val('');
+	        $('#code').attr('class','code');
+	        $('#yuqiAmount').html('');
+	        /////////////
+					if (boolan == 'tickits') {
+						$('#couponList').addClass('pitch');
+						$('#code').removeClass('pitch');
+					} else {
+						$('#code').addClass('pitch');
+						$('#couponList').removeClass('pitch');
+						$('#code #presentCode').on('blur',function() {
+	            page.getCode();
+	          })
+					}
+			})
+		}
+	},
+	//处理剩余金额小于起投金额
+	page.operateEndMoney = function() {
+		var _this = $('#txtMoney');
+		var vdRow = _this.parent().parent();
+		var vdTip = vdRow.find('.validation');
+		var startMoney = parseFloat(page.buyInfo.prodInfo.pcProductDetail.staInvestAmount); //获取起投金额
+		var endMoney = parseFloat(page.buyInfo.prodInfo.pcProductDetail.productRemainAmount); //获取剩余金额
+		//如果剩余金额小于起投金额
+		if (endMoney <= startMoney) {
+			_this.attr('readonly', 'readonly'); //设置为只读
+			_this.val(endMoney); //默认显示剩余金额
+			vdRow.addClass('validate-success').removeClass('validate-failed');
+			vdTip.html('最后一笔投资只能为剩余金额');
+			// $('#amountMoney').html(endMoney + '元');
+			page.countBirdCoin(endMoney)
+			page.countPayMoney(endMoney)
+		}
+	},
+	//处理用户输入的金额
+	page.operateMoney = function(_this, vdRow, vdTip) {
+		if (!vdRow.hasClass('validate-failed') && strUtil().trim(_this.val()).length > 0) {
+			var money = parseFloat(_this.val()); //获取金额
+			var startMoney = parseFloat(page.buyInfo.prodInfo.pcProductDetail.staInvestAmount); //获取起投金额
+			var endMoney = parseFloat(page.buyInfo.prodInfo.pcProductDetail.productRemainAmount); //获取剩余金额
+			var userMoney = parseFloat(page.buyInfo.userInfo.usableBalance); //用户余额
+			var danbiMoney = parseFloat(page.buyInfo.prodInfo.pcProductDetail.singleLimitAmount);
+			var annualIncome = page.buyInfo.prodInfo.pcProductDetail.annualIncome;//获取利率
+			var convertDay = page.buyInfo.prodInfo.pcProductDetail.convertDay;//获取天数
+			//用户输入金额小于起投金额
+			if (money < startMoney) {
+				vdRow.addClass('validate-failed').removeClass('validate-success');
+				vdTip.html('投资金额必须大于起投金额');
+				return;
+			} else if(danbiMoney > 0 && money > danbiMoney){
+					vdRow.addClass('validate-failed').removeClass('validate-success');
+					vdTip.html('输入的金额超过了单笔投资上限');
+						return;
+					}else {
+						mutilRealAmount(money);
+						var profit = roundNum(mutilPreProfit(money,annualIncome,convertDay),2);
+						page.set('profit',profit);
+						var opeitonEd = $('#couponList').find('option:selected').data();
+						if (opeitonEd) {
+							profit = roundNum(moreProfit(profit,opeitonEd),2);
+						}
+						$('.preprofittwo').text(profit);
+
+		  }
+		}
+		function roundNum(number,fDigits){
+	    with(Math){
+	        return round(number*pow(10,fDigits))/pow(10,fDigits);
+	    }
+		}
+		function mutilRealAmount(money){
+			//用户输入金额小于剩余金额
+			if (money <= endMoney) {
+				//判断用户余额是否充足
+				if (userMoney >= money) {
+					vdRow.addClass('validate-success').removeClass('validate-failed');
+						//计算鸟币
+						page.countBirdCoin(money);
+						//计算实际金额
+						page.countPayMoney(money);
+						//用户输入金额相同
+						if(money!=page.oldMoney){
+							//渲染理财金券模板
+							if($("#couponList").length>0){
+								page.initCoupons(money);
+							}
+							page.oldMoney=money;
+						}
+						return;
+
+				} else {
+					vdRow.addClass('validate-failed').removeClass('validate-success');
+					// vdTip.html('余额不足,请去充值!');
+					// $('#recharge').show();
+					vdTip.text('个人账户余额不足，请').append(
+						$('<a>')
+						.attr({href:'/html/account/bank', target:'_blank'})
+						.addClass('link').text('充值'));
+						$('.link').on('click',function(){
+							window.location.reload();
+						});
+					return;
+				}
+			} else {
+				vdRow.addClass('validate-failed').removeClass('validate-success');
+				vdTip.html('投资金额不能大于剩余金额');
+				return;
+			}
+		}
+	}
+	//兑换券码
+	page.getCode = function() {
+		var presentCode = $('#presentCode').val();
+		return page.getData(
+			'/pc/account/fxq/couponInfo/get',
+			{presentCode: presentCode}, [initTemp]);
+		function initTemp(data) {
+			if (data.resultCode === '0') {
+				var data = data.data;
+				$('#yuqiAmount').attr('data-code',presentCode);
+        $('#yuqiAmount').attr('data-amount',data.coupon.couponName);
+        // $('#code .couponName').html(data.coupon.couponName);
+        $('#yuqiAmount').html('+'+data.coupon.couponName);
+        $('#code').addClass('vaid-success').removeClass('valid-fail');
+			} else {
+				$('#code').addClass('valid-fail').removeClass('vaid-success');
+				$('#code .valid .validTips').html(data.resultMessage);
+			}
+		}
+	}
+	//获取理财金券
+	page.getCoupons = function(list) {
+		var coupons = [];
+		var e, i, l = (list && list.length) || 0;
+		for (i = 0; i < l; i++) {
+			e = list[i];
+			if (e.status === 'YX' && e.activityType !== 'TYDK') {
+				coupons.push({
+					id: e.userCouponId,
+					name: e.couponName,
+					type: e.activityType, // TZFX 返现券; TYDK 体验金券; JXQ 加息券
+					expired: e.couponDate,
+					limit: e.limitAmount,
+					amount: e.amount
+				});
+			}
+		}
+		page.coupons = coupons;
+	},
+
+	//渲染理财金券模板
+	page.initCoupons = function(money) {
+		page.initTemplate(coupons, 'couponList', 'tempCoupons');
+		var coupons = page.filterCoupons(money);
+		var amount = +$('#txtMoney').val() || 0,
+		    $couponList = $('#couponList'),
+		    $options = [$('<option>').text('请选择...')];
+		    var idx = 0,
+		    len = coupons.length,
+		    item;
+		    for (; idx < len; idx++) {
+					item = coupons[idx];
+					if (item.limit <= amount) {
+						$options.push($('<option data-type='+item.type+' data-amount='+item.amount+'>')
+							.attr('value',item.id)
+							.text(item.name));
+						$couponList.empty().append($options);
+					}
+			  }
+			  /* 赵然
+				2016.5.17
+				无金券是显示暂无可用券
+			*/
+				if (len == 0 ) {
+					$options.shift();
+					$options.push($('<option>')
+						.attr('value','')
+						.text('暂无可用券...'));
+
+					$couponList.empty().append($options);
+				}
+				// $couponList.unbind('change').bind('change',function(){
+				// 	var opeitonEd = $('#couponList').find('option:selected').data();
+				// 	if (opeitonEd) {
+				// 		profit = moreProfit(page.get('profit'),opeitonEd);
+				// 	}
+				// 	$('.preprofittwo').text(profit);
+				// })
+				$couponList.unbind('change').bind('change',function(){
+          var opeitonEd = $('#couponList').find('option:selected').data();
+          var yuqiHtml = $('#couponList').find('option:selected').html();
+          if(isEmptyObject(opeitonEd)){
+              $('#yuqiAmount').html('');
+          }else{
+              $('#yuqiAmount').html('+'+yuqiHtml);
+          }
+        })
+	},
+
+	//过滤理财金券
+	page.filterCoupons = function(money) {
+		var coupons = [];
+		var e;
+		for (var i = 0; i < page.coupons.length; i++) {
+			e = page.coupons[i];
+			//过滤大于等于用户输入金额的金券
+			if (money >= e.limit) {
+				coupons.push(e);
+			}
+		}
+		return coupons;
+	},
+	//计算鸟币
+	page.countBirdCoin = function(money) {
+		var birdCoin = parseInt(parseFloat(page.buyInfo.userInfo.birdCoin) * 100) / 100; //剩余鸟币
+		var moneyBirdCoin = parseInt((money / 50) * 100) / 100; //可用抵扣鸟币最大限制
+		//判断鸟币余额是否大于最大限制
+		if (birdCoin >= moneyBirdCoin) {
+			$('#birdCoin').html(moneyBirdCoin);
+			$('#birdDeductionMoney').html(moneyBirdCoin);
+			page.birdCoin = moneyBirdCoin;
+		} else {
+			$('#birdCoin').html(birdCoin);
+			$('#birdDeductionMoney').html(birdCoin);
+			page.birdCoin = birdCoin;
+		}
+	},
+	//计算应付金额
+	page.countPayMoney = function(money) {
+		var amount = money;
+		var isUser = $('#isUse').attr('checked');
+		// page.countBirdCoin(money)
+		if (isUser == 'checked' || isUser == 'true') {
+			amount = money - page.birdCoin; //实际金额
+		} else {
+			amount = money
+		}
+		amount = amount==0?"0.00": amount
+		$('#amountMoney').html(amount + '元');
+	},
+	//初始化
+	page.init = function() {
+		//获取产品的id
+		page.setTitle('乐巢投系列');
+		page.set('productId', Url.getHashParts(0));
+		page.getNotic();
+		page.when(page.getLCTXL, [page.getLCTXQ]);
+		page.when(page.getDesc, [page.pagDesc]);
+	};
+
+	page.init();
+
+});

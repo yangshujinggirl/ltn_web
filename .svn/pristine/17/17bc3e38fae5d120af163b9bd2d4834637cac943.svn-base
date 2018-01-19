@@ -1,0 +1,290 @@
+<div class="product-desc page-component">
+  <div class="wrap">
+    <div class="first component">
+      <div class="banner">
+
+      </div>
+      <ul class="tab-list" id="tescXSBtab">
+        <li class="item selected" data-content="detail">项目详情</li>
+        <li class="item" data-content="risk">风控保障</li>
+        <li class="item" data-content="log">投资记录</li>
+        <li class="item" data-content="qa">常见问题</li>
+      </ul>
+      <ul class="content-list detail" id="contentXsbTab">
+        <li class="item" id="XSBdetail">
+          <article class="detail">
+            <div class="row">
+              <span class="caption">项目描述：</span>
+            </div>
+            <!-- <div class="row">
+              <span class="caption sub">项目说明：</span>
+              <span class="field">领投鸟体验标是为了使新注册的投资用户更快的了解平台投资流程，而打造的虚拟理财产品。投资当日计息，到期后收回本金，利息归您，利息以鸟币的形式返回。投资时间为6天，年化收益高达8%，既满足了小白用户对平台的了解，还可以获得相应利息。</span>
+            </div> -->
+            <!-- <div class="row">
+              <span class="caption sub">借款用途：</span>
+              <span class="field">赎楼</span>
+            </div>
+            <div class="row">
+              <span class="caption sub">还款来源：</span>
+              <span class="field">房屋买卖中的卖房款</span>
+            </div> -->
+            <hr class="dash">
+            <div class="row">
+              <span class="caption">项目协议：</span>
+              <span class="field"><a class="link" href="/html/product/long/contract" target="_blank">《新手标协议》</a></span>
+            </div>
+            <div class="row">
+              <span class="caption">保障方式：</span>
+              <span class="field"><a href="/other/safeguards /" class="link">《平台安全保障详解》</a></span>
+            </div>
+           <!--  <div class="row">
+              <span class="caption">投资期限：</span>
+              <span class="field">15天（2016-02-12至2016-05-27）</span>
+            </div>
+            <div class="row">
+              <span class="caption">到账时间：</span>
+              <span class="field">一次性还本付息，到期后1-3个工作日到账，资金直接转入理财账户。</span>
+            </div>
+            <hr class="dash">
+            <div class="row">
+              <span class="caption">房屋信息：</span>
+              <ul class="list">
+                <li class="item">
+                  <span class="key">市场价值</span>
+                  <span class="value">380万</span>
+                </li>
+                <li class="item">
+                  <span class="key">产权性质</span>
+                  <span class="value">住宅</span>
+                </li>
+                <li class="item">
+                  <span class="key">建筑面积</span>
+                  <span class="value">120平米</span>
+                </li>
+                <li class="item">
+                  <span class="key">所处位置</span>
+                  <span class="value">浙江杭州梦琴湾佳苑</span>
+                </li>
+              </ul>
+            </div>
+            <hr class="dash">
+            <div class="row">
+              <span class="caption solo">借款人信息：</span>
+              <ul class="list">
+                <li class="item">
+                  <span class="key">姓名</span>
+                  <span class="value">冯XX</span>
+                </li>
+                <li class="item">
+                  <span class="key">性别</span>
+                  <span class="value">女</span>
+                </li>
+                <li class="item">
+                  <span class="key">婚姻</span>
+                  <span class="value">已婚</span>
+                </li>
+              </ul>
+            </div>
+            <hr class="dash">
+            <div class="row">
+              <span class="caption solo">其他相关信息：</span>
+              <ul class="list">
+                <li class="item">
+                  <span class="key">交易中介</span>
+                  <span class="value">中原地产田林路分店</span>
+                </li>
+                <li class="item">
+                  <span class="key">按揭银行</span>
+                  <span class="value">招商银行田林路支行</span>
+                </li>
+              </ul>
+            </div> -->
+            <hr class="dash">
+            <div class="row">
+              <span class="caption solo">风控审核项目：</span>
+              <ul class="risk">
+                <li class="item">
+                  <div class="icon1"></div>
+                  <span class="key">房屋买卖合同</span>
+                </li>
+                <li class="item">
+                  <div class="icon2"></div>
+                  <span class="key">房产证</span>
+                </li>
+                <li class="item">
+                  <div class="icon3"></div>
+                  <span class="key">银行批贷函</span>
+                </li>
+                <li class="item">
+                  <div class="icon4"></div>
+                  <span class="key">赎楼服务合同</span>
+                </li>
+                <li class="item">
+                  <div class="icon5"></div>
+                  <span class="key">个人征信报告</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </li>
+        <li class="item">
+          <article class="risk">
+            <div class="JS-common">
+              <div class="row-r">
+                <p class="lable">流程保障：</p>
+                <div class="img-wrap">
+                  <img src="/html/img/fincal-plan/process.jpg" alt="">
+                </div>
+              </div>
+              <div class="row-r">
+                <p class="lable">风险控制：</p>
+                <div class="insure-content">
+                  <p class="title">1.平台严格甄选资产端合作机构，对资产端合作机构进行全面的尽职调查。</p>
+                  <p class="content">
+                    对资产端合作机构进行现场调研，以了解其实际经营情况，包括办公场所的现场核验，在岗人员访谈，业务系统演示等，以确信该机构经营正常，具备持续经营能力且发展良好；<br/>
+                    了解平台股权结构，高级管理人员履历，以确认其具有相应的成熟管理结构及相关经验，同时不存在管理层欺诈风险等；<br/>
+                    了解企业财务情况，关注在手货币资金、资产负债率、净利率等重要财务指标，关注其自身借款及或有负债，以确保其具备较强的财务实力。
+                  </p>
+                  <p class="title">2.资产端战略合作伙伴每笔业务严格风控，贷前、贷中、贷后全方位、多手段把控风险。</p>
+                </div>
+                <div class="insure-content">
+                  <p class="title">贷前：</p>
+                  <p class="content">
+                    1.场景消费合作商户优质客户推荐，真实场景消费合同及相关证明验证，确保消费真实。<br/>
+                    2.申请人身份认证及活体识别认证，排除欺诈风险。<br/>
+                    3.申请人学历信息、工作信息、常住地、紧急联系人信息验证及电话确认，确保申请人信息真实。<br/>
+                    4.对接第三方征信及风险识别机构，对申请人进行信用评分、黑名单过滤、多头借贷查询、排除高风险人群 。<br/>
+                    5.申请人个人信息授权查询，包括但不限于手机运营商信息、芝麻信用分、社保、公积金、学历、央行征信等，筛选出低风险优质客户。<br/>
+                    6.专业风控人员风控审核及复核，利用专业力量降低风险事件发生率。
+                  </p>
+                </div>
+                <div class="insure-content">
+                  <p class="title">贷中：</p>
+                  <p class="content">
+                    1.分期申请合同电子保全及法律公证，防止合同丢失及篡改。<br/>
+                    2.消费分期款项放款至合作商户，确保资金流向。<br/>
+                    3.大额分期款项分批次放款，把控放款风险。
+                  </p>
+                </div>
+                <div class="insure-content">
+                  <p class="title">贷后：</p>
+                  <p class="content">
+                    1.到期还款提醒及系统自动代扣，确保及时回款。<br/>
+                    2.贷后跟踪检查及逾期还款短信、电话提醒，及时处理风险。<br/>
+                    3.专业法务团队、催收团队，优质第三方外包催收合作伙伴，风险事件发生时使用合法手段降低整体逾期率及坏账率，提高催收成功率。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="item" id="desc">
+          <article class="log">
+            <div class="row">
+              <!-- <span class="caption solo">投资记录：</span> -->
+             <!--  <table class="log-list">
+                <thead>
+                  <tr>
+                    <th>序列号</th>
+                    <th>成交时间</th>
+                    <th>投资人</th>
+                    <th>投资金额</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                </tbody>
+              </table> -->
+            </div>
+            <div class="nolist">
+              <div class="logoIcon">
+                暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="item">
+          <article class="qa">
+            <div class="row-qa">
+              <h3 class="ques-name">Q1：什么是新手标？</h3>
+              <p class="answer">
+                新手标是领投鸟理财专为新手设计的投资标的，仅限在领投鸟理财平台上没有进行过任何投资的投资者。
+                目前平台新手标有两种，用户只能在两种新手标中二选一，并且只能投资一次。
+                第一种：投资期限为3天，预计年化收益率为18%，最低100元起投，最高10000元上限；
+                第二种：投资期限为30天，预计年化收益率为15%，最低500元起投，最高20万上限。
+              </p>
+            </div>
+
+            <div class="row-qa">
+              <h3 class="ques-name">Q2：我把钱借给了谁？</h3>
+              <p class="answer">可在项目详情中查看借款人信息和房产信息</p>
+            </div>
+
+            <div class="row-qa">
+              <h3 class="ques-name">Q3：新手标到期后收益如何？</h3>
+                <p class="answer">投资10000元新手标，那么到期后的收益为10000*18%/365*5=24，通过计算，10000元购买新手标，5天可获得24元的收益，每日收益高达得4.8元。</p>
+            </div>
+
+            <div class="row-qa">
+              <h3 class="ques-name">Q4：新手标是否可以使用返现券、加息券或者鸟币？</h3>
+              <p class="answer">领投鸟理财新手标不可使用任何券或者鸟币。</p>
+            </div>
+
+            <div class="row-qa">
+              <h3 class="ques-name">Q5：新手标投资金额有限制吗？</h3>
+              <p class="answer">新手标100元起投，上限为10000元</p>
+            </div>
+
+            <div class="row-qa">
+              <h3 class="ques-name">Q6：投资新手标后，到期了会自动返还吗？</h3>
+              <p class="answer">在领投鸟理财平台上的投资，到期后本息会自动返还至投资人的“账户中心-可用余额”里，可提现或再投资。</p>
+            </div>
+
+            <div class="row-qa">
+              <h3 class="ques-name">Q7：投资新手标后，没到期的时候可以提出来吗？</h3>
+              <p class="answer">新手标属于固定期限类理财产品，未到期时不可赎回。</p>
+            </div>
+
+            <div class="row-qa">
+              <h3 class="ques-name">Q8：提现有金额限制吗？</h3>
+              <p class="answer">领投鸟理财账户提现单日限额100万 。</p>
+            </div>
+
+            <div class="row-qa">
+              <h3 class="ques-name">Q9：领投鸟提现要不要手续费？</h3>
+              <p class="answer">每月有3次免费提现的机会，超出3次的话每次提现扣除2鸟币，没有鸟币的情况下扣除2元人民币</p>
+            </div>
+
+            <div class="row-qa">
+              <h3 class="ques-name">Q10：领投鸟可用余额提现多久到账？</h3>
+              <p class="answer">您在工作日17点之前发起的提现申请当日到账，17点以后发起的提现第二个工作日到账。若遇节假日顺延。每周一因要审核周五、周六、周日三天的付款申请，因此略有延时。</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

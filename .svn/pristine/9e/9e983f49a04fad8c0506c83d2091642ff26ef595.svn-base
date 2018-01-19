@@ -1,0 +1,286 @@
+.loan-product{
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  p,h1,ul,li {
+    margin:0;
+    padding:0;
+  }
+  $high:#ff6f20;
+  .wrap {
+    padding:0;
+    overflow: visible;
+  }
+  .banner {
+    width:100%;
+    height: 320px;
+    position:relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top:0;
+      left:50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+    }
+  }
+  .topNav {
+    overflow: hidden;
+    zoom:1;
+    margin: 36px 0 26px;
+    .left {
+      font-size: 30px;
+      color: #676d70;
+      .tall {
+        font-weight: bold;
+        color: #383f44;
+      }
+    }
+    .right {
+      line-height: 40px;
+      a {
+        font-size: 14px;
+        color:#288bff;
+      }
+    }
+  }
+  .goodList {
+    font-size: 0;
+    -webkit-text-size-adjust:none;
+    background-color: #FFF;
+    text-align: center;
+    .goodItem {
+      width: 25%;
+      padding:40px 0;
+      display: inline-block;
+      font-size: 12px;
+      color: #888c8e;
+      cursor: pointer;
+      .leftImg {
+        width: 59px;
+        height: 59px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .itemWrp {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        .big {
+          font-size: 18px;
+          color: #394043;
+          padding-bottom:16px;
+        }
+      }
+      &:hover {
+        box-shadow:0 0 10px rgba(0,0,0,.2);
+      }
+    }
+    .goodOne {
+      .leftImg {
+        background: url("/img/imageTwo/loan/icon5.png") center no-repeat;
+      }
+    }
+    .goodTwo {
+      .leftImg {
+        background: url("/img/imageTwo/loan/icon6.png") center no-repeat;
+      }
+    }
+    .goodThr {
+      .leftImg {
+        background: url("/img/imageTwo/loan/icon7.png") center no-repeat;
+      }
+    }
+    .goodFour {
+      .leftImg {
+        background: url("/img/imageTwo/loan/icon8.png") center no-repeat;
+      }
+    }
+  }
+  .partTwo {
+    .content {
+      font-size: 0;
+      -webkit-text-size-adjust:none;
+      margin-bottom: 28px;
+      .item {
+        width: 346px;
+        display: inline-block;
+        text-align: center;
+        background-color: #FFF;
+        cursor: pointer;
+        .topType {
+          border-top: 2px solid #aeb2b4;
+          .typeName {
+            display: inline-block;
+            width: 76px;
+            height: 26px;
+            line-height: 26px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #aeb2b4;
+          }
+        }
+        .wrapOne {
+          padding:26px 28px 36px;
+          .icon {
+            width: 75px;
+            height: 75px;
+            margin: 40px auto 0;
+          }
+          .tit {
+            font-size: 22px;
+            color: #394043;
+          }
+          .text {
+            font-size: 12px;
+            line-height: 30px;
+            color: #b0b3b4;
+            padding:12px 0 30px;
+          }
+          .btn {
+            font-size: 14px;
+            width: 108px;
+            height: 30px;
+            line-height: 28px;
+            border: 1px solid $high;
+            color: $high;
+            background:none;
+            cursor: pointer;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            &:hover {
+              background-color: $high;
+              color: #fff;
+            }
+            &.disabled {
+              background-color: #ccc;
+              border: 1px solid #ccc;
+            }
+          }
+        }
+        &:hover {
+          box-shadow: 0 0 10px rgba(0,0,0,.2);
+          .topType {
+            border-top-color:$high;
+            .typeName {
+              background-color:$high;
+            }
+          }
+        }
+      }
+      .itemOne {
+        .icon {
+          background:url('/img/imageTwo/loan/icon1.png') no-repeat center;
+        }
+      }
+      .itemTwo {
+        margin:0 75px;
+        .icon {
+          background:url('/img/imageTwo/loan/icon2.png') no-repeat center;
+        }
+      }
+      .itemThr {
+        float: right;
+        .icon {
+          background:url('/img/imageTwo/loan/icon3.png') no-repeat center;
+        }
+      }
+    }
+    .applyCondition {
+      color: #919597;
+      font-size: 14px;
+      padding: 34px 30px;
+      background-color: #FFF;
+      margin-bottom: 40px;
+      .big {
+        color: #394043;
+        font-size: 16px;
+      }
+      .text {
+        padding-left:34px;
+        line-height: 24px;
+      }
+      .textOne {
+        background:url('/img/imageTwo/loan/icon4.png') left center no-repeat;
+      }
+    }
+  }
+  .partThr {
+    height: 311px;
+    background:url('/img/imageTwo/home/img5.jpg') no-repeat center;
+    .stepList {
+      font-size:0;
+      -webkit-text-size-adjust:none;
+      .step {
+        display: inline-block;
+        width:25%;
+        color: rgba(255,255,255,.8);
+        text-align: center;
+        font-size: 22px;
+        padding-top: 50px;
+        .icon {
+          display: inline-block;
+          width: 58px;
+          height: 52px;
+        }
+      }
+      .step1 {
+        .icon {
+          background:url('/img/imageTwo/home/icon_home13.png') no-repeat center;
+        }
+      }
+      .step2 {
+        .icon {
+          background:url('/img/imageTwo/home/icon_home14.png') no-repeat center;
+        }
+      }
+      .step3 {
+        .icon {
+          background:url('/img/imageTwo/home/icon_home16.png') no-repeat center;
+        }
+      }
+      .step4 {
+        .icon {
+          background:url('/img/imageTwo/home/icon_home15.png') no-repeat center;
+        }
+      }
+    }
+    .apply {
+      text-align: center;
+      padding-top: 46px;
+    }
+    .btn {
+      font-size: 22px;
+      color: #afb3b4;
+      width: 158px;
+      height: 52px;
+      background-color: #FFF;
+      border-radius:52px;
+      border: none;
+    }
+  }
+  .partFour {
+    .row {
+      font-size: 14px;
+      color: #b0b3b4;
+      padding:30px;
+      background-color: #FFF;
+      margin-bottom:24px;
+      cursor: pointer;
+      .title {
+        font-size: 18px;
+        color: #383f44;
+        font-weight: normal;
+      }
+      .text {
+        line-height: 22px;
+        padding-top:22px;
+      }
+      &:hover {
+        box-shadow:0 0 10px rgba(0,0,0,.2);
+      }
+    }
+  }
+}

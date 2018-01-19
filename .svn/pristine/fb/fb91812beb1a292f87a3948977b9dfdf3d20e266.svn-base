@@ -1,0 +1,273 @@
+.report {
+  ul,li {
+    margin:0;
+    padding:0;
+  }
+  .wrap {
+    padding:0;
+  }
+  .report-content {
+    background-color: #fff;
+    .wrap1{
+      padding:0 140px;
+    }
+    .banner {
+      width:100%;
+      text-align: center;
+    }
+    .commonHead {
+      overflow: hidden;
+      zoom:1;
+      .leftText {
+        height: 52px;
+        line-height: 52px;
+        color:#ea4221;
+        font-size: 30px;
+        font-weight: bold;
+        background: url(/img/report_01.png) no-repeat left;
+        padding-left:35px;
+        float:left;
+      }
+      .rightIntro {
+        width:179px;
+        height: 90px;
+        background: url(/img/report_02.png);
+        float:right;
+      }
+    }
+    .userCanvas {
+      margin-top: 30px;
+      .dataMap {
+        width: 752px;
+        height: 606px;
+        background: url(/img/report_04.png);
+        margin:0 auto;
+      }
+      .age {
+        width:204px;
+        height: 89px;
+        line-height: 89px;
+        font-size: 24px;
+        color: #eb431f;
+        background: url(/img/report_05.png);
+        text-align: center;
+        .num {
+          margin-right: 10px;
+        }
+      }
+      .sex {
+        .age {
+          margin: 0 auto;
+        }
+      }
+      .scale {
+        width:683px;
+        padding-top:98px;
+        background: url(/img/report_06.png) no-repeat top;
+        font-size: 24px;
+        overflow: hidden;
+        zoom:1;
+        margin:60px auto 100px;
+        .boy {
+          line-height: 32px;
+          color: #54c7dc;
+          padding-left:30px;
+          float:left;
+          background: url(/img/report_07.png) no-repeat left;
+        }
+        .girl {
+          height: 32px;
+          color:#ec2793;
+          padding-left:30px;
+          float:right;
+          background: url(/img/report_08.png) no-repeat left;
+        }
+      }
+
+    }
+    .mainData {
+      .rank {
+        width:332px;
+        height: 89px;
+        line-height: 89px;
+        font-size: 24px;
+        color: #eb431f;
+        background: url(/img/report_09.png);
+        text-align: center;
+        margin:30px auto;
+      }
+      .item {
+        overflow: hidden;
+        zoom:1;
+        margin-top: 60px;
+        .arrows {
+          padding-left:20px;
+          height: 54px;
+          line-height: 54px;
+          font-size: 24px;
+          color: #fff;
+          position: relative;
+          float: left;
+          box-sizing:border-box;
+          -webkit-box-sizing:border-box;
+          .triangle {
+            width: 0;
+            height: 0;
+            display: block;
+            border:27px solid transparent;
+            border-left: 27px solid #fff;
+            position: absolute;
+            right: -54px;
+            top:0;
+          }
+        }
+        .math {
+          font-size: 48px;
+          float: right;
+        }
+      }
+      .item:nth-child(1) {
+        .arrows {
+          background: #fa6305;
+          .triangle {
+            border-left: 27px solid #fa6305;
+          }
+        }
+        .math {
+          color:#fa6305;
+        }
+      }
+      .item:nth-child(2) {
+        .arrows {
+          background: #67d9e1;
+          .triangle {
+            border-left: 27px solid #67d9e1;
+          }
+        }
+        .math {
+          color:#67d9e1;
+        }
+      }
+      .item:nth-child(3) {
+        .arrows {
+          width:273px;
+          background: #9ae24b;
+          .triangle {
+            border-left: 27px solid #9ae24b;
+          }
+        }
+        .math {
+          color:#9ae24b;
+        }
+      }
+      .item:nth-child(4) {
+        .arrows {
+          width:323px;
+          background: #63abff;
+          .triangle {
+            border-left: 27px solid #63abff;
+          }
+        }
+        .math {
+          color:#63abff;
+        }
+      }
+      .item:nth-child(5) {
+        .arrows {
+          background: #ec2793;
+          .triangle {
+            border-left: 27px solid #ec2793;
+          }
+        }
+        .math {
+          color:#ec2793;
+        }
+      }
+      .item:nth-child(6) {
+        .arrows {
+          background: #9142e6;
+          .triangle {
+            border-left: 27px solid #9142e6;
+          }
+        }
+        .math {
+          color:#9142e6;
+        }
+      }
+      .item:nth-child(7) {
+        .arrows {
+          width:351px;
+          background: #fac202;
+          .triangle {
+            border-left: 27px solid #fac202;
+          }
+        }
+        .math {
+          color:#fac202;
+        }
+      }
+      .dataShow {
+        padding:20px 0 0 250px;
+        height: 577px;
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        background: url(/img/report_10.png) no-repeat left;
+        .sum {
+          font-size: 36px;
+          color:#e73927;
+        }
+        .sum:nth-child(2),.sum:nth-child(3) {
+          margin-top: 100px;
+        }
+        .sum:nth-child(4) {
+          margin-top: 85px;
+        }
+      }
+      .objectRank {
+        .itm {
+          font-size: 36px;
+          color: #eb431f;
+          text-align: center;
+          padding-top:160px;
+          margin-top: 30px;
+
+        }
+        .itm:nth-child(1) {
+          background: url(/img/report_11.png) no-repeat top center;
+        }
+        .itm:nth-child(2) {
+          background: url(/img/report_12.png) no-repeat top center;
+        }
+        .itm:nth-child(3) {
+          background: url(/img/report_13.png) no-repeat top center;
+        }
+      }
+    }
+    .thanks {
+      padding-bottom:50px;
+      margin-top: 100px;
+      .company {
+        padding:0 140px;
+        overflow: hidden;
+        zoom:1;
+        margin:50px 0;
+        .logo {
+          float: left;
+        }
+        .code {
+          width:190px;
+          height: 190px;
+          padding-left:150px;
+          border-left: 2px solid #ea5504;
+          background: url(/img/report_15.png) no-repeat center;
+          float: right;
+        }
+      }
+      .adr {
+        font-size: 36px;
+        color:#636363;
+        text-align: center;
+      }
+    }
+  }
+}

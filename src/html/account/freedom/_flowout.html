@@ -1,0 +1,39 @@
+<div class="freedomout component" id="flowout">
+  <div class="wrap">
+    <div class="current">
+      <div class="header">
+        <div class="title">转出金额</div>
+        <div class="close"></div>
+      </div>
+      <div class="form" id="outForm">
+        <div class="row">
+          <div class="caption">转出金额：</div>
+          <div class="field">
+            <input class="input" type="text" id='txtMoney' data-required='true' data-type='money' data-emptyTip='金额不能为空' data-errorTip="金额不符合规则" data-zeroTip='请输入正确的金额'>
+          </div>
+          <div class="validation"></div>
+        </div>
+        <div class="row">
+          <div class="caption">可转余额：</div>
+          <div class="field">
+            <span class="text" id="currentMoney">300.00元</span>
+          </div>
+        </div>
+        <div class="row">
+			<div class="caption">到账日期：</div>
+			<div class="caption-tip">转出的金额,第二天下午15:00前会被转出到可用余额</div>
+		</div>
+        <div class="row submit">
+          <hr class="dash">
+          <div class="actual">
+            <span class="text">实际金额：</span>
+            <span class="amount" id="realityMoney">0.00元</span>
+          </div>
+          <div class="action">
+            <button class="button" id="submit">确认转出</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

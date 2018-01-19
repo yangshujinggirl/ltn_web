@@ -1,0 +1,15 @@
+<div class="product-pay component" id="pay">
+  <div class="short">
+    <div class="header">
+      <div class="title">支付认证</div>
+    </div>
+    <div class="content">
+      <div class="title">请您在新打开的第三方页面上完成前不要关闭此窗口</div>
+      <div class="desc">根据免密支付开通情况，点击下面按钮</div>
+    </div>
+    <div class="action">
+      <button class="ok">已成功开通</button>
+      <button class="cancel">开通遇到问题</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+<div class="product-prop page-component" id="prop">
+  <div class="wrap">
+    <div class="first component">
+      <div class="header">
+        <h1 class="title">新手标</h1>
+        <ul class="coupon-list">
+        </ul>
+        <div class="contract">
+          查看<a class="link" href="./contract" target="_blank">《新手标协议》</a>范本
+        </div>
+      </div>
+      <div class="content">
+        <div class="prop">
+          <div class="main">
+            <div class="chart">
+              <div class="container" id="chartProcess"></div>
+              <div class="legend">
+                <div class="field">80%</div>
+                <div class="caption">项目进度</div>
+              </div>
+            </div>
+            <div class="profit">
+              <span class="field">5.5</span><span class="unit">%</span>
+              <span class="caption">年化收益率</span>
+            </div>
+            <div class="period">
+              <span class="field">5</span><span class="unit">天</span>
+              <span class="caption">投资期限</span>
+            </div>
+            <div class="surplus">
+              <span class="field">19,000.00</span><span class="unit">元</span>
+              <span class="caption">剩余可投金额</span>
+            </div>
+          </div>
+          <div class="sub">
+            <div class="amount">
+              <span class="caption">项目总金额</span>
+              <span class="field">500,000.00</span><span class="unit">元</span>
+            </div>
+            <div class="list">
+              <div class="item">
+                <span class="caption">投资方式：</span>
+                <span class="field">现金投资</span>
+              </div>
+              <div class="item">
+                <span class="caption">计息方式：</span>
+                <span class="field">T+0</span>
+              </div>
+              <div class="item">
+                <span class="caption">收益方式：</span>
+                <span class="field">固定收益</span>
+              </div>
+              <div class="item">
+                <span class="caption">还款方式：</span>
+                <span class="field">随时转出</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action">
+          <div class="title">
+            <span class="main">投资金额</span>
+            <span class="sub"></span>
+          </div>
+          <div class="list">
+            <div class="item">
+              <span class="caption">起投金额：</span>
+              <span class="field">1000元</span>
+            </div>
+            <div class="item">
+              <span class="caption">可投金额：</span>
+              <span class="field">xxx,xxx.xx元</span>
+            </div>
+            <div class="item">
+              <span class="caption">计息日期：</span>
+              <span class="field">xxxx－xx－xx</span>
+            </div>
+            <div class="item">
+              <span class="caption">还款日期：</span>
+              <span class="field">xxxx－xx－xx</span>
+            </div>
+          </div>
+          <button class="button">立即投资</button>
+          <span class="tips">领投鸟提醒您：理财非存款，投资需谨慎！</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

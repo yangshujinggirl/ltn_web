@@ -1,0 +1,43 @@
+.roll-out{
+  .content{
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    margin: 30px 0;
+    text-align: center;
+    height: 400px;
+    .success,.fail{
+      margin-top: 100px;
+      display: none;
+      .title{
+        font-size: 20px;
+        img{
+          position: relative;
+          top:5px;
+          left:-13px;
+        }
+      }
+      .ziduan{
+        font-size: 14px;
+        margin-top: 10px;
+
+      }
+      .button{
+        width: 260px;
+        height: 50px;
+        border: 0;
+        background: #ff6650;
+        font-size: 18px;
+        color: #fff;
+        border-radius:5px;
+        margin-top: 30px;
+      }
+    }
+    .success.selected{
+      display: block;
+    }
+    .fail.selected{
+      display: block;
+    }
+
+  }
+}

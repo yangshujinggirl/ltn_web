@@ -1,0 +1,38 @@
+<div class="loan-pay page-component">
+  <div class="wrap">
+    <div class="apply-intro">
+      <div class="left-text">
+        <h1 class="head1">申请资格</h1>
+        <ul class="list">
+          <li><span class="status">•&nbsp;年满18-59周岁的中国大陆公民</span></li>
+          <li><span class="status">•&nbsp;无不良个人征信记录</span></li>
+          <li><span class="status">•&nbsp;在购房当地有稳定工作及收入来源</span></li>
+          <li><span class="status">•&nbsp;在购房当地有社保及公积金缴存记录</span></li>
+          <li><span class="status">•&nbsp;首批开放申请城市：上海、宁波、杭州</span></li>
+        </ul>
+      </div>
+      <div class="center-text">
+        <h1 class="head1">额度期限</h1>
+        <ul class="list">
+          <li><span class="status">•&nbsp;借款额度：最高可贷50万</span></li>
+          <li><span class="status">•&nbsp;借款期限：6、12、24、36、60个月</span></li>
+          <li><span class="status">•&nbsp;借款利率：最低年化5.99%</span></li>
+          <li><span class="status"></span></li>
+          <li><span class="status">•&nbsp;还款方式：等额本息/等额本金</span></li>
+        </ul>
+      </div>
+      <div class="right-text">
+        <h1 class="head1">所需材料</h1>
+        <ul class="list">
+          <li><span class="status">•&nbsp;申请人二代身份证</span></li>
+          <li><span class="status">•&nbsp;申请人30天内的个人征信报告</span></li>
+          <li><span class="status">•&nbsp;婚姻状况证明</span></li>
+          <li><span class="status">•&nbsp;工资收入证明</span></li>
+          <li><span class="status">•&nbsp;房屋装修合同</span></li>
+          <li><span class="status">•&nbsp;社保公积金证明</span></li>
+          <li><span class="status"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

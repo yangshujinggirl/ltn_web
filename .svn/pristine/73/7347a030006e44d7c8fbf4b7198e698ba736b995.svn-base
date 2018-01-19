@@ -1,0 +1,299 @@
+
+<!--	借款表单项     -->
+<script type="text/template"  charset="UTF-8" id="tmpLoanProcess">	
+
+<div class="row">
+	<span class="capition">真实姓名</span>
+	<div class="field">
+	  <input type="text" name="username" value="{{=it.userName}}" class="input"   data-required='true' data-type='username' data-emptyTip='用户名不能为空' data-errorTip="用户名不符合规则">
+	</div>
+	<div class="validation"></div>
+</div>
+<div class="row">
+	<span class="capition">性别</span>
+	<div class="field">
+	  <input type="radio" value="0" name="sex" checked="checked" class="circle"><span class="sex1">男</span>
+	  <input type="radio" value="1" name="sex" class="circle"><span class="sex1">女</span>
+	</div>
+</div>
+<div class="row">
+	<span class="capition">身份证号</span>
+	<div class="field">
+	  <input type="text" name="IDCard" value="{{=it.cardId}}" class="input"   data-required='true' data-type='identity' data-emptyTip='身份证号不能为空' data-errorTip="身份证号不符合规则">
+	</div>
+	 <div class="validation"></div>
+</div>
+<div class="row">
+		<span class="capition">所在城市</span>
+		<div class="field">
+		  <select name="city"  class="input">
+		  	{{for(var i=0;i<it.selects.city.length;i++){ }}
+		    <option value="{{=it.selects.city[i]}}">{{=it.selects.city[i]}}</option>		    
+		    {{ } }}
+		  </select>
+		</div>
+		 <div class="validation"></div>
+</div>
+<div class="row">
+	<span class="capition">手机号</span>
+	<div class="field">
+	  <input type="text" name="phone" value="{{=it.phone}}" class="input"  data-required='true' data-type='telephone' data-emptyTip='手机号不能为空' data-errorTip="手机号不符合规则">
+	</div>
+	 <div class="validation"></div>
+</div>
+<div class="row">
+	<span class="capition">借款金额</span>
+	<div class="field">
+	   <select name="loanmoney" id="" class="input" >
+	   	{{for(var i=0;i<it.selects.money.length;i++){ }}
+		    <option {{=i==0?'selected':''}} value="{{=it.selects.money[i]}}">{{=it.selects.money[i]}}</option>		    
+		{{ } }}
+	  </select>
+	</div>
+	 <div class="validation"></div>
+</div>
+{{if(it.type=='zhuchao'){ }}
+<div class="row">
+		<span class="capition">房屋总价</span>
+		<div class="field">
+		  <input type="text" name="price" class="input"  data-required='true' data-type='money' data-emptyTip='房屋总价不能为空' data-errorTip="房屋总价必须为数值" placeholder="请输入房屋总价">
+		</div>
+		<span class="units">元</span>
+		 <div class="validation"></div>
+</div>
+<div class="row">
+		<span class="capition">房屋面积</span>
+		<div class="field">
+		  <input type="text" name="areas" class="input" data-required='true' data-type='money' data-emptyTip='房屋面积不能为空' data-errorTip="房屋面积必须为数值">
+		</div>
+		<span class="units">平</span>
+		 <div class="validation"></div>
+</div>
+<div class="row">
+    <span class="capition">小区名称</span>
+    <div class="field">
+      <input type="text" name="areaname" class="input" data-required='true' data-emptyTip='小区名称不能为空'>
+    </div>
+    <div class="validation"></div>
+</div>
+<div class="row">
+    <span class="capition">装修公司</span>
+    <div class="field">
+      <input type="text" name="fitment" class="input" >
+    </div>
+    <div class="validation"></div>
+</div>
+<!-- <div class="row">
+		<span class="capition">首付成数</span>
+		<div class="field">
+		  <select name="firstpay" class="input" >
+		    <option value="二成" selected="selected">二成</option>
+		    <option value="三成">三成</option>
+		    <option value="四成">四成</option>
+		    <option value="五成">五成</option>
+		    <option value="六成">六成</option>
+		    <option value="七成">七成</option>
+		    <option value="八成">八成</option>
+		    <option value="九成">九成</option>
+		  </select>
+		</div>
+		 <div class="validation"></div>
+</div> -->
+{{ } }}
+
+{{if(it.type=='chewei'){ }}
+  <div class="row">
+    <span class="capition">车位总价</span>
+    <div class="field">
+      <input type="text" name="price" class="input"  data-required='true' data-type='money' data-emptyTip='车位总价不能为空' data-errorTip="车位总价必须为数值" placeholder="请输入车位总价">
+    </div>
+    <span class="units">元</span>
+    <div class="validation"></div>
+  </div>
+  <div class="row">
+    <span class="capition">房屋面积</span>
+    <div class="field">
+      <input type="text" name="areas" class="input" data-required='true' data-type='money' data-emptyTip='房屋面积不能为空' data-errorTip="房屋面积必须为数值">
+    </div>
+    <span class="units">平</span>
+    <div class="validation"></div>
+  </div>
+  <div class="row">
+    <span class="capition">小区名称</span>
+    <div class="field">
+      <input type="text" name="areaname" class="input" data-required='true' data-emptyTip='小区名称不能为空'>
+    </div>
+    <div class="validation"></div>
+  </div>
+  <div class="row">
+    <span class="capition">物业公司</span>
+    <div class="field">
+      <input type="text" name="tenement" class="input" >
+    </div>
+    <div class="validation"></div>
+  </div>
+{{ } }}
+{{if(it.type=='lechao'){ }}
+<div class="row">
+    <span class="capition">房屋总价</span>
+    <div class="field">
+      <input type="text" name="price" class="input"  data-required='true' data-type='money' data-emptyTip='房屋总价不能为空' data-errorTip="房屋总价必须为数值" placeholder="请输入房屋总价">
+    </div>
+    <span class="units">元</span>
+     <div class="validation"></div>
+</div>
+<div class="row">
+    <span class="capition">房屋面积</span>
+    <div class="field">
+      <input type="text" name="areas" class="input" data-required='true' data-type='money' data-emptyTip='房屋面积不能为空' data-errorTip="房屋面积必须为数值">
+    </div>
+    <span class="units">平</span>
+     <div class="validation"></div>
+</div>
+<div class="row">
+    <span class="capition">小区名称</span>
+    <div class="field">
+      <input type="text" name="areaname" class="input" data-required='true' data-emptyTip='小区名称不能为空'>
+    </div>
+    <div class="validation"></div>
+</div>
+<div class="row">
+    <span class="capition">中介公司</span>
+    <div class="field">
+      <input type="text" name="agent" class="input" data-required='true' data-emptyTip='中介名称不能为空'>
+    </div>
+    <div class="validation"></div>
+</div>
+{{ } }}
+<!-- <div class="row">
+	<span class="capition">物业位置</span>
+	<div class="field">
+	   <select name="position" class="input">
+	    <option value="1">内环以内</option>
+	    <option value="2">内环外中环内</option>
+	    <option value="3">中环外外环内</option>
+	    <option value="4">外环以外</option>
+	  </select>
+	</div>
+	  <div class="validation"></div>
+</div> -->
+<div class="row">
+	<span class="capition">邮箱地址</span>
+	<div class="field">
+	  <input type="text" name="email" placeholder="xxxx@xxqq.com" class="input"  data-required='true' data-type='email' data-emptyTip='邮箱地址不能为空' data-errorTip="邮箱不符合规则">
+	</div>
+	 <div class="validation"></div>
+</div>
+<button class="apply">立即申请</button>
+</script>	  
+
+
+
+<!-- 借款计算器     -->
+<script type="text/template"  charset="UTF-8" id="tmpLoanCounter">	
+ <h1 class="head1">借款计算器</h1>
+<div class="form">
+  <div class="row">
+    <span class="capition">申请金额</span>
+    <input type="text" name="applymoney" placeholder ="请输入借款金额" class="input" >
+    <span class="units">元</span>
+    <div class="validation"></div>
+  </div>
+  
+  {{if(it.type=='other'){ }}
+  	 <div class="row">
+	    <span class="capition">借款期限</span>
+	    <select name="limit" class="input">
+	    	{{for(var i=0;i<it.limit.length;i++){ }}
+	    		 <option value="{{=it.limit[i].value}}" {{=i==0?'selected="selected"':''}}>{{=it.limit[i].name}}</option>
+	    	{{ } }}
+	    </select>
+	    <div class="validation"></div>
+	  </div>
+	  
+	  <div class="row">
+	    <span class="capition">借款利率</span>
+	    <input type="text" name="loanrate" placeholder ="请输入借款利率" class="input">
+	    <span class="units">%</span>
+	    <div class="validation"></div>
+	  </div>  
+  {{}else{ }}
+  <div class="row">
+    <span class="capition">服务利率</span>
+    <input type="text" name="serverrate" placeholder ="请输入借款利率" class="input">
+    <span class="units">%</span>
+    <div class="validation"></div>
+  </div>
+  {{ } }}
+  
+
+  <div class="row">
+    <span class="capition">还款方式</span>
+    <select name="type" class="input">
+      {{for(var i=0;i<it.huan.length;i++){ }}
+		 <option value="{{=it.huan[i].value}}" {{=i==0?'selected="selected"':''}}>{{=it.huan[i].name}}</option>
+	  {{ } }}
+    </select>
+    <div class="validation"></div>
+  </div>
+
+  <button class="apply">开始计算</button>
+</div>
+</script>
+
+
+<!-- 借款计算器结果     -->
+<script type="text/template" charset="UTF-8" id="tmpLoanResult">	
+<div class="floating">  
+	<div class="floating-one">
+	    <h1 class="headline-1">计算结果</h1>
+	    <div class="headline-2">
+	      <p class="totle">
+	        <span class="one">借款总金额：<font class="focus">{{=it.applyMoney.toFixed(2)}}</font>元</span>
+	        <span class="one">到期还款总额：<font class="focus">{{=it.allMoney.toFixed(2)}}</font>元</span>
+	      </p>
+	      <span>计算结果</span>
+	    </div>
+	   {{if(it.type=='other'){ }}
+	    	<table>
+		      <thead>
+		        <tr>
+		          <th>期数</th>
+		          <th>每期还款金额</th>
+		          <th>每期还款本金</th>
+		          <th>每期还款利息/服务费率</th>
+		          <th>剩余还款额</th>
+		        </tr>
+		      </thead>
+		      {{for(var i=0;i<it.limit;i++){ }}
+		      	<tr>
+			        <td>{{=(i+1)+'/'+it.limit}}</td>
+			        <td>{{=(it.perMoney[i]*1+it.perRate[i]*1).toFixed(2)}}</td>
+			        <td>{{=it.perMoney[i].toFixed(2)}}</td>
+			        <td>{{=it.perRate[i].toFixed(2)}}</td>
+			        <td>{{=it.surPlusMoney[i].toFixed(2)}}</td>
+			     </tr>	
+		      {{  } }}
+
+		    </table>
+	   {{  }else{ }}
+	    	<table>
+		      <thead>
+		        <tr>		         
+		          <th>申请本金</th>		         
+		          <th>还款金额</th>
+		          <th>还款利息/服务费率</th>
+		        </tr>
+		      </thead>
+		      <tr>		       
+		        <td>{{=it.applyMoney}}</td>
+		        <td>{{=it.allMoney}}</td>
+		        <td>{{=it.rateMoney}}</td>
+		      </tr>		     
+		    </table>
+	   {{ } }}
+	    
+	    <button class="close">关闭</button>
+	  </div>
+</div>
+</script>

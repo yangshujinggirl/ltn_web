@@ -1,0 +1,45 @@
+.about-partner {
+  .partner-content {
+    padding:35px;
+    .itemnav {
+      border-bottom: 2px solid #e2e2e2;
+      .head-1 {
+        font-size:18px;
+        font-weight: bold;
+        width: 100px;
+        height: 30px;
+        margin:0;
+        border-bottom: 2px solid #ea5504;
+        line-height: 30px;
+        text-align: center;
+        margin-left: 10px;
+      }
+    }
+    .source {
+      overflow: hidden;
+      padding:62px 0 10px;
+      border-bottom:2px solid #ccc;
+      .source-img {
+        width:299px;
+        height: 148px;
+        // background-color: #ccc;
+        float:left;
+      }
+      .source-intro {
+        font-size:14px;
+        line-height: 24px;
+        font-weight: normal;
+        padding-left:315px;
+        .head-2 {
+          margin:0;
+          font-size: 24px;
+          color:#ff6f20;
+        }
+        .text {
+          padding-left:25px;
+          background:url(/html/img/partner_01.png) no-repeat left top,url(/html/img/partner_02.png) no-repeat 420px 145px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+<div class="reportthree">
+  <!--baner-->
+  <div class="banner"></div>
+  <div class="view-wrap">
+    <div class="inner-wrap">
+      <h2><span>2016年第三季度累计情况</span></h2>
+      <h4>
+        <span><i class="icon"></i>平台累投金额</span>
+      </h4>
+      <img src="/html/img/reportthree/report_img2.jpg">
+      <h4>
+        <span><i class="icon icon2"></i>平台累投收益</span>
+      </h4>
+      <img src="/html/img/reportthree/report_img3.jpg">
+      <h2 class="platform"><span>平台投资数据</span></h2>
+      <img class="touzi" src="/html/img/reportthree/report_img4.jpg">
+      <p class="inner_info">9月份投资金额环比8月份增长<span>&nbsp;&nbsp;25.3%</span></p>
+    </div>
+  </div>
+  <div class="view-wrap view-wrap2">
+    <div class="inner-wrap">
+      <h2><span>资产分类及比例</span></h2>
+      <h4>
+        <span>优质借款项目 专注于家庭消费金融</span>
+      </h4>
+      <img src="/html/img/reportthree/report_img5.jpg">
+    </div>
+  </div>
+  <div class="view-wrap">
+    <div class="inner-wrap">
+      <h2><span>三季度TOP投资人数据</span></h2>
+      <div class="img_bg">
+        <img src="/html/img/reportthree/report_img6.png">
+        <div class="caption">
+          <div class="icon"></div>
+          <div class="cap_info">TOP累投金额</div>
+          <div class="money">21,794,669元</div>
+        </div>
+        <div class="caption caption1">
+          <div class="icon icon1"></div>
+          <div class="cap_info">TOP金额单笔投资</div>
+          <div class="money">4,031,397元</div>
+        </div>
+        <div class="caption caption2">
+          <div class="icon icon2"></div>
+          <div class="cap_info">TOP投资次数</div>
+          <div class="money">527次</div>
+        </div>
+        <div class="caption caption3">
+          <div class="icon icon3"></div>
+          <div class="cap_info">TOP获得收益金额</div>
+          <div class="money">1,419,95.34元  </div>
+        </div>
+      </div>
+      <h2 class="sanjidu"><span>三季度TOP标的数据</span></h2>
+      <div class="three_cap">
+        <span class="icon"></span>
+        <span class="muji">TOP标的<br>募集金额</span>
+        <span class="lechao">
+          <span class="juse2"><span class="report_teshu">￥4,141,677</span>  35天  9.0%+0.6%</span><br>
+          <span>乐巢投20160816_003  上海  巢值贷</span>
+        </span>
+      </div>
+      <div class="three_cap">
+        <span class="icon icon1"></span>
+        <span class="muji">TOP标的<br>募集速度</span>
+        <span class="lechao">
+          <span class="juse2"><span class="report_teshu">35秒</span>  3天  8.0%</span><br>
+          <span>乐巢投20160911_001  浙江  乐巢贷</span>
+        </span>
+      </div>
+      <div class="three_cap">
+        <span class="icon icon2"></span>
+        <span class="muji">TOP标的<br>投资人次</span>
+        <span class="lechao">
+          <span class="juse2"><span class="report_teshu">356次</span>  20天  8.8% </span><br>
+          <span>乐巢投20160910_001  浙江  乐巢贷 </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="view-wrap view-wrap2">
+    <div class="inner-wrap">
+      <h2><span>三季度平台活动</span></h2>
+      <h4>
+        <span class="yuefen">7月／July</span>
+      </h4>
+      <div class="big_box">
+        <div class="img_cap1">
+          <img src="/html/img/reportthree/report_img7.png">
+          <p>活动期间，用户通过参与冠军竞猜、比赛场次竞猜即有机会赢取巴黎双飞机票、MacBookPro等奖励！</p>
+        </div>
+        <div class="img_cap2">
+          <img src="/html/img/reportthree/report_img8.png">
+          <p>活动期间，平台连续12天推出系列加息标，回馈投资用户，投资加息标，即可获得更高收益！</p>
+        </div>
+      </div>
+      <h4>
+        <span class="yuefen">8月／August</span>
+      </h4>
+      <div class="big_box">
+        <div class="img_cap1">
+          <img src="/html/img/reportthree/report_img9.png">
+          <p>活动期间，用户通过领投鸟微信公众号可获取独一无二的玫瑰花告白二维码，参与投资还有机会获得新手专属白色恋人巧克力，以及流量、电影券、迪士尼门票等多重奖励！</p>
+        </div>
+        <div class="img_cap2">
+          <img src="/html/img/reportthree/report_img10.png">
+          <p>活动期间，特推金牌加息标回馈用户，并设置累投排行榜、邀请好友排行榜、新用户累投榜三个榜单，用户参与投资、推荐好友即有机会获得iPhone 6S、迪士尼门票等奖励！</p>
+        </div>
+      </div>
+      <h4>
+        <span class="yuefen">9月／September</span>
+      </h4>
+      <div class="big_box">
+        <div class="img_cap1">
+          <img src="/html/img/reportthree/report_img11.png">
+          <p>活动期间，蟹蟹光临、蟹蟹有你、蟹蟹来转、蟹蟹回来四个活动为新注册用户、累投较高用户及刷新个人单笔投资金额的用户带来不同福利！</p>
+        </div>
+        <div class="img_cap2">
+          <img src="/html/img/reportthree/report_img12.png">
+          <p>活动期间，投资稳赚iPhone7、一起来拿iPhone7及人人都有iPhone7三个活动为累投较高用户、邀请好友投资“特权标”用户及不同转盘抽奖用户带来获得iPhone等实物奖品机会！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="view-wrap">
+    <div class="inner-wrap">
+      <h2><span>三季度媒体报道</span></h2>
+      <div class="big_box">
+        <img class="img_cap1" src="/html/img/reportthree/report_img13.png">
+        <img class="img_cap2" src="/html/img/reportthree/report_img14.png">
+      </div>
+      <div class="big_box">
+        <img class="img_cap1" src="/html/img/reportthree/report_img15.png">
+        <img class="img_cap2" src="/html/img/reportthree/report_img16.png">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <img src="/html/img/reportthree/report_logo.png">
+  </footer>
+</div>

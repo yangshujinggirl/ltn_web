@@ -1,0 +1,123 @@
+<script type="text/template" id="tempFilter">
+  <div class="wrap">
+    <ul class="tabs {{=it.prodSel}}" id="prod-tab">
+      <li class="item zuixin"  data-prod="zuixin">
+        最新
+      </li>
+      <li class="item xinshou"  data-prod="xinshou">
+        新手标
+      </li>
+      <li class="item short" data-prod="short">
+        安居投
+      </li>
+      <li class="item long" data-prod="long">
+        乐享投
+      </li>
+    </ul>
+    <div class="options" id="wrap-filter">
+      <div class="item" id="prod-period">
+        <span class="caption">项目期限</span>
+        <ul class="params">
+          {{~ it.period:value:index}}<li class="item {{=it.periodSel == index ? 'selected' : ''}}" data-period="{{=index}}">
+            {{=value.label}}
+          </li>{{~}}
+        </ul>
+      </div>
+      <div class="item" id="prod-status">
+        <span class="caption">项目状态</span>
+        <ul class="params">
+          {{~ it.status:value:index}}
+          <li class="item {{=it.statusSel == index ? 'selected' : ''}}" data-status="{{=index}}">
+            {{=value.label}}
+          </li>{{~}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempList">
+  <div class="wrap">
+    {{? it.searchList.length!='0'}}
+
+    {{~it.searchList:value}}
+    <div class="item prodList" data-id="{{=value.productId}}" data-type="{{=value.productType}}" data-tag="{{=value.productTag}}">
+      <div class="ww">
+        <div class="title">
+          <span class="titlename">{{=value.productName}}</span>
+          {{ if(value.productType=='XSB'){ }}
+          <span class="newUser newOne">
+            仅限新手专享
+          </span>
+          <span class="newUser newTwo">
+            {{=value.staInvestAmount}}元起投，最高限投{{=value.convertDay>='10'?'20':'1'}}万
+          </span>
+          {{ } else if(value.productType=='LCT') { }}
+          <span class="subTitle">{{=value.productTag}}</span>
+          {{ }else { }}
+          <span class="subTitle">{{=value.productTag}}</span>
+          {{ } }}
+        </div>
+        <div class="detail">
+          <div class="prop">
+            <div class="itam profit">
+              <span class="field">{{=value.annualIncomeText}}</span>
+              <div class="caption">预期年化</div>
+            </div>
+            <div class=" itam period">
+              <div>
+                <span class="field">{{=value.floatTag==0?value.convertDay:value.standardConvertDay}}</span>
+                <span class="unit">天</span>
+              </div>
+              <span class="caption">投资期限</span>
+            </div>
+            <div class=" itam threshold">
+              <div>
+                <span class="field">{{=value.staInvestAmount}}</span>
+                <span class="unit">元</span>
+              </div>
+              <span class="caption">起投金额</span>
+            </div>
+            <div class="itam progress">
+              <div class="container">
+                <div class="completed" style="width:{{=parseInt(Math.min(value.progress, 100))}}%"></div>
+              </div>
+              <div class="caption">
+                <span>剩余金额</span>
+                <span class="black">{{=value.productRemainAmount}}</span>元
+              </div>
+            </div>
+            <div class="action">
+              {{ if(value.productStatus == '1'){ }}
+              <button class="invest" onclick="user().clickEvent();" data-id="{{=value.productId}}">立即投资</button>
+              {{ }else if(value.productStatus == '2' && value.progress == '100'){ }}
+              <button class="invest fulled" onclick="user().clickEvent();" data-id="{{=value.productId}}" disabled="disabled" onclick="this.disabled=true">已满标</button>
+              {{ }else if(value.productStatus == '2' && value.progress !== '100'){ }}
+              <!-- <span class="tankuang">停止募集，不足资金由线下资金补充</span> -->
+              <button class="invest fulled" onclick="user().clickEvent();" data-id="{{=value.productId}}" disabled="disabled" onclick="this.disabled=true">
+              募集结束</button>
+              {{ }else{ }}
+              <button class="invest repayment" onclick="user().clickEvent();" data-id="{{=value.productId}}" disabled="disabled" onclick="this.disabled=true">已还款</button>
+              {{ } }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{~}}
+    {{?? }}
+    <div class="prolistnone"><span class="prolistnonetxt">暂时还没有哦~</span></div>
+    {{?}}
+
+  </div>
+</script>
+
+<script type="text/template" id="tempPaging">
+  <div class="wrap">
+    <ul class="pages">
+      <li class="item prev">&lt;&lt;</li>
+      {{~it.pages:value}}<li class="item page {{=(it.currPage == value ? 'selected' : '')}}">{{=value}}</li>{{~}}
+      <li class="item next">&gt;&gt;</li>
+    </ul>
+  </div>
+</script>

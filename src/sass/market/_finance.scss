@@ -1,0 +1,1062 @@
+.finance{
+  background: #0f0058;
+  padding-bottom: 30px;
+  .finance_banner{
+    img{
+      width: 100%;
+    }
+  }
+  .finance_content{
+    width: 1190px;
+    margin: 0 auto;
+    .prize{
+      width: 1190px;
+      margin: 40px auto 0;
+      position: relative;
+      @-webkit-keyframes prize_left {
+        0% {
+            -webkit-transform: rotateZ(0deg);
+            }
+        100% {
+            -webkit-transform: rotateZ(360deg);
+            }
+        }
+      .prize_left{
+        width: 189px;
+        height: 189px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        &:hover{
+          -webkit-animation: prize_left 1.5s linear infinite;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .prize_right{
+        display: inline-block;
+        width: 918px;
+        height: 155px;
+        background: url(/html/img/finance_bg1.png) no-repeat;
+        position: absolute;
+        left: 38px;
+        top: 20px;
+        z-index: 0;
+        font-size: 24px;
+        color: #6a3906;
+        padding: 20px  30px 0 163px;
+        .rongan{
+          color: #e83828;
+        }
+      }
+    }
+    .hongse{
+      color: #e60012;
+    }
+    .welcome{
+      width: 1070px;
+      height: 269px;
+      background: url(/html/img/finance_bg2.png) no-repeat center center;
+      margin-top: 42px;
+      padding: 90px 60px;
+      .welcome_left{
+        display: inline-block;
+      }
+      .welcome_right{
+        width: 635px;
+        margin-left: 40px;
+        display: inline-block;
+        position: relative;
+        top: -8px;
+        .time{
+          font-size: 22px;
+          color: #333;
+          font-weight: bold;
+        }
+        .involvement{
+          font-size: 22px;
+          color: #333;
+          line-height: 40px;
+          .canyu{
+            font-weight: bold;
+          }
+        }
+        .button1{
+          width: 226px;
+          height: 65px;
+          background: url(/html/img/finance_but_bg.png) no-repeat;
+          font-size: 32px;
+          color: #84219f;
+          font-weight: bold;
+          line-height: 65px;
+          outline: none;
+          border: 0;
+          margin-top: 30px;
+          text-indent: -20px;
+          &:hover{
+            background: url(/html/img/finance_yiru1.png) no-repeat;
+          }
+        }
+      }
+    }
+    .first_lists{
+      width: 1090px;
+      height: 1163px;
+      background: url(/html/img/finance_bg3.png) no-repeat;
+      margin-top: 60px;
+      padding: 80px 50px;
+      .lists_top{
+        .lists_left{
+          display: inline-block;
+        }
+        .lists_right{
+          width: 620px;
+          margin-left: 40px;
+          display: inline-block;
+          position: relative;
+          top: -90px;
+          .time{
+              font-size: 22px;
+              color: #333;
+              font-weight: bold;
+            }
+          .involvement{
+            font-size: 22px;
+            color: #333;
+            line-height: 40px;
+            .canyu{
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .lists_bottom{
+        width: 938px;
+        height: 507px;
+        background: url(/html/img/first_zise_bg.png) no-repeat;
+        margin:  0 auto;
+        padding: 170px 40px 0;
+        position: relative;
+        .info_title{
+          overflow: hidden;
+          zoom:1;
+          li{
+            width: 280px;
+            float: left;
+            text-align:center;
+            font-size: 22px;
+            color: #999;
+          }
+        }
+        .scrollText{
+          width: 912px;
+          height: 400px;
+          min-height:25px;
+          line-height:25px;
+          float:left;
+          overflow:hidden;
+          overflow:auto ;
+        }
+        .info_list{
+          display: block;
+          height: 400px;
+          text-align: center;
+          padding:0;
+          margin: 0;
+          .list_cont{
+            margin-top: 15px;
+            height: 53px;
+            line-height: 39px;
+          }
+          &.up{ margin-left:310px; width:50px; height:50px; background:#F90}
+          &.down{ margin:0 0 0 310px; zoom:1; width:50px; height:50px; background:#960}
+          .list_cont:nth-child(odd){
+            background: #fef6ed;
+          }
+          .one,.two,.three{
+              width: 270px;
+              height: 46px;
+              display: inline-block;
+              background: url(/html/img/huangguang1.png) no-repeat center center;
+              text-align: center;
+              line-height: 60px;
+              color: #fff;
+              font-size: 22px;
+              position: relative;
+              left: -9px;
+              margin-top: 6px;
+              text-indent:0;
+            }
+            .ordinary{
+              width: 270px;
+              height: 46px;
+              display: inline-block;
+              color: #f86d29;
+              text-align: center;
+              font-size: 22px;
+              position: relative;
+              left: -9px;
+              margin-top: 6px;
+            }
+            .tel,.money{
+              display: inline-block;
+              width: 270px;
+              font-size: 22px;
+            }
+            .tel{
+              color: #333;
+            }
+            .money{
+              color: #fc3028;
+            }
+            .two{
+              background: url(/html/img/huangguang2.png) no-repeat center center;
+            }
+            .three{
+              background: url(/html/img/huangguan3.png) center center no-repeat;
+            }
+        }
+        .notice {
+          padding: 0 20px 0 25px;
+          margin: 3px 0;
+          float: right;
+          font-size: 12px;
+          box-sizing: border-box;
+          overflow: hidden;
+          position: relative;
+          width: 912px;
+          cursor: pointer;
+          overflow:auto ;
+          .list_cont {
+            height:65px;
+            padding-left:10px;
+          }
+          
+        }
+        .prolistnone {
+            position: relative;
+            width: 196px;
+            height: 179px;
+            top: 43px;
+            margin: 20px auto;
+            display: none;
+            background: url(/html/img/wushuju.png) no-repeat center center;
+            .prolistnonetxt {
+              position: absolute;
+              bottom: 0%;
+              left: 30%;
+              font-size: 14px;
+              color: #333;
+            }
+          }
+        .info_last{
+          width: 912px;
+          height: 60px;
+          line-height: 60px;
+          background: #fec800;
+          position: absolute;
+          bottom: 49px;
+          left: 40px;
+          display: none;
+          .ordinary,.tel,.money{
+            display: inline-block;
+            width: 280px;
+            text-align: center;
+            font-size: 22px;
+            text-indent: 42px;
+          }
+          .money{
+            text-indent: 8px;
+          }
+          .ordinary,.money{
+            color: #e63939;
+          }
+          .ordinary{
+            text-indent: 84px;
+            .tactful{
+              width: 20px;
+              height: 20px;
+              display: inline-block;
+              background: #e63939;
+              border-radius: 50%;
+              position: relative;
+              left: -11px;
+              top: 2px;
+            }
+          }
+          .tel{
+            color: #333;
+            text-indent: 52px;
+          }
+        }
+      }
+      .button2{
+          width: 360px;
+          height: 103px;
+          background: url(/html/img/finance_but_bg2.png) no-repeat;
+          font-size: 46px;
+          color: #84219f;
+          line-height: 103px;
+          font-weight: bold;
+          border:0;
+          outline: none;
+          display: block;
+          margin: 42px auto 0;
+          text-indent: -37px;
+          cursor: pointer;
+          &:hover{
+            background: url(/html/img/finance_yiru2.png) no-repeat;
+          }
+        }
+    }
+    .notes{
+      width: 1190px;
+      height: 1525px;
+      background: url(/html/img/finance_bg4.png) no-repeat;
+      margin-top: 60px;
+      padding-top: 0;
+      .notes_top{
+        height: 758px;
+      }
+      .notes_left{
+        width: 675px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        margin-top: -160px;
+      }
+      #lottery{
+        width:475px;
+        height:459px;
+        margin:40px 0 0 70px;
+        background:url(/html/img/finance_zhuanpan2.png) no-repeat;
+        padding:50px 55px;
+        display: inline-block;
+      }
+      #lottery table td{
+        width:170px;
+        height:142px;
+        text-align:center;
+        vertical-align:middle;
+        font-size:24px;
+        color:#333;
+        font-index:-999;
+        position: relative;
+        left: -20px;
+        top: 54px;
+        border-radius: 8px;
+      }
+      #lottery #choujiang{
+        position: absolute;
+        left: 275px;
+        top: 289px;
+        // display: none;
+      }
+      #lottery table td a{
+        width:170px;
+        height:144px;
+        line-height:150px;
+        display:block;
+        text-decoration:none;
+      }
+      #lottery table .login_but{
+        position: absolute;
+        left: 275px;
+        top: 288px;
+        display: none;
+      }
+      #lottery table .qidai_but{
+        position: absolute;
+        left: 275px;
+        top: 289px;
+        display: none;
+      }
+      #lottery table .jiezhi_but{
+        position: absolute;
+        left: 275px;
+        top: 289px;
+        display: none;
+      }
+      #lottery table .wujihui_but{
+        position: absolute;
+        left: 275px;
+        top: 289px;
+        display: none;
+      }
+      #lottery table .zailaiyici_but{
+        position: absolute;
+        left: 275px;
+        top: 289px;
+        display: none;
+      }
+      #lottery table td.active{
+        background-color:#feee2d;
+      }
+      .surplus{
+        width: 413px;
+        height: 111px;
+        background: url(/html/img/finance_choujiang_bg1.png) no-repeat;
+        position: absolute;
+        left: 144px;
+        bottom: -106px;
+        font-size: 30px;
+        line-height: 141px;
+        text-align: center;
+        color: #fff;
+        .huangse{
+          color:#feee2d;
+        }
+      }
+      .notes_right{
+        width: 370px;
+        height: 386px;
+        display: inline-block;
+        background: #fffbd7;
+        border-radius: 8px;
+        position: relative;
+        top: 112px;
+        padding: 45px 25px;
+        font-size: 18px;
+        .stretch_time{
+          color: #333;
+          font-weight: bold;
+        }
+        .renyuan,.guize{
+          margin-top: 10px;
+        }
+        .guize{
+          line-height: 35px;
+        }
+        .Cyry{
+          font-weight: bold;
+        }
+        .tallhigh{
+          width: 420px;
+          height: 93px;
+          background: url(/html/img/tallhigh_bg.png) no-repeat;
+          position: absolute;
+          right: -16px;
+          bottom: -120px;
+          padding: 0 0 0 30px;
+          .high_top{
+            font-size: 20px;
+            color: #fff;
+            padding-top: 20px;
+          }
+          .high_bottom{
+            font-size: 26px;
+            color: #feee2d;
+            font-weight: bold;
+            position: absolute;
+          }
+          .noLogin{
+            font-size: 26px;
+            color: #feee2d;
+            font-weight: bold;
+            position: absolute;
+            left: 33px;
+            display: none;
+            a{
+              color: #feee2d;
+            }
+          }
+        }
+      }
+      .notes_bottom{
+        padding: 0 60px 0 60px;
+        height: 470px;
+        .onlyone{
+          width: 489px;
+          height: 330px;
+          background: url(/html/img/gerenzhongjiang.png) no-repeat;
+          display: inline-block;
+          padding: 80px 20px 30px;
+          vertical-align: top;
+          position: relative;
+          .onlyone_list{
+            height: 332px;
+            overflow: hidden;
+            padding:0;
+            text-align: center;
+            overflow-y:auto;
+            position: relative;
+            li{
+              float: left;
+              font-size: 20px;
+              color: #666;
+              margin-top: 10px;
+              .title{
+                display: inline-block;
+                width: 130px;
+              }
+              .title1{
+                display: inline-block;
+                width: 90px;
+              }
+              .title2{
+                display: inline-block;
+                width: 212px;
+              }
+              .sequence{
+                display: inline-block;
+                width: 90px;
+              }
+
+              .gift{
+                text-align: left;
+                display: inline-block;
+                width: 130px;
+                font-size: 20px;
+                margin-left: 70px;
+              }
+              .time{
+                width: 226px;
+                padding-left: 20px;
+                margin-left: 30px;
+              }
+              .gift{
+                color: #fc3028;
+              }
+            }
+          }
+          .prolistnone2 {
+            position: absolute;
+            width: 196px;
+            height: 179px;
+            top: 142px;
+            left: 170px;
+            margin: 20px auto;
+            display: none;
+            background: url(/html/img/wushuju.png) no-repeat center center;
+            .prolistnonetxt {
+              position: absolute;
+              bottom: 0%;
+              left: 30%;
+              font-size: 14px;
+              color: #333;
+            }
+          }
+          .nolist {
+            display: none;
+            width: 196px;
+            height: 179px;
+            margin: 0 auto;
+            text-align: center;
+            position: absolute;
+            top: 163px;
+            left: 200px;
+            background: url("/html/img/wushuju.png?v=20160519") no-repeat;
+            .logoIcon {
+                position: absolute;
+                left: -22px;
+                top: 130px;
+                font-size: 16px;
+                .denglu {
+                    color: #ff5a00;
+                }
+                .denglu:hover {
+                    color: #6e56ff;
+                }
+            }
+          }
+        }
+        .platform{
+          width: 484px;
+          height: 327px;
+          background:url(/html/img/pingtai_bg.png) no-repeat;
+          display: inline-block;
+          padding: 80px 20px 30px;
+          margin-left: 10px;
+          position: relative;
+          vertical-align: top;
+          .PlatformList{
+            overflow: hidden;
+            zoom:1;
+            padding-left: 20px;
+            li{
+              font-size: 20px;
+              color: #666;
+              .title1{
+                display: inline-block;
+                width: 90px;
+              }
+              .title2{
+                display: inline-block;
+                width: 196px;
+                text-align: center;
+              }
+            }
+          }
+          .prolistnone3 {
+            position: relative;
+            width: 196px;
+            height: 179px;
+            top: -270px;
+            margin: 20px auto;
+            display: none;
+            background: url(/html/img/wushuju.png) no-repeat center center;
+            .prolistnonetxt {
+              position: absolute;
+              bottom: 0%;
+              left: 30%;
+              font-size: 14px;
+              color: #333;
+            }
+          }
+          .scrollText2{
+            height: 257px;
+            overflow: hidden;
+          }
+          .onlyone_list{
+            height: 266px;
+            padding:0;
+            text-align: center;
+            margin-top: -14px;
+            padding-top: 8px;
+            li{
+              float: left;
+              font-size: 18px;
+              color: #666;
+              margin-top: 10px;
+              .title{
+                display: inline-block;
+                width: 130px;
+              }
+              .sequence{
+                display: inline-block;
+                width: 120px;
+              }
+
+              .gift{
+                text-align: left;
+                margin-left: 42px;
+                display: inline-block;
+                width: 130px;
+                font-size: 20px;
+              }
+              .time{
+                width: 226px;
+                padding-left: 20px;
+                margin-left: 20px;
+              }
+              .gift{
+                color: #fc3028;
+              }
+            }
+            .onlyone_info{
+                margin-top: 20px;
+              }
+          }
+        }
+      }
+      .button4{
+        width: 360px;
+        height: 103px;
+        background: url(/html/img/finance_but_bg2.png) no-repeat;
+        font-size: 46px;
+        color: #84219f;
+        line-height: 103px;
+        font-weight: bold;
+        border:0;
+        outline: none;
+        display: block;
+        margin: 14px auto 0;
+        text-indent: -37px;
+        &:hover{
+          background: url(/html/img/finance_yiru2.png) no-repeat;
+        }
+      }
+      .bettering{
+        font-size: 30px;
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    .back{
+      width: 1072px;
+      height: 473px;
+      background: url(/html/img/finance_bg5.png) no-repeat;
+      padding: 120px 60px;
+      .welcome_left{
+        display: inline-block;
+      }
+      .welcome_right{
+        width: 635px;
+        margin-left: 40px;
+        display: inline-block;
+        position: relative;
+        top: -30px;
+        .time{
+          font-size: 22px;
+          color: #333;
+          font-weight: bold;
+        }
+        .involvement{
+          font-size: 22px;
+          color: #333;
+          margin-top: 10px;
+          line-height: 40px;
+          .canyu{
+            font-weight: bold;
+          }
+        }
+      }
+      .button3{
+          width: 360px;
+          height: 103px;
+          background: url(/html/img/finance_but_bg2.png) no-repeat;
+          font-size: 46px;
+          color: #84219f;
+          line-height: 103px;
+          font-weight: bold;
+          border:0;
+          outline: none;
+          display: block;
+          margin: 90px auto 0;
+          text-indent: -37px;
+          &:hover{
+            background: url(/html/img/finance_yiru2.png) no-repeat;
+          }
+        }
+    }
+  }
+  .navLan{
+    position: fixed;
+    right: 0;
+    bottom:0;
+    z-index: 9;
+    .start_choujiang{
+      cursor: pointer;
+    }
+    .suoyou{
+      width: 145px;
+      height: 60px;
+      line-height: 60px;
+      color: #333;
+      background: #ffd100;
+      text-align: center;
+      color: #333;
+      font-weight: bold;
+      font-size: 20px;
+      position: relative;
+      top: -3px;
+      cursor: pointer;
+      border-bottom: 1px solid #e2e2e2;
+      &:hover{
+        background: #ff9c00;
+      }
+    }
+    .nav2{
+      width: 145px;
+      height: 60px;
+      text-align: center;
+      background: #ffd100;
+      position: relative;
+      top: -3px;
+      cursor: pointer;
+      border-bottom: 1px solid #e2e2e2;
+      &:hover{
+        background: #ff9c00;
+      }
+      .time{
+        font-size: 16px;
+        color: #40220f;
+      }
+      .newyonghu{
+        font-size: 20px;
+        color: #40220f;
+        font-weight: bold;
+      }
+    }
+    .nav3{
+      background: #ffd100;
+      &:hover{
+        background: #ff9c00;
+      }
+    }
+    .backTop{
+      position: relative;
+      top: -3px;
+      left: 34px;
+      cursor: pointer;
+    }
+  }
+  .last{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  }
+}
+.finance_cover{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+.prize_win{
+  width: 450px;
+  height: 548px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -225px;
+  margin-top: -274px;
+  z-index: 999;
+  padding-top: 180px;
+  background: url(/html/img/tankuang_bg1.png) no-repeat;
+  display: none;
+  .win_title{
+    font-size: 24px;
+    color: #e60012;
+    text-align: center;
+  }
+  .win_gift{
+    width: 300px;
+    margin: 30px auto 0;
+    .win_left{
+      display: inline-block;
+    }
+    .win_right{
+      display: inline-block;
+    }
+    .tp{
+      width: 154px;
+      height: 146px;
+      position: relative;
+      left: -20px;
+      &.award0{
+        background: url(/html/img/mini_ipad.png) no-repeat;
+      }
+      &.award1{
+        background:url(/html/img/finance_jianguo2.png) no-repeat;
+      }
+      &.award2{
+        background:url(/html/img/finance_jiaxiquan2.png) no-repeat;
+      }
+      &.award3{
+        background:url(/html/img/finance_pangxie2.png) no-repeat;
+      }
+      &.award4{
+        background:url(/html/img/finance_dianfanbao1.png) no-repeat;
+      }
+      &.award5{
+        background: url(/html/img/finance_yuebing2.png) 
+        no-repeat;
+      }
+      &.award6{
+        background: url(/html/img/finance_fanxianquan2.png) no-repeat;
+      }
+    }
+    .dianfanguo{
+      position: absolute;
+      left: 37px;
+      top: 41px;
+      display: none;
+    }
+    .win_right{
+      margin-left: 10px;
+    }
+    .gift_info{
+      width: 377px;
+      margin: 30px 0 0 -30px;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+    .zaiyici{
+      width: 190px;
+      height: 56px;
+      display: inline-block;
+      background: url(/html/img/finance_zaiyici.png) no-repeat;
+      border:0;
+      outline: none;
+      margin-left:-38px;
+      position: relative;
+      top:11px;
+    }
+    .sure{
+      width: 190px;
+      height: 56px;
+      display: inline-block;
+      position: relative;
+      left: 158px;
+      top: -67px;
+      margin: 20px 0 0 8px;
+      background: url(/html/img/finance_queding.png) no-repeat;
+      border: 0;
+      outline: none;
+    }
+  }
+  .win_gift2{
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    display: none;
+    .win_left{
+      text-align: center;
+      .jiaxiquan2{
+        margin: 0 0 0 50px;
+        position: relative;
+        left: -17px;
+      }
+    }
+    .dianfanguo{
+      position: absolute;
+      left: 37px;
+      top: 41px;
+      display: none;
+    }
+    .gift_info{
+      width: 377px;
+      margin: 30px auto 0;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+    .sure2{
+      width: 190px;
+      height: 56px;
+      display: block;
+      margin: 20px auto 0;
+      background: url(/html/img/finance_queding.png) no-repeat;
+      border: 0;
+      outline: none;
+    }
+  }
+  .win_gift3{
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    display: none;
+    .win_left{
+      text-align: center;
+      .jiaxiquan2{
+        margin: 0 0 0 50px;
+        position: relative;
+        left: -17px;
+      }
+    }
+    .dianfanguo{
+      position: absolute;
+      left: 37px;
+      top: 41px;
+      display: none;
+    }
+    .gift_info{
+      width: 377px;
+      margin: 30px auto 0;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+    .sure3{
+      width: 190px;
+      height: 56px;
+      display: block;
+      margin: 20px auto 0;
+      background: url(/html/img/finance_queding.png) no-repeat;
+      border: 0;
+      outline: none;
+    }
+  }
+}
+.prize_win2{
+  width: 450px;
+  height: 548px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -225px;
+  margin-top: -274px;
+  z-index: 999;
+  padding-top: 180px;
+  background: url(/html/img/tankuang_bg1.png) no-repeat;
+  display: none;
+  .win_title{
+    font-size: 24px;
+    color: #e60012;
+    text-align: center;
+  }
+  .win_gift{
+    width: 300px;
+    margin: 30px auto 0;
+    .win_left{
+      text-align: center;
+      .jiaxiquan2{
+        margin: 0 auto;
+      }
+    }
+    .dianfanguo{
+      position: absolute;
+      left: 37px;
+      top: 41px;
+      display: none;
+    }
+  }
+  .gift_info{
+    width: 377px;
+    margin: 30px auto 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+  }
+  .sure2{
+    width: 190px;
+    height: 56px;
+    display: block;
+    margin: 20px auto 0;
+    background: url(/html/img/finance_queding.png) no-repeat;
+    border: 0;
+    outline: none;
+  }
+}
+.Notwinning{
+  width: 450px;
+  height: 372px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -225px;
+  margin-top: -186px;
+  background: url(/html/img/finance_notwin.png) no-repeat;
+  padding-top: 190px;
+  z-index:999;
+  display: none;
+  .not_title{
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  .not_cont{
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+  }
+  .again{
+    width: 190px;
+    height: 56px;
+    display: inline-block;
+    background: url(/html/img/finance_zaiyici.png) no-repeat;
+    border:0;
+    outline: none;
+    margin-left:20px;
+  }
+  .not_but{
+    width: 190px;
+    height: 56px;
+    display: inline-block;
+    margin: 20px 0 0 8px;
+    background: url(/html/img/finance_queding.png) no-repeat;
+    border: 0;
+    outline: none;
+  }
+}

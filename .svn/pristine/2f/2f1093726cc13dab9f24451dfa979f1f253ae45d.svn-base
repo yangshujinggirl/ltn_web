@@ -1,0 +1,68 @@
+.about-introduce {
+  .banner {
+    height: 303px;
+    background-color: #ccc;
+  }
+
+  .introduce-content {
+    padding:35px;
+    .itemnav {
+      border-bottom: 2px solid #e2e2e2;
+      margin-bottom:30px;
+      .head-1 {
+        font-size:18px;
+        font-weight: bold;
+        width: 100px;
+        height: 30px;
+        margin:0;
+        border-bottom: 2px solid #ea5504;
+        line-height: 30px;
+        text-align: center;
+        margin-left: 10px;
+      }
+    }
+    .terrace-intro {
+      .intro-content {
+        font-size: 14px;
+        // font-weight: bold;
+        line-height: 24px;
+      }
+    }
+    .group {
+      margin-top:30px;
+    }
+    .logo {
+      overflow: hidden;
+      margin-top:30px;
+      zoom:1;
+      .logo-img {
+        width: 269px;
+        height: 149px;
+        // background-color: #ccc;
+        float:left;
+      }
+      .intro-content {
+       margin-left:304px;
+      }
+    }
+    .license {
+      margin-top:30px;
+      .photos {
+        padding-left:20px;
+        text-align: center;
+        .one,.two{
+          // width:390px;
+          height: 615px;
+          // background-color: #ccc;
+          // display: inline-block;
+        }
+        .four,.three {
+          display: inline-block;
+          width: 396px;
+          height: 580px;
+        }
+      }
+    }
+
+  }
+}

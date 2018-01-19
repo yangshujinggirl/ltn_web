@@ -1,0 +1,25 @@
+
+  <!-- @include ../../../common/_headtop.html-->
+
+  <!-- @include ../_headmiddle.html -->
+
+  <!-- @include ../../../common/_headbottom.html -->
+
+  <!-- @include ../../../common/_dialog-header.html -->
+
+  <!-- @include _confirm.html -->
+
+  <!-- @include _pay.html -->
+
+  <!-- @include _success.html -->
+
+  <!-- @include _fail.html -->
+
+  <!-- @include _message.html -->
+
+  <!-- @include _template.html -->
+
+
+  <script src="/js/crowd/detail/confirmb/script.min.js"></script>
+
+  <!-- @include ../../../common/_bottom.html -->

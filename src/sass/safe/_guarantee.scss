@@ -1,0 +1,54 @@
+.safe-guarantee{
+  .content{
+    h2{
+      font-size: 20px;
+    }
+    .section{
+      text-align: center;
+      .one{
+        width: 345px;
+        height: 430px;
+        border-radius: 5px;
+        background: #fff;
+        display: inline-block;
+        vertical-align: top;
+        .icon1{
+          margin-top: 30px;
+          
+        }
+        .center{
+          margin-top: 42px;
+        }
+        h3{
+          font-size: 24px;
+          height: 75px;
+          color: #fff;
+          line-height: 75px;
+          background: #61d0d7;
+          border-radius: 5px 5px 0 0;
+          font-weight: normal;
+          margin: 0;
+        }
+        .tow{
+          background: #8587d7;
+        }
+        .three{
+          background: #61a1d7;
+        }
+        p{
+          width: 225px;
+          margin: 30px auto 0 auto;
+          font-size: 14px;
+          line-height: 30px;
+          color: #8a8a8a;
+        }
+        .one1{
+            margin-top: 21px;
+          }
+      }
+      .oneTe{
+        margin: 0 51px 0 51px;
+      }
+    }//section
+  }//content
+}//safe-guarantee

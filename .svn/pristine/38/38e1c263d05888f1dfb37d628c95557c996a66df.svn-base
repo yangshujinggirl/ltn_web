@@ -1,0 +1,56 @@
+.safe-why{
+  margin-bottom: 50px;
+  h2{
+      font-size: 20px;
+    }
+  .content{
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    padding: 30px 50px 30px 64px;
+
+    .cont-top{
+      margin-top: 30px;
+      text-align: left;
+      .top-left{
+        width: 400px;
+        display: inline-block;
+        margin: 0 37px 0 74px;
+        vertical-align: top;
+        .title{
+          font-size: 30px;
+          .icon{
+            width: 72px;
+            height: 72px;
+            position: relative;
+            left: -17px;
+            top: 20px;
+            vertical-align: middle;
+          }
+        }
+        .text{
+          font-size: 14px;
+
+          .caption{
+            font-size: 18px;
+            color: #8a8a8a;
+            display: block;
+            margin: 37px 0 7px 0;
+
+            
+          }
+        }
+      }
+    }
+    .button{
+      width: 255px;
+      height: 50px;
+      background: #fd8d4b;
+      border-radius: 3px;
+      margin: 0 auto;
+      border: 0;
+      font-size: 24px;
+      color: #fff;
+    }
+  }//content
+}//safe-why

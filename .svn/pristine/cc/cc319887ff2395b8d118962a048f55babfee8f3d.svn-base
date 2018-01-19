@@ -1,0 +1,97 @@
+.about-honor {
+  position: relative;
+  ul,li {
+    margin:0;
+    padding:0;
+  }
+  .title {
+    font-size: 18px;
+    color: #585858;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #e2e2e2;
+    margin: 20px 35px;
+    font-weight: bold;
+    .item {
+      border-bottom: 2px solid #ea5504;
+      width: 100px;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
+  .honorList {
+    overflow: hidden;
+    zoom:1;
+    padding:0 90px;
+    .item {
+      width: 350px;
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+      .text {
+        font-size: 16px;
+        line-height:24px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .item:nth-child(2n) {
+      margin-left:110px;
+    }
+  }
+  .cover {
+    cursor: pointer;
+    background: rgba(0,0,0,.8);
+  }
+  .lunbo {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.9);
+    position: fixed;
+    left:0;
+    top:0;
+    cursor: pointer;
+    display: none;
+    .leftBtn ,.rightBtn {
+      width: 50px;
+      height: 60px;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .leftBtn {
+      left:50px;
+      background: url(/html/img/guide_left.png) no-repeat left center;
+    }
+    .rightBtn {
+      right:50px;
+      background: url(/html/img/guide_right.png) no-repeat right center;
+    }
+  }
+  .wrapImg {
+    width: 500px;
+    height: 340px;
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    overflow: hidden;
+    z-index: 9999;
+    .list {
+      width:3500px;
+      overflow: hidden;
+      zoom:1;
+      position: absolute;
+      left:0;
+      top:0;
+      .item1 {
+        width: 500px;
+        float:left;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+<div class="lefttop">
+  <div class="leftContent" id='leftnav'>
+    <div class="listall">
+      <div class="list1">
+        <div class="titleicon"></div>
+        <div class="title">常见问题</div>
+      </div>
+      <div>
+        <a href="/html/help/about/" class="item">关于领投鸟</a>
+        <a href="/html/help/login/" class="item">注册登录</a>
+        <a href="/html/help/bind/" class="item"> 认证绑卡</a>
+        <a href="/html/help/moneyin/" class="item">充值提现</a>
+        <a href="/html/help/moneyout/" class="item">投资还款</a>
+        <a href="/html/help/safe/" class="item"> 账户安全</a>
+        <a href="/html/help/gold/" class="item">理财金券</a>
+      </div>
+    </div>
+    <div class="listall">
+      <div class="list1">
+        <div class="titleicon"></div>
+        <div class="title">更多问题</div>
+      </div>
+      <div>
+        <a href="/html/help/explain-word/" class="item">名词解释</a>
+        <a href="/html/help/product/" class="item">产品介绍</a>
+        <a href="/html/help/explain-activity/" class="item">活动介绍</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="righttop">
+  <div class="rightContent">
+    <div class="middle">
+
+    <!-- @extendable -->
+
+  </div>
+</div>

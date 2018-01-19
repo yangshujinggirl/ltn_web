@@ -1,0 +1,15 @@
+<div class="dialog-header page-component">
+  <div class="wrap">
+    <div class="left">
+      <a href="/html" class="brand"></a>
+      <span class="slogan"></span>
+      <div class="mobile">
+        <div class="app-code"></div>
+      </div>
+    </div>
+    <div class="right">
+      <span class="service">客服电话：400-999-9980</span>
+     <!--  <a href="/html" class="home">返回首页</a> -->
+    </div>
+  </div>
+</div>

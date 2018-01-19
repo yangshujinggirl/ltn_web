@@ -1,0 +1,109 @@
+.help-content {
+
+  .righttop {
+    float: right;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    width: 1010px;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .righttop .middle {
+    width: 672px;
+    float: left;
+
+    .middle-content{
+      padding:35px 0 35px 35px;
+      .title{
+        border-bottom: 1px solid #e2e2e2;
+        .item{
+          font-size:14px;
+          font-weight: bold;
+          width: 100px;
+          height: 30px;
+          color:#ea5504;
+          margin:0;
+          margin-left: 14px;
+          border-bottom: 3px solid #ea5504;
+          line-height: 30px;
+          text-align: center;
+        }
+      }
+      .list {
+        li {
+          margin-top: 20px;
+        }
+        .item {
+         color: #3f3f3f;
+         font-size: 14px;
+         &:hover {
+           color: #ea5504;
+           cursor: pointer;
+         }
+         &.selected {
+           color: #ea5504;
+         }
+        }
+        .content {
+         display: none;
+         background: #fbfbfb;
+         padding: 18px;
+         margin-top: 15px;
+         font-size: 12px;
+         line-height: 25px;
+
+         table {
+           width: 100%;
+           text-align: center;
+         }
+        }
+
+      }
+      .word {
+        padding:0 28px;
+        overflow: hidden;
+        zoom:1;
+        border-bottom: 1px dashed #ccc;
+        .list {
+          float:left;
+          text-align: center;
+          cursor: pointer;
+          .means {
+            display: block;
+            width: 138px;
+            height: 35px;
+            line-height: 35px;
+            background-color: #fbfbfb;
+            margin-bottom:10px;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            &:hover,&.selected {
+            color: #ea5504;
+            border: 1px solid #ea5504;
+            }
+          }
+        }
+        .list:nth-child(4n+2){
+          margin:0 9px;
+        }
+        .list:nth-child(4n){
+          margin-left:9px;
+        }
+      }
+      .intro {
+        display: none;
+
+        padding:0 29px;
+        .text {
+          padding:18px;
+          line-height:20px;
+          background-color: #fbfbfb;
+        }
+      }
+      .borrower .row1,.invester .row2,.debter .row3,.investlsit .row4,.collect .row5,.invest .row6,.money-bid .row7,.money-die .row8,.money-sum .row9,.profit-wish .row10,.total-invest .row11,.total-profit .row12,.stay-sum .row13,.stay-profit .row14,.project-ing .row15,.project-done .row16{
+        display: block;
+      }
+    }
+  }
+}

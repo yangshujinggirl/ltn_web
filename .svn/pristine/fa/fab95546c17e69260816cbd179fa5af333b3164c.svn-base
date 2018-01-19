@@ -1,0 +1,116 @@
+<div class="report page-component">
+  <div class="wrap">
+    <div class="report-content">
+      <div class="banner">
+        <img src="/img/report_banner2.png" alt="">
+      </div>
+      <div class="wrap1">
+        <div class="userCanvas">
+          <div class="commonHead">
+            <h1 class="leftText">投资用户画像</h1>
+            <div class="rightIntro"></div>
+          </div>
+          <div class="age">
+            <span class="num">01</span>
+            <span>年龄占比</span>
+          </div>
+          <div class="dataMap"></div>
+          <div class="sex">
+            <div class="age">
+              <span class="num">02</span>
+              <span>性别占比</span>
+            </div>
+            <div class="scale">
+              <div class="boy">男性用户占比：49.5%</div>
+              <div class="girl">女性用户占比：50.5%</div>
+            </div>
+          </div>
+        </div>
+        <div class="mainData">
+          <div class="commonHead">
+            <h1 class="leftText">概要数据</h1>
+            <div class="rightIntro"></div>
+          </div>
+          <div class="rank">用户个人Top排行</div>
+          <ul class="list">
+            <li class="item">
+              <div class="arrows">
+                单笔投资TOP:
+                <span class="triangle"></span>
+              </div>
+              <span class="math">￥1,000,020</span>
+            </li>
+            <li class="item">
+              <div class="arrows">
+                累计投资TOP:
+                <span class="triangle"></span>
+              </div>
+              <span class="math">￥2,470,020</span>
+            </li>
+            <li class="item">
+              <div class="arrows">
+                投资次数TOP:
+                <span class="triangle"></span>
+              </div>
+              <span class="math">81次</span>
+            </li>
+            <li class="item">
+              <div class="arrows">
+                投资标的数TOP:
+                <span class="triangle"></span>
+              </div>
+              <span class="math">41个</span>
+            </li>
+            <li class="item">
+              <div class="arrows">
+                邀请好友TOP:
+                <span class="triangle"></span>
+              </div>
+              <span class="math">117人</span>
+            </li>
+            <li class="item">
+              <div class="arrows">
+                收益TOP:
+                <span class="triangle"></span>
+              </div>
+              <span class="math">￥2,039</span>
+            </li>
+            <li class="item">
+              <div class="arrows">
+                分润TOP:
+                <span class="triangle"></span>
+              </div>
+              <span class="math">￥1,280</span>
+            </li>
+          </ul>
+          <div class="rank">平台数据概要</div>
+          <div class="dataShow">
+            <p class="sum">当月投资额:￥89,155,151</p>
+            <p class="sum">累计投资额:￥236,128,400</p>
+            <p class="sum">投资次数:11,251次</p>
+            <p class="sum">投资人数:3,880人</p>
+          </div>
+          <div class="rank"> 标的Top排行</div>
+          <div class="objectRank">
+            <p class="itm">投资人数TOP:   456人</p>
+            <p class="itm">最快售罄标的：16分钟<br>每分钟105,000元
+            </p>
+            <p class="itm">单标金额最大：400万元</p>
+          </div>
+        </div>
+        <div class="thanks">
+          <div class="commonHead">
+            <h1 class="leftText">感谢观看</h1>
+            <div class="rightIntro"></div>
+          </div>
+          <div class="company">
+            <img src="/img/report_14.png" alt="" class="logo">
+            <div class="code"></div>
+          </div>
+          <p class="adr">客服电话：400-999-9980</p>
+          <p class="adr">官方网址：www.lingtouniao.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

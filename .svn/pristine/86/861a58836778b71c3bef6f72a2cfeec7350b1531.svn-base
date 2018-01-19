@@ -1,0 +1,7 @@
+.dialog-footer {
+  padding: 60px 0;
+  .copy-right {
+    text-align: center;
+    color: #6a6a6a;
+  }
+}

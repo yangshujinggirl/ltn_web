@@ -1,0 +1,443 @@
+<div class="crowd_detailsB page-component">
+  <div class="wrap">
+    <div class="details_title">
+      <a href="#">首页</a> &nbsp;> &nbsp;<a href="#">众筹列表</a> &nbsp;> &nbsp;<a href="#">互助详情</a>
+    </div>
+    <div class="details_prop">
+      <div class="details">
+        <div class="details_left">
+          <img src="/img/imageTwo/mutual/crowd_img1.jpg">
+        </div>
+        <div class="plan_right">
+          <div class="plan_title">恺如居-万科海上国际</div>
+          <div class="raise">
+            <div class="raise_left">已筹到</div>
+            <div class="raise_right"><span class="raise_teshu">999,999.99</span>元</div>
+          </div>
+          <div class="bar">
+            <div class="container">
+              <div class="completed"></div>
+            </div>
+          </div>
+          <div class="target">
+            <div class="target_money">目标金额 <span class="heise">100</span>万</div>
+            <div class="target_time">支持人数  <span class="heise">360</span>人</div>
+            <div class="target_time overTime">结束时间 <span class="over">2017-09-27</span></div>
+          </div>
+          <div class="suport">此项目必须在2017年9月27日前得到100万的支持才算成功！</div>
+        </div>
+      </div>
+    </div>
+    <div class="details_tab">
+      <ul class="tab_title">
+        <li class="item selected">项目详情</li>
+        <li class="item">项目方</li>
+        <li class="item">支持记录</li>
+        <li class="item">常见问题</li>
+      </ul>
+      <ul class="tab_content">
+        <div class="tab_left">
+          <li class="item riskOne">
+            <article class="tab_detail">
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span>
+                  <span>项目描述：</span>
+                </div>
+                <div class="explain">
+                  <span class="one">项目说明：</span>
+                  <span class="two">新手标主要面向平台注册未投资用户，是领投鸟理财为投资人提供的本金自动循环出借及到期自动转让退出的理财工具。</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span>
+                  <span>项目协议：</span>
+                  <span class="jiekuan"><a href="#">《借款协议》</a></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span>
+                  <span>保障方式：</span>
+                  <span class="jiekuan"><a href="#">《平台安全保障详解》</a></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span>
+                  <span>风控审核项目：</span>
+                  <ul class="risk">
+                    <li class="risk_item">
+                      <div class="icon">
+                        <img src="/img/imageTwo/mutual/details_icon2.png">
+                      </div>
+                      <div class="risk_info">房屋买卖合同</div>
+                    </li>
+                    <li class="risk_item item1">
+                      <div class="icon">
+                        <img src="/img/imageTwo/mutual/details_icon3.png">
+                      </div>
+                      <div class="risk_info">房产证</div>
+                    </li>
+                    <li class="risk_item item1">
+                      <div class="icon">
+                        <img src="/img/imageTwo/mutual/details_icon4.png">
+                      </div>
+                      <div class="risk_info">银行批贷函</div>
+                    </li>
+                    <li class="risk_item item1">
+                      <div class="icon">
+                        <img src="/img/imageTwo/mutual/details_icon5.png">
+                      </div>
+                      <div class="risk_info">赎楼服务合同</div>
+                    </li>
+                    <li class="risk_item item1">
+                      <div class="icon">
+                        <img src="/img/imageTwo/mutual/details_icon6.png">
+                      </div>
+                      <div class="risk_info">个人征信报告</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="item riskTwo">
+            <article class="tab_detail">
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span>
+                  <span>产品保障：</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="ensure">
+                  <img src="/img/imageTwo/mutual/details_img1.png">
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span> 
+                <span>流程保障：</span>
+                </div>
+                <div class="explain explain2">
+                  <span class="two">精选不动产项目目前主要针对上海、杭州、宁波等地房地产中介提供的不动产交易业务，根据城区、楼盘等标准筛选优质项目进行合作，严格控制业务范围。</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span> 
+                  <span>甄选优质借款人：</span>
+                </div>
+                <div class="explain explain2">
+                  <span class="two">房产中介方确保不动产交易合法有效；赎楼业务的工作人员深入中介交易流程，对交易方进行银行按揭核查；查验交易方中国人民银行的个人征信报告，及法院执行情况、个人债务
+                  情况等；获得借款人的真实详尽资料，确定购房意向及确保资信材料的准确真实。由于借款额度占比总房价较低，且借款人必须在交易结束前还清借款，所以借款人还款意愿强，
+                  逾期还款的概率极低。</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span> 
+                  <span>多重严格风控：</span>
+                </div>
+                <div class="explain explain2">
+                  <span class="two">业务流程的关键节点都采用多重叠加风控审核，风控预审收集各类风控资料，法务部审核划分风险等级，财务部严格控制赎楼款发放流程；房产中介方对交易安全性承担保证责任，
+                  并承诺买卖双方交易款项优先支付赎楼款；工作人员跟进交易全流程，及时保障赎楼款回收，尽可能的降低违约风险。 </span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span>
+                  <span> 代偿追偿制：</span>
+                </div>
+                <div class="explain explain2">
+                  <span class="two">为保障业务和投资用户本息安全，实行层层代偿：房产中介方担责赔付，赎楼业务公司本息保障，借款方本息返还，平台风险保障金代偿。履行相关责任后，风控部将负责代偿追偿，
+                  根据实际情况启动司法诉讼、资产变现或坏账处置。</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_item">
+                  <span class="details_icon">
+                  <img src="/img/imageTwo/mutual/details_icon1.png">
+                  </span> 
+                  <span>业务风控：</span>
+                </div>
+                <div class="process">
+                  <img src="/img/imageTwo/crowd/details_img3.png">
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="item itemrisk3">
+            <article class="tab_detail">
+              <table class="log-list">
+                    <thead>
+                      <tr>
+                        <th>序列号</th>
+                        <th>成交时间</th>
+                        <th>投资人</th>
+                        <th>投资金额</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>09887777788</td>
+                        <td>2016-01-25 12:09:08</td>
+                        <td>赵泽君</td>
+                        <td>8888.88元</td>
+                      </tr>
+                      <tr>
+                        <td>09887777788</td>
+                        <td>2016-01-25 12:09:08</td>
+                        <td>赵泽君</td>
+                        <td>8888.88元</td>
+                      </tr>
+                      <tr>
+                        <td>09887777788</td>
+                        <td>2016-01-25 12:09:08</td>
+                        <td>赵泽君</td>
+                        <td>8888.88元</td>
+                      </tr>
+                      <tr>
+                        <td>09887777788</td>
+                        <td>2016-01-25 12:09:08</td>
+                        <td>赵泽君</td>
+                        <td>8888.88元</td>
+                      </tr>
+                    </tbody>
+              </table>
+              <div class="accountpage">
+                <div class="pages"></div>
+              </div>
+            </article>
+          </li>
+          <li class="item itemrisk4">
+            <article class="tab_detail">
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem">什么是新手标？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">新手标是领投鸟理财专为新手设计的投资标的，仅限在领投鸟理财平台上没有进行过任何投资的投资者。 目前平台新手标有两种，用户只能在两种新手标中二选一，并且只能
+                   投资一次。 第一种：投资期限为3天，预计年化收益率为18%，最低100元起投，最高10000元上限； 第二中：投资期限为30天，预计年化收益率为15%，最低500元起投，
+                   最高20万上限。</span>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem"> 我把钱借给了谁？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">可在项目详情中查看借款人信息和房产信息。</span>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem"> 新手标到期后收益如何？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">投资10000元新手标，那么到期后的收益为10000*18%/365*5=24，通过计算，10000元购买新手标，5天可获得24元的收益，每日收益高达得4.8元。</span>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem">新手标是否可以使用返现券、加息券或者鸟币？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">领投鸟理财新手标不可使用任何券或者鸟币。</span>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem">新手标投资金额有限制吗？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">新手标100元起投，上限为10000元</span>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem">投资新手标后，到期了会自动返还吗？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">在领投鸟理财平台上的投资，到期后本息会自动返还至投资人的“账户中心-可用余额”里，可提现或再投资。</span>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem">投资新手标后，没到期的时候可以提出来吗？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">新手标属于固定期限类理财产品，未到期时不可赎回。</span>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem">提现有金额限制吗？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">领投鸟理财账户提现单日限额100万 。</span>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem">领投鸟提现要不要手续费？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">每月有3次免费提现的机会，超出3次的话每次提现扣除2鸟币，没有鸟币的情况下扣除2元人民币</span>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="row_item">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon7.png">
+                  </span>
+                  <span class="problem">领投鸟可用余额提现多久到账？</span>
+                </div>
+                <div class="row_item row_item2">
+                  <span class="details_icon2">
+                  <img src="/img/imageTwo/mutual/details_icon8.png">
+                  </span>
+                  <span class="problem2">您在工作日17点之前发起的提现申请当日到账，17点以后发起的提现第二个工作日到账。若遇节假日顺延。每周一因要审核周五、周六、周日三天的付款申请，
+                  因此略有延时。</span>
+                </div>
+              </div>
+            </article>
+          </li>
+        </div>
+        <div class="tab_right">
+          <div class="tab_right_caption">
+            <div class="right_top">
+              <div class="right_title">
+                <div class="title_left">￥1.0</div>
+                <div class="title_right">2940位支持者</div>
+              </div>
+            </div>
+            <div class="right_content">
+              <div class="quota">
+                <div>限额 
+                <span class="quota_teshu">10000000</span>位 &nbsp; | &nbsp; 剩余
+                <span class="quota_teshu">9630</span>位</div>
+              </div>
+              <div class="quota_info">
+                据相关官方统计数据显示，每天273人、每小时12人、每5分钟因交通事故死亡1人、每分钟受伤1人，交通事故已成为“世界第一害”。一系列冰冷的数字，是无数幸福家庭的破碎。天有不测风云，人有旦夕祸福，加强意外风险防范显得格外重要。
+              </div>
+              <button class="quota_but">支付￥1</button>
+            </div>
+          </div>
+          <div class="tab_right_caption tab_right_caption2">
+            <div class="right_top">
+              <div class="right_title">
+                <div class="title_left">￥199</div>
+                <div class="title_right">2940位支持者</div>
+              </div>
+            </div>
+            <div class="right_content">
+              <div class="quota">
+                <div>限额 
+                <span class="quota_teshu">10000000</span>位 &nbsp; | &nbsp; 剩余
+                <span class="quota_teshu">9630</span>位</div>
+              </div>
+              <div class="quota_info">
+                据相关官方统计数据显示，每天273人、每小时12人、每5分钟因交通事故死亡1人、每分钟受伤1人，交通事故已成为“世界第一害”。一系列冰冷的数字，是无数幸福家庭的破碎。天有不测风云，人有旦夕祸福，加强意外风险防范显得格外重要。
+              </div>
+              <button class="quota_but">支付￥199</button>
+            </div>
+          </div>
+          <div class="tab_right_caption tab_right_caption2">
+            <div class="right_top">
+              <div class="right_title">
+                <div class="title_left">￥599</div>
+                <div class="title_right">2940位支持者</div>
+              </div>
+            </div>
+            <div class="right_content">
+              <div class="quota">
+                <div>限额 
+                <span class="quota_teshu">10000000</span>位 &nbsp; | &nbsp; 剩余
+                <span class="quota_teshu">9630</span>位</div>
+              </div>
+              <div class="quota_info">
+                据相关官方统计数据显示，每天273人、每小时12人、每5分钟因交通事故死亡1人、每分钟受伤1人，交通事故已成为“世界第一害”。一系列冰冷的数字，是无数幸福家庭的破碎。天有不测风云，人有旦夕祸福，加强意外风险防范显得格外重要。
+              </div>
+              <button class="quota_but">支付￥599</button>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>

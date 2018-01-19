@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" href="/html/css/style.css?v=20171023">
+  <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name=”renderer” content=”webkit” />
+ <script src="/html/js/lib/jquery.min.js"></script>
+  <script src="/html/js/lib/jquery.easydropdown.min.js"></script>
+  <script src="/html/js/lib/jquery.paging.min.js"></script>
+  <script src="/html/js/lib/jquery.validation.min.js"></script>
+  <script src="/html/js/lib/doT.min.js"></script>
+  <script src="/html/js/app.min.js?v=20161017"></script>
+
+
+<title>新手指南、领投鸟官网新手指南</title>
+<meta name="keywords" content="领投鸟理财、领投鸟官网平台、新手指南、用户注册、实名认证、领头鸟、互联网理财、不动产理财、P2P网贷、投资理财、短期理财">
+<meta name="description" content="领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，平台提供网络贷款，投资理财，赎楼业务，小额贷款，短期贷款，互联网理财、P2P网贷">
+
+</head>
+<body>
+
+
+<div class="commonNavTop page-component">
+  <div class="wrap">
+    <div class="content">
+      <div class="left">
+        <div class="service">客服电话：400-999-9980</div>
+        <div class="iconlist">
+          <div class="iconItem weixin">
+            <div class="code"></div>
+          </div>
+          <div class="iconItem weibo">
+            <a href="http://weibo.com/u/5935757405" target="_blank"></a>
+          </div>
+          <div class="iconItem shouji">
+            <a href="/other/downloadapp " target="_blank"></a>
+          </div>
+          <div class="iconItem lipin">
+            <a href="/html/activity_banner" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <span class="navItem login" onclick="user().clickEvent();" id="loginLink">登录</span>
+        <a href="/html/user/register" class="navItem register">注册</a>
+        <a class="navItem welcome"></a>
+        <a href="javascript:void(0);" class="navItem logoff">安全退出</a>
+        <a href="/other/actlist" class="navItem" >最新活动</a>
+        <a href="/other/downloadapp" class="navItem">下载APP</a>
+        <a href="/help/aboutltn" class="navItem">帮助中心</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="commonNavTwo page-component">
+  <div class="wrap">
+    <div class="content">
+      <div class="left">
+        <div class="logo" id="logo">
+          <img src="/html/img/imageTwo/home/logo.png" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <a href="/" class="navItem" onclick="user().clickEvent();">首页</a>
+        <a href="/finance/list/0/1/0/0" class="navItem" onclick="user().clickEvent();">投资</a>
+       <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+       <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+        <!-- <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a> -->
+        <a href="http://bbs.lingtouniao.com" class="navItem" onclick="user().clickEvent();" target="_blank">社区</a>
+        <a href="/other/downloadapp " class="navItem" onclick="user().clickEvent();">下载APP</a>
+        <a href="/other/safeguards " class="navItem" onclick="user().clickEvent();">安全保障</a>
+        <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+        <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="activity_banner page-component">
+    <div class="wrap">
+      <div class="activity_title">
+        <div class="title">活动列表</div>
+      </div>
+      <div class="activity_cont" id="propActivity">
+        <a href="">
+          <div class="caption_banner">
+            <div class="xuanting" id="floating">进行中</div>
+              <img src="/html/img/huodong_banner1.png">
+              <div class="info">
+                <span class="licai">理财奥运会</span>
+                <span class="expiryDate">｜  2016.08.01-2016.08.22</span>
+                <span class="banner_cont"></span>
+              </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="caption_banner">
+            <div class="xuanting">长期有效</div>
+            <img src="/html/img/huodong_banner1.png">
+            <div class="info">
+              <span class="licai">理财奥运会</span>
+              <span class="expiryDate">｜  2016.08.01-2016.08.22</span>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="caption_banner">
+            <div class="xuanting">长期有效</div>
+              <img src="/html/img/huodong_banner1.png">
+              <div class="info">
+                <span class="licai">理财奥运会</span>
+                <span class="expiryDate">｜  2016.08.01-2016.08.22</span>
+              </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="caption_banner">
+            <div class="xuanting">已结束</div>
+            <img src="/html/img/huodong_banner1.png">
+            <div class="info">
+              <span class="licai">理财奥运会</span>
+              <span class="expiryDate">｜  2016.08.01-2016.08.22</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+<script type="text/template" id="tempActivity">
+{{~it:value:index}}
+  <a href="{{=value.activityUrl}}" target="_blank">
+  <div class="caption_banner">
+  {{if(value.activityStatus == '1'){}}
+    <div class="xuanting">进行中</div>
+  {{ }else if(value.activityStatus == '2'){ }}
+  <div class="xuanting xuanting2">长期有效</div>
+  {{ }else if(value.activityStatus == '3'){ }}
+  <div class="xuanting over">已结束</div>
+  {{ } }}
+      <img src="{{=value.activityBanner}}">
+      <div class="info">
+        <span class="licai">{{=value.avtivityTitle}}</span>
+        <span class="expiryDate">｜  {{=value.endTime}}</span>
+        <span class="banner_cont">{{=value.activityContent}}</span>
+      </div>
+    </div>
+  </a>
+  {{~}}
+</script>
+
+<div class="common-footer page-component">
+  <div class="wrap">
+    <div class="left">
+      <div class="iphone">
+        <div class="left_icon"></div>
+        <div class="left_time">（工作日9:30-18:30）</div>
+        <div class="left_tel">400-999-9980</div>
+        <div class="left_QQ">领投鸟投资用户交流群：247441580</div>
+      </div>
+    </div>
+    <div class="center_cont">
+      <ul>
+        <li class="title">关于我们</li>
+        <li>
+          <a href="/about/pltinfo" target="_blank">平台介绍</a>
+        </li>
+        <li>
+          <a href="/about/team" target="_blank">团队介绍 </a>
+        </li>
+        <li>
+          <a href="/about/advantage" target="_blank">品牌优势</a>
+        </li>
+        <li>
+          <a href="/about/honor" target="_blank">平台荣誉</a>
+        </li>
+        <li>
+          <a href="/about/partner" target="_blank">合作伙伴</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="title">联系我们</li>
+        <li>
+          <a href="/about/notice" target="_blank">平台公告</a>
+        </li>
+        <li>
+          <a href="/about/news" target="_blank">媒体报道 </a>
+        </li>
+        <li>
+          <a href="/about/join" target="_blank">加入我们</a>
+        </li>
+        <li>
+          <a href="/about/contact" target="_blank">联系我们</a>
+        </li>
+      </ul>
+      <ul class="three">
+        <li class="title">帮助中心</li>
+        <li>
+          <a href="/other/newerguide " target="_blank">新手指引</a>
+        </li>
+        <li>
+          <a href="/help/aboutltn/" target="_blank">帮助中心 </a>
+        </li>
+        <li>
+          <a href="/other/actlist " target="_blank">热门活动</a>
+        </li>
+      </ul>
+      <ul class="four">
+        <li class="title">安全保障</li>
+        <li>
+          <a href="/about/report" target="_blank">运营报告</a>
+        </li>
+        <li>
+          <a href="/about/protocol" target="_blank">法律法规 </a>
+        </li>
+        <li>
+          <a href="/other/safeguards " target="_blank">安全保障</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="scan">
+        <div class="item">
+          <img class="code" src="/html/img/img-footer-code-app.png" alt="APP下载二维码">
+          <span class="title">APP下载</span>
+          <div class="youxiang">
+            <span class="small_icon1">
+              <img src="/html/img/footer_icon2.png">
+            </span>客服邮箱
+            <div class="tips">客服邮箱：service@lingtouniao.com</div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="code" src="/html/img/img-footer-code-weixin.png" alt="微信公众号二维码">
+          <span class="title">微信公众号</span>
+          <a href="http://weibo.com/u/5935757405" target="_blank"><div class="youxiang">
+              <span class="small_icon1">
+                <img src="/html/img/footer_icon3.png">
+              </span>新浪微博
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_last">
+      <div class="contact" style="z-index:1;">
+        <div class="service">
+          <span><script type="text/javascript">
+          var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+          document.write(unescape("%3Cspan id='cnzz_stat_icon_1258037212'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258037212%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <script>
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?2ce520d6a6a41eb85c78974ad14678c4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+          })();
+        </script>
+        <script type="text/javascript">
+          var _py = _py || [];
+          _py.push(['a', 'YQs..WOGqF1S7kb_VEl9N283aBX']);
+          _py.push(['domain','stats.ipinyou.com']);
+          _py.push(['e','']);
+          -function(d) {
+            var s = d.createElement('script'),
+            e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+            f = 'https:' == location.protocol;
+            s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
+          }(document);
+          </script>
+          <noscript><img src="//stats.ipinyou.com/adv.gif?a=YQs..WOGqF1S7kb_VEl9N283aBX&e=" style="display:none;"/></noscript>
+        </span>
+        </div>
+      </div>
+      <div class="icons">
+        <!--诺顿网站图片LOGO-->
+        <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lingtouniao.com&amp;lang=zh_cn" target="_bank" class="icons1"></a>
+
+        <!--诚信网站图片LOGO，不用加版本号是新图片-->
+        <a href="http://credit.szfw.org/CX20160524015311350170.html" target='_blank' class="icons2"></a>
+
+        <!--工商图片LOGO-->
+        <a href="http://www.sgs.gov.cn/lz/etpsInfo.do?method=index" target='_blank' class="icons3"></a>
+
+        <!--ICP网站图片LOGO-->
+        <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target='_blank' class="icons4"></a>
+
+        <!--行业协会网站图片LOGO-->
+        <a href="http://sfia.org.cn/h/n/user/toDetailMermbersMainInfo?uId=2016072400000000077" target='_blank' class="icons5"></a>
+
+        <!--安全联盟网站图片LOGO-->
+        <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.lingtouniao.com&at=business" target='_blank' class="icons6"></a>
+
+        <!--互联网金融网站图片LOGO-->
+        <a href="http://si.trustutn.org/info?sn=172170915000608884439&certType=4%22%3E%3Cimg" target='_blank' class="icons7"></a>
+
+        <!--可信网站图片LOGO-->
+        <a href="https://ss.knet.cn/verifyseal.dll?sn=e160523310104635708sr5000000&pa=500267" tabindex="-1" id="urlknet" target="_blank" class="icons8"></a>
+      </div>
+      <div class="friend">
+        <div class="friend_top">友情链接：
+        <a href="http://www.wdzj.com/dangan/ltnlc/" target="_blank">网贷之家</a>
+           ｜   <a href="http://lingtouniao.p2peye.com/" target="_blank">网贷天眼</a>
+              ｜   <a href="http://baike.baidu.com/item/领投鸟理财" target="_blank">百度百科</a>
+                 ｜   <a href="http://tieba.baidu.com/f?kw=%E9%A2%86%E6%8A%95%E9%B8%9F&ie=utf-8" target="_blank">百度贴吧</a>
+                    ｜   <a href="http://mp.sohu.com/profile?xpt=cHBhZzI1NjRjY2RmOThmZkBzb2h1LmNvbQ==" target="_blank">搜狐媒体</a>
+                       ｜   <a href="http://weibo.com/u/5935757405?topnav=1&wvr=6&topsug=1" target="_blank">新浪微博</a>
+                          ｜   <a href="http://toutiao.com/m5784948163/" target="_blank">今日头条</a>
+                             ｜   <a href="http://www.lagou.com/gongsi/103258.html?m=1" target="_blank">拉勾</a>
+                                ｜   <a href="http://www.itjuzi.com/company/32856" target="_blank">IT桔子</a></div>
+            <div class="friend_bottom">公司地址：上海市金沙江路2145号普罗娜商务广场A
+            栋7楼   ©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有<a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15056137号</a>  市场有风险 投资需谨慎</div>
+      </div>
+</div>
+  <div class="kefu">
+    <script>
+    (function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","http://lingtouniao.udesk.cn/im_client/js/udeskApi.js?1480664200567","ud");
+    ud({
+        "code": "18bj2e9k",
+        "link": "http://lingtouniao.udesk.cn/im_client?web_plugin_id=23176"
+    });
+  </script>
+  </div>
+
+
+<div class="common-cover page-component">
+</div>
+
+</body>
+</html>
+
+  <script src="/html/js/activity_banner/script.min.js"></script>

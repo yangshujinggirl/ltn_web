@@ -1,0 +1,42 @@
+<script type="text/template" id="crowdTemplate">
+  <thead>
+    <tr>
+      <th>交易时间</th>
+      <th>项目名称</th>
+      <th>支持金额</th>
+      <th>回报方式</th>
+      <th>交易状态</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{~it.orderZcList:value}}
+    <tr>
+      <td>{{=value.orderDate}}</td>
+      <td>
+        <a href="/html/crowd/detail/?productId={{=value.productId}}">{{=value.productName}}</a><br/>
+        {{ if(value.productType!='A'){ }}
+        <span>到期时间：{{=value.endTime}}</span>
+        {{ } }}
+      </td>
+      <td>￥{{=strUtil().formatKilo(value.orderAmount)}}</td>
+      <td>
+        {{ if(value.productType!='A'){ }}
+        <span class="high">现金收益：￥{{=strUtil().formatKilo(value.totalRevenue)}}</span>
+        <span class="speci">利息：￥{{=strUtil().formatKilo(value.interest)}}</span>
+        <span class="speci">奖励：{{=value.cashbackCoupon}}</span>
+        {{ }else{ }} 
+        <span>{{=value.stepAward}}</span>
+        {{ } }}
+      </td>
+      <td>{{=value.handleStatus=='ZFCG'?'众筹中':'已结束'}}</td>
+      <td>
+        <span class="high1">订单编号：{{=value.orderNo}}</span>
+        <span class="speci1">
+          <a href="/html/crowd/detail/?productId={{=value.productId}}" data-id='{{=value.productId}}' class="inAgree">查看详情>></a>
+        </span>
+      </td>
+    </tr>
+  {{~}}
+  </tbody>
+</script>

@@ -1,0 +1,15 @@
+<div class="loan-pay page-component">
+  <div class="wrap">
+    <div class="login-content">
+      <div class="title">
+        <div class="item">首付垫流程</div>
+      </div>
+      <div class="pay-process">
+        <div class="banner"><img src="../../../../img/first-pad_01.png" alt=""></div>
+      	<div class="form" id="htmLoanProcess">
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

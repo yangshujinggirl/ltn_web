@@ -1,0 +1,69 @@
+<div class="safe-why page-component" id="anquan">
+  <div class="wrap">
+  <h2>我的资金为什么这么安全？</h2>
+    <div class="content">
+      <div class="cont-top">
+        <div class="top-left">
+          <div class="title">
+          <span class="icon"><img src="../../img/tishi.png"></span>业务安全</div>
+          <p class="text">
+            <span class="caption">优质资产</span>
+            以家庭生活消费场景为核心，相关业务风险低，资产价值有保证
+            <span class="caption">流程控制</span>
+            消费金融业务控制流程完善，体系严密
+          </p>
+        </div>
+
+        <div class="top-left">
+          <div class="title">
+          <span class="icon"><img src="../../img/tishi.png"></span>账户安全</div>
+          <p class="text">
+            <span class="caption">三方托管</span>
+            资金全权由联动优势作为第三方独立托管，平台不触碰资金
+            <span class="caption">来源可靠</span>
+            消费金融业务审批严格，项目真实可查，还款来源明确可靠
+          </p>
+        </div>
+
+
+      </div>
+
+      <div class="cont-top">
+        <div class="top-left">
+          <div class="title">
+          <span class="icon"><img src="../../img/tishi.png"></span>法律合规</div>
+          <p class="text">
+            <span class="caption">政策合规</span>
+            从服务和规性，政策走向等多方面保障融资方式，平台和项目的合法性
+            <span class="caption">法律保障</span>
+            严格审核合同和协议等保证投资人在平台上的所有操作都合法有效
+            <span class="caption">专职团队</span>
+            法务团队协同国内专业律师事务所提供全流程，全天候的法律支持，为投资者的合法权益提供法律援助
+          </p>
+        </div>
+
+        <div class="top-left">
+          <div class="title">
+          <span class="icon"><img src="../../img/tishi.png"></span>技术保障</div>
+          <p class="text">
+            <span class="caption">大数据技术</span>
+            客户征信及行为数据通过大数据采集，风控精确度大大提高
+            <span class="caption">同卡进出</span>
+            提现仅限本人借记卡，拒绝他人偷转盗转
+            <span class="caption">多重防护</span>
+            平台采用MD5平台数据加密技术，防火墙（firewall）技术，
+             威瑞信（VeriSign）数字签名技术，多重密码保障技术保证用户数据安全
+          </p>
+        </div>
+
+
+      </div>
+      <a href="#"><button class="button" id="but">立即加入</button></a>
+
+
+
+    </div>
+
+
+  </div>
+</div>

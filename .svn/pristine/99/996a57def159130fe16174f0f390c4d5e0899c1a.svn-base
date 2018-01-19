@@ -1,0 +1,19 @@
+
+  <!-- @include ../../common/_headtop.html-->
+
+  <!-- @include _headmiddle.html -->
+  
+  <!-- @include ../../common/_headbottom.html -->
+
+  <!-- @include ../../common/default/_navTop.html -->
+
+  <!-- @include ../../common/default/_navTwo.html -->
+
+  <!-- @include _cardsuccess.html -->
+
+  <!-- @include ../../common/_dialog-footer.html -->
+
+  <!-- @include ../../common/_cover.html -->
+
+  <!-- @include _template.html -->
+  <script src="/html/js/user/cardsuccess/script.min.js?v=20160711"></script>

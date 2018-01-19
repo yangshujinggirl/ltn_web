@@ -1,0 +1,12 @@
+
+  <!-- @extend ../../../common/layout/contract.html -->
+
+  <!-- @include _contract.html -->
+
+  <!-- @endextend -->
+
+ <script >
+    (function () {
+      document.getElementsByTagName("title")[0].innerHTML = "投资协议";
+    })()
+</script>

@@ -1,0 +1,18 @@
+<div class="posatl_fail component copyparti" id="tixianFail">
+  <div class="copycontent">
+    <div class="title">
+      <div class="title_cont">提示</div>
+    </div>
+    <div class="success2">
+      <span class="success_icon"></span>
+      <span class="success_info">很遗憾，提现申请失败！</span>
+      <span class="zuihou">1.工作日16点之前用户发起的提现申请，当日会进行受理；<br> 
+      2.16点以后提交的提现申请，将于第二个工作日10点审核。<br> 
+      3.若遇节假日顺延。每周一因要审核周五、周六、周日三天<br>  
+      的付款申请，因此略有延时。</span>
+    </div>
+    <button class="posatl_button" id="posatlBut2">确定</button>
+    <div class="colse2" id="closeFail"></div>
+  </div>
+</div>
+<div class="cover10"></div>

@@ -1,0 +1,276 @@
+<!-- banner 的数据模板 -->
+<script type="text/template" id="tempSwiper1">
+    {{for (var i=0; i<it.length; i++) { }}
+      <div class="swiper-slide">
+        <a href="{{=it[i].bannerUrl}}"><img src="{{=it[i].bannerPicture}}" alt='{{=it[i].bannerTitle}}'></a>
+      </div>
+      {{ } }}
+</script>
+ <!-- banner 的数据模板 end -->
+
+<!-- 账号信息数据模板 -->
+<script type="text/template" id="tempEntranceAccount">
+  <div class="property">
+      理财资产（元）:
+      <span class="redbig">{{=it.totalAsset==0?'0.00':strUtil().formatKilo(it.totalAsset)}}</span>
+  </div>
+  <div class="difference">
+    账户余额（元）:
+    <span class="big">{{=it.usableBalance==0?'0.00':strUtil().formatKilo(it.usableBalance)}}</span>
+  </div>
+  <button class="btn" id='goAccount'>进入我的账户</button>
+  <p class="tt">平台不触碰资金 第三方联动优势联合银行存管</p>
+</script>
+<!-- 账号信息数据模板 end -->
+
+
+<!-- 平台数据渲染模板 -->
+<script type="text/template" id="tempPlatform">
+  <div class="dateItem">
+        平台注册用户：
+        <span class="num">{{=it.userNum}}<span class="unite">人</span></span>
+      </div>
+      <div class="dateItem">
+        累计投资金额：
+        <span class="num">
+        {{=strUtil().formatMoney(it.totalAmount).hundredMillion}}
+        <span class="unite">亿</span>
+        {{=strUtil().formatMoney(it.totalAmount).kiloMillion}}
+        <span class="unite">万元</span>
+        </span>
+      </div>
+      <div class="dateItem">
+        为用户赚取收益：
+        <span class="num">
+        {{=strUtil().formatPerson(it.profit).million}}
+        <span class="unite">万</span>
+        {{=strUtil().formatPerson(it.profit).single}}
+        <span class="unite">元</span>
+        </span>
+      </div>
+      <div class="dateItem report">
+        <a href="/html/about/report" class="link">领投鸟平台运营报告>></a>
+      </div>
+</script>
+<!-- 平台数据渲染模板 end -->
+
+<!-- 体验标新手标数据模板 -->
+<script type="text/template" charset="UTF-8" id="tempTYBAndXSB">
+    <li class="item">
+      <div class="wp">
+        <span class="title">新手专享</span>
+        <p class="txt">6万体验金+618元返现券</p>
+        <span class="icon"></span>
+      </div>
+    </li>
+    <li class="item" data-url="/html/product/start/#!/{{=it.tyb.productId}}">
+      <div class="wp2">
+        <div class="title">
+          {{=it.tyb.productName}}<span class="little">体验即送鸟币 </span>
+        </div>
+        <div class="middle">
+          <div class="num"><span class="big">{{=strUtil().formatPercent(it.tyb.annualIncomeText)}}</span><span class="little">%</span></div>
+          预期年化
+        </div>
+        <div class="bottom">
+        <span class="left">投资期限:<span class="bold">{{=it.tyb.convertDay}}</span>天</span>
+          <span class="right">起投金额 <span class="bold">{{=strUtil().formatKilo(it.tyb.staInvestAmount)}}</span>元</span>
+        </div>
+        <button class="btn">立即投资</button>
+      </div>
+    </li>
+    {{ for(var i=0;i<1;i++){ }}
+    <li class="item" data-url='/html/product/first/#!/{{=it.xsbList[i].productId}}'>
+        <div class="wp2">
+          <div class="title">
+            {{=it.xsbList[i].productName}}
+          </div>
+          <div class="middle">
+            <div class="num"><span class="big">{{=strUtil().formatPercent(it.xsbList[i].annualIncomeText)}}</span><span class="little">%</span></div>
+            预期年化
+          </div>
+          <div class="bottom">
+            <span class="left">投资期限<span class="bold">{{=it.xsbList[i].convertDay}}</span>天</span>
+            <span class="right">起投金额 <span class="bold">{{=strUtil().formatKilo(it.xsbList[i].staInvestAmount)}}</span>元</span>
+          </div>
+          <button class="btn">立即投资</button>
+        </div>
+      </li>
+    {{ } }}
+</script>
+<!-- 体验标新手标数据模板end -->
+
+<!-- 首页互助模板 -->
+<script type="text/template" charset="UTF-8" id="tempSwiper2">
+{{ for(var i=0;i<it.length;i++){ }}
+<div class="swiper-slide" style="background-image: url('{{=it[i].productTopPic}}');background-size:cover;"  data-url='/html/mutual/mutual_details/#!/{{=it[i].productId}}'>
+  <div class="list">
+    <div class="info">
+      <div class="infoTitle">{{=it[i].productFirstTitle}}</div>
+      <div class="contentOne">{{=it[i].productSubTitle}}</div>
+      <div class="contentTwo">{{=it[i].productDesc}}</div>
+      <button class="btn">立即加入</button>
+    </div>
+  </div>
+</div>
+{{ } }}
+</script>
+<!-- 首页互助模板 end -->
+
+
+<!-- 众筹列表模板  -->
+<script type="text/template" charset="UTF-8" id="tempCrowdList">
+{{ if(it.length!=0){ }}
+  {{ for(var i=0;i<it.length;i++){ }}
+    <div class="item" data-url='/html/crowd/detail/?productId={{=it[i].productId}}'>
+      <div class="bgwp">
+        <img src="{{=it[i].productTopPic}}" alt="" class="bg">
+      </div>
+      <div class="content">
+        <div class="name">{{=it[i].productFirstTitle}}</div>
+        <div class="intro">
+          {{=it[i].productDesc}}
+        </div>
+        <div class="process">
+          <div class="inner" style='width: {{=parseFloat(it[i].productSoldedAmount)/parseFloat(it[i].productTotalAmount).toFixed(2)*100}}%'></div>
+        </div>
+        <div class="join">
+          <div class="target">
+          目标金额<span class="bold">{{=strUtil().formatMoney(it[i].productTotalAmount).kiloMillion}}</span>万
+          </div>
+          <div class="project">
+            参与人数<span class="bold">{{=it[i].productSoldedPerson}}</span>人
+          </div>
+          <button class="btn">立即参与</button>
+        </div>
+      </div>
+    </div>
+    {{if(it.length==1){ }}
+      <div class="item-no">
+        <img src="/html/img/imageTwo/home/one_ZC.jpg" alt="">
+      </div>
+    {{ } }}
+  {{ } }}
+{{ }else{ }}
+  <div class="noDate"><img src="/html/img/imageTwo/home/noZC.png" alt=""></div>
+{{ } }}
+</script>
+<!-- 众筹列表模板 end -->
+
+<!-- 理财产品列表模板  -->
+<script type="text/template" charset="UTF-8" id="tempProductList">
+{{ for(var i=0;i<it.length;i++){ }}
+<div class="item" data-id="{{=it[i].productId}}" data-type="{{=it[i].productType}}">
+    <div class="ww">
+      <div class="title">
+        <span class="titlename">{{=it[i].productName}}</span>
+        <span class="subTitle">{{=it[i].productTag}}</span>
+      </div>
+      <div class="dates datesOne">
+        <div class="num">
+          {{=strUtil().formatIncome(it[i].annualIncomeText).normal}}
+          <span class="little">
+          {{=strUtil().formatIncome(it[i].annualIncomeText).add}}
+          </span>
+        </div>
+        <div class="type">预期年化</div>
+        {{ if(it[i].annualIncomeText.indexOf('+')>-1){ }}
+        <div class="icon"></div>
+        {{ } }}
+      </div>
+      <div class="dates">
+        <div class="numTwo">
+          {{=it[i].convertDay}}<span class="unite">天</span>
+        </div>
+        <div class="type">投资期限</div>
+      </div>
+      <div class="dates">
+        <div class="numTwo">
+          {{=strUtil().formatMiriade(it[i].productTotalAmount)}}<span class="unite">万</span>
+        </div>
+        <div class="type">项目总额</div>
+      </div>
+      <div class="dates">
+        <div class="process">
+          <div class="inner" style="width:{{=((parseFloat(it[i].productTotalAmount)-parseFloat(it[i].productRemainAmount))/parseFloat(it[i].productTotalAmount)).toFixed(2)*100}}%"></div>
+        </div>
+        <div class="type">剩余金额{{=it[i].productRemainAmount}}元</div>
+      </div>
+      <div class="anniu">
+        {{ if(it[i].productStatus=='1'){ }}
+        <button class="btn">立即投资</button>
+        {{ }else if(it[i].productStatus=='2'&&parseFloat(it[i].productRemainAmount)>0){ }}
+        <button class="btn fulled">募集结束</button>
+        {{ }else if(it[i].productStatus=='2'&&parseFloat(it[i].productRemainAmount)==0){ }}
+        <button class="btn fulled">已满标</button>
+        {{ }else{ }}
+        <button class="btn repayment">已还款</button>
+        {{ } }}
+      </div>
+    </div>
+</div>
+{{ } }}
+</script>
+<!-- 理财产品列表模板 end -->
+
+<!-- 媒体报告模板 -->
+<script type="text/template" charset="UTF-8" id="tempNewsContent">
+{{ if(it.length>1){ }}
+  <a href='/html/about/newsdetail?id={{=it[0].id}}&type=2'>
+  <div class="topContent">
+      <div class="newsImg">
+        <img src="{{=it[0].nNewsPicture}}" alt="{{=it[0].title}}">
+        <div class="bestNews"></div>
+      </div>
+      <div class="rightInfo">
+        <h1 class="newsTitle">
+          {{=it[0].title}}
+        </h1>
+        <p class="newsText">
+          {{=it[0].nIntroduction.length>75?it[0].nIntroduction.substring(0,76)+'......':it[0].nIntroduction}}
+        </p>
+      </div>
+  </div>
+  </a>
+  {{ if(it.length>=2){ }}
+  <div class="bottomContent">
+    <div class="bottomListRoll">
+      <ul class="bottomList">
+    {{ for(var i=1;i<it.length;i++){ }}
+
+      <li class="item">
+        <a href='/html/about/newsdetail?id={{=it[i].id}}&type=2'>
+          <p class="newsHead">
+          {{=it[i].title}}
+          </p>
+          <p class="time">
+            {{=it[i].publishTime}}
+          </p>
+        </a>
+      </li>
+    {{ } }}
+    </ul>
+     </div>
+    </div>
+    {{ } }}
+{{ } }}
+</script>
+<!-- 媒体报告模板 end -->
+
+<!-- 平台公告模板 -->
+<script type="text/template" charset="UTF-8" id="tempNoticeList">
+{{ for(var i=0;i<it.length;i++){ }}
+
+  <li class="item">
+    <a href='/html/about/noticedetail?id={{=it[i].id}}&type=1'>
+      <p class="title">{{=it[i].title}}</p>
+      <p class="time">{{=it[i].publishTime}}</p>
+      <div class="circle">
+        <div class="inner"></div>
+      </div>
+    </a>
+  </li>
+
+{{ } }}
+</script>
+<!-- 平台公告模板 end -->

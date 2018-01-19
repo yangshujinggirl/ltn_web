@@ -1,0 +1,21 @@
+<div class="commonNavTwo page-component">
+  <div class="wrap">
+    <div class="content">
+      <div class="left">
+        <div class="logo" id="logo">
+          <img src="/img/imageTwo/home/logo.png" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <a href="/html" class="navItem" onclick="user().clickEvent();">首页</a>
+        <a href="/html/product" class="navItem" onclick="user().clickEvent();">投资</a>
+       <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+       <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+        <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a>
+        <a href="/html/safe" class="navItem" onclick="user().clickEvent();">安全保障</a>
+        <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+        <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+      </div>
+    </div>
+  </div>
+</div>

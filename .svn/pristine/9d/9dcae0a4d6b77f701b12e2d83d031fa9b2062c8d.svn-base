@@ -1,0 +1,60 @@
+<script type="text/template" id="tempConfirm">
+        <div class="row">
+          <span class="caption">项目名称：</span>
+          <span class="field">{{=it.productName}}</span>
+          
+        </div>
+        <div class="row">
+        <span class="caption">投资期限：</span>
+          <span class="field">{{=it.convertDay}}天</span>
+          <span class="caption">年化收益：</span>
+          <span class="field">{{=it.annualIncomeText}}</span>
+         
+        </div>
+        <div class="row">
+         <span class="caption">还款方式：</span>
+          <span class="field">一次性还款</span>
+          <span class="caption">投资金额：</span>
+          <span class="field"><mark class="mark">{{=Util.padFloatMoney(it.buyAmount)}}</mark>元</span>
+          <span class="caption">可用余额：</span>
+          <span class="field"><mark class="mark">{{=Util.padFloatMoney(it.productRemainAmount)}}</mark>元</span>
+          <span class="caption">到期收益：</span>
+          <span class="field"><mark class="mark">{{=Util.padFloatMoney(it.revenue)}}</mark>元</span>
+          <span class="caption">起息日期：</span>
+          <span class="field">{{=it.staRateDate}}</span>
+          <span class="caption">到期日期：</span>
+          <span class="field">{{=it.endDate}}</span>
+        </div>
+        <div class="row">
+        </div>
+        <hr class="dash">
+        <div class="row">
+          <span class="caption">已用鸟币：</span>
+          <span class="field">{{=it.usedCoin}}鸟币</span>
+          <span class="caption">已用金券：</span>
+          <span class="field">{{=(it.couponId == 0 &&it.presentCode == 0? '无' : it.usedCouponText)}}</span>
+        </div>
+        <div class="row">
+          <span class="caption">应付金额：</span>
+          <span class="field">{{=Util.padFloatMoney(it.buyAmount)}}元</span>
+          <span class="caption">实付金额：</span>
+          <span class="field"><mark class="mark">{{=it.amountMoney}}</mark>元</span>
+        </div>
+        <div class="row">
+          <div class="accept">
+            <input id="isRead" class="check" type="checkbox" checked>
+            <label for="isRead" class="label">我已阅读并同意</label>
+            <a class="link" href="/html/product/capital" target="_blank">《资金托管协议》</a><span>和</span>
+             <a class="link" href="/html/product/financed" target="_blank">《支付协议》</a>
+          </div>
+          <div class="action">
+            <button class="button" id="submit" onclick="user().clickEvent();">确认投资</button>
+            <div class="tips">友情提示：强烈建议使用IE9以上浏览器，需注意处理浏览器右上角地址栏的拦截信息。</div>
+          </div>
+          {{ if(it.isNoPwdTZ=='N'){ }}
+          <div class="tips">
+            <span class="info">开通投资免密支付后下次无需再次输入支付密码</span>
+          </div>
+          {{ } }}
+        </div>
+</script>

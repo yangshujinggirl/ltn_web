@@ -1,0 +1,79 @@
+.account-point {
+  $high: #ff5900;
+  padding: 10px 35px 35px;
+  .itemnav {
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    .itemnav-left {
+      text-align: center;
+      float: left;
+      .ite {
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        line-height: 50px;
+        color: #333;
+        position: relative;
+        bottom: -1px;
+        &.selected {
+          border-bottom: 3px solid $high;
+          color: $high;
+        }
+      }
+    }
+
+    .itemnv-right {
+      float: right;
+      font-size: 14px;
+      padding-left: 124px;
+      height: 50px;
+      color: #999;
+      line-height: 50px;
+      background: url(/html/img/viewall_liandong.png) no-repeat left center;
+    }
+  }
+  .tab {
+    margin: 15px 0;
+    .item {
+      height: 30px;
+      line-height: 30px;
+      display: inline-block;
+      padding: 0 30px;
+      &.selected, &:hover {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        color: #ff5900;
+        border: 1px solid #ff5900;
+      }
+    }
+  }
+  #pointDataList {
+    table {
+      width: 100%;
+      padding: 0 30px;
+      thead tr {
+        font-size: 16px;
+        background-color: #ececec;
+      }
+      th, td {
+        padding: 10px 25px;
+        text-align: left;
+      }
+      tr {
+        font-size: 14px;
+        &:nth-child(even) {
+          background-color: #f7f7f7;
+        }
+      }
+    }
+  }
+  .nolist {
+    width: 196px;
+    height: 179px;
+    margin: 0 auto;
+    background: url(/html/img/jz.jpg);
+    display: none;
+  }
+}

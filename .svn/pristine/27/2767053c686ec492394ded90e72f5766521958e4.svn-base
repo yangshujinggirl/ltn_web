@@ -1,0 +1,255 @@
+<div class="fully" id="top">
+  <div class="wrap">
+    <div class="banner">
+      <a href="/html/user/register/"><img src="/html/img/fully-banner.png"></a>
+    </div>
+    <div class="form" id="form">
+       <div class="row" id="wrapTel">
+          <div class="field">
+            <input class="input" type="text" placeholder="请输入手机号"  id='txtTel' data-required='true' data-type='telephone' data-emptyTip='手机号不能为空' data-errorTip="手机号不符合规则">
+          </div>
+          <div class="validation"></div>
+        </div>
+        <div class="row" id="wrapImg">
+          <div class="field" id="imageCon">
+            <input class="input short" type="text" placeholder="请输入图片验证码" id="txtImageCode" data-required='true' data-emptyTip='图片验证码不能为空' data-type='imgCode'  data-errorTip="图片验证码不符合规则">
+            <img class="validate-image" src="" alt="图片验证码" id="imageCode">
+          </div>
+          <div class="validation"></div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <input class="input info" type="text" placeholder="请输入短信验证码"  id="txtPhoneCode" data-required='true' data-emptyTip='短信验证码不能为空' data-type='phoneCode'  data-errorTip="短信验证码不符合规则">
+            <button class="validate-sms disabled" id="sendPhoneCode" disabled="disabled" >发送验证码</button>
+          </div>
+          <div class="validation"></div>
+        </div>
+         <div class="row">
+            <!-- <div class="caption">登录密码</div> -->
+            <div class="field">
+              <input class="input ID" type="password" placeholder="请输入6-18数字、字母组合" id="txtPsd" data-required='true' data-emptyTip='密码不能为空' data-type='password'  data-errorTip="密码不符合规则">
+            </div>
+            <div class="validation"></div>
+        </div>
+        <div class="row">
+          <div class="accept">
+            <input id="isRead" class="check" type="checkbox" checked="checked">
+            <label for="isRead" class="label">我已阅读并同意</label>
+            <a class="link" href="/html/user/line" target="_balnk">《在线服务协议》</a>
+          </div>
+        </div>
+        <div class="login-tip" id="loginTip">
+          <span class="icon-wran"></span>
+          <span class="wran-tip" id="wranTip"></span>
+        </div>
+        <div class="row">
+          <div class="action">
+            <button class="button1" id="submit">注册领取万元体验金</button>
+            <div class="zhanghao">
+              <span>已有账号，</span><a class="link" href="/html/user/login">立即登录</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="float xuanfu">
+      <div class="xiaoniao">
+         <img src="/html/img/xiaoniao-2.png">
+      </div>
+      <hr/>
+      <div class="title">注册成功！</div>
+      <div class="item">请您登录www.lingtouniao.com,<br/>开始赚钱!</div>
+    </div>
+    <div class="top">
+      <div class="product">
+        <div class="caption">
+          <div class="icon1">
+            <img src="/html/img/money.png">
+          </div>
+          <div class="item">灵活存取</div>
+          <div class="field">3-180天产品多样化<br/>
+             资金零闲置</div>
+        </div>
+        <div class="caption">
+          <div class="icon1">
+            <img src="/html/img/hands.png">
+          </div>
+          <div class="item">合伙赚钱</div>
+          <div class="field">邀请好友一起投<br/>
+             平台奖励天天有</div>
+        </div>
+        <div class="caption">
+          <div class="icon1">
+            <img src="/html/img/hansmoney.png">
+          </div>
+          <div class="item">优质资产</div>
+          <div class="field">项目来自真实房产交易<br/>
+             银行批贷项目</div>
+        </div>
+        <div class="caption">
+          <div class="icon1">
+            <img src="/html/img/shield.png">
+          </div>
+          <div class="item">多重保障</div>
+          <div class="field">百人风控团队全面审核<br/>
+             资金第三方托管</div>
+        </div>
+      </div>
+    </div>
+    <div class="new">
+      <div class="couple">注册即享四重好礼</div>
+      <div class="product">
+        <div class="caption1">
+          <div class="new-top">
+            <div class="title">新手红包</div>
+            <div class="num">¥88</div>
+          </div>
+          <div class="success">完成新手任务领取</div>
+          <a href="#top"><button class="button">立即注册</button></a>
+        </div>
+        <div class="caption1">
+          <div class="new-top">
+            <div class="title">体验金</div>
+            <div class="num">¥10000</div>
+          </div>
+          <div class="success">注册即享，收益归您</div>
+          <a href="#top"><button class="button">立即注册</button></a>
+        </div>
+        <div class="caption1">
+          <div class="new-top">
+            <div class="title">新手加息</div>
+            <div class="tequan">新手特权标</div>
+            <div class="num">15%-18%</div>
+          </div>
+          <div class="success">新手首次投标专享</div>
+          <a href="#top"><button class="button">立即实名</button></a>
+        </div>
+        <div class="caption1">
+          <div class="new-top">
+            <div class="title">合伙人奖励</div>
+            <div class="shouyi">平台奖励好友收益的</div>
+            <div class="num">7%-10%</div>
+          </div>
+          <div class="success">推荐好友投资</div>
+          <a href="#top"><button class="button">立即绑卡</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="ltnproduct">
+      <div class="couple"><span class="pro">产品专注</span>不动产理财</div>
+      <div class="product">
+        <div class="caption">
+          <div class="title">新手专享</div>
+          <div class="recommended">起投：100元      期限：3天-30天</div>
+          <div class="manic">15%－18%</div>
+          <a href="#top"><div class="button">立即投资</div></a>
+        </div>
+        <div class="caption">
+          <div class="title">乐巢投</div>
+          <div class="recommended">起投：1000元      期限：5天-60天</div>
+          <div class="manic">8.8%－12%</div>
+          <a href="#top"><div class="button">立即投资</div></a>
+        </div>
+        <div class="caption">
+          <div class="title">乐巢投系列</div>
+          <div class="recommended">起投：1000元      期限：30天-180天</div>
+          <div class="manic">9%－12%</div>
+          <a href="#top"><div class="button">立即投资</div></a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="makeMoney">
+      <div class="couple">安全保障真实透明</div>
+      <div class="product">
+        <div class="jine">
+            <span class="matters">理财金额</span>
+            <span class="bar">
+              <span class="ling">0</span>
+              <span class="wan">5万</span>
+            </span>
+            <span class="total">50,000元</span>
+        </div>
+        <div class="jine time">
+            <span class="matters">理财期限</span>
+            <span class="bar">
+              <span class="ling">1个月</span>
+              <span class="wan">3个月</span>
+              <span class="liu">6个月</span>
+            </span>
+            <span class="total">6个月年利率10.2%</span>
+        </div>
+        <div class="gains">领投鸟一共帮您赚取了<font class="teshu">2，550</font>元的收益</div>
+      </div>
+    </div> -->
+    <div class="safety">
+      <div class="couple"><span class="pro">安全保障</span>真实透明</div>
+      <div class="product">
+        <div class="caption">
+          <div class="icon1"><img src="/html/img/anquan-icon1.png"></div>
+          <div class="title">资金安全</div>
+          <div class="field">资金安全，资金由第三方支付机构联动优势<br/>
+          (中国移动和中国银联联合成立)联合银行存管，<br/>
+          平台不触碰资金。</div>
+          <br/>
+          &nbsp;
+        </div>
+        <div class="caption">
+          <div class="icon1"><img src="/html/img/anquan-icon2.png"></div>
+          <div class="title">业务安全</div>
+          <div class="field"></div>
+          <div class="field">•&nbsp;&nbsp;资金主要用于借款人房产交易过程中产生的<br/>
+          短期资金周转，房屋标的信息真实可查。<br/>
+
+          •&nbsp;&nbsp;通过账户托管，资金直接流向借款人账户，<br/>
+          线下跟进保证专款专用。</div>
+        </div>
+        <div class="caption">
+          <div class="icon1"><img src="/html/img/anquan-icon3.png"></div>
+          <div class="title">风险控制</div>
+          <div class="field">•&nbsp;&nbsp;百人专业风控团队，全面审核房屋产权<br/>
+          房屋市值评估、房屋交易合同、银行批贷函、<br/>
+          借款人征信和还款能力。<br/>
+
+          •&nbsp;&nbsp;借款金额不高于房屋评估价40%。</div>
+        </div>
+        <div class="caption">
+          <div class="icon1"><img src="/html/img/anquan-icon4.png"></div>
+          <div class="title">公开透明</div>
+          <div class="field">•&nbsp;&nbsp;平台录入全部房产交易真实信息，每月<br/>
+          发布运营报告，披露细节。<br/>
+
+          •&nbsp;&nbsp;定期邀请投资用户线下考察集团经营<br/>
+          情况和房产真实交易情况。</div>
+        </div>
+      </div>
+    </div>
+    <div class="ltn">
+      <div class="couple">关于领投鸟</div>
+      <p>“领投鸟理财”（lingtouniao.com）是上海专注于不动产理财的稳健高效互联网金融平台。
+      平台标的均来自真实房屋交易，资金由第三方支付机构联动优势联合银行存管。
+      领投鸟理财核心团队成员来自腾讯、阿里巴巴、微软等知名IT公司和渣打银行、嘉实基金等权威金融机构及同舟等专业律师事务所。</p>
+      <div class="caption">
+        <img src="/html/img/ldy-img.png">
+        <div class="field">2016年2月25日，领投鸟成为上海金融<br/>
+         信息行业协会理事单位。</div>
+      </div>
+      <div class="caption">
+        <img src="/html/img/ldy-img2.png">
+        <div class="field">2016年3月15日，领投鸟董事长章瑞瑞<br/>
+         接受第一财经专访。</div>
+      </div>
+      <div class="caption">
+        <img src="/html/img/ldy-img3.png">
+        <div class="field">2016年5月10日，网贷天眼风控团队<br/>
+         赴沪考察领投鸟平台。</div>
+      </div>
+    </div>
+    <a href="#top"><button class="investment">1分钟快速注册</button></a>
+    <div class="register">
+      <div class="title">恭喜您注册成功！</div>
+      <div class="item">请您登录www.lingtouniao.com,<br/>开始赚钱!</div>
+      <button class="button">确定</button>
+      <div class="cha"><img src="/html/img/money-cha.png"></div>
+    </div>
+  </div>
+  <div class="cover"></div>
+</div>

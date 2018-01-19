@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name=”renderer” content=”webkit” />
+  <script src="/js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/app.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/about/confirm/script.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  加载中...
+</body>
+</html>

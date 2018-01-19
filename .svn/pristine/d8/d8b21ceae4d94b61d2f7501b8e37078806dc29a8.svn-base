@@ -1,0 +1,105 @@
+<div class="account-content page-component">
+  <div class="wrap wrapTop">
+    <div class="message">
+      <div class="lefttop">
+        <div class="leftContent">
+          <div class="peopleinfor" id="leftInfo">
+            <!-- <div class="left_nav_logo"></div>
+            <div class="item phone">
+              你好，<span></span>
+            </div>
+            <div class="item partner">
+              <span class="type"></span>
+              <span class="partnertips"></span>
+            </div>
+            <div class="item icon">
+              <div class="telIco">
+                <span id="tips"></span>
+              </div>
+              <div class="realnameIcon">
+                <span id="tips"></span>
+              </div>
+              <div class="cardIcon">
+                <span id="tips"></span>
+              </div>
+            </div> -->
+          </div>
+          <div class="myaccount" id="leftnav">
+            <div class="list">
+              <div class="list2">
+                <div class="list1">
+                  <div class="titleicon"></div>
+                  <div class="title">
+                  <a href="javascript:void(0)" data-link="/html/account/viewall/" id='item0' class="item" >账户总览</a>
+                  </div>
+                </div>
+               <!--  <a href="/html/account/detailprofit/" class="item">收益明细</a> -->
+                <div class="list1">
+                  <div class="titleicon"></div>
+                  <div class="title">资金管理</div>
+                </div>
+                  <a href="javascript:void(0)" data-link="/html/account/detailmoney/" id='item1' class="item">资金明细</a>
+                  <a href="javascript:void(0)" data-link="/html/account/bank/" id='item2' class="item" id="chargeDepost">充值提现<i class="hot"></i></a>
+                  <a href="javascript:void(0)" data-link="/html/account/card1/" id='item3' class="item">我的银行卡</a>
+                  <div class="list1">
+                    <div class="titleicon"></div>
+                    <div class="title">我的投资</div>
+                  </div>
+                  <!-- <a href="javascript:void(0)" data-link="/html/account/freedom/" id='item4' class="item">随心投</a> -->
+                  <a href="javascript:void(0)" data-link="/html/account/trackReacord/" id='item5' class="item">投资记录</a>
+                  <a href="javascript:void(0)" data-link="/html/account/returnedMoney/" id='item6' class="item">回款记录</a>
+                  <div class="list1">
+                    <div class="titleicon"></div>
+                    <div class="title">
+                    <a href="javascript:void(0)" data-link="/html/account/crowd_control/" id='item18' class="item" >我的众筹</a>
+                    </div>
+                  </div>
+                  <div class="list1">
+                    <div class="titleicon"></div>
+                    <div class="title">
+                    <a href="javascript:void(0)" data-link="/html/account/mutual_control/" id='item19'  class="item">我的互助</a>
+                    </div>
+                  </div>
+                  <div class="list1">
+                    <div class="titleicon"></div>
+                    <div class="title">个人设置</div>
+                  </div>
+                  <a href="javascript:void(0)" data-link="/html/account/openAccount/" id='item7' class="item">企业用户</a>
+                  <a href="javascript:void(0)" data-link="/html/account/realname/" id='item8' class="item">实名认证</a>
+                  <a href="javascript:void(0)" data-link="/html/account/password-login/" id='item9' class="item">修改登录密码</a>
+                  <a href="javascript:void(0)" data-link="/html/account/password-trading/" id='item10' class="item">修改交易密码</a>
+                  <a href="javascript:void(0)" data-link="/html/account/infolist/" id='item11' class="item" id="inFos">
+                  我的消息
+                  <span class="redCircle"></span>
+                  </a>
+                  <a href="javascript:void(0)" data-link='/html/account/address' id="item20" class="item">收货地址</a>
+                  <div class="list1">
+                    <div class="titleicon"></div>
+                    <div class="title">我的福利</div>
+                  </div>
+                  <a href="javascript:void(0)" data-link="/html/account/bird/" id='item12' class="item">我的鸟币</a>
+                  <a href="javascript:void(0)" data-link="/html/account/returnTickits/" id='item13' class="item">返现券</a>
+                  <a href="javascript:void(0)" data-link="/html/account/raiseTickits/" id='item14' class="item">加息券</a>
+                  <a href="javascript:void(0)" data-link="/html/account/point/" id='item21' class="item">我的积分</a>
+
+                  <div class="list1">
+                    <div class="titleicon"></div>
+                    <div class="title">推广赚钱</div>
+                  </div>
+                  <a href="javascript:void(0)" data-link="/html/account/partner/" id='item15' class="item">我是合伙人</a>
+                  <a href="javascript:void(0)" data-link="/html/account/inviteRecord/" id='item16' class="item">邀请记录</a>
+                  <a href="javascript:void(0)" data-link="/html/account/awardDetail/" id='item17' class="item">奖励明细</a>
+                  <!-- <a href="/html/account/invest/" class="item">我的理财</a>
+                  <a href="/html/account/bird/" class="item">我的鸟币</a>
+                  <a href="/html/account/security/" class="item">我的理财金券</a>
+                   -->
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- @extendable -->
+
+    </div>
+  </div>
+</div>

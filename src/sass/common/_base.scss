@@ -1,0 +1,118 @@
+@import 'normalize';
+@import 'compass/css3';
+@import "susyone";
+
+$total-columns: 24;
+$column-width: 50px;
+$gutter-width: 10px;
+$grid-padding: 0;
+
+$font-hover-color: #ff6f20;
+$font-height-light-color: $font-hover-color;
+$border-hover-color: $font-hover-color;
+
+$act-btn-color: #ff6f20;
+$act-btn-hover-color: #ff5a00;
+
+$page-width: 1190px;
+$bgColor-body: #f5f6f7;
+
+// style guide
+$bg-btn-hover: #ff5a00;
+$bg-btn: #ff6f20;
+$bg-btn-disabled: #d7d7d7;
+$bg-tb-row: #d7d7d7;
+
+$link-color: #38a2ff;
+$link-color-hover: #ff5a00;
+
+$font-color-title: #3a3a3a;
+$font-color: #6a6a6a;
+$font-color-sub: #8a8a8a;
+
+$font-color-rate: #ea5504;
+$font-color-mark: #ff5a00;
+$font-color-hover: #ff5a00;
+
+$border-color: #e2e2e2;
+$border-color-hover: #ff6f20;
+
+$z-index-header: 9;
+$z-index-cover: 99;
+$z-index-dialog: 999;
+
+html {
+  min-width: $page-width;
+  color: $font-color;
+  font-size: 12px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', SimHei, sans-serif;
+}
+
+body {
+  background: $bgColor-body;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $font-hover-color;
+}
+
+a.selected {
+  color: $font-hover-color;
+}
+
+ul, li {
+  list-style: none;
+}
+button {
+  outline:none;
+}
+.left {
+  height: 100%;
+  float: left;
+}
+
+.right {
+  height: 100%;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+.cfloat{*zoom:1;}
+.cfloat:after{display: block;height:0;visibility: hidden;clear: both;overflow: hidden;content:" ";}
+
+.link {
+  color: $link-color;
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+.button {
+  padding: 0;
+}
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.page-component {
+  > .wrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: $page-width;
+    height: 100%;
+    padding: 0 20px 0 20px;
+    position: relative;
+    overflow: hidden;
+  }
+}

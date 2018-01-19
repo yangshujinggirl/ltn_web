@@ -1,0 +1,97 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+
+<div class="about-partner">
+  <div class="partner-content">
+    <div class="itemnav" id="abouttitle" data-content="/html/about/partner/">
+        <h1 class="head-1">合作伙伴</h1>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/stmg.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">上投摩根</h2>
+        <p class="text">上投摩根基金管理有限公司成立于2004年5月，总部位于上海，注册资本2.5亿元人民币。其中上海国际信托出资占比51%，摩根大通旗下摩根资产管理出资占比49%。集摩根资产管理150年享誉全球的专业资产管理经验，汇上海国际信托扎根本土的悠久品牌信誉，上投摩根传承中外股东精粹，致力于设立和管理证券投资基金，为不同类型的投资者提供多元化、国际领先的资产管理服务。</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/nuode.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">诺德财富</h2>
+        <p class="text">诺德财富投资管理（北京）有限公司，位于CBD商圈，是一家专业金融投资服务公司，主要从事投资管理、投资咨询、资本运作、项目管理等业务。公司有专业的研发团队、操盘团队、风控团队、客户服务团队等，为客户创造了丰富的收益。</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/zhaoshang.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">招商银行</h2>
+        <p class="text">招商银行，是中国第一家完全由企业法人持股的股份制商业银行，简称招行，成于1987年4月8日，由香港招商局集团有限公司创办，是中国内地规模第六大的银行、香港中资金融股的八行五保之一。总行设在深圳市福田区，2002年4月9日，招商银行A股在上海证券交易所挂牌上市。2006年9月22日于港交所上市。</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/guangfa.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">广发银行</h2>
+        <p class="text">广发银行总部位于广州市。1988年9月，经国务院和中国人民银行批准，广东发展银行作为中国金融体制改革的试点银行在美丽的珠江之畔成立，是国内最早组建的股份制商业银行之一。2011年4月8日，经监管机构和相关政府部门批复同意，原注册名称“广东发展银行股份有限公司”更改为“广发银行股份有限公司”，简称“广发银行”；英文名称变更为“China Guangfa Bank”（“中国广发银行”）。</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/liandong.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">联动优势</h2>
+        <p class="text">联动优势科技有限公司由中国移动与中国银联于2003年8月联合发起成立，是目前国内领先的跨综合支付服务提供商，拥有人民银行颁发的《非金融机构支付服务许可证》。联动优势资金托管账户服务，满足了理财平台资金与用户资金分离，用户账户资金采用双重交易验证，仅在用户授权的前提下方可通过投融资系统平台对用户本人资金账户进行充值、预授权、提现、查询，未经用户授权或协商约定，商户无权动用，有效将用户与商户资金分权限进行相应划转。</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/guangda.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">光大证券</h2>
+        <p class="text">光大证券股份有限公司（以下简称“公司”）创建于1996年，系由中国光大集团股份公司投资控股的全国性综合类股份制证券公司，是中国证监会批准的首批三家创新试点公司之一。2009年8月4日，公司成功发行A股股票，共计募集资金109.62亿元，并于8月18日在上海证券交易所挂牌上市，股票简称“光大证券”，股票代码“601788”。</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/nanhua.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">南华期货</h2>
+        <p class="text">南华期货股份有限公司（以下简称“南华期货”）成立于1996年，主要从事商品期货经纪、金融期货经纪、期货投资咨询、资产管理业务、证券投资基金代销业务，为全牌照类综合性期货公司，是中国金融期货交易所首批全面结算会员单位，是上海期货交易所、郑州商品交易所、大连商品交易所的全权会员单位，是上海证券交易所交易参与人。公司注册资金5.1亿人民币，总资产逾120亿人民币，具有较强的资本实力。</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/zhongxin.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">中信银行</h2>
+        <p class="text">中信银行成立于1987年，是中国改革开放中最早成立的新兴商业银行之一，是中国最早参与国内外金融市场融资的商业银行。目前,中信银行总资产超5万亿元人民币，在2015年7月英国《银行家》杂志公布的“世界1000家银行排名”中，中信银行位列一级资本排名第33位，总资产排名第46位；同年5月《福布斯》公布的“全球企业2000强”排名中，中信银行位居第94名，已成为一家资本实力雄厚，具有强大综合竞争力和品牌影响力的国际化金融机构。</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/wangdai.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">网贷之家</h2>
+        <p class="text">网贷之家是中国首家权威P2P网贷行业门户网站，始终站在客观、中立、公正的角度为P2P网络借贷行业的参与者与关注者提供全面、深入、专业的行业资讯，并倾心打造理性、包容、思辨、开放的行业交流社区，致力于推动中国网络借贷行业健康持续发展。网贷之家创立于2011年10月，隶属于上海盈灿投资管理股份有限公司，2015年6月获赛富亚洲和创东方领投的B轮亿元融资，公司总部位于上海市杨浦区政府路18号波司登大厦10层，并在北京、深圳、大连、武汉、成都、济南、杭州设有分部。</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="source">
+      <div class="source-img"><img src="../../../img/tianyan.png"></div>
+      <div class="source-intro">
+        <h2 class="head-2">网贷天眼</h2>
+        <p class="text">网贷天眼，目前国内网贷行业较为权威的第三方机构。创办于2012年3月28日，系北京银讯财富信息技术有限公司旗下网站，2013年10月获得盛大资本数百万元天使轮投资，2014年10月获得联想旗下君联资本千万美元A轮投资。目前已形成资讯、数据、社区、平台档案四大服务体系，汇集逾三千家网贷平台核心信息，数百名行业意见领袖和超过30万注册用户沉淀的高质量原生态内容，网贷天眼正成为中国P2P借贷行业第一信息集聚地，满足投资人不断增长的信息服务需求。</p>
+      </div>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->

@@ -1,0 +1,68 @@
+.about-news {
+  padding:0 35px;
+  .title {
+    font-size: 18px;
+    color: #585858;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #e2e2e2;
+    margin: 20px 0;
+    .item {
+      border-bottom: 2px solid #ea5504;
+      width: 100px;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
+  .media{
+    .list{
+      padding: 20px 20px;
+      .financing{
+        margin-top: 25px;
+        border-bottom: 2px solid #e2e2e2;
+        overflow: hidden;
+        &:last-child {
+          border-bottom: 2px solid #fff;
+        }
+        .section-left{
+          width:540px;
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+          max-height: 240px;
+          overflow: hidden;
+          .financing-left{
+            font-size: 18px;
+           a{
+             color: #ea5504;
+           }
+          }
+          .financing-right{
+            font-size: 12px;
+            color: #ea5504;
+          }
+          p{
+            line-height: 28px;
+            font-size: 14px;
+          }
+          .leftnews{
+            font-size: 16px;
+            margin-top: 20px;
+          }
+        }
+        .section-right{
+          width: 327px;
+          height: 150px;
+          display: inline-block;
+          margin:40px 0 0 15px;
+          img{
+            position: relative;
+            top:-62px;
+          }
+        }
+
+      }
+    }
+  }//media
+}//news

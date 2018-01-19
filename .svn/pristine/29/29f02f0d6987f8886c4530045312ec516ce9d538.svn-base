@@ -1,0 +1,88 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<div class="account-cardchange">
+  <div class="title" id="account-card" data-content="/html/account/card1/">
+   <div class="item">我的银行卡</div>
+  </div>
+  <div class="content">
+    <div class="cont-top">
+      <div class="prompt"><i><img src="../../../img/card-img1.png"></i>温馨提示</div>
+      <p class="paragraph">
+      为了保障您的账户安全，申请变更后请您联系领投鸟客服400-999-9980提供换卡资料进行线下审核， 自提交资料后2-3个工作日反馈审核结果。
+      </p>
+    </div>
+    <div class="cont-bottom">
+      <div class="form" id="form">
+        <div class="row">
+          <div class="caption">用户名</div>
+          <div class="field">
+            <input class="input" type="text" id='txtName' disabled="disabled">
+          </div>
+          <div class="validation">
+            <span class="icon">!</span>请更换本人名下的银行卡
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">请选择银行</div>
+          <div class="field" id="wrapBank">
+            <select name="" id="txtBank" class="input">
+              <option value="中国银行">中国银行</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">银行卡号</div>
+          <div class="field">
+            <input class="input" type="text" placeholder="请输入银行卡号" id='txtCard' data-required='true' data-type='bankCard' data-emptyTip='银行卡号不能为空' data-errorTip="银行卡号不符合规则">
+          </div>
+          <div class="validation"></div>
+        </div>
+        <div class="login-tip" id="loginTip">
+          <span class="icon-wran"></span>
+          <span class="wran-tip" id="wranTip"></span>
+        </div>
+        <button class="button" id="submit" onclick="user().clickEvent();">确定更换银行卡</button>
+        <div class="tips2">
+        友情提示：<br/>
+        此处为第三方支付平台和银行接口验证银行卡信息，如有疑问，请拨打电话：400-999-9980<br/>
+        强烈建议使用IE9以上浏览器，需注意处理浏览器右上角地址栏的拦截信息。
+        </div>
+      </div>
+      <div class="quickly">
+        <h2>快捷银行卡换卡流程</h2>
+        <p>
+        为了充分保障您的快捷银行卡账户安全，我们将通过线上快速申请与线下人工审核相结合的方式为您更换快捷银行。
+        <br/>
+        <font style="font-weight: bold;">线上申请快速换卡：</font><br/>
+        登录领投鸟网站进入“我的账户-账户设置-我的银行卡“或登录领投鸟APP”我的账户-设置-我的银行卡“申请更换银行卡；<br/>
+        （注意：申请前请保证该卡在平台无剩余资金、无投资中标的，且提现资金已到账银行卡；一般1个工作日内换卡成功，否则需进行下面的人工审核换卡）<br/><br/>
+        <font style="font-weight: bold;">人工审核换卡：</font><br/>
+        <font style="font-weight: bold;">一、原银行卡和新卡皆在：</font><br/>
+        步骤一：登录领投鸟网站进入“我的账户-账户设置-我的银行卡“或登录领投鸟APP”我的账户-设置-我的银行卡“申请更换银行卡；<br/>
+        步骤二：致电领投鸟（申请后请及时致电哦）
+        请拨打领投鸟客服热线400-999-9980，由我们的客服人员与您沟通准备换卡资料的事宜；<br/>
+        步骤三：邮件提供换卡资料<br/>
+        请您提供如下六张照片发送至service@lingtouniao.com，以便领投鸟客服人工审核：<br/>
+        1) 您手持身份证照片正反面，显示本人脸和手臂，图片应能看清身份证号、人像；<br/>
+        2) 您手持原卡、新卡正反面照片，显示本人脸和手臂，图片应能看清银行卡卡号；<br/>
+        注意：新卡需为平台当前支持的储蓄卡类型。<br/><br/>
+        <font style="font-weight: bold;">二、若原绑定银行卡已丢失，需再提供：</font><br/><br/>
+        1) 出示原卡挂失证明；<br/>
+        2) 原卡的开户证明或银行开具的一个月内交易流水并加盖银行公章；<br/>
+        3) 新卡开户单子或新卡与身份证关联关系证明（银行出具）；<br/>
+        提醒：若您丢失原卡开户证明或原卡已销毁等相关资料，请用户提供换卡证明，且证明上需印有银行柜台鲜章以便审核。<br/><br/><br/>
+        <font style="font-weight: bold;">查看换卡审核结果：</font><br/>
+        自提交资料后2-3个工作日后，登录领投鸟站进入“我的账户-我的设置-我的银行卡“或登录领投鸟APP”我的账户-设置-我的银行卡“查看换卡审核结果。<br/>
+
+        您在办理换卡过程中，如有疑问请直接拨打领投鸟客服热线400-999-9980咨询。</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- @endextend -->
+<!-- @endextend -->

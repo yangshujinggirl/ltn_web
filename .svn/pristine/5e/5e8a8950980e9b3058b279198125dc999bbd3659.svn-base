@@ -1,0 +1,56 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+
+<div class="account-trading">
+  <div class="change-password">
+    <p class="text1">
+      修改资金托管帐户支付密码：<br>
+      您可以编辑短信“GGMM#原密码#新密码”（例如：GGMM#123456#456789）
+      发送至10690569687（联动优势）修改您的支付密码，支付密码只能是6位数字。
+    </p>
+    <div class="process">
+      <div class="step">
+        <img src="/img/trading_01.png" alt="">
+        <div class="icon-text">
+          <em class="icon">1</em>
+          <span class="font1">编辑短信内容：GGMM#原密码#新密码</span>
+        </div>
+      </div>
+     <div class="step step2">
+        <img src="/img/trading_02.png" alt="">
+        <div class="icon-text">
+          <em class="icon">2</em>
+          <span class="font1">发送到联动优势短信号码：10690569687</span>
+        </div>
+      </div>
+      <div class="step">
+        <img src="/img/trading_03.png" alt="">
+        <div class="icon-text">
+          <em class="icon">3</em>
+          <span class="font1">查看手机短信，确认支付密码修改成功</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="forget-password">
+    <p class="text1">
+      忘记资金托管帐户支付密码：<br>
+      若您已忘记资金托管账户支付密码，可以申请重置支付密码，
+      联动优势会将新的支付密码以短信形式发送到您的手机，请注意接收并妥善保管。
+    </p>
+    <div class="reset">
+      <!-- <button class="reset-btn">重置支付密码</button> -->
+      <div class="validation">
+        <span class="icon">!</span>
+       若新支付密码不便记忆，建议回复短信修改为你熟悉的密码。
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- @endextend -->
+<!-- @endextend -->

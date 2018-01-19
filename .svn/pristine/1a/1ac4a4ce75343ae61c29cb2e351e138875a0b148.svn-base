@@ -1,0 +1,16 @@
+<div class="open-close" id="largeRechargePopup">
+  <div class="e-bank-content">
+    <h1 class="tips">提示</h1>
+    <p class="open-function">您是否完成网银充值</p>
+    <p class="txt1">
+      <span class="if">是)</span>查看充值明细<br>
+      <span class="if">否)</span>建议您查看帮助中心<br>
+      <span class="if">或)</span><a href="#" class="goDetail">继续充值</a>
+    </p>
+    <div class="field">
+      <button class="yes goCenter" onclick="user().clickEvent();">是</button>
+      <button class="no goHelp" onclick="user().clickEvent();">否</button>
+    </div>
+    <span class="closeBtn"></span>
+  </div>
+</div>

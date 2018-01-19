@@ -1,0 +1,365 @@
+<div class="finance">
+  <div class="finance_banner" id="topbanner">
+    <img src="/img/finance_banner.jpg">
+  </div>
+  <div class="finance_content">
+    <div class="prize">
+      <div class="prize_left">
+        <a href="#choujiangZp"><img src="/img/finance_choujiang.png"></a>
+      </div>
+      <div class="prize_right">
+        金秋收获季，领投鸟获得上市公司亿元级融资！集团深耕市场近三年，领投鸟平台自今年1月上线以来，一路的成长离不开新老用户的信任，9月中秋“蟹蟹节”，感谢有你，请收下这份来自领投鸟的真诚好礼！
+      </div>
+    </div>
+    <div class="welcome" id="thanksyou">
+      <div class="welcome_left">
+        <img src="/img/welcome_songshu.png">
+      </div>
+      <div class="welcome_right">
+        <div class="time">活动时间：2016年9月1日~2016年9月25日</div>
+        <div class="involvement"><span class="canyu">参与人员：</span>9月1日起注册领投鸟的新用户<br/>
+        <span class="canyu">活动规则：</span>新手注册24小时内，投资非新手标满<span class="hongse">2000</span>元，
+        送<span class="hongse">“三只松鼠”坚果一份。</span></div>
+        <a href="/html/product/#!/short/0/0/1"><button class="button1">立即投资</button></a>
+      </div>
+    </div>
+    <div class="first_lists">
+      <div class="lists_top">
+        <div class="lists_left">
+            <img src="/img/pangxie.png">
+          </div>
+          <div class="lists_right">
+            <div class="time">活动时间：2016年9月1日~2016年9月25日</div>
+            <div class="involvement"><span class="canyu">参与人员：</span>9月1日起注册领投鸟的新用户<br>
+            <span class="canyu">活动规则：</span>活动期间注册的新用户，在领投鸟平台累计投资额进入新手累投榜前<span class="hongse">200名</span>，即送<span class="hongse">“阳澄湖大闸蟹”4只</span>。</div>
+          </div>
+      </div>
+      <div class="lists_bottom" id="propListerbai">
+        <ul class="info_title">
+          <li>排名</li>
+          <li>用户</li>
+          <li>投资金额</li>
+        </ul>
+        <div id="scrollDiv2">
+          <div class="scrollText">
+            <ul class="info_list">
+              <!-- <li class="list_cont">
+                <span class="one">1</span>
+                <span class="tel">18516062598</span>
+                <span class="money">￥3000，000.00</span>
+              </li>
+              <li class="list_cont">
+                <span class="two">2</span>
+                <span class="tel">18516062598</span>
+                <span class="money">￥3000，000.00</span>
+              </li>
+              <li class="list_cont">
+                <span class="three">3</span>
+                <span class="tel">18516062598</span>
+                <span class="money">￥3000，000.00</span>
+              </li>
+              <li class="list_cont">
+                <span class="three">3</span>
+                <span class="tel">18516062598</span>
+                <span class="money">￥3000，000.00</span>
+              </li>
+              <li class="list_cont">
+                <span class="ordinary">4</span>
+                <span class="tel">18516062598</span>
+                <span class="money">￥3000，000.00</span>
+              </li>
+              <li class="list_cont">
+                <span class="ordinary">5</span>
+                <span class="tel">18516062598</span>
+                <span class="money">￥3000，000.00</span>
+              </li>
+              <li class="list_cont">
+                <span class="ordinary">6</span>
+                <span class="tel">18516062598</span>
+                <span class="money">￥3000，000.00</span>
+              </li>
+              <li class="list_cont">
+                <span class="ordinary">7</span>
+                <span class="tel">18516062598</span>
+                <span class="money">￥3000，000.00</span>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="prolistnone"><span class="prolistnonetxt">暂无纪录！</span></div>
+        <div class="info_last">
+          <span class="ordinary"><span class="tactful"></span>200</span>
+          <span class="tel">18516062598</span>
+          <span class="money"> ￥1，000.00</span>
+        </div>
+      </div>
+     <a href="/html/product/#!/short/0/0/1"><button class="button2">投资冲榜</button></a>
+    </div>
+    <div class="notes">
+      <div class="notes_top">
+        <div class="notes_left" id="choujiangZp">
+            <div id="lottery">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="lottery-unit lottery-unit-0"><img src="/img/ipadmini.png"></td>
+                  <td class="lottery-unit lottery-unit-1"><img src="/img/jianguo.png"></td>
+                  <td class="lottery-unit lottery-unit-2"><img src="/img/finance_jiaxiquan.png"></td>
+                </tr>
+                <tr>
+                  <td class="lottery-unit lottery-unit-7"><img src="/img/xiexiecanyu.png"></td>
+                  <td colspan="1" rowspan="1" id="choujiang">
+                       <img src="/img/finance_shoujiang.png">
+                  </td>
+                  <td class="lottery-unit lottery-unit-3"><img src="/img/zhaxie.png"></td>
+                  <td class="login_but">
+                    <a href="javascript:void(0);" id="LoginBbut">
+                      <img src="/img/finance_login.png">
+                    </a>
+                  </td>
+                  <td class="qidai_but">
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_qidai.png">
+                    </a>
+                  </td>
+                  <td class="jiezhi_but">
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_jiezhi.png">
+                    </a>
+                  </td>
+                  <td class="wujihui_but">
+                    <a href="javascript:void(0);">
+                      <img src="/img/finance_wujihui.png">
+                    </a>
+                  </td>
+                </tr>
+                    <tr>
+                  <td class="lottery-unit lottery-unit-6"><img src="/img/finance_fanxianquan.png"></td>
+                  <td class="lottery-unit lottery-unit-5"><img src="/img/finance_yuebing.png"></td>
+                  <td class="lottery-unit lottery-unit-4"><img src="/img/dianfanbao.png"></td>
+                </tr>
+              </table>
+            </div>
+            <div class="surplus" id="propSurplus">
+              您当前还可抽奖<span class="huangse">0</span>次
+            </div>
+        </div>
+        <div class="notes_right">
+            <div class="stretch_info">
+              <div class="stretch_time">活动时间：
+                2016年9月1日~2016年9月25日</div>
+              <div class="renyuan"><span class="Cyry">参与人员：</span>所有领投鸟投资用户</div>
+              <div class="guize">
+                <span class="Cyry">活动规则：</span><br>
+                1. 领投鸟用户单笔投资额每超越一次自己“历史单笔最高投资额”，即获得三次转盘抽奖机会；<br>
+                2. 每位投资用户拥有N次原始抽奖机会，N为9月1日前个人历史投资次数，上限5次；<br>
+                3. 每位投资用户每天新增抽奖次数上限20次，未抽奖机会将保留至9月25日23:00点；<br>
+                4.抽奖机会越多，中奖越多！
+              </div>
+            </div>
+            <div class="tallhigh" id="propTallhigh">
+              <div class="high_top">您历史单笔最高投资额（元）</div>
+              <!-- <div class="high_bottom">￥888,000,000.00</div> -->
+              <div class="noLogin"><a href="#" id="denglu2">登录</a>可见</div>
+            </div>
+        </div>
+      </div>
+      <div class="notes_bottom">
+        <div class="onlyone" id="proponlyone">
+          <ul class="onlyone_list">
+            <li class="gerentitle">
+              <span class="title">序号</span>
+              <span class="title">抽奖时间</span>
+              <span class="title">抽中奖品</span>
+            </li>
+            <!-- <li class="onlyone_info">
+             <span class="sequence">1</span>
+             <span class="time">9月6日10：30</span>
+             <span class="gift">IPAD一个</span>
+            </li>
+            <li>
+             <span class="sequence">2</span>
+             <span class="time">9月6日10：30</span>
+             <span class="gift">IPAD一个</span>
+            </li>
+            <li>
+             <span class="sequence">3</span>
+             <span class="time">9月6日10：30</span>
+             <span class="gift">IPAD一个</span>
+            </li>
+            <li>
+             <span class="sequence">4</span>
+             <span class="time">9月6日10：30</span>
+             <span class="gift">IPAD一个</span>
+            </li>
+            <li>
+             <span class="sequence">5</span>
+             <span class="time">9月6日10：30</span>
+             <span class="gift">IPAD一个</span>
+            </li>
+            <li>
+             <span class="sequence">6</span>
+             <span class="time">9月6日10：30</span>
+             <span class="gift">IPAD一个</span>
+            </li> -->
+          </ul>
+          <div class="prolistnone2" id="xiaoniao"><span class="prolistnonetxt">暂无纪录！</span></div>
+          <div class="nolist">
+            <div class="logoIcon">
+              暂无记录，<a href="#" class="denglu" id="loginonly">登录</a>后可见
+              </div>
+          </div>
+        </div>
+        <div class="platform" id="propPlatform">
+          <ul class="PlatformList">
+            <li>
+              <span class="title1">序号</span>
+              <span class="title">抽奖时间</span>
+              <span class="title">抽中奖品</span>
+            </li>
+          </ul>
+          <div id="scrollDiv3">
+            <div class="scrollText2">
+                <ul class="onlyone_list">
+                  <!-- <li class="onlyone_info">
+                   <span class="sequence">1</span>
+                   <span class="time">9月6日10：30</span>
+                   <span class="gift">IPAD一个</span>
+                  </li>
+                  <li>
+                   <span class="sequence">2</span>
+                   <span class="time">9月6日10：30</span>
+                   <span class="gift">IPAD一个</span>
+                  </li>
+                  <li>
+                   <span class="sequence">3</span>
+                   <span class="time">9月6日10：30</span>
+                   <span class="gift">IPAD一个</span>
+                  </li>
+                  <li>
+                   <span class="sequence">4</span>
+                   <span class="time">9月6日10：30</span>
+                   <span class="gift">IPAD一个</span>
+                  </li>
+                  <li>
+                   <span class="sequence">5</span>
+                   <span class="time">9月6日10：30</span>
+                   <span class="gift">IPAD一个</span>
+                  </li>
+                  <li>
+                   <span class="sequence">6</span>
+                   <span class="time">9月6日10：30</span>
+                   <span class="gift">IPAD一个</span>
+                  </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="prolistnone3" id="xiaoniao2"><span class="prolistnonetxt">暂无纪录！</span></div>
+        </div>
+      </div>
+      <a href="/html/product/#!/short/0/0/1"><button class="button4">刷新自己</button></a>
+      <div class="bettering">刷新历史记录，获取更多抽奖机会吧！</div>
+    </div>
+    <div class="back" id="thanksBack">
+      <div class="welcome_left">
+        <img src="/img/finance_jingdong.png">
+      </div>
+      <div class="welcome_right">
+        <div class="time">活动时间：2016年9月1日~2016年9月25日</div>
+        <div class="involvement"><span class="canyu">参与人员：</span>9月1日前注册领投鸟平台的新用户<br/>
+        <span class="canyu">活动规则：</span>首次投资发生在活动期间，投资非新手标累计额满<span class="hongse">5000元</span>，送价值<span class="hongse">50元</span>京东购物卡一张，限量<span class="hongse">8888张</span>，按投资顺序先到先得。</div>
+      </div>
+      <a href="/html/product/#!/short/0/0/1"><button class="button3">回来投资</button></a>
+    </div>
+  </div>
+  <div class="navLan">
+    <div class="start_choujiang">
+      <a href="#choujiangZp"><img src="/img/start_choujiang.png"></a>
+    </div>
+    <a href="#choujiangZp">
+      <div class="suoyou">
+          所有投资用户
+      </div>
+    </a>
+    <a href="#thanksyou">
+      <div class="nav2">
+        <div class="time">9月１日后</div>
+        <div class="newyonghu">新注册用户</div>
+      </div>
+    </a>
+
+    <a href="#thanksBack">
+      <div class="nav2 nav3">
+        <div class="time">9月1日前</div>
+        <div class="newyonghu">注册用户</div>
+      </div>
+    </a>
+    <div class="backTop">
+      <a href="#topbanner"><img src="/img/finance_top.png"></a>
+    </div>
+  </div>
+  <div class="last">
+    本活动最终解释权归领投鸟所有
+  </div>
+</div>
+<div class="finance_cover"></div>
+<div class="prize_win">
+  <div class="win_title" id="prizeName">抽中iPad mini一台！</div>
+  <div class="win_gift">
+    <div class="win_left">
+      <div class="tp" id="winImg">
+      </div>
+    </div>
+    <div class="win_right">
+      <img src="/img/finance_code.png">
+    </div>
+    <div class="gift_info">
+      请关注领投鸟公众号，留下您的地址和联系方式，
+       我们将统一安排为您寄送！
+    </div>
+    <button class="zaiyici"></button>
+    <button class="sure"></button>
+  </div>
+  <div class="win_gift2">
+      <div class="win_left">
+        <div class="jiaxiquan2">
+          <img src="/img/finance_jiaxiquan2.png">
+        </div>
+      </div>
+      <div class="gift_info">
+        您可以去“我的账户-理财金券”中查看
+      </div>
+        <button class="sure2"></button>
+  </div>
+  <div class="win_gift3">
+      <div class="win_left">
+        <div class="jiaxiquan2">
+          <img src="/img/finance_fanxianquan2.png">
+        </div>
+      </div>
+      <div class="gift_info">
+        您可以去“我的账户-理财金券”中查看
+      </div>
+        <button class="sure3"></button>
+  </div>
+  </div>
+</div>
+<!-- <div class="prize_win2">
+  <div class="win_title" id="prizeName">抽中10%加息券一张</div>
+  <div class="win_gift">
+    <div class="win_left">
+      <div class="tp" id="winImg">
+        <img src="/img/finance_jiaxiquan2.png">
+      </div>
+    </div>
+  </div>
+  <div class="gift_info">
+    您可以去“我的账户-理财金券”中查看
+  </div>
+  <button class="sure2"></button>
+</div> -->
+<div class="Notwinning">
+  <div class="not_title">没有抽中！</div>
+  <div class="not_cont">别灰心！再试一次吧！</div>
+  <button class="again"></button>
+  <button class="not_but"></button>
+</div>

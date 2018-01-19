@@ -1,0 +1,163 @@
+$(function() {
+  var page = new Page();
+  page.setTitle('实名认证');
+  var app = {
+    guid: '', //获取唯一标识
+    //获取图形验证码
+    getImageCode: function() {
+      var param = {
+        'clientType': constant().clientType,
+        'machineNo': guid
+      };
+      $.post(constant().url + '/user/register/pictureCode', param, function(data, status) {
+        if (status == "success") {
+          if (data.resultCode == '0') {
+            var obj = constant().url + data.data.pictureCode;
+            //调用渲染模板的方法,第一参数为模板id,第二参数为内容id,第三参数为渲染数据
+            template().renduTemplate('templateImageCode', 'imageCon', obj);
+            //图片验证码重新获取事件
+            $('#imageCode').on("click", function() {
+              app.getImageCode();
+            });
+            //光标离开时验证
+            $('input:not(:checkbox,:radio),select,textarea').on('blur', function() {
+              _this = $(this);
+              var vdRow = _this.parent().parent();
+              var vdTip = vdRow.find('.validation');
+              var vdSuccess = 'validate-success';
+              var vdFailed = 'validate-failed';
+              validate().vd(_this, vdRow, vdTip, vdSuccess, vdFailed, false);
+              app.addEvent(_this, vdRow, vdTip);
+            });
+            //光标集中情况验证
+            $('input:not(:checkbox,:radio),select,textarea').on('focus', function() {
+              var vdRow = $(this).parent().parent();
+              vdRow.removeClass(validate().vdFailed);
+              var vdTip = vdRow.find('.validation');
+              vdTip.html('');
+              $('#loginTip').hide();
+            });
+          }
+        }
+      });
+    },
+    //添加绑定事件
+    addEvent: function(_this, vdRow, vdTip) {
+      //验证图形验证码是否正确
+      if (_this.attr('id') == 'txtCode') {
+        if (!vdRow.hasClass('validate-failed') && strUtil().trim(_this.val()).length > 0) {
+          app.getCodeIsTrue(_this);
+          return;
+        }
+      }
+    },
+    //验证图形验证码是否正确
+    getCodeIsTrue: function(_this) {
+      var imageCode = strUtil().trim(_this.val());
+      var vdRow = _this.parent().parent();
+      var vdTip = vdRow.find('.validation');
+      var param = {
+        'clientType': constant().clientType,
+        'machineNo': guid,
+        'pictureCode': imageCode
+      };
+      $.post(constant().url + '/pc/login/validatePicCode', param, function(data, status) {
+        if (status == "success") {
+          if (data.resultCode == '0') {
+            if (data.data.isPicCodeRight == '1') {
+              vdRow.addClass('validate-success').removeClass('validate-failed');
+            } else {
+              vdRow.addClass('validate-failed').removeClass('validate-success');
+              vdTip.html('验证码错误!');
+              app.getImageCode();
+            }
+          }
+        }
+      });
+      console.log(imageCode);
+    },
+    //提交实名认证
+    testRealname: function(userName,identityCode,pictureCode){
+      var param = {
+        'userName': userName,
+        'identityCode': identityCode,
+        'pictureCode': pictureCode,
+        'machineNo': guid
+      };
+      user().goNewPage(param,'5');
+      $('#message').show();//认证成功弹窗
+      $('#cover').show();
+    },
+    //判断是否实名
+/*    nameOperation: function(){
+      if(user().isNameAuth()){
+       if (typeof addEvent == 'function') {
+          addEvent(); //运行绑定事件
+      }
+    }
+    },*/
+    //初始化方法
+    init: function() {
+      user().updateUserInfo();
+      guid = strUtil().getGuid(); //获取图片guid
+      app.getImageCode();
+    }
+  };
+  app.init();
+
+  //提交验证事件
+  $('#submit').not('.disabled').on("click", function() {
+    //触发所有输入的验证
+    user().testSubmit(app.addEvent);
+    //是否有错误
+    if ($('#form').find('.validate-failed').length != 0) {
+      return false;
+    } else {
+      var userName=strUtil().trim($('#txtName').val());
+      var identityCode=strUtil().trim($('#txtIdentity').val());
+      var pictureCode=strUtil().trim($('#txtCode').val());
+      app.testRealname(userName,identityCode,pictureCode);
+    }
+  });
+  //完成实名事件
+  $('#realnameSuccess').on('click',function(){
+    $('#cover').hide();
+    //更新用户实名信息
+      user().updateUserInfo(addEvent);
+    function addEvent()
+    {
+      if(user().isNameAuth()){
+        user().goBack('/html/loan/loan-index/');
+      }
+    }
+  });
+  //跳转帮助中心
+  $('#goHelp').on('click',function(){
+    $('#cover').hide();
+    //更新用户实名信息
+      user().updateUserInfo();
+    //回到之前的页面
+    user().goBack('/help/certificate');
+  });
+  //关闭错误弹窗
+  $('.shut').on('click',function(){
+    $(this).parent().parent().hide();
+  });
+  //阅读协议勾选变化事件
+  $('#isRead').on("change", function() {
+    var _this = $(this);
+    var btn = $('#submit');
+    if (_this.attr('checked')) {
+      _this.attr("checked", false);
+      btn.addClass('disabled');
+      btn.attr('disabled','true')
+    } else {
+      _this.attr('checked', 'true');
+      btn.removeClass('disabled');
+      btn.removeAttr('disabled');
+    }
+  });
+  $('#close').on('click',function(){
+    $('#message').hide();
+  });
+});

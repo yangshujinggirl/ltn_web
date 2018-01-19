@@ -1,0 +1,24 @@
+<script type="text/template" id="tempPointlList">
+    <table>
+        <thead>
+        <tr>
+
+            <th>说明</th>
+            <th class="productname">数量</th>
+            <th>余额</th>
+            <th>时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{~it:value}}
+        <tr>
+            <td>{{=value.eventType}}</td>
+            <td>{{=(value.operateType==2?"-":"+")}}{{=value.integral}}</td>
+            <td>{{=value.currentIntegral}}</td>
+            <td>{{=value.eventDate}}</td>
+        </tr>
+        {{~}}
+        </tbody>
+    </table>
+
+</script>

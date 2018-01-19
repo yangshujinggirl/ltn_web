@@ -1,0 +1,176 @@
+.account-openAccount {
+  $high:#ff5900;
+  padding:10px 35px 35px ;
+  p{
+    margin:0;
+    padding:0;
+  }
+  .wrapOne {
+    padding:0 10px;
+  }
+  .red {
+    color: $high;
+  }
+  .itemnav {
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    .itemnav-left {
+      text-align: left;
+      .ite {
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        line-height: 50px;
+        color: #333;
+        position: relative;
+        bottom:-1px;
+        text-align: center;
+        &.selected {
+          border-bottom: 3px solid $high;
+          color: $high;
+        }
+      }
+    }
+  }
+  .title {
+    padding:28px 0 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  .stepContent {
+    border: 1px solid #f2f2f2;
+    padding: 34px 28px;
+  }
+  .oneStep {
+    vertical-align: top;
+    .stepContent {
+      font-size: 0;
+      -webkit-text-size-adjust:none;
+      .deal {
+        width: 148px;
+        display: inline-block;
+        margin-right: 30px;
+        .dealName {
+          width: 148px;
+          height: 200px;
+          line-height: 200px;
+          color: #4f5658;
+          font-size: 16px;
+          text-align: center;
+          border: 1px solid #e2e2e2;
+        }
+        .jigou{
+          height: 116px;
+          padding-top: 84px;
+          line-height: 23px;
+        }
+        .download {
+          display: block;
+          text-align: center;
+          font-size: 12px;
+          color: #2a7ffe;
+          margin-top: 15px;
+        }
+      }
+      .liandong {
+        display: inline-block;
+        width: 456px;
+        height: 236px;
+        font-size: 14px;
+        padding:42px 18px 0;
+        box-sizing:border-box;
+        -webkit-box-sizing: border-box;
+        vertical-align: top;
+        box-shadow:0 0 10px rgba(0,0,0,.2);
+        margin-left: 16px;
+        .text {
+          padding:0 12px;
+          margin-bottom:20px;
+          color: #888c8e;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .twoStep,
+  .thrStep {
+    .friendTips {
+      box-shadow:0 0 10px rgba(0,0,0,.2);
+      line-height: 24px;
+      padding:30px;
+      .head {
+        font-size:16px;
+        color: #394043;
+        background: url("/html/img/openAccount/icon.png") no-repeat left top;
+        padding-left:30px;
+      }
+      .tt {
+        padding:0 30px 0 40px;
+        font-size: 14px;
+        color: #919597;
+      }
+    }
+  }
+  .submitStatus-content {
+    .top {
+      text-align: center;
+      padding-bottom:40px;
+    }
+    .tit {
+      font-size: 26px;
+      color: $high;
+      padding-left:40px;
+      line-height: 33px;
+      background: url("/html/img/openAccount/icon1.png") no-repeat 280px center;
+      margin-bottom: 24px;
+    }
+    .openStatus {
+      display: inline-block;
+      font-size: 14px;
+      text-align: left;
+      .commercialInfo {
+        color: #919597;
+        line-height: 24px;
+        .code {
+          color: #394043;
+        }
+      }
+    }
+  }
+  .submitSucess {
+    .openStatus {
+      text-align: center;
+    }
+    .status {
+      font-size: 14px;
+      color: #919597;
+      padding:20px 0 14px;
+    }
+    .attention {
+      font-size: 16px;
+      color: #394043;
+    }
+  }
+  .submitFail {
+    .openStatus {
+      text-align: center;
+    }
+    .tit {
+      background: url("/html/img/openAccount/icon2.png") no-repeat 280px center;
+    }
+    .submitBtn {
+      width: 136px;
+      height: 42px;
+      border: 1px solid #919597;
+      line-height: 42px;
+      color: #919597;
+      font-size: 18px;
+      background-color: #FFF;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      margin-top:20px;
+    }
+  }
+}

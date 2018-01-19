@@ -1,0 +1,18 @@
+<script type="text/template" id="tempNews">
+  <div class="list">
+  {{~it.announcementList:value:index}}
+      <div class="financing">
+          <div class="section-left">
+            <div>
+              <span class="financing-left">
+                <a href="javascript: void(0);" class="newstitle"  data-id="{{=value.id}}" data-type={{=value.type}}>{{=value.title}}</a>
+              </span>
+            <span class="financing-right">{{=value.publishTime}}</span>
+            </div>
+            <div align="left" class="leftnews">{{=value.nIntroduction}}</div>
+          </div>
+          <div class="section-right"><img src="{{=value.nMediaPicture}}"></div>
+      </div>
+      {{~}}
+  </div>
+</script>

@@ -1,0 +1,29 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<!-- @extend ../_paging.html -->
+
+<div class="account-point">
+    <div class="itemnav">
+        <div class="itemnav-left">
+            <a href="javascript:void(0)" class="ite selected" >我的积分</a>
+
+        </div>
+        <div class="itemnv-right">本平台所有资金都是通过联动优势第三方资金托管</div>
+    </div>
+    <div class="tab">
+        <div class="item selected">积分明细</div>
+    </div>
+    <div id="pointDataList">
+
+    </div>
+    <div class="nolist"></div>
+</div>
+
+<!-- @endextend -->
+
+<!-- @endextend -->
+
+<!-- @endextend -->
+

@@ -1,0 +1,15 @@
+<div class="product-success component" id="success">
+  <div class="current">
+    <div class="header">
+      <div class="title">确认订单</div>
+    </div>
+    <div class="content">
+      <div class="title">恭喜您！您的账单已经支付成功！</div>
+      <div class="desc">转入的金额，今天开始计算收益，明天15：00前收益到账</div>
+      <div class="desc">您可以返回账户中心查询您的订单！</div>
+    </div>
+    <div class="action">
+      <button class="ok" id="ok">返回账户中心</button>
+    </div>
+  </div>
+</div>

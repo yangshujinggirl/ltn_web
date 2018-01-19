@@ -1,0 +1,85 @@
+$account-myinvest-fontcolor: #ea5504; 
+$acount-myinvest-bgcolor: #ececec;
+.account-detail{
+  .detail-content {
+    padding:35px;
+    .itemnav {
+      font-size: 14px;
+      font-weight: bold;
+      overflow: hidden;
+      border-bottom: 2px solid #e2e2e2;
+      margin-bottom:46px;
+      .itemnav-left{
+        float:left;
+        .item {
+          width: 100px;
+          height: 30px;
+          line-height: 30px;
+          float: left;
+          text-align: center;
+          margin: 0 10px;   
+          &:hover,&.selected {
+            cursor: pointer;
+            border-bottom: 3px solid $account-myinvest-fontcolor;
+            color: $account-myinvest-fontcolor;
+          }
+        }
+      }
+      .itemnav-right{
+        float: right;
+        .item{
+          line-height: 30px;
+          padding:0 5px;
+          &:hover,&.selected {
+            cursor: pointer;
+            color: $account-myinvest-fontcolor;
+          }
+        }
+        .item:nth-child(2){
+          border-left: 1px solid #ea5504;
+        }
+      }
+    }
+    tr {
+      font-size: 14px;
+      td ,th{
+        padding: 10px 5px;
+        text-align: center;
+        width: 13%;
+        &.productname {
+          width: 20%;
+        }
+        th{ font-size:16px;}
+        &.protocol a {
+          color: #38a2ff;
+        }
+      }
+      &:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+    }
+    table {
+      width:100%;
+      thead tr{
+        font-size: 16px;
+        background-color: $acount-myinvest-bgcolor;
+      }
+    }
+    .nolist {
+      display: none;
+      width:196px;
+      height: 179px;
+      margin:0 auto;
+      background: url(/img/jz.jpg);
+    }
+    #contenttable .item {
+      display: none;
+    }
+    .detailCharge #detailCharge {
+      display: block;
+    }
+    .detailDepost #detailDepost {
+      display: block;
+    }
+  }
+}

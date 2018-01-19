@@ -1,0 +1,24 @@
+
+  <!-- @include ../../../common/_headtop.html-->
+
+  <!-- @include ../_headmiddle.html -->
+
+  <!-- @include ../../../common/default/_navTop.html -->
+
+  <!-- @include ../../../common/default/_navTwo.html -->
+
+  <!-- @include _confirm.html -->
+
+  <!-- @include _pay.html -->
+
+  <!-- @include _success.html -->
+
+  <!-- @include _open.html -->
+
+  <!-- @include _fail.html -->
+
+  <!-- @include _template.html -->
+
+  	  <script src="/html/js/product/long/confirm/script.min.js?v=20160524"></script>
+
+  <!-- @include ../../../common/_bottom.html -->

@@ -1,0 +1,149 @@
+.loan-pay {
+  .wrap {
+    overflow: visible;
+  }
+  .login-content {
+    padding:26px 30px;
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    margin:10px 0;
+    .title {
+      font-size: 14px;
+      color: #ea5504;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 2px solid #e2e2e2;
+      margin-bottom:40px;
+      .item {
+        border-bottom: 2px solid #ea5504;
+        width: 100px;
+        font-size: 18px;
+        text-align: center;
+      }
+    } 
+    .banner {
+      display: inline-block;
+      width:640px;
+      height: 785px;
+      position:relative;
+      .infoText {
+        color: #e2d8d7;
+        font-size:20px;
+        padding:20px 38px;
+        background:url(/html/img/loan_content_bg.png) repeat ;
+        position:absolute;
+        left:40px;
+        top:50px;
+        line-height: 40px;
+        .name {
+          color: #e6713c;
+          font-size: 36px;
+        }
+      }
+    }
+    .form {
+      display: inline-block;
+      vertical-align: top;
+      padding:0 40px;    
+      .row {
+        // height: 70px;
+        position:relative;
+        margin-bottom: 20px;
+        .capition {
+          display: inline-block;
+          width: 65px;
+          font-weight: bold;
+          text-align:right;
+          font-size: 14px;
+        }
+        ::-webkit-input-placeholder { /* WebKit browsers */ 
+            color: #cfcfcf;
+            } 
+            :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+            color: #cfcfcf;
+            } 
+            ::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+            color: #cfcfcf;
+            } 
+            :-ms-input-placeholder { /* Internet Explorer 10+ */ 
+            color: #cfcfcf;
+            } 
+        .input {
+          width: 100%;
+          height: 36px;
+          background-color: #fafafa;
+          border: 1px solid #ccc;
+          color:#cfcfcf;
+          padding:0 0px 0 14px;
+          box-sizing:border-box;
+        }
+        .field {
+          width:280px;
+          height: 36px;
+          margin-left:10px;
+          display: inline-block;
+          line-height: 36px;
+          .sex1 {
+            margin:0 90px 0 5px;
+          }
+        }
+        .fangwu{
+          margin-left: 8px;
+        }
+        .tips {
+          display: none;
+          margin-left:76px;
+          font-size: 12px;
+          line-height: 20px;
+          position: relative;
+          top:6px;
+          left:0;
+        }
+        .units {
+          position:absolute;
+          right: 14px;
+          top:9px;
+          color:#cfcfcf;
+        }
+      }
+      .apply {
+        width:280px;
+        height: 44px;
+        font-size: 18px;
+        color:#fff;
+        background-color: #ff6f20;
+        border:none;
+        border-radius:5px;
+        margin:20px 0 0 76px;
+      }
+    }
+  }
+  .validation {
+      width: 156px;
+      height: 32px;
+      display: none;
+      color: #fff;
+      padding-left: 20px;
+      box-sizing:border-box;
+      -webkit-box-sizing: border-box;
+      line-height:32px;
+      position:absolute;
+      right: 0;
+      top:50%;
+      transform: translate(102%,-50%);
+      -webkit-transform: translate(102%,-50%);
+  }
+  .validate-failed .field .input{    
+      outline: 5px auto #f78e8b;
+      outline-offset: -2px;   
+  }
+  .validate-failed  .validation {       
+          background: url("/html/img/login-tip3.png") left center no-repeat;
+          display:block;
+  }
+  .validate-success .validation {       
+          background: url("/html/img/icon-mark-ok.png") left center no-repeat;
+          display: block;
+  }
+
+}

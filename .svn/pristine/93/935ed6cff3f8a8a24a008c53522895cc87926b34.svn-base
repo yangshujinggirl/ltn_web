@@ -1,0 +1,186 @@
+.product-confirm {
+  .wrap {
+    padding: 30px 100px;
+  }
+
+  .current, .first, .start, .short, .long {
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    padding: 20px 40px;
+  }
+   .fail-message{
+       display: none;
+       padding-top: 100px;
+       padding-bottom: 50px;
+       text-align: center;
+       font-size: 20px;
+       color: $font-color-title;
+   }
+   #action{
+       display: none;
+   }
+  .header {
+    border-bottom: 1px solid $border-color;
+    padding: 0 10px;
+
+    .title {
+      font-size: 18px;
+      color: $font-color-title;
+      line-height: 2;
+      display: inline-block;
+    }
+
+    &.success {
+      text-align: center;
+      .title {
+        background: url(/img/icon-stat-success.png) left center no-repeat;
+        padding-left: 30px;
+        display: inline-block;
+      }
+    }
+    &.fail {
+       display: none;
+      text-align: center;
+      .title {
+        background: url(/img/icon-stat-failed.png) left center no-repeat;
+        padding-left: 30px;
+        display: inline-block;
+      }
+      }
+  }
+
+  .form {
+    font-size: 14px;
+    margin: 50px 0 0 0;
+
+    .dash {
+      height: 0;
+      border: none;
+      border-top: 1px dashed $border-color;
+    }
+
+    .row {
+      line-height: 35px;
+      margin: 15px 0;
+      padding: 0 15%;
+      box-sizing: border-box;
+      font-size: 0;
+
+      .caption {
+        color: #8a8a8a;
+        text-align: right;
+        font-weight: bold;
+        text-align: right;
+        width: 25%;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0 20px 0 0;
+        font-size: 14px;
+      }
+
+      .field {
+        width: 25%;
+        white-space: nowrap;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+
+        .mark {
+          background: none;
+          color: $font-color-mark;
+        }
+      }
+
+      .tips, .accept, .action {
+        text-align: center;
+        font-size: 12px;
+      }
+
+      .tips {
+        color: $font-color-sub;
+        font-size: 14px;
+        .info {
+          background: url(/img/icon-mark-info.png) left center no-repeat;
+          padding-left: 20px;
+        }
+      }
+
+      .accept {
+        font-size: 14px;
+        .check, .label {
+          cursor: pointer;
+        }
+        .label {
+          padding: 0 5px;
+        }
+        .link {
+          color: $link-color;
+          &:hover {
+            color: $link-color-hover;
+          }
+        }
+      }
+
+      .action {
+        
+        .button {
+          width: 230px;
+          height: 35px;
+          border: none;
+          border-radius: 4px;
+
+          background: $bg-btn;
+          color: #fff;
+          font-size: 18px;
+          box-sizing: border-box;
+
+          &:hover {
+            background: $bg-btn-hover;
+          }
+          &[disabled], &.disabled {
+              background: #d7d7d7;
+              cursor: not-allowed;
+              color: #fff;
+          }
+
+        }
+        .tips3{
+            margin-top: 30px;
+            color: $font-color-sub;
+            font-size: 14px;
+          }
+        .link {
+          color: $link-color;
+          &:hover {
+            color: $link-color-hover;
+          }
+        }
+        .text {
+          margin: 0 0 0 30px;
+        }
+        .ok, .cancel {
+          width: 180px;
+          box-sizing: border-box;
+          border: 2px solid $bg-btn;
+          border-radius: 4px;
+          font-size: 18px;
+          margin: 0 12px;
+
+          &:hover {
+            background: $bg-btn-hover;
+            border-color: $bg-btn-hover;
+            color: #fff;
+          }
+        }
+        .ok {
+          background: $bg-btn;
+          color: #fff;
+        }
+        .cancel {
+          background: none;
+          color: $bg-btn;
+        }
+      }
+    }
+  }
+}

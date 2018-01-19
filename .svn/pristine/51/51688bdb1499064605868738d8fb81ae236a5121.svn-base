@@ -1,0 +1,9 @@
+<!-- @include ../../common/_top.html -->
+
+<!-- @include _loancontract.html -->
+<script >
+  (function () {
+    document.getElementsByTagName("title")[0].innerHTML = "借款协议";
+  })()
+</script>
+<!-- @include ../../common/_bottom.html -->

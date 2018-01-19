@@ -1,0 +1,65 @@
+$(function(){
+  var page = new Page();
+  page.posoalMoney;//提现金额
+  page.birdCoin;//抵扣鸟币
+  page.getBankInfo = function(){
+    var bank = page.getPostData();
+    if(bank!=null){
+      page.posoalMoney=bank.money;
+      page.birdCoin =bank.birdCoin;
+    }
+  };
+  page.quicklyRecharge = function(){
+      var param = {'orderAmount':page.posoalMoney,'birdCoin':page.birdCoin}
+      return page.getData(
+        '/company/withdrawals',param,[opeation2]);
+      function opeation2(data){
+          if (data.resultCode == 0) {
+            $('#tixianSuccess').show();
+            $('.cover9').show();
+          }else{
+            $('#tixianFail').show();
+            $('.cover10').show();
+          }
+      }
+  };
+  page.initConfirm = function(){
+    return page.getData(
+      '/company/preWithdrawals',{
+        'birdCoin': page.birdCoin,
+        'orderAmount':page.posoalMoney
+      },[initTempConfirm,addEvent]);
+    function initTempConfirm(data){
+      if (page.isSuccess(data)) {
+        data = data.data;
+        page.initTemplate(data, 'bank2_confirm', 'tempBank2');
+      }
+    }
+    function addEvent() {
+      $('#confirm_tixian').on('click',function(){
+        page.quicklyRecharge();
+      });
+      $('#closeFail').on('click',function(){
+        $('#tixianFail').hide();
+        $('.cover10').hide();
+      });
+      $('#colseSucccess').on('click',function(){
+        $('#tixianSuccess').hide();
+        $('.cover9').hide();
+      });
+      $('#posatlBut').on('click',function(){
+        window.location.href='/html/account/viewall/';
+        session().set('index', '0');
+      });
+      $('#posatlBut2').on('click',function(){
+        window.location.href='/help/aboutltn';
+        session().set('index', '0');
+      });
+    }
+  };
+  page.init = function(){
+    page.getBankInfo();
+    page.initConfirm();
+  };
+  page.init();
+});

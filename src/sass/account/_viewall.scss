@@ -1,0 +1,519 @@
+.account-viewall {
+  $high:#ff5900;
+  padding:10px 35px 35px ;
+  .itemnav {
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    .itemnav-left {
+      text-align: center;
+      float: left;
+      .ite {
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        line-height: 50px;
+        color: #333;
+        position: relative;
+        bottom:-1px;
+        &.selected {
+          border-bottom: 3px solid $high;
+          color: $high;
+        }
+      }
+    }
+
+    .itemnv-right {
+      float: right;
+      font-size: 14px;
+      padding-left: 124px;
+      height: 50px;
+      color: #999;
+      line-height: 50px;
+      background:url(/html/img/viewall_liandong.png) no-repeat left center;
+    }
+  }
+  .banner{
+    width: 912px;
+    height: 235px;
+    border: 1px solid #e2e2e2;
+    margin-top: 30px;
+    position: relative;
+    .special{
+    color: #fe6031;
+    }
+  }
+  .start{
+    width: 912px;
+    height: 235px;
+    position: absolute;
+    display: none;
+    /* display: none; */
+    .start_top{
+      width: 485px;
+      height: 100px;
+      margin: 15px 0 0 30px;
+      .start_top_left{
+        display: inline-block;
+        float: left;
+      }
+      .start_top_right{
+        display: inline-block;
+        float: right;
+        .expired{
+          width: 25px;
+          height: 24px;
+          display: inline-block;
+          background: url(/html/img/start_logo2.png) no-repeat;
+          position: relative;
+          top: 7px;
+          margin-right: 10px;
+        }
+        .little_icon{
+          width: 21px;
+          height: 20px;
+          display: inline-block;
+          background:url(/html/img/start_jinggao.png) no-repeat;
+          vertical-align: middle;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+        .tips{
+          width: 165px;
+          height: 31px;
+          display: inline-block;
+          background: url(/html/img/start_tips.png) no-repeat;
+          position: absolute;
+          right: -167px;
+          top: 4px;
+          text-align: center;
+          text-indent: 14px;
+          font-size: 12px;
+          color: #ff5900;
+          line-height: 31px;
+          display: none;
+          /* display: none; */
+        }
+      }
+      .filed{
+        font-size: 14px;
+        position: relative;
+        .money{
+          width: 35px;
+          height: 21px;
+          display: inline-block;
+          background: url(/html/img/start_logo1.png) no-repeat;
+          margin-right: 10px;
+          position: relative;
+          top: 6px;
+        }
+      }
+      .item{
+        font-size: 36px;
+        margin-top: 5px;
+        color: #333;
+        .niaobi{
+          font-size: 18px;
+        }
+      }
+    }
+    .start_bottom{
+      width: 830px;
+      height: 125px;
+      background:url(/html/img/start_bg.png) no-repeat;
+      position: absolute;
+      bottom: 20px;
+      left: 13px;
+      bottom: 13px;
+      padding: 0 30px;
+      // display: box;
+      .caption{
+        height: 60px;
+        display: inline-block;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 60px;
+        .profit{
+          font-size: 18px;
+          font-weight: bold;
+          color: #333;
+        }
+        .unit{
+          font-size: 14px;
+          margin-top: 10px;
+          color: #666;
+        }
+        .button{
+          width: 140px;
+          height: 48px;
+          border: 1px solid #ff5900;
+          border-radius: 5px;
+          background: #fff;
+          font-size: 18px;
+          color: #ff5900;
+        }
+      }
+      .start_invest{
+          font-size: 18px;
+          margin-top: 63px;
+          color: #000;
+          font-weight: bold;
+          position: relative;
+          top: -15px;
+        }
+    }
+  }
+  .realname{
+    width: 713px;
+    height: 188px;
+    position: absolute;
+    padding: 25px 100px;
+    display: none;
+    .realname_left{
+      width: 182px;
+      height: 187px;
+      display: inline-block;
+      background: url(/html/img/realname_logo1.png) no-repeat;
+      vertical-align: middle;
+    }
+    .realname_center{
+      display: inline-block;
+      font-size: 16px;
+      color: #666666;
+      margin-left: 20px;
+      line-height: 30px;
+      .realname_liandong{
+        width: 360px;
+        height: 48px;
+        display: block;
+        background:url(/html/img/realname_logo2.png) no-repeat;
+      }
+    }
+    .realname_right{
+      display: inline-block;
+      .button{
+        width: 120px;
+        height: 40px;
+        border: 1px solid #fe6031;
+        border-radius: 5px;
+        color: #fe6031;
+        font-size: 18px;
+        background: #fff;
+        margin-left: 23px;
+      }
+    }
+  }
+  .card{
+    width: 713px;
+    height: 188px;
+    position: absolute;
+    padding: 25px 100px;
+    display: none;
+    .card_left{
+      font-size:16px;
+      color: #666666;
+      display: inline-block;
+      margin: 40px 0 0 65px;
+      .button{
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #fe6031;
+        background: #fff;
+        margin-top: 35px;
+        color: #fe6031;
+        font-size: 18px;
+      }
+    }
+    .card_right{
+      width: 301px;
+      height:204px;
+      display: inline-block;
+      background: url(/html/img/realname_logo3.png) no-repeat;
+      vertical-align: middle;
+      margin: -95px 0 0 20px;
+    }
+  }
+  .first{
+    width: 713px;
+    height: 188px;
+    position: absolute;
+    padding: 25px 100px;
+    display: none;
+    .first_left{
+      font-size:16px;
+      color: #666666;
+      display: inline-block;
+      margin: 40px 0 0 65px;
+      position: relative;
+      z-index: 999;
+      .button{
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #fe6031;
+        background: #fff;
+        margin-top: 35px;
+        color: #fe6031;
+        font-size: 18px;
+      }
+    }
+    .first_right{
+      width: 729px;
+      height: 202px;
+      display: inline-block;
+      background: url(/html/img/first_bg.png) no-repeat;
+      position: absolute;
+      right: 109px;
+      top: 21px;
+    }
+  }
+  .stretch{
+    display: none;
+    overflow: hidden;
+  }
+  .content{
+    width: 913px;
+    height: 370px;
+    background: #f7f7f7;
+    margin-top: 48px;
+    position: relative;
+    .earnContent {
+      width: 490px;
+      display: inline-block;
+      margin: 0 -5px 0 -35px;
+      .profitContent {
+        margin: 10px auto;
+        margin-top: 7px;
+        clear: both;
+        height: 352px;
+        .left {
+          width: 100%;
+          &.echartview {
+            height: 100%;
+          }
+        }
+        .right {
+          width: 34%;
+          height: 88%;
+          margin-top: 30px;
+          position: absolute;
+          right: 202px;
+          top: 10px;
+          .item {
+            font-size: 14px;
+            text-align: left;
+            height: 70px;
+            &:first-child {
+              margin-top: 22px;
+            }
+            .shouyi{
+              margin-left: 22px;
+              color: #999;
+              a{
+                color: #999;
+              }
+            }
+            .jiantou{
+              color: #d6d6d6;
+            }
+            .number{
+              font-size: 22px;
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+    .content_right{
+      width: 340px;
+      height: 310px;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 34px;
+      border-left: 1px solid #e2e2e2;
+      .surplus{
+        text-align: center;
+        margin-top: 30px;
+        .flied{
+          font-size: 36px;
+          color: #3a3a3a;
+          font-weight: bold;
+        }
+        .unit{
+          font-size: 22px;
+          color: #999999;
+        }
+      }
+      .push-button{
+        margin: 40px auto;
+        .button{
+          width: 80px;
+          height: 35px;
+          border-radius: 5px;
+          display: inline-block;
+          margin-left: 10px;
+          border:0;
+          color: #fff;
+          font-size: 18px;
+        }
+        .recharge_button{
+          margin-left: 43px;
+          background: #fe6031;
+        }
+        .postal_button{
+          background: #fff;
+          border: 1px solid #fe6031;
+          color: #fe6031;
+        }
+        .invest_button{
+          background: #fff;
+          color: #3ab8ff;
+          border: 1px solid #3ab8ff;
+        }
+      }
+    }
+    .prod{
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      border-top: 1px solid #e2e2e2;
+      /* display: box; */
+      .item1{
+        display: inline-block;
+        margin-top: 25px;
+        .item1_filed{
+          font-size: 22px;
+          color: #666;
+        }
+        .item1_unit{
+          font-size: 14px;
+          color: #999;
+          a{
+            color: #999;
+          }
+        }
+      }
+      .item2{
+        margin-left: 40px;
+      }
+    }
+  }
+  .ticket{
+    margin-top: 18px;
+    .caption{
+      width: 220px;
+      display: inline-block;
+      .parts{
+        font-size: 14px;
+        color: #999;
+        font-weight: bold;
+      }
+      .num{
+        font-size: 22px;
+        color: #333;
+        margin-left: 15px;
+      }
+      .jiantou{
+        font-size: 14px;
+        color: #d6d6d6;
+      }
+      .ticket_icon1{
+        width: 25px;
+        height: 24px;
+        display: inline-block;
+        background: url(/html/img/ticket_icon1.png) no-repeat;
+        vertical-align: bottom;
+        margin: 0 5px 0 2px;
+      }
+      .ticket_icon2{
+        width: 25px;
+        height: 24px;
+        display: inline-block;
+        background: url(/html/img/ticket_icon2.png) no-repeat;
+        vertical-align: bottom;
+        margin-right: 5px;
+      }
+      .ticket_icon3{
+        width: 24px;
+        height: 23px;
+        display: inline-block;
+        background: url(/html/img/ticket_icon3.png) no-repeat;
+         vertical-align: bottom;
+        margin-right: 5px;
+      }
+    }
+    .caption3{
+      margin-left: -3px;
+    }
+  }
+  .recommend{
+    margin-top: 50px;
+    .header{
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    .recommend_cont{
+      text-align: center;
+      margin-top: 25px;
+      .caption{
+        width: 280px;
+        height: 170px;
+        display: inline-block;
+        border: 1px solid #e2e2e2;
+        margin-right: 20px;
+        cursor: pointer;
+        position: relative;
+        .profit{
+          margin-top: 20px;
+          .filed{
+            font-size: 26px;
+            color: #fe6031;
+            font-weight: bold;
+            .Bfh{
+              font-size: 12px;
+            }
+          }
+          .filed2{
+            color: #333;
+          }
+          .gains{
+            font-size: 14px;
+            color: #999;
+          }
+        }
+        .recommend_start{
+          font-size: 14px;
+          margin-top: 20px;
+          color: #333;
+          font-weight: bold;
+        }
+        .shengyu{
+          font-size: 12px;
+          color: #999999;
+          margin-top: 20px;
+        }
+        .recommend_but{
+          width: 280px;
+          height: 46px;
+          color: #fff;
+          font-size: 18px;
+          background: #fe6031;
+          border:0;
+          margin-top: 16px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          display: none;
+          &.disabled{
+            background: #d7d7d7;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

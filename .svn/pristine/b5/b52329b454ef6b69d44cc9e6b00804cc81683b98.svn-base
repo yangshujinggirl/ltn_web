@@ -1,0 +1,83 @@
+<div class="anniversary">
+  <img class="banner" src="/img/anniversary/anniversary.jpg">
+  <div class="anniversary_cont">
+    <div class="stretchone">
+      <h1>活动一：幸运蛋糕</h1>
+      <div class="rule">
+        <p>投资换取活力值，切蛋糕参与转盘抽奖，惊喜好礼等您来拿！</p>
+        <h5>活动规则：</h5>
+        <ul class="rule_info">
+          <li>
+            <i class="yuan"></i>1.活动期间用户每投资2000元即可获得1点活力值。
+          </li>
+          <li>
+            <i class="yuan"></i>2.开启三层蛋糕所需活力值分别为：1点，10点，50点。
+          </li>
+          <li>
+            <i class="yuan"></i>3.每位用户拥有N次原始抽奖机会，N为11月11日前，历史投资额/2000所得整数位，上限为5。
+          </li>
+          <li>
+            <i class="yuan"></i>4.活动期间每邀请一位好友注册并投资非体验标，可获得1点活力值。
+          </li>
+          <li>
+            <i class="yuan"></i>5.如您获得实物奖励，请及时登记联系地址，工作人员将于活动结束后一周内联系兑奖，逾期未提交者视为自动放弃奖励。
+          </li>
+        </ul>
+        <img class="dangao" src="/img/anniversary/anniversary_prize1.jpg">
+        <button class="but">
+          <a href="/html/appnew/" target="_blank">下载APP，参与活动</a>
+        </button>
+      </div>
+    </div>
+    <div class="stretchtwo">
+      <h1>活动二：迎新大礼包</h1>
+      <div class="rule rule2">
+        <p>遇到领投鸟，永远都不晚，马上完成领投鸟的新手任务，即领丰厚大礼包！</p>
+        <h5>活动规则：</h5>
+        <ul class="rule_info">
+          <li>新手注册24小时内，投资10天以上标的达2000元，即可赢取20元话费！</li>
+        </ul>
+        <img class="huafei" src="/img/anniversary/anniversary_huafei.png">
+      </div>
+    </div>
+    <div class="stretchthree">
+      <h1>活动三：新手排行榜</h1>
+      <div class="rule">
+        <p>有抱负的领投鸟新人，只要你敢想我们就敢回报，努力争先，大奖在你眼前！</p>
+        <h5>活动规则：</h5>
+        <ul class="rule_info">
+          <li>活动期间注册新用户，累计投资金额前50名可获得苏泊尔魔法焖烧杯或丹麦蓝罐曲奇铁盒大礼盒！</li>
+        </ul>
+        <img class="beizi" src="/img/anniversary/anniversary_prize2.jpg">
+        <button class="but">
+          <a href="/html/appnew/" target="_blank">下载APP，参与活动</a>
+        </button>
+      </div>
+    </div>
+    <div class="stretchthree">
+      <h1>活动四：实力排行榜</h1>
+      <div class="rule">
+        <p>比起拼手气，如果你有能力，当然要拼实力，力争上游，赢取更多惊喜！</p>
+        <h5>活动规则：</h5>
+        <ul class="rule_info">
+          <li>活动期间，所有用户累计投资前五名，还有以下惊喜好礼等您带回家！</li>
+        </ul>
+        <img class="beizi" src="/img/anniversary/anniversary_prize3.jpg">
+        <button class="but">
+          <a href="/html/appnew/" target="_blank">下载APP，参与活动</a>
+        </button>
+      </div>
+    </div>
+    <div class="stretchthree">
+      <h1>活动五：庆生好礼</h1>
+      <div class="rule">
+        <p>投越多赚越多，活动期间持续推出庆生加息标，抢到就是赚到，来共享生日喜悦吧！</p>
+        <button class="but">
+          <a href="/html/appnew/" target="_blank">下载APP，参与活动</a>
+        </button>
+      </div>
+    </div>
+    <img class="codeimg" src="/img/anniversary/anniversary_code.jpg">
+    <p class="last">扫一扫关注 <br>领投鸟微信公众号，联系客服，<br>分享新鲜有料的理财知识，<br>还有微信粉丝奖品不定期派送</p>
+  </div>
+</div>

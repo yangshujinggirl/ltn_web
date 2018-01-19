@@ -1,0 +1,56 @@
+<!--银行卡列表模板-->
+<script type="text/template" charset="UTF-8" id="templateBankList">
+	{{ for(var i=0;i
+	<it.length;i++){ }} <li class="choose-bank" data-index={{=i}} data-name={{=it[i].bankName}} data-code={{=it[i].bankCode}} data-id={{=it[i].id}}><span class="icon1"></span><img src="{{=it[i].picUrl}}"><span class="icon"></span></li>
+		{{ } }}
+</script>
+
+<!--银行卡备注模板-->
+<script type="text/template" charset="UTF-8" id="templateBankRemark">
+	{{ for(var i=0;i
+	<it.length;i++){ }} <tr>
+		{{ if(i==0){ }}
+		<td rowspan="{{=it.length}}">借记卡</td>
+		{{ } }}
+		<td>{{=it[i].condition}}</td>
+		<td>{{=it[i].timeLimit}}</td>
+		<td>{{=it[i].dateLimit}}</td>
+		</tr>
+		{{ } }}
+</script>
+
+<!--银行卡提示模板-->
+<script type="text/template" charset="UTF-8" id="templateBankTip">
+	<p class="cankao">{{=it}}</p>
+</script>
+
+<!--银行卡信息模板-->
+<script type="text/template" charset="UTF-8" id="templateCardModel">
+	<p class="bankName">
+		{{=it.belongBank}}<br>
+		<span>{{=it.bankCardId}}</span>
+	</p>
+	<p class="owner">
+		{{=it.userName}}<br> 添加于：{{=it.bindDate}}日
+	</p>
+</script>
+
+<!--提现信息模板-->
+<script type="text/template" charset="UTF-8" id="templateDepostInfo">
+	<p>可用余额：<span class="focal">{{=it.amount}}元</span></p>
+	{{ if(it.freeCount==0){ }}
+	<p>提现手续费：<span class="focal">2元</span></p>
+	<div class="birdDeduction">
+		<p class="chance">您当月已无免费提现机会，可用鸟币进行抵扣</p>
+		<p>鸟币余额：<span class="focal">{{=it.birdCoin}}元</span></p>
+		{{ if(it.birdCoin>=2){ }}
+		<p>抵扣鸟币：<span class="focal">2.0元</span></p>
+		{{ }else{ }}
+		<p>抵扣鸟币：<span class="focal">0元</span></p>
+		{{ } }}
+	</div>
+	{{ }else{ }}
+		<p>提现手续费：<span class="focal">0元</span></p>
+		<p class="chance">您当月还有<span>{{=it.freeCount>2?(it.freeCount-2):'0'}}</span>次免费提现机会</p>
+	{{ } }}
+</script>

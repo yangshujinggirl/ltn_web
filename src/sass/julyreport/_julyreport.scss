@@ -1,0 +1,170 @@
+.julyreport{
+  .banner{
+    img{
+      width: 100%;
+    }
+  }
+  .caption{
+    text-align: center;
+    border-bottom: 1px solid #747474;
+    background: #fff;
+  }
+  .content{
+    width: 1000px;
+   /*  height: 800px; */
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    .title{
+      font-size: 48px;
+      display: inline-block;
+      border-bottom: 1px solid #f47a3d;
+      padding-bottom: 20px;
+    }
+    .cont{
+      position: relative;
+      .cont_left{
+        width: 660px;
+        margin-top: 80px;
+        .header{
+          font-size: 30px;
+        }
+        .image{
+          width: 626px;
+          height: 505px;
+          background: url(/html/img/july_icon1.png) no-repeat;
+        }
+      }
+      .cont_right{
+        width: 227px;
+        height: 228px;
+        position: absolute;
+        right: 128px;
+        top: 207px;
+        text-align: left;
+        .filed{
+          font-size: 18px;
+        }
+        .unit{
+          font-size: 18px;
+          .samll{
+            color: #ff3b3b;
+            font-size: 22px;
+          }
+        }
+        .filed2{
+          margin-top: 95px;
+        }
+      }
+      .gains{
+        width: 842px;
+        height: 558px;
+        margin: 0 auto;
+        background: url(/html/img/july_icon2.png) no-repeat;
+      }
+      .money{
+        text-align: center;
+        .money_left,.money_right{
+          display: inline-block;
+          .unit{
+            font-size: 30px;
+          }
+          .item{
+            font-size: 20px;
+          }
+        }
+        .money_right{
+          margin-left: 30px;
+        }
+        .juse{
+          color: #ff3b3b;
+        }
+      }
+      .gains1{
+        width: 930px;
+        height: 763px;
+        margin: 0 auto;
+        background: url(/html/img/july_icon3.png) no-repeat;
+      }
+      .bear{
+        font-size: 40px;
+        color: #f47a3d;
+        text-align: center;
+      }
+      .gains2{
+        width: 940px;
+        height: 399px;
+        margin: 60px auto;
+        background: url(/html/img/july_icon4.png) no-repeat;
+      }
+      .gains3{
+        width: 911px;
+        height: 393px;
+        margin: 100px auto;
+        background: url(/html/img/july_icon5.png) no-repeat;
+      }
+      .gains4{
+        width: 990px;
+        height: 354px;
+        margin: 100px auto;
+        background: url(/html/img/july_icon6.png) no-repeat;
+      }
+      .gains5{
+        width: 936px;
+        height: 431px;
+        margin: 100px auto;
+        background: url(/html/img/july_icon7.png) no-repeat;
+      }
+      .gains6{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-box;
+        margin: 0 auto;
+        .cap{
+          -moz-box-flex: 1; 
+          -webkit-box-flex: 1;
+        }
+        .one{
+          width: 533px;
+          height: 283px;
+          background: url(/html/img/july_icon8.png) no-repeat;
+          margin-top: 60px;
+        }
+        .one1{
+          width: 533px;
+          height: 283px;
+          background: url(/html/img/july_icon9.png) no-repeat;
+          margin-top: 60px;
+        }
+        .two{
+          margin-top: 106px;
+          .title1{
+            font-size: 36px;
+            font-weight: bold;
+          }
+          .info,.info2{
+            font-size: 24px;
+            margin-top: 60px;
+            text-align: left;
+          }
+          .info2{
+            margin-top: 14px;
+          }
+        }
+      }
+      .bear1{
+        width: 218px;
+        height: 218px;
+        margin: 0 auto;
+        background:url(/html/img/july_icon11.png) no-repeat;
+        margin-bottom: 100px;
+      }
+    }
+    .title3{
+      width: 368px;
+      height: 223px;
+      margin: 0 auto;
+      background: url(/html/img/july_icon10.png) no-repeat;
+    }
+  }
+}

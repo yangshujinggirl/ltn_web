@@ -1,0 +1,40 @@
+<script type="text/template" id="crowdListTemplate">
+  {{? it.length!=0}}
+  {{~ it:value:index}}
+    <div class="mutual_list">
+        <div class="plan" data-url="/html/crowd/detail/?productId={{=value.productId}}">
+          <div class="plan_left">
+            <img src="{{=value.productPic}}">
+          </div>
+          <div class="plan_right">
+            <div class="plan_title">{{=value.productFirstTitle}}</div>
+            <div class="plan_item">{{=value.productDesc}}</div>
+            <div class="bar">
+              <div class="container">
+                <div class="completed" style="width:{{=(value.productSoldedAmount/value.productTotalAmount*100 + '%')}};max-width:100%;"></div>
+              </div>
+            </div>
+            <div class="target">
+              <div class="target_money">目标金额 <span class="heise">{{=value.productTotalAmount/10000}}</span>万</div>
+              <div class="target_time">参与人数 <span class="heise">{{=value.productSoldedPerson}}</span>人</div>
+              {{if(value.productStatus == '1'){ }}
+              <a href="/html/crowd/detail/?productId={{=value.productId}}"><button class="plan_but">立即加入</button></a>
+              {{ }else if(value.productStatus == '2' && value.productSoldedAmount < value.productTotalAmount){ }}
+              <a href="/html/crowd/detail/?productId={{=value.productId}}"><button class="plan_but disabled" disabled="disabled">募集结束</button></a>
+              {{ }else if(value.productStatus == '2' && value.productSoldedAmount >= value.productTotalAmount){ }}
+              <a href="/html/crowd/detail/?productId={{=value.productId}}"><button class="plan_but disabled" disabled="disabled">已满标</button></a>
+              {{ }else if(value.productStatus == 3){ }}
+              <a href="/html/crowd/detail/?productId={{=value.productId}}"><button class="plan_but disabled" disabled="disabled">已还款</button></a>
+              {{ }else if(value.productStatus =='4'){ }}
+              <a href="/html/crowd/detail/?productId={{=value.productId}}"><button class="plan_but disabled" disabled="disabled">已结束</button></a>
+              {{ } }}
+            </div>
+          </div>
+        </div>
+    </div>
+  {{~}}
+  {{?}}
+</script>
+<script type="text/template" id="templateBanner">
+  <img src="{{=it.bannerList[0].bannerPicture}}">
+</script>

@@ -1,0 +1,59 @@
+<div class="product-confirm page-component" id="confirm">
+  <div class="wrap">
+    <div class="current component">
+      <div class="header">
+        <div class="title">确定投资</div>
+      </div>
+      <div class="form">
+        <!-- <div class="row">
+          <span class="caption">项目名称：</span>
+          <span class="field">随心投</span>
+        </div>
+        <div class="row">
+        <span class="caption">投资期限：</span>
+          <span class="field">随存随取</span>
+          <span class="caption">年化收益：</span>
+          <span class="field" id="rate">8%</span>
+        </div>
+        <div class="row">
+        <span class="caption">还款方式：</span>
+          <span class="field">随时转出</span>
+          <span class="caption">投资金额：</span>
+          <span class="field"><mark class="mark" id="amount">1000.00</mark>元</span>
+          <span class="caption">计息方式：</span>
+          <span class="field"><mark class="mark">T+0</mark></span>
+          <span class="caption">交易时间：</span>
+          <span class="field" id="date">2016-03-05</span>
+        </div>
+        <div class="row">
+        </div>
+        <hr class="dash">
+        <div class="row">
+          <span class="caption">可用余额：</span>
+          <span class="field" id="rest">9000.00元</span>
+        </div>
+        <div class="row">
+          <span class="caption">应付金额：</span>
+          <span class="field" id="should">1000.00元</span>
+          <span class="caption">实付金额：</span>
+          <span class="field"><mark class="mark" id="actual">970.00</mark>元</span>
+        </div> -->
+        <div class="row">
+          <div class="accept">
+            <input id="isRead" class="check" type="checkbox" checked>
+            <label for="isRead" class="label">我已阅读并同意</label>
+            <a class="link" href="/html/product/capital"  target="_blank">《资金托管协议》</a>
+            <a class="link" href="/html/product/financed"  target="_blank">、《支付服务协议》</a>
+          </div>
+          <div class="action">
+            <button class="button">确认投资</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- pv统计代码 -->
+<script type="text/javascript">
+  _czc.push(["_trackPageview","/弹层弹出"]);
+</script>
+</div>

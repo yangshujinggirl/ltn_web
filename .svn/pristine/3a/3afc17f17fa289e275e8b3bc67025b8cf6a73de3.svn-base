@@ -1,0 +1,56 @@
+<div class="account-coinCertificate page-component">
+  <div class="wrap">
+    <div class="contant">
+      <div class="secrity">理财金券兑换</div>
+      <div class="form">
+        <div class="row" id="codeCon">
+          <div class="field">
+            <input type="text" class="input" placeholder="请输入兑换码" data-emptyTip='请输入兑换码' data-required='true' id="cashCode">
+          </div>
+          <div class="validation">12345671234567</div>
+        </div>
+        <div class="row" id="imageCon">
+          <div class="field">
+            <input type="text" class="short input" id="txtCode" placeholder="请输入验证码" data-required='true' data-emptyTip='请输入图片验证码！' data-type='imgCode'  data-errorTip="验证码不符合规则">
+            <img src="/img/appnew_4.jpg" alt="" class="imgCode" id="imgCode">
+          </div>
+          <div class="validation">1234567</div>
+        </div>
+        <div class="row">
+          <button class="btn" id="submit">立即兑换</button>
+          <a href="javascript:void(0)" class="return" id="return">立即返回&gt;&gt;</a>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <p class="hd">兑换说明</p>
+      <div class="list">
+        <p class="tip">1.输入兑换码，点击兑换后，您将获得相应的投资返现券或投资加息券。</p>
+        <p class="tip">
+          2.兑换以后，您可以在“账户中心”页下的“返现券”或者“加息券”中分别查看您所领到的投资返现券或投资加息券。
+        </p>
+        <p class="tip">
+          3.领投鸟将不定期举办活动向用户发放兑换码，凭兑换码即可兑换相应的投资返现券或投资加息券。
+        <p class="tip">
+          4.如果您兑换的是投资返现券，需要您单笔投资满足使用条件时才能使用此券，勾选并投资完毕(不含新手特权标)
+        ，标的到期后，返现金额会随着本息一同发放至您的账户，您可自行选择再投资或提现。
+        </p>
+        <p class="tip">
+          5.如果您兑换的是投资加息券，需要您在投资时勾选并使用，此时您购买的标的产品将会有相应的加息，勾选并投资完毕(不含新手特权标)，标的到期后，加息部分的金额会和您的投资本息一同发放至您的账户，您可自行选择再投或提现。
+        </p>
+      </div>
+    </div>
+    <div class="copy" id="copy">
+      <div class="tips">
+        <span class="line">提示</span>
+      </div>
+      <div class="content1">
+        <p class="success">恭喜您！兑换成功！</p>
+        <p class="value">您兑换的是<span class="couponName"></span>！<a href="javascript:void(0)" class="look" id="look">快去查看吧！</a></p>
+      </div>
+      <button class="copyBtn" id="copyBtn">确认</button>
+      <div class="close" id="closeBtn"></div>
+    </div>
+  </div>
+
+</div>

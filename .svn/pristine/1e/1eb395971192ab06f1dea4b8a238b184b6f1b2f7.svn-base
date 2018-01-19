@@ -1,0 +1,32 @@
+<div class="mutual_confirm page-component">
+  <div class="wrap">
+    <div class="confirm" id="confirm_content_d"><!-- 
+      <div class="confirm_top">
+        <div class="detail">
+          <span class="shuxian"></span>
+          <span class="detail_font">订单详情</span>
+        </div>
+      </div>
+      <div class="confirm_center">
+        <div class="family">
+          <div class="family_top">家庭防盗互助保障计划</div>
+          <div class="family_bottom">预存78元，最高赔付18000元互助金</div>
+        </div>
+        <div class="money">
+          <div class="money_top">应付金额: <span class="confirm_juse">￥8.00</span></div>
+          <div class="money_bottom">鸟币抵扣: 3鸟币</div>
+        </div>
+      </div>
+      <div class="confirm_bottom">
+        <div class="confirm_cont">
+          <div class="confirm_sense">实际支付: <span class="confirm_big">￥8.00</span></div>
+          <div class="mianmi">开通免密支付</div>
+          <button class="financed">立即支付</button>
+          <div class="back">
+            <a href="#">返回修改订单>></a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,179 @@
+.account-freedom {
+    .freedomleft {
+        width: 50%;
+        float: left;
+        .current {
+            font-size: 18px;
+            overflow: hidden;
+            padding: 10px 0;
+            margin-top: 53px;
+            border-bottom: 1px dashed #d7d7d7;
+            .item {
+                height: 50px;
+                line-height: 50px;
+                .value {
+                    font-size: 28px;
+                    color: #ea5504;
+                }
+            }
+            .left {
+                width: 49%;
+                text-align: center;
+                border-right: 1px solid #d7d7d7;
+            }
+            .right {
+                width: 50%;
+                text-align: center;
+                .item .value {
+                    color: #6a6a6a;
+                }
+            }
+        }
+        .money {
+            clear: both;
+            font-size: 14px;
+            text-align: center;
+            padding: 23px 0;
+            .value {
+                padding-left: 10px;
+            }
+        }
+        .button {
+            text-align: center;
+            button {
+                font-size: 18px;
+                padding: 5px 60px;
+                border-radius: 4px;
+                &:first-child {
+                    background-color: #fff;
+                    color: #ff6650;
+                    border: 1px solid #ff6650;
+                }
+                &:last-child {
+                    background-color: #ff6650;
+                    color: #fff;
+                    margin-left: 60px;
+                    border: none;
+                }
+                &.disabled {
+                    background-color: #d7d7d7;
+                    cursor: not-allowed;
+                    color: #fff;
+                    border: 0;
+                }
+            }
+        }
+        .remain {
+            font-size: 12px;
+            height: 40px;
+            line-height: 40px;
+            text-align: right;
+            padding-right: 60px;
+        }
+        .noIvest {
+            text-align:right;
+            color: #ff6650;
+            visibility: hidden;
+            &.selected {
+                visibility: visible;
+            }
+        }
+    }
+    .freedomright {
+        width: 44%;
+        float: left;
+        overflow: hidden;
+        padding: 0 20px;
+        .title {
+            height: 70px;
+            line-height: 70px;
+            padding: 0 30px 0 10px;
+            .left {
+                font-size: 20px;
+            }
+            .right .icon {
+                font-size: 12px;
+                padding-left: 35px;
+                background: url("/html/img/account-freedom-icon.png") no-repeat left center;
+            }
+        }
+        .chartform {
+            height: 240px;
+            width: 100%;
+        }
+    }
+    .top {
+        overflow: hidden;
+    }
+    .investcontent {
+        ul,
+        li {
+            padding: 0;
+        }
+        margin-top: 40px;
+        .itemnav {
+            font-size: 20px;
+            overflow: hidden;
+            border-bottom: 2px solid #e2e2e2;
+            margin: 0 30px 10px;
+            .item {
+                width: 140px;
+                height: 40px;
+                line-height: 40px;
+                float: left;
+                text-align: center;
+                margin: 0 10px;
+                &:hover,
+                &.selected {
+                    border-bottom: 3px solid $account-myinvest-fontcolor;
+                    color: $account-myinvest-fontcolor;
+                }
+            }
+        }
+        tr {
+            font-size: 14px;
+            td,
+            th {
+                padding: 10px 5px;
+                text-align: center;
+                width: 13%;
+                &.productname {
+                    width: 20%;
+                }
+                &.protocol a {
+                    color: #38a2ff;
+                }
+            }
+            &:nth-child(even) {
+                background-color: #f7f7f7;
+            }
+        }
+        table {
+            margin: 0 30px;
+            width: 94%;
+            thead tr {
+                font-size: 16px;
+                background-color: $acount-myinvest-bgcolor;
+            }
+        }
+        .nolist {
+            display: none;
+            width: 196px;
+            height: 179px;
+            margin: 0 auto;
+            background: url(/html/img/jz.jpg);
+        }
+        #contenttable .common {
+            display: none;
+        }
+        .detailin #detailin {
+            display: block;
+        }
+        .detailout #detailout {
+            display: block;
+        }
+        .detailprofit #detailprofit {
+            display: block;
+        }
+    }
+}

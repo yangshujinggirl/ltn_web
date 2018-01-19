@@ -1,0 +1,47 @@
+<script type="text/template" id="tempList">
+    <li class="item1">
+    <div class="two2">
+    {{~it.totalTZList:value:index}}
+      <ol class="list2">
+        <li><span>{{=index+1}})</span><span>{{=strUtil().formatPhone(value.mobileNo)}}</span><span style="margin-left: 10px;">{{=strUtil().formatMiriade(value.money)}}万</span></li>
+      </ol>
+    {{~}}
+    </div>
+    <div class="one">5月13日-5月31日，累计投资固定收益类产品排名前三的用户<br/>
+    获得如下奖励：<br/>
+    第一名：iPhone6s 64g一台（价值5678元）；<br/>
+    第二名：iPad air2 16g一台（价值2888元）；<br/>
+    第三名：Fitbit智能手环一件（价值1299元）。</div>
+  </li>
+  <li class="item2">
+      <div class="two2">
+      {{~it.totalYQList:value:index}}
+        <ol class="list2">
+          <li><span>{{=index+1}})</span><span>{{=strUtil().formatPhone(value.mobileNo)}}</span><span style="margin-left: 10px;">{{=strUtil().formatMiriade(value.money)}}万</span></li>
+        </ol>
+        {{~}}
+      </div>
+      <div class="one">5月13日-5月31日，邀请好友的累计投资额（不包含活期）排名前三的用户<br/>
+      获得如下奖励：<br/>
+      第一名：iPad air2 16g一台（价值2888元）；<br/>
+      第二名：iPad mini2一台（价值
+      1988元）；<br/>
+      第三名：Beats Tour2 入耳式耳机一件（价值798元）。
+      </div>
+  </li>
+  <li class="item3">
+      <div class="two2">
+      {{~it.totalDBList:value:index}}
+        <ol class="list2">
+         <li><span>{{=index+1}})</span><span>{{=strUtil().formatPhone(value.mobileNo)}}</span><span style="margin-left: 10px;">{{=strUtil().formatMiriade(value.money)}}万</span></li>
+        </ol>
+        {{~}}
+      </div>
+      <div class="one">5月13日-5月31日，单笔投资额排名前三的用户<br/>
+      获得如下奖励：<br/>
+      第一名：iPad mini2一台（价值1988元）；<br/>
+      第二名：Beats Tour2 入耳式耳机一件（价值798元）；<br/>
+      第三名：飞利浦空气加湿器一台（价值249元）。
+      <div class="one">
+  </li>
+</script>

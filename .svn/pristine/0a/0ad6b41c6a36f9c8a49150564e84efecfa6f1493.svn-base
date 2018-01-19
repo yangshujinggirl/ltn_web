@@ -1,0 +1,5 @@
+<script type="text/template" id="tempNotice">
+    <div class="caption">{{=it.title}}</div>
+    <div class="date">{{=it.publishTime}}</div>
+    <div class="text">{{=it.content}}</div>
+</script>

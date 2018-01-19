@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "description": "",
+  "main": "",
+  "authors": [
+    "William Cai"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.12.1",
+    "easydropdown": "^2.1.4",
+    "unslider": "^2.0.3",
+    "jquery-qrcode": "*",
+    "clipboard": "^1.5.9"
+  }
+}

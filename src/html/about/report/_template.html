@@ -1,0 +1,14 @@
+<script type="text/template" id="templateReport">
+    <ul class="agreement_list">
+      {{~it.reports:value:index}}
+      <a href="{{=value.reptLinkUrl}}" target="_blank">
+        <li class="first">
+          <div class="report_img">
+            <img src="{{=value.reptPic}}">
+          </div>
+          <div class="list_title">{{=value.reptTitle}}</div>
+        </li>
+      </a>
+      {{~}}
+    </ul>
+</script>

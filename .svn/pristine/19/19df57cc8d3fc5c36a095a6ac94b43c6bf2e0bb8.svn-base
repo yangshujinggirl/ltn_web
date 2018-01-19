@@ -1,0 +1,165 @@
+<script type="text/template" charset="UTF-8"  id="tempviewall">
+  <div class="earnContent">
+   <div class="profitContent">
+     <div class="left" class="echartview" id="echartview">
+     </div>
+     <div class="right">
+       <div class="item tohave">
+         <span> &nbsp; &nbsp; &nbsp;<span class="number">{{=strUtil().formatKilo(it.collectRevenue)}}</span>
+         <span class="unit"> &nbsp;<br/>
+         <span class="shouyi"><a href="/html/account/returnedMoney/">待收收益(元) <a href="/html/account/returnedMoney/" class="jiantou">>></a></a></span></span><br/>
+
+       </div>
+       <div class="item myInvest">
+         <span> &nbsp; &nbsp; &nbsp;<span class="number">{{=strUtil().formatKilo(it.collectCapital)}}</span>
+         <span class="unit"> &nbsp;<br/>
+         <span class="shouyi"><a href="/html/account/returnedMoney/">待收本金(元) <a href="/html/account/returnedMoney/" class="jiantou">>></a></a></span></span>
+       </div>
+       <div class="item dieMoney">
+         <span>&nbsp; &nbsp; &nbsp;<span class="number">{{=strUtil().formatKilo(it.usableBalance)}}</span>
+         <span class="unit"> &nbsp;<br/>
+         <span class="shouyi"> <a href="/html/account/detailmoney/">可用余额(元) <a href="/html/account/detailmoney/" class="jiantou">>></a></a></span></span>
+       </div>
+       <div class="item liveMoney">
+         <span> &nbsp; &nbsp; &nbsp;<span class="number">{{=strUtil().formatKilo(it.    frozenAmount)}}</span>
+         <span class="unit"> &nbsp;<br/>
+         <span class="shouyi">冻结余额(元) </span></span>
+       </div>
+     </div>
+   </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempContent">
+  <div class="surplus">
+    <div class="flied">{{=strUtil().formatKilo(it.usableBalance)}}</div>
+    <div class="unit">可用余额(元)</div>
+  </div>
+  <div class="push-button">
+    <a href="javascript:void(0)"><button class="button recharge_button" id="recharge_button">充值</button></a>
+    <a href="javascript:void(0)"><button class="button postal_button" id="postal_button">提现</button></a>
+    <a href="javascript:void(0)"><button class="button invest_button" id="invest_button">投资</button></a>
+  </div>
+  <div class="prod">
+    <div class="item1">
+      <div class="item1_filed">{{=strUtil().formatKilo(it.totalRevenue)}}</div>
+      <div class="item1_unit">累计收益(元)</div>
+    </div>
+    <div class="item1 item2">
+      <div class="item1_filed">{{=strUtil().formatKilo(it.collectRevenue)}}</div>
+      <div class="item1_unit"><a href="/html/account/returnedMoney/">待收收益(元) <a href="/html/account/returnedMoney/" class="jiantou">>></a></a></div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempTicket">
+  <div class="caption">
+    <span class="ticket_icon1"></span>
+    <span class="parts">鸟币金额</span>
+    <a href="/html/account/bird/" class="jiantou"><span class="num">{{=it.birdCoin}}</span>&nbsp;&nbsp;>></a>
+  </div>
+  <div class="caption">
+    <span class="ticket_icon2"></span>
+    <span class="parts">返现券</span>
+    <a href="/html/account/returnTickits/" class="jiantou"><span class="num">{{=it.fXQNum}}张  </span><a href="/html/account/returnTickits/" class="jiantou">>></a></a>
+  </div>
+  <div class="caption caption3">
+    <span class="ticket_icon3"></span>
+    <span class="parts">加息券</span>
+    <a href="/html/account/raiseTickits/" class="jiantou"><span class="num">{{=it.jXQNum}} 张</span>&nbsp;&nbsp;<a href="/html/account/raiseTickits/" class="jiantou">>></a></a>
+  </div>
+</script>
+
+<script type="text/template" id="tempProduct">
+  <div class="header">推荐理财</div>
+  <div class="recommend_cont">
+  {{~it.productList:value:index}}
+    <div class="caption">
+      <div class="profit">
+        <div class="filed">{{=value.annualIncomeText}}<span class="Bfh"></span></div>
+        <div class="gains">预期年化收益</div>
+      </div>
+      <div class="recommend_start">
+        {{=value.staInvestAmount}}元起投    |    {{=value.convertDay}}天
+      </div>
+      <div class="shengyu">剩余金额：{{=strUtil().formatKilo(value.productRemainAmount)}}元</div>
+      {{ if(value.productStatus == '1'){ }}
+      <button class="recommend_but" onclick="user().clickEvent();" data-id="{{=value.productId}}">立即投资</button>
+      {{ }else if(value.productStatus == '2' && value.progress == '100') { }}
+      <button class="recommend_but disabled" onclick="user().clickEvent();" data-id="{{=value.productId}}" disabled="disabled" onclick="this.disabled=true">已满标</button>
+      {{ }else if(value.productStatus == '2' && value.progress !== '100'){  }}
+      <button class="recommend_but disabled" onclick="user().clickEvent();" data-id="{{=value.productId}}" disabled="disabled" onclick="this.disabled=true">募集结束</button>
+      {{ }else{ }}
+      <button class="recommend_but disabled" onclick="user().clickEvent();" data-id="{{=value.productId}}">已满标</button>
+      {{ } }}
+    </div>
+  {{~}}
+  </div>
+</script>
+
+<script type="text/template" id="tempBanner">
+  <div class="start" id="startBanner">
+          <div class="start_top">
+            <div class="start_top_left">
+              <div class="filed"><span class="money"></span>我的体验金</div>
+              <div class="item">6,000.00</div>
+            </div>
+            <div class="start_top_right">
+              <div class="filed">
+                <span class="expired"></span>到期收益
+                <span class="little_icon"></span>
+                <span class="tips" id="start_tips">到期后自动计入鸟币账户中</span>
+              </div>
+              <div class="item"><span class="niaobi">鸟币</span>13.18</div>
+            </div>
+          </div>
+          <div class="start_bottom">
+            <div class="caption start_invest">体验标体验投资</div>
+            <div class="caption">
+              <div class="profit">8.0%</div>
+              <div class="unit">年化收益</div>
+            </div>
+            <div class="caption">
+              <div class="profit">1</div>
+              <div class="unit">项目期限(天)</div>
+            </div>
+            <div class="caption">
+              <div class="profit">100亿</div>
+              <div class="unit">募集总额(元)</div>
+            </div>
+            <div class="caption">
+              <a href="/html/product/start/#!/1"><button class="button">立即体验</button></a>
+            </div>
+          </div>
+  </div>
+  <div class="realname" id="realnameBanner">
+    <div class="realname_left"></div>
+    <div class="realname_center">为保障您的资金安全，<br>
+    请先完成第三方资金托管账户开通及业务授权，<br>
+    完成实名并绑卡可额外获得<span class="special">20元</span>返现券哦。
+    <span class="realname_liandong"></span>
+    </div>
+    <div class="realname_right">
+      <a href="/html/account/realname/"><button class="button">立即实名</button></a>
+    </div>
+  </div>
+  <div class="card" id="cardBanner">
+    <div class="card_left">
+      <div class="card_success">完成绑卡操作可额外获得<span class="special">58元</span>返现券，<br>
+      赶紧完成绑卡吧！</div>
+      <a href="/html/account/card1/"><button class="button">立即绑卡</button></a>
+    </div>
+    <div class="card_right"></div>
+  </div>
+  <div class="first" id="firstBanner">
+    <div class="first_left">
+      <div class="first_success">不可错过的新手福利，<br>
+       年化收益高达15%以上，让新手也能赚更多！</div>
+      <button class="button" id="firstBut" onclick="user().clickEvent();" data-id="{{=it.productId}}">立即投资</button>
+    </div>
+    <div class="first_right"></div>
+  </div>
+  <div class="stretch" id="stretch">
+    <a href="/html/mypartner/"><img src="/img/zhanghuhuodong_banner.jpg"></a>
+  </div>
+</script>

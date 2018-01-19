@@ -1,0 +1,30 @@
+<!--图形验证码模型-->
+<script type="text/template" charset="UTF-8" id="templateBank">
+  <select name="" id="txtBank" class="input">
+    {{  for(var i =0;i<it.length;i++){ }}
+  <option value={{=it[i].bankName}} {{=it[i].bankName=='中国工商银行'?'selected=true':''}}>{{=it[i].bankName}}</option>
+        {{ } }}
+  </select>
+</script>
+<script type="text/template" id="templateFolating">
+  <p>充值是否有上限？<br/>
+    目前您可通过快捷支付进行充值。若您通过快捷支付方式进行充值，快捷的限额见下表（具体额度请以实际情况为准）：</p>
+    <table>
+          <thead>
+            <tr class="one">
+              <th>银行</th>
+              <th>单笔限额</th>
+              <th>单日限额</th>
+            </tr>
+          </thead>
+          <tbody class="list">
+           {{~it:value:index}}
+            <tr>
+              <td class="item">{{=value.bankName}}</td>
+              <td class="item">{{=value.chargeTimeLimit}}</td>
+              <td class="item">{{=value.chargeDateLimit}}</td>
+            </tr>
+            {{~}}
+          </tbody>
+        </table>
+</script>

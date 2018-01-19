@@ -1,0 +1,136 @@
+.cardsuccess{
+  border-top:0;
+  margin:0;
+  .registerTop{
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    .xinfeng{
+      position: relative;
+      top:4px;
+    }
+    .teshuershi{
+      color: #ff6806;
+      font-size: 20px;
+    }
+  }
+  .chongzhi{
+    width: 90px;
+    height:40px;
+    line-height: 40px;
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid #ff6806;
+    background: #fff;
+    margin-left: 20px;
+     &:hover {
+          background: $bg-btn-hover;
+          border-color: $bg-btn-hover;
+          color: #fff;
+    }
+  }
+  .top{
+    background: #fff;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .wrap{
+    width: 1190px;
+    margin: 0 auto;
+    padding: 68px 40px;
+    .listpro{
+      margin:0;
+      text-align: center;
+      overflow: hidden;
+      zoom:1;
+      li{
+        width: 285px;
+        height: 195px;
+        float: left;
+        margin-left: 50px;
+        padding: 30px 20px;
+        background: #f7f7f7;
+        .gains{
+          font-size: 36px;
+          color: #ff6806;
+          .year{
+            font-size: 12px;
+            color: #999999;
+          }
+        }
+        .begun{
+          font-size: 18px;
+          color: #fff;
+          height: 59px;
+          position: relative;
+          .bg{
+            position: relative;
+            left:-40px;
+            top:10px;
+          }
+          .money{
+            position: absolute;
+            left:22px;
+            top:20px;
+          }
+          .date{
+            position: absolute;
+            right:40px;
+            top: 20px;
+          }
+        }
+        .surplus{
+          font-size: 12px;
+          margin-top: 15px;
+        }
+        .button{
+          width: 105px;
+          height: 40px;
+          font-size: 18px;
+          border-radius: 5px;
+          border: 1px solid #ff883a;
+          background: #fff;
+          margin-top: 15px;
+        }
+      }
+    }
+    .action{
+      text-align: center;
+      margin-top: 30px;
+      .ok,.bangzhu{
+        width: 200px;
+        height: 40px;
+        border:0;
+        font-size: 18px;
+        margin-left: 20px;
+      }
+      .ok{
+        box-sizing: border-box;
+        border: 2px solid $bg-btn;
+        border-radius: 4px;
+        background: #fff;
+           &:hover {
+          background: $bg-btn-hover;
+          border-color: $bg-btn-hover;
+          color: #fff;
+        }
+      }
+      .bangzhu{
+        box-sizing: border-box;
+        border: 2px solid #4359aa;
+        background: none;
+        border-radius: 4px;
+        color: #4359aa;
+          &:hover {
+          background: #4359aa;
+          border-color: #4359aa;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

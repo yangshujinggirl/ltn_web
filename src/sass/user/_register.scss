@@ -1,0 +1,166 @@
+.user-dialog{
+    .registerTop{
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        padding-top: 10px;
+        position: relative;
+        .teshu{
+            font-size: 20px;
+            color:#fc471b;
+        }
+        .xinfeng{
+            position: relative;
+            margin-right:10px;
+            top:4px;
+        }
+    }
+    .register{
+        height: 500px;
+        .form{
+            .row{
+                position: relative;
+                margin: 12px 0;
+                &.wrap-identity{
+                display: none;
+            }
+            &.validate-failed {
+                .field {
+                    .input {
+                        outline: 5px auto #f78e8b;
+                        color: #cacaca;
+                        outline-offset: -2px;
+                    }
+                }
+                .validation {
+                    display: inline-block;
+                    position: absolute;
+                    right: -92px;
+                    width: 156px;
+                    height: 32px;
+                    font-size: 12px;
+                    line-height: 32px;
+                    padding-left:10px;
+                    color: #fff;
+                    margin-left: 13px;
+                    text-align: center;
+                    background: url(/html/img/login-tip3.png) center center no-repeat;
+                }
+            }
+                &.validate-success {
+                .validation {
+                    display: inline-block;
+                    position: absolute;
+                    top: 13px;
+                    height: 14px;
+                    background: url("/html/img/icon-mark-ok.png") 10px center no-repeat;
+                }
+            }
+                .field{
+                    .short{
+                        padding-left: 16px;
+                        width: 54%;
+                    }
+                    .info{
+                        padding-left: 36px;
+                        cursor: text;
+
+                    }
+                    .validate-sms{
+                        height: 33px;
+                        border-radius:5px;
+                        margin-top: 9px;
+                        font-size: 12px;
+                        line-height: 17px;
+                        position: absolute;
+                        right:4px;
+                        top:-6px;
+                    }
+                }
+                .new{
+                    display: inline-block;
+                    width: 40px;
+                    position: absolute;
+                    right:49px;
+                    top:0;
+                    cursor: pointer;
+                }
+            }
+            .invitation{
+                width: 264px;
+                padding-left: 15px;
+                margin: 0 auto;
+                text-align: left;
+                position: relative;
+                .tuijian{
+                    color: #ff6f20;
+                    cursor: pointer;
+                }
+                .jiantou{
+                    width: 14px;
+                    height: 14px;
+                    position: relative;
+                    left:5px;
+                    top:3px;
+                    display: inline-block;
+                    margin-right: 8px;
+                    background: url(/html/img/register-jiantou.png) no-repeat;
+                }
+                .jiantou2{
+                    width: 14px;
+                    height: 14px;
+                    position: relative;
+                    top:5px;
+                    display: inline-block;
+                    margin-right: 8px;
+                    background: url(/html/img/register-xia.png) no-repeat;
+                }
+                .validation{
+                    position: absolute;
+                    left: 235px;
+                    top:0;
+                }
+            }
+            .accept{
+                width: 373px;
+                padding:0;
+                padding-left:14px;
+                font-size: 12px;
+                position: relative;
+                margin: 0;
+                .check{
+                    position: absolute;
+                    left:51px;
+                    top:10px;
+                }
+            }
+            .action{
+                .button{
+                  margin: -7px 0 0 -59px;
+                }
+            }
+            .yaoqing{
+                display: none;
+                position:relative;
+                .input2{
+                    width:246px;
+                    position:absolute;
+                    top:-21px;
+                    left:-8px;
+                }
+            }
+            .company {
+                text-align: left;
+                padding-left: 50px;
+                .companyLink {
+                    display: inline-block;
+                    text-decoration: underline;
+                    color: #38a2ff;
+                    font-size: 12px;
+
+                }
+            }
+        }
+    }
+}

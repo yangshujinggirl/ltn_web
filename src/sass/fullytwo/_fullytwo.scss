@@ -1,0 +1,610 @@
+.fullytwo{
+  overflow: hidden;
+  .wrap{
+    width: 100%;
+    .banner{
+      position: relative;
+      height: 565px;
+      width: 100%;
+      img{
+        position: absolute;
+        left: 50%;
+        width: 120%;
+        top:0;
+        margin-left: -845px;
+      }
+    }
+    .form {
+        font-size: 14px;
+        display: inline-block;
+        float: right;
+        width: 327px;
+        height: 340px;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        right:200px;
+        top:172px;
+        padding: 20px 0 0 30px;
+        z-index: 999999;
+        margin-right: 65px;
+        .row {
+            line-height: 35px;
+            width: 284px;
+            position: relative;
+            .caption {
+                color: #8a8a8a;
+                text-align: right;
+                font-weight: bold;
+                width: 33.333%;
+                box-sizing: border-box;
+                display: inline-block;
+                padding: 0 20px 0 0;
+            }
+            &.wrap-identity{
+                display: none;
+            }
+            &.validate-failed {
+                .field {
+                    .input {
+                        outline: 5px auto #f78e8b;
+                        color: #cacaca;
+                        outline-offset: -2px;
+                    }
+                }
+                .validation {
+                    display: inline-block;
+                    position: absolute;
+                    left: 255px;
+                    width: 170px;
+                    height: 46px;
+                    line-height: 44px;
+                    padding-left:10px;
+                    margin-left: 13px;
+                    text-align: center;
+                    background: url(/html/img/login-tips.png) center center no-repeat;
+                }
+            }
+            &.validate-success {
+                .validation {
+                    display: inline-block;
+                    position: absolute;
+                    top: 13px;
+                    right: -92px;
+                    height: 14px;
+                    background: url("/html/img/icon-mark-ok.png") 10px center no-repeat;
+                }
+            }
+            .field {
+                width: 65%;
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                .input {
+                  width: 263px;
+                    height: 30px;
+                    border:0;
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #606060;
+                    margin-top: 9px;
+                    padding-left: 10px;
+                    &.short{
+                        width: 87%;
+                    }
+                    &.info{
+                      width: 87%;
+                    }
+                }
+                input:-webkit-autofill {
+                    -webkit-box-shadow: 0 0 0px 1000px white inset;
+                   }
+                .shouji{
+                    position: absolute;
+                    left:11px;
+                    top:8px;
+                    z-index: 999;
+                }
+                .password{
+                    position: absolute;
+                    left:11px;
+                    top:8px;
+                    z-index: 999;
+                }
+                .validate-image,
+                .validate-sms {
+                    width: 42%;
+                    height: 35px;
+                    display: inline-block;
+                    border: 1px solid #e2e2e2;
+                    box-sizing: border-box;
+                    position: absolute;
+                    right:-87px;
+                    top:6px;
+                }
+                .validate-sms {
+                    border: 1px solid #38a2ff;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    background: none;
+                    font-size: 14px;
+                    color: #38a2ff;
+                }
+                .validate-sms.disabled{
+                     background: #d7d7d7;
+                     cursor: not-allowed;
+                     color: #fff;
+                     border-color: #fff;
+                }
+                .check {
+                    cursor: pointer;
+                }
+                .action {
+                    color: #fff;
+                    background: #ff6f20;
+                    border: none;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    height: 40px;
+                    width: 180px;
+                    border-radius: 4px;
+                    &:hover {
+                        background: #ff5a00;
+                    }
+                    &.disabled {
+                        background: #ccc;
+                    }
+                }
+            }
+            .new{
+                    display: inline-block;
+                    width: 40px;
+                    position: absolute;
+                    right:48px;
+                    top:0;
+                    cursor: pointer;
+                }
+
+            .validation {
+                display: none;
+                color: #f78e8b;
+                padding: 0 0 0 30px;
+                width: 33.333%;
+                box-sizing: border-box;
+            }
+            .tips {
+                padding: 0 120px;
+            }
+            .accept{
+              width: 262px;
+              color: #fff;
+            }
+            .action{
+              color: #fff;
+            }
+            .tips {
+                margin: 50px 0 0;
+                border-top: 1px dashed #e2e2e2;
+                .img{
+                        margin: 22px 0 0 106px;
+                    }
+                .content {
+                    font-size: 12px;
+                    line-height: 24px;
+                    text-align: justify;
+                    color: #8a8a8a;
+                    .mark {
+                        background: none;
+                        color: $font-height-light-color;
+                    }
+                }
+            }
+            .accept {
+                margin: 20px 0;
+                text-align: center;
+                .check,
+                .label {
+                    cursor: pointer;
+                }
+                .label {
+                    padding: 0 5px;
+                }
+                .link {
+                    color: $link-color;
+                    &:hover {
+                        color: $link-color-hover;
+                    }
+                }
+            }
+            .action {
+                text-align: center;
+                padding: -10px 0 0;
+                width: 200px;
+                .zhanghao{
+                  width: 138px;
+                  margin-left: 143px;
+                }
+                .button1 {
+                    width: 280px;
+                    border: none;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    background: $bg-btn;
+                    color: #fff;
+                    font-size: 18px;
+                    &:hover {
+                        background: $bg-btn-hover;
+                    }
+                 }
+                 .button1.disabled{
+                     background: #d7d7d7;
+                     cursor: not-allowed;
+                     color: #fff;
+                }
+                }
+                .bear{
+                    display: inline-block;
+                    margin-right: 134px;
+                    .check{
+                    vertical-align: middle;
+                    box-sizing: border-box;
+                    margin-right: 7px;
+                  }
+                .link {
+                    color: $link-color;
+                    margin-left: 30px;
+                    &:hover {
+                    color: $link-color-hover;
+                    }
+                }
+                .text {
+                    margin: 0 0 0 30px;
+                }
+            }
+        }
+        .teshu{
+            margin-top: -19px;
+        }
+        .login-tip {
+            margin-top: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #f78e8b;
+            display: none;
+            .icon-wran {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background: url("/html/img/icon-mark-warning.png") no-repeat;
+                background-size: 14px 14px;
+                vertical-align: middle;
+            }
+            .wran-tip{
+                margin-left: 6px;
+            }
+        }
+        .login-top{
+            padding: 15px 20px;
+            height: 30px;
+            border-bottom: 1px solid #e2e2e2;
+            .loginleft{
+                display: inline-block;
+                font-size: 20px;
+                line-height: 30px;
+                float: left;
+            }
+            .loginright{
+                display: inline-block;
+                float: right;
+                line-height: 30px;
+                .registered{
+                    a{
+                        color:#ea5504;
+                    }
+                }
+            }
+        }
+    }
+    .xuanfu{
+      display: none;
+      background-color:rgba(#ffcf85,0.7);
+      text-align: center;
+      .xiaoniao{
+        width: 94px;
+        height: 93px;
+        margin-left: 77px;
+      }
+      hr{
+        width: 200px;
+        margin: 20px 0 0 28px;
+        border: 0;
+        height: 2px;
+        background: #666;
+      }
+      .title{
+        font-size: 24px;
+        color: #ff4242;
+        margin-top: 20px;
+      }
+      .item{
+        font-size: 16px;
+        color: #3a3a3a;
+        margin-top: 20px;
+      }
+    }
+    .top{
+      height: 689px;
+      margin: -122px 0 0 -215px;
+      position: relative;
+      z-index: 99;
+      background: url(/html/img/yunduo.png) no-repeat;
+      padding-top: 194px;
+      .product{
+        width: 969px;
+        height: 563px;
+        margin: 20px 0 0 399px;
+        .caption{
+          width: 390px;
+          height: 135px;
+          border-radius: 40px;
+          background-color:#fed568;
+          display: inline-block;
+          float: left;
+          padding: 30px 20px;
+          text-align: center;
+          margin:50px 0 0 40px;
+          .icon1{
+            /* width: 141px;
+            height: 132px; */
+            display: inline-block;
+            vertical-align: top;
+          }
+          .characters{
+            display: inline-block;
+            margin-left: 17px;
+            .item{
+              color: #f04e40;
+              font-size: 26px;
+              margin-top: 10px;
+            }
+            .field{
+              font-size: 20px;
+              line-height: 30px;
+              color: #fff;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+    .new{
+      background: url(/html/img/juse-bg.png) no-repeat;
+      margin: -90px auto 0;
+      position: relative;
+      z-index: 99;
+      height: 1402px;
+      padding-top: 25px;
+      .couple{
+        text-align: center;
+        font-size: 35px;
+        width: 412px;
+        height: 132px;
+        line-height: 62px;
+        margin:  50px 0 0 412px;
+      }
+      .product{
+        width: 905px;
+        margin: 23px auto 0;
+        .caption1{
+          width: 207px;
+          height: 236px;
+          text-align: center;
+          display: inline-block;
+          margin: 30px 0 0 16px;
+          background: url(/html/img/hongbao.png) no-repeat;
+        }
+        .new-top{
+          text-align: center;
+          .title{
+            height: 90px;
+            font-size: 26px;
+            line-height: 90px;
+            color: #fff;
+            text-shadow: 2px 3px #000;
+          }
+          .num{
+            height: 120px;
+            line-height: 120px;
+            font-size: 42px;
+            color: #ffe757;
+          }
+        }
+        .success{
+          font-size: 18px;
+          margin-top: 38px;
+          color: #000;
+        }
+        .button{
+          width: 190px;
+          height: 50px;
+          background-color: #f84950;
+          border: 0;
+          border-radius: 25px;
+          font-size: 28px;
+          color:#fff;
+          outline: none;
+          margin-top: 15px;
+        }
+      }
+      .ltnproduct{
+      width: 1115px;
+      height: 465px;
+      margin: 130px auto 0;
+      padding-top: 25px;
+      .couple{
+        text-align: center;
+        font-size: 35px;
+        width: 412px;
+        height: 132px;
+        line-height: 62px;
+        margin: 0 auto;
+        background:url(/html/img/ltn-bg2.png) no-repeat;
+      }
+      .product{
+        width: 1005px;
+        height: 296px;
+        margin: 40px auto;
+        background: url(/html/img/ltn-bg.png) no-repeat;
+        .caption{
+          width: 265px;
+          height: 250px;
+          display: inline-block;
+          padding: 30px 30px;
+          margin-left: 7px;
+          text-align: left;
+          .title{
+            font-size: 28px;
+          }
+          .recommended{
+            font-size: 16px;
+            color: #969696;
+            margin-top: 10px;
+          }
+          .manic{
+            font-size: 40px;
+            color:#fc611a;
+            margin-top: 10px;
+          }
+          .button{
+            width: 230px;
+            height: 53px;
+            font-size: 23px;
+            background-color:#fcc661;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 53px;
+            color: #fff;
+            margin-top: 20px;
+          }
+        }
+      }
+     }
+    }
+    .makeMoney{
+      height: 555px;
+      margin: 0 auto;
+      padding-top: 55px;
+      background: #fff;
+      .couple{
+        text-align: center;
+        font-size: 35px;
+        width: 549px;
+        height: 116px;
+        line-height: 62px;
+        margin: 0 auto;
+        background:url(/html/img/make-bg.png) no-repeat;
+      }
+      .product{
+        width: 970px;
+        height: 296px;
+        margin: 0 auto;
+        .jine{
+          margin-top: 35px;
+          .matters{
+            font-size: 28px;
+            text-align: center;
+            vertical-align: top;
+          }
+          .bar{
+            width: 608px;
+            height: 28px;
+            margin-left: 20px;
+            display: inline-block;
+            position: relative;
+            background: url(/html/img/huangtiao.png) no-repeat;
+            .ling{
+              font-size: 20px;
+              position: absolute;
+              left: 0;
+              top: 23px;
+            }
+            .wan{
+              font-size: 20px;
+              position: absolute;
+              left: 277px;
+              top:26px;
+            }
+          }
+          .total{
+            font-size: 28px;
+            margin-left: 10px;
+            vertical-align: top;
+          }
+        }
+        .time{
+          margin-top: 100px;
+          .bar{
+            background: url(/html/img/bar-bg2.png) no-repeat;
+            .liu{
+              font-size: 20px;
+              position: absolute;
+              right: 0;
+              top:25px;
+            }
+          }
+        }
+        .gains{
+          width: 524px;
+          height: 66px;
+          line-height: 66px;
+          text-align: center;
+          font-size: 24px;
+          margin : 70px auto;
+          background: url(/html/img/xuxian.png) no-repeat;
+          .teshu{
+            font-size: 28px;
+            color: #fc611a;
+          }
+        }
+      }
+    }
+    .problem{
+      margin: -50px auto;
+      padding-top: 73px;
+      position: relative;
+      z-index: 999;
+      height: 1402px;
+      background: url(/html/img/juse-bg.png) no-repeat;
+      .couple{
+        text-align: center;
+        font-size: 35px;
+        width: 427px;
+        height: 121px;
+        line-height: 62px;
+        margin: 0 auto;
+        background:url(/html/img/wenti-bg2.png) no-repeat;
+      }
+      .product{
+        width: 905px;
+        margin: 0 auto;
+        .caption{
+          .title{
+            height: 65px;
+            line-height: 65px;
+            background: #ffecbb;
+            margin-top: 30px;
+            padding-left: 20px;
+            font-size: 32px;
+            color:#fe701e;
+          }
+          .item{
+            width: 800px;
+            margin: 40px auto 0;
+            font-size: 24px;
+            color: #fff;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

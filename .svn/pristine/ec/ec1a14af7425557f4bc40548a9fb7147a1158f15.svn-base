@@ -1,0 +1,69 @@
+<s<div class="cardsuccess page-component">
+<div class="registerTop"><i class="xinfeng"><img src="../../../img/realname-gou.png"></i>恭喜您，绑卡成功，<font class="teshuershi">58元返现券</font>已放入您的领投鸟账户啦，赶快去投资吧！
+<a href="/html/account/bank"><button class="chongzhi">充值</button></a></div>
+
+<div class="top">
+  <div class="wrap" id="propsuccess">
+    <ul class="listpro">
+      <!-- <li>
+        <div class="gains">
+          8.5%+2.0%
+          <div class="year">预计年化收益</div>
+        </div>
+        <div class="begun">
+           <div class="bg">
+             <img src="../../../img/card-bg.png">
+           </div>
+          <span class="money">1000元起投</span>
+          <span class="date">30天</span>
+        </div>
+        <div class="surplus">
+          <span class="shengyu">剩余金额</span>
+          <span class="jine">xxxxxx元</span>
+        </div>
+        <a href="/html/product/"><button class="button">立即投资</button></a>
+      </li>
+      <li>
+        <div class="gains">
+          8.5%+2.0%
+          <div class="year">预计年化收益</div>
+        </div>
+        <div class="begun">
+           <div class="bg">
+             <img src="../../../img/card-bg.png">
+           </div>
+          <span class="money">1000元起投</span>
+          <span class="date">30天</span>
+        </div>
+        <div class="surplus">
+          <span class="shengyu">剩余金额</span>
+          <span class="jine">xxxxxx元</span>
+        </div>
+        <a href="/html/product/"><button class="button">立即投资</button></a>
+      </li>
+      <li>
+        <div class="gains">
+          8.5%+2.0%
+          <div class="year">预计年化收益</div>
+        </div>
+        <div class="begun">
+           <div class="bg">
+             <img src="../../../img/card-bg.png">
+           </div>
+          <span class="money">1000元起投</span>
+          <span class="date">30天</span>
+        </div>
+        <div class="surplus">
+          <span class="shengyu">剩余金额</span>
+          <span class="jine">xxxxxx元</span>
+        </div>
+        <a href="/html/product/"><button class="button">立即投资</button></a>
+      </li> -->
+    </ul>
+    <div class="action">
+        <a href="/html/product/"><button class="ok">查看其它标的</button></a>
+        <a href="/html"><button class="bangzhu">返回首页</button></a>
+    </div>
+   </div>
+</div>
+</div>

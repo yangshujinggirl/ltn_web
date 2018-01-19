@@ -1,0 +1,43 @@
+<div class="newguide">
+<div class="wrap">
+  <div class="content">
+    <div class="main">
+      <img src="../../../img/new-banner.png">
+    </div>
+    <div class="coupon">
+      <div class="content">
+          <div class="title">
+            <span class="title-top">万元</span>
+            <span class="title-bottom">体验金</span>
+          </div>
+          <div class="list">
+            1、完成注册即可获得，仅适用于投资体验标，到期后获得利息收益。<br/>
+            2、收益以鸟币形式发放，投资后即可提现。<br/>
+            3、体验金券有效期为发放起90天，获得后在理财金券里面查看。<br/>
+          </div>
+      </div>
+
+      <div class="content">
+          <div class="title">
+          <span class="icon">元</span>
+            <span class="title-top">88</span>
+            <span class="title-bottom">返现券</span>
+          </div>
+          <div class="list">
+            1、完成注册可获得10元返现券，单笔投资满1000元使用，标的本息赎回时返现券即可变现。<br/>
+            2、完成绑卡可获得20元返现券，单笔投资满2000元使用，标的本息赎回时返现券即可变现。<br/>
+            3、完成充值可获得58元返现券，单笔投资满10000元使用，标的本息赎回时返现券即可变现。<br/>
+            4、返现券每次投资只能使用一张，返现券有效期为发放起30天，获得后在理财金券里面查看。<br/>
+          </div>
+      </div>
+    </div>
+    <a href="#"><button class="button" id="btn">立即注册</button></a>
+
+
+
+  </div>
+
+
+
+</div>
+</div>

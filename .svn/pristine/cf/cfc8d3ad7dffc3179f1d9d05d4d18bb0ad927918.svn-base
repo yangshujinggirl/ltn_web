@@ -1,0 +1,28 @@
+<script type="text/template" id="tempMutual">
+  <div class="mutual_control_caption">
+    {{~it.myHelpList:value:index}}
+      <div class="caption">
+        <div class="mutual_control_title">{{=value.productName}}</div>
+        <div class="mutual_control_prop">
+          <div class="control_prop">
+            <div class="item">{{=value.ensureAmount}}
+            </div>
+            <div class="filed">保障金金额(元)</div>
+          </div>
+          <div class="control_prop control_prop2">
+            <div class="item">{{=value.totalPeople}}</div>
+            <div class="filed">累计互助人数(人)</div>
+          </div>
+          <div class="control_prop control_prop2">
+            <div class="item">{{=value.totalShareAmount}}</div>
+            <div class="filed">累计互助分摊(元)</div>
+          </div>
+        </div>
+        <div class="mutual_icon">
+        观察期剩
+        <div class="tianshu">{{=value.waitDays}}天</div>
+        </div>
+      </div>
+      {{~}}
+  </div>
+</script>

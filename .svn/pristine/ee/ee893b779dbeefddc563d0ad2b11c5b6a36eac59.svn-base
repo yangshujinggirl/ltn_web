@@ -1,0 +1,182 @@
+<div class="product-desc page-component" >
+  <div class="wrap">
+    <div class="start component">
+      <ul class="tab-list" id="descTab">
+        <li class="item selected" data-content="detail">项目详情</li>
+        <li class="item" data-content="risk">风控保障</li>
+        <li class="item" data-content="log">投资记录</li>
+        <li class="item" data-content="qa">常见问题</li>
+      </ul>
+      <ul class="content-list detail" id="contentTab">
+        <li class="item">
+          <article class="detail">
+            <div class="row">
+              <span class="caption">项目描述：</span>
+            </div>
+            <div class="row">
+              <span class="caption sub">项目说明：</span>
+              <span class="field">领投鸟体验标是为了使新注册的投资用户更快的了解平台投资流程，而打造的虚拟理财产品。投入后立刻获得收益，以鸟币形式付息，年化收益高达8%，既满足了小白用户对平台的了解，还可以获得相应利息。</span>
+            </div>
+            
+            <hr class="dash">
+            <div class="row">
+              <span class="caption">项目协议：</span>
+              <span class="field"><a class="link" href="./contract" target="_blank">《体验标协议》</a></span>
+            </div>
+            <div class="row">
+              <span class="caption">保障方式：</span>
+              <span class="field"><a href="/html/safe" class="link">《平台安全保障详解》</a></span>
+            </div>
+            <div class="row">
+              <span class="caption">投资期限：</span>
+              <span class="field">立即到账</span>
+            </div>
+            <div class="row">
+              <span class="caption">到账时间：</span>
+              <span class="field">到期后，本金收回，利息以鸟币的方式返回到您的账户。</span>
+            </div>
+            <div class="row">
+              <span class="caption">费用说明：</span>
+              <span class="field">注册体验金，不涉及账户托管，不收取任何费用。</span>
+            </div>
+          </article>
+        </li>
+        <li class="item">
+          <article class="risk">
+            <div class="row">
+              <span class="caption solo">产品保障：</span>
+              <div class="assurance">
+								<img src="/img/safe-banner.jpg" alt="">
+							</div>
+            </div>
+            <div class="row">
+              <span class="caption solo">流程保障：</span>
+              <span class="field">
+                资金来源是如何产生的？<br/>
+                通过与大型金融机构合作，将能够产生稳定现金流的基础资产，兑换成优质消费金融资产。<br/>
+                场景获客，注重用户体验：<br/>
+                以家庭消费生活场景为核心，打造连接租住，装修，美容整形，生育等消费场景，为用户多线端的需求提供一站式的消费信贷体验。<br/>
+                业务创新，贷前风控：<br/>
+                通过自动化与高集成度的信用分数系统集中处理贷款申请，对客户进行贷款审批。<br/>
+                贷后催收与不良资产处置：<br/>
+                对贷后管理推出一站式互联网+不良资产处置方案，共同在不良资产全产业链资源的处置模式上进行全流程的服务。
+              </span>
+            </div>
+            <div class="row">
+              <span class="caption solo">业务风控：</span>
+              <div class="business"></div>
+            </div>
+          </article>
+        </li>
+        <li class="item" id="desc">
+          <article class="log">
+            <!-- <div class="row">
+              <span class="caption solo">投资记录：</span>
+              <table class="log-list">
+                <thead>
+                  <tr>
+                    <th>序列号</th>
+                    <th>成交时间</th>
+                    <th>投资人</th>
+                    <th>投资金额</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                  <tr>
+                    <td>09887777788</td>
+                    <td>2016-01-25 12:09:08</td>
+                    <td>赵泽君</td>
+                    <td>8888.88元</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> -->
+            <div class="nolist">
+                <div class="logoIcon">
+                  暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+                </div>
+            </div>
+          </article>
+        </li>
+        <li class="item">
+          <article class="qa">
+            <div class="row">
+              <h3 class="caption"><span class="icon">1</span>问：什么是体验标？</h3>
+              <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">领投鸟体验标是为了使新注册的投资用户更快的了解平台投资流程，而打造的虚拟理财产品。投资当日计息，到期后收回本金，利息归您，利息以鸟币的形式返回。投资时间为6天，年化收益高达8%，既满足了小白用户对平台的了解，还可以获得相应利息。</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <h3 class="caption"><span class="icon">2</span>问：体验标投资有什么条件？</h3>
+              <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">体验标没有任何投资门槛，只要是注册用户。就可获得10000元体验金，使用这10000元体验金参与投资，到期后就可以获得相关的收益。
+                  注：体验金参与投资所获得的收益以鸟币的方式进行发放。</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <h3 class="caption"><span class="icon">3</span>问：什么是体验金券？</h3>
+              <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">体验金券用于投资领投鸟理财平台的新手体验标，尚未在领投鸟理财投资的用户，注册就能获得10000体验金券，体验金券进行投资掉，6天预计年化收益率为8%，到期可获得13.18鸟币。</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <h3 class="caption"><span class="icon">4</span>问：如何获得体验金券？</h3>
+              <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">注册即得10000元体验金券</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <h3 class="caption"><span class="icon">5</span>问：体验金券的使用规则？</h3>
+              <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">首次注册用户，送10000体验金券，仅适用于体验标。</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <h3 class="caption"><span class="icon">6</span>问：体验金券是否存在有效期？</h3>
+              <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">体验金券目前设置有效期为90天，以注册时间当日为起始时间。</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <h3 class="caption"><span class="icon">7</span>问：如何查询体验金券？</h3>
+              <div class="section">
+                  <span class="answer">答：</span>
+                  <p class="field">领投鸟理财用户成功登录领投鸟理财后，在“我的账户“--”理财金券“可以查看到您的体验金券。</p>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+.product-message{
+  display: none;
+  width: 520px;
+  height: 300px;
+  border: 8px solid rgba(0,0,0,.1);
+  border-radius: 4px;
+  background: #fff;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -220px;
+  margin-left: -260px;
+
+  padding: 0 20px 20px 20px;
+  overflow: hidden;
+  z-index: $z-index-dialog;
+
+  &.show {
+    display: block;
+  }
+  .messages {
+    width:100%;
+    height:100%;
+    position:relative;
+  }
+  .header {
+    border-bottom: 1px solid #e2e2e2;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-size: 18px;
+  }
+
+  .content{
+
+    padding: 40px 0 60px 0;
+    text-align: center;
+    .title {
+      display: inline-block;
+      height: 24px;
+      padding-left:30px;
+      font-size: 18px;
+      line-height:24px;
+      margin:0;
+    }
+
+    .desc {
+      padding: 0 40px;
+      font-size: 16px;
+      line-height:30px;
+    }
+    .tips {
+      color:red;
+      font-size: 20px;
+    }
+
+    .img {
+      text-align: center;
+    }
+  }
+
+  .action {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+
+    .ok, .cancel {
+      width: 180px;
+      box-sizing: border-box;
+      border: 2px solid $bg-btn;
+      border-radius: 4px;
+      font-size: 18px;
+      margin: 0 12px;
+
+      &:hover {
+        background: $bg-btn-hover;
+        border-color: $bg-btn-hover;
+        color: #fff;
+      }
+    }
+    .ok {
+      background: $bg-btn;
+      color: #fff;
+    }
+    .cancel {
+      background: none;
+      color: $bg-btn;
+    }
+  }
+}

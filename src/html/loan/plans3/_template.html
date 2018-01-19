@@ -1,0 +1,42 @@
+
+<!--借款状态模板-->
+<script type="text/template" charset="UTF-8" id="tmpLoanPlan">  
+  <div class="wrap">
+    <div class="plan-content plan">
+      <div class="title">
+        <div class="item">借款进度</div>
+      </div>
+      <div class="process">
+        {{for(var i=1;i<=4;i++){ }}
+        <div class="node">
+          <div class="outer">
+            {{=it.plan>=i?'<div class="inner"></div>':''}}
+          </div>
+        </div>
+        {{ if(i<=3){ }}
+        <div class="link">
+          <div class="outer">
+            {{=it.plan>=i?'<div class="inner"></div>':''}}
+          </div>
+        </div> 
+        {{ }  }}
+        {{ } }}
+      </div>
+      <div class="processImg">
+          <h1 class="step step1">1.填写借款申请</h1>
+          <h1 class="step step2">2.借款专员与您联系</h1>
+          <h1 class="step step3">3.提交材料，借款审批</h1>
+          <h1 class="step step4">4.审批结束，借款支付</h1>
+      </div>
+      <div class="fail {{=it.status=='1'?'':'return'}}">
+        <div class="failWrap">
+          <span class="symbol ">
+              {{=it.status=='1'?it.title:(it.reason=='default'?'很遗憾，您的借款申请未通过！':it.reason)}}
+          </span>
+          <p class="text1">{{=it.status=='1'?it.detail:'具体事宜请联系您的借款专员或重新申请'}}</p>
+        </div>
+        <button id="agin">重新申请</button>
+      </div>
+    </div>
+  </div>
+</script>

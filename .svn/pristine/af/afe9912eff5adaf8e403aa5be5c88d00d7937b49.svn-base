@@ -1,0 +1,120 @@
+.account-awardDetail {
+  $high:#ff5900;
+  padding:10px 35px 35px ;
+  p{
+    margin:0;
+    padding:0;
+  }
+  .wrapOne {
+    padding:0 10px;
+  }
+  .itemnav {
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    .itemnav-left {
+      text-align: center;
+      float: left;
+      .ite {
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        line-height: 60px;
+        color: #333;
+        position: relative;
+        bottom:-1px;
+        &.selected {
+          border-bottom: 3px solid $high;
+          color: $high;
+        }
+      }
+    }
+    .itemnv-right {
+      float: right;
+      font-size: 14px;
+      color: #999;
+      padding-left: 124px;
+      height: 50px;
+      line-height: 60px;
+       background:url(/img/viewall_liandong.png) no-repeat left center;
+    }
+  }
+  .top {
+    img {
+      width:100%;
+    }
+    border: 1px solid #f7f7f7;
+    margin:30px 0 40px;
+  }
+  .tab {
+    font-size: 14px;
+    .status {
+      display: inline-block;
+      font-weight: bold;
+      color: #333;
+    }
+    .statusList {
+      display: inline-block;
+      padding-left:28px;
+      .item {
+        width: 68px;
+        height: 30px;
+        border: 1px solid #fff;
+        line-height: 30px;
+        display: inline-block;
+        text-align: center;
+        color: #666;
+        cursor: pointer;
+        &:hover,&.selected {
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          color: $high;
+          border: 1px solid $high;
+        }
+      }
+    }
+  }
+  .form {
+    width: 100%;
+    text-align: left;
+    thead {
+      tr {
+      background-color: #ebebeb;
+      th {
+        font-size: 14px;
+        padding: 12px 20px;
+        color: #3a3a3a;
+        text-align: left;
+        }
+      }
+    }
+    tbody {
+      vertical-align: top;
+      font-size: 12px;
+      color: #999;
+      tr {
+        border-bottom: 1px dashed #e2e2e2;
+        .high {
+        color: $high;
+        }
+        .speci {
+        display: block;
+        }
+        td {
+        padding: 20px 20px;
+        }
+      }
+      .leve {
+        color: $high;
+      }
+    }
+  }
+  .nolist {
+    display: none;
+    width: 196px;
+    height: 179px;
+    margin: 0 auto;
+    background: url(/img/jz.jpg);
+  }
+}

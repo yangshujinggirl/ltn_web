@@ -1,0 +1,31 @@
+<script type="text/template" id="tempLeftinfo">
+  <div class="topLogo">
+    <div class="left_nav_logo"></div>
+    {{if(user().isNameAuth()){ }}
+    <div class="item2">
+      你好，<span class="left_name">{{=it.name}}</span>
+    </div>
+    {{ }else{ }}
+    <div class="item2">
+      你好，<span>{{=strUtil().formatPhone(it.tel)}}</span>
+    </div>
+    {{ } }}
+    <div class="partner">
+      <span class="type"></span>
+      <span class="partnertips"></span>
+    </div>
+  </div>
+  <div class="icon">
+    <div class="telIco">
+      <span  class="tipsIcon"></span>
+    </div>
+    <div class="realnameIcon">
+      <span  class="tipsIcon"></span>
+    </div>
+    <div class="cardIcon" id="bindCard">
+      <span  class="tipsIcon"></span>
+    </div>
+  </div>
+</script>
+
+

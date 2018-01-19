@@ -1,0 +1,10 @@
+<div class="realname-fail page-component">
+    <div class="wrap">
+        <div class="content">
+          <h1 class="caption">
+          <img  class="icon" src="/html/img/icon-stat-failed.png">
+          对不起！实名认证失败</h1>
+          <div class="time">该页面将在<font style="color: red;">5s</font>  后自动关闭</div>
+        </div>
+    </div>
+</div>

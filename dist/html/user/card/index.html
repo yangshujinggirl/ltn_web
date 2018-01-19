@@ -1,0 +1,259 @@
+
+ <!DOCTYPE html>
+ <html lang="zh">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+   <link rel="stylesheet" href="/html/css/style.css?v=20171023">
+   <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+   <meta name=”renderer” content=”webkit” />
+  <script src="/html/js/lib/jquery.min.js"></script>
+   <script src="/html/js/lib/jquery.easydropdown.min.js"></script>
+   <script src="/html/js/lib/jquery.paging.min.js"></script>
+   <script src="/html/js/lib/jquery.validation.min.js"></script>
+   <script src="/html/js/lib/doT.min.js"></script>
+   <script src="/html/js/app.min.js?v=20161017"></script>
+ 
+
+  <title>领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，领头鸟，互联网理财、P2P，真正短期标</title>
+  <meta name="keywords" content="领投鸟理财、领投鸟官网平台、领头鸟、互联网理财、不动产理财、P2P网贷、投资理财、短期理财">
+  <meta name="description" content="领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，平台提供网络贷款，投资理财，赎楼业务，小额贷款，短期贷款，互联网理财、P2P网贷。">
+  
+  </head>
+  <body>
+  
+
+  <div class="commonNavTop page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="service">客服电话：400-999-9980</div>
+          <div class="iconlist">
+            <div class="iconItem weixin">
+              <div class="code"></div>
+            </div>
+            <div class="iconItem weibo">
+              <a href="http://weibo.com/u/5935757405" target="_blank"></a>
+            </div>
+            <div class="iconItem shouji">
+              <a href="/other/downloadapp " target="_blank"></a>
+            </div>
+            <div class="iconItem lipin">
+              <a href="/html/activity_banner" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span class="navItem login" onclick="user().clickEvent();" id="loginLink">登录</span>
+          <a href="/html/user/register" class="navItem register">注册</a>
+          <a class="navItem welcome"></a>
+          <a href="javascript:void(0);" class="navItem logoff">安全退出</a>
+          <a href="/other/actlist" class="navItem" >最新活动</a>
+          <a href="/other/downloadapp" class="navItem">下载APP</a>
+          <a href="/help/aboutltn" class="navItem">帮助中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="commonNavTwo page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="logo" id="logo">
+            <img src="/html/img/imageTwo/home/logo.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <a href="/" class="navItem" onclick="user().clickEvent();">首页</a>
+          <a href="/finance/list/0/1/0/0" class="navItem" onclick="user().clickEvent();">投资</a>
+         <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+         <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+          <!-- <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a> -->
+          <a href="http://bbs.lingtouniao.com" class="navItem" onclick="user().clickEvent();" target="_blank">社区</a>
+          <a href="/other/downloadapp " class="navItem" onclick="user().clickEvent();">下载APP</a>
+          <a href="/other/safeguards " class="navItem" onclick="user().clickEvent();">安全保障</a>
+          <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+          <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="cover"></div>
+  <div class="user-dialog page-component">
+  <div class="registerTop"><i class="xinfeng xinf"><img src="/html/img/register-top.jpg"></i>恭喜您，开户成功，<font class="ershi">20元返现券</font> 已放入您的领投鸟账户啦!</div>
+    <div class="wrap">
+      <div class="card component">
+        <div class="realnameLeft">
+          <div class="finished">
+            <div class="finishedLeft">
+              <img src="/html/img/card-icon1.png">
+            </div>
+            <div class="finishedRight">完成绑卡操作可额外获得<font class="wuba">58元返现券</font>，<br/>
+            赶紧完成绑卡吧！</div>
+          </div>
+          <div class="bank">•&nbsp;&nbsp;仅支持储蓄卡(借记卡)，不支持信用卡(借贷卡)；<br/>
+         •&nbsp;&nbsp;该银行卡可用于网站及手机APP充值与提现 ，目前可支持银行均在<span class="kuaijie">快捷充值限额表</span>有显示，推荐绑定中国工商银行、中国农业银行、中国建设银行、中国银行、浦东发展银行、中国交通银行(以上银行在快捷充值时均有限额)。</div>
+         <div class="speed" id="speed">查看快捷充值限额表>></div>
+        </div>
+        <div class="results" id="bank">
+          <div class="close" id="close">
+            <img src="/html/img/icon-dialog-close.png">
+          </div>
+          <div class="resultsTop" id="floating">银行快捷充值限额表（单位：元）</div>
+            <table>
+              <thead>
+                <!-- <tr class="one">
+                  <th>银行</th>
+                  <th>单笔限额</th>
+                  <th>单日限额</th>
+                </tr> -->
+              </thead>
+              <tbody class="list">
+               <!-- <tr>
+                 <td>中国银行</td>
+                 <td>5万</td>
+                 <td>5万</td>
+               </tr>
+               <tr>
+                 <td>中国银行</td>
+                 <td>5万</td>
+                 <td>5万</td>
+               </tr>
+               <tr>
+                 <td>中国银行</td>
+                 <td>5万</td>
+                 <td>5万</td>
+               </tr>
+               <tr>
+                 <td>中国银行</td>
+                 <td>5万</td>
+                 <td>5万</td>
+               </tr> -->
+              </tbody>
+            </table>
+         </div>
+        <div class="form" id="form">
+        <div class="login-top">
+          <div class="loginleft">绑定银行卡</div>
+        </div>
+          <div class="row">
+            <div class="field">
+              <div class="caption">卡主姓名：</div>
+              <input class="input name" type="text" id='txtName' disabled="disabled">
+              <span class="teshu please">请绑定本人银行卡</span>
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="row">
+            <div class="field" id="wrapBank">
+              <i class="shouji"><img src="/html/img/fangzi.png"></i>
+              <select name="" id="txtBank" class="input">
+                <option value="中国银行">中国银行</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+            <i class="shouji"><img src="/html/img/sfz.png"></i>
+              <input class="input" type="text" placeholder="请输入本人名下的储蓄卡(借记卡)" id='txtCard' data-required='true' data-type='bankCard' data-emptyTip='银行卡号不能为空' data-errorTip="您输入的银行卡不合规" onfocus="this.placeholder=''" onblur="this.placeholder='请输入本人名下的储蓄卡(借记卡)'">
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="login-tip" id="loginTip">
+          	<span class="icon-wran"></span>
+          	<span class="wran-tip" id="wranTip"></span>
+          </div>
+          <div class="row">
+            <div class="action">
+              <button class="button" id="submit">确认绑卡</button>
+              <a class="link" href="/html/account/viewall">暂不绑卡</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover" id="cover"></div>
+  <div class="user-message" id="message">
+    <div class="card messages">
+      <h1 class="header">绑卡结果</h1>
+      <div class="content">
+        <p class="desc">
+        请你在第三方页面完成前不要关闭此窗口，<br/>完成实名认证后更具情况点击下面按钮</p>
+      </div>
+      <div class="action">
+        <div class="success">
+          <i class="gou"><img src="/html/img/realname-gou.png"></i>绑定成功 | 你可以选择
+          <button class="ok" id="bindSuccess" onclick="user().clickEvent();">绑卡成功</button>
+        </div>
+        <div class="fail">
+          <i class="cha"><img src="/html/img/realname-cha.png"></i>绑定失败 | 你可以选择
+          <button class="bangzhu" id="bindFailed" onclick="user().clickEvent();">查看帮助</button>
+        </div>
+      </div>
+      <div class="close" id="closeBk">
+          <img src="/html/img/icon-dialog-close.png">
+        </div>
+    </div>
+    <!-- pv统计代码 -->
+  <script type="text/javascript">
+    _czc.push(["_trackPageview","/弹层弹出"]);
+  </script>
+  </div>
+
+  <div class="dialog-footer page-component">
+  	<div class="wrap">
+  		<p class="copy-right">
+  			©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有 沪ICP备15056137号－1 &nbsp;&nbsp;&nbsp;&nbsp;
+  		</p>
+  
+  	</div>
+  </div>
+  <script src="/html/js/lib/jquery.min.js"></script>
+  <script src="/html/js/lib/doT.min.js" type="text/javascript" charset="utf-8"></script>
+  
+
+  <div class="common-cover page-component">
+  </div>
+
+  <!--图形验证码模型-->
+  <script type="text/template" charset="UTF-8" id="templateBank">
+  	<select name="" id="txtBank" class="input">
+  		{{  for(var i =0;i<it.length;i++){ }}
+  	      <option value={{=it[i].bankName}} {{=it[i].bankName=='中国工商银行'?'selected=true':''}}>{{=it[i].bankName}}</option>
+  	      {{ } }}
+  	</select>
+  </script>
+  
+  <script type="text/template" id="tempfuceng">
+  <div class="resultsTop" id="floating">银行快捷充值限额表（单位：元）</div>
+    <table>
+        <thead>
+          <tr class="one">
+            <th>银行</th>
+            <th>单笔限额</th>
+            <th>单日限额</th>
+          </tr>
+        </thead>
+        <tbody class="list">
+         {{~it:value:index}}
+          <tr>
+            <td class="item">{{=value.bankName}}</td>
+            <td class="item">{{=value.chargeTimeLimit}}</td>
+            <td class="item">{{=value.chargeDateLimit}}</td>
+          </tr>
+          {{~}}
+        </tbody>
+      </table>
+  </script>
+
+<script src="/html/js/user/card/script.min.js?v=20160705" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+  </html>

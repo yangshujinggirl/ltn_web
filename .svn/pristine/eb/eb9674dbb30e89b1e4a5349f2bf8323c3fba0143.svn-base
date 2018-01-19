@@ -1,0 +1,197 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<div class="account-quickcenter">
+	<div class="charg-depost" id="showCon">
+		<div class="itemnav">
+			<div class="itemnav-left">
+				<a href="javascript: void(0)" class="item" id="recharge">充值</a>
+				<a href="javascript: void(0)" class="item" id="withDraw">提现</a>
+			</div>
+			<div class="itemnav-right">
+				<a href="/html/account/detail2?control=detailCharge" class="item">充值明细</a>
+				<a href="/html/account/detail2?controll=detailWithDraw" class="item depostlist">提现明细</a>
+			</div>
+		</div>
+		<div class="quickcenter-bank" id="form">
+			<div class="row">
+				<span class="capition">充值金额</span>
+				<div class="field">
+					<input type="text" class="input" id="txtRechargeMoney" placeholder="请输入充值金额" data-required='true' data-type='money' data-emptyTip='充值金额不能为空' data-errorTip="充值金额不符合规则" data-zeroTip='请输入正确的金额'>
+				</div>
+				<div class="validation"></div>
+				<!-- <a href="/html/market/large/" class="bigCZ">网银大额充值最高送单张1388元返现券！</a> -->
+			</div>
+			<div class="row">
+				<!-- <span class="capition">可用余额</span>
+				<div class="field">
+					<span id="userMoney">￥125.00元</span>
+				</div> -->
+				<div class="validation"></div>
+			</div>
+			<div class="row">
+				<span class="capition">充值方式</span>
+				<div class="field">
+					<div class="recharge selected" data-type='interBank'>
+					<i class="hot2"></i>
+						<input type="button" value="企业网银充值" class="input2">
+						<span class="icon"></span>
+					</div>
+					<!-- <div class="recharge hide" data-type='quickBank' id="quickBank">
+						<input type="button" value="快捷充值" class="input2 ">
+						<span class="icon"></span>
+					</div> -->
+				</div>
+			</div>
+			<div class="chargeway ebank" id="chargeWay">
+				<div class="quick-tap">
+					<div class="cardModel" id="cardModel">
+						<!-- <p class="bankName">
+							兴业银行<br>
+							<span>6229*********0119</span>
+						</p> -->
+						<!-- <p class="owner">
+							赵泽军<br> 添加于：2016年2月25日
+						</p> -->
+					</div>
+					<a href="/html/account/cardchange" class="change">更换银行卡</a>
+					<div class="bank-info">
+						<p class="limit">
+							［充值限额］：单笔交易额<span class="focus" id="onceTimeMoney">10000</span>元， 每日累计限额
+							<span class="focus" id="onceDayMoney">50000</span>元， 如果需要进行大额充值。请选择“网银充值”
+						</p>
+						<div class="on-state" id="onState">
+							<span class="em">免密充值</span>
+							<div class="switch">
+								<div class="status" id="switch"></div>
+							</div>
+							<span class="em" id="switchStatus">(关闭状态)</span>
+							<span class="em1">开通投资免密充值后下次无需再次输入支付密码</span>
+						</div>
+						<button class="sure-charge" id="submit2" onclick="user().clickEvent();">确定充值</button>
+						<div class="tips">友情提示：强烈建议使用IE9以上浏览器，需注意处理浏览器右上角地址栏的拦截信息。</div>
+
+					</div>
+				</div>
+				<div class="bank-content">
+					<div class="banks">
+						<ul class="list" id="bankList">
+							<li class="choose-bank">
+							    <span class="icon1"></span>
+									<!-- <img src="/html/img/bank-JT.png"> -->
+									<span class="icon"></span>
+							</li>
+						</ul>
+					</div>
+					<table class="bank-table" id="bankTable">
+						<thead>
+							<tr>
+								<th>卡种</th>
+								<th>所需条件</th>
+								<th>单笔限额（元）</th>
+								<th>每日限额（元）</th>
+							</tr>
+						</thead>
+						<tbody id="bankRemark">
+							<!-- <tr>
+								<td rowspan="4">借记卡</td>
+								<td>通过柜面注册，静态支付密码</td>
+								<td>300</td>
+								<td>300</td>
+							</tr> -->
+							<!-- <tr>
+								<td>办理电子银行口令卡，开通短信认证</td>
+								<td>300</td>
+								<td>300</td>
+							</tr>
+							<tr>
+								<td>办理电子银行口令卡(无需开通短信认</td>
+								<td>300</td>
+								<td>300</td>
+							</tr>
+							<tr>
+								<td>办理U盾</td>
+								<td>300</td>
+								<td>300</td>
+							</tr> -->
+						</tbody>
+					</table>
+					<div id="bankTip" class="bank-tip">
+						<p class="cankao">＊以上限额仅供参考，以银行官方公告为准，中国工商银行客服热线：95588</p>
+					</div>
+					<div class="bank-info">
+						<button class="sure-charge" id="submit" data-index='1'>确定充值</button>
+					</div>
+					<div class="tips">友情提示：强烈建议使用IE9以上浏览器，需注意处理浏览器右上角地址栏的拦截信息。</div>
+				</div>
+			</div>
+			<div class="use-info">
+				<h1 class="head">充值说明</h1>
+				<p class="cont">
+					1.请注意您的浏览器对各银行网银的拦截，建议使用IE浏览器进行充值；<br> 2.各银行充值限额仅供参考，以银行官方公告为准，如有疑问详询银行客服热线；
+					<br> 3.如果充值金额未及时到账，请与在线客服联系或拨打客服热线400-999-9980。
+					<br>
+				</p>
+			</div>
+		</div>
+		<div class="depost bd">
+			<div class="bound" id="bindCard">
+				<p class="title1">提现至该银行卡</p>
+				<div class="cardModel" id='cardModel2'>
+					<!-- <p class="bankName">
+						兴业银行<br>
+						<span>6229*********0119</span>
+					</p> -->
+					<!-- <p class="owner">
+						赵泽军<br> 添加于：2016年2月25日
+					</p> -->
+				</div>
+				<p class="title1">提现金额</p>
+				<div class="depostInfo" id="depostInfo">
+					<p>可用余额：<span class="focal">25.00元</span></p>
+					<p>提现手续费：<span class="focal">5元</span></p>
+					<p class="chance">您当月还有<span>3</span>次免费提现机会</p>
+					<div class="birdDeduction">
+						<p class="chance">您当月已无免费提现机会，可用鸟币进行抵扣</p>
+						<!-- <p>鸟币余额：<span class="focal">25.00元</span></p> -->
+						<p>抵扣鸟币：<span class="focal">5.0元</span></p>
+					</div>
+				</div>
+				<div id="form2">
+					<div class="row">
+						<span class="capition">提现金额</span>
+						<div class="field">
+							<input type="text" id="txtWithdraw" class="input" placeholder="请输入提现金额" data-required='true' data-type='money' data-emptyTip='提现金额不能为空' data-errorTip="提现金额不符合规则">
+						</div>
+						<div class="validation"></div>
+					</div>
+					<p>实际到账金额：<span class="focal" id="actualMoney"></span></p>
+        </div>
+        <button class="sure" id="submit3" onclick="user().clickEvent();">申请提现</button>
+        <div class="tips">友情提示：强烈建议使用IE9以上浏览器，需注意处理浏览器右上角地址栏的拦截信息。</div>
+      </div>
+      <div class="no-bound" id="noBindCard">
+        <div class="bound-card">
+          <p class="title1">提现至该银行卡</p>
+          <span>您还未绑定银行卡，请先绑定</span>
+						<button class="card" onclick="user().clickEvent();">银行卡</button>
+				</div>
+				<button class="sure disabled" id="submit3" disabled="disabled">申请提现</button>
+			</div>
+			<div class="use-info">
+				<h1 class="head">温馨提示</h1>
+				<p class="cont">
+					提现说明：领投鸟用户每月有3次免费提现机会，默认在没有免费提现机会时用鸟币抵扣，没有鸟币， 提现扣5元人民币/次。手续费优先从账户剩余的可用余额中扣除，若不够，则从到账金额中扣除,可能会使到账金额小于提现金额
+					<br> 1.工作日16点之前用户发起的提现申请，当日会进行受理；
+					<br> 2.16点以后提交的提现申请，将于第二个工作日10点审核。
+					<br> 3.若遇节假日顺延。每周一因要审核周五、周六、周日三天的付款申请，因此略有延时。
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- @endextend -->
+
+<!-- @endextend -->

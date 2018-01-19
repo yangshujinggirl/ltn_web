@@ -1,0 +1,57 @@
+<div class="product-buy component" id="buy">
+  <div class="wrap">
+    <!-- <div class="current">
+      <div class="header">
+        <div class="title">投资购买</div>
+        <div class="close" id="buyClose"></div>
+      </div>
+      <div class="form">
+        <div class="row">
+          <div class="caption">投资金额：</div>
+          <div class="field">
+            <input type="text" placeholder="起投1.00元" class="input">
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">可用余额：</div>
+          <div class="field">
+            <span class="text">300.00元</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">可投金额：</div>
+          <div class="field">
+            <span class="text">300.00元</span>
+          </div>
+        </div>
+        <div class="row">
+          <span class="caption">购买日期：</span>
+            <span class="field">2016-03-28</span>
+        </div>
+        <div class="row">
+          <span class="caption">计息方式：</span>
+            <span class="field">T+0</span>
+        </div>
+        <div class="row submit">
+          <hr class="dash">
+          <div class="actual">
+            <span class="text">实际金额：</span>
+            <span class="amount">0.00元</span>
+          </div>
+          <div class="accept">
+            <input id="isRead" class="check" type="checkbox" checked>
+            <label for="isRead" class="label">我已阅读并同意</label>
+            <a class="link" href="#">《资金托管协议》</a>
+          </div>
+          <div class="action">
+            <button class="button" disabled>确认投资</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <!-- pv统计代码 -->
+<script type="text/javascript">
+  _czc.push(["_trackPageview","/弹层弹出"]);
+</script>
+</div>

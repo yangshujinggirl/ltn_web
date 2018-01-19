@@ -1,0 +1,107 @@
+.about-advantage {
+  .advantage-content {
+    padding:35px;
+    .itemnav {
+      border-bottom: 2px solid #e2e2e2;
+      .head-1 {
+        font-size:18px;
+        font-weight: bold;
+        width: 100px;
+        height: 30px;
+        margin:0;
+        border-bottom: 2px solid #ea5504;
+        line-height: 30px;
+        text-align: center;
+        margin-left: 10px;
+      }
+    }
+    .terrace-business {
+      line-height: 24px;
+      padding-left:24px;
+      .head-2 {
+        color:#ff5a00;
+        font-size: 18px;
+        margin:20px 0;
+      }
+      .text {
+        font-size: 14px;
+      }
+    }
+    .user-buy {
+      margin-top:40px;
+      padding:52px 125px;
+      background: #fff6f2;
+      .step {
+          padding-left:15px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      .login {
+        width:157px;
+        display: inline-block;
+        background:url(/html/img/advantage_06.png) no-repeat right top;
+        .login-imgs {
+          width:83px;
+          height: 62px;
+          background: url(/html/img/advantage_02.png) no-repeat;
+          margin-bottom: 22px;
+        }
+      }
+      .charge {
+        width: 165px;
+        display: inline-block;
+        margin-left: 20px;
+        background:url(/html/img/advantage_06.png) no-repeat right 9px;
+        .charge-imgs {
+          width: 82px;
+          height: 70px;
+          background:url(/html/img/advantage_03.png) no-repeat;
+          margin-bottom:22px;
+          margin-left: 29px;
+        }
+      }
+      .choose {
+        width: 157px;
+        display: inline-block;
+        margin-left: 20px;
+        background:url(/html/img/advantage_06.png) no-repeat right 13px;
+        .choose-imgs {
+          width: 77px;
+          height: 76px;
+          background:url(/html/img/advantage_04.png) no-repeat;
+          margin-bottom:22px;
+          margin-left: 29px;
+        }
+      }
+      .buy-time {
+        width: 112px;
+        display: inline-block;
+        margin-left: 20px;
+        .buy-imgs {
+          width: 62px;
+          height: 64px;
+          background:url(/html/img/advantage_05.png) no-repeat;
+          margin:0 auto 25px;
+        }
+        .step {
+          padding:0;
+        }
+      }
+      .buy-text {
+        font-size:14px;
+        text-align: center;
+        margin-top:30px;
+        font-weight: bold;
+      }
+    }
+    .account-collocation {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 86px;
+    }
+    .center {
+      margin-top: 54px;
+    }
+  }
+}

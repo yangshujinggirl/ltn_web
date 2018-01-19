@@ -1,0 +1,82 @@
+.user-flow {
+  margin-top: 30px;
+
+  .wrap {
+    padding: 0 100px;
+  }
+
+  .process {
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 800px;
+    overflow: hidden;
+    zoom:1;
+
+
+    .outer, .inner {
+      box-sizing: border-box;
+    }
+
+    .outer {
+      border: 1px solid #cecece;
+      background: #e2e2e2;
+    }
+
+    .inner {
+      background: #9aa7b3;
+    }
+
+    .node, .link {
+      display: inline-block;
+      float:left;
+    }
+
+    .node {
+      width: 100px;
+      .text {
+        color: #8a8a8a;
+        text-align: center;
+      }
+      .outer {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin: 10px auto;
+      }
+
+      .inner {
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        margin: 3px 3px;
+      }
+    }
+
+    $user-flow-link-width: 250px;
+    $user-flow-link-outer-left: 6px;
+
+    .link {
+      width: $user-flow-link-width;
+      height: 10px;
+      text-align: center;
+      position: relative;
+      top: 14px;
+      .outer {
+        position: absolute;
+        left: -43px;
+        width: $user-flow-link-width + 86px;
+        height: 10px;
+        text-align: center;
+        border-right: none;
+        border-left: none;
+      }
+      .inner {
+        position: absolute;
+        left: -3px;
+        width: $user-flow-link-width + 86px + 6px;
+        height: 4px;
+        top: 2px;
+      }
+    }
+  }
+}

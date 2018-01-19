@@ -1,0 +1,96 @@
+<script type="text/template" id="tempmedalTable1">
+  <li>
+    <span class="icon1"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[0].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[0].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon2"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[1].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[1].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon2"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[2].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[2].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon3"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[3].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[3].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon3"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[4].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[4].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon3"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[5].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[5].amount)}}</span>
+  </li>
+</script>
+<script type="text/template" id="tempmedalTable2">
+  <li>
+    <span class="icon1"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[0].mobile)}}</span>
+    <span class="money">{{=it[0].total}}人</span>
+  </li>
+  <li>
+    <span class="icon2"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[1].mobile)}}</span>
+    <span class="money">{{=it[1].total}}人</span>
+  </li>
+  <li>
+    <span class="icon2"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[2].mobile)}}</span>
+    <span class="money">{{=it[2].total}}人</span>
+  </li>
+  <li>
+    <span class="icon3"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[3].mobile)}}</span>
+    <span class="money">{{=it[3].total}}人</span>
+  </li>
+  <li>
+    <span class="icon3"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[4].mobile)}}</span>
+    <span class="money">{{=it[4].total}}人</span>
+  </li>
+  <li>
+    <span class="icon3"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[5].mobile)}}</span>
+    <span class="money">{{=it[5].total}}人</span>
+  </li>
+</script>
+<script type="text/template" id="tempmedalTable3">
+  <li>
+    <span class="icon1"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[0].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[0].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon2"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[1].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[1].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon2"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[2].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[2].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon3"></span>
+   <span class="tel">{{=strUtil().formatPhone(it[3].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[3].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon3"></span>
+    <span class="tel">{{=strUtil().formatPhone(it[4].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[4].amount)}}</span>
+  </li>
+  <li>
+    <span class="icon3"></span>
+   <span class="tel">{{=strUtil().formatPhone(it[5].mobile)}}</span>
+    <span class="money">￥{{=strUtil().formatKilo(it[5].amount)}}</span>
+  </li>
+</script>

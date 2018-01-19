@@ -1,0 +1,209 @@
+$(function(){
+var page=new Page();
+  var param=page.getConfirmData();
+  var confirmType=session().get('confirmType');//type为1表示大额充值 2表示提现 3快捷充值未免密 4开通充值免密 5实名 6绑卡 7投资签约  8直接传递投资签约地址过来  9换卡 10协议 11关闭快捷免密
+  
+  page.init=function(){
+  	switch(confirmType){
+  		case '1':
+  		page.operateRecharge();
+  		break;
+  		case '2':
+  		page.operateWithDraw();
+  		break;
+  		case '3':
+  		page.operateRechargeNoPsd();
+  		break;
+  		case '4':
+  		page.operateOpenChargePsd();
+  		break;
+  		case '5':
+  		page.operateRealname();
+  		break;
+  		case '6':
+  		page.operateBindCard();
+  		break;
+  		case '7':
+  		page.operateInvestNoPsd();
+  		break;
+  		case '8':
+  		page.operateNoPsdUrl();
+  		break;
+  		case '9':
+  		page.operateChangeBank();
+  		break;
+  		case '10':
+  		page.operateContract();
+  		break;
+      case '11':
+      page.shutspeedFree();
+      break;
+  	}
+  }
+  //处理充值
+  page.operateRecharge=function(){
+  	return page.getData(
+			'/user/largeRecharge', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				var url = data.data.url;
+				 window.location.href=url;
+			}
+		};
+  };
+  //处理提现
+  page.operateWithDraw=function(){
+  	return page.getData(
+			'/user/withdrawals', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				var url = data.data.url;
+				window.location.href=url;
+			}
+		};
+  };
+  
+  //处理快捷充值未免密
+  page.operateRechargeNoPsd=function(){
+  	return page.getData(
+			'/user/recharge', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				var url = data.data.url;
+				var is_jump = data.data.is_jump; //1：未开通免密，跳转联动页面 0：开通免密，无需跳转
+				if (is_jump == 1) {
+					window.location.href=url;
+				}
+			}
+		};
+  };
+  
+  
+  //开通充值免密
+  page.operateOpenChargePsd=function(){
+  	return page.getData(
+			'/user/agreement', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				var url = data.data.url;
+				window.location.href=url;
+			}
+		};
+  };
+  //处理实名
+  page.operateRealname=function(){
+  	return page.getData(
+			'/pc/user/userAuthVersion2', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				var url = data.data.url;
+				window.location.href=url;
+			}
+		};
+  };
+  
+  //处理绑卡
+  page.operateBindCard=function(){
+  	return page.getData(
+			'/pc/user/bindBankCard', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				var url = data.data.url;
+				window.location.href=url;
+			}
+		};
+  };
+  
+  //处理投资免密
+  page.operateInvestNoPsd=function(){
+  	return page.getData(
+			'/user/agreement', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				var url = data.data.url;
+				window.location.href=url;
+			}
+		};
+  };
+  
+  //直接传递投资签约地址过来
+  page.operateNoPsdUrl=function(){
+  	window.location.href=param.url;
+  };
+  
+  //处理换卡
+  page.operateChangeBank=function(){
+  	return page.getData(
+			'/user/replaceBankCard', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				var url = data.data.url;
+				window.location.href=url;
+			}
+		};
+  };
+  
+  //处理协议
+  page.operateContract=function(){
+ 	  return page.getData(
+			'/invest/contract', param, [opeation]);
+
+		/**
+		 * init crumb template
+		 */
+		function opeation(data) {
+			if (page.isSuccess(data)) {
+				var url = data.data.contractUrl;
+				if(strUtil().isEmpty(url)){
+					alert('服务器异常');
+				}else{
+					window.location.href=url;
+				}
+			}
+		};
+  };
+    //关闭免密
+  page.shutspeedFree = function(){
+    return page.getData(
+      '/user/agreement', param,[opeation]);
+    function opeation(data){
+      if (page.isSuccess(data)) {
+        var url = data.data.url;
+        window.location.href=url;
+      }
+    }
+  };
+ page.init();
+});

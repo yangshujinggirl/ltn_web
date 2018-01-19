@@ -1,0 +1,183 @@
+.home-advantage {
+
+  background: #fafafa;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e2e2e2;
+ .nav{
+  width: 44px;
+  position: fixed;
+  top:50%;
+  margin-top:-76px;
+  right:0;
+  z-index: 999999;
+  li{
+    width: 44px;
+    height: 44px;
+    background: #e2e2e2;
+    margin-top: 10px;
+    a{
+      display: block;
+      width: 44px;
+      height: 44px;
+      color: #fff;
+      font-size: 15px;
+      &:hover{
+        background: #ff6f20;
+      }
+    }
+  }
+  .one,.two,.three{
+    text-align: center;
+    line-height: 55px;
+    position: relative;
+    .daezc,.app,.weixin{
+      display: block;
+      position: absolute;
+      line-height: 21px;
+      left: 0;
+      top: 0;
+      display: none;
+    }
+    .app{
+      display: block;
+    }
+     .ewm1{
+      position: absolute;
+      left: -100px;
+      top: 0;
+      display: none;
+    }
+    .ewm2{
+      position: absolute;
+      left: -100px;
+      top: 0;
+      display: none;
+    }
+  }
+
+ }
+  .wrap {
+    padding: 30px 0 29px 0;
+  }
+  .info1{
+    height: 55px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e2e2e2;
+    .caption{
+      width: 280px;
+      display: inline-block;
+      font-size: 16px;
+      position: relative;
+      .outnumber{
+        font-size: 20px;
+        color: red;
+      }
+      .icon3{
+        position: absolute;
+        left: 45px;
+        top: -4px;
+      }
+      .pingtai{
+        color: #6a6a6a;
+        font-size: 16px;
+      }
+    }
+  }
+  .point {
+    float: left;
+    width: 690px;
+    box-sizing: border-box;
+
+    .group {
+
+      padding: 0 55px;
+
+      .item {
+        display: inline-block;
+        width: 33.333%;
+        text-align: center;
+        float:left;
+
+        .icon {
+          height: 90px;
+        }
+
+        &.idx1 .icon {
+          background: url(/img/icon-home-advantage-1.png) center center no-repeat;
+        }
+        &.idx2 .icon {
+          background: url(/img/icon-home-advantage-2.png) center center no-repeat;
+        }
+        &.idx3 .icon {
+          background: url(/img/icon-home-advantage-3.png) center center no-repeat;
+        }
+
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+          margin: 20px 0 10px 0;
+        }
+        .content {
+          margin: 10px 0 0 0;
+        }
+      }
+    }
+  }
+
+  .intro {
+    float:right;
+    height: 100%;
+    width: 500px;
+    border-left: 1px dashed #e2e2e2;
+    box-sizing: border-box;
+    padding: 0 40px;
+    .title {
+      .main {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 10px 0 0;
+      }
+      .sub {
+        color: #8a8a8a;
+        font-size: 12px;
+      }
+    }
+    .content {
+      color: #6a6a6a;
+      text-align: justify;
+      line-height: 20px;
+    }
+    .stepList {
+      height: 76px;
+      padding:0;
+      margin:0;
+      .item1 {
+        position: relative;
+        padding:0;
+        width: 62px;
+        height: 62px;
+        float:left;
+        cursor: pointer;
+        padding-right:45px;
+        background: url(/img/index_5.png) right center no-repeat;
+      }
+      .item1:nth-child(4){
+        padding:0;
+        background: none;
+      }
+      .item2 {
+        display: none;
+        padding:0;
+        width:170px;
+        height: 45px;
+        line-height: 56px;
+        text-align: center;
+        background: url(/img/index_6.png);
+        position:absolute;
+        left:-51px;
+        top:51px;
+      }
+    }
+  }
+}

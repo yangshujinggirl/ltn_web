@@ -1,0 +1,33 @@
+<div class="product-filter page-component" id="filter">
+<!--
+  <div class="wrap">
+    <ul class="tabs short">
+      <li class="item current">活期-随心投</li>
+      <li class="item short">短期-乐巢投</li>
+      <li class="item long">中长期-乐巢投系列</li>
+    </ul>
+    <div class="options">
+      <div class="item">
+        <span class="caption">项目期限</span>
+        <ul class="params">
+          <li class="item">全部</li>
+          <li class="item">5天</li>
+          <li class="item">15天</li>
+          <li class="item">30天</li>
+          <li class="item">45天</li>
+        </ul>
+      </div>
+      <div class="item">
+        <span class="caption">项目状态</span>
+        <ul class="params">
+          <li class="item">全部</li>
+          <li class="item">可投资</li>
+          <li class="item">已满标</li>
+          <li class="item">已还款</li>
+          <li class="item">已结束</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+-->
+</div>

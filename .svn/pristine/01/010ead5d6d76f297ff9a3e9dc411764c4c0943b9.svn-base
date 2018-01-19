@@ -1,0 +1,16 @@
+<script type="text/template" id="tempNews">
+      <div class="top">
+        <h1>{{=it.title}}</h1>
+        <div class="wrapOne">
+          <div class="link">
+            链接:
+            <a href="{{=it.fromUrl}}" target="_blank">
+              {{=it.fromUrl}}
+            </a>
+          </div>
+          <div class="from">{{=it.publishTime}}</div>
+        </div>
+        <div class="further">{{=it.content}}</div>
+      </div>
+      
+</script>

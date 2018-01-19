@@ -1,0 +1,321 @@
+$current-prod-header-bgColor: #61d0d7;
+$short-prod-header-bgColor: #61a1d7;
+$long-prod-header-bgColor: #8587d7;
+
+.home-prod {
+  .wrap {
+    padding: 0;
+  }
+
+  .current {
+    .item-list {
+      cursor:pointer;
+      border-top: 2px solid $current-prod-header-bgColor;
+      height: 141px;
+      .list-header {
+        background: $current-prod-header-bgColor;
+      }
+    }
+  }
+
+  .short {
+    .item-list {
+      cursor:pointer;
+      border-top: 2px solid $short-prod-header-bgColor;
+      height: 421px;
+      .list-header {
+        background: $short-prod-header-bgColor url(/html/img/img-home-short-header.png) center 190px no-repeat
+      }
+    }
+  }
+
+  .long {
+    .item-list {
+      cursor:pointer;
+      border-top: 2px solid $long-prod-header-bgColor;
+      height: 421px;
+      .list-header {
+        background: $long-prod-header-bgColor url(/html/img/img-home-long-header.png) center 190px no-repeat
+      }
+    }
+  }
+
+  .prod-list {
+    .header {
+      height: 40px;
+      padding: 30px 0 0 20px;
+      .main {
+         font-size: 18px;
+         font-weight: bold;
+         padding-right: 20px;
+       }
+      .sub {
+        color: #6a6a6a;
+        font-size: 12px;
+      }
+      .detail {
+        float: right;
+        padding-right: 40px;
+        padding-top: 10px;
+        .link {
+          color: #6a6a6a;
+
+          &:hover {
+            color: $font-hover-color;
+          }
+        }
+      }
+    }
+
+    .item-list {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      .list-header {
+        width: 250px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 30px 0 0 30px;
+        box-sizing: border-box;
+        .title {
+          font-size: 36px;
+          font-weight: bold;
+          color: #fff;
+          .sub {
+            display: block;
+            font-size: 14px;
+            padding: 10px 0 0 0;
+            font-weight: normal;
+            line-height: 1.5;
+          }
+        }
+      }
+      .list {
+        float: right;
+        width: $page-width - 250px;
+        box-sizing: border-box;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        border-top: none;
+        border-left: none;
+
+        .item {
+          box-sizing: border-box;
+          height: 140px;
+          position: relative;
+          border-bottom: 1px solid #e2e2e2;
+
+          .detail {
+            float: left;
+            padding: 20px 0 0 50px;
+
+            .title {
+                color: #3a3a3a;
+                font-size: 14px;
+                position: relative;
+                span{
+                    display: inline-block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 600px;
+                }
+                hr{
+                  height: 25px;
+                  width: 0;
+                  border: 1px solid #e2e2e2;
+                  display: inline-block;
+                  position: absolute;
+                  left: 185px;
+                  top: -10px;
+                }
+                .biaoqian{
+                  height: 25px;
+                  font-size: 14px;
+                  color: #c9c9c9;
+                  line-height: 25px;
+                  border: 1px solid #c9c9c9;
+                  border-radius: 15px;
+                  padding:0 10px;
+                  text-align: center;
+                  position: absolute;
+                  left: 222px;
+                  top: -2px;
+                }
+              .sub {
+                margin-left: 15px;
+                color: #8a8a8a;
+              }
+            }
+
+            .prop {
+              padding: 20px 0 0 0;
+              vertical-align: bottom;
+
+              .caption {
+                color: #8a8a8a;
+                font-size: 12px;
+              }
+
+              .profit, .period, .daily, .threshold, .progress {
+                display: inline-block;
+                vertical-align: bottom;
+                width: 130px;
+              }
+
+              .profit {
+                width: 220px;
+                .field {
+                  color: #ea5504;
+                  font-size: 36px;
+                  position: relative;
+                  .icon{
+                    position: absolute;
+                    right: -37px;
+                    top: -13px;
+                    display: none;
+                  }
+                }
+                .unit {
+                  color: #ea5504;
+                  font-size: 18px;
+                }
+              }
+
+              .period {
+                margin-left: 20px;
+                .field {
+                  font-size: 24px;
+                }
+                .unit {
+                  font-size: 18px;
+                }
+              }
+              .daily {
+                .field {
+                  font-size: 24px;
+                }
+                .unit {
+                  font-size: 18px;
+                }
+              }
+
+              .threshold {
+                .field {
+                  font-size: 24px;
+                }
+                .unit {
+                  font-size: 18px;
+                }
+              }
+
+              .progress {
+                margin: 0 0 0 0px;
+                position: relative;
+                top: 10px;
+                .prec, .yuan {
+                  margin-left: 5px;
+                }
+                .bar {
+                  padding: 8px 0;
+
+                  .container {
+                    height: 4px;
+                    border-radius: 2px;
+                    background: #e8e8e8;
+
+                    .completed {
+                      width: 70%;
+                      height: 4px;
+                      border-radius: 2px;
+                      background: #90a1cf;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .action {
+            float: right;
+            width: 239px;
+            height: 140px - 20px - 20px;
+            box-sizing: border-box;
+            border-left: 1px dashed #e2e2e2;
+            margin: 20px 0;
+            padding: 35px 0 0 0;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+
+            .caption {
+              color: #8a8a8a;
+              margin-right: 6px;
+            }
+            .sold, .unit {
+              color: #3a3a3a;
+            }
+            .invest {
+              display: block;
+              margin: 13px auto 10px auto;
+              color: #fff;
+              font-size: 18px;
+              width: 140px;
+              height: 36px;
+              line-height: 36px;
+              box-sizing: border-box;
+              border: none;
+              border-radius: 4px;
+              background: $act-btn-color;
+              
+
+              &:hover {
+                background: $act-btn-hover-color;
+              }
+              &.disabled {
+                background: $bg-btn-disabled;
+                cursor: not-allowed;
+              }
+            }
+            .iconjieshu{
+                background: url(/html/img/gantanhao1.png) no-repeat;
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                z-index: $z-index-header;
+                position: absolute;
+                left:6px;
+                top:4px;
+              }
+              .blueIcon{
+                background: url(/html/img/gantanhao2.png) no-repeat;
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                z-index: $z-index-header;
+                position: absolute;
+                left:192px;
+                top:50px;
+                display: none;
+              }
+            .tankuang{
+              width:203px;
+              height: 43px;
+              display: inline-block;
+              background: url(/html/img/tankuang.png) no-repeat;
+              position: absolute;
+              right:13px;
+              top:12px;
+              color: #999;
+              text-align: center;
+              line-height: 28px;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

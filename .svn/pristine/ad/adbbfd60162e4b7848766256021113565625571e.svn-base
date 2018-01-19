@@ -1,0 +1,75 @@
+$dialog-header-height: 89px;
+
+.dialog-header {
+  height: $dialog-header-height;
+  border-bottom: 1px solid #eaebec;
+  background: #fff;
+
+  .wrap {
+    overflow: visible;
+  }
+
+  .left {
+    .brand {
+      background: url(/img/img-brand.png?v=201605131412) center center no-repeat;
+      display: inline-block;
+      height: 100%;
+      height: 89px\9;
+      width: 90px;
+      padding: 0 20px;
+    }
+
+    .slogan {
+      background: url(/img/img-slogan.png?v=201605131412) center center no-repeat;
+      display: inline-block;
+      height: 49px;
+      width: 158px;
+      padding: 0 20px;
+      margin: 20px 0;
+    }
+
+    .mobile {
+      background: url(/img/icon-header-weixin.png) center center no-repeat;
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      margin: 27px 0;
+      cursor: pointer;
+      position: relative;
+
+      .app-code {
+        background: url(/img/img-dialog-header-app-code.png) center bottom no-repeat;
+        width: 90px;
+        height: 110px;
+        position: absolute;
+        top: 30px;
+        left: -28px;
+        display: none;
+        z-index: $z-index-header;
+      }
+
+      &:hover {
+        background-image: url(/img/icon-header-weixin-hover.png);
+
+        .app-code {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .right {
+    line-height: $dialog-header-height;
+
+    .service {
+      color: #6a6a6a;
+      font-size: 14px;
+    }
+
+    .home {
+      color: #ff6f20;
+      font-size: 18px;
+      margin: 0 0 0 30px;
+    }
+  }
+}

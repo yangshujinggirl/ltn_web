@@ -1,0 +1,322 @@
+.product-prop {
+  .wrap {
+    padding: 0;
+    background: #fff;
+  }
+
+  .header {
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid $border-color;
+    overflow: hidden;
+
+    .title, .coupon-list, .contract {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .title {
+      color: $font-color-title;
+      margin: 0;
+      padding: 0 0 0 40px;
+    }
+    .biaoqian1{
+      height: 25px;
+      line-height: 25px;
+      font-size: 14px;
+      color: #c9c9c9;
+      display: inline-block;
+      border: 1px solid #c9c9c9;
+      border-radius: 15px;
+      padding:0 10px;
+      margin-left:15px;
+    }
+
+    .coupon-list {
+      margin:0 0 0 15px;
+      padding: 0;
+      .item {
+        display: inline-block;
+        margin: 0 0 0 20px;
+
+        .coin, .raise, .return, .start,.limit {
+          font-size: 12px;
+          padding-left: 17px;
+          color: $font-color-sub;
+        }
+        .coin {
+          background: url(/img/icon-coupon-coin.png) left center no-repeat;
+        }
+        .raise {
+          background: url(/img/icon-coupon-raise.png) left center no-repeat;
+        }
+        .return {
+          background: url(/img/icon-coupon-return.png) left center no-repeat;
+        }
+        .start {
+          background: url(/img/icon-coupon-start.png) left center no-repeat;
+        }
+        .limit{
+          background: url(/img/xiane.png) left center no-repeat;
+        }
+      }
+    }
+
+    .contract {
+      float: right;
+      padding: 0 55px 0 0;
+    }
+  }
+
+  .content {
+    border: 1px solid $border-color;
+    position: relative;
+
+    .prop, .action {
+      display: inline-block;
+      box-sizing: border-box;
+      height: 100%;
+      vertical-align: top;
+    }
+
+    .prop {
+      width: $page-width - 320px - 2px;
+      border-right: 1px solid $border-color;
+      padding: 0 40px;
+
+      .main {
+        padding: 40px 0 39px 0;
+        border-bottom: 1px dashed $border-color;
+        height: 220px;
+        box-sizing: border-box;
+
+        .field {
+          font-size: 28px;
+          color: $font-color-title;
+        }
+        .liji{
+          font-size: 24px;
+        }
+        .unit {
+          font-size: 18px;
+          color: $font-color-title;
+        }
+        .caption {
+          font-size: 14px;
+          color: $font-color-sub;
+          display: block;
+          padding: 21px 0 0 0;
+        }
+
+        .chart, .profit, .period, .surplus, .threshold {
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 20px;
+          padding: 30px 0;
+        }
+
+        .chart {
+          // background: gray;
+          width: 140px;
+          height: 140px;
+          // border-radius: 50%;
+          margin: 0 40px 0 17px;
+          padding: 0;
+          position: relative;
+
+          .container, .legend {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+          }
+
+          .legend {
+            .field {
+              font-size: 24px;
+              color: $font-color-title;
+              padding-top: 45px;
+              text-align: center;
+            }
+            .caption {
+              font-size: 14px;
+              color: $font-color-sub;
+              padding: 0;
+              text-align: center;
+            }
+          }
+        }
+
+        .profit {
+          width: 130px;
+          .field, .unit {
+            color: $font-color-rate;
+          }
+        }
+
+        .period {
+          width: 120px;
+        }
+
+        .surplus {
+          // width: 260px;
+          margin-right: 0;
+        }
+
+        .threshold {
+          width: 140px;
+        }
+      }
+
+      .sub {
+        height: 110px;
+        box-sizing: border-box;
+
+        .amount, .list {
+          height: 60px;
+          box-sizing: border-box;
+          margin: 25px 0;
+          padding: 0 30px;
+          display: inline-block;
+          color: $font-color;
+          vertical-align: top;
+        }
+
+        .amount {
+          // width: 210px;
+          border-right: 1px dashed $border-color;
+
+          .caption {
+            font-size: 14px;
+            line-height: 2;
+            display: block;
+          }
+          .field, .unit {
+            font-size: 24px;
+          }
+        }
+
+        .list {
+          width: 520px;
+          .item {
+            float: left;
+            width: 171px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 29px;
+          }
+        }
+      }
+    }
+    .action {
+      width: 320px;
+      background: #fafafa;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0 38px;
+      overflow: hidden;
+
+      .title {
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid $border-color;
+
+        .main {
+          font-size: 18px;
+          color: $font-color-title;
+        }
+
+        .sub {
+          font-size: 14px;
+          color: $font-color-sub;
+          margin-left: 12px;
+        }
+      }
+
+      .list {
+        line-height: 2;
+        font-size: 14px;
+        padding: 20px 0;
+        .caption {
+          color: $font-color-sub;
+        }
+      }
+      .start{
+          //margin-top: 50px;
+        }
+
+      .button {
+        background: $bg-btn;
+        width: 240px;
+        height: 35px;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 18px;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 45px;
+
+        &:hover {
+          background: $bg-btn-hover;
+        }
+        &[disabled], &.disabled {
+          background: #d7d7d7;
+          cursor: not-allowed;
+          color: #fff;
+        }
+      }
+        .iconjieshu{
+        background: url(../../img/gantanhao1.png) no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        z-index: $z-index-header;
+        position: absolute;
+        left:6px;
+        top:4px;
+        display: none;
+      }
+      .blueIcon{
+        background: url(../../img/gantanhao2.png) no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        z-index: $z-index-header;
+        position: absolute;
+        right:10px;
+        top:252px;
+        display: none;
+      }
+    .tankuang{
+      width:203px;
+      height: 43px;
+      display: inline-block;
+      background: url(../../img/tankuang.png) no-repeat;
+      position: absolute;
+      right:57px;
+      top:207px;
+      color: #999;
+      text-align: center;
+      line-height: 28px;
+      display: none;
+    }
+
+      .tips {
+        font-size: 12px;
+        color: $font-color-sub;
+        text-align: center;
+        line-height: 2;
+        width: 240px;
+        display: block;
+        height: 40px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,1040 @@
+  <!DOCTYPE html>
+  <html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="/html/css/style.css?v=20171023">
+    <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name=”renderer” content=”webkit” />
+   <script src="/html/js/lib/jquery.min.js"></script>
+    <script src="/html/js/lib/jquery.easydropdown.min.js"></script>
+    <script src="/html/js/lib/jquery.paging.min.js"></script>
+    <script src="/html/js/lib/jquery.validation.min.js"></script>
+    <script src="/html/js/lib/doT.min.js"></script>
+    <script src="/html/js/app.min.js?v=20161017"></script>
+  
+
+  <title>庆融资迎国庆，1000部iPhone7送给你</title>
+  <meta name="keywords" content="庆融资迎国庆，1000部iPhone7送给你。乐视电视、双立人刀具、九阳豆浆机100%中奖。">
+  <meta name="description" content="庆融资迎国庆，1000部iPhone7送给你。乐视电视、双立人刀具、九阳豆浆机100%中奖。">
+
+  </head>
+  <body>
+  
+
+    <div class="commonNavTop page-component">
+      <div class="wrap">
+        <div class="content">
+          <div class="left">
+            <div class="service">客服电话：400-999-9980</div>
+            <div class="iconlist">
+              <div class="iconItem weixin">
+                <div class="code"></div>
+              </div>
+              <div class="iconItem weibo">
+                <a href="http://weibo.com/u/5935757405" target="_blank"></a>
+              </div>
+              <div class="iconItem shouji">
+                <a href="/other/downloadapp " target="_blank"></a>
+              </div>
+              <div class="iconItem lipin">
+                <a href="/html/activity_banner" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <span class="navItem login" onclick="user().clickEvent();" id="loginLink">登录</span>
+            <a href="/html/user/register" class="navItem register">注册</a>
+            <a class="navItem welcome"></a>
+            <a href="javascript:void(0);" class="navItem logoff">安全退出</a>
+            <a href="/other/actlist" class="navItem" >最新活动</a>
+            <a href="/other/downloadapp" class="navItem">下载APP</a>
+            <a href="/help/aboutltn" class="navItem">帮助中心</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <div class="commonNavTwo page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="logo" id="logo">
+            <img src="/html/img/imageTwo/home/logo.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <a href="/" class="navItem" onclick="user().clickEvent();">首页</a>
+          <a href="/finance/list/0/1/0/0" class="navItem" onclick="user().clickEvent();">投资</a>
+         <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+         <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+          <!-- <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a> -->
+          <a href="http://bbs.lingtouniao.com" class="navItem" onclick="user().clickEvent();" target="_blank">社区</a>
+          <a href="/other/downloadapp " class="navItem" onclick="user().clickEvent();">下载APP</a>
+          <a href="/other/safeguards " class="navItem" onclick="user().clickEvent();">安全保障</a>
+          <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+          <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- TOP50模版 -->
+  <script type="text/template" id="templateTop50">
+    <div class="top6">
+      <ul>
+        {{~ it:value:index}}
+        {{? index
+        <6}} <li>
+          {{? index === 0}}
+          <img src="/html/img/mationalDay_icon2.png" }}> {{?? index === 1}}
+          <img src="/html/img/mationalDay_icon3.png" }}> {{?? index === 2}}
+          <img src="/html/img/mationalDay_icon4.png" }}> {{??}}
+          <img src="/html/img/mationalDay_icon5.png" }}> {{?}}
+          <span>{{=index+1}}</span>
+          <span>{{=strUtil().formatPhone(value.phone)}}</span>
+          <span>{{=strUtil().formatKilo(value.amount)}}</span>
+          </li>
+          {{?}}
+        {{~}}
+      </ul>
+    </div>
+    <div class="top-other">
+      <ul>
+        {{~ it:value:index}} {{? index >= 6}}
+        <li>
+          <span>{{=index+1}}</span>
+          <span>{{=strUtil().formatPhone(value.phone)}}</span>
+          <span>{{=strUtil().formatKilo(value.amount)}}</span>
+        </li>
+        {{?}} {{~}}
+      </ul>
+    </div>
+    {{? it.length==0}}
+    <div class="nolist" style="display:inherit">
+      <div class="logoIcon">
+        暂无数据！
+      </div>
+    </div>
+    {{?}}
+  </script>
+  <!-- 邀请好友送手机活动 -->
+  <script type="text/template" id="templateInvite">
+    <div class="win_left">
+      <div class="win_item">已有<span class="win_one">&nbsp;{{=it.iphoneTotal}}&nbsp;</span>人获得iPhone7</div>
+      <div class="win_item">已有<span class="win_one">&nbsp;{{=it.P9Total}}&nbsp;</span>人获得华为P9</div>
+    </div>
+    <div class="win_right">
+      <div class="right_title">
+        <span>获奖人</span>
+        <span class="jiangpin">获得奖品</span>
+      </div>
+      <div class="win_info">
+        <ul class="win_list">
+          {{~ it.phones:value:index}}
+          <li>
+            <span class="win_tel">{{=strUtil().formatPhone(value.mobileNo)}}</span>
+            <span class="win_prizes">{{=value.prizeName}}</span>
+          </li>
+          {{~}}
+        </ul>
+      </div>
+    </div>
+  
+  </script>
+  <!-- 平台中奖纪录 -->
+  <script type="text/template" id="templatePlatformPrizeRecord">
+    <div class="platform-record-data">
+      <ul>
+        {{~ it:value:index}}
+        <li>
+          <span class="data_one">{{=index+1}}</span>
+          <span class="data_two">{{=value.mobileNo}}</span>
+          <span class="data_three">{{=value.prizeName}}</span>
+        </li>
+        {{~}}
+      </ul>
+      <!-- 无纪录 -->
+      {{? it.length<=0}}
+      <div class="nolist2" style="display:inherit">
+        <div class="logoIcon">
+          暂无数据！
+        </div>
+      </div>
+      {{?}}
+    </div>
+  </script>
+  <!-- 个人中奖纪录 -->
+  <script type="text/template" id="templatePrizeRecord">
+    <div class="private-record-data">
+      {{? it.noLogin}}
+        <div class="nolist" style="display:inherit">
+          <div class="logoIcon">
+            暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+          </div>
+        </div>
+        {{?? typeof it == 'object' && it.mobileNo}}
+        <ul>
+          <li>
+            <span class="data_one">{{=1}}</span>
+            <span class="data_two">{{=it.mobileNo}}</span>
+            <span class="data_three">{{=it.prizeName}}</span>
+          </li>
+        </ul>
+        {{?? it.lenght>0}}
+          <ul>
+            {{~ it:value:index}}
+                <li>
+                  <span class="data_one">{{=index+1}}</span>
+                  <span class="data_two">{{=it.mobileNo}}</span>
+                  <span class="data_three">{{=it.prizeName}}</span>
+                </li>
+            {{~}}
+          </ul>
+        {{??}}
+        <div class="nolist2" style="display:inherit">
+          <div class="logoIcon">
+            暂无数据！
+          </div>
+        </div>
+      {{?}}
+    </div>
+  </script>
+  
+
+  <div class="mationalDay">
+    <div class="banner">
+      <img src="/html/img/mationalDay_banner.jpg">
+    </div>
+    <div class="mationalDay_wrap">
+      <div class="mationalDay_cont">
+        <div class="title_icon">
+          <img src="/html/img/mationalDay_icon1.png">
+        </div>
+        <div class="top_contnet">
+          <div class="top_title">是投资达人，也是生活家。领投鸟和您一样，时刻把家人的健康和快乐放在第一位。</div>
+          <div class="stretch_rule">
+            <div class="rule">活动规则</div>
+            <div class="rule_info">活动期间，累计投资前六名（体验标除外）可获得</div>
+          </div>
+          <div class="bottom_content">
+            <div class="left_second">
+              <div class="second_title">投资排行榜</div>
+              <ul class="second_list_title">
+                <li class="second_item">排名</li>
+                <li class="second_item">用户</li>
+                <li class="second_item">投资金额</li>
+              </ul>
+              <div class="second_list" id="Top50DataWrap">
+                <ul class="list_info list_info1">
+                  <li class="info_item">
+                    <div class="list_icon">
+                      <img src="/html/img/mationalDay_icon2.png">
+                    </div>
+                    <div class="list_item xuhao">1</div>
+                    <div class="list_item tel">15950851657</div>
+                    <div class="list_item money">￥****</div>
+                  </li>
+                  <li class="info_item">
+                    <div class="list_icon">
+                      <img src="/html/img/mationalDay_icon3.png">
+                    </div>
+                    <div class="list_item xuhao">1</div>
+                    <div class="list_item tel">15950851657</div>
+                    <div class="list_item money">￥****</div>
+                  </li>
+                  <li class="info_item">
+                    <div class="list_icon">
+                      <img src="/html/img/mationalDay_icon4.png">
+                    </div>
+                    <div class="list_item xuhao">1</div>
+                    <div class="list_item tel">15950851657</div>
+                    <div class="list_item money">￥****</div>
+                  </li>
+                  <li class="info_item">
+                    <div class="list_icon">
+                      <img src="/html/img/mationalDay_icon5.png">
+                    </div>
+                    <div class="list_item xuhao">1</div>
+                    <div class="list_item tel">15950851657</div>
+                    <div class="list_item money">￥****</div>
+                  </li>
+                  <li class="info_item">
+                    <div class="list_icon">
+                      <img src="/html/img/mationalDay_icon5.png">
+                    </div>
+                    <div class="list_item xuhao">1</div>
+                    <div class="list_item tel">15950851657</div>
+                    <div class="list_item money">￥****</div>
+                  </li>
+                  <li class="info_item">
+                    <div class="list_icon">
+                      <img src="/html/img/mationalDay_icon5.png">
+                    </div>
+                    <div class="list_item xuhao">1</div>
+                    <div class="list_item tel">15950851657</div>
+                    <div class="list_item money">￥****</div>
+                  </li>
+                </ul>
+                <ul class="list_info list_info2">
+                  <li>
+                    <span class="list_icon"></span>
+                    <span class="list_icon"></span>
+                    <span class="list_icon"></span>
+                    <span class="list_icon"></span>
+                    <div class="list_icon">
+                    </div>
+                    <div class="list_item xuhao">1</div>
+                    <div class="list_item tel">15950851657</div>
+                    <div class="list_item money">￥****</div>
+                  </li>
+                  <li class="info_item">
+                    <div class="list_icon">
+                    </div>
+                    <div class="list_item xuhao">1</div>
+                    <div class="list_item tel">15950851657</div>
+                    <div class="list_item money">￥****</div>
+                  </li>
+                  <li class="info_item">
+                    <div class="list_icon">
+                    </div>
+                    <div class="list_item xuhao">1</div>
+                    <div class="list_item tel">15950851657</div>
+                    <div class="list_item money">￥****</div>
+                  </li>
+                </ul>
+                <div class="nolist">
+                  <div class="logoIcon">
+                    暂无数据！
+                  </div>
+                </div>
+              </div>
+              <img src="/html/img/mationalDay_icon7.png" class="tupian">
+            </div>
+            <div class="right_prizes">
+              <img src="/html/img/mationalDay_icon8.png">
+            </div>
+          </div>
+          <div class="Service">
+            实物奖品送达时间以官方发货或电商到货时间为准，中奖者请拨打400-999-9980或等待客服与您联系。
+          </div>
+          <a href="/html/product/#!/short/0/0/1"><button class="yaoqing">投资冲榜</button></a>
+      </div>
+      <div class="mationalDay_cont">
+        <div class="title_icon">
+          <img src="/html/img/mationalDay_img2.png">
+        </div>
+        <div class="top_contnet">
+          <div class="top_title">朋友间分担忧虑，也共享喜悦。领投鸟送您iPhone7和华为P9，给您多一个不可不推荐给好友的理由。</div>
+          <div class="stretch_rule">
+            <div class="rule1">活动规则</div>
+            <div class="rule_info1">活动期间，在投金额满<span class="hongse">5万元</span>的用户推荐五位及以上好友投资“庆融资迎国庆”特权标 满
+              <span
+                class="hongse">3万元/每位</span>，推荐人可获得<span class="hongse">iPhone7 （128G）</span>一部；</div>
+          </div>
+          <div class="tupian1">
+            <img src="/html/img/mationalDay_img3.png">
+          </div>
+          <div class="rule_info2">在投金额满<span class="hongse">3万元</span>的用户推荐五位及以上好友投资“庆融资迎国庆”特权标满<span class="hongse">1.5万元/每位</span>，推荐人即可获得
+            <span
+              class="hongse">华为P9（64G）</span>一部。</div>
+          <div class="tupian1">
+            <img src="/html/img/mationalDay_img4.png">
+          </div>
+          <!-- 邀请好友活动 -->
+          <div class="mationalDay_win" id="InviteDataWrap">
+  
+          </div>
+          <div class="invited">单人可邀请多位好友参加活动，邀请人在满足活动条件基础上可获多次奖励；例：邀请人在投金额满10万元，邀请了10位好友注册并投资特权标均达3万元，邀请人可获2部iPhone7。
+          </div>
+          <div class="Service1">
+            实物奖品送达时间以官方发货或电商到货时间为准；每邀请5位好友仅获一次奖励，条件满足者请拨打400-999-9980或等待客服联系。
+          </div>
+          <a href="/html/mypartner/"><button class="yaoqing">邀请好友</button></a>
+        </div>
+      </div>
+      <!-- 所有转盘 -->
+      <div class="mationalDay_cont">
+        <div class="title_icon">
+          <img src="/html/img/guoqing_img1.png">
+        </div>
+        <div class="youqing">友情提醒，下面4个按钮可依次点击查看更丰富大奖
+        </div>
+        <!-- 转盘tab -->
+        <div class="turningDisc_turning">
+          <div class="turning_title">
+            <ul class="truning_list">
+              <li class="turning_item item1" data-tab="huolizhi">活力值转盘</li>
+              <li class="turning_item item2" data-tab="gold">黄金转盘</li>
+              <li class="turning_item item3" data-tab="buckingham">白金转盘</li>
+              <li class="turning_item item4" data-tab="diamonds">钻石转盘</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 转盘content -->
+        <div class="turning_cont1">
+          <!-- 活力值 -->
+          <div class="xanthine huolizhi" data-lottery="lottery"  id="EnergyValueRoll">
+            <div class="turning_title">
+              人生拼实力，也需要一点好运气。选择领投鸟，让您的投资在收益之余，还有更多快乐和惊喜。
+            </div>
+            <div class="notes_left tp4" id="choujiangZp">
+              <div id="lottery">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="lottery-unit lottery-unit-0"><img src="/html/img/guoqing_choujiang_icon1.png"></td>
+                    <td class="lottery-unit lottery-unit-1"><img src="/html/img/guoqing_choujiang_icon2.png"></td>
+                    <td class="lottery-unit lottery-unit-2"><img src="/html/img/guoqing_choujiang_icon3.png"></td>
+                  </tr>
+                  <tr>
+                    <td class="lottery-unit lottery-unit-4"><img src="/html/img/guoqing_choujiang_icon5.png"></td>
+  
+                    <td colspan="1" rowspan="1" class="choujiang choujiang2 choujiang_btn" data-code="4">
+                      <img src="/html/img/finance_shoujiang.png">
+                    </td>
+  
+                    <!-- 敬请期待 -->
+                    <td class="qidai_but choujiang_btn">
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/finance_qidai.png">
+                      </a>
+                    </td>
+                    <!-- 登录 -->
+                    <td class="login_but choujiang_btn" data-code="2">
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/finance_login.png">
+                      </a>
+                    </td>
+                    <!-- 活动截止 -->
+                    <td class="jiezhi_but choujiang_btn" data-code="1">
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/finance_jiezhi.png">
+                      </a>
+                    </td>
+                    <!--投资激活 -->
+                    <td class="touzi_but choujiang_btn" data-code="3">
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/choujiang_jihuo.png">
+                      </a>
+                    </td>
+                    <!-- 再来一次-->
+                    <td class="zaiyici_but choujiang_btn" data-code="6">
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/finance_algin.png">
+                      </a>
+                    </td>
+  
+                    <td class="lottery-unit lottery-unit-3"><img src="/html/img/guoqing_choujiang_icon4.png"></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="surplus" id="propSurplus">
+                您当前还可抽奖<span class="huangse chance">0</span>次<br> 您当前可用活力值
+                <span class="huangse activeValue">500</span>点
+              </div>
+            </div>
+            <div class="stretch_rule">
+              <div class="rule1">活动规则</div>
+              <div class="rule_info1">活动期间用户单笔投资额满5000元（非体验标），即可获得一次活力值转盘抽奖机会，活动结束后，可用累积活力值兑换相应奖品，每笔投资仅可获得一次抽奖机会，中奖率100%；</div>
+            </div>
+            <div class="cases">
+              示例：建林在活动期间投资2次，分别为10000元和5000元，可以抽奖2次，抽中了50点活力值，用活力值兑换了一台小米蓝牙音箱。
+            </div>
+            <div class="turning_line"></div>
+            <div class="turning_caption">
+              <div class="caption" data-prizeCode="30">
+                <div class="turning_img">
+                  <img src="/html/img/duihuan_icon1.png">
+                </div>
+                <div class="turing_bottom">
+                  <button class="turing_but disabled">立即兑换</button>
+                  <div class="cashing">已兑换<span>0</span>个</div>
+                </div>
+              </div>
+              <div class="caption" data-prizeCode="31">
+                <div class="turning_img">
+                  <img src="/html/img/duihuan_icon2.png">
+                </div>
+                <div class="turing_bottom">
+                  <button class="turing_but disabled">立即兑换</button>
+                  <div class="cashing">已兑换<span>0</span>个</div>
+                </div>
+              </div>
+              <div class="caption cap1" data-prizeCode="32">
+                <div class="turning_img">
+                  <img src="/html/img/duihuan_icon3.png">
+                </div>
+                <div class="turing_bottom">
+                  <button class="turing_but disabled">立即兑换</button>
+                  <div class="cashing">已兑换<span>0</span>个</div>
+                </div>
+              </div>
+              <div class="caption cap1" data-prizeCode="33">
+                <div class="turning_img">
+                  <img src="/html/img/duihuan_icon4.png">
+                </div>
+                <div class="turing_bottom">
+                  <button class="turing_but disabled">立即兑换</button>
+                  <div class="cashing">已兑换<span>0</span>个</div>
+                </div>
+              </div>
+              <div class="caption cap1" data-prizeCode="34">
+                <div class="turning_img">
+                  <img src="/html/img/duihuan_icon5.png">
+                </div>
+                <div class="turing_bottom">
+                  <button class="turing_but disabled">立即兑换</button>
+                  <div class="cashing">已兑换<span>0</span>个</div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!-- 黄金 -->
+          <div class="xanthine truning_gold gold" data-lottery="lottery2" data-type="B">
+            <div class="notes_left notes_left2 tp1" id="choujiangZp">
+              <div class="notes_title">
+                <img src="/html/img/huangjin_bg1.png">
+              </div>
+              <div id="lottery2">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="lottery-unit lottery-unit-0"><img src="/html/img/choujiang_jiangpin2.png"></td>
+                    <td class="lottery-unit lottery-unit-1"><img src="/html/img/choujiang_xiaomi.png"></td>
+                    <td class="lottery-unit lottery-unit-2"><img src="/html/img/choujiang_doujiangji.png"></td>
+                  </tr>
+                  <tr>
+                    <td class="lottery-unit lottery-unit-4"><img src="/html/img/choujiang_dao.png"></td>
+                     <!-- 立即抽奖 -->
+                    <td colspan="1" rowspan="1" class="choujiang choujiang_btn" data-code=1>
+                      <img src="/html/img/finance_shoujiang.png">
+                    </td>
+  
+                    <!-- 登录 -->
+                    <td class="login_but choujiang_btn" data-code=2>
+                      <a href="javascript:void(0);" id="LoginBbut">
+                        <img src="/html/img/finance_login.png">
+                      </a>
+                    </td>
+                    <!-- 活动截止 -->
+                    <td class="jiezhi_but" data-code=3>
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/finance_jiezhi.png">
+                      </a>
+                    </td>
+                    <!-- 已无机会 -->
+                    <td class="wujihui_but" data-code=4>
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/finance_wujihui.png">
+                      </a>
+                    </td>
+                    <!--投资激活 -->
+                    <td class="touzi_but choujiang_btn" data-code="-1">
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/choujiang_jihuo.png">
+                      </a>
+                    </td>
+                    <td class="lottery-unit lottery-unit-3">
+                      <img src="/html/img/choujiang_shouji.png">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="surplus">
+                您当前还可抽奖<span class="huangse">0</span>次
+              </div>
+            </div>
+            <div class="stretch_rule stretch_rule_gold">
+              <div class="rule1 rule2">活动规则</div>
+              <div class="rule_info1">用户根据活动期间的在投金额获得对应转盘抽奖机会，转盘金额区间可向下叠加，但每个转盘仅可抽取一次，中奖率100%。</div>
+            </div>
+            <div class="cases cases2">
+              示例：佳欣活动期间在投金额达到7万元，可抽取黄金转盘一次；在投金额35万，可抽取黄金、白金转盘各一次；在投金额68万，可抽取黄金、白金、钻石转盘各一次；
+            </div>
+            <div class="present">
+              您当前在投金额 <span class="hongse">50000元</span>
+            </div>
+            <div class="turning_notes">
+              <!-- 个人中奖纪录 -->
+              <div class="notes2_caption">
+                <div class="notes2_title">个人中奖纪录</div>
+                <ul class="one_list">
+                  <li>序号</li>
+                  <li class="zhongjiang">中奖用户</li>
+                  <li class="chouzhong">抽中奖品</li>
+                </ul>
+                <!-- 个人中奖纪录 -->
+                <div id="B_PrizeRecord">
+                </div>
+                <div class="nolist">
+                  <div class="logoIcon">
+                    暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+                  </div>
+                </div>
+                <div class="nolist2">
+                  <div class="logoIcon">
+                    暂无数据！
+                  </div>
+                </div>
+              </div>
+              <!-- 平台中奖纪录 -->
+              <div class="notes2_caption notes2_caption2">
+                <div class="notes2_title">平台中奖纪录</div>
+                <ul class="one_list">
+                  <li>序号</li>
+                  <li>中奖用户</li>
+                  <li class="chouzhong">抽中奖品</li>
+                </ul>
+                <!-- 平台中奖纪录 -->
+                <div id="B_PlatformPrizeRecord">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 白金 -->
+          <div class="truning_gold truning_Buckingham buckingham" data-lottery="lottery3" data-type="C">
+            
+            <div class="notes_left notes_left3 tp2" id="choujiangZp">
+              <div class="notes_title">
+                <img src="/html/img/baijin_zhuanpan_bg1.png">
+              </div>
+              <div id="lottery3">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="lottery-unit lottery-unit-0"><img src="/html/img/choujiang_baobbei.png"></td>
+                    <td class="lottery-unit lottery-unit-1"><img src="/html/img/choujiang_doujiangji.png"></td>
+                    <td class="lottery-unit lottery-unit-2"><img src="/html/img/choujiang_dao.png"></td>
+                  </tr>
+                  <tr>
+                    <td class="lottery-unit lottery-unit-4"><img src="/html/img/choujiang_dianshi.png"></td>
+                    <!-- 立即抽奖 -->
+                    <td colspan="1" rowspan="1" data-code=1 class="choujiang_btn">
+                      <img src="/html/img/finance_shoujiang.png">
+                    </td>
+                    <!-- 登录 -->
+                    <td class="login_but choujiang_btn" data-code=2 >
+                      <a href="javascript:void(0);" id="LoginBbut">
+                        <img src="/html/img/finance_login.png">
+                      </a>
+                    </td>
+                    <!-- 活动截止 -->
+                    <td class="jiezhi_but" data-code=3 >
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/finance_jiezhi.png">
+                      </a>
+                    </td>
+                    <!-- 已无机会 -->
+                    <td class="wujihui_but" data-code=4 >
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/finance_wujihui.png">
+                      </a>
+                    </td>
+                    <!--投资激活 -->
+                    <td class="touzi_but choujiang_btn" data-code=-1>
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/choujiang_jihuo.png">
+                      </a>
+                    </td>
+                    <td class="lottery-unit lottery-unit-3">
+                      <img src="/html/img/choujiang_shouji.png">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="surplus">
+                您当前还可抽奖<span class="huangse">0</span>次
+              </div>
+            </div>
+            <div class="stretch_rule stretch_rule_gold">
+              <div class="rule1 rule2">活动规则</div>
+              <div class="rule_info1">用户根据活动期间的在投金额获得对应转盘抽奖机会，转盘金额区间可向下叠加，但每个转盘仅可抽取一次，中奖率100%。</div>
+            </div>
+            <div class="cases cases2">
+              示例：佳欣活动期间在投金额达到7万元，可抽取黄金转盘一次；在投金额35万，可抽取黄金、白金转盘各一次；在投金额68万，可抽取黄金、白金、钻石转盘各一次；
+            </div>
+            <div class="present">
+              您当前在投金额 <span class="hongse">50000元</span>
+            </div>
+            <div class="turning_notes">
+              <div class="notes2_caption">
+                <div class="notes2_title">个人中奖纪录</div>
+                <ul class="one_list">
+                  <li>序号</li>
+                  <li>中奖用户</li>
+                  <li class="chouzhong">抽中奖品</li>
+                </ul>
+                <!-- 个人中奖纪录 -->
+                <div id="C_PrizeRecord">
+                </div>
+                <div class="nolist">
+                  <div class="logoIcon">
+                    暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+                  </div>
+                </div>
+                <div class="nolist2">
+                  <div class="logoIcon">
+                    暂无数据！
+                  </div>
+                </div>
+              </div>
+              <div class="notes2_caption notes2_caption2">
+                <div class="notes2_title">平台中奖纪录</div>
+                <ul class="one_list">
+                  <li>序号</li>
+                  <li>中奖用户</li>
+                  <li class="chouzhong">抽中奖品</li>
+                </ul>
+                <!-- 平台中奖纪录 -->
+                <div id="C_PlatformPrizeRecord">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 钻石 -->
+          <div class="truning_gold truning_diamonds diamonds" data-lottery="lottery4" data-type="D">
+            
+            <div class="notes_left notes_left3 tp3" id="choujiangZp">
+              <div class="notes_title">
+                <img src="/html/img/zuanshi_bg1.png">
+              </div>
+              <div id="lottery4">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="lottery-unit lottery-unit-0"><img src="/html/img/choujiang_dao.png"></td>
+                    <td class="lottery-unit lottery-unit-1"><img src="/html/img/choujiang_dianshi.png"></td>
+                    <td class="lottery-unit lottery-unit-2"><img src="/html/img/choujiang_shouji.png"></td>
+                  </tr>
+                  <tr>
+                    <!-- 立即抽奖 -->
+                    <td colspan="3" rowspan="1" class="choujiang choujiang_btn" data-code=1>
+                      <img src="/html/img/zuanshi_lijichoujian.png">
+                    </td>
+                    <!-- 登录 -->
+                    <td class="login_but choujiang_btn" data-code=2>
+                      <a href="javascript:void(0);" id="LoginBbut">
+                        <img src="/html/img/zuanshi_denglu.png">
+                      </a>
+                    </td>
+                    <!-- 投资激活 -->
+                    <td class="jihuo_but choujiang_btn" data-code=-1>
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/zuanshi_touzi.png">
+                      </a>
+                    </td>
+                    <!-- 活动截止 -->
+                    <td class="jiezhi_but" data-code=3>
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/zuanshi_jiezhi.png">
+                      </a>
+                    </td>
+                    <!-- 无机会 -->
+                    <td class="wujihui_but" data-code=4>
+                      <a href="javascript:void(0);">
+                        <img src="/html/img/zuanshi_jihui.png">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="surplus">
+                您当前还可抽奖<span class="huangse">0</span>次
+              </div>
+            </div>
+            <div class="stretch_rule stretch_rule_gold">
+              <div class="rule1 rule2">活动规则</div>
+              <div class="rule_info1">用户根据活动期间的在投金额获得对应转盘抽奖机会，转盘金额区间可向下叠加，但每个转盘仅可抽取一次，中奖率100%。</div>
+            </div>
+            <div class="cases cases2">
+              示例：佳欣活动期间在投金额达到7万元，可抽取黄金转盘一次；在投金额35万，可抽取黄金、白金转盘各一次；在投金额68万，可抽取黄金、白金、钻石转盘各一次；
+            </div>
+            <div class="present">
+              您当前在投金额 <span class="hongse">50000元</span>
+            </div>
+            <div class="turning_notes">
+              <div class="notes2_caption">
+                <div class="notes2_title">个人中奖纪录</div>
+                <ul class="one_list">
+                  <li>序号</li>
+                  <li>中奖用户</li>
+                  <li class="chouzhong">抽中奖品</li>
+                </ul>
+                <!-- 个人中奖纪录 -->
+                <div id="D_PrizeRecord">
+                </div>
+                <div class="nolist">
+                  <div class="logoIcon">
+                    暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+                  </div>
+                </div>
+                <div class="nolist2">
+                  <div class="logoIcon">
+                    暂无数据！
+                  </div>
+                </div>
+              </div>
+              <div class="notes2_caption notes2_caption2">
+                <div class="notes2_title">平台中奖纪录</div>
+                <ul class="one_list">
+                  <li>序号</li>
+                  <li>中奖用户</li>
+                  <li class="chouzhong">抽中奖品</li>
+                </ul>
+                <!-- 平台中奖纪录 -->
+                <div id="D_PlatformPrizeRecord">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="last">本活动最终解释权归领投鸟所有</div>
+  </div>
+  
+  <!-- 活力值中奖 -->
+  <div class="drawn_prize huolizhi-tips">
+    <div class="close">
+      <img src="/html/img/tanchu_close.jpg">
+    </div>
+    <div class="drawn_title">中奖啦！恭喜您获得</div>
+    <div class="prize_info">30点活力值</div>
+    <button class="drawn_but">好哒</button>
+  </div>
+  <!-- 失败异常 -->
+  <div class="drawn_prize exception-tips">
+    <div class="close">
+      <img src="/html/img/tanchu_close.jpg">
+    </div>
+    <div class="drawn_title">上帝打了一下盹，请重试！</div>
+    <button class="drawn_but">好哒</button>
+  </div>
+  <!-- 兑换提示 -->
+  <div class="drawn_prize cashing_prize">
+    <div class="close">
+      <img src="/html/img/tanchu_close.jpg">
+    </div>
+    <div class="drawn_title">确认兑换吗？</div>
+    <button class="drawn_but2 away">取消</button>
+    <button class="drawn_but2 sure">确认</button>
+  </div>
+  <!-- 兑换，活力值不够 -->
+  <div class="drawn_prize bird_reminded">
+    <div class="close">
+      <img src="/html/img/tanchu_close.jpg">
+    </div>
+    <div class="drawn_title">鸟哥提醒！</div>
+    <div class="prize_info2">您的活力值不足，投点钱再抽吧！</div>
+    <button class="drawn_but">好哒</button>
+  </div>
+  <!-- 实物中奖 -->
+  <div class="drawn_prize congratulations">
+    <div class="close">
+      <img src="/html/img/tanchu_close.jpg">
+    </div>
+    <div class="drawn_title2">恭喜您，<i>抽中</i><span>iPad一台</span>！</div>
+    <div class="drawn_center">
+      <div class="prize_left"></div>
+      <div class="code_right">
+        <img src="/html/img/code2.png">
+      </div>
+    </div>
+    <div class="congratulations_info">
+      请关注领投鸟公众号，留下您的地址和联系方式，<br> 我们将统一安排为您寄出！
+    </div>
+    <button class="drawn_but drawn_but3">好哒</button>
+  </div>
+  <!-- layout -->
+  <div class="mationalDay_cover"></div>
+  
+
+  <div class="common-cover page-component">
+  </div>
+
+  <script src="/html/js/lib/jquery.kxbdmarquee.min.js" charset="utf-8"></script>
+  <script src="/html/js/market/mationalDay/script.min.js" charset="utf-8"></script>
+
+  </body>
+  </html>
+
+  <div class="common-footer page-component">
+    <div class="wrap">
+      <div class="left">
+        <div class="iphone">
+          <div class="left_icon"></div>
+          <div class="left_time">（工作日9:30-18:30）</div>
+          <div class="left_tel">400-999-9980</div>
+          <div class="left_QQ">领投鸟投资用户交流群：247441580</div>
+        </div>
+      </div>
+      <div class="center_cont">
+        <ul>
+          <li class="title">关于我们</li>
+          <li>
+            <a href="/about/pltinfo" target="_blank">平台介绍</a>
+          </li>
+          <li>
+            <a href="/about/team" target="_blank">团队介绍 </a>
+          </li>
+          <li>
+            <a href="/about/advantage" target="_blank">品牌优势</a>
+          </li>
+          <li>
+            <a href="/about/honor" target="_blank">平台荣誉</a>
+          </li>
+          <li>
+            <a href="/about/partner" target="_blank">合作伙伴</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="title">联系我们</li>
+          <li>
+            <a href="/about/notice" target="_blank">平台公告</a>
+          </li>
+          <li>
+            <a href="/about/news" target="_blank">媒体报道 </a>
+          </li>
+          <li>
+            <a href="/about/join" target="_blank">加入我们</a>
+          </li>
+          <li>
+            <a href="/about/contact" target="_blank">联系我们</a>
+          </li>
+        </ul>
+        <ul class="three">
+          <li class="title">帮助中心</li>
+          <li>
+            <a href="/other/newerguide " target="_blank">新手指引</a>
+          </li>
+          <li>
+            <a href="/help/aboutltn/" target="_blank">帮助中心 </a>
+          </li>
+          <li>
+            <a href="/other/actlist " target="_blank">热门活动</a>
+          </li>
+        </ul>
+        <ul class="four">
+          <li class="title">安全保障</li>
+          <li>
+            <a href="/about/report" target="_blank">运营报告</a>
+          </li>
+          <li>
+            <a href="/about/protocol" target="_blank">法律法规 </a>
+          </li>
+          <li>
+            <a href="/other/safeguards " target="_blank">安全保障</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="scan">
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-app.png" alt="APP下载二维码">
+            <span class="title">APP下载</span>
+            <div class="youxiang">
+              <span class="small_icon1">
+                <img src="/html/img/footer_icon2.png">
+              </span>客服邮箱
+              <div class="tips">客服邮箱：service@lingtouniao.com</div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="code" src="/html/img/img-footer-code-weixin.png" alt="微信公众号二维码">
+            <span class="title">微信公众号</span>
+            <a href="http://weibo.com/u/5935757405" target="_blank"><div class="youxiang">
+                <span class="small_icon1">
+                  <img src="/html/img/footer_icon3.png">
+                </span>新浪微博
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_last">
+        <div class="contact" style="z-index:1;">
+          <div class="service">
+            <span><script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1258037212'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258037212%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?2ce520d6a6a41eb85c78974ad14678c4";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+          </script>
+          <script type="text/javascript">
+            var _py = _py || [];
+            _py.push(['a', 'YQs..WOGqF1S7kb_VEl9N283aBX']);
+            _py.push(['domain','stats.ipinyou.com']);
+            _py.push(['e','']);
+            -function(d) {
+              var s = d.createElement('script'),
+              e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+              f = 'https:' == location.protocol;
+              s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
+            }(document);
+            </script>
+            <noscript><img src="//stats.ipinyou.com/adv.gif?a=YQs..WOGqF1S7kb_VEl9N283aBX&e=" style="display:none;"/></noscript>
+          </span>
+          </div>
+        </div>
+        <div class="icons">
+          <!--诺顿网站图片LOGO-->
+          <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lingtouniao.com&amp;lang=zh_cn" target="_bank" class="icons1"></a>
+  
+          <!--诚信网站图片LOGO，不用加版本号是新图片-->
+          <a href="http://credit.szfw.org/CX20160524015311350170.html" target='_blank' class="icons2"></a>
+  
+          <!--工商图片LOGO-->
+          <a href="http://www.sgs.gov.cn/lz/etpsInfo.do?method=index" target='_blank' class="icons3"></a>
+  
+          <!--ICP网站图片LOGO-->
+          <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target='_blank' class="icons4"></a>
+  
+          <!--行业协会网站图片LOGO-->
+          <a href="http://sfia.org.cn/h/n/user/toDetailMermbersMainInfo?uId=2016072400000000077" target='_blank' class="icons5"></a>
+  
+          <!--安全联盟网站图片LOGO-->
+          <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.lingtouniao.com&at=business" target='_blank' class="icons6"></a>
+  
+          <!--互联网金融网站图片LOGO-->
+          <a href="http://si.trustutn.org/info?sn=172170915000608884439&certType=4%22%3E%3Cimg" target='_blank' class="icons7"></a>
+  
+          <!--可信网站图片LOGO-->
+          <a href="https://ss.knet.cn/verifyseal.dll?sn=e160523310104635708sr5000000&pa=500267" tabindex="-1" id="urlknet" target="_blank" class="icons8"></a>
+        </div>
+        <div class="friend">
+          <div class="friend_top">友情链接：
+          <a href="http://www.wdzj.com/dangan/ltnlc/" target="_blank">网贷之家</a>
+             ｜   <a href="http://lingtouniao.p2peye.com/" target="_blank">网贷天眼</a>
+                ｜   <a href="http://baike.baidu.com/item/领投鸟理财" target="_blank">百度百科</a>
+                   ｜   <a href="http://tieba.baidu.com/f?kw=%E9%A2%86%E6%8A%95%E9%B8%9F&ie=utf-8" target="_blank">百度贴吧</a>
+                      ｜   <a href="http://mp.sohu.com/profile?xpt=cHBhZzI1NjRjY2RmOThmZkBzb2h1LmNvbQ==" target="_blank">搜狐媒体</a>
+                         ｜   <a href="http://weibo.com/u/5935757405?topnav=1&wvr=6&topsug=1" target="_blank">新浪微博</a>
+                            ｜   <a href="http://toutiao.com/m5784948163/" target="_blank">今日头条</a>
+                               ｜   <a href="http://www.lagou.com/gongsi/103258.html?m=1" target="_blank">拉勾</a>
+                                  ｜   <a href="http://www.itjuzi.com/company/32856" target="_blank">IT桔子</a></div>
+              <div class="friend_bottom">公司地址：上海市金沙江路2145号普罗娜商务广场A
+              栋7楼   ©2016 LINGTOUNIAO.COM 上海吾悠互联网科技服务有限公司版权所有<a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15056137号</a>  市场有风险 投资需谨慎</div>
+        </div>
+  </div>
+    <div class="kefu">
+      <script>
+      (function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","http://lingtouniao.udesk.cn/im_client/js/udeskApi.js?1480664200567","ud");
+      ud({
+          "code": "18bj2e9k",
+          "link": "http://lingtouniao.udesk.cn/im_client?web_plugin_id=23176"
+      });
+    </script>
+    </div>
+  
+  <!-- <script src="/html/js/lib/jquery.textslider.min.js"></script> -->
+  <!-- <script src="/html/js/market/mationalDay/script.min.js"></script> -->

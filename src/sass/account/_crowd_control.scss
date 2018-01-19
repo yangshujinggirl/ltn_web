@@ -1,0 +1,275 @@
+.crowd_control{
+  .mutual_control_cont{
+    padding:10px 35px 35px;
+    .itemnav {
+       font-size: 14px;
+       font-weight: 700;
+        height: 50px;
+       border-bottom: 1px solid #e2e2e2;
+       .itemnav-left {
+          text-align: center;
+          float: left;
+          .ite {
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+            line-height: 50px;
+            color: #333;
+            position: relative;
+            bottom:-1px;
+            &.selected {
+              border-bottom: 3px solid #ff5900;
+              color: #ff5900;
+            }
+          }
+       }
+       .itemnv-right {
+        float: right;
+        font-size: 14px;
+        padding-left: 124px;
+        height: 50px;
+        color: #999;
+        line-height: 50px;
+         background:url(/html/img/viewall_liandong.png) no-repeat left center;
+       }
+    }
+    .wrapOne {
+      padding: 0 10px;
+      .headeramcount {
+        font-size: 14px;
+        margin:30px 0;
+        background-color: #f7f7f7;
+        overflow: hidden;
+        zoom:1;
+        padding: 10px 0;
+        .unit {
+          display: block;
+        }
+        .first-level {
+          padding-bottom:30px;
+          .field {
+            font-size: 16px;
+            line-height: 40px;
+            color: #666;
+          }
+          .unit {
+            font-size: 36px;
+            color: #333;
+          }
+        }
+        .second-level {
+          overflow: hidden;
+          zoom:1;
+        }
+        .leve {
+          float: left;
+          .field {
+            font-size: 14px;
+            line-height: 30px;
+            color: #666;
+          }
+          .unit {
+            font-size: 18px;
+            color: #333;
+          }
+          &:nth-child(2) {
+            float: right;
+          }
+        }
+        .remain {
+          position:relative;
+          width: 45%;
+          padding:18px 75px 30px 30px;
+          box-sizing:border-box;
+          -webkit-box-sizing: border-box;
+          float: left;
+          .project {
+            width: 82px;
+            height: 30px;
+            text-align: center;
+            line-height: 35px;
+            background:url(/html/img/trackRecord_2.png);
+            position:absolute;
+            top:180px;
+            right: 75px;
+          }
+        }
+        .sum {
+          width:55%;
+          float: right;
+          padding:18px 35px 30px 50px;
+          box-sizing:border-box;
+          -webkit-box-sizing: border-box;
+          border-left:1px solid #e2e2e2;
+          .difference {
+            .unit {
+              display: inline;
+            }
+            .btblist {
+              padding-top:8px;
+            }
+            .btn {
+              font-size: 18px;
+              color: #ff5900;
+              width: 108px;
+              height: 36px;
+              border: 1px solid #ff5900;
+              border-radius:5px;
+              background-color: #f7f7f7;
+            }
+            .invest {
+              background-color:#ff5900;
+              color: #fff;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+      .tipsinfo {
+        height: 32px;
+        line-height: 32px;
+        background:url(/html/img/trackRecord_ico1.png) no-repeat left center;
+        padding-left: 40px;
+        mark {
+         background-color:#f7f7f7;
+        }
+        margin-bottom: 40px;
+      }
+      .wishprofit {
+        font-size: 14px;
+        overflow: hidden;
+        border-bottom: 2px solid #e2e2e2;
+        margin: 20px auto;
+       .profitleft {
+          float: left;
+          border-bottom: 3px solid #ea5504;
+          color: #ea5504;
+          margin-left: 15px;
+          .item {
+            line-height: 36px;
+          }
+       }
+        .profitright {
+          float: right;
+          .profitaction {
+            width: 90px;
+            height: 36px;
+            border:none;
+            background-color: #fc613b;
+            color: #fff;
+            border-radius: 4px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .form {
+        position: relative;
+        .row {
+          font-size: 14px;
+          margin: 25px 0 0;
+          .deal {
+            font-weight: bold;
+          }
+          input {
+            margin: 0 5px;
+          }
+          .dateWrap {
+            display: inline-block;
+            vertical-align: middle;
+            .inline {
+              width:150px;
+              height: 22px;
+              line-height: 22px;
+              width: 150px;
+              margin: 0;
+              border: 1px solid #ccc;
+            }
+          }
+          .type {
+            display: inline-block;
+            padding-left: 28px;
+            color: #666;
+            .item {
+              width: 67px;
+              height: 30px;
+              border:1px solid  #fff;
+              line-height: 30px;
+              display: inline-block;
+              cursor: pointer;
+              text-align: center;
+             &:hover {
+               border:1px solid  #ff5900;
+               color: #ff5900;
+               border-radius: 30px;
+             }
+             &.selected {
+               border:1px solid  #ff5900;
+               color: #ff5900;
+               border-radius: 30px;
+             }
+            }
+          }
+        }
+      }
+      table {
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+        thead {
+          tr {
+            background-color: #ebebeb;
+            th {
+              font-size: 14px;
+              padding: 12px 20px;
+              color: #3a3a3a;
+              text-align: left;
+            }
+          }
+        }
+        tbody {
+          vertical-align: top;
+          font-size: 12px;
+          color: #999;
+          tr {
+            border-bottom: 1px dashed #e2e2e2;
+            .high {
+            color: #ff5900;
+            }
+            .high1{
+              display: block;
+            }
+            .speci {
+              display: block;
+            }
+            .speci1{
+              display: block;
+              a{
+                color: #1e9ee7;
+              }
+            }
+            td {
+              padding: 20px 20px;
+            }
+          }
+        }
+        .dealtime {
+          width: 70px;
+        }
+        .inAgree {
+          color: #1e9ee7;
+          line-height: 20px;
+          &.none {
+            display: none;
+          }
+        }
+      }
+      .nolist {
+        display: none;
+        width: 196px;
+        height: 179px;
+        margin: 0 auto;
+        background: url(/html/img/jz.jpg);
+      }
+    }
+  }
+}

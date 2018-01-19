@@ -1,0 +1,7 @@
+<!--图形验证码模型-->
+<script type="text/template" charset="UTF-8" id="templateImageCode">
+	<input class="input short" type="text" placeholder="请输入验证码" id="txtCode" data-required='true' data-type='imgCode' data-emptyTip='请输入验证码' data-errorTip="验证码不符合规则">
+	<img class="validate-image"  id="imgCode" src="{{=it}}" alt="图片验证码">
+</script>
+
+

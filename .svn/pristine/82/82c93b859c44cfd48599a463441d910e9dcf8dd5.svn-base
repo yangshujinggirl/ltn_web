@@ -1,0 +1,25 @@
+
+<script type="text/template" charset="UTF-8"  id="tempaward">
+  <thead>
+    <tr>
+      <th>好友账号</th>
+      <th>投资时间</th>
+      <th>好友姓名</th>
+      <th>投资收益</th>
+      <th>奖励收益</th>
+      <th>好友级别</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{~it.listPartnerEarnings:value}}
+    <tr>
+      <td>{{=strUtil().formatPhone(value.mobileNo)}}</td>
+      <td>{{=value.orderDate}}</td>
+      <td>{{=strUtil().formatName(value.userName)}}</td>
+      <td>￥{{=strUtil().formatKilo(value.reward)}}</td>
+      <td>￥{{=strUtil().formatKilo(value.orderReward)}}</td>
+      <td class="{{=value.friendLevel=="1"?'leve':''}}">{{=value.friendLevel=="1"?'一':'二'}}级好友</td>
+    </tr>
+    {{~}}
+  </tbody>
+</script>

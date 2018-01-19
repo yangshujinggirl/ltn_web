@@ -1,0 +1,24 @@
+<div class="loan-flow page-component">
+  <div class="wrap">
+    <div class="content">
+      <div class="flowTu">
+        <div class="one">
+          <div class="icon1"><img src="../../../../img/loan_01.png"></div>
+          <div class="title"><span class="xuhao">1</span>贷款申请</div>
+        </div>
+        <div class="one">
+          <div class="icon1"><img src="../../../../img/loan_02.png"></div>
+          <div class="title"><span class="xuhao">2</span>专员办理</div>
+        </div>
+        <div class="one">
+          <div class="icon1"><img src="../../../../img/loan_03.png"></div>
+          <div class="title"><span class="xuhao">3</span>后台审批</div>
+        </div>
+        <div class="one">
+          <div class="icon1"><img src="../../../../img/loan_04.png"></div>
+          <div class="title"><span class="xuhao">4</span>签约放款</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

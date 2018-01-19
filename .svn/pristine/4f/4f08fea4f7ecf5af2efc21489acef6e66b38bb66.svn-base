@@ -1,0 +1,121 @@
+<!-- TOP50模版 -->
+<script type="text/template" id="templateTop50">
+  <div class="top6">
+    <ul>
+      {{~ it:value:index}}
+      {{? index
+      <6}} <li>
+        {{? index === 0}}
+        <img src="/img/mationalDay_icon2.png" }}> {{?? index === 1}}
+        <img src="/img/mationalDay_icon3.png" }}> {{?? index === 2}}
+        <img src="/img/mationalDay_icon4.png" }}> {{??}}
+        <img src="/img/mationalDay_icon5.png" }}> {{?}}
+        <span>{{=index+1}}</span>
+        <span>{{=strUtil().formatPhone(value.phone)}}</span>
+        <span>{{=strUtil().formatKilo(value.amount)}}</span>
+        </li>
+        {{?}}
+      {{~}}
+    </ul>
+  </div>
+  <div class="top-other">
+    <ul>
+      {{~ it:value:index}} {{? index >= 6}}
+      <li>
+        <span>{{=index+1}}</span>
+        <span>{{=strUtil().formatPhone(value.phone)}}</span>
+        <span>{{=strUtil().formatKilo(value.amount)}}</span>
+      </li>
+      {{?}} {{~}}
+    </ul>
+  </div>
+  {{? it.length==0}}
+  <div class="nolist" style="display:inherit">
+    <div class="logoIcon">
+      暂无数据！
+    </div>
+  </div>
+  {{?}}
+</script>
+<!-- 邀请好友送手机活动 -->
+<script type="text/template" id="templateInvite">
+  <div class="win_left">
+    <div class="win_item">已有<span class="win_one">&nbsp;{{=it.iphoneTotal}}&nbsp;</span>人获得iPhone7</div>
+    <div class="win_item">已有<span class="win_one">&nbsp;{{=it.P9Total}}&nbsp;</span>人获得华为P9</div>
+  </div>
+  <div class="win_right">
+    <div class="right_title">
+      <span>获奖人</span>
+      <span class="jiangpin">获得奖品</span>
+    </div>
+    <div class="win_info">
+      <ul class="win_list">
+        {{~ it.phones:value:index}}
+        <li>
+          <span class="win_tel">{{=strUtil().formatPhone(value.mobileNo)}}</span>
+          <span class="win_prizes">{{=value.prizeName}}</span>
+        </li>
+        {{~}}
+      </ul>
+    </div>
+  </div>
+
+</script>
+<!-- 平台中奖纪录 -->
+<script type="text/template" id="templatePlatformPrizeRecord">
+  <div class="platform-record-data">
+    <ul>
+      {{~ it:value:index}}
+      <li>
+        <span class="data_one">{{=index+1}}</span>
+        <span class="data_two">{{=value.mobileNo}}</span>
+        <span class="data_three">{{=value.prizeName}}</span>
+      </li>
+      {{~}}
+    </ul>
+    <!-- 无纪录 -->
+    {{? it.length<=0}}
+    <div class="nolist2" style="display:inherit">
+      <div class="logoIcon">
+        暂无数据！
+      </div>
+    </div>
+    {{?}}
+  </div>
+</script>
+<!-- 个人中奖纪录 -->
+<script type="text/template" id="templatePrizeRecord">
+  <div class="private-record-data">
+    {{? it.noLogin}}
+      <div class="nolist" style="display:inherit">
+        <div class="logoIcon">
+          暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+        </div>
+      </div>
+      {{?? typeof it == 'object' && it.mobileNo}}
+      <ul>
+        <li>
+          <span class="data_one">{{=1}}</span>
+          <span class="data_two">{{=it.mobileNo}}</span>
+          <span class="data_three">{{=it.prizeName}}</span>
+        </li>
+      </ul>
+      {{?? it.lenght>0}}
+        <ul>
+          {{~ it:value:index}}
+              <li>
+                <span class="data_one">{{=index+1}}</span>
+                <span class="data_two">{{=it.mobileNo}}</span>
+                <span class="data_three">{{=it.prizeName}}</span>
+              </li>
+          {{~}}
+        </ul>
+      {{??}}
+      <div class="nolist2" style="display:inherit">
+        <div class="logoIcon">
+          暂无数据！
+        </div>
+      </div>
+    {{?}}
+  </div>
+</script>

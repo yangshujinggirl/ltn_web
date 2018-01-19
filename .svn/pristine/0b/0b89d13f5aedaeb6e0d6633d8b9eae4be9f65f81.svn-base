@@ -1,0 +1,36 @@
+.account-realname {
+  .realnamedone {
+    font-size: 14px;
+    margin: 70px auto 0 auto;
+    .tips {
+      text-align: center;
+      background: url(/img/a7.jpg) no-repeat left center;
+
+      height: 30px;
+      line-height: 30px;
+      width: 170px;
+      margin: 40px auto;
+
+    }
+    .row {
+      line-height: 35px;
+      margin: 15px auto;
+      width: 500px;
+      .caption {
+        color: #8a8a8a;
+        text-align: right;
+        font-weight: bold;
+        width: 33.333%;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0 20px 0 0;
+      }
+      .field {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+}

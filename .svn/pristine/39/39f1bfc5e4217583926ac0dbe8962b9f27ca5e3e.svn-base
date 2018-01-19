@@ -1,0 +1,21 @@
+<script type="text/template" id="tempNotice">
+  <ul class="list">
+  {{~it.announcementList:value:index}}
+    <li data-id={{=value.id}} data-type={{=value.type}}>
+      <div class="top">
+        <div class="list-left">
+          【<span>{{=value.nClass}}</span>】<a href="javascript: void(0);">{{=value.title}}</a>
+        </div>
+        <div class="list-right">
+          <span>{{=value.publishTime}}</span>
+          <span class="arrow"></span>
+        </div>
+      </div>
+      <div class="infoContent">
+        <p>{{=value.nIntroduction}}</p>
+        <div>{{=value.fromUrl}}</div>
+      </div>
+    </li>
+  {{~}}
+  </ul>
+</script>

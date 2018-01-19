@@ -1,0 +1,110 @@
+.about-team {
+  .title {
+    font-size: 18px;
+    color: #585858;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #e2e2e2;
+    margin: 20px 35px;
+    font-weight: bold;
+    .item {
+      border-bottom: 2px solid #ea5504;
+      width: 100px;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
+
+  .team {
+    margin-top: -20px;
+  }
+  .team .row {
+    position: relative;
+    border-bottom: 2px solid #e2e2e2;
+    padding: 10px 0;
+    margin: 0 25px;
+
+    .avatar {
+      display: inline-block;
+      width: 170px;
+      height: 170px;
+      border: 3px solid #FFF;
+      display: inline-block;
+       border-radius: 50%;
+    }
+    .level1 {
+      background: url(/img/about-leader-avatar-1.png) no-repeat left center;
+    }
+    .level2 {
+      background: url(/img/about-leader-avatar-2.png) no-repeat left center;
+    }
+    .level3 {
+      background: url(/img/about-leader-avatar-3.png) no-repeat left center;
+    }
+    .level4 {
+      background: url(/img/about-leader-avatar-4.png) no-repeat left center;
+    }
+    .level5 {
+      background: url(/img/about-leader-avatar-5.png) no-repeat left center;
+    }
+    .level6 {
+      background: url(/img/about-leader-avatar-6.png) no-repeat left center;
+    }
+    .item {
+      display: inline-block;
+      margin-left: 15px;
+      font-size: 14px;
+
+      position: absolute;
+      top: 35px;
+
+      .header {
+        color: #ea5504;  
+        .name {
+          font-size: 18px;
+        }
+        .position {
+          font-size: 14px;
+        }
+      }
+
+      .info .desc {
+        font-size: 14px;
+        margin: 20px 0 0 0;
+        line-height: 1.5;
+      }
+    }
+    &:last-child {
+      border-bottom: 0px solid red;
+    }
+  }
+
+  .banner {
+    margin-top: -20px;
+    height: 100%;
+    padding: 0 38px;
+    .section{
+      width: 417px;
+      height: 218px;
+      display: inline-block;
+      margin: 30px 0 0 37px;
+      text-align: center;
+      .bottom{
+        .title2{
+          font-size: 24px;
+          margin-top: 20px;
+        }
+        .article{
+          font-size: 14px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+  }
+
+
+
+
+}

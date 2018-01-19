@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" href="/css/style.css?v=20161017">
+  <link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name=”renderer” content=”webkit” />
+ <script src="/js/lib/jquery.min.js"></script>
+  <script src="/js/lib/jquery.easydropdown.min.js"></script>
+  <script src="/js/lib/jquery.paging.min.js"></script>
+  <script src="/js/lib/jquery.validation.min.js"></script>
+  <script src="/js/lib/doT.min.js"></script>
+  <script src="/js/app.min.js?v=20161017"></script>
+  <script type="text/javascript">
+    //声明_czc对象:
+    var _czc = _czc || [];
+    //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+    _czc.push(["_setAccount", "1258037212"]);
+  </script>

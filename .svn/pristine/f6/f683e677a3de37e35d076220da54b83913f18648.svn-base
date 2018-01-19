@@ -1,0 +1,45 @@
+<div class="safe-section page-component">
+  <div class="wrap">
+    <div class="button">
+    <ul class="list">
+      <li><a href="#pingtai">平台原理</a></li>
+      <li><a href="#baozhang">本息保障</a></li>
+      <li><a href="#anquan">资金安全</a></li>
+    </ul>
+  </div>
+    <div class="section">
+       <div class="limit">
+         <div class="icon1"><img src="/html/img/safe-icon1.png"></div>
+         <div class="text">
+             <div class="title"></div>
+             <div class="item">专注于家庭消费金融的理财平台</div>
+         </div>
+       </div>
+       <div class="limit limit-tow">
+         <div class="icon2"><img src="/html/img/safe-icon2.png"></div>
+         <div class="text">
+             <div class="title"></div>
+             <div class="item">严格规范的层层风控审核机<br/>制及大数据征信策略</div>
+         </div>
+       </div>
+       <div class="limit">
+         <div class="icon3"><img src="/html/img/safe-icon3.png"></div>
+         <div class="text">
+             <div class="title"></div>
+             <div class="item">来自腾讯、阿里巴巴、IBM、<br/>等一线公司的核心互联网团队<br/><br/></div>
+         </div>
+       </div>
+       <div class="limit">
+         <div class="icon4"><img src="/html/img/safe-icon4.png"></div>
+         <div class="text">
+             <div class="title"></div>
+             <div class="item">各大银行、权威金融机构和<br/>知名律师事务所高管的丰富<br/>金融行业经验</div>
+         </div>
+       </div>
+     </div>
+
+
+
+
+  </div>
+</div>

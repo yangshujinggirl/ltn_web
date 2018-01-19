@@ -1,0 +1,63 @@
+
+
+<!-- @extend ../_help.html -->
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_contact.html -->
+
+<div class="middle-content">
+<div class="help-moneyout">
+  <div class="title">
+    <div class="item">投资返现</div>
+  </div>
+  <ul class="list">
+    <li>
+      <div class="item">01、请问我如何进行投资？</div>
+      <div class="content current">您可以先浏览网站展示的项目，了解项目信息，如果比较感兴趣，请您在“首页”进行注册，在联动优势开通账户并且充值，在首页或者理财列表进行投资，您点击进入项目详情，输入投资金额，即可参与投资。</div>
+    </li>
+    <li>
+      <div class="item">02、如何获得投资收益？</div>
+      <div class="content">投资到期时，本金和利息收入将会自动记入投资者的账户余额，可以随时再投资或者支取。根据投资产品还款方式的不同（等额本息、按月付息等等，目前领投鸟平台大部分产品都是一次性还本付息），投资收益按不同方式还给投资人，请留意短信提醒和账户“我的消息”。</div>
+    </li>
+    <li>
+      <div class="item">03、收到还款以后，可以马上再投资吗？</div>
+      <div class="content">可以，而且我们建议投资人在收到还款后及时地进行再次投资，确保收益的最大化。</div>
+    </li>
+    <li>
+      <div class="item">04、我是否可以取消某笔投资？</div>
+      <div class="content">为了保护所有投资人和借款人的利益，在投资项目的募集期内，已投资的资金将会被冻结，无法取消。</div>
+    </li>
+    <li>
+      <div class="item">05、投资金额有限制吗？</div>
+      <div class="content">为了更好的贯彻“普惠金融”理念，进一步降低投资门槛，目前领投鸟随心投项目起投金额定为1元，新手标100元起投，其他产品均为1000元起投。</div>
+    </li>
+    <li>
+      <div class="item">06、利息从何时起开始计算？何时取得本息？</div>
+      <div class="content">利息从项目标注的“起息日”开始计算。目前领投鸟的项目都是“到期一次性还本付息”，标的到期当天的18:00-24:00之间会分批次还款至用户账户余额中。</div>
+    </li>
+    <li>
+      <div class="item">07、投资后有什么证明或合同吗？</div>
+      <div class="content">领投鸟会为每个项目生成一份PDF格式的电子，投资后您可以在“账户中心”-“我的理财”的投资记录列表中进行查看和下载。</div>
+    </li>
+    <li>
+      <div class="item">08、领投鸟项目的收益怎么样？</div>
+      <div class="content">不同项目，期限不同，收益是不一样的。预期年化收益率在8%—15%之间。
+      </div>
+    </li>
+    <li>
+       <div class="item">09、请问在领投鸟投资会收取哪些费用？</div>
+      <div class="content">
+        领投鸟的投资人在充值、投资过程是没有费用的，也没有利息管理费等杂费。相关所有费用目前均由领投鸟垫付，在提现操作是每人每月有3次免费提现机会，超过可以用2鸟币抵扣，鸟币不足将从余额中扣取2元/次，如果余额不足，将从您的提现金额中扣除。（提现费用由第三方支付平台收取）
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->
+
+<!-- @endextend -->

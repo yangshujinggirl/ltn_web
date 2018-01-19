@@ -1,0 +1,193 @@
+<script type="text/template" id="tempCrumb">
+  <div class="wrap">
+    <div class="start component">
+      <ul class="crumb-list">
+        <li class="item">
+          <a href="../../">首页</a>
+        </li>
+        <li class="item">
+          <a href="#">体验标详情</a>
+        </li>
+      </ul>
+      <ul class="notice marquee" id="marquee">
+        {{~it.messageList:value}}
+        <li class="item">{{=value}}</li>
+        {{~}}
+      </ul>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempStartProp">
+  <div class="wrap">
+    <div class="start component">
+      <div class="header">
+        <h1 class="title">体验标</h1>
+        <ul class="coupon-list">
+          <li class="item">
+            <span class="start">仅限使用体验金</span>
+          </li>
+        </ul>
+        <div class="contract">
+          查看<a class="link" href="./contract" target="_blank">《体验标协议》</a>范本
+        </div>
+      </div>
+      <div class="content">
+        <div class="prop">
+          <div class="main">
+            <div class="profit">
+              <span class="field">{{=it.annualIncomeText}}</span></span>
+              <span class="caption">预期年化</span>
+            </div>
+            <div class="period">
+              <span class="field">{{=it.convertDay}}</span><span class="unit">天</span>
+              <span class="caption">投资期限</span>
+            </div>
+            <div class="surplus">
+              <span class="field">{{=it.productTotalAmount}}</span><span class="unit">元</span>
+              <span class="caption">体验总额</span>
+            </div>
+            <div class="threshold">
+              <span class="field">{{=it.staInvestAmount}}</span><span class="unit">元</span>
+              <span class="caption">起投金额</span>
+            </div>
+          </div>
+          <div class="sub">
+            <div class="amount">
+              <span class="caption">体验金总额</span>
+              <span class="field">{{=it.productTotalAmount}}</span><span class="unit">元</span>
+            </div>
+            <div class="list">
+              <div class="item">
+                <span class="caption">投资方式：</span>
+                <span class="field">体验金投资</span>
+              </div>
+              <div class="item">
+                <span class="caption">计息方式：</span>
+                <span class="field">T+0</span>
+              </div>
+              <div class="item">
+                <span class="caption">收益方式：</span>
+                <span class="field">以鸟币还返</span>
+              </div>
+              <div class="item">
+                <span class="caption">还款方式：</span>
+                <span class="field">本金收回，收益归您</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action">
+          <div class="title">
+            <span class="main">投资金额</span>
+            <span class="sub">我出本金，你赚收益</span>
+          </div>
+          <div class="list start">
+            <div class="item">
+              <span class="caption">起投金额：</span>
+              <span class="field">{{=it.staInvestAmount}}元</span>
+            </div>
+            <div class="item">
+              <span class="caption">可投金额：</span>
+              <span class="field">{{=it.productTotalAmount}}元</span>
+            </div>
+            <div class="item">
+              <span class="caption">起息日期：</span>
+              <span class="field">{{=it.jixitime}}</span>
+            </div>
+            <div class="item">
+              <span class="caption">还款日期：</span>
+              <span class="field">{{=it.endDate}}</span>
+            </div>
+          </div>
+          <button id='invest' class="button invest" onclick="user().clickEvent();">立即投资</button>
+          <span class="tips">领投鸟提醒您：理财非存款，投资需谨慎！</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempDesc">
+  <article class="log">
+    <div class="row" id="logCont">
+      <span class="caption solo">投资记录：</span>
+      <table class="log-list">
+        <thead>
+          <tr>
+            <th>序列号</th>
+            <th>成交时间</th>
+            <th>投资人</th>
+            <th>投资金额</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{~it.purchaseHistoryList:value:index}}
+          <tr>
+            <td class="item">{{=index + 1}}</td>
+            <td class="item">{{=value.orderDate}}</td>
+            <td class="item">{{=value.userName}}</td>
+            <td class="item">{{=value.orderAmount}}</td>
+          </tr>
+          {{~}}
+        </tbody>
+      </table>
+    </div>
+    <div class="nolist">
+        <div class="logoIcon">
+          暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+        </div>
+    </div>
+    <div class="accountpage">
+      <div class="pages"></div>
+    </div>
+  </article>
+</script>
+
+<!-- 投资弹框 -->
+<script type="text/template" id="tempbuy">
+  <div class="wrap">
+    <div class="current">
+      <div class="header">
+        <div class="title">投资购买</div>
+        <div class="close" id="buyDialogClose"></div>
+      </div>
+      <div class="form">
+        <div class="row">
+          <div class="caption">投资金额：</div>
+          <div class="field">
+            <input type="text" class="input" value="{{=it.productTotalAmount}}(体验金)" readonly="readonly">
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">理财金券：</div>
+          <div class="field">
+            <input type="text" class="input" value="体验金券" readonly="readonly">
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">起息日期：</div>
+          <div class="field">
+            <span class="text" id="startDate">2016-02-27</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">到期日期：</div>
+          <div class="field">
+            <span class="text" id='endDate'>2016-02-28</span>
+          </div>
+        </div>
+        <div class="row submit">
+          <hr class="dash">
+          <div class="actual">
+            <span class="text">实际金额：</span>
+            <span class="amount">{{=it.productTotalAmount}}(体验金)</span>
+          </div>
+          <div class="action">
+            <button class="button" id="submit">确认投资</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>

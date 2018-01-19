@@ -1,0 +1,49 @@
+<!-- 获取头部可用余额 -->
+<script type="text/template" id="tempDetailhead">
+  <div class="same remain">
+    <div class="value">{{=strUtil().formatKilo(it.balance)}}</div>
+    <div class="useble">可用余额(元)</div>
+    <div class="btns">
+      <a href="javascript:void(0)" class="ite ain" id="ain">充值</a>
+      <a href="javascript:void(0)" class="ite aout" id="aout">提现</a>
+      <a href="javascript:void(0)" class="ite ainvest" id="ainvest">投资</a>
+    </div>
+  </div>
+  <div class="same sum">
+    <div class="item">
+      <span class="info">累计充值(元)：</span>
+      <span class="value">{{=strUtil().formatKilo(it.rechargeAmount)}}</span>
+    </div>
+    <div class="item">
+       <span class="info">累计提现(元)：</span>
+       <span class="value">{{=strUtil().formatKilo(it.withdrawAmount)}}</span>
+    </div>
+    <div class="item">
+       <span class="info">累计投资(元)：</span>
+       <span class="value">{{=strUtil().formatKilo(it.investAmount)}}</span>
+    </div>
+  </div>
+</script>
+<!-- 资金明细 -->
+<script type="text/template" id="tempDetail">
+  <thead>
+    <tr>
+      <th>交易时间</th>
+      <th>交易类型</th>
+      <th>交易金额</th>
+      <th>余额</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{~it.assetList:value:index}}
+    <tr>
+      <td><div class="dealtime">{{=value.operateDate}}</div></td>
+      <td>{{=value.operateType}}</td>
+      <td class="{{=value.amountText=='+'?'red':'green'}}">{{=value.amountText=='+'?'+￥'+strUtil().formatKilo(value.amount):'-￥'+strUtil().formatKilo(value.amount)}}</td>
+      <td>{{=strUtil().formatKilo(value.total)}}</td>
+      <td>订单编号{{=value.orderNo}}<br>{{=value.productName}}</td>
+    </tr>
+  {{~}}
+  </tbody>
+</script>

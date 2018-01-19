@@ -1,0 +1,38 @@
+.protocol {
+  .wrapOne {
+    width:1024px;
+    padding:0 50px;
+    box-sizing:border-box;
+    background-color: #FFF;
+    margin: 20px auto;
+    border: 8px solid #e2e2e2;
+    border-radius: 4px;
+  }
+  .content {
+    font-size: 14px;
+    line-height: 2;
+    color: #6a6a6a;
+    padding:60px 0 40px;
+    .title {
+      color: #3a3a3a;
+      font-size: 24px;
+      text-align: center;
+    }
+    .twoTitle {
+      color: #3a3a3a;
+      font-size: 20px;
+    }
+    .big {
+      color: #3a3a3a;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .red {
+      color: #ff6600;
+      font-size: 16px;
+    }
+    .indent {
+      padding-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.loan-plan {
+  margin:10px 0 76px 0;
+  .plan-content {
+    border: 1px solid #ccc;
+    background-color:#fff;
+    padding:24px 30px 170px 30px;
+    .title {
+      font-size: 14px;
+      color: #ea5504;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 2px solid #e2e2e2;
+      .item {
+        border-bottom: 2px solid #ea5504;
+        width: 100px;
+        text-align: center;
+      }
+    }
+    .process {
+      padding: 10px 0;
+      margin: 32px auto 0;
+      width:920px;
+      .outer, .inner {
+        box-sizing: border-box;
+      }
+      .outer {
+        border: 1px solid #cecece;
+        background: #e2e2e2;
+      }
+      .inner {
+        background: #9aa7b3;
+      }
+      .node, .link {
+        display: inline-block;
+      }
+      .node {
+        width: 100px;
+        .text {
+          color: #8a8a8a;
+          text-align: center;
+        }
+        .outer {
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          margin: 10px auto;
+        }
+
+        .inner {
+          width: 12px;
+          height: 12px;
+          border-radius: 6px;
+          margin: 3px 3px;
+        }
+      }
+
+      $loan-flow-plan-width: 166px;
+      $loan-flow-plan-outer-left: 6px;
+
+      .link {
+        width: $loan-flow-plan-width;
+        text-align: center;
+        position: relative;
+        top: -25px;
+        .outer {
+          position: absolute;
+          left: -44px;
+          width: $loan-flow-plan-width + 89px;
+          height: 10px;
+          text-align: center;
+          border-right: none;
+          border-left: none;
+        }
+        .inner {
+          position: absolute;
+          left: -4px;
+          width: $loan-flow-plan-width + 86px + 6px;
+          height: 4px;
+          top: 2px;
+        }
+      }
+    }
+    .processImg {
+      text-align: center;
+      margin:20px 0 100px 0;
+      .step {
+        font-size: 18px;
+        font-weight:normal;
+        padding-bottom:76px;
+        color:#8f8f8f;
+        display:inline-block;
+      }
+      .step1 {
+         background: url(/html/img/plan_01.png) no-repeat bottom center;
+      }
+      .step2 {
+         background: url(/html/img/plan_02.png) no-repeat bottom center;
+         margin:0 100px;
+      }
+      .step3 {
+         background: url(/html/img/plan_03.png) no-repeat bottom center;
+         margin-right: 100px;
+      }
+      .step4 {
+         background: url(/html/img/plan_04.png) no-repeat bottom center;
+      }
+    }
+    .fail {
+      position: relative;
+      .failWrap {
+        position:absolute;
+        left:50%;
+        transform: translateX(-50%);
+      }
+      .symbol {
+        display:block;
+        font-size: 20px;
+        color:#f78e8b;
+        &:before {
+          display:inline-block;
+          width: 38px;
+          height: 38px;
+          font-size: 16px;
+          color:#fff;
+          content:'';
+          background:url(/html/img/_bank_11.png);
+          border-radius:10px;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+      .text1 {
+        line-height: 40px;
+        margin:0;
+        font-size: 16px;
+      }
+      #agin {
+        border:none;
+        font-weight: bold;
+        padding:10px 20px;
+        font-size: 16px;
+        display: none;
+        background-color: #ff9381;
+        color: #fff;
+        border-radius:5px;
+        position:absolute;
+        top:0;
+        right: 230px;
+      }
+    }
+    .return {
+      .symbol {
+        &:before {
+          background:url(/html/img/_bank_12.png);
+        }
+      }
+    }
+  }
+
+}

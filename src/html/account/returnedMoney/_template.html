@@ -1,0 +1,116 @@
+<!-- 获取待回款头部可用余额 -->
+<script type="text/template" id="tempwaitHead">
+  <div class="interest">
+    <div class="wr">
+      <span class="field">全部待收本息(元)</span>
+      <span class="unit">{{=strUtil().formatKilo(it.allPrincipalInterest)}}</span>
+    </div>
+  </div>
+  <div class="interest">
+    <div class="wr">
+      <span class="field">下一个月待收本息(元)</span>
+      <span class="unit">{{=strUtil().formatKilo(it.currentPrincipalInterest)}}</span>
+    </div>
+  </div>
+  <div class="interest">
+    <div class="wr">
+      <span class="field">包含奖励收益(元)</span>
+      <span class="unit">{{=strUtil().formatKilo(it.rewardProfit)}}</span>
+    </div>
+  </div>
+</script>
+<!-- 获取已回款头部可用余额 -->
+<script type="text/template" id="tempalreadyHead">
+  <div class="interest">
+    <div class="wr">
+      <span class="field">全部已收本息(元)</span>
+      <span class="unit">{{=strUtil().formatKilo(it.allPrincipalInterest)}}</span>
+    </div>
+  </div>
+  <div class="interest">
+    <div class="wr">
+      <span class="field">本月已收本息(元)</span>
+      <span class="unit">{{=strUtil().formatKilo(it.currentPrincipalInterest)}}</span>
+    </div>
+  </div>
+  <div class="interest">
+    <div class="wr">
+      <span class="field">包含奖励收益(元)</span>
+      <span class="unit">{{=strUtil().formatKilo(it.rewardProfit)}}</span>
+    </div>
+  </div>
+</script>
+<!-- 资金明细 -->
+<script type="text/template" id="tempWaitDetail">
+  <thead>
+    <tr>
+      <th>到期日期</th>
+      <th>项目名称</th>
+      <th>预计回款总额</th>
+      <th>投资金额</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{~it.paymentList:value}}
+    <tr>
+      <td>
+        <div class="dealtime">{{=value.expirationDate}}</div>
+      </td>
+      {{ if(value.productType=='LCT'){ }}
+      <td><a href="/html/product/short/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ } else if(value.productType=='LCTXL') { }}
+      <td><a href="/html/product/long/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ }else if(value.productType=='XSB'){ }}
+      <td><a href="/html/product/first/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ }else{ }}
+      <td><a href="/html/product/start/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ } }}
+      <td>￥{{=strUtil().formatKilo(value.principalAndProfit)}}</td>
+      <td>
+        <span class="high">￥{{=strUtil().formatKilo(value.orderAmount)}}</span>
+        <span class="speci">利息：￥{{=strUtil().formatKilo(value.interest)}}</span>
+        <span class="speci">奖励：投资返现{{=value.reward}}</span>
+      </td>
+      <td>{{=value.remark}}</td>
+    </tr>
+    {{~}}
+  </tbody>
+</script>
+<!-- 已回款资金明细 -->
+<script type="text/template" id="tempAlreadDetail">
+  <thead>
+    <tr>
+      <th>到期日期</th>
+      <th>项目名称</th>
+      <th>已回款总额</th>
+      <th>投资金额</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{~it.paymentList:value}}
+    <tr>
+      <td>
+        <div class="dealtime">{{=value.expirationDate}}</div>
+      </td>
+      {{ if(value.productType=='LCT'){ }}
+      <td><a href="/html/product/short/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ } else if(value.productType=='LCTXL') { }}
+      <td><a href="/html/product/long/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ }else if(value.productType=='XSB'){ }}
+      <td><a href="/html/product/first/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ }else{ }}
+      <td><a href="/html/product/start/#!/{{=value.productId}}">{{=value.productName}}</a></td>
+      {{ } }}
+      <td>￥{{=strUtil().formatKilo(value.principalAndProfit)}}</td>
+      <td>
+        <span class="high">￥{{=strUtil().formatKilo(value.orderAmount)}}</span>
+        <span class="speci">利息：￥{{=strUtil().formatKilo(value.interest)}}</span>
+        <span class="speci">奖励：投资返现{{=value.reward}}</span>
+      </td>
+      <td>{{=value.remark}}</td>
+    </tr>
+    {{~}}
+  </tbody>
+</script>

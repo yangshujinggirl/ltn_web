@@ -1,0 +1,198 @@
+
+  <!DOCTYPE html>
+  <html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="/html/css/style.css?v=20171023">
+    <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name=”renderer” content=”webkit” />
+   <script src="/html/js/lib/jquery.min.js"></script>
+    <script src="/html/js/lib/jquery.easydropdown.min.js"></script>
+    <script src="/html/js/lib/jquery.paging.min.js"></script>
+    <script src="/html/js/lib/jquery.validation.min.js"></script>
+    <script src="/html/js/lib/doT.min.js"></script>
+    <script src="/html/js/app.min.js?v=20161017"></script>
+  
+
+  <title>充值、提现、领投鸟官网平台充值、提现</title>
+  <meta name="keywords" content="领投鸟理财、领投鸟官网平台、充值、提现、网银充值、快捷充值、领头鸟、互联网理财、不动产理财、P2P网贷、投资理财、短期理财">
+  <meta name="description" content="领投鸟官网平台_专注于不动产理财的稳健高效互联网金融平台，平台提供网络贷款，投资理财，赎楼业务，小额贷款，短期贷款，互联网理财、P2P，真正短期标">
+
+  <div class="commonNavTop page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="service">客服电话：400-999-9980</div>
+          <div class="iconlist">
+            <div class="iconItem weixin">
+              <div class="code"></div>
+            </div>
+            <div class="iconItem weibo">
+              <a href="http://weibo.com/u/5935757405" target="_blank"></a>
+            </div>
+            <div class="iconItem shouji">
+              <a href="/other/downloadapp " target="_blank"></a>
+            </div>
+            <div class="iconItem lipin">
+              <a href="/html/activity_banner" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span class="navItem login" onclick="user().clickEvent();" id="loginLink">登录</span>
+          <a href="/html/user/register" class="navItem register">注册</a>
+          <a class="navItem welcome"></a>
+          <a href="javascript:void(0);" class="navItem logoff">安全退出</a>
+          <a href="/other/actlist" class="navItem" >最新活动</a>
+          <a href="/other/downloadapp" class="navItem">下载APP</a>
+          <a href="/help/aboutltn" class="navItem">帮助中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="commonNavTwo page-component">
+    <div class="wrap">
+      <div class="content">
+        <div class="left">
+          <div class="logo" id="logo">
+            <img src="/html/img/imageTwo/home/logo.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <a href="/" class="navItem" onclick="user().clickEvent();">首页</a>
+          <a href="/finance/list/0/1/0/0" class="navItem" onclick="user().clickEvent();">投资</a>
+         <!-- <a href="/html/mutual" class="navItem" onclick="user().clickEvent();">互助</a>-->
+         <!-- <a href="/html/crowd" class="navItem" onclick="user().clickEvent();">众筹</a>-->
+          <!-- <a href="/html/loan/loan-index" class="navItem" onclick="user().clickEvent();">借款</a> -->
+          <a href="http://bbs.lingtouniao.com" class="navItem" onclick="user().clickEvent();" target="_blank">社区</a>
+          <a href="/other/downloadapp " class="navItem" onclick="user().clickEvent();">下载APP</a>
+          <a href="/other/safeguards " class="navItem" onclick="user().clickEvent();">安全保障</a>
+          <!-- <a href="/html/about/team" class="navItem" onclick="user().clickEvent();">关于我们</a> -->
+          <span class="navItem account" onclick="user().clickEvent();" id="viewall">我的账户</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="product-confirm page-component" id="confirm">
+    <div class="wrap">
+      <div class="short component">
+        <div class="header">
+          <div class="title">确定提现</div>
+        </div>
+        <div class="form" id="bank2_confirm">
+          <div class="row">
+          <span class="caption">账户余额：</span>
+            <span class="field">100000元</span>
+            <span class="caption">提现金额：</span>
+            <span class="field">10000元</span>
+            <span class="caption">抵扣鸟币：</span>
+            <span class="field">160鸟币</span>
+            <span class="caption">提现手续费：</span>
+            <span class="field"><mark class="mark">160</mark>元</span>
+          </div>
+          <hr class="dash">
+          <div class="sense">
+            <span class="sense_font">实际到账金额:</span>
+            <span class="sense_money"><span class="sense_juse">1000</span>元</span>
+          </div>
+          <div class="postal_but">
+            <button class="button" id="confirm_tixian">确认提现</button>
+          </div>
+           <div class="down_bottom2">
+            <div class="down_right">
+              <div class="down_info2"><span class="submit_icon1"></span>友情提醒：</div>
+              <div class="reminded">
+                1.工作日16点之前用户发起的提现申请，当日会进行受理；<br> 
+                2.16点以后提交的提现申请，将于第二个工作日10点审核。<br>
+                3.若遇节假日顺延。每周一因要审核周五、周六、周日三天的付款申请，因此略有延时。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- pv统计代码 -->
+  <script type="text/javascript">
+    _czc.push(["_trackPageview","/弹层弹出"]);
+  </script>
+  </div>
+
+  <div class="posatl_success component copyparti" id="tixianSuccess">
+    <div class="copycontent">
+      <div class="title">
+        <div class="title_cont">提示</div>
+      </div>
+      <div class="success2">
+        <span class="success_icon"></span>
+        <span class="success_info">恭喜你，提现申请成功！</span>
+        <span class="zuihou">1.工作日16点之前用户发起的提现申请，当日会进行受理；<br> 
+        2.16点以后提交的提现申请，将于第二个工作日10点审核。<br>
+        3.若遇节假日顺延。每周一因要审核周五、周六、周日三天<br>  
+        的付款申请，因此略有延时。</span>
+      </div>
+      <button class="posatl_button" id="posatlBut">确定</button>
+      <div class="colse2" id="colseSucccess"></div>
+    </div>
+  </div>
+  <div class="cover9"></div>
+
+  <div class="posatl_fail component copyparti" id="tixianFail">
+    <div class="copycontent">
+      <div class="title">
+        <div class="title_cont">提示</div>
+      </div>
+      <div class="success2">
+        <span class="success_icon"></span>
+        <span class="success_info">很遗憾，提现申请失败！</span>
+        <span class="zuihou">1.工作日16点之前用户发起的提现申请，当日会进行受理；<br> 
+        2.16点以后提交的提现申请，将于第二个工作日10点审核。<br> 
+        3.若遇节假日顺延。每周一因要审核周五、周六、周日三天<br>  
+        的付款申请，因此略有延时。</span>
+      </div>
+      <button class="posatl_button" id="posatlBut2">确定</button>
+      <div class="colse2" id="closeFail"></div>
+    </div>
+  </div>
+  <div class="cover10"></div>
+
+  <script type="text/template" id="tempBank2">
+    <div class="row">
+          <span class="caption">账户余额：</span>
+            <span class="field">{{=it.balance}}元</span>
+            <span class="caption">提现金额：</span>
+            <span class="field">{{=it.withdrawal}}元</span>
+            <span class="caption">抵扣鸟币：</span>
+            <span class="field">{{=it.birdCoin}}鸟币</span>
+            <span class="caption">提现手续费：</span>
+            <span class="field"><mark class="mark">{{=it.countFee}}</mark>元</span>
+          </div>
+          <hr class="dash">
+          <div class="sense">
+            <span class="sense_font">实际到账金额:</span>
+            <span class="sense_money"><span class="sense_juse">{{=it.withdrawal}}</span>元</span>
+          </div>
+          <div class="postal_but">
+            <button class="button" id="confirm_tixian">确认提现</button>
+          </div>
+           <div class="down_bottom2">
+            <div class="down_right">
+              <div class="down_info2"><span class="submit_icon1"></span>友情提醒：</div>
+              <div class="reminded">
+                1.工作日16点之前用户发起的提现申请，当日会进行受理；<br> 
+                2.16点以后提交的提现申请，将于第二个工作日10点审核。<br> 
+                3.若遇节假日顺延。每周一因要审核周五、周六、周日三天的付款申请，因此略有延时。
+              </div>
+            </div>
+          </div>
+  </script>
+
+  <script src="/html/js/account/bank2_confirm/script.min.js?v=20160525"></script>
+
+  </body>
+  </html>

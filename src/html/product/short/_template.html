@@ -1,0 +1,585 @@
+<script type="text/template" id="tempCurmb">
+ <div class="wrap">
+    <div class="short component">
+      <ul class="crumb-list">
+        <li class="item">
+          <a href="/">首页</a>
+        </li>
+        <li class="item">
+          <a href="/finance/list/3/1/0/0">理财</a>
+        </li>
+        <li class="item">
+          <a href="#">精选散标详情</a>
+        </li>
+      </ul>
+      <ul class="notice marquee" id="marquee">
+        {{~it.messageList:value}}
+        <li class="item">{{=value}}</li>
+        {{~}}
+      </ul>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempProp">
+  <div class="wrap">
+    <div class="short component">
+      <div class="header">
+        <h1 class="title">{{=it.productName}}</h1>
+        <span class="biaoqian1">{{=it.productTag}}</span>
+        <ul class="coupon-list">
+          {{ if(it.useBirdCoinTag==1){ }}
+          <li class="item">
+            <span class="coin">可使用鸟币</span>
+          </li>
+          {{ }else{ }}
+          {{ } }}
+          {{ if(it.useCouponTag==1){ }}
+          <li class="item">
+            <span class="raise">可使用加息券</span>
+          </li>
+          <li class="item">
+            <span class="return">可使用返现券</span>
+          </li>
+          {{ }else{ }}
+          {{ } }}
+          {{ if(it.singleLimitAmount > 0){ }}
+          <li class="item">
+            <span class="limit ">限额</span>
+          </li>
+          {{ }else{ }}
+          <li class="item" style="display:none;">
+            <span class="limit ">限额</span>
+          </li>
+          {{ } }}
+        </ul>
+        <div class="contract">
+          查看<a class="link" href="http://www.lingtouniao.com/ltn-static/protocol/loan" target="_blank">《借款协议》</a>范本
+        </div>
+      </div>
+      <div class="content">
+        <div class="prop">
+          <div class="main">
+            <div class="chart">
+              <div class="container" id="chartProcess"></div>
+              <div class="legend">
+                <div class="field">{{=parseInt(it.progress)}}%</div>
+                <div class="caption">项目进度</div>
+              </div>
+            </div>
+            <div class="profit">
+              <span class="field">{{=it.annualIncomeText}}</span></span>
+              <span class="caption">历史年化收益</span>
+            </div>
+            <div class="period">
+              <span class="field">{{=parseInt(it.convertDay)}}</span><span class="unit">天</span>
+              <span class="caption">投资期限</span>
+            </div>
+            <div class="surplus">
+              <span class="field">{{=Util.padFloatMoney(it.productRemainAmount)}}</span><span class="unit">元</span>
+              <span class="caption">剩余可投金额</span>
+            </div>
+          </div>
+          <div class="sub">
+            <div class="amount">
+              <span class="caption">项目总金额</span>
+              <span class="field">{{=Util.padFloatMoney(it.productTotalAmount)}}</span><span class="unit">元</span>
+            </div>
+            {{ if(it.singleLimitAmount > 0){ }}
+            <div class="list">
+              <div class="item">
+                <span class="caption">还款方式：</span>
+                <span class="field">{{=it.repaymentType}}</span>
+              </div>
+              <div class="item">
+                <span class="caption">收益方式：</span>
+                <span class="field">固定收益</span>
+              </div>
+              <div class="item">
+                <span class="caption">每人最高：</span>
+                <span class="field">{{=it.totalLimitAmount}}</span>
+              </div>
+              <div class="item">
+                <span class="caption">单笔最高：</span>
+                <span class="field">{{=it.singleLimitAmount}}</span>
+              </div>
+            </div>
+            {{ }else{ }}
+            <div class="list">
+              <div class="item">
+                <span class="caption">投资方式：</span>
+                <span class="field">现金投资</span>
+              </div>
+              <!-- <div class="item">
+                <span class="caption">计息方式：</span>
+                <span class="field">{{=it.rateCalculateType}}</span>
+              </div> -->
+              <div class="item">
+                <span class="caption">收益方式：</span>
+                <span class="field">固定收益</span>
+              </div>
+              <div class="item">
+                <span class="caption">还款方式：</span>
+                <span class="field">{{=it.repaymentType}}</span>
+              </div>
+            </div>
+            {{ } }}
+          </div>
+        </div>
+        <div class="action">
+          <div class="title">
+            <span class="main">投资金额</span>
+            <span class="sub"></span>
+          </div>
+          <div class="list">
+            <div class="item">
+              <span class="caption">起投金额：</span>
+              <span class="field">{{=Util.padFloatMoney(it.staInvestAmount)}}元</span>
+            </div>
+            <div class="item">
+              <span class="caption">可投金额：</span>
+              <span class="field">{{=Util.padFloatMoney(it.productRemainAmount)}}元</span>
+            </div>
+            <div class="item">
+              <span class="caption">起息日期：</span>
+              <span class="field">{{=it.staRateDate}}</span>
+            </div>
+            <div class="item">
+              <span class="caption">结息日期：</span>
+              <span class="field">{{=it.endDate}}</span>
+            </div>
+          </div>
+
+          {{ if(it.productStatus == '1'){ }}
+        <button class="invest button" onclick="user().clickEvent();" data-id="{{=it.productId}}" id="invest">立即投资</button>
+        {{ }else if(it.productStatus == '2' && it.progress == '100'){ }}
+        <button class="invest disabled button" onclick="user().clickEvent();" data-id="{{=it.productId}}" disabled="disabled" onclick="this.disabled=true"  id="invest">已满标</button>
+        {{ }else if(it.productStatus == '2' && it.progress !== '100'){ }}
+        <span class="tankuang">停止募集，不足资金由线下资金补充</span>
+        <button class="invest disabled button" onclick="user().clickEvent();" data-id="{{=it.productId}}" disabled="disabled" onclick="this.disabled=true" id="invest">
+        募集结束</button>
+        <span class="iconjieshu"></span>
+        <span class="blueIcon"></span>
+        {{ }else{ }}
+        <button class="invest disabled button" onclick="user().clickEvent();" data-id="{{=it.productId}}" disabled="disabled" onclick="this.disabled=true" id="invest">已还款</button>
+        {{ } }}
+          <span class="tips">领投鸟提醒您：理财非存款，投资需谨慎！</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempDetail">
+  <article class="detail">
+    <div class="row">
+      <span class="caption sub">项目说明：</span>
+      <span class="field">{{=it.productDesc}}</span>
+    </div>
+    <div class="row">
+      <span class="caption sub">借款用途：</span>
+      <span class="field">{{=it.borrowUse}}</span>
+    </div>
+    <div class="row">
+      <span class="caption sub">还款来源：</span>
+      <span class="field">{{=it.repaymentFactor}}</span>
+    </div>
+    <div class="row">
+      <span class="caption">项目协议：</span>
+      <span class="field"><a class="link" href="http://www.lingtouniao.com/ltn-static/protocol/loan" target="_blank">《借款协议》</a></span>
+    </div>
+    <div class="row">
+      <span class="caption">保障方式：</span>
+      <span class="field"><a href="/other/safeguards" class="link">《平台安全保障详解》</a></span>
+    </div>
+    <div class="row">
+      <span class="caption">投资期限：</span>
+      <span class="field">{{=it.investDeadline}}天</span>
+    </div>
+    <div class="row">
+      <span class="caption">到账时间：</span>
+      <span class="field">{{=it.accountDate}}</span>
+    </div>
+    <div class="row">
+      <span class="caption">房屋信息：</span>
+      <ul class="detail-info-list">
+        <li class="item-info">
+          <span class="key">市场价值</span>
+          <span class="value">{{=it.marketValue}}</span>
+        </li>
+        <li class="item-info">
+          <span class="key">产权性质</span>
+          <span class="value">{{=it.rightProperty}}</span>
+        </li>
+        <li class="item-info">
+          <span class="key">建筑面积</span>
+          <span class="value">{{=it.coveredArea}}</span>
+        </li>
+        <li class="item-info">
+          <span class="key">所处位置</span>
+          <span class="value">{{=it.position}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <span class="caption">借款人信息：</span>
+      <ul class="detail-info-list">
+        <li class="item-info">
+          <span class="key">姓名</span>
+          {{ if(typeof(it.borrowerName) == 'undefined') { }}
+          <span class="value"></span>
+          {{ }else{ }}
+          <span class="value">{{=strUtil().formatName(it.borrowerName)}}</span>
+          {{ } }}
+        </li>
+        <li class="item-info">
+          <span class="key">性别</span>
+          <span class="value">{{=it.borrowerSex}}</span>
+        </li>
+        <li class="item-info">
+          <span class="key">婚姻</span>
+          <span class="value">{{=it.birrowerMarriage}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <span class="caption">其他相关信息：</span>
+      <ul class="detail-info-list">
+        <li class="item-info">
+          <span class="key">交易中介</span>
+          <span class="value">{{=it.dealIntermediary}}</span>
+        </li>
+        <li class="item-info">
+          <span class="key">{{=strUtil().isEmpty(it.mortgageBank)?'':'按揭银行'}}</span>
+          <span class="value">{{=strUtil().isEmpty(it.mortgageBank)?'':it.mortgageBank}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <span class="caption">风控审核项目：</span>
+      <ul class="risk1 detail-risk-list" id="lechaodai">
+        <li class="item-risk" id="item1">
+          <img src="/html/img/icon-prod-first-risk-01.png"></img>
+          <p class="key">房屋买卖合同</p>
+        </li>
+        <li class="item-risk" id="item2">
+          <img src="/html/img/icon-prod-first-risk-02.png"></img>
+          <p class="key">房产证</p>
+        </li>
+        <li class="item-risk" id="item3">
+          <img src="/html/img/icon-prod-first-risk-03.png"></img>
+          <p class="key">银行批贷函</p>
+        </li>
+        <li class="item-risk" id="item4">
+          <img src="/html/img/icon-prod-first-risk-04.png"></img>
+          <p class="key">赎楼服务合同</p>
+        </li>
+        <li class="item-risk" id="item5">
+          <img src="/html/img/icon-prod-first-risk-05.png"></img>
+          <p class="key">个人征信报告</p>
+        </li>
+      </ul>
+      <ul class="risk1 detail-risk-list" id="yichaodai">
+        <li class="item-risk" id="yichao_item1">
+          <img src="/html/img/icon-prod-first-risk-01.png"></img>
+          <p class="key">房屋买卖合同</p>
+        </li>
+        <li class="item-risk" id="yichao_item2">
+          <img src="/html/img/icon-prod-first-risk-02.png"></img>
+          <p class="key">房产证</p>
+        </li>
+        <li class="item-risk" id="yichao_item3">
+          <img src="/html/img/icon-prod-first-risk-03.png"></img>
+          <p class="key">银行批贷函</p>
+        </li>
+        <li class="item-risk" id="yichao_item4">
+          <img src="/html/img/icon-prod-first-risk-04.png"></img>
+          <p class="key">赎楼服务合同</p>
+        </li>
+        <li class="item-risk" id="yichao_item5">
+          <img src="/html/img/icon-prod-first-risk-05.png"></img>
+          <p class="key">个人征信报告</p>
+        </li>
+      </ul>
+      <ul class="risk2 detail-risk-list" id="chaozhidai">
+        <li class="item-risk" id="item6">
+          <img src="/html/img/shenfenzheng.png"></img>
+          <p class="key">身份证</p>
+        </li>
+        <li class="item-risk" id="item7">
+          <img src="/html/img/hukouben.png"></img>
+          <p class="key">户口本</p>
+        </li>
+        <li class="item-risk" id="item8">
+          <img src="/html/img/icon-prod-first-risk-05.png"></img>
+          <p class="key">个人征信报告</p>
+        </li>
+        <li class="item-risk" id="item9">
+          <img src="/html/img/icon-prod-first-risk-02.png"></img>
+          <p class="key">房产证</p>
+        </li>
+        <li class="item-risk" id="item10">
+          <img src="/html/img/chanquandiaocha.png"></img>
+          <p class="key">产权调查</p>
+        </li>
+        <li class="item-risk" id="item11">
+          <img src="/html/img/fuwuhetong.png"></img>
+          <p class="key">巢值贷服务合同</p>
+        </li>
+      </ul>
+      <ul class="risk3 detail-risk-list" id="anyidai">
+        <li class="item-risk" id="riskAnyi1">
+          <img src="/html/img/shenfenzheng.png"></img>
+          <p class="key">身份证</p>
+        </li>
+        <li class="item-risk" id="riskAnyi2">
+          <img src="/html/img/hukouben.png"></img>
+          <p class="key">户口本</p>
+        </li>
+        <li class="item-risk" id="riskAnyi3">
+          <img src="/html/img/icon-prod-first-risk-05.png"></img>
+          <p class="key">个人征信报告</p>
+        </li>
+        <li class="item-risk" id="riskAnyi4">
+          <img src="/html/img/cheweihetong.png"></img>
+          <p class="key">车位买卖合同</p>
+        </li>
+        <li class="item-risk" id="riskAnyi5">
+          <img src="/html/img/gongzishouru.png"></img>
+          <p class="key">工资收入证明</p>
+        </li>
+        <li class="item-risk" id="riskAnyi6">
+          <img src="/html/img/shebaogongjijin.png"></img>
+          <p class="key">社保公积金证明</p>
+        </li>
+        <li class="item-risk" id="riskAnyi7">
+          <img src="/html/img/fangchanzhengming.png"></img>
+          <p class="key">产权房屋证明</p>
+        </li>
+        <li class="item-risk" id="riskAnyi8">
+          <img src="/html/img/fuwuhetong.png"></img>
+          <p class="key">安翼贷服务合同</p>
+        </li>
+      </ul>
+      <ul class="risk3 detail-risk-list" id="liangchaodai">
+        <li class="item-risk" id="riskLC1">
+          <img src="/html/img/shenfenzheng.png"></img>
+          <p class="key">身份证</p>
+        </li>
+        <li class="item-risk" id="riskLC2">
+          <img src="/html/img/hukouben.png"></img>
+          <p class="key">户口本</p>
+        </li>
+        <li class="item-risk" id="riskLC3">
+          <img src="/html/img/icon-prod-first-risk-05.png"></img>
+          <p class="key">个人征信报告</p>
+        </li>
+        <li class="item-risk" id="riskLC4">
+          <img src="/html/img/zhuangxieshuoming.png"></img>
+          <p class="key">装修合同</p>
+        </li>
+        <li class="item-risk" id="riskLC5">
+          <img src="/html/img/gongzishouru.png"></img>
+          <p class="key">工资收入证明</p>
+        </li>
+        <li class="item-risk" id="riskLC6">
+          <img src="/html/img/shebaogongjijin.png"></img>
+          <p class="key">社保公积金证明</p>
+        </li>
+        <li class="item-risk" id="riskLC7">
+          <img src="/html/img/fuwuhetong.png"></img>
+          <p class="key">靓巢贷服务合同</p>
+        </li>
+      </ul>
+      <ul class="risk3 detail-risk-list" id="zhanyidai">
+          <li class="item-risk" id="zhanyidai1">
+            <img src="/html/img/shenfenzheng.png"></img>
+            <p class="key">身份证</p>
+          </li>
+          <li class="item-risk" id="zhanyidai2">
+            <img src="/html/img/hukouben.png"></img>
+            <p class="key">户口本</p>
+          </li>
+          <li class="item-risk" id="zhanyidai3">
+            <img src="/html/img/icon-prod-first-risk-05.png"></img>
+            <p class="key">个人征信报告</p>
+          </li>
+          <li class="item-risk" id="zhanyidai4">
+            <img src="/html/img/icon-prod-first-risk-01.png"></img>
+            <p class="key">房屋买卖合同</p>
+          </li>
+          <li class="item-risk" id="zhanyidai5">
+            <img src="/html/img/gongzishouru.png"></img>
+            <p class="key">工资收入证明</p>
+          </li>
+          <li class="item-risk" id="zhanyidai6">
+            <img src="/html/img/shebaogongjijin.png"></img>
+            <p class="key">社保公积金证明</p>
+          </li>
+          <li class="item-risk" id="zhanyidai7">
+            <img src="/html/img/fuwuhetong.png"></img>
+            <p class="key">展翼贷-001服务合同</p>
+          </li>
+      </ul>
+    </div>
+  </article>
+</script>
+
+<script type="text/template" id="tempLunbo">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+            {{for(var i=0; i<it.length; i++) { }}
+                <div class="swiper-slide">
+                    <img src="{{=it[i]}}">
+                </div>
+            {{ } }}
+            </div>
+            <!-- Add Pagination
+            <div class="swiper-pagination"></div> -->
+            <!-- Add Pagination -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+</script>
+
+<script type="text/template" id="tempLog">
+  <article class="log">
+    <div class="row" id="logCont">
+      <span class="caption solo">投资记录：</span>
+      <table class="log-list">
+        <thead>
+          <tr>
+            <th>序列号</th>
+            <th>成交时间</th>
+            <th>投资人</th>
+            <th>投资金额</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{~it.purchaseHistoryList:value:index}}
+          <tr>
+            <td class="item">{{=index + 1}}</td>
+            <td class="item">{{=value.orderDate}}</td>
+            <td class="item">{{=value.userName}}</td>
+            <td class="item">{{=value.orderAmount}}</td>
+          </tr>
+          {{~}}
+        </tbody>
+      </table>
+    </div>
+    <div class="nolist">
+        <div class="logoIcon">
+          暂无记录，<a href="#" class="denglu" id="login2">登录</a>后可见
+        </div>
+    </div>
+    <div class="accountpage">
+      <div class="pages"></div>
+    </div>
+  </article>
+</script>
+
+<script type="text/template" id="tempBuy">
+  <div class="wrap">
+    <div class="current">
+      <div class="header">
+        <div class="title">投资购买</div>
+        <div class="close" id="buyClose"></div>
+      </div>
+      <div class="form" id="form">
+        <div class="row">
+          <div class="caption">投资金额：</div>
+          <div class="field">
+            <input type="text" class="input" id="amount" placeholder="起投金额1000元">
+          </div>
+          <div class="validation" id="amount-validate"></div>
+        </div>
+        <div class="row">
+          <div class="caption">可用余额：</div>
+          <div class="field">
+            <span class="text">{{=Util.padFloatMoney(it.usableBalance)}}元</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">可投金额：</div>
+          <div class="field">
+            <span class="text">{{=Util.padFloatMoney(it.productRemainAmount)}}元</span>
+          </div>
+        </div>
+        <!-- 鸟币 -->
+        {{? it.useBirdCoinTag == '1' }}
+        <div class="row">
+          <div class="caption">使用鸟币：</div>
+          <div class="field">
+            <input id="isCoin" type="checkbox" class="check" checked>
+            <label for="isCoin" class="label">0鸟币抵扣0.00元</label>
+          </div>
+        </div>
+        {{?}}
+        <!-- 理财金券 -->
+        {{? it.useCouponTag == '1' }}
+        <div class="row">
+          <div class="caption">理财金券：</div>
+          <div class="field">
+            <div class="tickits" id="tickits">
+              <input type="radio" name="Sex" value="Male" checked="checked" class="check radio">
+              <span>选择券</span>
+            </div>
+            <div class="convertTickits" id="convertTickits">
+              <input type="radio" name="Sex" value="Male" class="check radio">
+              <span>赠券码</span>
+            </div>
+            <div class="changeInput" id="changeInput">
+              <select class="select pitch"  id="coupons">
+                <option value="0">请选择...</option>
+              </select>
+              <div class="code" id="code">
+                <input type="text" class="convertCode" placeholder="请输入兑换券码" id="presentCode">
+                <!-- <span class="couponName"></span> -->
+                <!-- <a href="javascript:void(0)" class="sure" id="sureBtn">确认兑换</a> -->
+                <div class="valid">
+                  <span class="tipsIcon"></span>
+                  <span class="validTips"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{?}}
+        <div class="row">
+          <div class="caption">预期收益：</div>
+          <div class="field">
+            <span class="text preprofit">0.00</span>
+            <span id="yuqiAmount"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">起息日期：</div>
+          <div class="field">
+            <span class="text">{{=it.staRateDate}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="caption">到期日期：</div>
+          <div class="field">
+            <span class="text">{{=it.endDate}}</span>
+          </div>
+        </div>
+        <div class="row submit">
+          <hr class="dash">
+          <div class="actual">
+            <span class="text">实际金额：</span>
+            <span class="amount" id="actual">0.00元</span>
+          </div>
+          <div class="action">
+            <button class="button" id="btnBuy" onclick="user().clickEvent();">确认投资</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+<script type="text/template" id="tempCoupon">
+  <option value="0">请选择</option>
+      {{ for(var i=0;i<it.length;i++){ }}
+      <option value="{{=it[i].id }}">{{=it[i].name }}</option>
+      {{ } }}
+</script>

@@ -1,0 +1,81 @@
+<div class="large">
+  <div class="wrap1">
+    <div class="banner"><img src="/html/img/large-banner.png"></div>
+    <div class="large-bg">
+      <img src="/html/img/large-bg.png">
+    </div>
+    <span class="yuan1"><img src="/html/img/large-yuan.png" width="150" height="150"></span>
+    <div class="content">
+      <h1>活动规则</h1>
+      <h3 class="huodong">（注：本次活动仅限网站<a href="/html/account/bank/">网银充值</a>赠送）</h3>
+      <div class="text">
+        <div class="time">2016年4月25日至2016年5月25日</div>
+        <p>
+          <div>1. 一次性充值满49999元，送52返现券1张（一次性投资散标满49999元）</div>
+          <div>2. 一次性充值满99999元，送108返现券1张（一次性投资散标满99999元）</div>
+          <div>3. 一次性充值满199999元，送228返现券1张（一次性投资散标满199999元）
+          </div>
+          <div>4. 一次性充值满499999元，送608元返现券1张（每张需一次性投资散标499999元）
+          </div>
+          <div>5. 一次性充值满999999元，送1388元返现券1张（每张需一次性投资散标999999元）
+          </div>
+             <div class="title"> 以上充值赠送不限制赠送次数</div>
+        </p>
+      </div>
+      <h1>活动任务奖励</h1>
+      <div class="text cont2">
+        <div class="one">
+          <span class="left"><img src="/html/img/coffee1.png"></span>
+          <div class="right">
+            <div class="top">
+              <span class="num">1</span>
+              <span class="caption">学徒级</span>
+            </div>
+            <div class="bottom">单次充值49999元，即可召唤<font class="tuchu">52元</font>返现券一张，单笔投资散标满49999元可使用，相当于请你喝一次星爸爸咖啡。</div>
+          </div>
+        </div>
+        <div class="one">
+          <div class="left1">
+            <div class="top">
+              <span class="num">2</span>
+              <span class="caption">高手级</span>
+            </div>
+            <div class="bottom">单次充值99999元，即可召唤<font class="tuchu">108元</font>返现券一张，单笔投资散标满99999元可使用，相当于请你喝三天星爸爸咖啡。</div>
+          </div>
+          <span class="right1"><img src="/html/img/morecoffee.png"></span>
+        </div>
+        <div class="one">
+          <span class="left"><img src="/html/img/kafei.png"></span>
+          <div class="right">
+            <div class="top">
+              <span class="num">3</span>
+              <span class="caption">达人级</span>
+            </div>
+            <div class="bottom">单次充值199999元，即可召唤<font class="tuchu">228元</font>返现券一张，单笔投资散标满199999元可使用，相当于请你喝一周星爸爸咖啡。</div>
+          </div>
+        </div>
+        <div class="one">
+          <div class="left1">
+            <div class="top">
+              <span class="num">4</span>
+              <span class="caption">偶像级</span>
+            </div>
+            <div class="bottom">单次充值499999元，即可召唤<font class="tuchu">608元</font>返现券一张，单笔投资散标满499999元可使用，相当于到期收益可以大吃一顿丰盛大餐。</div>
+          </div>
+          <span class="right1"><img src="/html/img/guo.png" width="247"></span>
+        </div>
+        <div class="one">
+          <span class="left"><img src="/html/img/shouji2.png" height="187"></span>
+          <div class="right">
+            <div class="top">
+              <span class="num">5</span>
+              <span class="caption">大神级</span>
+            </div>
+            <div class="bottom">单次充值999999元，即可召唤本次终极大奖<font class="tuchu">1388元</font>返现券一张，单笔投资散标满999999元可使用，到期收益可任性淘宝一次。</div>
+          </div>
+        </div>
+      </div>
+     <a href="#"><button class="button">立即充值</button></a>
+    </div>
+  </div>
+</div>

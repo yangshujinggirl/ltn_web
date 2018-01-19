@@ -1,0 +1,376 @@
+.account-Tickits {
+  $high:#ff5900;
+  padding:10px 35px 35px ;
+  p{
+    margin:0;
+    padding:0;
+  }
+  .wrapOne {
+    padding:0 10px;
+  }
+  .itemnav {
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    .itemnav-left {
+      text-align: center;
+      float: left;
+      .ite {
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        line-height: 60px;
+        color: #333;
+        position: relative;
+        bottom:-1px;
+        &.selected {
+          border-bottom: 3px solid $high;
+          color: $high;
+        }
+      }
+    }
+    .itemnv-right {
+      float: right;
+      font-size: 14px;
+      color: #999;
+      padding-left: 124px;
+      height: 50px;
+      line-height: 60px;
+       background:url(/img/viewall_liandong.png) no-repeat left center;
+    }
+  }
+  .getTypes {
+    margin-bottom: 30px;
+    .title {
+      font-size: 14px;
+      color: #666;
+      padding:20px 0;
+    }
+    .process {
+      margin-bottom:30px;
+      font-size: 0;
+      -webkit-text-size-adjust:none;
+      .step {
+        width:208px;
+        height: 120px;
+        border: 1px solid #e2e2e2;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        text-align: center;
+        padding-top:28px;
+        box-sizing:border-box;
+        -webkit-box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        .icon {
+          width:100%;
+          height: 35px;
+        }
+        .txt {
+          font-size:16px;
+          color: #999;
+          line-height: 40px;
+        }
+        .txt1 {
+          color: #bdbdbd;
+          font-size: 12px;
+        }
+        &:not(:first-child){
+          margin-left:20px;
+        }
+        &:hover {
+          box-shadow:0 0 10px rgba(0,0,0,.2);
+        }
+      }
+      .more {
+        .icon {
+          padding-top:20px;
+          box-sizing:border-box;
+          -webkit-box-sizing: border-box;
+        }
+      }
+      .step1 {
+        .icon {
+          background:url(/img/returnTickits_icon1.png) no-repeat center center;
+          background-size: contain;
+        }
+        &:hover {
+          .icon {
+            background:url(/img/returnTickits_icon11.png) no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+      .step2 {
+        .icon {
+          background:url(/img/returnTickits_icon2.png) no-repeat center center;
+          background-size: contain;
+        }
+        &:hover {
+          .icon {
+            background:url(/img/returnTickits_icon22.png) no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+      .step3 {
+        .icon {
+          background:url(/img/returnTickits_icon3.png) no-repeat center center;
+          background-size: contain;
+        }
+        &:hover {
+          .icon {
+            background:url(/img/returnTickits_icon33.png) no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+    }
+    .instryction {
+      font-size: 12px;
+      line-height: 25px;
+      padding-left:40px;
+      background:url(/img/trackRecord_ico1.png) no-repeat left top;
+      .one {
+        color: #333;
+      }
+      .two {
+        color: #999;
+      }
+      .secondLevel {
+        padding-left:12px;
+      }
+    }
+  }
+  .tabNav {
+    overflow: hidden;
+    zoom:1;
+    .list {
+      float: left;
+      .item {
+        width: 100px;
+        height: 30px;
+        border: 1px solid #fff;
+        line-height: 30px;
+        display: inline-block;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        cursor: pointer;
+        &:hover,&.selected {
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          color: $high;
+          border: 1px solid $high;
+        }
+      }
+    }
+    .btn {
+      width: 134px;
+      height: 30px;
+      font-size: 14px;
+      color: #fff;
+      background-color:$high;
+      border: none;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      float: right;
+      margin-right: 23px;
+    }
+  }
+  .tickitList {
+    padding:0;
+    .rm {
+      width: 435px;
+      height: 174px;
+      background:url(/img/returnTickits_bg1.png);
+      overflow: hidden;
+      zoom:1;
+      display: inline-block;
+      margin-bottom: 20px;
+      .left {
+        width: 260px;
+        float: left;
+        padding:20px 0 0 25px;
+        box-sizing:border-box;
+        -webkit-box-sizing: border-box;
+        .top {
+          overflow: hidden;
+          zoom:1;
+          margin-bottom: 18px;
+          .name {
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+          }
+          .send {
+            float: right;
+            font-size: 12px;
+            color: #1e9ee7;
+            cursor: pointer;
+          }
+        }
+        .rule {
+          color: #999;
+          line-height: 20px;
+          .ru {
+            display: inline-block;
+            vertical-align: top;
+          }
+          .ruContent {
+            width: 170px;
+          }
+        }
+      }
+      .right {
+        width: 155px;
+        float: right;
+        padding:20px 0 0 0;
+        box-sizing:border-box;
+        -webkit-box-sizing: border-box;
+        text-align: center;
+        color: #fff;
+        .value {
+          font-size: 102px;
+        }
+        .taxon {
+          font-size: 14px;
+          display: block;
+          margin-top: -18px;
+        }
+        &.little {
+          padding-top:45px;
+          .value {
+            font-size: 58px;
+          }
+          .taxon {
+            margin-top: 0;
+          }
+        }
+      }
+      &:nth-child(even) {
+        margin-left: 20px;
+      }
+
+    }
+    .used {
+      background:url(/img/returnTickits_bg2.png);
+      .send {
+        visibility: hidden;
+      }
+    }
+    .losed {
+      background:url(/img/returnTickits_bg3.png);
+      .send {
+        visibility: hidden;
+      }
+    }
+  }
+  .nolist {
+    display: none;
+    width: 196px;
+    height: 179px;
+    margin: 0 auto;
+    background: url(/img/jz.jpg);
+  }
+  .copy {
+    display: none;
+    width: 466px;
+    height: 258px;
+    background-color:#fff;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    z-index: 9999;
+    text-align: center;
+    .tips {
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      padding-top:12px;
+      .line {
+        display: inline-block;
+        color: $high;
+        font-size: 14px;
+        line-height: 34px;
+        padding:0 44px;
+        border-bottom: 2px solid $high;
+        position:relative;
+        bottom:-1px;
+      }
+    }
+    .content {
+      padding:46px 0 32px 0;
+      line-height: 24px;
+      font-size: 14px;
+      color: #666;
+      .code {
+        color: $high;
+        font-size: 26px;
+      }
+      .sorry {
+        font-size: 20px;
+        padding-top:20px;
+      }
+    }
+    .copyBtn {
+      width: 90px;
+      height: 36px;
+      background-color: $high;
+      font-size: 18px;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+    }
+    .close {
+      width: 30px;
+      height: 30px;
+      background: #ccc url(/img/returnTickits_icon4.png) no-repeat center;
+      position:absolute;
+      top:8px;
+      right: 10px;
+      cursor: pointer;
+    }
+    .content1 {
+      padding:0;
+      font-size: 14px;
+      line-height: 24px;
+      color: #666;
+    }
+    .success {
+      font-size: 26px;
+      color:  $high;
+      height: 33px;
+      line-height: 33px;
+      background:url(/img/returnTickits_icon5.png) no-repeat 90px center;
+      margin: 46px 0 30px;
+      text-align: left;
+      padding-left:130px;
+    }
+  }
+}
+
+.raiseTickits-content {
+  .tickitList {
+    .rm {
+      .right {
+        padding-top:40px;
+        .value {
+          font-size: 80px;
+          .unite {
+            font-size: 22px;
+            font-style: normal;
+          }
+        }
+        .taxon {
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+}

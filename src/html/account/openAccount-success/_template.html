@@ -1,0 +1,10 @@
+<script type="text/template" id="templateopenStatus">
+  <p class="commercialInfo">商户号为：<span class="code">{{=it.mchntNo}}</span></p>
+  {{ if(typeof(reValue) == 'undefined'){  }}
+  <p class="commercialInfo">企业名称：</p>
+  {{ }else{ }}
+  <p class="commercialInfo">企业名称：{{=strUtil().formatName(it.companyName)}}</p>
+  {{ } }}
+  <p class="commercialInfo">开户银行：{{=it.bankName}}</p>
+  <p class="commercialInfo">开户账号：{{=it.bankCode}}</p>
+</script>

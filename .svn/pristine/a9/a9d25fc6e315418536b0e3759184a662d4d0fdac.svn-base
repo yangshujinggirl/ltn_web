@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="appHtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>手机上领投鸟，跟着鸟哥做理财</title>
+  <meta name="keywords" content="掌上领投鸟，领投鸟App，Android安卓版，iPhone/iOS版，领投鸟手机版App下载，手机理财，手机客户端">
+  <meta name="description" content="领投鸟为您提供Android安卓版、iPhone/iOS苹果版等手机版服务，让你无需电脑，使用手机就可以完成从注册、登录、充值、投标到提现等全闭环理财流程，轻松一点，随手财就来！">
+  <link rel="stylesheet" href="/css/style.css?v=2016052418">
+  <link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
+  <script src="/js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/appnew/jquery.easing.1.3.min.js"></script>
+  <script type="text/javascript" src="/js/appnew/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="/js/appnew/script.min.js"></script>
+  <script type="text/javascript">
+  
+    //声明_czc对象:
+    var _czc = _czc || [];
+    //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+    _czc.push(["_setAccount", "1258037212"]);
+  </script>
+</head>
+<body class="appBody">
+  <div class="wrapScreen">
+    <div class="page page1">
+      <div class="text selected">
+        <div class="head">
+          <h1 class="newUser">新手礼遇</h1>
+          <p>10000理财金+88元返现券</p>
+          <p>18%高收益新手标</p>
+        </div>
+        <div class="dl-link">
+          <a href="https://www.lingtouniao.com/app/lingtouniao.apk" class="android"></a>
+          <a href="https://itunes.apple.com/cn/app/ling-tou-niao-li-cai/id1073508943?mt=8" class="ios"></a>
+        </div>
+      </div>
+    </div>
+    <div class="page page2">
+      <div class="text">
+        <div class="head">
+          <h1 class="newUser">优质资产</h1>
+          <p class="info"> 高保值不动产</p>
+          <p class="info">银行批贷项目</p>
+        </div>
+      </div>
+    </div>
+    <div class="page page3">
+      <div class="text">
+        <div class="head">
+          <h1 class="newUser">灵活存取</h1>
+          <p class="info">3-180天产品多样化</p>
+          <p class="info">资金零闲置</p>
+        </div>
+      </div>
+    </div>
+    <div class="page page4">
+      <div class="text">
+        <div class="head">
+          <h1 class="newUser">多重保障</h1>
+          <p class="info">资金三方托管</p>
+          <p class="info">百人风控团队全面审核</p>
+        </div>
+      </div>
+    </div>
+    <div class="page page5">
+      <div class="text">
+        <div class="head">
+          <h1 class="newUser">合伙赚钱</h1>
+          <p class="info">邀请好友一起投</p>
+          <p class="info">平台奖励天天有</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="nav">
+    <li class="item current"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+  </ul>
+  <div class="coverbg">
+    <img src="/img/appnew_6.jpg" alt="" class="bg">
+    <img src="/img/download-app.png" alt="" class="code">
+    <span class="close"></span>
+  </div>
+</body>
+</html>
+

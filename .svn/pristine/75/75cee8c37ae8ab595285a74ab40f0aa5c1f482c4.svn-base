@@ -1,0 +1,48 @@
+.reset-floating{
+  width: 520px;
+  height: 350px;
+  background-color: #FFF;
+  border-radius:5px;
+  border: 8px solid rgba(0,0,0,.1);
+  position:fixed;
+  left:50%;
+  top:50%;
+  margin-top:-175px;
+  margin-left: -260px;
+  display: none;
+  .text {
+    font-size:18px;
+    text-align: center;
+    margin-top:163px;
+  }
+  .shut {
+    width:17px;
+    height: 17px;
+    background: url(../../../img/trading-reset_01.png);
+    position:absolute;
+    right:10px;
+    top:10px;
+  }
+  .change {
+    .text {
+      height: 35px;
+      line-height: 35px;
+      font-size: 24px;
+      text-align:left;
+      margin-left:103px;
+      padding-left:40px;
+    }
+  }
+  .success {
+    .text {
+    background: url(../../../img/success.png) no-repeat;
+    }
+  }
+  .false {
+    .text {
+      height: 24px;
+      line-height: 24px;
+    background: url(../../../img/icon-stat-failed.png) no-repeat;
+    }
+  }
+}

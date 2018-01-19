@@ -1,0 +1,202 @@
+.account-cardtwo{
+  .title {
+    font-size: 14px;
+    color: #ea5504;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #e2e2e2;
+    margin: 20px 35px;
+    .item {
+      border-bottom: 2px solid #ea5504;
+      width: 100px;
+      text-align: center;
+    }
+  }
+  .content{
+    width:900px;
+    margin: 0 auto;
+    .cont-top{
+      width:720px;
+      // height:155px;
+      padding:15px 90px;
+      border:1px solid #eeeeee;
+      background: #fbfbfb;
+      .prompt{
+        font-size: 18px;
+        color: #ea5504;
+        padding-left: 30px;
+        position: relative;
+        i{
+          width:25px;
+          height:25px;
+          position: absolute;
+          left: 0;
+          top:0;
+        }
+      }
+      .paragraph{
+        line-height:24px;
+        font-size: 16px;
+      }
+    }//cont-top
+    .cont-bottom{
+      .form{
+        font-size: 14px;
+        margin: 50px auto 0 auto;
+        .button{
+        width: 280px;
+        height: 45px;
+        background: #ff6f20;
+        color: #fff;
+        font-size:18px;
+        border:0;
+        border-radius:5px;
+        margin-left:33%;
+        margin-top:20px;
+         }
+        .row{
+          line-height:  35px;
+          margin: 15px 0;
+          .nongye{
+            font-size: 18px;
+            text-align: center;
+          }
+          .caption{
+            color: #8a8a8a;
+            text-align: right;
+            font-weight: bold;
+            width:33.333%;
+            box-sizing:border-box;
+            display: inline-block;
+            padding:0 20px 0 0;
+          }
+          .validation{
+            color: #f78e8b;
+            padding-left: 20px;
+            height: 22px;
+            line-height: 22px;
+            .icon{
+              width: 14px;
+              height: 14px;
+              display: inline-block;
+              background: url("/img/icon-mark-warning.png") no-repeat;
+            }
+            }
+          .field{
+            width:30%;
+            display: inline-block;
+            vertical-align: middle;
+            .input{
+              width:100%;
+              height:35px;
+              color: #cacaca;
+              box-sizing:border-box;
+              padding:0 15px;
+              float: left;
+              border:1px solid #e8e8e8;
+              background: #fff;
+              &.validate{
+                width:60%;
+              }
+            }//input
+            .current{
+              background:#fafafa;
+              border:0;
+              border:1px solid #e8e8e8;
+             }
+          }
+        }
+        .on-state {
+            height: 30px;
+            margin:33px 0 20px;
+            text-align: center;
+            .em {
+              font-size: 16px;
+              line-height: 30px;
+            }
+            .em1{
+              font-size: 12px;
+              line-height:30px;
+            }
+            .switch {
+              width:65px;
+              height: 32px;
+              display: inline-block;
+              vertical-align: middle;
+              margin:0 15px;
+              position:relative;
+              .status {
+                width:65px;
+                height: 32px;
+                position:absolute;
+                top:0;
+                left:0;
+                background: url(/img/bank_03.png);
+                background-size: cover;
+                cursor: pointer;
+                &.selected {
+                  background: url(/img/bank_04.png);
+                  background-size: cover;
+                }
+              }
+            }
+        }
+      }
+      .friend{
+        margin: 50px 220px 0 493px;
+      }
+    }//cont-bottom
+  }//cntent
+  .account-floating{
+  width: 766px;
+  border: 2px solid #f1a48c;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  top: -375px;
+  left: -8px;
+  display: none;
+  .closeButton{
+    width: 25px;
+    height: 25px;
+    background: url(../../../img/icon-dialog-close.png) no-repeat;
+    position: absolute;
+    right: 21px;
+    top: 11px;
+    cursor: pointer;
+  }
+  .jiantou{
+    position: absolute;
+    right: 194px;
+    top: -18px;
+  }
+  .cont-floating{
+    padding: 40px 20px;
+   //  width: 930px;
+   // margin: 60px auto;
+   p{
+    font-size: 16px;
+    margin-top: -20px;
+   }
+   .one{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background:#ccc;
+
+   }
+   .list {
+      td{
+      width: 306px;
+      height: 40px;
+      font-size: 14px;
+      text-align: center;
+      }
+      tr:nth-child(even){
+          background: #ececec;
+        }
+   }
+  }
+ }
+
+}//cardtow

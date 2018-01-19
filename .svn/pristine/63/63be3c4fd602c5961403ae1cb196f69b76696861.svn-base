@@ -1,0 +1,111 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<div class="account-partneris">
+  <div class="partneris-content">
+    <div class="itemnav" id="accounttitle" data-content="/html/account/partner/">
+        <h1 class="head-1">我是合伙人</h1>
+    </div>
+    <div class="peripheral">
+        <div class="common">
+            <div class="people peple1"></div>
+            <div class="title">普通合伙人</div>
+            <p class="detail">
+                推荐者本人进行过一次投资（仅限固收），并推荐一个好友完成绑卡后，即成为平台的普通合伙人。
+                可以获得：<br/>
+                一级好友每次投资固收类产品收益的7%的平台奖励，按日计提。<br/>
+                二级好友每次投资固收类产品收益的3%的平台奖励，按日计提。
+
+            </p>
+        </div>
+        <div class="gold" >
+              <div class="people peple2"></div>
+              <div class="title">金牌合伙人</div>
+              <p class="detail">
+                  推荐者本人进行过一次投资（仅限固收），并推荐三个好友完成绑卡后，即升级为平台的金牌合伙人。
+                  可以获得：
+                  一级好友每次投资固收类产品收益的10%的平台奖励，按日计提。<br/>
+                  二级好友每次投资固收类产品收益的3%的平台奖励，按日计提。
+
+              </p>
+        </div>
+        <div class="continued">
+            <div class="people peple3"></div>
+            <div class="title">未完待续</div>
+        </div>
+    </div>
+    <div class="easy-partner">
+      <p class="head-2">轻松三步做合伙人</p>
+      <div class="three-steps">
+          <div class="line"></div>
+          <div class="step1 step">
+            <span class="circle">1</span>
+            <p>邀请好友“扫码”<br> 或者“复制链接”</p>
+          </div>
+          <div class="step2 step">
+            <span class="circle">2</span>
+            <p>被邀请好友去领投鸟<br> “注册”并“登录”</p>
+          </div>
+          <div class="step3 step">
+            <span class="circle">3</span>
+            <p>一二级好友投资成功成为 <br>合伙人，获取更多奖励</p>
+          </div>
+      </div>
+    </div>
+    <div class="tuiguang-way">
+      <p class="head-2">推广方式</p>
+      <p class="head-text">复制链接，通过在线聊天，qq空间，微博，论坛等方式分享给好友。好友得利，你更赚！</p>
+      <div class="copylist">
+          <a href="" class="copy-url">
+          <img src="../../../img/partneris_03.jpg">
+          复制链接</a>
+          <div class="content licai" id="content" disabled="disabled">一起来理财吧！领投鸟，注册绑卡领取10000元体验金，10元返现券，20元返现券,首次充值可获得58元返现券。呼朋好友来注册，
+          </div>
+          <button class="copy-content" name="button" id="copy-content">复制内容</button>
+      </div>
+      <div class="weixin copylist">
+        <a href="" class="share">
+        <img src="../../../img/partneris_05.jpg">
+        微信分享</a>
+        <span class="content">进入微信“扫一扫的专属二维码”，即刻分享朋友圈或朋友，好友成功注册与投资，您将得到丰厚的 邀请奖励金！
+        </span>
+        <div class="scan" id='qrcode'>
+          <span class="sao">扫一扫</span>
+      </div>
+
+      </div>
+    </div>
+    <div class="tuijian-partner">
+      <p class="head-2">推荐合伙人有奖</p>
+      <div class="referee">
+        <span class="tuijian">推荐人</span>
+        <p class="text">
+        推荐者完成1次投资后(无论活期/固收)，每次推荐一个好友完成固定收益类投资，那么推荐者即 可获得10鸟币；
+        </p>
+      </div>
+      <div class="referee">
+        <span class="tuijian">被推荐人</span>
+        <p class="text">
+          被推荐人获得一张10%的加息券，可用于购买固收类产品（非活期），投资时使用该加息券，投资收益可增加10%！
+        </p>
+      </div>
+      <div class="kindly_reminder">
+        <p class="friend">温馨提示</p>
+        <span class="text">
+         合伙人关系自建立起，有效期为一年。在未调整活动规则前，此规则一直有效
+        </span>
+      </div>
+    </div>
+    <div class="demo">
+        <img src="../../../img/partneris_01.png" alt="">
+    </div>
+  </div>
+
+
+
+
+</div>
+<!-- @endextend -->
+<!-- @endextend -->

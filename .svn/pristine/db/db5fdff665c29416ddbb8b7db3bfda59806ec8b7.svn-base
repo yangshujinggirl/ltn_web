@@ -1,0 +1,7 @@
+ <!-- @extend ../common/layout/default.html -->
+
+<!-- @include _mather.html -->
+
+
+<!-- @endextend -->
+<script type="text/javascript" src="/js/matherActive/script.min.js"></script>

@@ -1,0 +1,23 @@
+  <!-- @include ../../common/_headtop.html-->
+
+  <!-- @include _headmiddle.html -->
+
+  <!-- @include ../../common/_headbottom.html -->
+
+  <!-- @include ../../common/default/_navTop.html -->
+
+  <!-- @include ../../common/default/_navTwo.html -->
+
+  <!-- @include _realname.html -->
+
+  <!-- @include _floating.html -->
+
+  <!-- @include ../../common/_footer.html -->
+
+  <!-- @include _template.html -->
+
+  <!-- @include ../../common/_cover.html -->
+
+  <script src="/js/loan/realnameloan/script.min.js?v=20160712"></script>
+
+  <!-- @include ../../common/_bottom.html -->

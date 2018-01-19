@@ -1,0 +1,263 @@
+
+<script type="text/template" charset="UTF-8"  id="tempsecurity">
+  <div class="itemnav" id="itemtab">
+        <a href="javascript:void(0)" class="item selected" data-content="play">未使用</a>
+        <a href="javascript:void(0)" class="item" data-content="played">已使用</a>
+        <a href="javascript:void(0)" class="item" data-content="playover">已过期</a>
+  </div>
+  <div class="tickets user2 play" id="contenttab">
+
+        <div class="unused item">
+
+          <div class="gold-tickets common" id="gold1">
+            <div class="info">
+              <em class="icon"></em>
+              <span>体验金券</span>
+            </div>
+            {{~it.couponList:value}}
+              {{? value.status=='YX'}}
+                {{? value.activityType=='体验抵扣'}}
+              <div class="imgs">
+                <div class="left-text">
+                  <span class="esperience">体验金券</span><br>
+                  <span class="desc">{{=value.desc}}</span>
+                  <span class="time">有效期至{{=value.couponDate}}</span>
+                </div>
+                <div class="right-text">
+                  <h1 class="money">￥{{=value.amount}}</h1>
+                  <span class="deduction">{{=value.activityType}}</span>
+                </div>
+              </div>
+                {{?}}
+              {{?}}
+            {{~}}
+            <div class="imgTips">
+              <img src="/img/jz.jpg?v=20160612" alt="">
+            </div>
+            <div class="more">查看更多.....</div>
+          </div>
+          <div class="return-tickets common" id="return1">
+            <div class="info">
+              <em class="icon"></em>
+              <span>返现金券</span>
+            </div>
+            {{~it.couponList:value}}
+              {{? value.status=='YX'}}
+                {{? value.activityType=='投资返现'}}
+              <div class="imgs">
+                <div class="left-text">
+                  <span class="esperience">返现金券</span><br>
+                  <span class="desc">{{=value.desc}}</span>
+                  <span class="time">有效期至{{=value.couponDate}}</span>
+                </div>
+                <div class="right-text">
+                  <h1 class="money">￥{{=value.amount}}</h1>
+                  <span class="deduction">{{=value.activityType}}</span>
+                </div>
+              </div>
+                {{?}}
+              {{?}}
+            {{~}}
+            <div class="imgTips">
+              <img src="/img/jz.jpg?v=20160612" alt="">
+            </div>
+            <div class="more">查看更多.....</div>
+          </div>
+          <div class="add-tickets common" id="add1">
+            <div class="info">
+              <em class="icon"></em>
+              <span>加息券</span>
+            </div>
+            {{~it.couponList:value}}
+              {{? value.status=='YX'}}
+                {{? value.activityType=='加息券'}}
+              <div class="imgs">
+                <div class="left-text">
+                  <span class="esperience">加息金券</span><br>
+                  <span class="desc">{{=value.desc}}</span>
+                  <span class="time">有效期至{{=value.couponDate}}</span>
+                </div>
+                <div class="right-text">
+                  <h1 class="money">{{=value.amount}}%</h1>
+                  <span class="deduction">{{=value.activityType}}</span>
+                </div>
+              </div>
+               {{?}}
+              {{?}}
+            {{~}}
+            <div class="imgTips">
+              <img src="/img/jz.jpg?v=20160612" alt="">
+            </div>
+            <div class="more">查看更多.....</div>
+          </div>
+        </div>
+        <div class="used item">
+
+          <div class="gold-tickets common" id="gold2">
+              <div class="info">
+                <em class="icon"></em>
+                <span>体验金券</span>
+              </div>
+              {{~it.couponList:value}}
+                {{? value.status=='SYZ'}}
+                  {{? value.activityType=='体验抵扣'}}
+                <div class="imgs">
+                <div class="left-text">
+                  <span class="esperience">体验金券</span><br>
+                  <span class="desc">{{=value.desc}}</span>
+                  <span class="time">有效期至{{=value.couponDate}}</span>
+                </div>
+                <div class="right-text">
+                  <h1 class="money">￥{{=value.amount}}</h1>
+                  <span class="deduction">{{=value.activityType}}</span>
+                </div>
+                </div>
+                 {{?}}
+                {{?}}
+              {{~}}
+              <div class="imgTips">
+                <img src="/img/jz.jpg?v=20160612" alt="">
+              </div>
+          </div>
+          <div class="return-tickets common" id="return2">
+              <div class="info">
+                <em class="icon"></em>
+                <span>返现金券</span>
+              </div>
+              {{~it.couponList:value}}
+                {{? value.status=='SYZ'}}
+                  {{? value.activityType=='投资返现'}}
+                  <div class="imgs">
+                    <div class="left-text">
+                      <span class="esperience">返现金券</span><br>
+                      <span class="desc">{{=value.desc}}</span>
+                      <span class="time">有效期至{{=value.couponDate}}</span>
+                    </div>
+                    <div class="right-text">
+                      <h1 class="money">￥{{=value.amount}}</h1>
+                      <span class="deduction">{{=value.activityType}}</span>
+                    </div>
+                  </div>
+                  {{?}}
+                {{?}}
+              {{~}}
+              <div class="imgTips">
+                <img src="/img/jz.jpg?v=20160612" alt="">
+              </div>
+          </div>
+          <div class="add-tickets common" id="add2">
+            <div class="info">
+              <em class="icon"></em>
+              <span>加息券</span>
+            </div>
+            {{~it.couponList:value}}
+              {{? value.status=='SYZ'}}
+                {{? value.activityType=='加息券'}}
+                <div class="imgs">
+                  <div class="left-text">
+                    <span class="esperience">加息金券</span><br>
+                    <span class="desc">{{=value.desc}}</span>
+                    <span class="time">有效期至{{=value.couponDate}}</span>
+                  </div>
+                  <div class="right-text">
+                    <h1 class="money">{{=value.amount}}%</h1>
+                    <span class="deduction">{{=value.activityType}}</span>
+                  </div>
+                </div>
+                {{?}}
+              {{?}}
+            {{~}}
+            <div class="imgTips">
+              <img src="/img/jz.jpg?v=20160612" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="usedover item">
+
+          <div class="gold-tickets common" id="gold3">
+              <div class="info">
+                <em class="icon"></em>
+                <span>体验金券</span>
+              </div>
+              {{~it.couponList:value}}
+                 {{? (value.status=='ZF'||value.status=='GQ')}}
+                  {{? value.activityType=='体验抵扣'}}
+                <div class="imgs">
+                  <div class="overtime"></div>
+                  <div class="left-text">
+                    <span class="esperience">体验金券</span><br>
+                    <span class="desc">{{=value.desc}}</span>
+                    <span class="time">有效期至{{=value.couponDate}}</span>
+                  </div>
+                  <div class="right-text">
+                    <h1 class="money">￥{{=value.amount}}</h1>
+                    <span class="deduction">{{=value.activityType}}</span>
+                  </div>
+                </div>
+                 {{?}}
+                {{?}}
+              {{~}}
+              <div class="imgTips">
+                <img src="/img/jz.jpg?v=20160612" alt="">
+              </div>
+              <div class="more">查看更多.....</div>
+          </div>
+          <div class="return-tickets common" id="return3">
+              <div class="info">
+                <em class="icon"></em>
+                <span>返现金券</span>
+              </div>
+              {{~it.couponList:value}}
+                {{? (value.status=='ZF'||value.status=='GQ')}}
+                  {{? value.activityType=='投资返现'}}
+                  <div class="imgs">
+                    <div class="overtime"></div>
+                    <div class="left-text">
+                      <span class="esperience">返现金券</span><br>
+                      <span class="desc">{{=value.desc}}</span>
+                      <span class="time">有效期至{{=value.couponDate}}</span>
+                    </div>
+                    <div class="right-text">
+                      <h1 class="money">￥{{=value.amount}}</h1>
+                      <span class="deduction">{{=value.activityType}}</span>
+                    </div>
+                  </div>
+                  {{?}}
+                {{?}}
+              {{~}}
+              <div class="imgTips">
+                <img src="/img/jz.jpg?v=20160612" alt="">
+              </div>
+              <div class="more">查看更多.....</div>
+          </div>
+          <div class="add-tickets common" id="add3">
+            <div class="info">
+              <em class="icon"></em>
+              <span>加息券</span>
+            </div>
+            {{~it.couponList:value}}
+              {{? (value.status=='ZF'||value.status=='GQ')}}
+                {{? value.activityType=='加息券'}}
+                <div class="imgs">
+                  <div class="overtime"></div>
+                  <div class="left-text">
+                    <span class="esperience">加息金券</span><br>
+                    <span class="desc">{{=value.desc}}</span>
+                    <span class="time">有效期至{{=value.couponDate}}</span>
+                  </div>
+                  <div class="right-text">
+                    <h1 class="money">{{=value.amount}}%</h1>
+                    <span class="deduction">{{=value.activityType}}</span>
+                  </div>
+                </div>
+                {{?}}
+              {{?}}
+            {{~}}
+            <div class="imgTips">
+              <img src="/img/jz.jpg?v=20160612" alt="">
+            </div>
+            <div class="more">查看更多.....</div>
+          </div>
+       </div>
+  </div>
+</script>

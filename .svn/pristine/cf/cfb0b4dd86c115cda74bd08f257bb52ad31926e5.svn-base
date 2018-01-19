@@ -1,0 +1,79 @@
+
+<div class="user-dialog page-component">
+  <div class="wrap">
+    <div class="logincontent">
+      <div class="login component">
+        <div class="left">
+          <img src="../../../img/login-left.jpg?v=20161202">
+        </div>
+        <div class="form" id="form">
+          <div class="login-top">
+            <div class="loginleft">登录领投鸟</div>
+            <div class="loginright">
+              <span class="none">没有账号？</span>
+              <span class="registered"><a href="/html/user/register/">立即注册</a></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <i class="shouji"><img src="../../../img/login-shouji.jpg"></i>
+              <input class="input" id='txtTel' placeholder="请输入手机号码" type="text" data-required='true' data-type='telephone' data-emptyTip='账号不能为空' data-errorTip="请输入正确的手机号码"  onfocus="this.placeholder=''" onblur="this.placeholder='请输入手机号码'">
+            </div>
+            <div class="login-tip" id="loginTip1">
+                <span class="icon-wran"></span>
+                <span class="wran-tip" id="wranTip"></span>
+            </div>
+            <div class="validation" id="password"></div>
+          </div>
+          <div class="row">
+            <!-- <div class="caption">密码</div> -->
+            <div class="field">
+              <i class="password"><img src="../../../img/login-suo.jpg"></i>
+              <input class="input" id="txtPsd" placeholder="请输入账户密码" type="password" data-required='true' data-type='password' data-emptyTip='密码不能为空' data-errorTip="请输入6-16数字字母组合" onfocus="this.placeholder=''" onblur="this.placeholder='请输入账户密码'">
+            </div>
+             <div class="login-tip" id="loginTip">
+                <span class="icon-wran"></span>
+                <span class="wran-tip" id="wranpassword"></span>
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="row">
+            <!-- <div class="caption">验证码</div> -->
+            <div class="field" id="imageCon">
+              <input class="input short" type="text" placeholder="请输入验证码" id="txtCode" data-required='true' data-emptyTip='请输入图片验证码！' data-type='imgCode'  data-errorTip="验证码不符合规则">
+              <img class="validate-image" id="imgCode" src="#" alt="图片验证码">
+            </div>
+            <span class="new" id="imageCode"><img src="../../../img/login-shuaxin.png" height="37"></span>
+             <div class="login-tip" id="loginTip2">
+                <span class="icon-wran"></span>
+                <span class="wran-tip" id="wranpassword"></span>
+            </div>
+            <div class="validation"></div>
+          </div>
+          <div class="row">
+                  <a class="mima" href="/html/user/forget" onclick="user().clickEvent();">忘记密码？</a>
+          </div>
+          <div class="row">
+            <div class="action">
+              <button class="button" id="submit">登录</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+!function(w,d,e){
+var iphone = session().get('lingtouniaoguanwangluodiyeshoujihao');
+
+if(iphone==''||typeof(iphone) == "object"){
+  // alert('123');
+  return;
+}
+var _orderno=iphone;  //替换此处!;
+var b=location.href,c=d.referrer,f,s,g=d.cookie,h=g.match(/(^|;)\s*ipycookie=([^;]*)/),i=g.match(/(^|;)\s*ipysession=([^;]*)/);if (w.parent!=w){f=b;b=c;c=f;};u='//stats.ipinyou.com/cvt?a='+e('YQs.axs.fAGkXyuDs3NleE9dUr5EoX')+'&c='+e(h?h[2]:'')+'&s='+e(i?i[2].match(/jump\%3D(\d+)/)[1]:'')+'&u='+e(b)+'&r='+e(c)+'&rd='+(new Date()).getTime()+'&OrderNo='+e(_orderno)+'&e=';
+function _(){if(!d.body){setTimeout(_(),100);}else{s= d.createElement('script');s.src = u;d.body.insertBefore(s,d.body.firstChild);}}_();
+}(window,document,encodeURIComponent);
+</script>

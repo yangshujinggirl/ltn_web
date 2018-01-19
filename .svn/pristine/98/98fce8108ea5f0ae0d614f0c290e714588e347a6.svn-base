@@ -1,0 +1,483 @@
+
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<!-- @extend ../_paging.html -->
+
+
+<div class="account-invest">
+  <div class="current" id="investProfit">
+    <!-- <div class="left">
+        <div class="item type">待收收益：</div>
+        <div class="item number">
+          <span class="value">8880.88</span>&nbsp;<span class="unit">元</span>
+        </div>
+        <div class="month">
+          <div class="profitmonth">
+            <span>已收收益：</span><span class="value">10,000.00</span>&nbsp;<span class="unit">元</span>
+          </div>
+          <div class="profitmonth"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="item type">在投总金额：</div>
+        <div class="item number">
+          <span class="value">888,888.00</span>&nbsp;<span class="unit">元</span>
+        </div>
+        <div class="month">
+          <div class="profitmonth">
+            <span>当月投资：</span><span class="value">28</span>&nbsp;<span class="unit">元</span>
+          </div>
+          <div class="profitmonth">
+            <span>当月到期：</span><span class="value">329</span>&nbsp;<span class="unit">元</span><span>&nbsp;(</span><span>5</span>个项目）
+          </div>
+        </div>
+    </div> -->
+  </div>
+  <div class="investcontent">
+      <div class="itemnav" id="itemtap">
+        <a href="javascript:void(0)" class="item" data-content="tender">投标中</a>
+        <a href="javascript:void(0)" class="item selected" data-content="hold">持有中</a>
+        <a href="javascript:void(0)" class="item" data-content="refunding">还款中</a>
+        <a href="javascript:void(0)" class="item" data-content="refunded">已还款</a>
+        <a href="javascript:void(0)" class="item" data-content="undone">未完成</a>
+      </div>
+      <ul class="hold" id="contenttable">
+        <li class="item" id="tender">
+          <!-- <table>
+            <thead>
+              <tr>
+                <th>订单编号</th>
+                <th class="productname">产品名称</td>
+                <th>投资金额</th>
+                <th>预期收益</th>
+                <th>购买时间</th>
+                <th>到期时间</th>
+                <th>协议</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+            </tbody>
+          </table> -->
+        </li>
+        <li class="item" id="hold">
+          <!-- <table>
+            <thead>
+              <tr>
+                <th>订单编号</th>
+                <th class="productname">产品名称</td>
+                <th>投资金额</th>
+                <th>待收收益</th>
+                <th>购买时间</th>
+                <th>到期时间</th>
+                <th>协议</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+            </tbody>
+          </table> -->
+        </li>
+        <li class="item" id="refunding">
+          <!-- <table>
+            <thead>
+              <tr>
+                <th>订单编号</th>
+                <th class="productname">产品名称</td>
+                <th>投资金额</th>
+                <th>待收收益</th>
+                <th>购买时间</th>
+                <th>到期时间</th>
+                <th>协议</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+            </tbody>
+          </table> -->
+        </li>
+        <li class="item" id="refunded">
+          <!-- <table>
+            <thead>
+              <tr>
+                <th>订单编号</th>
+                <th class="productname">产品名称</td>
+                <th>投资金额</th>
+                <th>已收收益</th>
+                <th>购买时间</th>
+                <th>到期时间</th>
+                <th>协议</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+                <td>2016-01-25</td>
+                <td class="protocol"><a href="">&lt;&lt;投资协议&gt;&gt;</a></td>
+              </tr>
+            </tbody>
+          </table> -->
+        </li>
+        <li class="item" id="undone">
+          <!-- <table>
+            <thead>
+              <tr>
+                <th>订单编号</th>
+                <th class="productname">产品名称</td>
+                <th>投资金额</th>
+                <th>购买时间</th>
+                <th>状态</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+              </tr>
+              <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+              </tr>
+               <tr>
+                <td>098877777788</td>
+                <td>乐巢投系列20160203_001</td>
+                <td>23,567.89元</td>
+                <td>567.87元</td>
+                <td>2016-01-25</td>
+              </tr>
+            </tbody>
+          </table> -->
+        </li>
+      </ul>
+  </div>
+</div>
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->
+
+<!-- @endextend -->

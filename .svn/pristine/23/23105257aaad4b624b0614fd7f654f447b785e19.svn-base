@@ -1,0 +1,125 @@
+.christmas{
+  font-size: 0;
+  background: #052b30;
+  padding-bottom: 50px;
+  text-align: left;
+  img{
+    width: 100%;
+  }
+  .christmas_cont{
+    background: #052b30;
+    .content{
+      width: 800px;
+      margin: 0 auto;
+      .title_info{
+        font-size: 18px;
+        color: #56b881;
+      }
+      .happynewyear{
+        font-size: 36px;
+        color: #b62e26;
+        text-align: center;
+        margin-bottom:0;
+      }
+      .zimu{
+        font-size: 26px;
+        margin: 0;
+        color: #b62e26;
+        text-align: center;
+        span{
+          border-top: 1px solid #b62e26;
+          border-bottom: 1px solid #b62e26;
+        }
+      }
+      .video{
+        width: 680px;
+        height: 370px;
+        display: block;
+        margin: 0 auto;
+      }
+      .activeone{
+        padding: 75px 50px;
+        background: #fff;
+        margin-top: 35px;
+        border-radius: 20px;
+        position: relative;
+        .active_title,.active_title2,.active_title3{
+          width: 371px;
+          height: 54px;
+          line-height: 54px;
+          text-indent: 80px;
+          font-size: 24px;
+          color: #052b30;
+          background: url(/img/christmas/bg1.jpg) no-repeat;
+          position: absolute;
+          left: 50%;
+          top: 0;
+          margin-left: -25%;
+        }
+        .active_title2{
+          background: url(/img/christmas/img5.jpg) no-repeat;
+        }
+        .active_title3{
+          background: url(/img/christmas/img6.jpg) no-repeat;
+        }
+        .touzi,.touzi1{
+          font-size: 24px;
+          color: #56b881;
+        }
+        .touzi1{
+          text-align: left;
+        }
+        .touzi_cont{
+          font-size: 18px;
+          color: #56b881;
+          line-height: 35px;
+        }
+        .img2{
+          width: 297px;
+          height: 243px;
+          display: block;
+          margin: 0 auto;
+        }
+        .but{
+          width: 358px;
+          height: 78px;
+          font-size: 30px;
+          line-height: 78px;
+          text-align: center;
+          background: #56b881;
+          border-radius: 39px;
+          border: 0;
+          color: #fff;
+          display: block;
+          margin: 53px auto 0;
+        }
+      }
+      .activelast{
+        text-align: center;
+        .code{
+          display: block;
+          margin: 30px auto 0;
+        }
+        .sao{
+          font-size: 20px;
+          color: #fff;
+        }
+        .gongzhonghao{
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+      .lastinfo{
+        font-size: 16px;
+        color: #56b881;
+        margin-bottom:0;
+        text-align: center;
+      }
+      .sao{
+        font-size: 20px;
+        color: #56b881;
+        text-align: center;
+      }
+    }
+  }
+}

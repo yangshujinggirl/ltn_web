@@ -1,0 +1,174 @@
+<script type="text/template" id="tempInvestProfit">
+  <div class="left">
+      <div class="item type">待收收益：</div>
+      <div class="item number">
+        <span class="value">{{=it.orderWaitedIncome}}</span>&nbsp;<span class="unit">元</span>
+      </div>
+      <div class="month">
+        <div class="profitmonth">
+          <span>已收收益：</span><span class="value">{{=it.orderReceivedIncome}}</span>&nbsp;<span class="unit">元</span>
+        </div>
+        <div class="profitmonth"></div>
+      </div>
+  </div>
+  <div class="right">
+      <div class="item type">在投总金额：</div>
+      <div class="item number">
+        <span class="value">{{=it.sumOrderAmount}}</span>&nbsp;<span class="unit">元</span>
+      </div>
+      <div class="month">
+        <div class="profitmonth">
+          <span>当月投资：</span><span class="value">{{=it.last30DayInvest}}</span>&nbsp;<span class="unit">元</span>
+        </div>
+        <div class="profitmonth">
+          <span>当月到期：</span><span class="value">{{=it.last30DayExpiration}}</span>&nbsp;<span class="unit">元</span><span>&nbsp;(</span><span>{{=it.last30DayExpirationNum}}</span>个项目）
+        </div>
+      </div>
+  </div>
+</script>
+
+<script type="text/template" id="tempTender">
+  <table>
+    <thead>
+      <tr>
+        <th>订单编号</th>
+        <th class="productname">产品名称</td>
+        <th>投资金额</th>
+        <th>预期收益</th>
+        <th>购买时间</th>
+        <th>到期时间</th>
+        <th>协议</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~it:value}}
+      <tr>
+        <td>{{=value.orderNo}}</td>
+        <td>{{=value.productName}}</td>
+        <td>{{=value.orderAmount}}元</td>
+        <td>{{=value.expectedRevenueTxt}}</td>
+        <td>{{=value.orderDate}}</td>
+        <td>{{=value.expirationDate}}</td>
+        <td class="protocol"><a href="javascript:void(0)" data-id='{{=value.orderNo}}' class="inAgree">&lt;&lt;借款协议&gt;&gt;</a></td>
+      </tr>
+      {{~}}
+    </tbody>
+  </table>
+  <div class="nolist"></div>
+</script>
+
+<script type="text/template" id="tempHold">
+  <table>
+    <thead>
+      <tr>
+        <th>订单编号</th>
+        <th class="productname">产品名称</td>
+        <th>投资金额</th>
+        <th>待收收益</th>
+        <th>购买时间</th>
+        <th>到期时间</th>
+        <th>协议</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~it:value}}
+      <tr>
+        <td>{{=value.orderNo}}</td>
+        <td>{{=value.productName}}</td>
+        <td>{{=value.orderAmount}}元</td>
+        <td>{{=value.expectedRevenueTxt}}</td>
+        <td>{{=value.orderDate}}</td>
+        <td>{{=value.expirationDate}}</td>
+        <td class="protocol"><a href="javascript:void(0)" data-id='{{=value.orderNo}}' class="inAgree">&lt;&lt;借款协议&gt;&gt;</a></td>
+      </tr>
+      {{~}}
+    </tbody>
+  </table>
+  <div class="nolist"></div>
+</script>
+
+<script type="text/template" id="tempRefunding">
+  <table>
+    <thead>
+      <tr>
+        <th>订单编号</th>
+        <th class="productname">产品名称</td>
+        <th>投资金额</th>
+        <th>待收收益</th>
+        <th>购买时间</th>
+        <th>到期时间</th>
+        <th>协议</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~it:value}}
+      <tr>
+        <td>{{=value.orderNo}}</td>
+        <td>{{=value.productName}}</td>
+        <td>{{=value.orderAmount}}元</td>
+        <td>{{=value.expectedRevenueTxt}}</td>
+        <td>{{=value.orderDate}}</td>
+        <td>{{=value.expirationDate}}</td>
+        <td class="protocol"><a href="javascript:void(0)" data-id='{{=value.orderNo}}' class="inAgree">&lt;&lt;借款协议&gt;&gt;</a></td>
+      </tr>
+      {{~}}
+    </tbody>
+  </table>
+  <div class="nolist"></div>
+</script>
+
+<script type="text/template" id="tempRefunded">
+  <table>
+    <thead>
+      <tr>
+        <th>订单编号</th>
+        <th class="productname">产品名称</td>
+        <th>投资金额</th>
+        <th>已收收益</th>
+        <th>购买时间</th>
+        <th>到期时间</th>
+        <th>协议</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~it:value}}
+      <tr>
+        <td>{{=value.orderNo}}</td>
+        <td>{{=value.productName}}</td>
+        <td>{{=value.orderAmount}}元</td>
+        <td>{{=value.expectedRevenueTxt}}</td>
+        <td>{{=value.orderDate}}</td>
+        <td>{{=value.expirationDate}}</td>
+        <td class="protocol"><a href="javascript:void(0)" data-id='{{=value.orderNo}}' class="inAgree">&lt;&lt;借款协议&gt;&gt;</a></td>
+      </tr>
+      {{~}}
+    </tbody>
+  </table>
+  <div class="nolist"></div>
+</script>
+
+<script type="text/template" id="tempUndone">
+  <table>
+    <thead>
+      <tr>
+        <th>订单编号</th>
+        <th class="productname">产品名称</td>
+        <th>投资金额</th>
+        <th>购买时间</th>
+        <th>状态</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{~it:value}}
+      <tr>
+        <td>{{=value.orderNo}}</td>
+        <td>{{=value.productName}}</td>
+        <td>{{=value.orderAmount}}元</td>
+        <td>{{=value.orderDate}}</td>
+        <td>{{=value.status}}</td>
+      </tr>
+      {{~}}
+    </tbody>
+  </table>
+  <div class="nolist"></div>
+</script>

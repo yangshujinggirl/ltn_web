@@ -1,0 +1,30 @@
+
+  <!-- @extend common/layout/default.html -->
+
+  <style>
+    .pages {
+      margin: 20px auto;
+    }
+  </style>
+
+  <div class="product-page">
+    <div class="wrap">
+      <div class="pages"></div>
+    </div>
+  </div>
+
+  <!-- @endextend -->
+
+  <script src="/html/js/lib/jquery.paging.min.js"></script>
+
+  <script>
+    $('.pages').paging({
+      totalSize: 180,
+      turnSize: 5,
+      callback: initList
+    });
+
+    function initList(pageNo) {
+      
+    }
+  </script>

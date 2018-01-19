@@ -1,0 +1,1435 @@
+.platform-record-data{
+  height: 40px;
+  overflow: hidden;
+}
+.mationalDay{
+  background: #f2f2f2;
+  .banner{
+    img{
+      width:100%;
+    }
+  }
+  .last{
+    font-size: 16px;
+    color: #333;
+    margin-top: 70px;
+    text-align: center;
+  }
+  .mationalDay_wrap{
+    width: 1000px;
+    margin: 75px auto 0;
+    background:#f2f2f2;
+  }
+  .mationalDay_cont{
+    margin-top: 50px;
+  }
+  .top_contnet{
+    padding: 55px 40px;
+    background:#fff;
+    margin-top: 50px;
+    .top_title{
+      font-size: 20px;
+      color: #a17f23;
+    }
+    .stretch_rule{
+      margin-top: 15px;
+      .rule{
+        display: inline-block;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        background: #252525;
+        color:#fff;
+        font-size: 20px;
+      }
+      .rule1{
+        display: inline-block;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        background: #252525;
+        color:#fff;
+        font-size: 20px;
+        vertical-align: top;
+      }
+      .rule_info{
+        font-size: 20px;
+        color: #333;
+        display: inline-block;
+        margin-left: 10px;
+      }
+      .rule_info1{
+        width:725px;
+        font-size: 20px;
+        color: #333;
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: top;
+        .hongse{
+          color: #ff0000;
+        }
+      }
+    }
+    .tupian1{
+      text-align: center;
+    }
+    .rule_info2{
+      font-size: 20px;
+      color: #333;
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: top;
+      margin-top: 50px;
+      .hongse{
+        color: #ff0000;
+      }
+    }
+    .mationalDay_win{
+      width: 830px;
+      height: 130px;
+      border: 2px solid #5d5d5d;
+      margin: 50px auto 0;
+      .win_left{
+        width: 270px;
+        height: 70px;
+        display: inline-block;
+        padding: 30px 45px;
+        background: #252525;
+        color: #fff;
+        vertical-align: top;
+        .win_item{
+          font-size: 24px;
+          .win_one{
+            font-size: 34px;
+          }
+        }
+      }
+      .win_right{
+        width: 435px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 15px;
+        .right_title{
+          height: 35px;
+          line-height: 32px;
+          font-size: 20px;
+          color: #000000;
+          text-indent: 10px;
+          border-bottom: 2px solid #000;
+          .jiangpin{
+            margin-left: 86px;
+          }
+        }
+        .win_info{
+          height: 66px;
+          overflow: hidden;
+          .win_list{
+            padding:0;
+            li{
+              height: 33px;
+              line-height: 33px;
+            }
+            .win_tel,.win_prizes{
+              font-size: 20px;
+              color: #000;
+              text-indent: 10px;
+            }
+            .win_prizes{
+              margin-left: 50px;
+            }
+          }
+        }
+      }
+    }
+    .invited{
+      width: 834px;
+      font-size: 20px;
+      color: #333;
+      margin: 50px auto 0;
+    }
+    .Service{
+      width: 856px;
+      height: 100px;
+      line-height: 137px;
+      text-indent: 20px;
+      background: url(/html/img/guoqing_img2.png) no-repeat;
+      font-size: 16px;
+      color: #666;
+      margin: 0 auto;
+    }
+    .Service1{
+       width: 856px;
+        height: 100px;
+        line-height: 137px;
+        text-indent: 20px;
+        background: url(/html/img/guoqing_img2.png) no-repeat;
+        font-size: 14px;
+        color: #666;
+        margin: 0 auto;
+    }
+    .yaoqing{
+      width: 154px;
+      height: 42px;
+      background: url(/html/img/touzi_but2.png) no-repeat;
+      font-size: 18px;
+      color: #fff;
+      border:0;
+      outline: none;
+      display: block;
+      margin: 15px auto 0;
+    }
+  }
+  .bottom_content{
+    margin-top: 40px;
+    .left_second{
+      width: 375px;
+      height: 524px;
+      background: #bfa356;
+      border-radius: 10px;
+      padding: 45px 20px;
+      display: inline-block;
+      position: relative;
+      .second_title{
+        font-size: 32px;
+        color: #fff;
+        text-align: center;
+      }
+      .second_list_title{
+        overflow: hidden;
+        zoom:1;
+        li{
+          text-align: center;
+          &:nth-of-type(1){
+            width: 40px;
+          }
+          &:nth-of-type(2){
+            width: 140px;
+          }
+          &:nth-of-type(3){
+            width: 80px;
+          }
+        }
+        .second_item{
+          width: 111px;
+          float: left;
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+      .second_list{
+        width: 334px;
+        height: 374px;
+        background: #fff9e2;
+        margin: 0 auto;
+        padding:9px 20px;
+        position: relative;
+        .top-other{
+          position: absolute;
+          left: 22px;
+          height: 159px;
+          overflow-y: scroll;
+        }
+        .top6,.top-other{
+          font-size: 0;
+          ul,li{
+            padding: 0;
+          }
+          li{
+            position: relative;
+            text-align: center;
+            height: 37px;
+            line-height: 37px;
+            img{
+              position: absolute;
+              left: 0;
+              top: 0;
+              margin-top: 5px;
+            }
+          }
+          span{
+            font-size: 18px;
+            display: inline-block;
+            &:nth-of-type(1){
+              width: 40px;
+            }
+            &:nth-of-type(2){
+              width:140px;
+            }
+            &:nth-of-type(3){
+              width: 134px;
+              text-align: right;
+            }
+          }
+        }
+        .top6{
+          position: relative;
+          left: -8px;
+        }
+        .big_ul{
+          height: 122px;
+          overflow: hidden;
+        }
+        .list_info{
+          margin: 0;
+          overflow: hidden;
+          .info_item{
+            margin-top: 14px;
+            position: relative;
+          }
+          .list_icon{
+            vertical-align: middle;
+            display: inline-block;
+            position: absolute;
+            left: -25px;
+          }
+          .list_item{
+            display: inline-block;
+            font-size: 18px;
+            color: #6b3f13;
+          }
+          .xuhao{
+            width: 40px;
+          }
+          .tel{
+            margin-left: 20px;
+          }
+          .money{
+            margin-left: 30px;
+          }
+        }
+        .list_info1{
+          height: 240px;
+        }
+        .list_info2{
+          height: 122px;
+          overflow: auto;
+        }
+        .nolist {
+          display: none;
+          width: 196px;
+          height: 179px;
+          margin: 0 auto;
+          text-align: center;
+          position: absolute;
+          left:134px;
+          top:108px;
+          background: url("/html/img/wushuju.png?v=20160519") no-repeat;
+          .logoIcon {
+              position: absolute;
+              left: 15px;
+              top: 130px;
+              font-size: 16px;
+              .denglu {
+                  color: #ff5a00;
+              }
+              .denglu:hover {
+                  color: #6e56ff;
+              }
+          }
+        }
+      }
+      .touzi{
+        width: 110px;
+        height: 27px;
+        border-radius: 10px;
+        background:#e05030;
+        font-size: 16px;
+        color: #fff;
+        line-height: 20px;
+        border:0;
+        outline: none;
+        margin-top: 10px;
+      }
+      .tupian{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -139px;
+      }
+    }
+    .right_prizes{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .youqing{
+    font-size: 16px;
+    text-align: center;
+    color: #ff6600;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .turningDisc_turning{
+    .turning_title{
+      width: 1000px;
+      .truning_list{
+        overflow: hidden;
+        zoom:1;
+        padding:0;
+        margin: 0;
+        .turning_item{
+          width: 248px;
+          line-height: 83px;
+          float: left;
+          text-align: center;
+          font-size: 28px;
+          color: #222;
+          cursor: pointer;
+          margin-top: 45px;
+          background: linear-gradient(top,#fefefe,#e3e3e3);
+          background: -webkit-linear-gradient(top,#fefefe,#e3e3e3); /* Safari 5.1 - 6.0 */
+          background: -o-linear-gradient(top,#fefefe,#e3e3e3); /* Opera 11.1 - 12.0 */
+          background: -moz-linear-gradient(top,#fefefe,#e3e3e3); /* Firefox 3.6 - 15 */
+          background: linear-gradient(top,#fefefe,#e3e3e3);
+          &:hover{
+            background:url(/html/img/guoqing_but_bg.png) no-repeat;
+          }
+          &.active{
+            background:url(/html/img/guoqing_but_bg.png) no-repeat;
+          }
+        }
+        .item1{
+          border-radius: 10px 0 0 0;
+          border-right: 2px solid #c8c8c8;
+        }
+        .item2,.item3{
+          border-right: 2px solid #c8c8c8;
+        }
+        .item4{
+          border-radius: 0 10px 0 0;
+        }
+      }
+    }
+  }
+  .turning_cont1{
+    width: 918px;
+    padding: 32px 40px;
+    background:#fff;
+    .xanthine{
+      .turning_title{
+        font-size: 20px;
+        color: #a17f23;
+      }
+      .stretch_rule{
+        margin-top: 15px;
+        .rule{
+          width: 100px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: #252525;
+          color:#fff;
+          font-size: 20px;
+        }
+        .rule1{
+          width: 100px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: #252525;
+          color:#fff;
+          font-size: 20px;
+          vertical-align: top;
+          margin-top: 45px;
+        }
+        .rule_info{
+          font-size: 20px;
+          color: #333;
+          display: inline-block;
+          margin-left: 10px;
+        }
+        .rule_info1{
+          font-size: 20px;
+          color: #333;
+          display: inline-block;
+          margin: 10px 0 0 10px;
+          vertical-align: top;
+          .hongse{
+            color: #ff0000;
+          }
+        }
+      }
+      .cases{
+        width: 875px;
+        height: 48px;
+        border-radius: 20px;
+        background: #fff1d0;
+        margin-top: 30px;
+        padding: 20px;
+        font-size: 18px;
+        color: #000;
+      }
+      .notes_left{
+          width: 745px;
+          position: relative;
+          margin: 0 auto;
+        }
+        #lottery{
+          width:522px;
+          height:292px;
+          margin:40px 0 0 70px;
+          background:url(/html/img/guoqing_choujinag_bg1.png) no-repeat;
+          padding:44px 42px;
+          display: inline-block;
+        }
+        #lottery table tr{
+          width: 520px;
+        }
+        #lottery table td{
+          width:172px;
+          height:142px;
+          text-align:center;
+          vertical-align:middle;
+          font-size:24px;
+          color:#333;
+          font-index:-999;
+          border-radius: 8px;
+          margin-left:5px;
+        }
+        #lottery .choujiang{
+          position: absolute;
+          left: 280px;
+          top: 231px;
+          cursor: pointer;
+          // display: none;
+        }
+        #lottery table td a{
+          width:170px;
+          height:142px;
+          line-height:150px;
+          display:block;
+          text-decoration:none;
+        }
+        #lottery table .login_but{
+          position: absolute;
+          left: 281px;
+          top: 229px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery table .qidai_but{
+          position: absolute;
+          left: 281px;
+          top: 229px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery table .jiezhi_but{
+          position: absolute;
+          left: 281px;
+          top: 229px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery table .wujihui_but{
+          position: absolute;
+          left: 281px;
+          top: 229px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery table .touzi_but{
+          position: absolute;
+          left: 281px;
+          top: 229px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery table .zailaiyici_but{
+          position: absolute;
+          left: 281px;
+          top: 229px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery table .zaiyici_but{
+          position: absolute;
+          left: 281px;
+          top: 229px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery table td.active{
+          background-color:#feee2d;
+        }
+        .surplus{
+          width: 523px;
+          height: 123px;
+          background: url(/html/img/guoqing_choujiang_bg2.png) no-repeat;
+          position: relative;
+          top: -5px;
+          left: 120px;
+          bottom: -106px;
+          font-size: 30px;
+          text-align: center;
+          color: #231815;
+          padding-top: 62px;
+          .huangse{
+            color:#e70911;
+          }
+        }
+        .turning_line{
+          height: 3px;
+          background: #a17f23;
+          margin-top: 70px;
+        }
+        .turning_caption{
+          margin-top: 40px;
+          .caption{
+            display: inline-block;
+            .turing_bottom{
+              margin: 20px 0 0 20px;
+              display: inline-block;
+              text-align: center;
+            }
+            .turing_but{
+              width: 107px;
+              height: 42px;
+              line-height: 42px;
+              text-align: center;
+              display: block;
+              background: url(/html/img/duihuan_but1.png) no-repeat;
+              border:0;
+              outline: none;
+              font-size: 18px;
+              color: #fff;
+              &.disabled{
+                background: url(/html/img/duihuan_but2_huise.png) no-repeat;
+              }
+            }
+            .cashing{
+              font-size: 16px;
+              color: #252525;
+              display: block;
+              margin-top: 10px;
+            }
+          }
+          .cap1{
+            margin-left: 3px;
+          }
+      }
+    }
+    .huolizhi{
+      display: none;
+    }
+    .truning_gold{
+      display: none;
+      .stretch_rule_gold{
+        margin-top:0;
+        .rule2{
+          margin-top:0;
+        }
+      }
+      .cases2{
+        // height: 23px;
+        margin-bottom: 20px;
+      }
+      .notes_left2{
+        width: 745px;
+        height: 680px;
+        position: relative;
+        margin: 0 auto;
+        .notes_title{
+          position: relative;
+          top: 43px;
+          left:118px;
+        }
+         #lottery2{
+          width:517px;
+          height:339px;
+          margin:40px 0 0 70px;
+          background:url(/html/img/huangjin_bg_zhuanpan.png) no-repeat;
+          padding:40px 41px;
+          display: inline-block;
+        }
+        #lottery2 table td{
+          width:199px;
+          height:140px;
+          text-align:center;
+          vertical-align:middle;
+          font-size:24px;
+          color:#333;
+          font-index:-999;
+          border-radius: 8px;
+        }
+        #lottery2 .choujiang{
+          position: absolute;
+          left: 270px;
+          top: 306px;
+          cursor: pointer;
+          // display: none;
+        }
+        #lottery2 table td a{
+          width:174px;
+          height:140px;
+          line-height:150px;
+          display:block;
+          text-decoration:none;
+        }
+        #lottery2 table .login_but{
+          position: absolute;
+          left: 282px;
+          top: 305px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery2 table .qidai_but{
+          position: absolute;
+          left: 282px;
+          top: 305px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery2 table .jiezhi_but{
+          position: absolute;
+          left: 282px;
+          top: 305px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery2 table .wujihui_but{
+          position: absolute;
+          left: 282px;
+          top: 305px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery2 table .touzi_but{
+          position: absolute;
+          left: 282px;
+          top: 305px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery2 table .zailaiyici_but{
+          position: absolute;
+          left: 282px;
+          top: 305px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery2 table .zaiyici_but{
+          position: absolute;
+          left: 282px;
+          top: 305px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery2 table td.active{
+          background-color:#feee2d;
+        }
+        .surplus{
+          width: 450px;
+          height: 65px;
+          background: url(/html/img/choujiang2_bg1.png) no-repeat;
+          position: relative;
+          top: -51px;
+          left: 153px;
+          display: inline-block;
+          bottom: -106px;
+          font-size: 30px;
+          text-align: center;
+          color: #231815;
+          padding-top: 53px;
+          .huangse{
+            color:#e70911;
+          }
+        }
+      }
+      .present{
+        width: 900px;
+        height: 60px;
+        line-height: 60px;
+        background: #f7eed4;
+        font-size: 30px;
+        color: #231815;
+        border-radius: 10px;
+        text-align: center;
+        .hongse{
+          color: #e60012;
+        }
+      }
+      .turning_notes{
+        .notes2_caption{
+          width: 390px;
+          height: 360px;
+          display: inline-block;
+          padding: 20px 25px;
+          background: #f7eed4;
+          border-radius: 20px;
+          margin-top: 20px;
+          vertical-align: top;
+          position: relative;
+          .notes2_title{
+            font-size: 24px;
+            color: #000;
+            text-align: center;
+          }
+          .one_list{
+            overflow: hidden;
+            zoom:1;
+            height: 60px;
+            line-height: 60px;
+            border-top: 2px solid #ddcb9a;
+            border-bottom: 2px solid #ddcb9a;
+            padding:0;
+            margin-top: 20px;
+            padding-left: 30px;
+            li{
+              width: 78px;
+              float: left;
+              font-size: 18px;
+              color: #000;
+            }
+            .chouzhong{
+              margin-left: 65px;
+            }
+          }
+          .platform-record-data,.private-record-data{
+            height: 240px;
+            overflow: hidden;
+            ul{
+              padding-left: 36px;
+              overflow: hidden;
+              li{
+                font-size: 18px;
+                height: 30px;
+                line-height: 30px;
+                .data_one{
+                  color: #a17f23;
+                  display: inline-block;
+                  width: 15%;
+                }
+                .data_two{
+                  color: #a17f23;
+                  display: inline-block;
+                  width: 30%;
+                }
+                .data_three{
+                  color: #d72806;
+                  display: inline-block;
+                  width: 49%;
+                  text-align: center;
+                }
+              }
+            }
+          }
+          .scrollText2{
+            height: 234px;
+            overflow: hidden;
+          }
+          .one_list_info{
+            margin: 0;
+            overflow: auto;
+            li{
+              font-size: 18px;
+              margin-top: 15px;
+              .notes_xuhao{
+                display: inline-block;
+                width: 20%;
+                color: #a17f23;
+              }
+              .notes_tel{
+                display: inline-block;
+                width: 39%;
+                color: #a17f23;
+              }
+              .notes_jiangpin{
+                display: inline-block;
+                width: 38%;
+                color: #d72806;
+              }
+            }
+          }
+          .nolist {
+            display: none;
+            width: 196px;
+            height: 179px;
+            margin: 0 auto;
+            text-align: center;
+            position: absolute;
+            left: 169px;
+            top: 169px;
+            background: url("/html/img/wushuju.png?v=20160519") no-repeat;
+            .logoIcon {
+                position: absolute;
+                left: -22px;
+                top: 130px;
+                font-size: 16px;
+                .denglu {
+                    color: #ff5a00;
+                }
+                .denglu:hover {
+                    color: #6e56ff;
+                }
+            }
+          }
+          .nolist2 {
+            display: none;
+            width: 196px;
+            height: 179px;
+            margin: 0 auto;
+            text-align: center;
+            position: absolute;
+            left: 169px;
+            top: 169px;
+            background: url("/html/img/wushuju.png?v=20160519") no-repeat;
+            .logoIcon {
+                position: absolute;
+                left: 13px;
+                top: 130px;
+                font-size: 16px;
+                .denglu {
+                    color: #ff5a00;
+                }
+                .denglu:hover {
+                    color: #6e56ff;
+                }
+            }
+          }
+          .nolist3 {
+            display: none;
+            width: 196px;
+            height: 179px;
+            margin: 0 auto;
+            text-align: center;
+            position: absolute;
+            left: 169px;
+            top: 169px;
+            background: url("/html/img/wushuju.png?v=20160519") no-repeat;
+            .logoIcon {
+                position: absolute;
+                left: 13px;
+                top: 130px;
+                font-size: 16px;
+                .denglu {
+                    color: #ff5a00;
+                }
+                .denglu:hover {
+                    color: #6e56ff;
+                }
+            }
+          }
+        }
+        .notes2_caption2{
+          margin-left: 17px;
+          vertical-align: top;
+        }
+      }
+    }
+    .truning_Buckingham{
+      display: none;
+      .turning_title{
+        font-size: 20px;
+        color: #a17f23;
+      }
+      .stretch_rule{
+        // margin-top: 15px;
+        .rule{
+          width: 100px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: #252525;
+          color:#fff;
+          font-size: 20px;
+        }
+        .rule1{
+          width: 100px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: #252525;
+          color:#fff;
+          font-size: 20px;
+          vertical-align: top;
+          // margin-top: 45px;
+        }
+        .rule_info{
+          font-size: 20px;
+          color: #333;
+          display: inline-block;
+          margin-left: 10px;
+        }
+        .rule_info1{
+          font-size: 20px;
+          color: #333;
+          display: inline-block;
+          margin: 10px 0 0 10px;
+          vertical-align: top;
+          .hongse{
+            color: #ff0000;
+          }
+        }
+      }
+      .cases{
+        width: 875px;
+        height: 48px;
+        border-radius: 20px;
+        background: #fff1d0;
+        margin-top: 30px;
+        padding: 20px;
+        font-size: 18px;
+        color: #000;
+      }
+      .cases2{
+        // height: 23px;
+      }
+      .notes_left3{
+        width: 745px;
+        height: 680px;
+        position: relative;
+        margin: 0 auto;
+        .notes_title{
+          position: relative;
+          top: 43px;
+          left:118px;
+        }
+         #lottery3{
+          width:518px;
+          height:335px;
+          margin:40px 0 0 70px;
+          background:url(/html/img/baijin_choujiang_bg.png) no-repeat;
+          padding:42px 41px;
+          display: inline-block;
+        }
+        #lottery3 table td{
+          width:172px;
+          height:140px;
+          text-align:center;
+          vertical-align:middle;
+          font-size:24px;
+          color:#333;
+          font-index:-999;
+          border-radius: 8px;
+        }
+        #lottery3 .choujiang{
+          position: absolute;
+          left: 286px;
+          top: 231px;
+          cursor: pointer;
+          // display: none;
+        }
+        #lottery3 table td a{
+          width:172px;
+          height:140px;
+          line-height:150px;
+          display:block;
+          text-decoration:none;
+        }
+        #lottery3 table .login_but{
+          position: absolute;
+          left: 282px;
+          top: 310px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery3 table .qidai_but{
+          position: absolute;
+           left: 282px;
+          top: 310px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery3 table .jiezhi_but{
+          position: absolute;
+           left: 282px;
+          top: 310px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery3 table .touzi_but{
+          position: absolute;
+           left: 282px;
+          top: 310px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery3 table .wujihui_but{
+          position: absolute;
+          left: 282px;
+          top: 310px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery3 table .zailaiyici_but{
+          position: absolute;
+          left: 282px;
+          top: 310px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery3 table .zaiyici_but{
+          position: absolute;
+          left: 282px;
+          top: 310px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery3 table td.active{
+          background-color:#feee2d;
+        }
+        .surplus{
+          width: 450px;
+          height: 65px;
+          background: url(/html/img/baijin_bg3.png) no-repeat;
+          position: relative;
+          top: -48px;
+          left: 153px;
+          display: inline-block;
+          bottom: -106px;
+          font-size: 30px;
+          text-align: center;
+          color: #231815;
+          padding-top: 53px;
+          .huangse{
+            color:#e70911;
+          }
+        }
+      }
+    }
+    .truning_diamonds{
+      display: none;
+      .turning_title{
+        font-size: 20px;
+        color: #a17f23;
+      }
+      .stretch_rule{
+        // margin-top: 15px;
+        .rule{
+          width: 100px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: #252525;
+          color:#fff;
+          font-size: 20px;
+        }
+        .rule1{
+          width: 100px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: #252525;
+          color:#fff;
+          font-size: 20px;
+          vertical-align: top;
+          // margin-top: 45px;
+        }
+        .rule_info{
+          font-size: 20px;
+          color: #333;
+          display: inline-block;
+          margin-left: 10px;
+        }
+        .rule_info1{
+          font-size: 20px;
+          color: #333;
+          display: inline-block;
+          margin: 10px 0 0 10px;
+          vertical-align: top;
+          .hongse{
+            color: #ff0000;
+          }
+        }
+      }
+      .cases{
+        width: 875px;
+        height: 48px;
+        border-radius: 20px;
+        background: #fff1d0;
+        margin-top: 30px;
+        padding: 20px;
+        font-size: 18px;
+        color: #000;
+      }
+      .cases2{
+        // height: 23px;
+      }
+      .notes_left3{
+        width: 745px;
+        height: 680px;
+        position: relative;
+        margin: 0 auto;
+        .notes_title{
+          position: relative;
+          top: 43px;
+          left:118px;
+        }
+         #lottery4{
+          width:519px;
+          height:334px;
+          margin:40px 0 0 70px;
+          background:url(/html/img/zuanshi_bg2.png) no-repeat;
+          padding:44px 42px;
+          display: inline-block;
+          position: relative;
+        }
+        #lottery4 table td{
+          width:172px;
+          height:140px;
+          text-align:center;
+          vertical-align:middle;
+          font-size:24px;
+          color:#333;
+          font-index:-999;
+          border-radius: 8px;
+        }
+        #lottery4 .choujiang{
+          position: absolute;
+          left: 54px;
+          top: 190px;
+          cursor: pointer;
+          // display: none;
+        }
+        #lottery4 table td a{
+          width:172px;
+          height:140px;
+          line-height:150px;
+          display:block;
+          text-decoration:none;
+        }
+        #lottery4 table .login_but{
+          position: absolute;
+           left: 54px;
+          top: 190px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery4 table .jihuo_but{
+          position: absolute;
+           left: 54px;
+          top: 190px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery4 table .jiezhi_but{
+          position: absolute;
+          left: 54px;
+          top: 190px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery4 table .wujihui_but{
+          position: absolute;
+          left: 54px;
+          top: 190px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery4 table .touzi_but{
+          position: absolute;
+          left: 54px;
+          top: 190px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery4 table .zaiyici_but{
+          position: absolute;
+          left: 54px;
+          top: 190px;
+          display: none;
+          cursor: pointer;
+        }
+        #lottery4 table td.active{
+          background-color:#feee2d;
+        }
+        .surplus{
+          width: 450px;
+          height: 65px;
+          background: url(/html/img/zuanshi_bg3.png) no-repeat;
+          position: relative;
+          top: -48px;
+          left: 153px;
+          display: inline-block;
+          bottom: -106px;
+          font-size: 30px;
+          text-align: center;
+          color: #fff;;
+          padding-top: 53px;
+          .huangse{
+            color:#e70911;
+          }
+        }
+      }
+    }
+  }
+}
+.drawn_prize{
+  width: 497px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top:25px;
+  margin-left:-270px;
+  padding: 30px 20px;
+  z-index: 9;
+  .close{
+    text-align: right;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    img{
+      width: 24px;
+      height: 100%;
+    }
+  }
+  .drawn_title{
+    margin-top: 40px;
+  }
+  .drawn_title,.prize_info{
+    font-size: 36px;
+    color: #424242;
+    text-align: center;
+  }
+  .prize_info{
+    color: #b29136;
+    margin-top: 20px;
+  }
+  .prize_info2{
+    font-size: 28px;
+    color: #424242;
+    text-align:center;
+  }
+  .drawn_but{
+    width: 480px;
+    height: 65px;
+    background: #b29136;
+    display: block;
+    margin: 88px auto 0;
+    font-size: 36px;
+    color: #fff;
+  }
+  .drawn_but2{
+    display: inline-block;
+    width: 230px;
+    height: 65px;
+    background: #b29136;
+    font-size: 36px;
+    color: #fff;
+    margin: 88px auto 0;
+  }
+  .away{
+    background: none;
+    border: 2px solid #b29136;
+    color: #b29136;
+  }
+  .sure{
+    margin-left: 15px;
+  }
+}
+.bird_reminded{
+  display: none;
+}
+.drawn_prize{
+  display: none;
+}
+.cashing_prize{
+  display: none;
+}
+.congratulations{
+  display: none;
+  .drawn_title2{
+    font-size: 28px;
+    color: #b29136;
+    text-align: center;
+    i{
+      font-style: normal;
+    }
+  }
+  .drawn_center{
+    width: 350px;
+    height: 215px;
+    margin: 30px auto 0;
+    .prize_left{
+      width: 158px;
+      height: 152px;
+      display: inline-block;
+      //gold_prize
+      &.tp1_prize1{
+        background: url(/html/img/choujiang_jiangpin2.png) no-repeat;
+      }
+      &.tp1_prize2{
+        background: url(/html/img/choujiang_xiaomi.png) no-repeat;
+      }
+      &.tp1_prize3{
+        background: url(/html/img/choujiang_doujiangji.png) no-repeat;
+      }
+      &.tp1_prize5{
+        background: url(/html/img/choujiang_dao.png) no-repeat;
+      }
+      &.tp1_prize4{
+        background: url(/html/img/choujiang_shouji.png) no-repeat;
+      }
+      //Buckingham_prize
+      &.tp2_prize1{
+        background: url(/html/img/choujiang_baobbei.png) no-repeat;
+      }
+      &.tp2_prize2{
+        background: url(/html/img/choujiang_doujiangji.png) no-repeat;
+      }
+      &.tp2_prize3{
+        background: url(/html/img/choujiang_dao.png) no-repeat;
+      }
+      &.tp2_prize5{
+        background: url(/html/img/choujiang_dianshi.png) no-repeat;
+      }
+      &.tp2_prize4{
+        background: url(/html/img/choujiang_shouji.png) no-repeat;
+      }
+      //diamonds_prize
+      &.tp3_prize1{
+        background: url(/html/img/choujiang_dao.png) no-repeat;
+      }
+      &.tp3_prize2{
+        background: url(/html/img/choujiang_dianshi.png) no-repeat;
+      }
+      &.tp3_prize3{
+        background: url(/html/img/choujiang_shouji.png) no-repeat;
+      }
+      //huolizhi_prize
+      &.tp4_prize1{
+        background: url(/html/img/choujiang_huafei.png) no-repeat;
+      }
+      &.tp4_prize2{
+        background: url(/html/img/choujiang_jiangpin2.png) no-repeat;
+      }
+      &.tp4_prize3{
+        background: url(/html/img/choujiang_xiaomi.png) no-repeat;
+      }
+      &.tp4_prize4{
+        background: url(/html/img/choujiang_baobbei.png) no-repeat;
+      }
+      &.tp4_prize5{
+        background: url(/html/img/choujiang_dao.png) no-repeat;
+      }
+    }
+    .code_right{
+      width: 158px;
+      height: 152px;
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+  .drawn_but3{
+    margin-top: 30px;
+  }
+  .congratulations_info{
+    font-size: 16px;
+    color: #424242;
+    text-align: center;
+  }
+}
+.mationalDay_cover{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  position: fixed;
+  top:0;
+  left:0;
+}

@@ -1,0 +1,154 @@
+.guide {
+  .guide-content {
+    .banner {
+      width:100%;
+      height: 432px;
+      background:#ff635f url(/html/img/guide_01.png) no-repeat center;
+    }
+    .guide-process {
+      width:100%;
+      height:674px;
+      background-color: #f5f6f8;
+      .user-login {
+        width:1130px;
+        height:674px;
+        margin:0 auto;
+        overflow: hidden;
+        position:relative;
+        .head-1 {
+          font-size: 36px;
+          font-weight: normal;
+          text-align: center;
+          line-height:72px;
+        }
+      }
+      .dianList{
+        width:200px;
+        height: 5px;
+        position: absolute;
+        left:50%;
+        margin-left: -140px;
+        top:80px;
+        .dian {
+          width:100px;
+          height: 5px;
+          float:left;
+          background-color: #ccc;
+          &.selected {
+            background-color: #ff635f;
+          }
+        }
+      }
+      .list {
+        width:3390px;
+        margin:0;
+        padding: 0;
+        position: absolute;
+        left:0;
+        left:0;
+        .steps {
+          width:1130px;
+          padding:0 140px 0 130px;
+          box-sizing:border-box;
+          float:left;
+          .skip {
+            width:298px;
+            float:left;
+            font-size: 18px;
+            margin-top:118px;
+            .head-2 {
+              font-size: 24px;
+              font-weight: normal;
+            }
+            .text1 {
+              line-height: 30px;
+            }
+          }
+          .imgs{
+            width:528px;
+            height: 441px;
+            float:right;
+            margin-top:40px;
+          }
+          .img1 {
+            background: url(/html/img/guide_02.png) center no-repeat;
+          }
+          .img2 {
+            background: url(/html/img/guide_06.png) center no-repeat;
+          }
+        }
+      }
+      .leftkey,.rightkey{
+        width:40px;
+        height:40px;
+        position:absolute;
+        top:50%;
+        margin-top:-20px;
+        cursor: pointer;
+      }
+      .leftkey {
+        background: url(/html/img/guide_left.png) center no-repeat;
+        left:0;
+      }
+      .rightkey {
+        background: url(/html/img/guide_right.png) center no-repeat;
+        right: 0;
+      }
+    }
+    .realname {
+      background-color: #fff;
+      .list {
+        .steps {
+          .skip {
+            float:right;
+          }
+          .imgs {
+            float:left;
+          }
+          .img1 {
+            background: url(/html/img/guide_07.png) center no-repeat;
+          }
+          .img2 {
+            background: url(/html/img/guide_08.png) center no-repeat;
+          }
+        }
+      }
+    }
+    .bound {
+      .list {
+        .steps {
+          .img1 {
+            background: url(/html/img/guide_09.png) center no-repeat;
+          }
+          .img2 {
+            background: url(/html/img/guide_10.png) center no-repeat;
+          }
+        }
+      }
+    }
+    .quickcharge {
+      .list {
+        .steps {
+          .img1 {
+            background: url(/html/img/guide_11.png) center no-repeat;
+          }
+          .img2 {
+            background: url(/html/img/guide_12.png) center no-repeat;
+          }
+        }
+      }
+    }
+    .bigcharge {
+      .list {
+        .steps {
+          .img1 {
+            background: url(/html/img/guide_13.png) center no-repeat;
+          }
+          .img2 {
+            background: url(/html/img/guide_14.png) center no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

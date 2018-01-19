@@ -1,0 +1,14 @@
+<div class="mutual-fail component">
+  <div class="long">
+    <div class="header">
+      <div class="title">支付确认</div>
+    </div>
+    <div class="content">
+      <div class="title"><span><img class="iconmutual" src="/html/img/fail.png"></span><span id="resultMessage">很遗憾您的账单支付失败！</span></div>
+      <div class="desc" id="descTip"></div>
+    </div>
+    <div class="action">
+      <button class="ok" onclick="window.location.href='/help/aboutltn';">去帮助中心查看问题</button>
+    </div>
+  </div>
+</div>

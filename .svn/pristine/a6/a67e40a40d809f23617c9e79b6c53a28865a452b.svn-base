@@ -1,0 +1,149 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+
+<div class="account-detailprofit">
+  <div class="detailmoney-content">
+    <div class="itemnav">
+      <div class="itemnav-left">待收收益明细</div>
+      <div class="itemnv-right">平台所有资产都通过联动优势第三方资金托管</div>
+    </div>
+    <div class="earnContent">
+       <div class="chartOne" id="chartOne">
+         <!-- <div class="leftChart echartview" id="echartview">
+         </div> 
+         <p class="earnings">122,000<br>待收收益(元)</p>
+         <div class="amount">
+           <div class="fixed">
+             固定收益&nbsp;0元
+             <span class="icon"></span>
+             <p class="hint">固定收益：是指乐巢投和乐巢投收益</p>
+           </div>
+           <div class="award">
+             奖励收益&nbsp;0元
+             <span class="icon"></span>
+             <p class="hint">奖励收益：是指理财金券折现后所获得收益(包括返现券和加息券)；</p>
+           </div>
+         </div>-->
+       </div>
+       <div class="chartTwo" id="chartTwo">
+         <!--<div class="leftChart echartview" id="echartview">
+         </div>
+         <p class="earnings">122,000<br>累计收益(元)</p>
+         <div class="rightInfo">
+           <div class="item">
+             <span>固定收益 (元)&nbsp;&nbsp;<span class="number">800</span></span>
+             <span class="icon"></span>
+             <p class="hint">固定收益：是指乐巢投和乐巢投收益</p>
+           </div>
+           <div class="item">
+             <span>奖励收益 (元)&nbsp;&nbsp;<span class="number">800</span></span>
+             <span class="icon"></span>
+             <p class="hint">固定收益：是指乐巢投和乐巢投收益</p>
+           </div>
+           <div class="item">
+             <span>分润收益 (元)&nbsp;&nbsp;<span class="number">800</span></span>
+             <span class="icon"></span>
+             <p class="hint">固定收益：是指乐巢投和乐巢投收益</p>
+           </div>
+           <div class="item">
+             <span>鸟币收益 (元)&nbsp;&nbsp;<span class="number">800</span></span>
+             <span class="icon"></span>
+             <p class="hint">固定收益：是指乐巢投和乐巢投收益</p>
+           </div>
+         </div>-->
+       </div>
+    </div>
+    <div class="tips">
+      <div class="tipsinfo">待收收益明细记录了你即将到期收回的固定收益类利息明细和奖励明细<mark> ( 包括返现券、加息折算的奖励 ) </mark>
+      </div>
+    </div>
+    <div class="wishprofit">
+      <div class="profitleft">
+        <a href="javascript:void(0)" class="item selected" id="recharge" data-content="detailCharge">待收收益明细</a>
+      </div>
+      <div class="profitright">获取更多收益，赶快<button class="profitaction" id="invest">投资</button></div>
+    </div>
+    <div class="form">
+      <div class="row">
+        <span>起止时间：</span>
+        <input type="date" id="startTime">至
+        <input type="date" id="endTime">
+        <div class="type" id="time">
+          <div class="item selected" data-time="allDate">全部</div>
+          <div class="item" data-time="today">今天</div>
+          <div class="item" data-time="one">一个月</div>
+          <div class="item" data-time="three">三个月</div>
+          <div class="item" data-time="six">六个月</div>
+        </div>
+      </div>
+      <div class="row">
+        <span>交易类型：</span>
+        <div class="type" id="change">
+          <div class="item selected" data-content="all">全部</div>
+          <div class="item" data-content="lct">乐巢投</div>
+          <div class="item" data-content="lctxl">乐巢投系列</div>
+          <div class="item" data-content="security">理财金券</div>
+        </div>
+      </div>
+      <div class="submit all" id="look">查看</div>
+    </div>
+    <table id="earningDeatil">
+      <!--<thead>
+        <tr>
+          <th>项目名称</th>
+          <th>投资期限</th>
+          <th>投资金额</th>
+          <th>到期时间</th>
+          <th>待收金额</th>
+          <th>备注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>乐巢投系列20160223_001</td>
+          <td>2016-01-23</td>
+          <td>+￥4800.00</td>
+          <td>2016-05-06</td>
+          <td>+￥4800.00</td>
+          <td>订单编号50000 充值</td>
+        </tr>
+        <tr>
+          <td>乐巢投系列20160223_001</td>
+          <td>2016-01-23</td>
+          <td>+￥4800.00</td>
+          <td>2016-05-06</td>
+          <td>+￥4800.00</td>
+          <td>订单编号50000 充值</td>
+        </tr>
+        <tr>
+          <td>乐巢投系列20160223_001</td>
+          <td>2016-01-23</td>
+          <td>+￥4800.00</td>
+          <td>2016-05-06</td>
+          <td>+￥4800.00</td>
+          <td>订单编号50000 充值</td>
+        </tr>
+        <tr>
+          <td>乐巢投系列20160223_001</td>
+          <td>2016-01-23</td>
+          <td>+￥4800.00</td>
+          <td>2016-05-06</td>
+          <td>+￥4800.00</td>
+          <td>订单编号50000 充值</td>
+        </tr>
+      </tbody>-->
+    </table>
+    <div class="nolist" id="nolist1"></div>
+    <div class="accountpage">
+      <div class="pages" id="pages1">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- @endextend -->
+
+<!-- @endextend -->

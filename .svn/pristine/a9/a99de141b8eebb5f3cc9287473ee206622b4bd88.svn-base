@@ -1,0 +1,161 @@
+<div class="cover1" id="cover1"></div>
+<div class="mypartner">
+  <div class="banner">
+    <img src="/html/img/mypartner_banner.jpg">
+  </div>
+  <div class="mypartner_content">
+    <div class="plan">
+      <div class="title"><span class="plan_icon"></span>什么是合伙人计划？</div>
+      <div class="filed">
+        <div class="plan_boy1"></div>
+        <div class="plan_info">
+          <span class="samll">央妈降息又降准，股市脾气说不准，房价涨、物价涨，怎么投资才能抵抗通货膨胀、货币贬值？</span><br/>
+          领投鸟平台特地为所有用户推出合伙人赚钱计划，只要推荐亲朋好友投资，您就可轻松<br/>赚取平台奖励，好友赚钱你返利，按日计提，躺着赚钱就是这样简单。
+        </div>
+      </div>
+      <div class="interpretation">
+        <div class="interpretation_title">
+          <img src="/html/img/mypartner_jiehsi.png">
+        </div>
+        <div class="interpretation_info">
+          <ul class="list">
+            <li>
+              <span class="list_left">合伙人</span>
+              <span class="list_right">所有在领投鸟平台完成绑卡步骤的用户都可成为合伙人。</span>
+            </li>
+            <li>
+              <span class="list_left">一级好友</span>
+              <span class="list_right">合伙人A邀请B加入领投鸟，则B属于A的一级好友。</span>
+            </li>
+            <li>
+              <span class="list_left">二级好友</span>
+              <span class="list_right">合伙人A的一级好友B邀请C加入领投鸟，则C属于A的二级好友。</span>
+            </li>
+            <li>
+              <span class="list_left">普通合伙人</span>
+              <span class="list_right">满足合伙人基本条件，有1位一级好友完成绑卡即可成为普通合伙人。</span>
+            </li>
+            <li>
+              <span class="list_left">金牌合伙人</span>
+              <span class="list_right">满足合伙人基本条件，有3位一级好友完成绑卡即可成为金牌合伙人。</span>
+            </li>
+          </ul>
+        </div>
+        <div class="plan_boy2"></div>
+      </div>
+    </div>
+    <div class="merits">
+      <div class="title"><span class="plan_icon"></span>成为合伙人有什么好处？</div>
+      <div class="subtitled"><span class="merits_icon1 icon"></span>好友赚钱你返利，分润按日计提！</div>
+      <div class="merits_info">
+        <img src="/html/img/merits_bg1.png">
+      </div>
+      <div class="bonuses">
+        <div class="bonuses_top">
+          <span class="bonuses_icon1"></span>
+          <span class="ordinary">普通合伙人：</span>
+         可获得一级好友投资收益的7%的平台奖励+二级好友投资收益的3%的平台奖励。
+        </div>
+        <div class="bonuses_top">
+          <span class="bonuses_icon2"></span>
+          <span class="ordinary">金牌合伙人：</span>
+         可获得一级好友投资收益的10%的平台奖励+二级好友投资收益的3%的平台奖励。
+        </div>
+      </div>
+      <div class="subtitled"><span class="merits_icon2 icon"></span>互惠互利，大家都有奖励拿！</div>
+      <div class="merits_info">
+        <img src="/html/img/merits_bg2.png?v=20161202">
+      </div>
+      <div class="bonuses">
+        <div class="bonuses_top">
+          <span class="bonuses_icon1"></span>
+          <span class="ordinary">普通合伙人：</span>
+         可获得一级好友投资收益的7%的平台奖励+二级好友投资收益的3%的平台奖励。
+        </div>
+        <div class="bonuses_top">
+          <span class="bonuses_icon2"></span>
+          <span class="ordinary">金牌合伙人：</span>
+         可获得一级好友投资收益的10%的平台奖励+二级好友投资收益的3%的平台奖励。
+        </div>
+      </div>
+      <div class="subtitled"><span class="merits_icon3 icon"></span>iPhone、iPad，不定期活动还有意外惊喜!</div>
+      <div class="merits_info1">
+        <div class="info_left box">
+          <img src="/html/img/merits_bg3.png">
+        </div>
+        <div class="info_right box">
+          <img src="/html/img/merits_bg4.png">
+        </div>
+      </div>
+      <div class="bonuses1">
+        518理财节活动期间，领投鸟用户王先生，在分享好友榜位列榜首，斩获了IPAD AIR一台！
+      </div>
+    </div>
+    <div class="invited">
+      <div class="title"><span class="plan_icon"></span>如何邀请成为合伙人？</div>
+      <div class="waysOne">
+        <div class="title">方式一：我的专属邀请链接</div>
+        <div class="waylink">
+          <div class="link_login" id="yiLogin">
+            <div class="cont" id="content" disabled="disabled">一起来理财吧！领投鸟，注册实名并绑卡领取<span class="quan">60000元体验金，10元返现券，20元返现券，58元返现券。</span>呼朋好友来注册， <span class="lianjie"></span>
+            </div>
+            <button class="button" name="button" id="copy_content">点击复制分享给好友</button>
+          </div>
+          <div class="notLogin" id="but">
+            <button class="button2" id="clickBut">登录后可见</button>
+          </div>
+        </div>
+      </div>
+      <div class="waystwo">
+        <div class="title">方式二：我的专属二维码</div>
+        <div class="waylink">
+          <div class="link_login2" id='qrcode'>
+          </div>
+          <div class="notLogin" id="wayNotlogin">
+            <div class="code"><a href="javascript:void(0);" class="denglu" id="wayLoginBut">登录</a>后可见</div>
+          </div>
+        </div>
+      </div>
+       <div class="waysThree">
+        <div class="title">方式三：我的邀请码</div>
+        <div class="waylink2">
+          告诉好友注册时输入你的手机号也能计入邀请哦。
+        </div>
+      </div>
+    </div>
+    <div class="gains">
+      <div class="title"><span class="plan_icon"></span>看我能赚到多少钱？</div>
+      <div class="filed">
+        以一级、二级好友投资30天周期项目（年化收益9.0%）计算，鸟币奖励只针对一级好友，并仅在一级好友首次投资后奖励一次。
+      </div>
+      <div class="interpretation">
+        <img src="/html/img/mypartner_biaoge.png">
+      </div>
+      <div class="friend">假如好友在领投鸟平台投资一年，以上分润收益将<span class="chayi">×12</span></div>
+    </div>
+    <div class="gains gains3">
+      <div class="title title1">温馨提示</div>
+      <div class="gains_cont">1.分润奖励按日计提，每晚8点左右，奖励会自动发放到您账户的可用余额中。<br>
+      2. 当您完成至少一次投资，一级好友完成首次投资后，10鸟币会自动发放到账户。 <br>
+      3. 合伙人奖励不封顶，适用于所有领投鸟平台客户，被邀请人同样具有邀请资格。 <br>
+      4. 合伙人关系自建立起，有效期为一年。在未调整活动规则前，此规则一直有效。<br>
+      5. 活动中如发现通过非正常手段恶意获取奖励的，领投鸟保留不派发奖励的权利。
+      <div class="last">*本活动最终解释权归领投鸟所有，如有疑问请咨询服务热线：400-999-9980</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copy_success copyparti" id="copysuccess" style="display:none;">
+  <div class="copycontent">
+    <div class="title">
+      <div class="title_cont">提示</div>
+    </div>
+    <div class="success">
+      <span class="success_icon"></span>
+      <span class="success_info">恭喜你，复制成功！</span>
+      <span class="zuihou">你可以通过QQ、微信、短信等方式，<br>
+      将邀请链接发送给你的好友</span>
+    </div>
+    <div class="colse2" id="closebut"></div>
+  </div>
+</div>

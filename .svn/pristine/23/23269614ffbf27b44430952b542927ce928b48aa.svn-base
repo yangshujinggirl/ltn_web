@@ -1,0 +1,61 @@
+<!-- @extend ../_leftnav.html -->
+
+<!-- @extend ../_righttop.html -->
+
+<!-- @extend ../_paging.html -->
+
+<div class="about-news">
+  <div class="title" id="abouttitle" data-content="/html/about/news/">
+    <div class="item">媒体报道</div>
+  </div>
+  <div class="media" id="newProp">
+    <!-- <div class="list">
+      <div class="financing">
+          <div class="section-left">
+            <span class="financing-left"><a href="/html/about/newsdetail">领头鸟获B轮融资</a></span>
+            <span class="financing-right">2016-2-29 16:16:20 星期一</span>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+          <div class="section-right"><img src="../../../img/xinlang2.png"></div>
+      </div>
+      <div class="financing">
+          <div class="section-left">
+            <span class="financing-left"><a href="/html/about/newsdetail">领头鸟获B轮融资</a></span>
+            <span class="financing-right">2016-2-29 16:16:20 星期一</span>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+          <div class="section-right"></div>
+      </div>
+      <div class="financing">
+          <div class="section-left">
+            <span class="financing-left"><a href="/html/about/newsdetail">领头鸟获B轮融资</a></span>
+            <span class="financing-right">2016-2-29 16:16:20 星期一</span>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+          <div class="section-right"></div>
+      </div>
+      <div class="financing">
+          <div class="section-left">
+            <span class="financing-left"><a href="/html/about/newsdetail">领头鸟获B轮融资</a></span>
+            <span class="financing-right">2016-2-29 16:16:20 星期一</span>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+          <div class="section-right"></div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<!-- @endextend -->
+
+<!-- @endextend -->
+
+<!-- @endextend -->

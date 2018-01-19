@@ -1,0 +1,27 @@
+
+<script type="text/template" charset="UTF-8"  id="tickitTemp">
+{{~it.couponList:value}}
+  <li class="rm {{=value.status=="GQ"?'losed':(value.status=="SYZ"?'used':'')}}">
+    <div class="left">
+      <div class="top" id="presentCode">
+        <span class="name">{{=value.activityType}}券</span>
+        <span class="send" data-id="{{=value.userCouponId}}" data-time="{{=value.couponDate}}" data-amount="{{=value.amount}}" data-desc="{{=value.desc}}">赠送好友>></span>
+      </div>
+      <div class="rule">
+        <p class="ru">使用规则：</p>
+        <p class="ru ruContent">
+          <!-- 适用于全部项目；</br>
+          债券转让不可使用；</br> -->
+          {{=value.desc}}
+        </p>
+      </div>
+      <p class="rule">有效期限：{{=value.couponDate}}</p>
+      <p class="rule">活动来源：系统赠送 </p>
+    </div>
+    <div class="right {{=(value.amount).toString().length>2?'little':''}}">
+      <span class="value">{{=value.amount}}</span>
+      <span class="taxon">投资返现券(元)</span>
+    </div>
+  </li>
+{{~}}
+</script>

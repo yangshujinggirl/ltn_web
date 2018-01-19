@@ -1,0 +1,11 @@
+<script type="text/template" id="tempRealname">
+  <div class="tips">您已认证过！</div>
+    <div class="row">
+      <div class="caption">姓名：</div>
+      <div class="field">{{=it.userName}}</div>
+    </div>
+    <div class="row">
+      <div class="caption">身份证号：</div>
+      <div class="field">{{=strUtil().formatID(it.cardId)}}</div>
+    </div>
+</script>

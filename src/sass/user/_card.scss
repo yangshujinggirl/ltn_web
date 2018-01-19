@@ -1,0 +1,147 @@
+.user-dialog {
+  .registerTop{
+    .xinf{
+      margin-right: 10px;
+    }
+    .ershi{
+      font-size: 20px;
+      color: #ea5504;
+    }
+  }
+  .realnameLeft{
+    width: 680px;
+    height: 440px;
+    padding: 30px 40px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    .finished{
+      margin-top: 40px;
+      .finishedLeft{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .finishedRight{
+        display: inline-block;
+        font-size: 24px;
+        line-height: 40px;
+        margin-left: 30px;
+        .wuba{
+          color: #ea5504;
+        }
+      }
+    }
+    .bank{
+      font-size: 14px;
+      line-height: 30px;
+      margin-top: 30px;
+    }
+    .kuaijie{
+      font-size: 16px;
+      color: #ea5504;
+    }
+    .speed{
+      font-size: 16px;
+      color: #ea5504;
+      cursor:pointer ;
+    }
+  }
+  .results{
+      display: none;
+        width: 610px;
+        height: 420px;
+        overflow-x: auto;
+          overflow-y:scroll;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin-top: -210px;
+        margin-left: -305px;
+        background: #fff;
+        z-index: 8888;
+        border: 10px solid rgba(0,0,0,0.3);
+        .resultsTop{
+          height: 50px;
+          line-height: 50px;
+          background: #f1f1f1;
+          text-align: center;
+          font-size: 16px;
+        }
+        .close{
+          position: absolute;
+          right:13px;
+          top:16px;
+          cursor: pointer;
+        }
+        table{
+          width: 495px;
+          height: 300px;
+          margin: 20px auto 0;
+          .one{
+            font-size: 16px;
+            height: 40px;
+            background: #f4f4f4;
+            border: 1px solid #e2e2e2;
+            th{
+              border-left: 1px solid #e2e2e2;
+            }
+          }
+          .list{
+            height: 300px;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+            tr{
+              height: 40px;
+              border-top: 1px solid #e2e2e2;
+              border-bottom: 1px solid #e2e2e2;
+              td{
+                height: 40px;
+                border-left: 1px solid #e2e2e2;
+                border-right: 1px solid #e2e2e2;
+              }
+            }
+          }
+        }
+  }
+  .form{
+    .row{
+      .caption{
+        width: 94px;
+        float: left;
+      }
+      .action{
+        .button{
+          margin:-7px 0 0 -73px;
+        }
+      }
+      .field{
+        position: relative;
+        .name{
+          width: 63px;
+          border: 0;
+          display: inline-block;
+          float: right;
+          padding:0;
+          position: absolute;
+          left:71px;
+          top:-4px;
+        }
+        .please{
+          font-size: 16px;
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
+.cover{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  position: fixed;
+  z-index: 7777;
+  top:0;
+  left:0;
+}
